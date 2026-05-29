@@ -87,6 +87,20 @@
       display: block;
       object-fit: cover;
     }
+    .article-postcard {
+      margin: 0 0 34px;
+      aspect-ratio: 3 / 2;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--canvas);
+    }
+    .article-postcard img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
     .section-heading {
       margin: 34px 0 18px;
     }
@@ -186,6 +200,9 @@
   <main>
 <article class="article-shell">
 <p class="page-date">5月20日 周三</p>
+<figure class="article-postcard">
+  <img src="assets/default-hero.jpg" width="960" height="640" decoding="async" alt="当日手绘城市明信片">
+</figure>
 <h1>播客简报 2026-05-20</h1>
 <h2>Vanguard</h2>
 <p>来源：Acquired</p>
