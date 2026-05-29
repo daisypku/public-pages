@@ -5,32 +5,204 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>播客简报 2026-05-23</title>
   <style>
-    :root { color-scheme: light; }
+    :root {
+      color-scheme: light;
+      --ink: #17202a;
+      --muted: #687385;
+      --line: #dfe5ec;
+      --paper: #ffffff;
+      --canvas: #f3f6f8;
+      --accent: #0b57d0;
+      --accent-soft: #e8f0fe;
+      --green: #0f766e;
+    }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.65;
-      color: #17202a;
-      background: #f7f8fa;
+      color: var(--ink);
+      background:
+        linear-gradient(180deg, #eef4f7 0, rgba(238, 244, 247, 0) 360px),
+        var(--canvas);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .topbar {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 22px 22px 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+    }
+    .brand {
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: 0;
+    }
+    .nav-link {
+      color: var(--muted);
+      font-size: 0.95rem;
     }
     main {
-      max-width: 880px;
+      max-width: 980px;
       margin: 0 auto;
-      padding: 40px 20px 72px;
-      background: #fff;
+      padding: 40px 22px 80px;
       min-height: 100vh;
     }
-    h1 { font-size: 2rem; margin: 0 0 28px; }
-    h2 { font-size: 1.25rem; margin: 36px 0 10px; padding-top: 16px; border-top: 1px solid #e7e9ee; }
+    .article-shell {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 44px 48px 64px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 18px 50px rgba(23, 32, 42, 0.08);
+    }
+    .hero {
+      padding: 52px 0 38px;
+      border-bottom: 1px solid var(--line);
+    }
+    .kicker {
+      margin: 0 0 12px;
+      color: var(--green);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      margin: 0;
+      max-width: 760px;
+      font-size: 4.4rem;
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+    .lede {
+      max-width: 650px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: end;
+      margin: 34px 0 18px;
+    }
+    .section-heading h2 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+    .section-heading p {
+      max-width: 420px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+      text-align: right;
+    }
+    .cards {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 12px;
+    }
+    .digest-card {
+      margin: 0;
+    }
+    .digest-card a {
+      min-height: 92px;
+      display: grid;
+      grid-template-columns: 150px 1fr auto;
+      gap: 20px;
+      align-items: center;
+      padding: 20px 22px;
+      color: var(--ink);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 10px 28px rgba(23, 32, 42, 0.05);
+    }
+    .digest-card a:hover {
+      text-decoration: none;
+      border-color: #b9c7d8;
+      transform: translateY(-1px);
+    }
+    .card-date {
+      color: var(--green);
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+    .card-title {
+      font-size: 1.08rem;
+      font-weight: 700;
+    }
+    .card-action {
+      color: var(--accent);
+      font-size: 0.92rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .article-page main {
+      max-width: 900px;
+    }
+    .article-page h1 {
+      margin: 0 0 8px;
+      font-size: 2.7rem;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    .page-date {
+      margin: 0 0 30px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .article-page h2 {
+      font-size: 1.25rem;
+      margin: 42px 0 12px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
     p { margin: 10px 0; }
-    ul { padding-left: 22px; }
+    .article-page p { color: #243241; }
+    ul { padding-left: 24px; }
     li { margin: 8px 0; }
-    a { color: #0b57d0; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    .article-page li { padding-left: 2px; }
+    @media (max-width: 720px) {
+      .topbar { padding: 18px 16px 0; }
+      main { padding: 28px 16px 64px; }
+      .article-shell { padding: 30px 22px 44px; }
+      .hero { padding-top: 34px; }
+      .hero h1 { font-size: 2.5rem; }
+      .article-page h1 { font-size: 2rem; }
+      .section-heading {
+        display: block;
+      }
+      .section-heading p {
+        margin-top: 8px;
+        text-align: left;
+      }
+      .digest-card a {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        min-height: 0;
+      }
+      .card-action { white-space: normal; }
+    }
   </style>
 </head>
-<body>
+<body class="article-page">
+  <header class="topbar">
+    <a class="brand" href="index.html">播客简报</a>
+    <a class="nav-link" href="https://github.com/daisypku/public-pages/tree/main/docs/pod2wiki-reader">Public Pages</a>
+  </header>
   <main>
+<article class="article-shell">
+<p class="page-date">2026-05-23</p>
 <h1>播客简报 2026-05-23</h1>
 <h2>SpaceX&#x27;s $2T Case, Nvidia&#x27;s Shock Selloff, America Turns on AI, Trump Pulls AI Order, Bond Crisis?</h2>
 <p>来源：All-In with Chamath, Jason, Sacks &amp; Friedberg</p>
@@ -54,6 +226,7 @@
 <li>智能体基础设施与运行时工具的演进：为支持日益复杂的智能体系统，底层协议、基础设施和运行时工具正快速发展。MCP协议发布了新的候选版本，关键变化是协议变得无状态，简化了扩展、负载均衡和会话管理，并引入了MCP Apps和Tasks等一流扩展。沙盒和托管执行正成为智能体的一流原语：Google演示了Gemini托管智能体与交互API，为智能体提供安全的Linux沙盒；CoreWeave和Cloudsail也推出了各自的沙盒服务，用于强化学习、智能体工具使用和模型评估。在编排层面，Skypilot指出现代强化学习系统因其异构硬件和恢复需求，不适用于传统的Slurm。此外，开源协调器和记忆层也在蓬勃发展，如NVIDIA的AI-Q智能体技能、Hermes的Bitwarden支持和共享记忆“gBrain”层，以及CTOP对智能体会话的管理工具，这些都极大地提升了智能体开发的效率和安全性。</li>
 <li>前沿研究：强化学习、智能体蒸馏与新架构：AI研究在前沿领域持续活跃。在强化学习（RL）方面，Vector Policy Optimization（VPO）被提出，通过优化向量值奖励来解决标量奖励崩溃问题，提升了搜索性能。同时，一项解决RL中极端稀疏性问题的方案也初见成效。智能体编译/蒸馏正成为一个重要的经济学理念：研究表明，一个完整的智能体工作流（多步调用、工具使用、草稿本、决策结构）可以被蒸馏到模型权重中，从而在保持接近前沿质量的同时，将推理成本降低约100倍。这为将昂贵的运行时智能体循环编译成更便宜、可部署的模型提供了清晰的技术论证。在架构方面，LT2（线性时间循环Transformer）结合稀疏和线性注意力，使循环变得实用；ZyphraAI则将平衡传播扩展到生物学上更真实的神经元。MoE模型负载均衡也取得了进展。此外，Allen_AI的ArtifactLinker工具能预测模型可能在哪类基准上达到SOTA，为日益增长的基准测试提供了有用的元评估工具。数学和推理能力方面，现代LLM已能在无工具情况下完成100位数字乘法，进一步削弱了“自回归无法进行算术”的旧论点。</li>
 </ul>
+    </article>
   </main>
 </body>
 </html>

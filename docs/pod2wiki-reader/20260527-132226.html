@@ -5,32 +5,204 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>播客简报 2026-05-27</title>
   <style>
-    :root { color-scheme: light; }
+    :root {
+      color-scheme: light;
+      --ink: #17202a;
+      --muted: #687385;
+      --line: #dfe5ec;
+      --paper: #ffffff;
+      --canvas: #f3f6f8;
+      --accent: #0b57d0;
+      --accent-soft: #e8f0fe;
+      --green: #0f766e;
+    }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.65;
-      color: #17202a;
-      background: #f7f8fa;
+      color: var(--ink);
+      background:
+        linear-gradient(180deg, #eef4f7 0, rgba(238, 244, 247, 0) 360px),
+        var(--canvas);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .topbar {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 22px 22px 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+    }
+    .brand {
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: 0;
+    }
+    .nav-link {
+      color: var(--muted);
+      font-size: 0.95rem;
     }
     main {
-      max-width: 880px;
+      max-width: 980px;
       margin: 0 auto;
-      padding: 40px 20px 72px;
-      background: #fff;
+      padding: 40px 22px 80px;
       min-height: 100vh;
     }
-    h1 { font-size: 2rem; margin: 0 0 28px; }
-    h2 { font-size: 1.25rem; margin: 36px 0 10px; padding-top: 16px; border-top: 1px solid #e7e9ee; }
+    .article-shell {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 44px 48px 64px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 18px 50px rgba(23, 32, 42, 0.08);
+    }
+    .hero {
+      padding: 52px 0 38px;
+      border-bottom: 1px solid var(--line);
+    }
+    .kicker {
+      margin: 0 0 12px;
+      color: var(--green);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      margin: 0;
+      max-width: 760px;
+      font-size: 4.4rem;
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+    .lede {
+      max-width: 650px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: end;
+      margin: 34px 0 18px;
+    }
+    .section-heading h2 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+    .section-heading p {
+      max-width: 420px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+      text-align: right;
+    }
+    .cards {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 12px;
+    }
+    .digest-card {
+      margin: 0;
+    }
+    .digest-card a {
+      min-height: 92px;
+      display: grid;
+      grid-template-columns: 150px 1fr auto;
+      gap: 20px;
+      align-items: center;
+      padding: 20px 22px;
+      color: var(--ink);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 10px 28px rgba(23, 32, 42, 0.05);
+    }
+    .digest-card a:hover {
+      text-decoration: none;
+      border-color: #b9c7d8;
+      transform: translateY(-1px);
+    }
+    .card-date {
+      color: var(--green);
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+    .card-title {
+      font-size: 1.08rem;
+      font-weight: 700;
+    }
+    .card-action {
+      color: var(--accent);
+      font-size: 0.92rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .article-page main {
+      max-width: 900px;
+    }
+    .article-page h1 {
+      margin: 0 0 8px;
+      font-size: 2.7rem;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    .page-date {
+      margin: 0 0 30px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .article-page h2 {
+      font-size: 1.25rem;
+      margin: 42px 0 12px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
     p { margin: 10px 0; }
-    ul { padding-left: 22px; }
+    .article-page p { color: #243241; }
+    ul { padding-left: 24px; }
     li { margin: 8px 0; }
-    a { color: #0b57d0; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    .article-page li { padding-left: 2px; }
+    @media (max-width: 720px) {
+      .topbar { padding: 18px 16px 0; }
+      main { padding: 28px 16px 64px; }
+      .article-shell { padding: 30px 22px 44px; }
+      .hero { padding-top: 34px; }
+      .hero h1 { font-size: 2.5rem; }
+      .article-page h1 { font-size: 2rem; }
+      .section-heading {
+        display: block;
+      }
+      .section-heading p {
+        margin-top: 8px;
+        text-align: left;
+      }
+      .digest-card a {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        min-height: 0;
+      }
+      .card-action { white-space: normal; }
+    }
   </style>
 </head>
-<body>
+<body class="article-page">
+  <header class="topbar">
+    <a class="brand" href="index.html">播客简报</a>
+    <a class="nav-link" href="https://github.com/daisypku/public-pages/tree/main/docs/pod2wiki-reader">Public Pages</a>
+  </header>
   <main>
+<article class="article-shell">
+<p class="page-date">2026-05-27</p>
 <h1>播客简报 2026-05-27</h1>
 <h2>Prosus CEO: From Startup to Global Scale, Innovation and AI Transformation</h2>
 <p>来源：In Good Company with Nicolai Tangen</p>
@@ -76,6 +248,7 @@
 <li>预测修正与“强观点，弱联系”：面对市场的快速演变，戴宇森重申了其“强观点，弱联系”（Strong opinion, weak tie）的投资原则。他解释道，他之前对OpenAI收入增长的担忧，主要集中在C端用户的订阅制收费（提价困难、用户增长瓶颈）和广告/电商收入方面，这些判断在过去六个月中被证明是相对准确的。然而，他承认自己低估了AI在“服务收入”领域，特别是编码能力（如Claude 4.5/4.6带来的质变）所产生的巨大增长。这一变化导致大量用户开始频繁使用AI进行编程，极大地带动了token消耗。因此，他现在认为AI领域整体回调的时间线需要往后推迟。</li>
 <li>投资策略的调整：聚焦硬件瓶颈与长尾机会：戴宇森透露，他个人的投资风格更偏向交易员，而非长期基本面投资人，并视索罗斯的操盘手Stanley Druckenmiller为偶像。鉴于AI模型用量的大幅上涨，以及Meta、Google等公司内部全民使用AI、个人开发者大量消耗token的现象，他已重新加仓了一些“掐脖子”的硬件领域，如存储、GPU和CPU。尽管受到此前公开预测的心理影响，他未能像一些朋友那样积极加仓，但他强调硅谷目前普遍看好硬件，尤其是其中的瓶颈环节，这反映了市场对AI基础设施的强劲需求。</li>
 </ul>
+    </article>
   </main>
 </body>
 </html>

@@ -5,32 +5,204 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>播客简报 2026-05-26</title>
   <style>
-    :root { color-scheme: light; }
+    :root {
+      color-scheme: light;
+      --ink: #17202a;
+      --muted: #687385;
+      --line: #dfe5ec;
+      --paper: #ffffff;
+      --canvas: #f3f6f8;
+      --accent: #0b57d0;
+      --accent-soft: #e8f0fe;
+      --green: #0f766e;
+    }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.65;
-      color: #17202a;
-      background: #f7f8fa;
+      color: var(--ink);
+      background:
+        linear-gradient(180deg, #eef4f7 0, rgba(238, 244, 247, 0) 360px),
+        var(--canvas);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .topbar {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 22px 22px 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+    }
+    .brand {
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: 0;
+    }
+    .nav-link {
+      color: var(--muted);
+      font-size: 0.95rem;
     }
     main {
-      max-width: 880px;
+      max-width: 980px;
       margin: 0 auto;
-      padding: 40px 20px 72px;
-      background: #fff;
+      padding: 40px 22px 80px;
       min-height: 100vh;
     }
-    h1 { font-size: 2rem; margin: 0 0 28px; }
-    h2 { font-size: 1.25rem; margin: 36px 0 10px; padding-top: 16px; border-top: 1px solid #e7e9ee; }
+    .article-shell {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 44px 48px 64px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 18px 50px rgba(23, 32, 42, 0.08);
+    }
+    .hero {
+      padding: 52px 0 38px;
+      border-bottom: 1px solid var(--line);
+    }
+    .kicker {
+      margin: 0 0 12px;
+      color: var(--green);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      margin: 0;
+      max-width: 760px;
+      font-size: 4.4rem;
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+    .lede {
+      max-width: 650px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: end;
+      margin: 34px 0 18px;
+    }
+    .section-heading h2 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+    .section-heading p {
+      max-width: 420px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+      text-align: right;
+    }
+    .cards {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 12px;
+    }
+    .digest-card {
+      margin: 0;
+    }
+    .digest-card a {
+      min-height: 92px;
+      display: grid;
+      grid-template-columns: 150px 1fr auto;
+      gap: 20px;
+      align-items: center;
+      padding: 20px 22px;
+      color: var(--ink);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 10px 28px rgba(23, 32, 42, 0.05);
+    }
+    .digest-card a:hover {
+      text-decoration: none;
+      border-color: #b9c7d8;
+      transform: translateY(-1px);
+    }
+    .card-date {
+      color: var(--green);
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+    .card-title {
+      font-size: 1.08rem;
+      font-weight: 700;
+    }
+    .card-action {
+      color: var(--accent);
+      font-size: 0.92rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .article-page main {
+      max-width: 900px;
+    }
+    .article-page h1 {
+      margin: 0 0 8px;
+      font-size: 2.7rem;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    .page-date {
+      margin: 0 0 30px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .article-page h2 {
+      font-size: 1.25rem;
+      margin: 42px 0 12px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
     p { margin: 10px 0; }
-    ul { padding-left: 22px; }
+    .article-page p { color: #243241; }
+    ul { padding-left: 24px; }
     li { margin: 8px 0; }
-    a { color: #0b57d0; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    .article-page li { padding-left: 2px; }
+    @media (max-width: 720px) {
+      .topbar { padding: 18px 16px 0; }
+      main { padding: 28px 16px 64px; }
+      .article-shell { padding: 30px 22px 44px; }
+      .hero { padding-top: 34px; }
+      .hero h1 { font-size: 2.5rem; }
+      .article-page h1 { font-size: 2rem; }
+      .section-heading {
+        display: block;
+      }
+      .section-heading p {
+        margin-top: 8px;
+        text-align: left;
+      }
+      .digest-card a {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        min-height: 0;
+      }
+      .card-action { white-space: normal; }
+    }
   </style>
 </head>
-<body>
+<body class="article-page">
+  <header class="topbar">
+    <a class="brand" href="index.html">播客简报</a>
+    <a class="nav-link" href="https://github.com/daisypku/public-pages/tree/main/docs/pod2wiki-reader">Public Pages</a>
+  </header>
   <main>
+<article class="article-shell">
+<p class="page-date">2026-05-26</p>
 <h1>播客简报 2026-05-26</h1>
 <h2>How Cursor Trained Composer on Fireworks: Distributed Infrastructure for High-Performance RL</h2>
 <p>来源：Sequoia: Training Data</p>
@@ -43,6 +215,7 @@
 <li>全球分布式训练：突破资源限制与优化效率：面对难以找到大型连续集群的挑战，Cursor采取了全球分布式策略。训练核心在一个集群进行，而推理和RL环境则分布在全球多个小型集群上，甚至利用生产环境的非高峰时段GPU。这种异构性利用了不同组件对硬件需求的不同：训练需要高速互联，而推理则可接受更松散的连接和异构GPU。关键挑战在于如何高效传输模型权重（高达1TB）。解决方案是利用RL训练中权重变化通常是小幅增量的特性，开发了压缩算法，仅传输模型权重之间的“差值”（delta），将传输量减少20倍。配合分片上传下载等系统优化，确保了模型更新能在几分钟内完成，且推理服务中断时间极短，大幅降低了成本和对单一大型集群的依赖。</li>
 <li>MOE模型的数值稳定性挑战与对策：MOE（Mixture of Experts）模型的稀疏性给RL训练带来了独特的数值稳定性挑战。浮点运算的非确定性导致即使是相同模型版本，推理和训练时生成的对数概率也可能存在微小差异。这些差异在MOE模型中会被放大，因为门控层（gate layer）根据激活值选择专家，微小的数值波动可能导致选择完全不同的专家，从而使模型行为产生巨大分歧。RL对这种噪声非常敏感。为解决此问题，团队通过定制GPU内核、匹配量化级别等方法，确保运算顺序一致，将差异降至最低。对于MOE模型，还采用了“路由器回放”（router replay）技术，让推理过程将激活的专家信息传递给训练器，确保训练与推理的专家选择保持一致，避免了模型发散。</li>
 </ul>
+    </article>
   </main>
 </body>
 </html>
