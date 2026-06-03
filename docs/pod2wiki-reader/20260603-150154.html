@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>播客简报 2026-06-03</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17202a;
+      --muted: #687385;
+      --line: #dfe5ec;
+      --paper: #ffffff;
+      --canvas: #f3f6f8;
+      --accent: #0b57d0;
+      --accent-soft: #e8f0fe;
+      --green: #0f766e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+      color: var(--ink);
+      background:
+        linear-gradient(180deg, #eef4f7 0, rgba(238, 244, 247, 0) 360px),
+        var(--canvas);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 22px 80px;
+      min-height: 100vh;
+    }
+    .article-shell {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 44px 48px 64px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 18px 50px rgba(23, 32, 42, 0.08);
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 38px;
+      align-items: center;
+      padding: 42px 0 38px;
+      border-bottom: 1px solid var(--line);
+    }
+    .kicker {
+      margin: 0 0 12px;
+      color: var(--green);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      margin: 0;
+      max-width: 760px;
+      font-size: 4.4rem;
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+    .lede {
+      max-width: 650px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    .hero-art {
+      margin: 0;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      box-shadow: 0 18px 40px rgba(23, 32, 42, 0.1);
+    }
+    .hero-art img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    .article-postcard {
+      margin: 0 0 34px;
+      aspect-ratio: 3 / 2;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--canvas);
+    }
+    .article-postcard img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    .section-heading {
+      margin: 34px 0 18px;
+    }
+    .section-heading h2 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+    .cards {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 12px;
+    }
+    .digest-card {
+      margin: 0;
+    }
+    .digest-card a {
+      min-height: 92px;
+      display: grid;
+      grid-template-columns: 150px 1fr auto;
+      gap: 20px;
+      align-items: center;
+      padding: 20px 22px;
+      color: var(--ink);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 10px 28px rgba(23, 32, 42, 0.05);
+    }
+    .digest-card a:hover {
+      text-decoration: none;
+      border-color: #b9c7d8;
+      transform: translateY(-1px);
+    }
+    .card-date {
+      color: var(--green);
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+    .card-title {
+      font-size: 1.08rem;
+      font-weight: 700;
+    }
+    .card-action {
+      color: var(--accent);
+      font-size: 0.92rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .article-page main {
+      max-width: 900px;
+    }
+    .article-page h1 {
+      margin: 0 0 8px;
+      font-size: 2.7rem;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    .page-date {
+      margin: 0 0 30px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .article-page h2 {
+      font-size: 1.25rem;
+      margin: 42px 0 12px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+    p { margin: 10px 0; }
+    .article-page p { color: #243241; }
+    ul { padding-left: 24px; }
+    li { margin: 8px 0; }
+    .article-page li { padding-left: 2px; }
+    @media (max-width: 720px) {
+      main { padding: 28px 16px 64px; }
+      .article-shell { padding: 30px 22px 44px; }
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding-top: 34px;
+      }
+      .hero h1 { font-size: 2.5rem; }
+      .hero-art { max-width: 420px; }
+      .article-page h1 { font-size: 2rem; }
+      .digest-card a {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        min-height: 0;
+      }
+      .card-action { white-space: normal; }
+    }
+  </style>
+</head>
+<body class="article-page">
+  <main>
+<article class="article-shell">
+<p class="page-date">6月3日 周三</p>
+<figure class="article-postcard">
+  <img src="assets/postcards/20260603.jpg" width="960" height="640" decoding="async" alt="当日手绘城市明信片">
+</figure>
+<h1>播客简报 2026-06-03</h1>
+<h2>Bill Ackman: Investment Strategy, What the Market is Missing, How AI Breaks Businesses</h2>
+<p>来源：All-In with Chamath, Jason, Sacks &amp; Friedberg</p>
+<p>原链接：<a href="https://allinchamathjason.libsyn.com/bill-ackman-investment-strategy-what-the-market-is-missing-how-ai-breaks-businesses">https://allinchamathjason.libsyn.com/bill-ackman-investment-strategy-what-the-market-is-missing-how-ai-breaks-businesses</a></p>
+<p>这期播客提供了比尔·阿克曼（Bill Ackman）对其投资哲学演变、AI对商业模式的颠覆性影响、以及他如何通过“伯克希尔哈撒韦2.0”愿景重塑霍华德休斯公司的深度洞察，适合希望理解顶级投资者如何应对市场变化、评估颠覆性技术和构建长期价值的中文读者。</p>
+<ul>
+<li>投资哲学的演变：从激进到品质驱动：比尔·阿克曼的投资策略已从早期的纯粹激进主义，转向对“商业品质”的深刻理解，即追求长期、耐用、受保护且不易被颠覆的增长。他指出，随着管理资金规模的扩大，长期增长的重要性愈发凸显。虽然他仍是激进投资者，但如今更多通过社交媒体而非直接公司干预来表达观点，这得益于其日益增长的声誉和与企业高管的直接沟通渠道。早期他需“敲开大门”（如温蒂汉堡案例），现在则常被视为建设性股东而受到欢迎。他强调，最好的投资是那些无需董事会介入就能自然增值的公司。</li>
+<li>AI时代的颠覆与被低估的“老牌”巨头：阿克曼认为，AI技术极大地提升了企业面临的颠覆风险，这成为投资者评估公司时最困难也最关键的任务。他指出，市场往往追逐“新事物”（如芯片、半导体），导致一些高质量的“老牌”公司被低估，例如他持有的微软、Meta和亚马逊。他将其与2000年互联网泡沫时期伯克希尔哈撒韦被低估的情况类比。对于SaaS公司，他认为需进行细致分析，那些提供利基产品并收取高额费用的公司风险最大，而像微软这样拥有庞大用户基础和低客单价的平台则更具韧性。</li>
+<li>CEO们如何应对AI挑战与早期实践：阿克曼观察到，美国所有CEO都将AI视为首要关注点，既是巨大机遇也是潜在威胁。他们积极寻找内部AI倡导者或从外部招聘人才，董事会也密切关注AI战略。然而，他坦言目前尚未看到大型企业在AI应用上取得显著成功，多数仍处于早期探索阶段，例如Pershing Square自身也仅在法律合规等后台功能上初步应用AI。他认为，当前最大的挑战在于如何弥合AI承诺与实际投资回报之间的差距，将AI技术有效部署到业务中。</li>
+<li>风险投资视角下的高增长公司估值：对于像SpaceX、Palantir和OpenAI这类高增长公司，阿克曼建议采用风险投资的评估框架，重点关注“人、机会、背景、交易”。他高度评价埃隆·马斯克在SpaceX的领导力及其在低成本太空发射领域的近乎垄断地位。他认为，在AI时代，“时间”的价值被放大。尽管这些公司已非早期初创，具备可观营收，但其高估值仍需从长远潜力而非传统盈利模型来审视。他也指出OpenAI在资本投入与营收之间的平衡需要更清晰的解释。</li>
+<li>创始人领导力：穿越变革周期的关键优势：阿克曼强调，创始人领导的公司在应对快速变化的环境中具有显著优势。与平均任期短、更关注短期业绩和避免犯错的职业CEO不同，创始人拥有公司的巨大经济利益和声誉，这赋予他们做出激进决策的权威和动力。他以马克·扎克伯格收购Instagram和WhatsApp为例，说明成功的创始人往往能做出许多在当时看来大胆但事后证明正确的关键决策，从而带领公司穿越变革周期，实现长期增长。</li>
+</ul>
+<h2>Snap CEO: Building Snapchat, AR Glasses and the Future of Communication</h2>
+<p>来源：In Good Company with Nicolai Tangen</p>
+<p>原链接：<a href="https://shows.acast.com/in-good-company-with-nicolai-tangen/episodes/snap-ceo-building-snapchat-ar-glasses-and-the-future-of-comm">https://shows.acast.com/in-good-company-with-nicolai-tangen/episodes/snap-ceo-building-snapchat-ar-glasses-and-the-future-of-comm</a></p>
+<p>这期播客深入探讨了Snapchat的创立历程、创新哲学、未来战略以及CEO埃文·斯皮格尔的领导力演变。对于渴望了解科技公司如何从“荒谬”想法起步、在激烈竞争中保持创新、并对未来计算形态进行长期押注的创业者、产品经理以及关注数字时代沟通与隐私的读者来说，这是一份极具启发性的深度纪要。</p>
+<ul>
+<li>Snapchat的诞生与核心理念：隐私与真实表达：Snapchat的诞生源于埃文·斯皮格尔和鲍比·墨菲对传统社交媒体的反思。他们发现，在一切都被永久保存、公开展示的社交环境中，人们倾向于发布完美、精心策划的内容，而非真实的情绪和体验。因此，他们构想了一个“阅后即焚”的照片分享应用，旨在创造一种基于视觉信息、注重隐私和自我表达的沟通方式。尽管最初的想法被许多人视为荒谬，但斯皮格尔坚信，隐私是自我表达的基础，只有在没有被记录和公开传播的担忧下，人们才能真正自在地与亲友交流。这一核心理念至今仍是Snapchat服务的基石，即使其功能已扩展到地图、AR滤镜和内容平台，点对点的视觉信息沟通依然是其核心价值。</li>
+<li>从早期挫折到坚定信念：拒绝巨额收购的勇气：Snapchat的创业之路并非一帆风顺。斯皮格尔和墨菲的第一个项目“Future Freshman”彻底失败，只有斯皮格尔的母亲注册使用。然而，这些早期反馈让他们学会了倾听用户。当Snapchat（最初名为Picaboo）推出一年后，尽管规模尚小，但他们发现自己和朋友们都非常喜欢使用它，这种发自内心的热爱和对产品潜力的信念，成为他们坚持下去的最大动力。正是这种信念，让他们在公司早期毅然拒绝了马克·扎克伯格高达30亿美元的收购要约。斯皮格尔认为，他们拥有一个独特且与传统社交媒体截然不同的愿景，即专注于亲密朋友和家人之间的沟通与自我表达，这让他们有勇气追求自己的长期目标。</li>
+<li>Snap的创新文化与产品迭代：以“故事”为例：Snap的创新能力源于其独特的企业文化。斯皮格尔强调，公司必须营造一个让好想法可以来自任何地方、创意优先于层级的环境。为此，Snap保持了一个非常精简的设计团队（约9人），采用扁平化结构，鼓励快速迭代和承担风险。他们每周审阅数百个想法，并致力于创造一个奖励创造力和冒险精神的文化。以“故事”（Stories）功能为例，它并非凭空而来，而是源于用户对“一键发送给所有人”的需求。Snap团队深入分析了用户对传统社交媒体的痛点（如逆序时间线、公开点赞评论压力、个人资料无法反映当下），最终设计出24小时后消失、无公开点赞评论、按时间顺序排列的“故事”功能，尽管初期接受度不高，但最终取得了巨大成功。</li>
+<li>应对竞争与构建护城河：AR的战略意义：面对竞争对手的频繁模仿（如Instagram复制Stories，TikTok借鉴短视频模式，WhatsApp引入阅后即焚），斯皮格尔认为这总比想法无人问津要好。然而，这也迫使Snap必须深思熟虑如何构建长期业务护城河，保持韧性。他指出，构建一个生态系统远比复制一个应用功能要困难得多。因此，Snap将增强现实（AR）视为其最重要的未来投资和核心竞争力。通过构建全球最大的AR平台和先进的开发者工具，Snap旨在创造一个难以被模仿的生态系统，从而在激烈的市场竞争中保持领先地位，确保公司的长期价值和可持续发展。</li>
+<li>押注未来：AR眼镜的长期愿景与挑战：Snap目前最大的赌注是AR眼镜（Spectacles），目前已迭代至第五代。斯皮格尔坚信世界已为此做好准备，因为人们厌倦了长时间盯着屏幕，渴望将计算融入现实世界，并与朋友分享共同的计算体验。他认为，Snap之所以能在此领域取得成功，在于其独特的客户洞察力、对产品体验的专注，以及长达12年对AR愿景的持续、专注投资，避免了其他公司在消费者和企业市场之间反复摇摆的短期行为。硬件开发周期远长于软件，Snap已规划至2030年，目标是在本十年末推出面向大众市场的AR眼镜，并预计未来三到五年内Snapchat用户将突破10亿，实现收入多元化。</li>
+</ul>
+<h2>Dara Khosrowshahi - Uber&#x27;s Bet on AVs, AI, and Building a Super-App - [Invest Like the Best, EP.476]</h2>
+<p>来源：Invest Like the Best</p>
+<p>原链接：<a href="https://colossus.com/episode/order-out-of-chaos/">https://colossus.com/episode/order-out-of-chaos/</a></p>
+<p>这期播客深入探讨了Uber CEO Dara Khosrowshahi如何从混乱中带领公司走向盈利，并展望了其在自动驾驶（AV）、人工智能（AI）和超级应用构建上的宏大愿景。对于关注科技巨头转型、领导力挑战以及未来出行和物流行业发展趋势的中文读者，本期节目提供了宝贵的洞察。</p>
+<ul>
+<li>从Expedia到Uber：为“影响力”而非“幸福”：Dara Khosrowshahi在Expedia担任CEO长达13年，对现状非常满意。然而，2017年Uber深陷丑闻和管理层动荡，猎头联系他时，他最初断然拒绝。是Spotify创始人Daniel Ek的一句话——“人生不是为了幸福，而是为了影响力”——触动了他。Ek认为Uber作为一家对世界有巨大影响力的公司，正处于困境，Dara应该承担起这份责任。Dara回忆，当时Uber内部外部都一片混乱，董事会内斗，管理团队不稳定，业务竞争激烈。但他被Uber改变世界出行方式的潜力所吸引，最终决定接受挑战，寻求更大的影响力。</li>
+<li>从混乱中建立秩序：简化问题与个人韧性：面对Uber的全面混乱，Dara采取了“向量数学”式的解决策略：将看似无法逾越的复杂问题分解成独立的维度，逐一攻克。他首先重组董事会，引入新主席Ron Sugar，将焦点从权力斗争转向公司命运。其次，他通过“倾听之旅”重建与监管机构和公众的信任，并积极沟通。最后，他重塑管理团队，保留优秀人才并引入新血。Dara认为，这种化整为零的方法能将混沌转化为可解决的小问题。他个人应对压力的能力源于童年经历：9岁时随家人从伊朗移民美国，失去一切后又重建。这段经历让他学会不被外部环境所击垮，以工程师思维看待问题，专注于解决而非过度担忧。</li>
+<li>AI赋能：从数字到物理世界的效率革命：Dara强调，Uber作为一家“AI原生”或“ML原生”公司，早已在业务中广泛应用AI工具。当前，AI的崛起带来了前所未有的变革速度。在数字层面，Uber正构建规模更大的模型，以更精准地预测用户需求，实现跨服务（打车、外卖、杂货）的通用搜索，目前已能三-四分之三的概率预测用户目的地。在物理层面，自动驾驶汽车（AV）和无人机等“物理AI”将彻底改变服务交付方式。面对AI高昂的成本，Uber采取了平衡策略：初期使用昂贵的前沿模型进行探索和实验，一旦体验成熟并需要规模化，则转向更高效、低成本的开源模型。目标是利用AI提升效率，降低成本，最终惠及乘客和司机，尽管Uber目前已实现100亿美元的自由现金流，但其本质仍是低利润业务。</li>
+<li>自动驾驶的“供给为王”策略与生态系统构建：Uber将自身定位为一家“供给主导型公司”——拥有越多的司机、餐厅、商家，就能激发越多的潜在需求。这一理念同样适用于自动驾驶领域。Uber不寻求成为唯一的AV技术开发者，而是与Waymo、Nuro、Nvidia等30多家合作伙伴建立广泛联盟，成为AV服务的“需求聚合者”。Uber为这些合作伙伴提供市场准入、数据反馈、车队管理（充电、维修）、融资（与桑坦德银行合作提供10亿美元EV/AV车队融资）和保险等全方位生态系统支持。数据显示，接入Uber网络的AV车辆利用率比非网络车辆高出30%以上，这极大地提升了AV投资回报率。Dara认为，AV的“魔力”会很快常态化，关键在于安全、高效和可负担性，让AV服务普惠大众。</li>
+<li>AVs的挑战：社会接受度与竞合关系：Dara认为，自动驾驶最大的潜在风险并非技术本身，而是社会接受度。尽管AVs将比人类驾驶更安全高效，但公众对AI可能带来的失业、高昂成本以及与紧急服务交互等问题存在担忧。Uber必须与监管机构、城市居民和司机进行对话，以社会可接受的速度推进。早期数据显示，AVs在奥斯汀和亚特兰大反而增加了平台需求和司机收入，但仍需谨慎沟通。在与Waymo等既是合作伙伴又是潜在竞争对手的公司关系上，Dara借鉴了旅游业和外卖行业的经验：平台与供应商之间存在竞合关系。供应商需要平台带来增量需求和更高的利用率，即使他们也在建立自己的直销渠道。Uber的目标是成为最大的AV供给聚合者，通过多元化的商业模式实现共存共赢。</li>
+</ul>
+<h2>Proven, Better, New: Mark Pincus on the Rules of Product Innovation</h2>
+<p>来源：The Knowledge Project</p>
+<p>原链接：<a href="https://fs.blog/knowledge-project-podcast/mark-pincus/">https://fs.blog/knowledge-project-podcast/mark-pincus/</a></p>
+<p>这期播客深入探讨了Zynga创始人马克·平卡斯（Mark Pincus）在产品创新、创业历程和个人成长中的独特见解与硬核智慧，对于寻求突破性产品思路、应对创业挑战以及培养坚韧领导力的创始人、产品经理和职场人士都极具启发性。</p>
+<ul>
+<li>产品创新的核心：寻找“热度”与满足深层需求：马克·平卡斯认为，伟大的消费产品能够触及人类内心深处的本能或未被满足的需求，带来一种“魔力般的解锁体验”。这种魔力往往出现在人们最不抱希望、最愤世嫉俗的地方。他强调，判断一个产品是否有潜力，要寻找真正的“热度”（Heat），这是一种无需数据证明、直觉上就能感受到的强烈信号，就像坠入爱河一样。如果需要大量统计数据来验证，那往往不是真正的信号。在产品开发中，他主张采取“进攻”心态，思考“如果一切顺利会怎样”，而不是从“如果一切出错会怎样”开始，因为后者意味着在起跑线前就已认输。</li>
+<li>早期经历塑造的“不可雇佣”特质：平卡斯早年在家中就展现出对规则的挑战精神，他父亲甚至会修改游戏规则以增加维度。他与父亲的冲突，以及在大学期间的独立选择，都预示了他未来不羁的创业之路。在TCI（约翰·马龙的公司）和贝恩咨询的经历进一步印证了他的“不可雇佣”特质：他宁愿诚实表达自己的观点，也不愿迎合面试官或上司。例如，他曾建议马龙收购AOL而非Prodigy，并直言某公司股票应被做空；在贝恩，他甚至推翻了公司合伙人米特·罗姆尼提出的核心理论。这些经历让他意识到自己不适合传统雇佣关系，但这些特质也为他日后的创新奠定了基础。</li>
+<li>“生命之书”与自我掌控的转折点：28岁时，平卡斯感到事业停滞，人生陷入低谷。他在犹太教堂反思，决定从戒烟这一小步开始，重新掌控自己的生活。这次经历促使他形成了每年撰写“生命之书”的习惯，通过战略性思考和自我问责，规划未来一年，并为未来的自己做出艰难但有益的决定。这种自律和前瞻性思维，不仅帮助他摆脱了困境，也促成了他与尼尔·保罗（Neil Paul）共同创立Freeloader，该公司最终以3800万美元的价格售出。平卡斯强调，创业成功与失败之间仅一线之隔，创始人不应被初期的失败所定义，而应保持积极的“进攻”心态。</li>
+<li>Tribe的失败与“久经考验、更好、新颖”框架：平卡斯从社交网络Tribe的失败中汲取了深刻教训。他认识到，创始人的直觉往往是正确的，但具体的“想法”却常常是错误的。Tribe虽然拥有“鸡尾酒派对”般的社交直觉，但在信任模型上犯了根本性错误，导致用户留存率极低，如同“漏水的快艇”。当时，尽管他看到了Friendster的成功，但受限于“不抄袭”的行业文化和个人自尊，他未能及时调整方向。这段经历促使他发展出“久经考验、更好、新颖”（Proven, Better, New）的产品创新框架：首先，大胆借鉴并合法复制已被市场验证的成功元素，成为该领域的“博士”，深入理解其运作原理；其次，专注于改进用户普遍认为有缺陷的方面，例如Zynga Poker通过“无需下载”解决了用户痛点，这是一种统计学上可验证的“更好”；最后，承认“所有新事物都会失败，直到它不再失败”，因此要以原子化的方式，测试大量微小的新颖点，并假设它们会失败，直到找到真正有效的。</li>
+<li>“深渊”与Zynga的崛起：在Tribe失败后，平卡斯再次陷入了创业者常经历的“深渊”——一个没有结构、充满不确定性的黑暗时期，他感到自己“不可雇佣”，不知道下一个“真正的事业”在哪里。然而，他清晰地认识到自己的“为什么”：为世界创造能打动人心的产品。正是这种内在驱动力，让他从一个看似“没有尊严”的Facebook小游戏——Zynga Poker——重新开始。他将游戏市场视为一个尚未被充分开发的“未启动”市场，如同谷歌出现前的搜索引擎。Zynga的目标是为大众市场而非核心玩家制作社交游戏，提供低时间投入、高社交价值的体验，并通过虚拟商品和应用内购买实现盈利，而非广告。Zynga Poker的成功，以及后来FarmVille的爆发，证明了这一模式的巨大潜力，尽管当时他已41岁，仍面临着来自投资人对其创业雄心的质疑。</li>
+</ul>
+<h2>167: 洋葱学园杨临风：用AI制造捷径，是在杀死真学习</h2>
+<p>来源：晚点聊 LatePod</p>
+<p>原链接：<a href="https://podcast.latepost.com/167">https://podcast.latepost.com/167</a></p>
+<p>这期播客深入探讨了洋葱学园创始人杨临风对“真学习”的深刻理解，以及在AI时代如何通过技术赋能而非取代学习过程。它适合所有关注教育本质、技术与学习关系，以及如何培养孩子自学能力的家长、教育工作者和科技从业者。</p>
+<ul>
+<li>洋葱学园的诞生：从公益支教到教育科技：洋葱学园的创立源于杨临风及其团队在2010年大学期间的支教经历。他们发现，尽管国家对乡村学校硬件投入充足，但教学方式仍旧传统，师生互动不足，导致教育质量差距显著。受可汗学院等国外教育科技的启发，团队开始尝试将有趣的互动学习内容和视频引入乡村，帮助学生自学。2011年，他们在甘肃武威启动了首个试点项目。随着实践深入，团队意识到要实现教育体验的规模化和可持续性，仅靠公益募捐难以支撑跨界人才团队的建设和高昂的产品研发投入。因此，2013年底，洋葱学园决定以公司形式运营，确立了通过商业模式开发优质产品，并无偿向贫困乡村地区开放的社会责任原则，这一承诺至今未变。</li>
+<li>自学能力的核心与挑战：理解而非死记硬背：杨临风认为，中学阶段的大部分知识，对于正常水平的学生而言都是可以理解的。学生学不懂，往往并非因为“笨”或“不努力”，而是知识传递过程不合理、不科学。洋葱学园的核心目标是优化学习过程，使其更符合学生的认知规律。这首先体现在如何以简单、清晰的方式重构知识讲解，梳理来龙去脉，帮助学生达成深刻理解。其次，人与内容的互动至关重要，好的内容不仅要有吸引力，更要能引导学生，将所学知识与日常生活建立关联。洋葱学习App正是为此而生，旨在提供一个能帮助学生快速吃透课堂难点的工具。</li>
+<li>商业模式与社会责任：可持续发展的教育普惠：洋葱学园从一开始就明确，它必须是一个健康且可持续的生意，但绝不能仅仅是一个生意。其商业模式的核心在于通过市场化运作，吸引付费用户，从而获得足够的资金来投入产品研发和团队建设。同时，公司承诺将所有产品无偿免费地向符合国家贫困标准的乡村地区开放，无论是学生、老师还是学校，只要有需求，都能免费使用洋葱学园的优质教育资源。这种“以商养善”的模式，确保了优质教育内容能够持续迭代，并惠及更广泛的教育资源匮乏地区，实现了教育普惠的初心。</li>
+<li>AI时代下的学习观：培养“我能行”的自驱力：在人工智能时代，杨临风强调每个人都需要建立一种“我能行”的信念。他认为，技术的可得性意味着当学生在课堂上遇到不理解的知识点时，应该能够借助工具（如洋葱学园的App）在短时间内快速掌握。然而，他警示，如果AI被简单地用来制造学习“捷径”，例如直接给出答案或跳过思考过程，那实际上是在“杀死真学习”。真正的学习是主动思考、探索和理解的过程，AI应作为辅助工具，帮助学生更好地驾驭自学，而非剥夺他们深度学习的机会，让学习回归其本来面目。</li>
+<li>中国教育的特殊性与洋葱的实践：杨临风指出，相较于国外，中国的基础教育内容普遍更难，这对学生的自学能力提出了更高要求。洋葱学园的产品设计正是为了应对这一挑战，通过其独特的动画视频内容和互动学习体验，降低自学门槛，让更多学生能够亲近并爱上学习。经过近十三年的发展，洋葱学园已在全国积累了约1.3亿中小学生用户，覆盖了全国三分之一的中小学生，同时拥有400万注册教师用户，在学校教师群体中也广受欢迎。这表明其以学生为中心、强调理解和互动的教学方法，在中国教育环境中取得了显著的实践成果和广泛认可。</li>
+</ul>
+    </article>
+  </main>
+</body>
+</html>
