@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>播客简报 2026-06-05</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17202a;
+      --muted: #687385;
+      --line: #dfe5ec;
+      --paper: #ffffff;
+      --canvas: #f3f6f8;
+      --accent: #0b57d0;
+      --accent-soft: #e8f0fe;
+      --green: #0f766e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+      color: var(--ink);
+      background:
+        linear-gradient(180deg, #eef4f7 0, rgba(238, 244, 247, 0) 360px),
+        var(--canvas);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 22px 80px;
+      min-height: 100vh;
+    }
+    .article-shell {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 44px 48px 64px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 18px 50px rgba(23, 32, 42, 0.08);
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 38px;
+      align-items: center;
+      padding: 42px 0 38px;
+      border-bottom: 1px solid var(--line);
+    }
+    .kicker {
+      margin: 0 0 12px;
+      color: var(--green);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      margin: 0;
+      max-width: 760px;
+      font-size: 4.4rem;
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+    .lede {
+      max-width: 650px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    .hero-art {
+      margin: 0;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      box-shadow: 0 18px 40px rgba(23, 32, 42, 0.1);
+    }
+    .hero-art img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    .article-postcard {
+      margin: 0 0 34px;
+      aspect-ratio: 3 / 2;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--canvas);
+    }
+    .article-postcard img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    .section-heading {
+      margin: 34px 0 18px;
+    }
+    .section-heading h2 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+    .cards {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 12px;
+    }
+    .digest-card {
+      margin: 0;
+    }
+    .digest-card a {
+      min-height: 92px;
+      display: grid;
+      grid-template-columns: 150px 1fr auto;
+      gap: 20px;
+      align-items: center;
+      padding: 20px 22px;
+      color: var(--ink);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 10px 28px rgba(23, 32, 42, 0.05);
+    }
+    .digest-card a:hover {
+      text-decoration: none;
+      border-color: #b9c7d8;
+      transform: translateY(-1px);
+    }
+    .card-date {
+      color: var(--green);
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+    .card-title {
+      font-size: 1.08rem;
+      font-weight: 700;
+    }
+    .card-action {
+      color: var(--accent);
+      font-size: 0.92rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .article-page main {
+      max-width: 900px;
+    }
+    .article-page h1 {
+      margin: 0 0 8px;
+      font-size: 2.7rem;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    .page-date {
+      margin: 0 0 30px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .article-page h2 {
+      font-size: 1.25rem;
+      margin: 42px 0 12px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+    p { margin: 10px 0; }
+    .article-page p { color: #243241; }
+    ul { padding-left: 24px; }
+    li { margin: 8px 0; }
+    .article-page li { padding-left: 2px; }
+    @media (max-width: 720px) {
+      main { padding: 28px 16px 64px; }
+      .article-shell { padding: 30px 22px 44px; }
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding-top: 34px;
+      }
+      .hero h1 { font-size: 2.5rem; }
+      .hero-art { max-width: 420px; }
+      .article-page h1 { font-size: 2rem; }
+      .digest-card a {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        min-height: 0;
+      }
+      .card-action { white-space: normal; }
+    }
+  </style>
+</head>
+<body class="article-page">
+  <main>
+<article class="article-shell">
+<p class="page-date">6月5日 周五</p>
+<figure class="article-postcard">
+  <img src="assets/postcards/20260605.jpg" width="960" height="640" decoding="async" alt="当日手绘城市明信片">
+</figure>
+<h1>播客简报 2026-06-05</h1>
+<h2>Thomas Laffont: The $4T AI IPO Wave, 2026&#x27;s Unicorn Economy, and the 10X Paradox</h2>
+<p>来源：All-In with Chamath, Jason, Sacks &amp; Friedberg</p>
+<p>原链接：<a href="https://allinchamathjason.libsyn.com/thomas-laffont-the-4t-ai-ipo-wave-2026s-unicorn-economy-and-the-10x-paradox">https://allinchamathjason.libsyn.com/thomas-laffont-the-4t-ai-ipo-wave-2026s-unicorn-economy-and-the-10x-paradox</a></p>
+<p>本期播客由Coatue Management的Thomas Laffont带来，他通过详实的数据和独特的视角，深入剖析了当前由AI驱动的独角兽经济的健康状况、市场集中趋势、超大型私有公司的估值逻辑及即将到来的IPO浪潮。对于关注科技投资、创业生态以及AI如何重塑全球经济的投资者、企业家和科技爱好者来说，这是一份极具洞察力的深度纪要。</p>
+<ul>
+<li>独角兽经济的复苏与AI的集中效应：自2024年9月以来，独角兽经济平均增长了70%，公共市场也呈现出类似的上涨势头。AI正主导着融资市场，其在总融资额中的份额持续增长。然而，融资结构发生了变化：独角兽数量减少，但每家公司获得的资金量是2021年的5倍。这表明资金正高度集中于少数头部公司。对比不同时期的独角兽群体，ZIRP（零利率政策）时代前（2021年前）的73家独角兽中，80%在成为独角兽20个季度内完成了新一轮融资或退出。而2021年的479家独角兽中，同期完成融资或退出的比例不足20%。当前2024年的AI独角兽群体将更接近哪种模式，是未来关注的焦点。资金不仅流向AI领域，更集中在极少数顶尖AI公司，如Anthropic和OpenAI，它们正在进行大规模融资。</li>
+<li>“壮丽八巨头”与万亿美元IPO浪潮：Thomas Laffont提出了一个由八家公司组成的“壮丽八巨头”指数，包括SpaceX、Stripe、Anthropic、DataBricks、Revolut、ByteDance和Anduril等，它们代表了近4万亿美元的价值，并已超越传统的“七巨头”指数。这些公司涵盖了互联网、AI、金融科技和太空科技等多元领域，展现出惊人的业绩。独角兽经济的退出活动正在增加，预示着生态系统现金消耗与回报之间的平衡正在改善。特别是SpaceX、Anthropic（已秘密提交S1文件）等公司的即将上市，其总价值预计将超过过去十年所有公司IPO的总和。OpenAI和Anthropic的增长速度前所未有，预计到今年底可能超越AWS，甚至到2028年可能超越整个微软。这些超大规模公司不仅看到了颠覆，还在积极投资推动这种变革。</li>
+<li>SpaceX的估值逻辑与商业模式演进：SpaceX的估值与发射频率呈正相关，这符合直觉。然而，更深层次的洞察是，其“每发射估值”也在持续上升，这似乎反直觉。Coatue的“Co-tour”框架解释了这一现象：SpaceX的商业模式质量随着发射次数的增加而提升。在第一阶段（预星座时代），公司主要进行火箭测试，客户多为政府，收入一次性且不可预测。进入第二阶段（初始扩张），SpaceX开始建立单一星座（如Starlink），形成经常性收入模式，卫星越多，订阅用户越多，收入也随之增长。最终，公司将进入第三阶段（规模化），拥有多个星座，并演变为一个平台。平台不仅拥有更多核心业务客户，还能拓展新的业务，如太空数据中心、月球和火星应用等，从而创造巨大的平台价值。</li>
+<li>10倍增长悖论与价值创造的速度：研究数据显示，公司实现10倍增长的概率呈现出反直觉的模式：独角兽（估值超10亿美元）成长为十角兽（超100亿美元）的概率约为8%；十角兽成长为百角兽（超1000亿美元）的概率为8-13%。然而，一旦公司达到百角兽规模，其实现10倍增长的概率却高达31%。这表明，一旦公司达到巨大规模，其持续增长和价值创造的韧性反而更强。当前市场中，价值创造的速度也令人惊叹，过去需要数年才能从5000亿美元市值增长到1万亿美元，现在有公司在短短几周内就能完成。以半导体公司Cerebras为例，它经历了漫长的研发和“黑暗时期”，在没有新资本注入的情况下坚持多年，最终凭借与OpenAI的大合同实现价值爆发，这体现了半导体行业在AI时代巨大的爆发潜力。</li>
+<li>AI的收入来源与对经济的全面影响：AI生态系统的规模正在迅速扩张，预计当前约为1400亿美元，今年将达到3000亿美元，并在2027年翻倍。其主要收入来源分为三大支柱：消费者市场（通过订阅模式和每用户平均收入）、广告市场（Meta和Google约四分之一的广告已由AI驱动，预计最终将达到100%，贡献1500亿美元）以及企业级市场（通过云代码和Codex等工具）。AI的颠覆性影响正渗透到几乎所有经济领域。例如，电信业将因Starlink的全球通话能力而重塑；计算领域推动半导体和数据中心能源格局的巨变；汽车行业面临电动化和自动驾驶的挑战；消费领域则受到GLP-1药物对饮食习惯和健康观念的深刻影响。AI系统对用户了解越深，其提供的服务越有用，这将导致对内存的需求激增，从而推动内存芯片公司的发展。</li>
+</ul>
+<h2>HIGHLIGHTS: Evan Spiegel - CEO of Snap</h2>
+<p>来源：In Good Company with Nicolai Tangen</p>
+<p>原链接：<a href="https://shows.acast.com/in-good-company-with-nicolai-tangen/episodes/highlights-evan-spiegel-ceo-of-snap">https://shows.acast.com/in-good-company-with-nicolai-tangen/episodes/highlights-evan-spiegel-ceo-of-snap</a></p>
+<p>这期播客深入探讨了Snapchat创始人埃文·斯皮格尔的创业历程、产品哲学、创新文化以及对未来科技（AR、AI）和领导力发展的独到见解，适合对社交媒体演变、科技创新和企业管理感兴趣的听众。</p>
+<ul>
+<li>Snapchat的诞生：反思传统社交媒体：埃文·斯皮格尔指出，他与联合创始人鲍比·墨菲在传统社交媒体环境下长大，发现其“永久保存、公开、竞争性”的特点导致人们只分享“完美”瞬间，而非真实情感和体验。这促使他们构思了“阅后即焚”的照片分享应用Picaboo（后来的Snapchat），旨在创造一种以视觉信息为核心的全新沟通方式，专注于亲密的朋友和家人之间的交流与自我表达。尽管早期尝试如“Future Freshman”以失败告终，但Snapchat的核心理念——即时、私密、真实——奠定了其独特的基础，并在此后发展出地图、AR滤镜、故事和Spotlight等功能，但其核心始终是朋友间的视觉信息传递。</li>
+<li>拒绝30亿美元：坚守长期愿景：面对马克·扎克伯格30亿美元的收购要约，斯皮格尔选择拒绝。他解释说，这一决定源于他们对所做事业的热爱，以及对Snapchat独特愿景的坚定信念。他们预见到一个巨大的长期机会，相信其专注于亲密关系、信息传递和自我表达的模式，与传统社交媒体截然不同。尽管当时Snapchat规模尚小，但他们坚信这种模式能够触达全球近十亿用户，并创造持久价值。这种对愿景的执着和对事业的热爱，是他们拒绝短期巨额回报，选择独立发展的重要原因。</li>
+<li>培育创新文化：扁平化与风险承担：Snapchat在消失信息、故事、AR滤镜等方面的创新备受瞩目。斯皮格尔认为，成功的关键在于建立一种鼓励创意无处不在、思想优先于层级的文化。他观察到，随着公司规模扩大，人们往往更关注晋升和金钱，而非承担风险。为对抗这种趋势，Snapchat维持了一个非常小的（约9人）扁平化设计团队，没有花哨的头衔，鼓励快速迭代和尝试新事物，每周审查数百个想法。这种文化旨在奖励创造力和冒险精神，而非仅仅是职位晋升，从而持续激发创新活力。</li>
+<li>AR眼镜：计算的未来与现实世界的融合：斯皮格尔将增强现实（AR）眼镜视为Snapchat的未来核心押注，并坚信世界已为此做好准备。他指出，人们对长时间盯着手机和电脑屏幕感到厌倦，认为这些设备将他们从现实世界和亲友身边抽离。然而，技术本身又如此有用。Spectacles（AR眼镜）旨在从根本上改变计算方式，将计算融入周围世界，让用户能与朋友在同一地点、同一时间共享计算体验。这代表了计算技术的一个全新方向，满足了人们长期以来的需求，而现在技术终于成熟。</li>
+<li>AI对组织结构与管理模式的颠覆：斯皮格尔预见人工智能将极大地提升管理者的效率，自动化大部分日常管理工作。例如，AI系统可以帮助管理者实时了解团队成员的工作进展，收集同伴反馈，并生成可操作的建议，而无需耗费大量精力。他认为，职业规划、职业对话、反馈等日常管理任务将在不久的将来实现自动化，从而解放管理者，让他们能更专注于“领导”而非“管理”。这将显著增加管理者能够直接领导的下属数量，甚至可能使传统上7-10人的管理幅度翻倍。</li>
+</ul>
+<h2>Alex Imas and Phil Trammell – What remains scarce after AGI?</h2>
+<p>来源：Dwarkesh Podcast</p>
+<p>原链接：<a href="https://www.dwarkesh.com/p/alex-imas-phil-trammell">https://www.dwarkesh.com/p/alex-imas-phil-trammell</a></p>
+<p>材料不足：这期需要 transcript 或更完整正文后再做全篇摘要。</p>
+<ul>
+<li>当前只有节目简介或网页正文；这是播客音频，必须获取 transcript 后才算读完整期。</li>
+</ul>
+    </article>
+  </main>
+</body>
+</html>
