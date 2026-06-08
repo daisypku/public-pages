@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>播客简报 2026-06-08</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17202a;
+      --muted: #687385;
+      --line: #dfe5ec;
+      --paper: #ffffff;
+      --canvas: #f3f6f8;
+      --accent: #0b57d0;
+      --accent-soft: #e8f0fe;
+      --green: #0f766e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+      color: var(--ink);
+      background:
+        linear-gradient(180deg, #eef4f7 0, rgba(238, 244, 247, 0) 360px),
+        var(--canvas);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 22px 80px;
+      min-height: 100vh;
+    }
+    .article-shell {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 44px 48px 64px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 18px 50px rgba(23, 32, 42, 0.08);
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 38px;
+      align-items: center;
+      padding: 42px 0 38px;
+      border-bottom: 1px solid var(--line);
+    }
+    .kicker {
+      margin: 0 0 12px;
+      color: var(--green);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      margin: 0;
+      max-width: 760px;
+      font-size: 4.4rem;
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+    .lede {
+      max-width: 650px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    .hero-art {
+      margin: 0;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      box-shadow: 0 18px 40px rgba(23, 32, 42, 0.1);
+    }
+    .hero-art img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    .article-postcard {
+      margin: 0 0 34px;
+      aspect-ratio: 3 / 2;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--canvas);
+    }
+    .article-postcard img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    .section-heading {
+      margin: 34px 0 18px;
+    }
+    .section-heading h2 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+    .cards {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 12px;
+    }
+    .digest-card {
+      margin: 0;
+    }
+    .digest-card a {
+      min-height: 92px;
+      display: grid;
+      grid-template-columns: 150px 1fr auto;
+      gap: 20px;
+      align-items: center;
+      padding: 20px 22px;
+      color: var(--ink);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 10px 28px rgba(23, 32, 42, 0.05);
+    }
+    .digest-card a:hover {
+      text-decoration: none;
+      border-color: #b9c7d8;
+      transform: translateY(-1px);
+    }
+    .card-date {
+      color: var(--green);
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+    .card-title {
+      font-size: 1.08rem;
+      font-weight: 700;
+    }
+    .card-action {
+      color: var(--accent);
+      font-size: 0.92rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .article-page main {
+      max-width: 900px;
+    }
+    .article-page h1 {
+      margin: 0 0 8px;
+      font-size: 2.7rem;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    .page-date {
+      margin: 0 0 30px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .article-page h2 {
+      font-size: 1.25rem;
+      margin: 42px 0 12px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+    p { margin: 10px 0; }
+    .article-page p { color: #243241; }
+    ul { padding-left: 24px; }
+    li { margin: 8px 0; }
+    .article-page li { padding-left: 2px; }
+    @media (max-width: 720px) {
+      main { padding: 28px 16px 64px; }
+      .article-shell { padding: 30px 22px 44px; }
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding-top: 34px;
+      }
+      .hero h1 { font-size: 2.5rem; }
+      .hero-art { max-width: 420px; }
+      .article-page h1 { font-size: 2rem; }
+      .digest-card a {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        min-height: 0;
+      }
+      .card-action { white-space: normal; }
+    }
+  </style>
+</head>
+<body class="article-page">
+  <main>
+<article class="article-shell">
+<p class="page-date">6月8日 周一</p>
+<figure class="article-postcard">
+  <img src="assets/postcards/20260608.jpg" width="960" height="640" decoding="async" alt="当日手绘城市明信片">
+</figure>
+<h1>播客简报 2026-06-08</h1>
+<h2>Inside the Private Stock Market Boom: SpaceX, Anthropic, OpenAI &amp; the Rise of Secondaries</h2>
+<p>来源：All-In with Chamath, Jason, Sacks &amp; Friedberg</p>
+<p>原链接：<a href="https://allinchamathjason.libsyn.com/inside-the-private-stock-market-boom-spacex-anthropic-openai-the-rise-of-secondaries">https://allinchamathjason.libsyn.com/inside-the-private-stock-market-boom-spacex-anthropic-openai-the-rise-of-secondaries</a></p>
+<p>这期播客深入探讨了私募股权二级市场的爆炸式增长及其对创始人、员工和投资者的深远影响，揭示了公司长期保持私有化的利弊，并为希望参与这一新兴领域的中文读者提供了宝贵的洞察和风险警示。</p>
+<ul>
+<li>私募市场的新常态：二级交易的崛起与重要性：播客开篇即指出，私募二级市场正经历前所未有的繁荣，交易量已是2021年峰值的两倍。员工二级交易（如SpaceX、Anthropic、OpenAI）在2025年预计将占一级风投活动的31%，成为与IPO和并购并驾齐驱的主要退出方式。过去，二级市场交易通常折价进行（约八折），但目前已溢价至106%。这种趋势对员工意义重大，许多“账面富裕但现金匮乏”的员工（如在公司工作七八年甚至十五年的老员工）得以通过出售部分股权获得流动性，改善生活。嘉宾Gavin Baker强调，随着公司私有化时间延长，二级市场已成为必需。</li>
+<li>“私有化”之辩：公司为何选择长期私有？：关于公司为何选择长期私有化，嘉宾们展开了激烈讨论。支持者（如Kelly Alvarez）认为，私有化能让创始人避免公开市场的严格审查，拥有更多自由，专注于长期愿景和产品开发，而非成为“投资经理”。她坦言，担任上市公司CEO远不如私有公司CEO“有趣”。然而，Gavin Baker、Brad Gerstner和Jason则认为，长期私有化并非总有“好理由”。他们以马克·扎克伯格在Facebook早期坚持HTML5而非App的“灾难性”决策为例，指出公开市场投资者严谨的质询和压力测试，可能促使管理层做出更明智的决策。私募市场中，投资者为了保持未来投资机会，有时会“阿谀奉承”，导致CEO难以获得真实反馈。</li>
+<li>民主化进程：Forge与Schwab如何开放私募市场：Kelly Alvarez领导的Forge公司（后被嘉信理财Schwab收购）致力于将私募市场开放给更广泛的投资者。她指出，Schwab拥有4600万投资者和12万亿美元资产，这为私募公司提供了前所未有的资本获取和股份分销渠道。Forge向埃隆·马斯克推销的理念是，通过Forge平台，SpaceX可以在IPO前实现股份的广泛分销，让普通美国人也有机会参与到伟大公司的成长中。Forge早在2018-2019年就为SpaceX设立了SPV（特殊目的载体），并成功让Schwab成为SpaceX IPO的分配伙伴之一。目前，直接交易仍需合格投资者身份，但未来将有针对非合格投资者的基金产品（如区间基金，最低500美元）出现，进一步推动市场民主化。</li>
+<li>警惕泡沫：散户投资者进入私募市场的风险与建议：Brad Gerstner对散户投资者“盲目跟风”进入私募市场表达了担忧，尤其是在当前市场估值“非同寻常”（暗示高估）的情况下。他警告不要“梭哈”那些带有双重收费结构的SPV，并强调投资者需要做足功课，保持审慎。Jason也提到，许多风投机构在估值高企时，正通过二级市场出售部分持股，向LP返还资金，这在传统风投界并不常见。他提醒散户，不要期望买入SpaceX IPO后立即获得三倍回报。嘉宾们建议，散户应向下寻找更早期的、被低估的投资机会，而非追逐那些已处于市场顶端的“明星公司”。</li>
+<li>市场深层动力：万亿级“干火药”与风投机构的策略调整：Gavin Baker揭示了一个重要的市场动态：大型长期共同基金（如富达、Baillie Gifford）受SEC规定限制，通常将其基金的3-7%（上限15%）投资于私募股权。当这些私募公司上市并解除锁定期后，其股票将从私募投资组合中移出，从而释放出数千亿美元的“干火药”，形成新的后期市场需求。这意味着未来公开市场对这些公司的需求将大幅增加。此外，Gavin观察到，那些未能投资到万亿级巨头公司的风投机构，正因业绩压力和缺乏DPI（实物分配）而采取“不自然”的投资行为，如追逐高风险的“看涨期权”式投资，以寻求“故事”来安抚LP。</li>
+</ul>
+<h2>144. 对阳萌的4小时访谈：消费电子死与生、第三类公司、端侧模型、产品方法、游戏模式</h2>
+<p>来源：张小珺Jùn｜商业访谈录</p>
+<p>原链接：<a href="https://www.xiaoyuzhoufm.com/episode/6a2543dcb30e1571aea20d0b?utm_source=rss">https://www.xiaoyuzhoufm.com/episode/6a2543dcb30e1571aea20d0b?utm_source=rss</a></p>
+<p>这期长达四小时的访谈深入剖析了Anker创新创始人阳萌在消费电子“地狱模式”中摸爬滚打的创业历程，以及面对AI范式变革时，公司如何从“做生意”转向“深科技”，并提出“第三类公司”的独特生存哲学，适合所有对消费电子行业、产品创新和企业战略转型感兴趣的创业者、产品经理和商业观察者。</p>
+<ul>
+<li>Anker的“地狱模式”与消费电子的“无限战争”：Anker创新创始人阳萌在访谈伊始便坦言，Anker从创立之初就选择了消费电子这个“地狱难度”的赛道。这个市场竞争异常激烈，产品生命周期短，技术迭代快，利润空间薄，被他形容为一场“无限战争”。尽管Anker如今已成长为一家市值超600亿人民币的科技公司，但其发展并非一帆风顺，尤其在近几年，公司经历了显著的痛苦和挑战。这种“地狱模式”的开局，塑造了Anker独特的生存哲学和对产品、技术、市场深刻的理解，也为后续面对AI等颠覆性技术变革时的战略转型奠定了基础。阳萌认为，正是这种持续的压力和挑战，迫使Anker不断进化，寻求新的增长点和竞争优势。</li>
+<li>AI范式下的消费电子新机遇与Anker的“深科技”转型：面对当前席卷全球的AI范式变革，Anker创新正积极寻求从一家“做生意的公司”向“做深科技的公司”转型。阳萌指出，AI对社会的渗透是全方位的，它不仅催生了新的产品和技术，也重塑了消费电子行业的竞争格局。Anker意识到，仅仅依靠供应链整合和渠道优势已不足以支撑长期发展，必须深入技术腹地，构建核心竞争力。这种转型意味着Anker将投入更多资源进行研发，探索AI技术在消费电子产品中的应用，以期在“无限战争”中找到新的突破口，实现产品的智能化、个性化和差异化，从而在激烈的市场竞争中占据有利地位。</li>
+<li>“第三类公司”：在巨头与初创之间寻找生存之道：访谈中，阳萌提出了“第三类公司”的概念，这是一种介于传统巨头和新兴初创公司之间的独特存在。这类公司不满足于仅仅做代工或纯粹的渠道品牌，也不追求成为平台型巨头，而是专注于通过深耕某一细分领域，将产品、技术和品牌深度融合，形成难以复制的综合优势。对于Anker而言，成为“第三类公司”意味着要具备持续的产品创新能力、对用户需求的深刻洞察、以及将前沿技术（如AI）快速落地到具体产品中的执行力。阳萌认为，这类公司需要CEO具备坚韧不拔的性格和对长期价值的信仰，才能在充满不确定性的市场中找到并坚持自己的发展路径。</li>
+<li>端侧模型：AI在消费电子中的关键落地：在AI技术具体应用层面，阳萌特别强调了“端侧模型”在消费电子领域的重要性。他认为，随着AI技术的发展，将大型语言模型（LLM）等AI能力部署到终端设备上，将成为未来消费电子产品的重要趋势。端侧模型不仅能提升设备的响应速度和离线工作能力，还能更好地保护用户隐私，降低对云端服务的依赖。对于Anker这类硬件公司而言，这意味着需要在芯片、算法和软件层面进行深度投入，以优化端侧AI的性能和用户体验。通过集成高效的端侧AI模型，Anker的产品有望实现更智能的交互、更个性化的功能，从而在同质化竞争中脱颖而出，为用户带来革命性的使用体验。</li>
+<li>以用户为中心的产品方法论与创新实践：Anker在“地狱模式”中生存并壮大的关键，在于其独特且不断演进的产品方法论。阳萌强调，Anker始终坚持以用户为中心，深入洞察用户痛点和未被满足的需求，并通过持续的创新来解决这些问题。这不仅仅是简单的市场调研，更是对产品细节的极致打磨和用户体验的不断优化。在AI时代，这种产品方法论被赋予了新的内涵，即如何将AI技术无缝融入产品，使其真正服务于用户，而非仅仅是技术堆砌。Anker通过快速迭代、小步快跑的方式，不断测试新产品和新功能，确保其创新能够真正触达用户，并创造实际价值。</li>
+</ul>
+    </article>
+  </main>
+</body>
+</html>
