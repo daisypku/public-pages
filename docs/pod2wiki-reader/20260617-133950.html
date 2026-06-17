@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>播客简报 2026-06-17</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17202a;
+      --muted: #687385;
+      --line: #dfe5ec;
+      --paper: #ffffff;
+      --canvas: #f3f6f8;
+      --accent: #0b57d0;
+      --accent-soft: #e8f0fe;
+      --green: #0f766e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+      color: var(--ink);
+      background:
+        linear-gradient(180deg, #eef4f7 0, rgba(238, 244, 247, 0) 360px),
+        var(--canvas);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 22px 80px;
+      min-height: 100vh;
+    }
+    .article-shell {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 44px 48px 64px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 18px 50px rgba(23, 32, 42, 0.08);
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 38px;
+      align-items: center;
+      padding: 42px 0 38px;
+      border-bottom: 1px solid var(--line);
+    }
+    .kicker {
+      margin: 0 0 12px;
+      color: var(--green);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      margin: 0;
+      max-width: 760px;
+      font-size: 4.4rem;
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+    .lede {
+      max-width: 650px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    .hero-art {
+      margin: 0;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      box-shadow: 0 18px 40px rgba(23, 32, 42, 0.1);
+    }
+    .hero-art img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    .article-postcard {
+      margin: 0 0 34px;
+      aspect-ratio: 3 / 2;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--canvas);
+    }
+    .article-postcard img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    .section-heading {
+      margin: 34px 0 18px;
+    }
+    .section-heading h2 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+    .cards {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 12px;
+    }
+    .digest-card {
+      margin: 0;
+    }
+    .digest-card a {
+      min-height: 92px;
+      display: grid;
+      grid-template-columns: 150px 1fr auto;
+      gap: 20px;
+      align-items: center;
+      padding: 20px 22px;
+      color: var(--ink);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 10px 28px rgba(23, 32, 42, 0.05);
+    }
+    .digest-card a:hover {
+      text-decoration: none;
+      border-color: #b9c7d8;
+      transform: translateY(-1px);
+    }
+    .card-date {
+      color: var(--green);
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+    .card-title {
+      font-size: 1.08rem;
+      font-weight: 700;
+    }
+    .card-action {
+      color: var(--accent);
+      font-size: 0.92rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .article-page main {
+      max-width: 900px;
+    }
+    .article-page h1 {
+      margin: 0 0 8px;
+      font-size: 2.7rem;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    .page-date {
+      margin: 0 0 30px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .article-page h2 {
+      font-size: 1.25rem;
+      margin: 42px 0 12px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+    p { margin: 10px 0; }
+    .article-page p { color: #243241; }
+    ul { padding-left: 24px; }
+    li { margin: 8px 0; }
+    .article-page li { padding-left: 2px; }
+    @media (max-width: 720px) {
+      main { padding: 28px 16px 64px; }
+      .article-shell { padding: 30px 22px 44px; }
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding-top: 34px;
+      }
+      .hero h1 { font-size: 2.5rem; }
+      .hero-art { max-width: 420px; }
+      .article-page h1 { font-size: 2rem; }
+      .digest-card a {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        min-height: 0;
+      }
+      .card-action { white-space: normal; }
+    }
+  </style>
+</head>
+<body class="article-page">
+  <main>
+<article class="article-shell">
+<p class="page-date">6月17日 周三</p>
+<figure class="article-postcard">
+  <img src="assets/postcards/20260617.jpg" width="960" height="640" decoding="async" alt="当日手绘城市明信片">
+</figure>
+<h1>播客简报 2026-06-17</h1>
+<h2>Snowflake CEO: Scaling Data, AI Agents and the New Software Era</h2>
+<p>来源：In Good Company with Nicolai Tangen</p>
+<p>原链接：<a href="https://shows.acast.com/in-good-company-with-nicolai-tangen/episodes/snowflake-ceo-scaling-data-ai-agents-and-the-new-software-er">https://shows.acast.com/in-good-company-with-nicolai-tangen/episodes/snowflake-ceo-scaling-data-ai-agents-and-the-new-software-er</a></p>
+<p>本期播客深入探讨了Snowflake作为数据平台如何通过其独特的架构和消费模式赋能企业，并由CEO Sridhar Ramaswamy阐述了AI代理和生成式AI对软件行业、数据管理乃至工程师角色带来的颠覆性变革。这期节目适合所有关注数据战略、AI技术前沿、软件开发未来趋势以及企业文化与领导力实践的中文读者。</p>
+<ul>
+<li>Snowflake的核心价值与创新：数据平台的革命性突破：Snowflake是一家领先的数据平台公司，其核心创新在于将计算（compute）与存储（storage）分离。传统上，企业购买的服务器或设备，其存储、计算和内存容量都是固定的，难以灵活扩展或缩减。Snowflake通过构建在云基础设施之上，实现了存储和计算资源的独立按需分配。这意味着用户可以根据实际需求，例如进行一次深度分析，瞬间调动数千台服务器，完成任务后立即释放，只为实际消耗的资源付费。这种“按量付费”的消费模式与价值创造高度对齐，尤其适合数据分析中常见的突发性需求，避免了资源浪费和前期巨额投入。Snowflake的客户遍布全球，包括近半数的全球2000强企业（非中国区），覆盖金融服务、医疗保健、广告等多个行业。例如，挪威主权财富基金（NBM）就在Snowflake上存储了2PB数据，每天执行约300万次查询，充分体现了其规模化处理能力。</li>
+<li>AI对软件行业的颠覆：竞争格局与成本经济学的重塑：Sridhar Ramaswamy指出，当前AI模型公司（如Anthropic）及其开发的编码代理（coding agents）是Snowflake面临的最大竞争威胁，而非传统的云服务提供商如亚马逊或微软。他认为，过去50年软件开发更像是一门“手艺”，依赖于少数顶尖工程师的精湛技艺。然而，AI模型正在将软件开发推向“工业化”时代，彻底改变了软件的成本经济学。这些编码代理正日益成为计算和信息获取的“前门”，对所有软件公司构成根本性挑战。尽管Snowflake在纯数据平台领域仍保持领先，但Sridhar认为，如何在AI代理主导的新世界中生存和发展，是公司面临的首要任务。这种观点强调了AI对整个软件生态系统带来的深远影响，远超特定产品或服务的竞争。</li>
+<li>AI赋能Snowflake及其客户：效率与洞察力的飞跃：AI革命为Snowflake及其客户带来了双重益处。在公司内部，AI工具极大地提升了运营效率：销售团队能即时获取信息，解决方案工程师可在30分钟内为客户定制演示，大幅缩短了销售周期。在软件工程方面，AI正彻底改变编码方式，例如通过“规范驱动开发”（spec-driven coding），工程师只需用自然语言描述需求，AI即可自动化完成代码编写、测试和部署的初始阶段。这使得顶尖工程师的生产力能达到普通工程师的50到100倍。对客户而言，Snowflake Intelligence等产品提供了数据代理接口，用户可以直接用自然语言提问，获取投资组合表现等深度分析，无需依赖分析师。此外，原生编码代理能将日常任务的执行速度提升10到20倍，极大地赋能了数据构建者和使用者。Model Control Protocol（MCP）则作为互操作层，确保语言模型或编码代理能与数据源无缝对话。</li>
+<li>AI代理：重塑工作模式与数据治理挑战：AI代理被定义为结合了模型、代码和工具的智能实体，能够根据指令智能地调用底层工具。它们不仅限于编码，更是强大的“抽象代理”，能够访问文档和结构化数据，帮助用户执行复杂任务。例如，基于数据分析结果发送邮件，无需手动复制粘贴。AI代理正在改变各层级的工作方式，使一切变得可编程且互联互通。对于数据治理，AI代理也带来了革命性变革。过去，修改复杂数据集中的数据管道可能需要一名程序员耗费数周时间，而现在，通过类似“Skills”这样的自然语言程序，这一过程可在数小时内自动化完成。AI驱动的迁移工具能将数据从传统系统迁移到Snowflake的时间从数年缩短到数天或数周。至于GDPR等数据保护法规，虽然带来了一定负担和意想不到的后果，但其前瞻性也值得肯定，而Snowflake提供的卓越治理功能有助于企业合规。</li>
+<li>软件工程师角色的演变：从细节执行者到概念管理者：Sridhar Ramaswamy强调，AI正在彻底改变软件工程师的角色。在AI时代之前，软件工程是一门严苛的学科，要求工程师既能进行高层次的问题抽象思考，又能对细节保持狂热的专注，一个标点符号的错误都可能导致程序崩溃。然而，现代AI驱动的软件工程师将变得更加概念化。他们不再是代码的直接编写者，而是“代理团队的管理者”，负责判断解决哪些问题以及如何将解决方案融入公司和产品背景中。他们需要迅速掌握并运用最新的工具来解决问题。Sridhar以他24岁的儿子为例，他曾是一名专注于低延迟流媒体系统的系统程序员，但现在在AI实验室工作，发现过去所学几乎全部过时，必须学习全新的知识才能胜任当前工作。这生动地说明了软件工程领域正在经历的剧烈变革。</li>
+</ul>
+<h2>Ada Palmer – Machiavelli is the most misunderstood thinker of all time</h2>
+<p>来源：Dwarkesh Podcast</p>
+<p>原链接：<a href="https://www.dwarkesh.com/p/ada-palmer-2">https://www.dwarkesh.com/p/ada-palmer-2</a></p>
+<p>这期播客深入剖析了马基雅维利这位被严重误解的思想家，揭示了他的政治哲学如何根植于文艺复兴时期意大利的极端动荡，以及他对权力、人性与制度腐败的深刻洞察，适合所有对政治史、权力运作和人性本质感兴趣的中文读者。</p>
+<ul>
+<li>时代背景：意大利的动荡与教皇的崛起：马基雅维利撰写《君主论》时，意大利正经历前所未有的政治动荡。一方面，城邦国家林立，政权更迭频繁，合法性链条断裂，导致社会持续混乱。另一方面，教皇权力日益世俗化，多位教皇利用军事力量为私生子建立领地，使教皇国成为一个不可预测的权力中心。教皇并非世袭，每十年左右选出的新教皇往往是前任的政敌，导致政策反复无常，进一步加剧了意大利的整体不稳定。马基雅维利认为，这种“完美风暴”使得意大利急需一个拥有足够实力、能让教皇忌惮并与之谈判的强大势力（如美第奇家族），以带来必要的稳定，而非统一。</li>
+<li>凯撒·博尔吉亚：马基雅维利眼中的理想君主：在马基雅维利的职业生涯中，他作为佛罗伦萨的外交官，曾近距离观察并与凯撒·博尔吉亚（切萨雷·瓦伦蒂诺）打交道。博尔吉亚的铁腕手段和超凡魅力给马基雅维利留下了深刻印象。面对博尔吉亚对佛罗伦萨的潜在威胁，马基雅维利建议城邦采取“拖延战术”：假意效忠，甚至背叛盟友，以争取时间，成为那个“最后被吃掉的客人”。博尔吉亚在塞尼加利亚对叛变将领的血腥屠杀，虽然残忍，却有效巩固了其统治。马基雅维利认为，博尔吉亚的失败并非因其选择，而是命运的偶然（他与父亲同时病倒，新教皇迅速去世）。他强调，人类最多只能掌控一半的命运，另一半则由“命运女神”决定。因此，博尔吉亚的策略仍值得效仿，因为他“做对了一切”。</li>
+<li>马基雅维利的政治创新：手段与人性的洞察：马基雅维利并非不顾手段，而是认为获取权力的方式决定了其稳定性。他分析了背信弃义的策略性：如果君主因受人畏惧而背弃盟约，可能反而巩固统治；但若像萨伏那罗拉那样，以神启为基础却言行不一，则会丧失民心。他著名的“受人畏惧胜过受人爱戴”论断，源于对人性的深刻洞察——人们在利益面前容易背弃承诺，而对惩罚的恐惧则更具约束力。此外，马基雅维利是欧洲传统中首位提出国家内可以存在多个政治派系并相互竞争的思想家，认为这种竞争能释放社会张力，带来内部调整和稳定。君主的声誉和威望，也是震慑外敌、争取谈判优势的关键。</li>
+<li>教皇的世俗化与制度的腐败：对于身处意大利的人们而言，教皇并非遥不可及的抽象精神领袖，而是具体的、有血有肉、充满缺陷的世俗人物。他们了解教皇的家族背景、个人恩怨，甚至其年轻时的荒唐事迹。这种近距离的观察使得意大利人更容易将教皇视为一个政治玩家，而非神圣不可侵犯的代表。随着教会财富和权力的积累，腐败日益加剧，成为吸引野心家族的“香饽饽”。贿赂教职、安插亲信成为常态，甚至形成一种“囚徒困境”：若不参与腐败，家族便可能被敌对势力利用教会权力所害。马基雅维利认为，所有制度都会随着时间推移而腐败，需要周期性地“回归本源”进行改革，否则终将崩溃。</li>
+<li>庇护制度：社会运作的基石：在文艺复兴时期，庇护（Patronage）制度是社会运作的根本纽带，甚至与裙带关系密不可分。例如，教皇保罗三世任命一位经验丰富的将军而非其私生子统领军队时，罗马民众反而爆发骚乱，要求教皇任命自己的儿子，因为他们相信只有血亲才能确保军队的忠诚。司法系统也深受庇护制度影响：审判的目的并非比例惩罚，而是通过让罪犯经历“濒死之惧”后获得“恩典”，以达到灵魂救赎。因此，有庇护者往往能获得宽大处理，而失去庇护者则可能面临严酷的法律制裁。乔尔丹诺·布鲁诺被宗教裁判所处死，正是因为他激怒了庇护人，而皮科·德拉·米兰多拉和马尔西利奥·费奇诺等思想更激进者，却因有美第奇家族的庇护而得以幸免。</li>
+</ul>
+    </article>
+  </main>
+</body>
+</html>
