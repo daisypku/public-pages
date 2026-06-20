@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>播客简报 2026-06-20</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17202a;
+      --muted: #687385;
+      --line: #dfe5ec;
+      --paper: #ffffff;
+      --canvas: #f3f6f8;
+      --accent: #0b57d0;
+      --accent-soft: #e8f0fe;
+      --green: #0f766e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+      color: var(--ink);
+      background:
+        linear-gradient(180deg, #eef4f7 0, rgba(238, 244, 247, 0) 360px),
+        var(--canvas);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 22px 80px;
+      min-height: 100vh;
+    }
+    .article-shell {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 44px 48px 64px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 18px 50px rgba(23, 32, 42, 0.08);
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 38px;
+      align-items: center;
+      padding: 42px 0 38px;
+      border-bottom: 1px solid var(--line);
+    }
+    .kicker {
+      margin: 0 0 12px;
+      color: var(--green);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      margin: 0;
+      max-width: 760px;
+      font-size: 4.4rem;
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+    .lede {
+      max-width: 650px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    .hero-art {
+      margin: 0;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      box-shadow: 0 18px 40px rgba(23, 32, 42, 0.1);
+    }
+    .hero-art img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    .article-postcard {
+      margin: 0 0 34px;
+      aspect-ratio: 3 / 2;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--canvas);
+    }
+    .article-postcard img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    .section-heading {
+      margin: 34px 0 18px;
+    }
+    .section-heading h2 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+    .cards {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 12px;
+    }
+    .digest-card {
+      margin: 0;
+    }
+    .digest-card a {
+      min-height: 92px;
+      display: grid;
+      grid-template-columns: 150px 1fr auto;
+      gap: 20px;
+      align-items: center;
+      padding: 20px 22px;
+      color: var(--ink);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 10px 28px rgba(23, 32, 42, 0.05);
+    }
+    .digest-card a:hover {
+      text-decoration: none;
+      border-color: #b9c7d8;
+      transform: translateY(-1px);
+    }
+    .card-date {
+      color: var(--green);
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+    .card-title {
+      font-size: 1.08rem;
+      font-weight: 700;
+    }
+    .card-action {
+      color: var(--accent);
+      font-size: 0.92rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .article-page main {
+      max-width: 900px;
+    }
+    .article-page h1 {
+      margin: 0 0 8px;
+      font-size: 2.7rem;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    .page-date {
+      margin: 0 0 30px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .article-page h2 {
+      font-size: 1.25rem;
+      margin: 42px 0 12px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+    p { margin: 10px 0; }
+    .article-page p { color: #243241; }
+    ul { padding-left: 24px; }
+    li { margin: 8px 0; }
+    .article-page li { padding-left: 2px; }
+    @media (max-width: 720px) {
+      main { padding: 28px 16px 64px; }
+      .article-shell { padding: 30px 22px 44px; }
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding-top: 34px;
+      }
+      .hero h1 { font-size: 2.5rem; }
+      .hero-art { max-width: 420px; }
+      .article-page h1 { font-size: 2rem; }
+      .digest-card a {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        min-height: 0;
+      }
+      .card-action { white-space: normal; }
+    }
+  </style>
+</head>
+<body class="article-page">
+  <main>
+<article class="article-shell">
+<p class="page-date">6月20日 周六</p>
+<figure class="article-postcard">
+  <img src="assets/postcards/20260620.jpg" width="960" height="640" decoding="async" alt="当日手绘城市明信片">
+</figure>
+<h1>播客简报 2026-06-20</h1>
+<h2>World&#x27;s First Trillionaire, Anthropic Fable Banned, The New Oligarchs, Iran Peace Deal</h2>
+<p>来源：All-In with Chamath, Jason, Sacks &amp; Friedberg</p>
+<p>原链接：<a href="https://allinchamathjason.libsyn.com/worlds-first-trillionaire-anthropic-fable-banned-the-new-oligarchs-iran-peace-deal">https://allinchamathjason.libsyn.com/worlds-first-trillionaire-anthropic-fable-banned-the-new-oligarchs-iran-peace-deal</a></p>
+<p>这期播客深入探讨了美国政治、经济和科技前沿的交汇点，揭示了对个人自由、财富创造和AI未来监管的深刻担忧，适合所有关注美国社会思潮、科技发展趋势及资本市场动态的中文读者。</p>
+<ul>
+<li>美国新政治局与个人自由的侵蚀：播客开篇，嘉宾David Friedberg（Freeberg）情绪激动地指出，美国正在形成一个“大美利坚政治局”，由Elizabeth Warren、Bernie Sanders和Ro Khanna等政治人物主导。他认为，这个“政治局”试图通过控制经济、教育和媒体来侵蚀个人自由，决定资本分配和个人工作范围，将美国推向一个不自由的社会。Freeberg强调，这些政治家以“美德”之名（如平等、公平、正义）行“邪恶”之事，剥夺了美国立国之本——个人自由和经济流动性。Chamath Palihapitiya通过自身在福利制度下成长的经历，警示了“习得性无助”的危险，认为政府过度提供福利会让人失去能动性，沦为“国家供养者”，无法发挥自身潜力。David Sacks补充道，当人们被给予无法解决的问题时，会陷入抑郁，而持续的失业救济同样危险。嘉宾们一致认为，政府的过度干预不仅限制了个人发展，也威胁到私有财产权，例如伊利诺伊州通过的法案，可能导致政府随意征收已纳税财产，这动摇了美国社会的基础。</li>
+<li>SpaceX IPO与财富的本质：播客随后转向SpaceX的里程碑式IPO，该公司以每股135美元上市，市值一度突破2万亿美元，短暂超越亚马逊和微软，成为全球第四大公司，最终稳定在第七位。Elon Musk因此被冠以“世界首位万亿富翁”的称号。David Sacks澄清，这并非指Elon拥有万亿美元现金，而是其所持SpaceX股票的市场估值，反映了公众对公司未来价值创造的预期。他强调，真正的财富并非“物品”本身，而是创造“物品”的“机器”（即企业和工具）。从狩猎采集时代到现代企业，人类的进步源于创造了能持续生产价值的“机器”。Sacks和Chamath认为，资本主义和自由市场为所有人提供了从“劳动力”向“资本所有者”转化的机会，例如SpaceX的焊工通过持股成为百万富翁。他们批评那些抨击财富的人，认为他们嫉妒成功，未能理解财富创造对社会进步的积极作用，以及市场竞争对企业持续创新的要求。此外，SpaceX以约150亿美元的有效价格收购了Cursor，这被认为是Elon卓越商业智慧的体现。</li>
+<li>AI前沿实验室的“不成熟”与信任危机：Chamath对AI前沿实验室的领导者（特指Anthropic的Dario Amodei）表达了强烈不满，认为他们表现出“逃避和不成熟”的持续模式，严重损害了整个AI运动的声誉。他指出，硅谷的声望正在衰落，从最初的“不拘一格、善意、低调”转变为“负面和不信任”的形象，这很大程度上是由于这些领导者未能妥善处理问题。Chamath认为，AI本应是“伟大的均衡器”，能极大提升每个人的经济流动性，但当前这种“末日论、炒作周期和天真”的氛围阻碍了其积极发展。他强调，这种不成熟的行为不仅制造了不信任，也为超大规模云服务商（如亚马逊、微软、谷歌）创造了成为AI“守门人”的巨大机会，因为只有他们拥有数十年来投入数万亿美元构建的强大基础设施（如KYC和VPC），能够满足政府对安全和审计追踪的要求。这将导致AI这一最具经济赋能潜力的工具，最终被少数寡头垄断，扼杀了一个多元、开放的生态系统。</li>
+<li>Anthropic Fable被禁事件始末：播客详细讨论了美国政府叫停Anthropic最新模型Fable 5的事件。据David Sacks透露，事件起因是Anthropic CEO Dario Amodei在几个月前将Mythos模型描述为“网络武器”，引发了政府的高度关注。随后，Anthropic在未经白宫咨询的情况下，将其“信任伙伴计划”扩展到50多家公司，其中包括被白宫怀疑与中国有关联的韩国SK Telecom。这严重损害了政府对Anthropic保护敏感技术能力的信心。紧接着，Fable 5发布后，Anthropic的最大股东和云合作伙伴亚马逊报告称，他们成功“越狱”了Fable 5的防护栏，发现严重安全漏洞。亚马逊将此事上报白宫后，政府官员（包括财政部长）联系Dario，要求其下架Fable 5。然而，Dario被指拒绝立即执行，并“迂腐地争辩”漏洞不严重，甚至发布博客文章试图淡化问题。白宫认为Anthropic未能及时响应国家安全威胁，最终采取了出口管制措施，导致Fable 5全面下架。Sacks强调，这并非政府制定新政策，而是对国家安全威胁的紧急反应，信任关系已然破裂。</li>
+<li>AI监管的未来：寡头垄断还是开放生态？：Anthropic事件引发了对AI监管未来的深刻讨论。Chamath担忧，如果AI前沿实验室继续表现不成熟，政府将倾向于将AI的控制权交给少数超大规模云服务商。这些公司将以其强大的KYC（了解你的客户）和VPC（虚拟私有云）基础设施，说服政府它们是更可靠的“守门人”，从而形成AI的寡头垄断。这将限制创新和竞争，使AI这一“人类解锁器”的潜力无法充分发挥。然而，Freeberg则持不同看法，他认为市场力量最终会推动AI堆栈的“去聚合”。他以IBM在1960年代的垄断为例，指出政府干预促使软件层独立，最终导致了PC时代和软件产业的繁荣。Freeberg相信，AI领域也将出现多芯片供应商、多云平台、多模型、本地运行模型以及多样化的软件应用，形成一个分散、开放的生态系统，而非少数公司的政治捕获。他认为，如果不能实现这种去聚合，未来将非常糟糕。</li>
+</ul>
+<h2>#422 Joseph Pulitzer</h2>
+<p>来源：Founders</p>
+<p>原链接：</p>
+<p>这期播客深入剖析了约瑟夫·普利策从一无所有的移民到现代大众媒体缔造者的传奇一生，揭示了他非凡的商业洞察力、极致的勤奋与创新精神，同时也警示了过度追求事业可能付出的巨大个人代价，适合所有对媒体史、创业精神以及成功与幸福的复杂关系感兴趣的中文读者。</p>
+<ul>
+<li>逆境中磨砺的青年时代：约瑟夫·普利策的早年充满磨难。他出生于匈牙利，在17岁前经历了父亲和七个兄弟姐妹的离世，家庭陷入贫困。为了生存，他远渡重洋来到美国，参加南北战争，战后身无分文、语言不通，甚至露宿街头。在圣路易斯，他做过各种体力活，包括骡子饲养员和建筑工人，期间展现出火爆脾气。然而，普利策对知识的渴望和自学能力令人惊叹，他将所有空闲时间投入图书馆，如饥似渴地阅读。正是这种超凡的勤奋和对自我提升的强烈驱动，引起了当地德国移民援助协会主席的注意，为他打开了进入报业的大门。</li>
+<li>圣路易斯报业的初露锋芒：20岁时，普利策成为一名记者，他以惊人的勤奋和天赋迅速崭露头角，甚至让周围的同事因其工作强度而感到“烦恼”。在19世纪，政治与新闻密不可分，普利策很快便利用报纸作为工具，在20出头就当选为议员。他脾气暴躁，曾因冲突开枪（虽未伤人），但也展现出对媒体运作的直觉：他知道如何通过持续报道吸引关注，也懂得在不希望被关注时保持沉默。通过一系列精明的商业操作，包括买入报纸、利用美联社（AP）会员资格进行交易，他迅速积累了财富，并最终收购了《圣路易斯快报》，为他的媒体帝国奠定了基础。</li>
+<li>颠覆传统，打造媒体帝国：普利策的成功源于他对市场趋势的敏锐洞察。他预见到电报、更快的印刷技术和照明的普及将使晚报拥有巨大潜力，因此逆势而为，合并报纸，专注于晚报市场。他对数据有着近乎偏执的痴迷，每天详细追踪发行量、广告收入和各项成本，确保对报纸运营的精确掌控。他奉行“卡拉拉多处方”——将98%的精力投入到眼前的工作中，不为遥远的未来分心。普利策的商业哲学与彼得·蒂尔在《从0到1》中描述的“在无人察觉处发现价值”不谋而合。他从不与人分享权力，最终总会收购合作伙伴，并在员工试图组建工会时，展现出“办公室暴君”的一面，坚持自己的绝对领导权。</li>
+<li>征服纽约与《世界报》的崛起：普利策的野心不止于圣路易斯，他将目光投向纽约。他负债50万美元收购了当时亏损的《纽约世界报》，同时通过每日报告远程高效管理圣路易斯的业务。在纽约，他展现出惊人的冷酷无情，甚至通过挖角手段削弱亲兄弟的报纸，迫使其合并。他彻底改革了《世界报》的版面和风格：简化语言，使用生动活泼的短句，强调细节（“模糊是罪过”），并大量引入插图，使报纸在视觉上脱颖而出，吸引了包括不识字或英语不佳的移民在内的广大读者。他深谙自我宣传之道，并通过发起为自由女神像基座筹款等公共服务活动，极大地提升了报纸的影响力与发行量，使《世界报》成为美国历史上阅读量最大的报纸之一。</li>
+<li>权力、财富与内在矛盾：普利策的一生充满了矛盾。他在报纸上猛烈抨击富人和腐败的权贵，但私下里却渴望成为他们中的一员，并与他所批评的对象建立商业合作。他区分“继承的财富”和“赚取的财富”，认为后者是正当的，并被对财富、奢华和权力的强烈渴望所驱动。他的成功引来了无数模仿者，其中最著名的便是威廉·兰道夫·赫斯特，这位年轻的报业继承人模仿普利策的策略，在纽约与普利策展开了长达十年的发行量大战。普利策的创新和执行力虽然无人能及，但他的这种双重标准和对成功的无止境追求，也为他晚年的悲剧埋下了伏笔。</li>
+</ul>
+<h2>An AI@GSB Special: Demis Hassabis Thinks We’re in the ‘Foothills of the Singularity’</h2>
+<p>来源：View From The Top</p>
+<p>原链接：</p>
+<p>这期播客深入探讨了人工智能领军人物德米斯·哈萨比斯（Demis Hassabis）从国际象棋神童到DeepMind联合创始人的非凡旅程，以及他对AI发展、科学应用、社会影响和未来挑战的深刻洞察。它不仅揭示了AI技术突破的路径，更引发了对人类想象力、意识、经济体系乃至文明演进的哲学思考，适合所有关注AI前沿、科技伦理与人类未来的中文读者。</p>
+<ul>
+<li>从棋盘到神经科学：哈萨比斯的AI探索主线：DeepMind的联合创始人兼CEO德米斯·哈萨比斯，其职业生涯轨迹非凡，从国际象棋神童、视频游戏开发者，到神经科学家，最终投身人工智能。他将这些看似不相关的经历串联起来，形成了一条清晰的主线：理解智能，并以此为工具来理解世界。他早年对记忆与想象力神经学关系的研究，揭示了人类心智的深层机制，这为他后来构建AI提供了灵感。哈萨比斯认为，国际象棋训练了他分解复杂问题、制定长期战略的能力；游戏开发则让他掌握了大规模工程项目管理和创意与技术融合的经验。这些早期积累，都为DeepMind在2010年创立时，能够以“解决智能，然后解决一切”的宏大愿景，奠定了坚实基础。他强调，AI是他实现这一使命的终极工具，旨在加速科学发现，解决人类面临的重大问题。</li>
+<li>DeepMind的“游戏”策略与AlphaGo的里程碑：DeepMind的初期策略是将游戏作为AI算法的完美试验场。哈萨比斯解释，游戏是自洽的、具有挑战性且能反映真实世界复杂性的微观宇宙。早期团队从雅达利游戏《Pong》开始，面临了长达数月的挫折，AI无法在仅有像素输入的情况下获胜。但正是这种坚持，最终带来了突破性的“起飞”时刻，证明了深度强化学习在感知和决策上的潜力。这一成功最终促成了AlphaGo的诞生。哈萨比斯回忆，他与戴夫·席尔瓦（Dave Silver）在大学时代就讨论过围棋，认为其抽象性和直觉性远超国际象棋。AlphaGo在2016年击败李世石，不仅是AI能力的展示，更令人震惊的是它创造了2000多年围棋史上从未出现过的新策略。这一刻对哈萨比斯而言意义重大，标志着AI开始展现出真正的创造力，也预示着AI应用于科学研究的时机已经成熟。</li>
+<li>AlphaFold：AI赋能科学的典范与开放共享的决策：AlphaGo的成功后，DeepMind立即将目光投向了生物学领域的“蛋白质折叠问题”。哈萨比斯早在大学时期就对此问题着迷，认为它是生物学中最根本的难题之一，其解决将解锁药物发现、疾病理解等诸多研究新途径。尽管当时大多数人认为，在数据量不足的情况下，解决这一问题至少还需要10到20年，但DeepMind团队利用与AlphaGo相似的深度学习和搜索启发式方法，成功预测了蛋白质的三维结构。更具里程碑意义的是，DeepMind决定将AlphaFold的成果——包括2亿个蛋白质结构——免费开放给全球研究人员。哈萨比斯认为，此举能最大化其下游影响，让全球190个国家的300万研究者都能受益，尤其是在被忽视疾病（如疟疾、寨卡病毒）和作物抗逆性等领域。他强调，这一决策不仅是基于公共数据训练的“回馈”，也得到了谷歌高层的支持，体现了对科学进步的共同愿景。目前，Alphabet旗下的Isomorphic Labs正致力于将AlphaFold级别的突破应用于加速药物研发，目标是将数年的研发周期缩短至数月甚至数周。</li>
+<li>AI前沿的“奇点”与激烈的竞争格局：哈萨比斯将当前AI发展阶段描述为“奇点的山麓”，意味着我们正处于一个巨大变革的开端。他指出，AI技术进步的速度令人难以置信，前沿实验室的成果仅需数月就能被广泛获取。然而，他也对一些同行在沟通上的不谨慎表示担忧，认为他们过于武断地预测未来，而实际上充满了巨大的不确定性。当前AI领域正经历着前所未有的激烈竞争，不仅是公司间的“生死存亡”之战，还叠加了地缘政治（如中美）的复杂因素，形成了一场“双重竞赛”。哈萨比斯曾设想，AGI（通用人工智能）的研发应在一个类似CERN（欧洲核子研究组织）的合作研究机构中进行，以确保严谨性和安全性，并逐步将技术应用于专业系统。然而，大型语言模型（LLMs）的意外高效，特别是Transformer架构在语言处理上的突破，以及其商业化潜力，彻底改变了这一动态，加速了竞争，使得AI发展环境远非理想。</li>
+<li>监管困境、社会责任与“智能监管”的呼唤：面对AI的快速发展和激烈竞争，哈萨比斯对“囚徒困境”式的局面深感忧虑：任何一家公司若放慢脚步以确保安全，都可能在竞争中处于劣势。他认为，虽然所有实验室领导者都关心安全问题，但缺乏有效的合作与协调机制。他呼吁政府介入进行监管，但承认传统监管模式的“慢”与AI发展的“快”之间存在巨大矛盾。他提出需要一种“智能监管”：它必须是动态的、灵活的，能够迅速适应最新技术进展，并由前沿实验室提供信息，以确保监管措施的有效性和相关性。哈萨比斯强调，行业有责任更明确地展示AI的益处，而非仅仅停留在口头承诺。他希望看到更多像AlphaFold这样“无可辩驳的善举”，并呼吁将“治愈癌症”等宏大目标变为现实，以此向公众证明AI的价值，同时具体地缓解风险。</li>
+</ul>
+<h2>The data black hole at the center of AI</h2>
+<p>来源：Dwarkesh Podcast</p>
+<p>原链接：<a href="https://www.dwarkesh.com/p/the-sample-efficiency-black-hole-2">https://www.dwarkesh.com/p/the-sample-efficiency-black-hole-2</a></p>
+<p>材料不足：这期需要 transcript 或更完整正文后再做全篇摘要。</p>
+<ul>
+<li>当前只有节目简介或网页正文；这是播客音频，必须获取 transcript 后才算读完整期。</li>
+</ul>
+    </article>
+  </main>
+</body>
+</html>
