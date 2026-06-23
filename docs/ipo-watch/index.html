@@ -5,23 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>IPO Watch</title>
   <style>
-    :root { color-scheme: light; --line:#d8dee8; --muted:#607087; --ink:#172033; --bg:#f7f8fb; --accent:#0f766e; }
+    :root { color-scheme: light; --line:#d8dee8; --muted:#607087; --ink:#172033; --bg:#f7f8fb; --accent:#0f766e; --soft:#eef7f5; }
     * { box-sizing: border-box; }
     body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; color: var(--ink); background: var(--bg); }
     header { padding: 28px 24px 18px; border-bottom: 1px solid var(--line); background: #fff; }
     main { max-width: 1180px; margin: 0 auto; padding: 24px; }
     h1 { margin: 0 0 8px; font-size: 28px; }
     h2 { margin: 28px 0 12px; font-size: 20px; }
+    h3 { margin: 0 0 8px; font-size: 17px; }
     p { line-height: 1.7; }
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
     table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--line); }
     th, td { padding: 10px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; font-size: 14px; }
     th { color: var(--muted); font-weight: 600; background: #fbfcfe; }
+    ul { padding-left: 22px; }
+    li { margin: 4px 0; line-height: 1.55; }
     .muted { color: var(--muted); }
     .summary { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 16px; margin: 12px 0; }
-    .summary h3 { margin: 0 0 8px; font-size: 17px; }
-    .tag { display: inline-block; border: 1px solid var(--line); border-radius: 999px; padding: 2px 8px; color: var(--muted); font-size: 12px; margin-right: 6px; }
+    .tag { display: inline-block; border: 1px solid var(--line); border-radius: 999px; padding: 2px 8px; color: var(--muted); font-size: 12px; margin: 0 6px 6px 0; }
+    .financial { margin: 14px 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: #fff; }
+    .financial-title { padding: 10px 12px; background: var(--soft); font-weight: 650; }
+    .financial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1px; background: var(--line); }
+    .metric { background: #fff; padding: 10px 12px; }
+    .metric-label { color: var(--muted); font-size: 12px; margin-bottom: 4px; }
+    .metric-value { font-weight: 650; line-height: 1.45; }
+    .mini-table { width: 100%; border: 0; }
+    .mini-table th, .mini-table td { font-size: 13px; padding: 7px 9px; }
+    .summary-text { margin: 10px 12px 12px; }
   </style>
 </head>
 <body>
@@ -39,21 +50,21 @@
     <tr><th>日期</th><th>市场</th><th>发行人</th><th>板块</th><th>行业</th><th>文件类型</th><th>状态</th><th>保荐机构</th><th>链接</th></tr>
   </thead>
   <tbody>
-<tr><td>2026-06-23</td><td>HKEX</td><td>MOMENTA GLOBAL LIMITED - W</td><td>主板</td><td></td><td>聆訊後資料集（第一次呈交）</td><td>A</td><td></td><td><a href="https://www1.hkexnews.hk/app/sehk/2026/108670/documents/sehk26062300175_c.pdf">原文</a></td></tr>
-<tr><td>2026-06-22</td><td>SZSE</td><td>青岛迈金智能科技股份有限公司</td><td>创业板</td><td>计算机、通信和其他电子设备制造业</td><td>IPO项目更新</td><td>已问询</td><td>华兴证券有限公司</td><td><a href="https://listing.szse.cn/projectdynamic/ipo/index.html">原文</a></td></tr>
-<tr><td>2026-06-22</td><td>SZSE</td><td>重庆耐德能源装备股份有限公司</td><td>创业板</td><td>专用设备制造业</td><td>IPO项目更新</td><td>已受理</td><td>长江证券承销保荐有限公司</td><td><a href="https://listing.szse.cn/projectdynamic/ipo/index.html">原文</a></td></tr>
-<tr><td>2026-06-22</td><td>SZSE</td><td>深圳鹏城新能科技股份有限公司</td><td>创业板</td><td>电气机械和器材制造业</td><td>IPO项目更新</td><td>已受理</td><td>中国国际金融股份有限公司</td><td><a href="https://listing.szse.cn/projectdynamic/ipo/index.html">原文</a></td></tr>
-<tr><td>2026-06-22</td><td>SZSE</td><td>江苏毅合捷汽车科技股份有限公司</td><td>创业板</td><td>汽车制造业</td><td>IPO项目更新</td><td>已问询</td><td>长城证券股份有限公司</td><td><a href="https://listing.szse.cn/projectdynamic/ipo/index.html">原文</a></td></tr>
-<tr><td>2026-06-22</td><td>SZSE</td><td>广东金鼎光学技术股份有限公司</td><td>创业板</td><td>专用设备制造业</td><td>IPO项目更新</td><td>已受理</td><td>国投证券股份有限公司</td><td><a href="https://listing.szse.cn/projectdynamic/ipo/index.html">原文</a></td></tr>
-<tr><td>2026-06-22</td><td>SZSE</td><td>山东汇川精密科技股份有限公司</td><td>创业板</td><td>汽车制造业</td><td>IPO项目更新</td><td>已受理</td><td>平安证券股份有限公司</td><td><a href="https://listing.szse.cn/projectdynamic/ipo/index.html">原文</a></td></tr>
-<tr><td>2026-06-22</td><td>SZSE</td><td>安徽三绿科技股份有限公司</td><td>创业板</td><td>橡胶和塑料制品业</td><td>IPO项目更新</td><td>已受理</td><td>东方证券股份有限公司</td><td><a href="https://listing.szse.cn/projectdynamic/ipo/index.html">原文</a></td></tr>
-<tr><td>2026-06-22</td><td>SSE</td><td>珠海普生医疗科技股份有限公司</td><td>科创板</td><td>专用设备制造业</td><td>IPO项目更新</td><td>已受理</td><td>中信证券股份有限公司</td><td><a href="https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2205">原文</a></td></tr>
-<tr><td>2026-06-22</td><td>SSE</td><td>江苏高凯精密流体技术股份有限公司</td><td>科创板</td><td>专用设备制造业</td><td>IPO项目更新</td><td>上市委会议</td><td>国泰海通证券股份有限公司</td><td><a href="https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2156">原文</a></td></tr>
-<tr><td>2026-06-22</td><td>SSE</td><td>上海频准激光科技股份有限公司</td><td>科创板</td><td>计算机、通信和其他电子设备制造业</td><td>IPO项目更新</td><td>注册结果</td><td>中信建投证券股份有限公司</td><td><a href="https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2134">原文</a></td></tr>
-<tr><td>2026-06-22</td><td>HKEX</td><td>浙江東方科脈電子股份有限公司</td><td>主板</td><td></td><td>聆訊後資料集（第一次呈交）</td><td>A</td><td></td><td><a href="https://www1.hkexnews.hk/app/sehk/2026/108448/documents/sehk26062201949_c.pdf">原文</a></td></tr>
-<tr><td>2026-06-22</td><td>HKEX</td><td>安徽華恒生物科技股份有限公司</td><td>主板</td><td></td><td>聆訊後資料集（第一次呈交）</td><td>A</td><td></td><td><a href="https://www1.hkexnews.hk/app/sehk/2026/108493/documents/sehk26062202043_c.pdf">原文</a></td></tr>
-<tr><td>2026-06-21</td><td>HKEX</td><td>深圳基本半導體股份有限公司</td><td>主板</td><td></td><td>聆訊後資料集（第一次呈交）</td><td>A</td><td></td><td><a href="https://www1.hkexnews.hk/app/sehk/2026/108614/documents/sehk26062100037_c.pdf">原文</a></td></tr>
-<tr><td>2026-06-21</td><td>HKEX</td><td>坦博尔集团股份有限公司</td><td>主板</td><td></td><td>聆訊後資料集（第一次呈交）</td><td>A</td><td></td><td><a href="https://www1.hkexnews.hk/app/sehk/2026/108483/documents/sehk26062100125_c.pdf">原文</a></td></tr>
+<tr><td>2026-06-23</td><td>HKEX</td><td>MOMENTA GLOBAL LIMITED - W</td><td>主板</td><td></td><td>聆訊後資料集（第一次呈交）</td><td>A</td><td></td><td><a href="https://www1.hkexnews.hk/app/sehk/2026/108670/documents/sehk26062300175_c.pdf">PDF</a> / <a href="https://www1.hkexnews.hk/app/sehk/2026/108670/2026062300172_c.htm">详情</a></td></tr>
+<tr><td>2026-06-22</td><td>SZSE</td><td>青岛迈金智能科技股份有限公司</td><td>创业板</td><td>计算机、通信和其他电子设备制造业</td><td>IPO项目更新</td><td>已问询</td><td>华兴证券有限公司</td><td><a href="https://listing.szse.cn/projectdynamic/ipo/index.html">项目页</a></td></tr>
+<tr><td>2026-06-22</td><td>SZSE</td><td>重庆耐德能源装备股份有限公司</td><td>创业板</td><td>专用设备制造业</td><td>IPO项目更新</td><td>已受理</td><td>长江证券承销保荐有限公司</td><td><a href="https://listing.szse.cn/projectdynamic/ipo/index.html">项目页</a></td></tr>
+<tr><td>2026-06-22</td><td>SZSE</td><td>深圳鹏城新能科技股份有限公司</td><td>创业板</td><td>电气机械和器材制造业</td><td>IPO项目更新</td><td>已受理</td><td>中国国际金融股份有限公司</td><td><a href="https://listing.szse.cn/projectdynamic/ipo/index.html">项目页</a></td></tr>
+<tr><td>2026-06-22</td><td>SZSE</td><td>江苏毅合捷汽车科技股份有限公司</td><td>创业板</td><td>汽车制造业</td><td>IPO项目更新</td><td>已问询</td><td>长城证券股份有限公司</td><td><a href="https://listing.szse.cn/projectdynamic/ipo/index.html">项目页</a></td></tr>
+<tr><td>2026-06-22</td><td>SZSE</td><td>广东金鼎光学技术股份有限公司</td><td>创业板</td><td>专用设备制造业</td><td>IPO项目更新</td><td>已受理</td><td>国投证券股份有限公司</td><td><a href="https://listing.szse.cn/projectdynamic/ipo/index.html">项目页</a></td></tr>
+<tr><td>2026-06-22</td><td>SZSE</td><td>山东汇川精密科技股份有限公司</td><td>创业板</td><td>汽车制造业</td><td>IPO项目更新</td><td>已受理</td><td>平安证券股份有限公司</td><td><a href="https://listing.szse.cn/projectdynamic/ipo/index.html">项目页</a></td></tr>
+<tr><td>2026-06-22</td><td>SZSE</td><td>安徽三绿科技股份有限公司</td><td>创业板</td><td>橡胶和塑料制品业</td><td>IPO项目更新</td><td>已受理</td><td>东方证券股份有限公司</td><td><a href="https://listing.szse.cn/projectdynamic/ipo/index.html">项目页</a></td></tr>
+<tr><td>2026-06-22</td><td>SSE</td><td>珠海普生医疗科技股份有限公司</td><td>科创板</td><td>专用设备制造业</td><td>IPO项目更新</td><td>已受理</td><td>中信证券股份有限公司</td><td><a href="https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2205">项目页</a></td></tr>
+<tr><td>2026-06-22</td><td>SSE</td><td>江苏高凯精密流体技术股份有限公司</td><td>科创板</td><td>专用设备制造业</td><td>IPO项目更新</td><td>上市委会议</td><td>国泰海通证券股份有限公司</td><td><a href="https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2156">项目页</a></td></tr>
+<tr><td>2026-06-22</td><td>SSE</td><td>上海频准激光科技股份有限公司</td><td>科创板</td><td>计算机、通信和其他电子设备制造业</td><td>IPO项目更新</td><td>注册结果</td><td>中信建投证券股份有限公司</td><td><a href="https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2134">项目页</a></td></tr>
+<tr><td>2026-06-22</td><td>HKEX</td><td>浙江東方科脈電子股份有限公司</td><td>主板</td><td></td><td>聆訊後資料集（第一次呈交）</td><td>A</td><td></td><td><a href="https://www1.hkexnews.hk/app/sehk/2026/108448/documents/sehk26062201949_c.pdf">PDF</a> / <a href="https://www1.hkexnews.hk/app/sehk/2026/108448/2026062201946_c.htm">详情</a></td></tr>
+<tr><td>2026-06-22</td><td>HKEX</td><td>安徽華恒生物科技股份有限公司</td><td>主板</td><td></td><td>聆訊後資料集（第一次呈交）</td><td>A</td><td></td><td><a href="https://www1.hkexnews.hk/app/sehk/2026/108493/documents/sehk26062202043_c.pdf">PDF</a> / <a href="https://www1.hkexnews.hk/app/sehk/2026/108493/2026062202040_c.htm">详情</a></td></tr>
+<tr><td>2026-06-21</td><td>HKEX</td><td>深圳基本半導體股份有限公司</td><td>主板</td><td></td><td>聆訊後資料集（第一次呈交）</td><td>A</td><td></td><td><a href="https://www1.hkexnews.hk/app/sehk/2026/108614/documents/sehk26062100037_c.pdf">PDF</a> / <a href="https://www1.hkexnews.hk/app/sehk/2026/108614/2026062100034_c.htm">详情</a></td></tr>
+<tr><td>2026-06-21</td><td>HKEX</td><td>坦博尔集团股份有限公司</td><td>主板</td><td></td><td>聆訊後資料集（第一次呈交）</td><td>A</td><td></td><td><a href="https://www1.hkexnews.hk/app/sehk/2026/108483/documents/sehk26062100125_c.pdf">PDF</a> / <a href="https://www1.hkexnews.hk/app/sehk/2026/108483/2026062100122_c.htm">详情</a></td></tr>
   </tbody>
 </table>
 
@@ -63,7 +74,44 @@
   <h3>MOMENTA GLOBAL LIMITED - W</h3>
   <div><span class="tag">HKEX</span><span class="tag">聆訊後資料集（第一次呈交）</span></div>
   <p><strong>一句话业务：</strong>一家領先的自動駕駛公司，專注於開發和商業化智能駕駛技術，提供量產車解決方案和自動駕駛出行與物流解決方案。</p>
-  <p><strong>财务快照：</strong>{&#x27;adjusted_net_loss_non_ifrs&#x27;: {&#x27;2023&#x27;: &#x27;10.93億元人民幣&#x27;, &#x27;2024&#x27;: &#x27;9.59億元人民幣&#x27;, &#x27;2025&#x27;: &#x27;3.03億元人民幣&#x27;}, &#x27;gross_profit_margin&#x27;: {&#x27;2023&#x27;: &#x27;17.5%&#x27;, &#x27;2024&#x27;: &#x27;49.0%&#x27;, &#x27;2025&#x27;: &#x27;71.6%&#x27;}, &#x27;net_current_liabilities&#x27;: {&#x27;2025_eoy&#x27;: &#x27;189.61億元人民幣&#x27;}, &#x27;net_liabilities&#x27;: {&#x27;2025_eoy&#x27;: &#x27;178.91億元人民幣&#x27;}, &#x27;net_loss_for_the_year&#x27;: {&#x27;2023&#x27;: &#x27;25.70億元人民幣&#x27;, &#x27;2024&#x27;: &#x27;32.06億元人民幣&#x27;, &#x27;2025&#x27;: &#x27;34.58億元人民幣&#x27;}, &#x27;revenue&#x27;: {&#x27;2023&#x27;: &#x27;7.43億元人民幣&#x27;, &#x27;2024&#x27;: &#x27;13.25億元人民幣&#x27;, &#x27;2025&#x27;: &#x27;24.13億元人民幣&#x27;}, &#x27;summary&#x27;: &#x27;公司在往績記錄期間（2023-2025年）收入增長迅速，毛利率顯著提升，但仍處於淨虧損狀態。公司錄得流動負債淨額及淨負債，主要由於可轉換優先股在會計上被列為負債，預計上市後將轉為淨資產狀況。&#x27;}</p>
+  
+<div class="financial">
+  <div class="financial-title">财务快照</div>
+  
+  
+<table class="mini-table">
+  <thead><tr><th colspan="2">经调整净亏损（非 IFRS）</th></tr></thead>
+  <tbody><tr><th>2023</th><td>10.93億元人民幣</td></tr><tr><th>2024</th><td>9.59億元人民幣</td></tr><tr><th>2025</th><td>3.03億元人民幣</td></tr></tbody>
+</table>
+
+<table class="mini-table">
+  <thead><tr><th colspan="2">毛利率</th></tr></thead>
+  <tbody><tr><th>2023</th><td>17.5%</td></tr><tr><th>2024</th><td>49.0%</td></tr><tr><th>2025</th><td>71.6%</td></tr></tbody>
+</table>
+
+<table class="mini-table">
+  <thead><tr><th colspan="2">流动负债净额</th></tr></thead>
+  <tbody><tr><th>2025 eoy</th><td>189.61億元人民幣</td></tr></tbody>
+</table>
+
+<table class="mini-table">
+  <thead><tr><th colspan="2">净负债</th></tr></thead>
+  <tbody><tr><th>2025 eoy</th><td>178.91億元人民幣</td></tr></tbody>
+</table>
+
+<table class="mini-table">
+  <thead><tr><th colspan="2">年内亏损</th></tr></thead>
+  <tbody><tr><th>2023</th><td>25.70億元人民幣</td></tr><tr><th>2024</th><td>32.06億元人民幣</td></tr><tr><th>2025</th><td>34.58億元人民幣</td></tr></tbody>
+</table>
+
+<table class="mini-table">
+  <thead><tr><th colspan="2">收入</th></tr></thead>
+  <tbody><tr><th>2023</th><td>7.43億元人民幣</td></tr><tr><th>2024</th><td>13.25億元人民幣</td></tr><tr><th>2025</th><td>24.13億元人民幣</td></tr></tbody>
+</table>
+
+  <p class="summary-text">公司在往績記錄期間（2023-2025年）收入增長迅速，毛利率顯著提升，但仍處於淨虧損狀態。公司錄得流動負債淨額及淨負債，主要由於可轉換優先股在會計上被列為負債，預計上市後將轉為淨資產狀況。</p>
+</div>
+
   <p><strong>要点：</strong></p><ul><li>公司採用獨特的“一個飛輪，兩條腿”策略，將量產車解決方案（提供數據和收入）與自動駕駛出租車服務解決方案（發展前沿技術）相結合，形成技術和商業的閉環。</li><li>在市場地位上，截至2026年2月28日止的12個月，公司在全球獨立城市NOA（導航輔助駕駛）解決方案提供商中，按車輛銷量計算排名第一，市場份額為64.5%。</li><li>公司與全球24家領先整車廠建立了合作關係，包括全球前十大整車廠集團中的八家以及中國全部前十大整車廠集團，累計獲得170款車型定點（截至2025年底）。</li><li>公司採用不同投票權（WVR）架構，控股股東在上市後將對股東決議案結果擁有重大影響力。</li><li>儘管收入和毛利率在過去三年快速增長，公司於往績記錄期間持續錄得淨虧損，主要由於高額的研發投入以及優先股公允價值變動等非現金項目影響。</li></ul>
   <p><strong>主要风险：</strong></p><ul><li>自動駕駛行業仍屬新興且快速演進，存在技術不確定性、運營歷史有限及監管要求不斷變化，導致未來表現難以預測。</li><li>智能駕駛解決方案及自動駕駛出租車服務的市場仍在發展中，其商業化進程可能無法如預期推進。</li><li>公司增長依賴於與主要整車廠建立及維持合作關係，並成功將項目定點轉化為量產收入。</li><li>公司採用不同投票權架構，不同投票權受益人的利益未必總與股東整體利益一致，且能對公司決議案結果產生重大影響。</li><li>客戶集中度較高，於2025年，前五大客戶佔總收入的62.6%。</li><li>公司在往績記錄期間產生重大虧損，且未來可能無法實現或維持盈利能力。</li></ul>
   <p class="muted">自动生成，仅供信息整理，不构成投资建议。</p>
@@ -74,7 +122,34 @@
   <h3>浙江東方科脈電子股份有限公司</h3>
   <div><span class="tag">HKEX</span><span class="tag">聆訊後資料集（第一次呈交）</span></div>
   <p><strong>一句话业务：</strong>公司主要從事電子紙顯示模組的研發、生產和銷售，產品應用於智慧零售、辦公、教育、交通等多個領域。</p>
-  <p><strong>财务快照：</strong>{&#x27;currency&#x27;: &#x27;人民幣&#x27;, &#x27;income_statement&#x27;: [{&#x27;gross_margin&#x27;: &#x27;15.8%&#x27;, &#x27;gross_profit&#x27;: &#x27;1.62億元&#x27;, &#x27;net_margin&#x27;: &#x27;5.0%&#x27;, &#x27;net_profit&#x27;: &#x27;5074萬元&#x27;, &#x27;revenue&#x27;: &#x27;10.24億元&#x27;, &#x27;year&#x27;: 2023}, {&#x27;gross_margin&#x27;: &#x27;15.8%&#x27;, &#x27;gross_profit&#x27;: &#x27;1.82億元&#x27;, &#x27;net_margin&#x27;: &#x27;4.6%&#x27;, &#x27;net_profit&#x27;: &#x27;5340萬元&#x27;, &#x27;revenue&#x27;: &#x27;11.52億元&#x27;, &#x27;year&#x27;: 2024}, {&#x27;gross_margin&#x27;: &#x27;16.4%&#x27;, &#x27;gross_profit&#x27;: &#x27;2.80億元&#x27;, &#x27;net_margin&#x27;: &#x27;4.7%&#x27;, &#x27;net_profit&#x27;: &#x27;8023萬元&#x27;, &#x27;revenue&#x27;: &#x27;17.13億元&#x27;, &#x27;year&#x27;: 2025}], &#x27;key_ratios_2025&#x27;: {&#x27;流動比率&#x27;: 1.5, &#x27;資產負債率&#x27;: &#x27;50.5%&#x27;}, &#x27;period&#x27;: &#x27;截至12月31日止年度&#x27;}</p>
+  
+<div class="financial">
+  <div class="financial-title">财务快照</div>
+  <div class="financial-grid">
+<div class="metric">
+  <div class="metric-label">币种</div>
+  <div class="metric-value">人民幣</div>
+</div>
+
+<div class="metric">
+  <div class="metric-label">期间</div>
+  <div class="metric-value">截至12月31日止年度</div>
+</div>
+</div>
+  
+<table class="mini-table">
+  <thead><tr><th colspan="6">利润表摘要</th></tr><tr><th>毛利率</th><th>毛利</th><th>净利率</th><th>净利润</th><th>收入</th><th>year</th></tr></thead>
+  <tbody><tr><td>15.8%</td><td>1.62億元</td><td>5.0%</td><td>5074萬元</td><td>10.24億元</td><td>2023</td></tr><tr><td>15.8%</td><td>1.82億元</td><td>4.6%</td><td>5340萬元</td><td>11.52億元</td><td>2024</td></tr><tr><td>16.4%</td><td>2.80億元</td><td>4.7%</td><td>8023萬元</td><td>17.13億元</td><td>2025</td></tr></tbody>
+</table>
+
+<table class="mini-table">
+  <thead><tr><th colspan="2">key ratios 2025</th></tr></thead>
+  <tbody><tr><th>流動比率</th><td>1.5</td></tr><tr><th>資產負債率</th><td>50.5%</td></tr></tbody>
+</table>
+
+  
+</div>
+
   <p><strong>要点：</strong></p><ul><li>市場地位：按2025年出貨量計算，公司是全球第二大電子紙顯示模組供應商，市場份額為20.8%。</li><li>財務增長：公司收入從2023年的人民幣10.24億元增長至2025年的人民幣17.13億元；同期年內利潤從人民幣5074萬元增長至8023萬元。</li><li>客戶高度集中：2025年，來自最大客戶Solum和客戶A的收入合計佔總收入的64.3%，存在較高的客戶集中風險。</li><li>產能利用率高：截至2025年，湖州、嘉興、大連等多個生產基地的產能利用率已達到96%以上，顯示產能接近飽和。</li></ul>
   <p><strong>主要风险：</strong></p><ul><li>客戶集中度高：對主要客戶（如Solum及客戶A）的依賴性強，任何主要客戶的流失或訂單減少都可能對業務產生重大不利影響。</li><li>供應商依賴：原材料採購集中於少數供應商，供應鏈中斷或價格波動可能對生產和成本造成不利影響。</li><li>技術迭代風險：公司業務依賴於持續的技術改進和創新，若無法跟上技術發展趨勢，可能影響業務和財務狀況。</li><li>知識產權風險：業務依賴於自有及第三方授權的知識產權，可能面臨第三方侵權索賠或未經授權使用技術的風險。</li></ul>
   <p class="muted">自动生成，仅供信息整理，不构成投资建议。</p>
@@ -85,7 +160,49 @@
   <h3>安徽華恒生物科技股份有限公司</h3>
   <div><span class="tag">HKEX</span><span class="tag">聆訊後資料集（第一次呈交）</span></div>
   <p><strong>一句话业务：</strong>一家全球领先的合成生物学公司，通过生物制造技术从事氨基酸、维生素及生物基材料等产品的研发、规模化生产及商业化。</p>
-  <p><strong>财务快照：</strong>{&#x27;currency&#x27;: &#x27;人民币 (RMB)&#x27;, &#x27;gross_profit_and_margin&#x27;: {&#x27;2023&#x27;: &#x27;7.82亿元 (40.4%)&#x27;, &#x27;2024&#x27;: &#x27;5.40亿元 (24.8%)&#x27;, &#x27;2025&#x27;: &#x27;5.95亿元 (20.8%)&#x27;}, &#x27;latest_performance&#x27;: &#x27;截至2026年3月31日的三个月，收入同比增长12.3%，但毛利同比减少3.6%，期内利润同比减少23.6%，毛利率由24.3%下降至20.9%。&#x27;, &#x27;net_profit_and_margin&#x27;: {&#x27;2023&#x27;: &#x27;4.47亿元 (23.0%)&#x27;, &#x27;2024&#x27;: &#x27;1.85亿元 (8.5%)&#x27;, &#x27;2025&#x27;: &#x27;1.24亿元 (4.3%)&#x27;}, &#x27;period&#x27;: &#x27;2023-2025年度&#x27;, &#x27;revenue&#x27;: {&#x27;2023&#x27;: &#x27;19.38亿元&#x27;, &#x27;2024&#x27;: &#x27;21.78亿元&#x27;, &#x27;2025&#x27;: &#x27;28.62亿元&#x27;}, &#x27;revenue_breakdown_by_product_2025&#x27;: {&#x27;其他&#x27;: &#x27;19.3%&#x27;, &#x27;其他生物基产品&#x27;: &#x27;3.8%&#x27;, &#x27;氨基酸系列&#x27;: &#x27;71.9%&#x27;, &#x27;维生素系列&#x27;: &#x27;5.0%&#x27;}, &#x27;revenue_breakdown_by_region_2025&#x27;: {&#x27;境内销售&#x27;: &#x27;57.0%&#x27;, &#x27;境外销售&#x27;: &#x27;43.0%&#x27;}}</p>
+  
+<div class="financial">
+  <div class="financial-title">财务快照</div>
+  <div class="financial-grid">
+<div class="metric">
+  <div class="metric-label">币种</div>
+  <div class="metric-value">人民币 (RMB)</div>
+</div>
+
+<div class="metric">
+  <div class="metric-label">期间</div>
+  <div class="metric-value">2023-2025年度</div>
+</div>
+</div>
+  
+<table class="mini-table">
+  <thead><tr><th colspan="2">gross profit and margin</th></tr></thead>
+  <tbody><tr><th>2023</th><td>7.82亿元 (40.4%)</td></tr><tr><th>2024</th><td>5.40亿元 (24.8%)</td></tr><tr><th>2025</th><td>5.95亿元 (20.8%)</td></tr></tbody>
+</table>
+
+<table class="mini-table">
+  <thead><tr><th colspan="2">net profit and margin</th></tr></thead>
+  <tbody><tr><th>2023</th><td>4.47亿元 (23.0%)</td></tr><tr><th>2024</th><td>1.85亿元 (8.5%)</td></tr><tr><th>2025</th><td>1.24亿元 (4.3%)</td></tr></tbody>
+</table>
+
+<table class="mini-table">
+  <thead><tr><th colspan="2">收入</th></tr></thead>
+  <tbody><tr><th>2023</th><td>19.38亿元</td></tr><tr><th>2024</th><td>21.78亿元</td></tr><tr><th>2025</th><td>28.62亿元</td></tr></tbody>
+</table>
+
+<table class="mini-table">
+  <thead><tr><th colspan="2">revenue breakdown by product 2025</th></tr></thead>
+  <tbody><tr><th>其他</th><td>19.3%</td></tr><tr><th>其他生物基产品</th><td>3.8%</td></tr><tr><th>氨基酸系列</th><td>71.9%</td></tr><tr><th>维生素系列</th><td>5.0%</td></tr></tbody>
+</table>
+
+<table class="mini-table">
+  <thead><tr><th colspan="2">revenue breakdown by region 2025</th></tr></thead>
+  <tbody><tr><th>境内销售</th><td>57.0%</td></tr><tr><th>境外销售</th><td>43.0%</td></tr></tbody>
+</table>
+
+  <p class="summary-text">截至2026年3月31日的三个月，收入同比增长12.3%，但毛利同比减少3.6%，期内利润同比减少23.6%，毛利率由24.3%下降至20.9%。</p>
+</div>
+
   <p><strong>要点：</strong></p><ul><li>公司是全球领先的合成生物学企业，按2025年产量计算，其核心产品L-丙氨酸和L-缬氨酸的全球市场份额均排名第一。</li><li>公司收入在2023年至2025年间持续增长，但盈利能力显著下滑，毛利率从40.4%降至20.8%，年内利润从4.47亿元人民币降至1.24亿元人民币。</li><li>收入高度集中于氨基酸系列产品，在2023、2024及2025年度分别占总收入的75.6%、69.3%及71.9%。</li><li>公司的产品销售遍布全球，截至2025年12月31日，客户群覆盖69个国家和地区，拥有超过815名行业客户。</li><li>面临产品平均售价下降的压力，主要产品氨基酸系列和维生素系列的平均售价在2023年至2025年间均出现显著下滑。</li></ul>
   <p><strong>主要风险：</strong></p><ul><li>产品售价波动风险：公司主要产品（如氨基酸系列）的平均售价面临大幅波动，尤其是在2023至2025年间经历了显著下降，可能对财务状况和经营业绩产生重大不利影响。</li><li>产品集中度风险：绝大部分收益来自氨基酸系列产品的销售，对该等产品的需求或定价的任何不利发展都可能对公司业务造成重大不利影响。</li><li>国际贸易政策风险：公司面临国际贸易政策、关税及贸易壁垒的风险，例如美国对L-丙氨酸征收的关税，以及欧盟可能发起的反倾销调查。</li><li>历史不合规风险：招股书披露了过往存在的不合规事件，包括未能全额缴纳社保、部分租赁协议未登记及未能取得所有必要的许可证。</li><li>市场竞争风险：文本提到，产品价格下跌的部分原因是市场供应增大、竞争加剧，这可能持续影响公司的盈利能力。</li><li>知识产权风险：公司的业务依赖于知识产权，但可能无法充分保护其知识产权，或面临第三方提起的知识产权侵权索赔。</li></ul>
   <p class="muted">自动生成，仅供信息整理，不构成投资建议。</p>
@@ -96,7 +213,34 @@
   <h3>深圳基本半導體股份有限公司</h3>
   <div><span class="tag">HKEX</span><span class="tag">聆訊後資料集（第一次呈交）</span></div>
   <p><strong>一句话业务：</strong>公司從事碳化矽(SiC)等第三代半導體功率器件的研發、製造與銷售，主要應用於新能源汽車、可再生能源等領域。</p>
-  <p><strong>财务快照：</strong>{&#x27;cash_flow&#x27;: {&#x27;operating_cash_flow_net&#x27;: [{&#x27;value&#x27;: &#x27;-1.20億元&#x27;, &#x27;year&#x27;: &#x27;2023&#x27;}, {&#x27;value&#x27;: &#x27;-0.24億元&#x27;, &#x27;year&#x27;: &#x27;2024&#x27;}, {&#x27;value&#x27;: &#x27;-1.12億元&#x27;, &#x27;year&#x27;: &#x27;2025&#x27;}]}, &#x27;currency&#x27;: &#x27;人民幣&#x27;, &#x27;income_statement&#x27;: [{&#x27;gross_loss&#x27;: &#x27;1.32億元&#x27;, &#x27;net_loss&#x27;: &#x27;3.42億元&#x27;, &#x27;revenue&#x27;: &#x27;2.21億元&#x27;, &#x27;year&#x27;: &#x27;2023&#x27;}, {&#x27;gross_loss&#x27;: &#x27;0.29億元&#x27;, &#x27;net_loss&#x27;: &#x27;2.37億元&#x27;, &#x27;revenue&#x27;: &#x27;2.99億元&#x27;, &#x27;year&#x27;: &#x27;2024&#x27;}, {&#x27;gross_loss&#x27;: &#x27;0.34億元&#x27;, &#x27;net_loss&#x27;: &#x27;3.35億元&#x27;, &#x27;revenue&#x27;: &#x27;3.11億元&#x27;, &#x27;year&#x27;: &#x27;2025&#x27;}], &#x27;notes&#x27;: &#x27;公司在往績記錄期內持續錄得毛損及淨虧損。核心產品碳化矽功率模塊及碳化矽分立器件在期內均錄得毛損。&#x27;, &#x27;period&#x27;: &#x27;截至12月31日止年度&#x27;}</p>
+  
+<div class="financial">
+  <div class="financial-title">财务快照</div>
+  <div class="financial-grid">
+<div class="metric">
+  <div class="metric-label">币种</div>
+  <div class="metric-value">人民幣</div>
+</div>
+
+<div class="metric">
+  <div class="metric-label">期间</div>
+  <div class="metric-value">截至12月31日止年度</div>
+</div>
+</div>
+  
+<table class="mini-table">
+  <thead><tr><th colspan="2">现金流</th></tr></thead>
+  <tbody><tr><th>operating cash flow net</th><td>value: -1.20億元；year: 2023；value: -0.24億元；year: 2024；value: -1.12億元；year: 2025</td></tr></tbody>
+</table>
+
+<table class="mini-table">
+  <thead><tr><th colspan="4">利润表摘要</th></tr><tr><th>gross loss</th><th>net loss</th><th>收入</th><th>year</th></tr></thead>
+  <tbody><tr><td>1.32億元</td><td>3.42億元</td><td>2.21億元</td><td>2023</td></tr><tr><td>0.29億元</td><td>2.37億元</td><td>2.99億元</td><td>2024</td></tr><tr><td>0.34億元</td><td>3.35億元</td><td>3.11億元</td><td>2025</td></tr></tbody>
+</table>
+
+  <p class="summary-text">公司在往績記錄期內持續錄得毛損及淨虧損。核心產品碳化矽功率模塊及碳化矽分立器件在期內均錄得毛損。</p>
+</div>
+
   <p><strong>要点：</strong></p><ul><li>公司採用整合設計與製造(IDM)模式，專注於碳化矽(SiC)功率模塊、分立器件及驅動器的研發、製造和銷售。</li><li>產品主要面向新能源汽車和可再生能源等高增長市場，但公司在往績記錄期內（2023-2025年）持續錄得重大淨虧損。</li><li>根據2024年數據，公司在中國車規級碳化矽功率模塊市場按銷售收入計排名第二及第三，但市場主要由合計份額超過50%的國際廠商主導。</li><li>公司在汽車電子領域的客戶集中度極高，來自最大客戶群的收入佔該分部收入的比例在2023至2025年間均超過94%。</li></ul>
   <p><strong>主要风险：</strong></p><ul><li>持續虧損歷史：公司自成立以來持續產生虧損，在往績記錄期（2023-2025年）內錄得重大經營虧損及淨虧損，未來盈利能力存在不確定性。</li><li>市場競爭激烈：公司所處的碳化矽半導體市場競爭激烈，尤其需要面對市場份額合計超過50%的國際大廠。</li><li>客戶集中度高：公司對主要客戶的依賴程度高，尤其在汽車電子領域，來自最大客戶群的收入佔比極高，可能因失去主要客戶而受到重大不利影響。</li><li>市場接受度風險：公司的業務增長取決於其碳化矽產品能否持續獲得市場認可，客戶偏好的轉變可能對業務產生不利影響。</li><li>產能利用率波動：公司自有生產基地的產能利用率存在波動，如無錫生產基地2025年利用率預計從2024年的52.6%下降至40.0%。</li><li>訴訟風險：公司披露了一宗與客戶就產品質量問題提起的訴訟，雖然公司認為不會產生重大不利影響，但仍存在不確定性。</li></ul>
   <p class="muted">自动生成，仅供信息整理，不构成投资建议。</p>
@@ -107,7 +251,44 @@
   <h3>坦博尔集团股份有限公司</h3>
   <div><span class="tag">HKEX</span><span class="tag">聆訊後資料集（第一次呈交）</span></div>
   <p><strong>一句话业务：</strong>坦博尔是一家在中国运营的羽绒服品牌公司，专注于设计、开发和销售奢华户外、运动户外和城市户外三大产品系列。</p>
-  <p><strong>财务快照：</strong>{&#x27;currency&#x27;: &#x27;人民币&#x27;, &#x27;gross_profit_margin&#x27;: {&#x27;2023&#x27;: &#x27;56.5%&#x27;, &#x27;2024&#x27;: &#x27;54.9%&#x27;, &#x27;2025&#x27;: &#x27;56.3%&#x27;}, &#x27;net_profit&#x27;: {&#x27;2023&#x27;: &#x27;1.39亿元&#x27;, &#x27;2024&#x27;: &#x27;1.07亿元&#x27;, &#x27;2025&#x27;: &#x27;2.23亿元&#x27;}, &#x27;net_profit_margin&#x27;: {&#x27;2023&#x27;: &#x27;13.6%&#x27;, &#x27;2024&#x27;: &#x27;8.2%&#x27;, &#x27;2025&#x27;: &#x27;10.2%&#x27;}, &#x27;period&#x27;: &#x27;截至12月31日止年度&#x27;, &#x27;revenue&#x27;: {&#x27;2023&#x27;: &#x27;10.21亿元&#x27;, &#x27;2024&#x27;: &#x27;13.02亿元&#x27;, &#x27;2025&#x27;: &#x27;21.89亿元&#x27;}}</p>
+  
+<div class="financial">
+  <div class="financial-title">财务快照</div>
+  <div class="financial-grid">
+<div class="metric">
+  <div class="metric-label">币种</div>
+  <div class="metric-value">人民币</div>
+</div>
+
+<div class="metric">
+  <div class="metric-label">期间</div>
+  <div class="metric-value">截至12月31日止年度</div>
+</div>
+</div>
+  
+<table class="mini-table">
+  <thead><tr><th colspan="2">毛利率</th></tr></thead>
+  <tbody><tr><th>2023</th><td>56.5%</td></tr><tr><th>2024</th><td>54.9%</td></tr><tr><th>2025</th><td>56.3%</td></tr></tbody>
+</table>
+
+<table class="mini-table">
+  <thead><tr><th colspan="2">净利润</th></tr></thead>
+  <tbody><tr><th>2023</th><td>1.39亿元</td></tr><tr><th>2024</th><td>1.07亿元</td></tr><tr><th>2025</th><td>2.23亿元</td></tr></tbody>
+</table>
+
+<table class="mini-table">
+  <thead><tr><th colspan="2">net profit margin</th></tr></thead>
+  <tbody><tr><th>2023</th><td>13.6%</td></tr><tr><th>2024</th><td>8.2%</td></tr><tr><th>2025</th><td>10.2%</td></tr></tbody>
+</table>
+
+<table class="mini-table">
+  <thead><tr><th colspan="2">收入</th></tr></thead>
+  <tbody><tr><th>2023</th><td>10.21亿元</td></tr><tr><th>2024</th><td>13.02亿元</td></tr><tr><th>2025</th><td>21.89亿元</td></tr></tbody>
+</table>
+
+  
+</div>
+
   <p><strong>要点：</strong></p><ul><li>根据2025年总零售额计算，公司是中国第四大羽绒服品牌，市场份额为5.0%。</li><li>公司收入增长迅速，从2023年的人民币10.21亿元增长至2025年的人民币21.89亿元。</li><li>公司拥有三大产品系列：奢华户外系列、运动户外系列和城市户外系列，以满足不同消费群体的需求。</li><li>销售渠道结构发生显著变化，线上渠道收入占比从2023年的34.1%大幅提升至2025年的57.3%。</li><li>公司在2023至2025年间实现了盈利，但2024年的净利润（1.07亿元）较2023年（1.39亿元）有所下滑，后于2025年恢复增长至2.23亿元。</li></ul>
   <p><strong>主要风险：</strong></p><ul><li>业务成功依赖于公司有效应对羽绒服行业快速变化的消费者偏好的能力，未能准确预测市场趋势可能对业务产生不利影响。</li><li>公司高度依赖“TANBOER坦博尔”品牌的实力和声誉，任何对品牌形象的损害都可能对业务、财务状况和经营业绩造成重大不利影响。</li><li>公司大部分收入通过第三方电商平台和社交媒体平台产生，对这些平台的依赖性较高，平台政策或合作关系的变化可能对业务构成风险。</li><li>公司依赖第三方制造商进行生产，若与主要制造商的合作关系中断或出现生产问题，可能对业务和声誉造成不利影响。</li><li>未能有效管理线上及线下分销网络，或分销商未能遵守经营标准，可能对品牌形象和经营业绩产生不利影响。</li></ul>
   <p class="muted">自动生成，仅供信息整理，不构成投资建议。</p>
