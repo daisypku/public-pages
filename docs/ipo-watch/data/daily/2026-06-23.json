@@ -1,5 +1,23 @@
 [
   {
+    "exchange": "HKEX",
+    "issuer": "MOMENTA GLOBAL LIMITED - W",
+    "document_type": "聆訊後資料集（第一次呈交）",
+    "publish_date": "2026-06-23",
+    "update_date": "2026-06-23",
+    "board": "主板",
+    "industry": null,
+    "sponsor": null,
+    "status": "A",
+    "pdf_url": "https://www1.hkexnews.hk/app/sehk/2026/108670/documents/sehk26062300175_c.pdf",
+    "source_url": "https://www1.hkexnews.hk/app/appindex.html?lang=zh",
+    "detail_url": "https://www1.hkexnews.hk/app/sehk/2026/108670/2026062300172_c.htm",
+    "title": "MOMENTA GLOBAL LIMITED - W 聆訊後資料集（第一次呈交）",
+    "summary": null,
+    "collected_at": "2026-06-23T07:01:04+00:00",
+    "id": "9cf966ee637e4282b2f3ad2b"
+  },
+  {
     "exchange": "SZSE",
     "issuer": "青岛迈金智能科技股份有限公司",
     "document_type": "IPO项目更新",
@@ -14,7 +32,7 @@
     "detail_url": "https://listing.szse.cn/projectdynamic/ipo/index.html",
     "title": "青岛迈金智能科技股份有限公司 IPO项目更新",
     "summary": null,
-    "collected_at": "2026-06-23T05:44:25+00:00",
+    "collected_at": "2026-06-23T06:38:29+00:00",
     "id": "84e10dfa7820f18141a7445d"
   },
   {
@@ -32,7 +50,7 @@
     "detail_url": "https://listing.szse.cn/projectdynamic/ipo/index.html",
     "title": "重庆耐德能源装备股份有限公司 IPO项目更新",
     "summary": null,
-    "collected_at": "2026-06-23T05:44:25+00:00",
+    "collected_at": "2026-06-23T06:38:29+00:00",
     "id": "5fe952ef55558e4487e0ad14"
   },
   {
@@ -50,7 +68,7 @@
     "detail_url": "https://listing.szse.cn/projectdynamic/ipo/index.html",
     "title": "深圳鹏城新能科技股份有限公司 IPO项目更新",
     "summary": null,
-    "collected_at": "2026-06-23T05:44:25+00:00",
+    "collected_at": "2026-06-23T06:38:29+00:00",
     "id": "5a4fc5c5abbe79beb6239c3c"
   },
   {
@@ -68,7 +86,7 @@
     "detail_url": "https://listing.szse.cn/projectdynamic/ipo/index.html",
     "title": "江苏毅合捷汽车科技股份有限公司 IPO项目更新",
     "summary": null,
-    "collected_at": "2026-06-23T05:44:25+00:00",
+    "collected_at": "2026-06-23T06:38:29+00:00",
     "id": "248e161fcffa0dd303173294"
   },
   {
@@ -86,7 +104,7 @@
     "detail_url": "https://listing.szse.cn/projectdynamic/ipo/index.html",
     "title": "广东金鼎光学技术股份有限公司 IPO项目更新",
     "summary": null,
-    "collected_at": "2026-06-23T05:44:25+00:00",
+    "collected_at": "2026-06-23T06:38:29+00:00",
     "id": "5b6a9592866216230cd04142"
   },
   {
@@ -104,7 +122,7 @@
     "detail_url": "https://listing.szse.cn/projectdynamic/ipo/index.html",
     "title": "山东汇川精密科技股份有限公司 IPO项目更新",
     "summary": null,
-    "collected_at": "2026-06-23T05:44:25+00:00",
+    "collected_at": "2026-06-23T06:38:29+00:00",
     "id": "786d2fe2e9cc1344ffc14e5f"
   },
   {
@@ -122,7 +140,7 @@
     "detail_url": "https://listing.szse.cn/projectdynamic/ipo/index.html",
     "title": "安徽三绿科技股份有限公司 IPO项目更新",
     "summary": null,
-    "collected_at": "2026-06-23T05:44:25+00:00",
+    "collected_at": "2026-06-23T06:38:29+00:00",
     "id": "34dd9a8931c17b36c282cff0"
   },
   {
@@ -140,7 +158,7 @@
     "detail_url": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2205",
     "title": "珠海普生医疗科技股份有限公司 IPO项目更新",
     "summary": null,
-    "collected_at": "2026-06-23T06:19:35+00:00",
+    "collected_at": "2026-06-23T06:54:41+00:00",
     "id": "af0ca6fb6315826658a202b4"
   },
   {
@@ -158,7 +176,7 @@
     "detail_url": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2156",
     "title": "江苏高凯精密流体技术股份有限公司 IPO项目更新",
     "summary": null,
-    "collected_at": "2026-06-23T06:19:35+00:00",
+    "collected_at": "2026-06-23T06:54:41+00:00",
     "id": "55466d3aa6979c2f8dedfd9e"
   },
   {
@@ -176,7 +194,79 @@
     "detail_url": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2134",
     "title": "上海频准激光科技股份有限公司 IPO项目更新",
     "summary": null,
-    "collected_at": "2026-06-23T06:19:35+00:00",
+    "collected_at": "2026-06-23T06:54:41+00:00",
     "id": "43cb2451ab517fadcbb922a3"
+  },
+  {
+    "exchange": "HKEX",
+    "issuer": "浙江東方科脈電子股份有限公司",
+    "document_type": "聆訊後資料集（第一次呈交）",
+    "publish_date": "2026-06-22",
+    "update_date": "2026-06-22",
+    "board": "主板",
+    "industry": null,
+    "sponsor": null,
+    "status": "A",
+    "pdf_url": "https://www1.hkexnews.hk/app/sehk/2026/108448/documents/sehk26062201949_c.pdf",
+    "source_url": "https://www1.hkexnews.hk/app/appindex.html?lang=zh",
+    "detail_url": "https://www1.hkexnews.hk/app/sehk/2026/108448/2026062201946_c.htm",
+    "title": "浙江東方科脈電子股份有限公司 聆訊後資料集（第一次呈交）",
+    "summary": null,
+    "collected_at": "2026-06-23T07:01:04+00:00",
+    "id": "4136e705a5fc0e893240e00f"
+  },
+  {
+    "exchange": "HKEX",
+    "issuer": "安徽華恒生物科技股份有限公司",
+    "document_type": "聆訊後資料集（第一次呈交）",
+    "publish_date": "2026-06-22",
+    "update_date": "2026-06-22",
+    "board": "主板",
+    "industry": null,
+    "sponsor": null,
+    "status": "A",
+    "pdf_url": "https://www1.hkexnews.hk/app/sehk/2026/108493/documents/sehk26062202043_c.pdf",
+    "source_url": "https://www1.hkexnews.hk/app/appindex.html?lang=zh",
+    "detail_url": "https://www1.hkexnews.hk/app/sehk/2026/108493/2026062202040_c.htm",
+    "title": "安徽華恒生物科技股份有限公司 聆訊後資料集（第一次呈交）",
+    "summary": null,
+    "collected_at": "2026-06-23T07:01:04+00:00",
+    "id": "bd33d411a745f0002fee19fb"
+  },
+  {
+    "exchange": "HKEX",
+    "issuer": "深圳基本半導體股份有限公司",
+    "document_type": "聆訊後資料集（第一次呈交）",
+    "publish_date": "2026-06-21",
+    "update_date": "2026-06-21",
+    "board": "主板",
+    "industry": null,
+    "sponsor": null,
+    "status": "A",
+    "pdf_url": "https://www1.hkexnews.hk/app/sehk/2026/108614/documents/sehk26062100037_c.pdf",
+    "source_url": "https://www1.hkexnews.hk/app/appindex.html?lang=zh",
+    "detail_url": "https://www1.hkexnews.hk/app/sehk/2026/108614/2026062100034_c.htm",
+    "title": "深圳基本半導體股份有限公司 聆訊後資料集（第一次呈交）",
+    "summary": null,
+    "collected_at": "2026-06-23T07:01:04+00:00",
+    "id": "5bddf443581c29ff1383413a"
+  },
+  {
+    "exchange": "HKEX",
+    "issuer": "坦博尔集团股份有限公司",
+    "document_type": "聆訊後資料集（第一次呈交）",
+    "publish_date": "2026-06-21",
+    "update_date": "2026-06-21",
+    "board": "主板",
+    "industry": null,
+    "sponsor": null,
+    "status": "A",
+    "pdf_url": "https://www1.hkexnews.hk/app/sehk/2026/108483/documents/sehk26062100125_c.pdf",
+    "source_url": "https://www1.hkexnews.hk/app/appindex.html?lang=zh",
+    "detail_url": "https://www1.hkexnews.hk/app/sehk/2026/108483/2026062100122_c.htm",
+    "title": "坦博尔集团股份有限公司 聆訊後資料集（第一次呈交）",
+    "summary": null,
+    "collected_at": "2026-06-23T07:01:04+00:00",
+    "id": "18cde0da53c07bfbe91afdcd"
   }
 ]
