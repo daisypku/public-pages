@@ -70,6 +70,34 @@
     "id": "9cf966ee637e4282b2f3ad2b"
   },
   {
+    "exchange": "A股",
+    "issuer": "光远新材",
+    "document_type": "定向关注",
+    "publish_date": "2026-06-23",
+    "update_date": "2026-06-23",
+    "board": "待确认",
+    "industry": "新材料",
+    "sponsor": null,
+    "status": "待确认官方项目",
+    "pdf_url": null,
+    "source_url": null,
+    "detail_url": null,
+    "title": "光远新材 定向关注",
+    "summary": {
+      "financial_snapshot": {},
+      "key_points": [
+        "定向加入关注列表，但当前尚未在沪深官方 IPO 项目接口中定位到匹配项目。",
+        "需要补充准确公司全称或交易所后，才能替换为真实官方项目页或官方数据链接。"
+      ],
+      "one_line_business": "定向关注的新材料公司。",
+      "risk_factors": [
+        "官方项目链接尚待确认。"
+      ]
+    },
+    "collected_at": null,
+    "id": "ea6ac5c9fc2ad8d16c152be1"
+  },
+  {
     "exchange": "SZSE",
     "issuer": "青岛迈金智能科技股份有限公司",
     "document_type": "IPO项目更新",

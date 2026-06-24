@@ -960,33 +960,5 @@
     },
     "collected_at": "2026-06-24T04:46:52+00:00",
     "id": "18cde0da53c07bfbe91afdcd"
-  },
-  {
-    "exchange": "HKEX",
-    "issuer": "潮州三环(集团)股份有限公司",
-    "document_type": "聆讯后资料集（第一次呈交）",
-    "publish_date": "2026-06-18",
-    "update_date": "2026-06-18",
-    "board": "主板",
-    "industry": "电子陶瓷与电子元件",
-    "sponsor": null,
-    "status": "A",
-    "pdf_url": "https://www1.hkexnews.hk/app/sehk/2026/108626/documents/sehk26061800195_c.pdf",
-    "source_url": "https://www1.hkexnews.hk/app/appindex.html?lang=zh",
-    "detail_url": "https://www1.hkexnews.hk/app/sehk/2026/108626/2026061800192_c.htm",
-    "title": "潮州三环(集团)股份有限公司 聆讯后资料集（第一次呈交）",
-    "summary": {
-      "financial_snapshot": {},
-      "key_points": [
-        "定向加入关注列表；官方港交所记录显示其于 2026-06-18 披露聆讯后资料集。",
-        "后续如开启 AI 摘要，可基于 PDF 原文补全财务快照、业务要点和风险。"
-      ],
-      "one_line_business": "公司主要从事电子陶瓷及相关电子元件业务。",
-      "risk_factors": [
-        "尚未生成基于招股书全文的自动风险摘要。"
-      ]
-    },
-    "collected_at": null,
-    "id": "842aa649eecc2698bc0988f6"
   }
 ]
