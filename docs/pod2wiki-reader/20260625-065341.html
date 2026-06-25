@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>播客简报 2026-06-25</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17202a;
+      --muted: #687385;
+      --line: #dfe5ec;
+      --paper: #ffffff;
+      --canvas: #f3f6f8;
+      --accent: #0b57d0;
+      --accent-soft: #e8f0fe;
+      --green: #0f766e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+      color: var(--ink);
+      background:
+        linear-gradient(180deg, #eef4f7 0, rgba(238, 244, 247, 0) 360px),
+        var(--canvas);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 22px 80px;
+      min-height: 100vh;
+    }
+    .article-shell {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 44px 48px 64px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 18px 50px rgba(23, 32, 42, 0.08);
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 38px;
+      align-items: center;
+      padding: 42px 0 38px;
+      border-bottom: 1px solid var(--line);
+    }
+    .kicker {
+      margin: 0 0 12px;
+      color: var(--green);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      margin: 0;
+      max-width: 760px;
+      font-size: 4.4rem;
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+    .lede {
+      max-width: 650px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    .hero-art {
+      margin: 0;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      box-shadow: 0 18px 40px rgba(23, 32, 42, 0.1);
+    }
+    .hero-art img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    .article-postcard {
+      margin: 0 0 34px;
+      aspect-ratio: 3 / 2;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--canvas);
+    }
+    .article-postcard img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    .section-heading {
+      margin: 34px 0 18px;
+    }
+    .section-heading h2 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+    .cards {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 12px;
+    }
+    .digest-card {
+      margin: 0;
+    }
+    .digest-card a {
+      min-height: 92px;
+      display: grid;
+      grid-template-columns: 150px 1fr auto;
+      gap: 20px;
+      align-items: center;
+      padding: 20px 22px;
+      color: var(--ink);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 10px 28px rgba(23, 32, 42, 0.05);
+    }
+    .digest-card a:hover {
+      text-decoration: none;
+      border-color: #b9c7d8;
+      transform: translateY(-1px);
+    }
+    .card-date {
+      color: var(--green);
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+    .card-title {
+      font-size: 1.08rem;
+      font-weight: 700;
+    }
+    .card-action {
+      color: var(--accent);
+      font-size: 0.92rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .article-page main {
+      max-width: 900px;
+    }
+    .article-page h1 {
+      margin: 0 0 8px;
+      font-size: 2.7rem;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    .page-date {
+      margin: 0 0 30px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .article-page h2 {
+      font-size: 1.25rem;
+      margin: 42px 0 12px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+    p { margin: 10px 0; }
+    .article-page p { color: #243241; }
+    ul { padding-left: 24px; }
+    li { margin: 8px 0; }
+    .article-page li { padding-left: 2px; }
+    @media (max-width: 720px) {
+      main { padding: 28px 16px 64px; }
+      .article-shell { padding: 30px 22px 44px; }
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding-top: 34px;
+      }
+      .hero h1 { font-size: 2.5rem; }
+      .hero-art { max-width: 420px; }
+      .article-page h1 { font-size: 2rem; }
+      .digest-card a {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        min-height: 0;
+      }
+      .card-action { white-space: normal; }
+    }
+  </style>
+</head>
+<body class="article-page">
+  <main>
+<article class="article-shell">
+<p class="page-date">6月25日 周四</p>
+<figure class="article-postcard">
+  <img src="assets/postcards/20260625.jpg" width="960" height="640" decoding="async" alt="当日手绘城市明信片">
+</figure>
+<h1>播客简报 2026-06-25</h1>
+<h2>How to Repair and Nourish Your Gut | Dr. Giulia Enders</h2>
+<p>来源：The Knowledge Project</p>
+<p>原链接：<a href="https://fs.blog/knowledge-project-podcast/dr-giulia-enders/">https://fs.blog/knowledge-project-podcast/dr-giulia-enders/</a></p>
+<p>这期播客深入探讨了肠道健康对我们整体身心健康的关键影响，揭示了许多关于消化系统的常见误区，并提供了基于科学证据的实用建议。它适合所有希望通过饮食和生活方式改善消化、提升情绪、优化睡眠和代谢的中文读者，尤其是那些对身体内部运作充满好奇，并愿意主动管理自身健康的人。</p>
+<ul>
+<li>肠道：被低估的健康中枢与常见误区：Giulia Enders博士强调，肠道并非脆弱，而是一个极其强大且可塑的器官，其健康状况对我们的精神状态、睡眠质量、新陈代谢、体重乃至日常情绪都有深远影响，有时甚至超越基因。许多人误以为肠道敏感，对某些食物（如果糖、麸质、乳制品）产生不适，但博士指出，这往往是肠道存在潜在损伤的信号，而非食物本身的问题。一旦修复了根本问题，肠道通常能恢复对这些食物的耐受性。判断肠道健康状况的简单方法包括观察排便情况（形状、颜色、浮沉等），以及关注腹痛、焦虑、抑郁风险和免疫系统失衡等更微妙的信号。</li>
+<li>优化饮食：纤维、益生元与个性化策略：改善肠道健康应从选择自己喜欢且健康的食物开始，避免盲目摄入不喜欢的“健康食品”。肠道微生物群具有高度个体差异性，因此对食物的反应也因人而异。博士建议，倾听身体的渴望，因为这可能反映了肠道中特定微生物的需求。膳食纤维是常被忽视的关键营养素，分为水溶性（如水果果肉、芦笋中的益生元）和水不溶性（如谷物、苹果皮中的粗纤维）。水不溶性纤维能增加粪便体积，促进肠道蠕动；水溶性纤维则为益生菌提供养分。此外，将米饭、面条、土豆等淀粉类食物煮熟后放凉再食用（甚至可以再加热），能增加其抗性淀粉含量，使其成为更好的益生元，有助于稳定血糖和体重。为确保肠道微生物多样性，建议每周摄入约30种不同的蔬果。</li>
+<li>肠道与免疫、炎症及癌症的深层关联：肠道是免疫系统的重要训练营，大量免疫细胞在此学习如何区分有害物质和无害食物。当肠道屏障受损（如黏液层变薄、炎症）时，免疫细胞可能过度反应，导致食物敏感或过敏。膳食纤维通过促进消化、减少毒素停留时间、调节肠道菌群和稳定血糖，能有效降低结肠癌及其他代谢相关癌症的风险。炎症是许多疾病的根源，而过量摄入糖分，特别是高果糖玉米糖浆等浓缩糖，会为免疫细胞提供过剩能量，使其变得更具攻击性，从而引发慢性炎症。博士的个人经历也印证了肠道与全身健康的联系，她曾因皮肤病而开始研究身体，最终发现肠道健康对皮肤状况的改善至关重要。</li>
+<li>排便的学问与抗生素的利弊：排便不仅是生理过程，更是身体发出的健康信号。观察粪便的浮沉、脂肪含量、结构和颜色（如黑色或带血需警惕）能提供宝贵的健康线索。理想的排便应是顺畅、干净，这通常意味着肠道黏液层功能良好。博士特别指出，现代坐式马桶的姿势不利于排便，因为会使肠道末端形成一个弯曲。采用蹲姿（或在马桶前垫高双脚，使身体呈约30度角）能有效拉直肠道，减少排便时的压力，降低痔疮和憩室病的风险。抗生素在杀死有害细菌的同时，也会伤害有益菌群，尤其对儿童和老年人的肠道微生物群影响深远，甚至可能导致某些有益菌的永久性丧失。因此，应谨慎使用抗生素。在抗生素治疗后，益生元（通过健康饮食喂养自身有益菌）比单纯补充益生菌对肠道恢复更为关键。</li>
+<li>现代饮食陷阱：加工食品、糖、咖啡与零食：超加工食品往往通过高热量密度来刺激大脑的多巴胺系统，让人产生愉悦感并渴望更多。博士建议购物时仔细查看配料表，选择成分简单、添加剂少的食品，并遵循“80/20法则”（80%天然食物，20%加工食品）。世界卫生组织建议每日糖摄入量不超过25克，而浓缩糖（如高果糖玉米糖浆）的危害尤甚。酒精会扰乱肠道免疫细胞、神经细胞和微生物群，导致消化不适。咖啡中的多酚和抗氧化剂对肠道有益，但咖啡因会影响多巴胺系统和睡眠质量。博士建议在下午早些时候（如12点到下午4点）前饮用咖啡，并尝试无咖啡因咖啡以改善睡眠。关于零食，应倾听身体需求，而非盲目遵循某种饮食模式，但限制晚餐后的进食时间（如晚上7点后至次日10点前不进食）可能有助于减少内脏脂肪。</li>
+</ul>
+<h2>The data black hole at the center of AI</h2>
+<p>来源：Dwarkesh Podcast</p>
+<p>原链接：<a href="https://www.dwarkesh.com/p/the-sample-efficiency-black-hole">https://www.dwarkesh.com/p/the-sample-efficiency-black-hole</a></p>
+<p>材料不足：这期需要 transcript 或更完整正文后再做全篇摘要。</p>
+<ul>
+<li>当前只有节目简介或网页正文；这是播客音频，必须获取 transcript 后才算读完整期。</li>
+</ul>
+<h2>Episode 55: Economic Myths with Jeff Yass - Co-Founder and Managing Director of Susquehanna</h2>
+<p>来源：Generating Alpha Podcast</p>
+<p>原链接：<a href="https://podcasters.spotify.com/pod/show/generatingalphapodcast/episodes/Episode-55-Economic-Myths-with-Jeff-Yass---Co-Founder-and-Managing-Director-of-Susquehanna-e3l366g">https://podcasters.spotify.com/pod/show/generatingalphapodcast/episodes/Episode-55-Economic-Myths-with-Jeff-Yass---Co-Founder-and-Managing-Director-of-Susquehanna-e3l366g</a></p>
+<p>这期播客深入探讨了美国经济中普遍存在的两大迷思：国债危机和累进税制。通过挑战传统观点，Jeff Yass提供了基于国家财富而非GDP的国债评估视角，并揭示了对富人征税和慈善捐赠的常见误解。本期节目适合对宏观经济、税收政策、财富创造以及慈善事业有兴趣，并愿意接受颠覆性观点的中文读者。</p>
+<ul>
+<li>美国国债迷思：GDP与财富的视角：Jeff Yass指出，将美国31万亿美元的国债与31万亿美元的GDP简单对比，得出100%的债务/GDP比率，从而担忧“债务危机”是错误的诊断方式。他强调，美国拥有远超GDP的巨大国家财富，高达约230万亿美元，是GDP的七倍之多。其中，美国股市市值就超过80万亿美元，是GDP的两倍半以上，这与欧洲和中国等国家股市市值与GDP约1:1的比例形成鲜明对比，显示出美国独特的财富结构。Yass认为，衡量债务的真正指标应是国家财富，而非其年度收入（GDP）。从财富角度看，美国国债仅占国家财富的13-14%，这一比例在历史上处于相对较低的水平。因此，真正的风险并非国债数字本身，而是可能破坏美国经济赖以增长和创造财富的“金鹅”的政策。</li>
+<li>财富创造的引擎与潜在威胁：Yass强调，美国经济的强大和持续繁荣，主要源于其强大的财富创造能力，这体现在蓬勃发展的股市、持续的创新精神以及高效率的生产力。他警告说，如果美国政府采取错误的政策方向，例如实施过于严苛的监管、征收过高的税收，或者设置障碍阻碍新业务的启动和资本的有效筹集，这些都可能扼杀经济增长的活力。他以欧洲为例，指出尽管美国与欧洲大部分地区的人口规模相似，但美国的人均财富却比欧洲高出50%。这意味着，即使是看似微不足道的政策调整，也可能导致美国经济大幅衰退，甚至使其“欧洲化”，届时才会面临真正的经济困境。因此，维护并促进经济活力和财富的持续增长，是避免未来潜在危机的核心所在。</li>
+<li>华尔街的价值与消费盈余：许多人对华尔街的价值存在误解，认为它不像亚马逊等实体企业那样直接创造价值。Jeff Yass反驳了这一观点，指出包括他自己的公司Susquehanna在内的华尔街机构，通过提高市场效率，实际上为经济创造了巨大的价值。他认为，任何能够持续存在并繁荣发展的企业，都必然是因为它们为消费者提供了有益的服务或产品，从而创造了“消费盈余”。美国股市高达80万亿美元的市值，正是这种巨大消费盈余和价值创造的体现。这种价值创造是美国经济强大和持续增长的根本原因，不应被简单地忽视或贬低。</li>
+<li>累进税制的误解与贝佐斯的例子：Yass认为，当前美国的累进税制存在技术和哲学上的问题，尤其是在如何奖励企业家创造价值方面。他以伊丽莎白·沃伦指责杰夫·贝佐斯“不纳税”为例，指出这是一种普遍的误解。贝佐斯持有亚马逊股票，若不出售，个人可能没有直接的所得税负债。但亚马逊公司本身每年缴纳巨额税款（例如，若亚马逊盈利1000亿美元，缴纳300亿美元税款），其中一部分（如贝佐斯持股20%对应的60亿美元）实际上是代表贝佐斯缴纳的。Yass强调，这并非哲学问题，而是简单的会计事实：公司纳税，股东的财富因此间接被征税，不能简单地说个人股东“零纳税”，这种说法是“彻头彻尾的胡说”。</li>
+<li>慈善捐赠的真实影响与巴菲特的案例：Jeff Yass进一步探讨了社会对亿万富翁财富流向的普遍误解，特别是关于他们的巨额财富最终如何回馈社会。他以投资传奇沃伦·巴菲特为例，巴菲特曾明确表示会合法地利用税法来减少个人税负，并计划在生命尽头将绝大部分财富捐赠给慈善机构。最终，巴菲特将这笔巨额财富捐赠给了比尔及梅琳达·盖茨基金会，用于在全球范围内，特别是在非洲，致力于消除人类苦难，提供关键的医疗服务、食物援助和疫苗接种。Yass认为，尽管巴菲特在生前可能因其避税策略而受到部分公众的指责，但他的最终行为却极大地造福了社会最贫困的人群，产生了深远的积极影响。他指出，这种将财富回馈社会的行为，却常常被那些为了政治目的、试图通过“没收”富人财富来争取选票的政客所忽视或故意歪曲。</li>
+</ul>
+    </article>
+  </main>
+</body>
+</html>
