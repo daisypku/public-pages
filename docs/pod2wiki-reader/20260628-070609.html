@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>播客简报 2026-06-28</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17202a;
+      --muted: #687385;
+      --line: #dfe5ec;
+      --paper: #ffffff;
+      --canvas: #f3f6f8;
+      --accent: #0b57d0;
+      --accent-soft: #e8f0fe;
+      --green: #0f766e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+      color: var(--ink);
+      background:
+        linear-gradient(180deg, #eef4f7 0, rgba(238, 244, 247, 0) 360px),
+        var(--canvas);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 22px 80px;
+      min-height: 100vh;
+    }
+    .article-shell {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 44px 48px 64px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 18px 50px rgba(23, 32, 42, 0.08);
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 38px;
+      align-items: center;
+      padding: 42px 0 38px;
+      border-bottom: 1px solid var(--line);
+    }
+    .kicker {
+      margin: 0 0 12px;
+      color: var(--green);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      margin: 0;
+      max-width: 760px;
+      font-size: 4.4rem;
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+    .lede {
+      max-width: 650px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    .hero-art {
+      margin: 0;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      box-shadow: 0 18px 40px rgba(23, 32, 42, 0.1);
+    }
+    .hero-art img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    .article-postcard {
+      margin: 0 0 34px;
+      aspect-ratio: 3 / 2;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--canvas);
+    }
+    .article-postcard img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    .section-heading {
+      margin: 34px 0 18px;
+    }
+    .section-heading h2 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+    .cards {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 12px;
+    }
+    .digest-card {
+      margin: 0;
+    }
+    .digest-card a {
+      min-height: 92px;
+      display: grid;
+      grid-template-columns: 150px 1fr auto;
+      gap: 20px;
+      align-items: center;
+      padding: 20px 22px;
+      color: var(--ink);
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 10px 28px rgba(23, 32, 42, 0.05);
+    }
+    .digest-card a:hover {
+      text-decoration: none;
+      border-color: #b9c7d8;
+      transform: translateY(-1px);
+    }
+    .card-date {
+      color: var(--green);
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+    .card-title {
+      font-size: 1.08rem;
+      font-weight: 700;
+    }
+    .card-action {
+      color: var(--accent);
+      font-size: 0.92rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .article-page main {
+      max-width: 900px;
+    }
+    .article-page h1 {
+      margin: 0 0 8px;
+      font-size: 2.7rem;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+    .page-date {
+      margin: 0 0 30px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .article-page h2 {
+      font-size: 1.25rem;
+      margin: 42px 0 12px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+    p { margin: 10px 0; }
+    .article-page p { color: #243241; }
+    ul { padding-left: 24px; }
+    li { margin: 8px 0; }
+    .article-page li { padding-left: 2px; }
+    @media (max-width: 720px) {
+      main { padding: 28px 16px 64px; }
+      .article-shell { padding: 30px 22px 44px; }
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding-top: 34px;
+      }
+      .hero h1 { font-size: 2.5rem; }
+      .hero-art { max-width: 420px; }
+      .article-page h1 { font-size: 2rem; }
+      .digest-card a {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        min-height: 0;
+      }
+      .card-action { white-space: normal; }
+    }
+  </style>
+</head>
+<body class="article-page">
+  <main>
+<article class="article-shell">
+<p class="page-date">6月28日 周日</p>
+<figure class="article-postcard">
+  <img src="assets/postcards/20260628.jpg" width="960" height="640" decoding="async" alt="当日手绘城市明信片">
+</figure>
+<h1>播客简报 2026-06-28</h1>
+<h2>#423 Soichiro Honda</h2>
+<p>来源：Founders</p>
+<p>原链接：</p>
+<p>这期播客深入剖析了本田宗一郎这位日本创业家和工程天才的传奇一生与经营哲学。对于任何对创业、产品开发、创新以及如何在逆境中打造世界级公司感兴趣的中文读者来说，这都是一份值得一读的深度纪要，尤其适合那些欣赏反叛精神和对工程卓越不懈追求的人。</p>
+<ul>
+<li>戴森的启示与本田精神：播客开篇引用詹姆斯·戴森对本田的评价，提炼出其职业生涯的核心框架：发现现有产品的不足，持续改进使其更简单、更愉悦，并保持公司控制权以不断优化。本田宗一郎本人被描述为一位“自由精神”和“特立独行者”，其一生经历了日本的巨大变迁，包括战争、经济萧条与复苏。他性格直率，对机器有着近乎痴迷的热爱，反复强调“摆弄机器”是他毕生所爱，甚至愿意为此免费工作。这种对技术和产品本身的纯粹热情，是本田成功的基石。他所创造的本田Super Cub摩托车，更是以超过1亿辆的销量成为史上最畅销的机动车。</li>
+<li>贫困童年与机械启蒙：本田宗一郎出生于偏远乡村，父亲是铁匠，这让他从小耳濡目染了工匠精神和解决问题的能力。他家境贫寒，但父亲对工作质量的执着深刻影响了他。本田从小就展现出对机械的浓厚兴趣，对磨坊里稀有的马达声和气味着迷，第一次见到汽车时更是被其滴落的机油味“陶醉”，立志要亲手造车。这种早期的、发自内心的兴趣，预示了他未来的道路。他从父亲那里继承了追根溯源、以自己方式解决问题的倔强性格，这成为他日后创新和克服困难的重要动力。</li>
+<li>学徒生涯与创业初期：16岁时，本田离开家乡前往东京，在一家汽车修理店开始学徒生涯。这段经历异常艰辛，他长时间被要求做杂务，无法接触核心技术。然而，一场大地震意外地为他创造了机会，使他得以接触并学习汽车修理。他比同龄人更勤奋、更有天赋，很快成为修理店的核心人物，并最终在老板的帮助下开设了自己的修理店。创业初期，他因年轻而不被信任，只能承接其他店放弃的“疑难杂症”，这反而磨练了他解决最困难问题的能力。他从修理转向制造，首个产品是铸铁辐条，并因此获得了多项专利，展现了其从实践中学习和创新的能力。</li>
+<li>本田公司的诞生与黄金搭档：二战后，日本物资匮乏，汽油短缺。本田宗一郎出于个人出行需求，将一台军用发电机引擎安装到自行车上，意外地创造了市场急需的交通工具，这便是本田摩托车的雏形。他凭借对自身判断的坚定信念，不顾亲友的质疑和批评，毅然投身摩托车制造。然而，作为一名纯粹的工程师，本田在财务和销售方面存在短板，公司一度濒临破产。此时，他的“黄金搭档”藤泽武夫出现。藤泽擅长财务和市场营销，通过创新性的营销策略（例如给18000家自行车店写信）和预付款制度，迅速建立了庞大的经销商网络，解决了公司的现金流和分销难题，确保了本田的商业成功。</li>
+<li>Super Cub的成功与市场重塑：本田宗一郎意识到，当时的摩托车市场过于小众，形象不佳。他决定设计一款更简单、更易用、价格更低的摩托车，目标是那些从未考虑过骑摩托车的普通大众，包括家庭主妇和学生。这款产品就是Super Cub。为了改变摩托车在公众心中的负面形象（与“飞车党”关联），本田在美国发起了大规模的广告宣传活动，口号是“你会在本田上遇到最友善的人”（You meet the nicest people on a Honda）。广告中展示了各行各业的普通人骑着本田摩托车，成功地将摩托车从“叛逆者玩具”转变为“可靠的日常交通工具”，极大地拓展了市场，这与史蒂夫·乔布斯推广Apple II的理念异曲同工。</li>
+</ul>
+<h2>The next big breakthrough will be AIs learning on the job</h2>
+<p>来源：Dwarkesh Podcast</p>
+<p>原链接：<a href="https://www.dwarkesh.com/p/the-next-paradigm">https://www.dwarkesh.com/p/the-next-paradigm</a></p>
+<p>这期播客深入探讨了当前AI训练范式（RLVR）的局限性，特别是其在真实世界复杂、非结构化任务中面临的“可磨练性”挑战。作者提出，AI的下一个重大突破将是“在岗学习”，即通过持续学习将部署中获得的宝贵经验蒸馏回模型权重，并介绍了如On-Policy Self-Distillation（OPSD）和“做梦”等创新方法。这期播客适合所有关注AI前沿研究、AGI发展路径以及AI未来商业应用潜力的技术人员和决策者。</p>
+<ul>
+<li>当前AI训练范式：RLVR的优势与隐忧：目前，AI实验室普遍认为，通过在数千个多样化的强化学习（RL）环境中训练AI完成数百万个可验证任务，就能构建通用人工智能（AGI）。这种方法旨在培养AI的通用问题解决能力，使其能在面对错误和模糊性时持续推进开放式任务。乐观者认为，当前学习范式中的缺陷，如数据效率低下和缺乏持续学习能力，都可以通过扩大训练规模来克服，就像大规模计算解决了自然语言处理中的“根本性”问题一样。他们指出，虽然AI在训练时样本效率远低于人类，但训练成本是一次性的，摊销到数十亿用户会话中。更重要的是，模型在单个会话内的智能、通用性和样本效率正在显著提升，尤其是在编码等领域。此外，随着Transformer架构的创新，上下文窗口长度大幅增加，未来AI或许能将人类数月的“在岗学习”压缩到上下文窗口中完成，从而无需在部署后更新模型权重。</li>
+<li>AI进步的隐形障碍：可验证性之外的“可磨练性”：播客指出，AI在计算机使用方面的进展为何相对缓慢，这令人困惑。尽管计算机使用任务（如在线购物、预订活动、提交税务）显然是可验证的，但其进展却不如编码和数学。一个被低估的关键原因是，一个领域不仅需要“可验证性”，还需要“可磨练性”（grindability）。这意味着能够针对确定性、可重放的模拟器进行大量并行训练。例如，在编码任务中，可以创建包含缺失功能的软件仓库，让数千个AI代理并行尝试解决问题。然而，这种方法不适用于真实的计算机使用场景，因为无法让数千个代理同时在Amazon.com上尝试结账流程，这会被检测并阻止。虽然可以通过构建Slack、Gmail等应用的克隆版本来解决，但这在目前是劳动密集且难以扩展的。这表明，除非能为某个领域构建高度可重放的训练目标，否则模型将因样本效率低下而难以取得显著进展。</li>
+<li>真实世界学习的挑战：稀疏数据与非稳态环境：许多AGI所需的技能，如创业、赢得诉讼、日内交易或协助竞选，无法在可磨练的模拟器中进行训练。这些任务的执行需要与真实世界互动，且无法在数据中心内简单重现。外部验证可能需要数月甚至数年的真实世界行动才能显现，也无法通过并行扰动模型行动数千次来隔离具体哪些操作有效。处理这种“无重置、非稳态环境”是强化学习中的一个已知难题。播客强调，由于世界上大多数领域的数据具有特殊性和稀疏性，模型需要极高的样本效率才能精通。如果AI要发展出人类乃至超越人类的技能，它们必须能够从稀缺的真实世界互动中，以非结构化、不可验证和模糊的方式学习信息。因为在许多领域，相关的训练信息根本不存在其他形式。例如，如何训练AI像林登·约翰逊那样精通政治，或像埃隆·马斯克那样擅长建立航天发射业务，这些都缺乏可磨练的RL环境。</li>
+<li>持续学习的必要性：将经验固化到权重中：AI实验室目前押注RLVR训练出的通用代理，能够通过上下文学习快速适应新信息和掌握新技能。然而，Anthropic的Dario曾暗示，短时程RL训练不一定能很好地泛化到长时程RL表现。这意味着，即使AI能在上下文窗口中积累大量经验并变得像爱因斯坦或亨利·福特一样聪明，如果这些学习无法固化回模型权重，它们也将是短暂且浪费的。目前，实验室约30-50%的计算资源用于推理，但这些计算并未有效帮助模型改进。更糟糕的是，最有价值的信息（如模型在实际组织中的用途、常犯错误等）只在部署中才能被揭示。播客将此比喻为一个从未被允许实习的天才研究生，只被不断给予课堂案例研究。AI不能仅仅通过不断增长的KV缓存来学习，因为这不具可扩展性，也与人类学习方式不同。人类学习涉及某种压缩，有助于泛化和理解。持续学习需要将正确的直觉和宏观知识刻画回权重中，但这通常意味着放弃上下文学习的样本效率，因为梯度更新通常样本效率低下。</li>
+<li>克服样本效率：On-Policy Self-Distillation (OPSD)：当前的在线学习模型（如Cursor Tab）只能在非常有限的用例中工作，例如每天预测数亿次相同的目标（哪些编辑被接受）。然而，持续学习的关键在于世界的复杂性，每个工作、公司和问题都是独特的，AI需要学习特定部署相关的具体信息，而这些信息无法通过共享训练运行来获取。这正是样本效率和持续学习深度关联的问题：模型在“在岗”时可用的数据相对较少，从中学习需要样本效率。虽然模型可以在上下文中实现这一点，但通过注意力机制即时构建的“快速权重”在内存方面扩展性很差。因此，需要架构创新来实现某种中间表示。播客认为，架构并非持续学习的根本瓶颈，真正的瓶颈可能是损失函数：如何根据单个会话中学习到的信息来更新模型权重？On-Policy Self-Distillation（OPSD）被提出作为一种解决方案。其核心思想是鼓励基础模型在解决真实世界问题时，做出与积累了大量上下文经验的“资深教师模型”相同的预测。OPSD优于RLVR，因为它不需要外部可验证的奖励，并且提供比朴素RL更密集的监督信号。它也优于监督微调（SFT），因为它专注于提取实现相同结果所需的知识，而非完美回忆所有观察到的令牌，从而保留了RL更新的稀疏性，避免遗忘其他知识。</li>
+</ul>
+    </article>
+  </main>
+</body>
+</html>
