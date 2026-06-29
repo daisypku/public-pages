@@ -1,0 +1,106 @@
+[
+  {
+    "exchange": "SSE",
+    "issuer": "中导光电设备股份有限公司",
+    "document_type": "IPO项目更新",
+    "publish_date": "2026-06-28",
+    "update_date": "2026-06-28",
+    "board": "科创板",
+    "industry": "专用设备制造业",
+    "sponsor": "国联民生证券承销保荐有限公司",
+    "status": "已受理",
+    "pdf_url": null,
+    "source_url": "https://listing.sse.com.cn/ipo/index.html",
+    "detail_url": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2229",
+    "title": "中导光电设备股份有限公司 IPO项目更新",
+    "summary": null,
+    "collected_at": "2026-06-29T05:12:30+00:00",
+    "id": "1da23c71d22a195c7d2b4048"
+  },
+  {
+    "exchange": "SSE",
+    "issuer": "苏州信诺维医药科技股份有限公司",
+    "document_type": "IPO项目更新",
+    "publish_date": "2025-12-22",
+    "update_date": "2026-06-26",
+    "board": "科创板",
+    "industry": "医药制造业",
+    "sponsor": "国泰海通证券股份有限公司",
+    "status": "上市委会议",
+    "pdf_url": null,
+    "source_url": "https://listing.sse.com.cn/ipo/index.html",
+    "detail_url": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2137",
+    "title": "苏州信诺维医药科技股份有限公司 IPO项目更新",
+    "summary": null,
+    "collected_at": "2026-06-29T05:12:30+00:00",
+    "id": "67ca6ef19fe6272f57d77b0c"
+  },
+  {
+    "exchange": "HKEX",
+    "issuer": "永康控股有限公司",
+    "document_type": "聆訊後資料集（第一次呈交）",
+    "publish_date": "2026-06-26",
+    "update_date": "2026-06-26",
+    "board": "主板",
+    "industry": null,
+    "sponsor": null,
+    "status": "A",
+    "pdf_url": "https://www1.hkexnews.hk/app/sehk/2026/108390/documents/sehk26062603257_c.pdf",
+    "source_url": "https://www1.hkexnews.hk/app/appindex.html?lang=zh",
+    "detail_url": "https://www1.hkexnews.hk/app/sehk/2026/108390/2026062603254_c.htm",
+    "title": "永康控股有限公司 聆訊後資料集（第一次呈交）",
+    "summary": {
+      "disclaimer": "自动生成，仅供信息整理，不构成投资建议。",
+      "financial_snapshot": {
+        "income_statement": [
+          {
+            "gross_margin": "30.2%",
+            "gross_profit": "4,694.6万新加坡元",
+            "net_margin": "5.4%",
+            "net_profit": "837.0万新加坡元",
+            "revenue": "15,552.3万新加坡元",
+            "year": "2023"
+          },
+          {
+            "gross_margin": "26.2%",
+            "gross_profit": "4,319.8万新加坡元",
+            "net_margin": "7.0%",
+            "net_profit": "1,161.8万新加坡元",
+            "revenue": "16,502.2万新加坡元",
+            "year": "2024"
+          },
+          {
+            "gross_margin": "29.5%",
+            "gross_profit": "4,396.8万新加坡元",
+            "net_margin": "8.9%",
+            "net_profit": "1,326.6万新加坡元",
+            "revenue": "14,917.0万新加坡元",
+            "year": "2025"
+          }
+        ],
+        "summary": "2023至2025年，公司收入有所波动，在2024年增长后于2025年回落。毛利率在2024年出现下滑后于2025年有所回升。净利润及净利率在三年间呈现持续增长趋势。"
+      },
+      "key_points": [
+        "公司是亚洲区域性的集装箱堆场运营商，根据招股书信息，2025年在新加坡市场占有率排名第一（16.2%），在马来西亚排名第二（5.9%）。",
+        "业务遍及亚洲六个国家和地区，包括新加坡、中国、马来西亚、香港、泰国和越南，截至2026年5月31日共运营18个堆场。",
+        "主要收入来源为集装箱堆场业务，占2025年总收入的73.2%。",
+        "2023至2025年，公司收入有所波动，但净利润持续增长，从2023年的840万新加坡元增长至2025年的1330万新加坡元。"
+      ],
+      "one_line_business": "一家在新加坡、马来西亚、中国等亚洲地区提供集装箱堆场运营及相关物流服务的公司。",
+      "questions_to_follow": [
+        "2025年总收入较2024年下降约9.6%，主要原因是什么？特别是“货柜及集装箱货运服务”和“集装箱检验”业务收入大幅减少的具体因素是什么？",
+        "公司毛利率在2024年出现明显下降（从30.2%降至26.2%），主要是什么成本项的变动导致的？2025年毛利率回升的原因是什么？",
+        "招股书中多次提及的“Mega Depot”项目是公司未来的关键策略，该项目的具体投资规模、预期回报、建设时间表以及目前面临的主要挑战是什么？"
+      ],
+      "risk_factors": [
+        "全球经济状况的不可预测变化可能导致服务需求减少，对业务和经营业绩造成不利影响。",
+        "业务受到土地供应及使用的风险影响，可能难以持续获得合适的土地用于业务扩张。",
+        "集装箱堆场业务的处理量可能因无法控制的因素而波动，从而对经营及财务表现造成不利影响。",
+        "计划中的重点项目“Mega Depot”可能无法成功落实，或无法实现预期效益。",
+        "公司或未能持续将业务扩展至新地点，并可能面临来自新市场的激烈竞争及潜在风险。"
+      ]
+    },
+    "collected_at": "2026-06-29T05:12:25+00:00",
+    "id": "dd7abaa3d40c5f538da502ba"
+  }
+]

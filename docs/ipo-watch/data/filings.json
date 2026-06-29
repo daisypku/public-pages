@@ -1,6 +1,24 @@
 [
   {
     "exchange": "SSE",
+    "issuer": "中导光电设备股份有限公司",
+    "document_type": "IPO项目更新",
+    "publish_date": "2026-06-28",
+    "update_date": "2026-06-28",
+    "board": "科创板",
+    "industry": "专用设备制造业",
+    "sponsor": "国联民生证券承销保荐有限公司",
+    "status": "已受理",
+    "pdf_url": null,
+    "source_url": "https://listing.sse.com.cn/ipo/index.html",
+    "detail_url": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2229",
+    "title": "中导光电设备股份有限公司 IPO项目更新",
+    "summary": null,
+    "collected_at": "2026-06-29T05:12:30+00:00",
+    "id": "1da23c71d22a195c7d2b4048"
+  },
+  {
+    "exchange": "SSE",
     "issuer": "苏州信诺维医药科技股份有限公司",
     "document_type": "IPO项目更新",
     "publish_date": "2025-12-22",
@@ -14,7 +32,7 @@
     "detail_url": "https://listing.sse.com.cn/renewal/xmxq/index.shtml?auditId=2137",
     "title": "苏州信诺维医药科技股份有限公司 IPO项目更新",
     "summary": null,
-    "collected_at": "2026-06-28T05:03:01+00:00",
+    "collected_at": "2026-06-29T05:12:30+00:00",
     "id": "67ca6ef19fe6272f57d77b0c"
   },
   {
@@ -82,7 +100,7 @@
         "公司或未能持续将业务扩展至新地点，并可能面临来自新市场的激烈竞争及潜在风险。"
       ]
     },
-    "collected_at": "2026-06-28T05:02:56+00:00",
+    "collected_at": "2026-06-29T05:12:25+00:00",
     "id": "dd7abaa3d40c5f538da502ba"
   },
   {
