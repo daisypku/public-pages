@@ -45,7 +45,7 @@ p { margin:10px 0; } .article-page p { color:#243241; } ul { padding-left:24px; 
   <img src="assets/default-hero.jpg" width="960" height="640" decoding="async" alt="每日播客明信片">
 </figure>
 <h1>播客简报 2026-05-28</h1>
-<h2>Building an AI Guardian for Enterprise with Onyx Security CEO Maxim Bar Kogan</h2>
+<h2 id="building-an-ai-guardian-for-enterprise-with-onyx-security-ceo-maxim-bar-kogan">Building an AI Guardian for Enterprise with Onyx Security CEO Maxim Bar Kogan</h2>
 <p>来源：No Priors</p>
 <p>原链接：</p>
 <p>这期播客深入探讨了随着AI代理在企业中指数级普及所带来的前所未有的安全挑战，以及Onyx Security如何通过构建独立的“AI守护者”系统来应对。对于关注企业AI治理、网络安全未来趋势以及AI模型信任问题的技术领导者、安全专家和AI开发者来说，这是一份极具洞察力的深度纪要。</p>
@@ -56,7 +56,7 @@ p { margin:10px 0; } .article-page p { color:#243241; } ul { padding-left:24px; 
 <li>训练“守护者”模型：效率与智能的平衡之道：Onyx的解决方案并非简单地用一个强大的LLM去监控另一个LLM，因为这会导致成本过高、延迟过大且可靠性不足。他们的策略是训练“不那么智能”但高度专业化的模型，这些模型只专注于一件事：判断何时需要一个“智能代理”介入进行更深入的审查。Maxim用“闪电战国际象棋”做类比：顶尖棋手大部分时间凭直觉快速出招，但在关键时刻会投入大量时间深入计算。Onyx的小型模型就像棋手的直觉，快速筛选出潜在风险，只有在必要时才调用更强大的智能代理进行详细分析。这种平衡确保了高效、低成本且准确的AI行为监督。</li>
 <li>以色列的AI与安全DNA及Onyx的长期愿景：以色列在AI领域正迅速崛起，Onyx团队拥有独特的“网络安全与AI”混合DNA，其研究工程师多来自以色列情报部门，擅长数学分析。Onyx的长期愿景超越了企业安全，旨在解决如何控制先进AI的根本问题。他们相信“机械可解释性”——理解模型内部结构（权重、激活）是解决方案的一部分，并认为未来更智能的AI模型将能更有效地破解这一难题，从而深入理解智能本身。Onyx的目标是成为一个独立的、价值千亿美元的AI控制公司，而非AI供应商本身，为未来可能出现的万亿美元级AI公司提供监督和治理服务。</li>
 </ul>
-<h2>[AINews] Cognition raises $1B in $26B Series D</h2>
+<h2 id="ainews-cognition-raises-1b-in-26b-series-d">[AINews] Cognition raises $1B in $26B Series D</h2>
 <p>来源：Latent Space</p>
 <p>原链接：<a href="https://www.latent.space/p/ainews-cognition-raises-1b-in-26b">https://www.latent.space/p/ainews-cognition-raises-1b-in-26b</a></p>
 <p>本期播客深度剖析了2026年5月AI领域的最新进展，特别是AI代理（Agentic AI）从技术前沿走向大规模商业化的关键节点，以及支撑其发展的推理效率、持续学习和新基准等底层创新。对于关注AI产业趋势、技术落地和企业级应用，尤其是开发者、投资者和企业战略制定者而言，本期内容提供了极具价值的洞察。</p>
@@ -67,7 +67,7 @@ p { margin:10px 0; } .article-page p { color:#243241; } ul { padding-left:24px; 
 <li>新基准、扩展定律与训练方法：推动AI边界：AI领域的基准测试正日益关注长周期、复杂且贴近真实世界的工作流。DeepSWE作为一个新的SWE/代理基准，包含91个代码库中113项任务，涉及5种语言，使用极简的bash-only工具，尽管提示词较短，但平均需要生成5.5倍的代码并修改7个文件，远超SWE-Bench Pro的复杂性。在企业运营方面，Artificial Analysis和IBM推出了ITBench-AA，这是一个针对Kubernetes事件响应的SRE基准，所有前沿模型得分均低于50%，其中Claude Opus 4.7以47%领先，GPT-5.5以46%紧随其后。AgingBench则将部署代理的退化视为一个由压缩、干扰和记忆更新引起的生命周期问题。训练效率研究在理论和系统层面均保持活跃：Sakana AI的DiffusionBlocks将前向传播重新解释为扩散去噪步骤，允许深度网络逐块训练，大幅降低内存需求，同时在多种模型上保持端到端性能。Snowflake的ZoRRo在RL系统方面，通过消除冗余的rollout计算，实现了长上下文RL训练速度提升3.5倍，上下文窗口扩大3.2倍。理论方面，Tiberiu Musat的预印本提出，在固定精度网络中，最小神经权重范数与最小程序长度在对数因子内匹配，而Unified Neural Scaling Law则提出了一个多元函数形式，旨在更准确地外推神经网络的扩展行为。</li>
 <li>模型与模态发布：生物、视觉、OCR及边缘AI的多元进展：本期播客涵盖了多个领域的新模型和模态发布。在蛋白质建模方面，ESMFold2作为开放科学引擎发布，用于蛋白质结构预测和设计，在蛋白质相互作用和抗体方面表现出色，并附带了一个包含68亿蛋白质和11亿预测结构的图谱，其规模超越了AlphaFold DB，具有重要的治疗设计和机制可解释性意义。多模态和开放模型方面，Google DeepMind发布了Gemini Embedding 2的白皮书，这是一个支持文本、图像、音频和视频统一表示的原生多模态嵌入模型。NVIDIA的LocateAnything结合Qwen2.5-3B和Moon-ViT，实现了高速度的密集目标检测，声称速度提升10倍。Hugging Face集成了Roboflow的RF-DETR，定位为超越YOLO风格系统的实时检测/分割方案。在文档处理方面，Surya OCR 2作为一个6.5亿参数模型发布，在OLMOCR基准上达到83.3%，在内部91语言基准上达到87%，并在RTX 5090上实现每秒5页的处理速度；LiteParse v2则用Rust重写了解析器，速度提升高达100倍，并可通过WASM部署到边缘设备和浏览器。此外，Google的新Coral板卡也为本地语音、视觉和控制演示提供了支持，显示了边缘AI的持续发展。</li>
 </ul>
-<h2>Rebooting Enterprise AI with MCP and Kubernetes</h2>
+<h2 id="rebooting-enterprise-ai-with-mcp-and-kubernetes">Rebooting Enterprise AI with MCP and Kubernetes</h2>
 <p>来源：Practical AI</p>
 <p>原链接：<a href="https://share.transistor.fm/s/d76e02d5">https://share.transistor.fm/s/d76e02d5</a></p>
 <p>本期播客深入探讨了模型上下文协议（MCP）如何与Kubernetes结合，为企业AI应用提供一个安全、可控且与供应商无关的集成框架，特别适合希望将生成式AI能力融入现有业务流程的技术领导者和开发者。</p>
@@ -78,7 +78,7 @@ p { margin:10px 0; } .article-page p { color:#243241; } ul { padding-left:24px; 
 <li>超越开发者桌面：构建企业级AI入口：目前，许多AI辅助工具（如Cloud Code、Co-worker）的工作模式是利用开发者的桌面作为聚合点，所有状态和连接都在本地终止。Craig指出，未来的趋势是将这种聚合点从开发者桌面转移到受控的企业环境中。这意味着企业将拥有一个集中、受控的AI服务入口，能够更实际地规划和提供AI服务。通过Cloudflare Tunnel等技术，企业内部的知识管理系统可以安全地暴露给云端，使得AI助手能够随时随地（例如通过手机）访问邮件、内部文档等信息。这种模式不仅打破了AI能力对特定设备的依赖，还实现了数据访问的民主化，同时保留了企业对数据和AI行为的控制权。这是一个根本性地重塑人们工作方式的变革。</li>
 <li>开放的AI基础设施栈与供应商无关性：面对当前AI基础设施领域层出不穷的新技术，许多人感到困惑。Craig强调，AI栈是一个非常开放的系统，有多种不同的解释和实现方式。他认为，当前许多组织倾向于“直接购买”现成的AI解决方案，这类似于早期大型机时代，虽然方便但可能导致供应商锁定。MCP的价值在于，它提供了一种与特定AI模型提供商（如Anthropic、OpenAI、Gemini）无关的解决方案。企业只需一次性地暴露其数据、设置好访问策略，就能利用广泛的模型生态系统。这意味着企业可以避免被单一供应商绑定，拥有更大的灵活性和控制力。MCP作为连接LLM与企业内部系统的桥梁，使得企业能够构建一个开放、可控且可持续的AI基础设施，从而真正将AI能力融入其核心业务流程，而非仅仅停留在概念验证阶段。</li>
 </ul>
-<h2>Stablecoins, AI Agents, and The Future of Global Banking</h2>
+<h2 id="stablecoins-ai-agents-and-the-future-of-global-banking">Stablecoins, AI Agents, and The Future of Global Banking</h2>
 <p>来源：The a16z Show</p>
 <p>原链接：<a href="https://a16z.simplecast.com/episodes/stablecoins-ai-agents-and-the-future-of-global-banking-bZkqdwxO">https://a16z.simplecast.com/episodes/stablecoins-ai-agents-and-the-future-of-global-banking-bZkqdwxO</a></p>
 <p>这期播客深入探讨了Gieves如何利用稳定币和AI技术，在拉丁美洲等新兴市场构建一个全球性的企业级金融操作系统。对于希望了解金融科技如何通过技术创新应对传统金融基础设施碎片化挑战，以及AI和Web3如何重塑全球商业银行未来的中文读者，本期节目极具启发性。</p>
@@ -89,7 +89,7 @@ p { margin:10px 0; } .article-page p { color:#243241; } ul { padding-left:24px; 
 <li>市场策略：聚焦企业级客户与产品演进：Gieves最初尝试服务所有客户，但在2023年做出了艰难但关键的战略调整：聚焦中大型企业客户。这一决策源于小企业客户的营收贡献不足以支撑其所需的运营成本，而Gieves本身是一个精益团队（目前140人，两年前200人，但营收增长10倍，交易量增长8倍）。转向企业级市场后，Gieves的产品线也随之演进，从最初的企业卡扩展到更重要的支付产品，因为企业客户对账户支付的需求远大于卡片消费。同时，Gieves强调产品本地化，例如在巴西，他们针对当地高欺诈率和对即时支付的偏好，推出了独特的旅行产品和单次使用卡片API，以满足当地企业的特定需求。</li>
 <li>稳定币：拉美市场的“活生生”现实与全球扩张引擎：稳定币在拉丁美洲并非理论，而是“活生生”的现实，例如阿根廷60%的人口使用稳定币。Gieves利用其自建的账本基础设施，将稳定币无缝整合到其产品中。他们将稳定币驱动的跨境支付包装为“Gieves即时支付”，向企业CFO强调速度和成本优势，而非底层技术。通过稳定币，墨西哥到美国的支付时间从几天缩短到一小时。Gieves还计划在阿根廷推出稳定币卡，允许用户将当地货币即时转换为USDC，规避汇率波动风险，并在此基础上提供全套费用管理功能。这使得Gieves能以更低的成本和更快的速度进入秘鲁等新市场，实现全球扩张。</li>
 </ul>
-<h2>143. 对何小鹏的第二次访谈：更大赌注、人形机器人Iron诞生、那场意外、技术剧变下CEO、GX和缝合怪</h2>
+<h2 id="143-对何小鹏的第二次访谈-更大赌注-人形机器人iron诞生-那场意外-技术剧变下ceo-gx和缝合怪">143. 对何小鹏的第二次访谈：更大赌注、人形机器人Iron诞生、那场意外、技术剧变下CEO、GX和缝合怪</h2>
 <p>来源：张小珺Jùn｜商业访谈录</p>
 <p>原链接：<a href="https://www.xiaoyuzhoufm.com/episode/6a170f747460cabdeb56dabb?utm_source=rss">https://www.xiaoyuzhoufm.com/episode/6a170f747460cabdeb56dabb?utm_source=rss</a></p>
 <p>这期播客深入探讨了小鹏汽车CEO何小鹏在电动汽车“血海”竞争中，如何同时押注AI和人形机器人等未来高风险领域，以及他在技术剧变下对领导力、组织转型和长期战略的深刻思考。对于关注科技前沿、商业战略和企业家成长的人来说，这是一次极具启发性的深度访谈。</p>
