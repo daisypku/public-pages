@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>播客简报 2026-05-26</title>
+  <style>
+:root { color-scheme: light; --ink:#17202a; --muted:#687385; --line:#dfe5ec; --paper:#fff; --canvas:#f3f6f8; --accent:#0b57d0; --green:#0f766e; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height:1.65; color:var(--ink); background:linear-gradient(180deg,#eef4f7 0,rgba(238,244,247,0) 360px),var(--canvas); }
+a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+main { max-width:980px; margin:0 auto; padding:40px 22px 80px; min-height:100vh; }
+.article-shell { max-width:820px; margin:0 auto; padding:44px 48px 64px; background:var(--paper); border:1px solid var(--line); border-radius:8px; box-shadow:0 18px 50px rgba(23,32,42,.08); }
+.hero { display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:38px; align-items:center; padding:42px 0 38px; border-bottom:1px solid var(--line); }
+.kicker { margin:0 0 12px; color:var(--green); font-size:.82rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
+.hero h1 { margin:0; max-width:760px; font-size:4.4rem; line-height:.98; letter-spacing:0; }
+.lede { max-width:650px; margin:22px 0 0; color:var(--muted); font-size:1.1rem; }
+.hero-link { margin-top:18px; font-weight:800; }
+.hero-art { margin:0; aspect-ratio:4/3; overflow:hidden; border:1px solid var(--line); border-radius:8px; background:var(--paper); box-shadow:0 18px 40px rgba(23,32,42,.1); }
+.hero-art img, .article-postcard img { width:100%; height:100%; display:block; object-fit:cover; }
+.article-postcard { margin:0 0 34px; aspect-ratio:4/3; overflow:hidden; border:1px solid var(--line); border-radius:8px; background:#eef4f7; }
+.section-heading { margin:34px 0 14px; display:flex; justify-content:space-between; align-items:end; }
+.section-heading h2 { margin:0; font-size:1.4rem; }
+.cards { list-style:none; padding:0; margin:0; display:grid; gap:12px; }
+.digest-card { margin:0; }
+.digest-card a { min-height:92px; display:grid; grid-template-columns:150px 1fr auto; gap:20px; align-items:center; padding:20px 22px; color:var(--ink); background:var(--paper); border:1px solid var(--line); border-radius:8px; box-shadow:0 10px 28px rgba(23,32,42,.05); }
+.digest-card a:hover { text-decoration:none; border-color:#b9c7d8; transform:translateY(-1px); }
+.card-date { color:var(--green); font-weight:700; font-variant-numeric:tabular-nums; }
+.card-title { font-size:1.08rem; font-weight:700; }
+.card-action { color:var(--accent); font-size:.92rem; font-weight:700; white-space:nowrap; }
+.article-page main { max-width:900px; }
+.article-page h1 { margin:0 0 8px; font-size:2.7rem; line-height:1.08; letter-spacing:0; }
+.page-date { margin:0 0 30px; color:var(--muted); font-size:.95rem; }
+.article-page h2 { font-size:1.25rem; margin:42px 0 12px; padding-top:18px; border-top:1px solid var(--line); }
+.run-block + .run-block { margin-top:42px; padding-top:8px; border-top:2px solid var(--line); }
+p { margin:10px 0; } .article-page p { color:#243241; } ul { padding-left:24px; } li { margin:8px 0; }
+@media (max-width:720px) { main{padding:28px 16px 64px;} .article-shell{padding:30px 22px 44px;} .hero{grid-template-columns:1fr; gap:22px; padding-top:34px;} .hero h1{font-size:2.5rem;} .hero-art{max-width:420px;} .article-page h1{font-size:2rem;} .digest-card a{grid-template-columns:1fr; gap:8px; min-height:0;} .card-action{white-space:normal;} }
+</style>
+</head>
+<body class="article-page">
+  <main>
+<article class="article-shell">
+<p class="page-date">5/26</p>
+<figure class="article-postcard">
+  <img src="assets/default-hero.jpg" width="960" height="640" decoding="async" alt="每日播客明信片">
+</figure>
+<section class="run-block"><h2>15:47 生成</h2>
+<h2>How Cursor Trained Composer on Fireworks: Distributed Infrastructure for High-Performance RL</h2>
+<p>来源：Sequoia: Training Data</p>
+<p>原链接：</p>
+<p>本期播客深入探讨了Cursor如何通过其自研的智能编程模型Composer 2，结合Fireworks的分布式基础设施，实现大规模强化学习训练，为希望通过模型特化和高效工程提升AI产品性能和成本效益的应用公司提供了宝贵的经验和前瞻性思考。</p>
+<ul>
+<li>Cursor的战略转向：从应用到基础模型：Cursor从一个赋能其他编程代理的应用公司，转向自研基础模型Composer 2，旨在解决长周期编程任务。Federico解释，此举核心在于模型特化：将模型所有“比特”专注于软件工程这一特定任务，而非通用编程。这不仅能显著降低运营成本（比Opus等模型便宜一个数量级），还能将模型行为与Cursor内部工具和环境深度融合。Dima认为，这是AI应用演进的必然模式：从使用现成模型到通过提示工程优化，最终走向模型微调和自研，以最大化利用用户数据和应用特有逻辑，突破提示工程的上限，实现质量、速度和成本的最佳平衡。</li>
+<li>Composer 2的训练秘诀：持续预训练与大规模强化学习：Composer 2的卓越性能源于双轴推进：持续预训练（continual pre-training）和大规模强化学习（RL）。模型以Kimi 2.5（一个1万亿参数的稀疏MOE模型，30B活跃参数）为基础。首先进行大量代码token的“中期训练”，使其学习代码库、常见模式和世界知识，拓宽知识分布。随后，通过大规模RL，模型直接与Cursor环境交互，学习如何正确调用工具、导航环境和编写“正确”的代码。中期训练教会模型如何写代码，而RL则将其行为“锐化”，使其始终生成符合要求的代码，弥补了仅通过预训练无法区分代码正确性的不足。这种自上而下的方法，旨在以最快速度为用户提供实用模型。</li>
+<li>强化学习的复杂性：异构基础设施的挑战：与传统的预训练不同，RL需要运行完整的“实验”或“rollout”，让模型在环境中行动，并根据结果分配奖励。这要求除了大规模训练基础设施外，还需要编排大量模拟环境和模型推理。整个过程形成一个庞大且异构的更新循环，涉及算法和基础设施的协同优化。为提高效率，Cursor和Fireworks采用了异步流水线（asynchronous pipeline）机制：训练器和rollout生成器持续运行，rollout使用最新模型版本生成会话，训练器则接收结果并计算更新。尽管可能引入模型权重更新的“陈旧性”，但通过保持GPU持续运行，显著提升了计算效率，弥补了理论上的微小损失。</li>
+<li>全球分布式训练：突破资源限制与优化效率：面对难以找到大型连续集群的挑战，Cursor采取了全球分布式策略。训练核心在一个集群进行，而推理和RL环境则分布在全球多个小型集群上，甚至利用生产环境的非高峰时段GPU。这种异构性利用了不同组件对硬件需求的不同：训练需要高速互联，而推理则可接受更松散的连接和异构GPU。关键挑战在于如何高效传输模型权重（高达1TB）。解决方案是利用RL训练中权重变化通常是小幅增量的特性，开发了压缩算法，仅传输模型权重之间的“差值”（delta），将传输量减少20倍。配合分片上传下载等系统优化，确保了模型更新能在几分钟内完成，且推理服务中断时间极短，大幅降低了成本和对单一大型集群的依赖。</li>
+<li>MOE模型的数值稳定性挑战与对策：MOE（Mixture of Experts）模型的稀疏性给RL训练带来了独特的数值稳定性挑战。浮点运算的非确定性导致即使是相同模型版本，推理和训练时生成的对数概率也可能存在微小差异。这些差异在MOE模型中会被放大，因为门控层（gate layer）根据激活值选择专家，微小的数值波动可能导致选择完全不同的专家，从而使模型行为产生巨大分歧。RL对这种噪声非常敏感。为解决此问题，团队通过定制GPU内核、匹配量化级别等方法，确保运算顺序一致，将差异降至最低。对于MOE模型，还采用了“路由器回放”（router replay）技术，让推理过程将激活的专家信息传递给训练器，确保训练与推理的专家选择保持一致，避免了模型发散。</li>
+</ul></section>
+    </article>
+  </main>
+</body>
+</html>
