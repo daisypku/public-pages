@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>播客简报 2026-07-02</title>
+  <style>
+:root { color-scheme: light; --ink:#17202a; --muted:#687385; --line:#dfe5ec; --paper:#fff; --canvas:#f3f6f8; --accent:#0b57d0; --green:#0f766e; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height:1.65; color:var(--ink); background:linear-gradient(180deg,#eef4f7 0,rgba(238,244,247,0) 360px),var(--canvas); }
+a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+main { max-width:980px; margin:0 auto; padding:40px 22px 80px; min-height:100vh; }
+.article-shell { max-width:820px; margin:0 auto; padding:44px 48px 64px; background:var(--paper); border:1px solid var(--line); border-radius:8px; box-shadow:0 18px 50px rgba(23,32,42,.08); }
+.hero { display:grid; grid-template-columns:minmax(0,1fr) 300px; gap:38px; align-items:center; padding:42px 0 38px; border-bottom:1px solid var(--line); }
+.kicker { margin:0 0 12px; color:var(--green); font-size:.82rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
+.hero h1 { margin:0; max-width:760px; font-size:4.4rem; line-height:.98; letter-spacing:0; }
+.lede { max-width:650px; margin:22px 0 0; color:var(--muted); font-size:1.1rem; }
+.hero-link { margin-top:18px; font-weight:800; }
+.hero-art { margin:0; aspect-ratio:4/3; overflow:hidden; border:1px solid var(--line); border-radius:8px; background:var(--paper); box-shadow:0 18px 40px rgba(23,32,42,.1); }
+.hero-art img, .article-postcard img { width:100%; height:100%; display:block; object-fit:cover; }
+.article-postcard { margin:0 0 34px; aspect-ratio:4/3; overflow:hidden; border:1px solid var(--line); border-radius:8px; background:#eef4f7; }
+.section-heading { margin:34px 0 14px; display:flex; justify-content:space-between; align-items:end; }
+.section-heading h2 { margin:0; font-size:1.4rem; }
+.cards { list-style:none; padding:0; margin:0; display:grid; gap:12px; }
+.digest-card { margin:0; }
+.digest-card a { min-height:92px; display:grid; grid-template-columns:150px 1fr auto; gap:20px; align-items:center; padding:20px 22px; color:var(--ink); background:var(--paper); border:1px solid var(--line); border-radius:8px; box-shadow:0 10px 28px rgba(23,32,42,.05); }
+.digest-card a:hover { text-decoration:none; border-color:#b9c7d8; transform:translateY(-1px); }
+.card-date { color:var(--green); font-weight:700; font-variant-numeric:tabular-nums; }
+.card-title { font-size:1.08rem; font-weight:700; }
+.card-action { color:var(--accent); font-size:.92rem; font-weight:700; white-space:nowrap; }
+.article-page main { max-width:900px; }
+.article-page h1 { margin:0 0 8px; font-size:2.7rem; line-height:1.08; letter-spacing:0; }
+.page-date { margin:0 0 30px; color:var(--muted); font-size:.95rem; }
+.article-page h2 { font-size:1.25rem; margin:42px 0 12px; padding-top:18px; border-top:1px solid var(--line); }
+p { margin:10px 0; } .article-page p { color:#243241; } ul { padding-left:24px; } li { margin:8px 0; }
+@media (max-width:720px) { main{padding:28px 16px 64px;} .article-shell{padding:30px 22px 44px;} .hero{grid-template-columns:1fr; gap:22px; padding-top:34px;} .hero h1{font-size:2.5rem;} .hero-art{max-width:420px;} .article-page h1{font-size:2rem;} .digest-card a{grid-template-columns:1fr; gap:8px; min-height:0;} .card-action{white-space:normal;} }
+</style>
+</head>
+<body class="article-page">
+  <main>
+<article class="article-shell">
+<p class="page-date">7/2</p>
+<figure class="article-postcard">
+  <img src="assets/postcards/20260702.jpg" width="960" height="640" decoding="async" alt="每日播客明信片">
+</figure>
+<h1>播客简报 2026-07-02</h1>
+<h2>Etched - Building AI Hardware to Make Inference Faster and Cheaper - [Invest Like the Best, EP.480]</h2>
+<p>来源：Invest Like the Best</p>
+<p>原链接：<a href="https://colossus.com/episode/the-future-of-ai-hardware/">https://colossus.com/episode/the-future-of-ai-hardware/</a></p>
+<p>本期播客深入探讨了Etched这家由两位21岁年轻人创立的AI硬件公司，如何通过颠覆性的技术押注和独特的垂直整合策略，挑战英伟达等行业巨头，专注于构建更快速、更便宜的AI推理芯片和系统，对于关注AI基础设施未来、硬件创新及创业精神的中文读者极具启发。</p>
+<ul>
+<li>挑战巨头：Etched的诞生与宏图：Etched由两位年轻创始人Gavin Uberti和Rob Wachen于2023年创立，他们怀揣着一个宏大愿景：打造比现有市场领导者更优秀的AI芯片。在ChatGPT问世后，他们敏锐地捕捉到AI推理市场即将爆发的巨大潜力，并决定将公司重心放在为AI模型提供更快、更低成本的推理解决方案上。尽管面临重重质疑，Etched在首次流片（tape-out）时便成功获得了一个可工作的芯片，成为ChatGPT时代后首家实现这一里程碑的硬件公司。目前，他们已获得超过10亿美元的客户需求，并成功筹集了8亿美元资金，这笔融资被认为是AI芯片领域有史以来最大的A轮融资，彰显了市场对其技术和潜力的认可。Etched的产品并非单一芯片，而是一整套完整的推理机架系统，包括芯片、电路板、供电系统、互连以及所有必要的制造环节。</li>
+<li>技术核心：押注低功耗推理芯片：Etched的核心技术策略在于其对AI推理而非训练的专注，以及在芯片架构上的两大关键押注。首先，他们认识到AI推理将成为未来计算需求的主导，其市场规模最终会远超训练。与训练的一次性成本不同，推理是持续且随使用量线性增长的开销，因此对效率和成本的极致优化至关重要。其次，Etched在架构上选择了一条与众不同的道路，即押注低电压技术。通过在低电压下运行，他们的芯片能够从每兆瓦电力中获得更高的并发处理能力，从而显著降低运行成本和能耗。这种设计理念旨在解决未来AI应用大规模部署时，数据中心面临的巨大功耗和运营成本挑战，为数十亿AI代理的并发运行奠定基础。</li>
+<li>人才与文化：传奇与新秀的融合：Etched的成功离不开其独特的人才策略和企业文化。两位年轻的创始人深知，要挑战行业巨头，必须汇聚顶尖人才。他们成功吸引了多位在半导体行业拥有数十年经验的传奇工程师加入团队，同时也将一批精英的22岁年轻工程师纳入麾下。这种新老结合的模式，既保证了深厚的行业经验，又注入了年轻人的创新活力和快速学习能力。公司的文化被描述为一种不懈追求、永不放弃的“找到方法”（find-a-way）精神，鼓励团队克服看似不可能的工程和融资障碍。为了加速产品开发，Etched甚至将十几名工程师派往班加罗尔进行为期六个月的集中攻关，体现了其对速度和效率的极致追求。</li>
+<li>垂直整合：从芯片到整机架的掌控：Etched采取了全面的垂直整合策略，这在AI硬件领域是相对罕见的。他们不仅设计芯片，还负责整个推理机架系统的开发和制造，包括电路板、供电系统、互连技术以及所有生产环节。这种端到端的控制模式带来了多重优势：首先，它确保了芯片与系统其他组件之间的完美协同，从而实现最佳性能和效率；其次，垂直整合有助于降低整体成本，因为公司能够更好地控制供应链和生产流程；再者，它加速了产品迭代周期，使Etched能够更快地响应市场需求和技术发展。这种策略使得Etched能够提供一个开箱即用的完整解决方案，而非仅仅是芯片，极大地简化了客户的部署和管理。</li>
+<li>克服重重障碍：工程、融资与速度：Etched的创业之路并非一帆风顺，两位创始人坦言在工程和融资方面都遇到了巨大的挑战。从零开始设计并成功流片一个复杂的AI芯片，本身就是一项艰巨的任务，需要克服无数技术难题。同时，作为一家初创公司，在竞争激烈的AI硬件市场中筹集巨额资金也极具挑战性。然而，凭借其创新的技术路线、强大的团队和清晰的市场愿景，Etched最终成功完成了8亿美元的A轮融资。在制造方面，他们与全球领先的晶圆代工厂台积电（TSMC）建立了合作关系，确保了芯片的高质量生产。整个团队始终秉持“速度致胜”的理念，快速迭代，力求在AI硬件竞赛中保持领先地位。</li>
+</ul>
+<h2>171: 【AI季报 26Q2】从 coding 到 RSI，强者愈强的未来？</h2>
+<p>来源：晚点聊 LatePod</p>
+<p>原链接：<a href="https://podcast.latepost.com/171">https://podcast.latepost.com/171</a></p>
+<p>这期播客深度解析了2026年Q2全球AI领域的两大核心脉络：智能前沿的持续突破与现有智能的加速扩散。它揭示了OpenAI和Anthropic在模型能力、市场竞争及未来方向上的激烈角逐，以及递归自进化（RSI）和物理AI等颠覆性趋势，是理解AI技术演进和产业格局的必听内容。</p>
+<ul>
+<li>Q2 AI发展总览：智能前沿与扩散双线并进：2026年第二季度，全球AI领域呈现出两条清晰的主线：一是持续推进智能前沿，二是加速现有智能在社会中的扩散。智能前沿方面，核心能力集中于编码（coding）和长程智能体（agentic）能力，这不仅关乎当前收入，更是未来技术突破的基础。长程智能体能力决定AI能否完成更复杂、耗时长的任务，两者结合将推动自动化研究乃至递归自进化（RSI）的实现。智能扩散方面，前沿实验室正通过产品、API、开源模型、企业工作流及UI/UX创新，将AI能力渗透到社会各层面。企业客户对定制模型的需求日益增长，同时，如何让AI更自然地融入人类工作与生活，也催生了如Anthropic的Cloud Tag和OpenAI的Record and Replay等交互创新。本季度，AI能力的天花板和其改变世界的速度，正由这两条主线共同决定。</li>
+<li>OpenAI与Anthropic：新模型发布与监管挑战：本季度，OpenAI和Anthropic两大AI巨头均发布了重磅新模型。Anthropic推出Fable（原名Mythos），在SUE Bench Pro上取得80.3%，Terminal Bench上达到88分，展现惊人实力。然而，其发布过程堪称“灾难级反面教材”，因过度安全护栏导致模型频繁拒绝回答或静默降级，引发社区强烈不满。OpenAI则发布GPT 5.6，虽未公布SUE Bench分数，但在Terminal Bench上首次突破90%（91.9%），并在Agents Log Exam上表现出色，显示其在长程智能体能力上的显著优势。值得注意的是，两国政府对这些前沿模型实施严格出口管制，Fable和GPT 5.6均仅对美国政府批准的特定实体开放，标志着AI监管常态化。</li>
+<li>编码能力白热化：OpenAI反扑与市场洗牌：在AI编码领域，OpenAI的Codex对Anthropic的Claude Code发起了强劲反扑。此前，Claude Code因模型表现波动（特别是4.7版本）和定价策略调整，导致大量开发者转向Codex。OpenAI抓住时机，推出针对迁移用户的免费使用优惠，进一步扩大Codex市场份额。尽管如此，Anthropic营收增长依然迅猛，Q2实现手动盈利，年化收入预期达到62亿美元，远超OpenAI的40亿美元。这场激烈竞争也波及第三方编码公司，例如Coser被XAI以6亿美元收购，预示着独立编码AI公司面临的巨大挑战和市场整合趋势。OpenAI激进的价格战或旨在通过用户和数据积累，为长期发展奠定基础，而非短期财务表现。</li>
+<li>递归自进化（RSI）：智能增长的终极路径：递归自进化（RSI），即Recursive Self-Improvement，是本季度从科幻概念走向明确研究和创业方向的关键前沿。RSI超越了自动化研究（Auto Research），意味着AI系统不仅能像研究员一样工作，还能在研究过程中不断改进自身能力，从而在未来的任务中表现更强。一旦实现，人类将可能从智能提升的循环中抽离，只需持续投入算力，AI便能自主提升智能水平。这一愿景吸引了顶尖人才和资本，例如由Richard Socher等人创立的Recursive公司，正专注于RSI领域。RSI的突破将彻底改变AI发展的范式，预示着一个强者愈强的未来。</li>
+<li>物理AI与机器人：智能具身化的共同方向：本季度，OpenAI和Anthropic这两家领先AI实验室不约而同地加码机器人（Robotics）领域，显示出智能具身化（physical intelligence）成为下一阶段智能前沿的重要方向。OpenAI正式官宣成立机器人团队，而Anthropic也在其博文《One AI Built Itself》中提及，递归智能的下一步便是机器人和物理智能。这一趋势意味着AI将不再局限于数字世界，而是开始与物理世界深度交互，执行复杂任务。MOE Capital也投资了来自Nvidia Dream团队的四位研究员创办的机器人公司DreamLabs，进一步印证了这一方向的巨大潜力。物理AI的发展将为AI带来全新的应用场景和挑战。</li>
+</ul>
+<h2>Grant Sanderson – AI and the future of math</h2>
+<p>来源：Dwarkesh Podcast</p>
+<p>原链接：<a href="https://www.dwarkesh.com/p/grant-sanderson-2">https://www.dwarkesh.com/p/grant-sanderson-2</a></p>
+<p>本期播客深入探讨了AI在数学领域的惊人进展及其对人类理解、科学发现和未来社会的影响。它不仅揭示了AI能力的“尖峰”特性，更通过数学这一前沿阵地，预示了通用人工智能（AGI）可能呈现的形态，以及人类在其中扮演的新角色。对于所有关注AI发展、科学研究未来以及人类与机器智能共存模式的中文读者，这都是一份极具启发性的深度思考。</p>
+<ul>
+<li>AI在数学领域的独特进展与“尖峰”特性：主持人Dwarkesh Patel指出，AI在数学领域的进展速度超越其他任何领域，使其成为观察未来AI发展趋势的绝佳窗口。Grant Sanderson（3Blue1Brown创始人）对此表示认同，并强调AI能力呈现出“尖峰”特性，即在某些特定子领域表现超凡，而在另一些领域则相对薄弱。例如，AI在2024年的国际数学奥林匹克竞赛（IMO）中，能在19秒内“暴力破解”几何问题，几乎达到金牌水平，但对组合学问题却束手无策。这表明AI并非全面智能，而是擅长特定模式识别和计算。Grant认为，AI解决“千禧年大奖问题”如黎曼猜想，将是下一个重要里程碑，其解决方案的性质将决定AI对更广泛“白领工作”的影响。</li>
+<li>从“闪电连接”到“构建新山”：AI解决数学难题的两种可能：Grant Sanderson将AI解决数学难题的方式分为两类：一是“闪电连接”，即在现有知识领域之间建立意想不到的联系，如休·蒙哥马利（Hugh Montgomery）和弗里曼·戴森（Freeman Dyson）发现黎曼zeta函数零点与随机厄米特矩阵特征值统计的相似性。AI凭借其超人广度，能高效完成这类跨领域知识的整合，例如对“单位距离猜想”的反例证明。二是“构建新山”，即创造全新的数学概念和理论框架，如同费马大定理的最终证明依赖于椭圆曲线和模形式等复杂理论的建立。目前AI更擅长前者，但如果AI能“构建新山”，其智能水平将达到一个全新高度，对经济产生颠覆性影响。这种能力远超简单的“白领工作自动化”，因为它涉及创造性的理论构建。</li>
+<li>伽罗瓦理论与百年验证循环：人类理解的“慢”与AI的挑战：伽罗瓦理论是理解“概念突破”验证周期漫长的绝佳案例。埃瓦里斯特·伽罗瓦（Évariste Galois）在19世纪初提出了群论的雏形，以解决五次方程无根式解的问题。然而，他的思想在当时并未被数学界立即接受，甚至被多次拒绝，直到数十年后才由约瑟夫·刘维尔（Joseph Liouville）和卡米耶·若尔当（Camille Jordan）整理并推广。伽罗瓦理论的真正价值，如在密码学和物理学（如盖尔曼预测夸克存在）中的应用，更是直到20世纪才被充分认识。这种长达百年的“验证循环”和对“好概念”的非即时、主观判断，对依赖即时反馈和可量化基准的AI训练构成了巨大挑战。AI如何评估并追求这种非功利性的、深远的“概念之美”，是其智能发展面临的深层问题。</li>
+<li>AI证明的理解性与“定理经济”的未来：人们担心AI可能证明黎曼猜想，但其证明过程对人类而言却难以理解。Grant认为，这取决于AI解决方案的性质：如果是“闪电连接”，人类更容易理解；如果是“构建新山”，则需要投入大量时间去消化新理论。他提到日本数学家望月新一（Shinichi Mochizuki）对ABC猜想的尝试性证明，其“星际几何”理论的晦涩性，正是这种担忧的体现。David Bessis的“定理经济的衰落”观点指出，历史上数学家因提出定义和猜想而获得定理证明的荣誉，但未来AI可能自动化证明过程，使人类的重心转向“整合证明”和“高层洞察”。Grant认为，AI不仅能证明，也可能擅长解释和提炼，甚至比人类更清晰。他相信，理解与解释是发现新数学的关键，而AI的进步将促使人类重新思考“证明”与“解释”之间的关系。</li>
+<li>策展人与熵增：人类在AI时代的角色转变：面对AI在数学领域的强大能力，Grant Sanderson预测人类数学家的角色将从“解决问题者”转向“策展人”。AI可以生成无数的证明和理论，但人类将负责筛选、引导和激发兴趣，决定哪些思想值得深入探索。这种“策展”功能源于人类对社会联系和动机的内在需求，类似于人类音乐家在AI生成音乐时代仍有其价值。Dwarkesh Patel则提出，AI的一个关键优势在于其能够系统性地增加“熵”。与人类可能陷入特定思维定势不同，AI可以并行运行多个代理，赋予它们不同的背景、偏见或目标（例如，一个尝试证明，另一个尝试反驳），从而系统性地探索更广阔的解决方案空间，避免“思维塌陷”。这种“刷新思维”的能力，可能是AI未来取得重大突破的关键。</li>
+</ul>
+    </article>
+  </main>
+</body>
+</html>
