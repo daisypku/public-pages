@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>普源精電科技股份有限公司 - IPO Watch</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f6f8;
+      --panel: #ffffff;
+      --line: #d9e0e8;
+      --ink: #172033;
+      --muted: #637083;
+      --soft: #f8fafc;
+      --accent: #0f766e;
+      --accent-soft: #e8f5f2;
+      --warning: #fff7ed;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; color: var(--ink); background: var(--bg); }
+    header { background: var(--panel); border-bottom: 1px solid var(--line); }
+    .header-inner { max-width: 1160px; margin: 0 auto; padding: 24px; }
+    main { max-width: 1160px; margin: 0 auto; padding: 18px 24px 32px; }
+    h1 { margin: 0 0 6px; font-size: 28px; line-height: 1.2; }
+    h2 { margin: 0 0 14px; font-size: 18px; }
+    h3 { margin: 0; font-size: 16px; line-height: 1.35; }
+    p { margin: 8px 0; line-height: 1.65; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { margin: 8px 0 0; padding-left: 20px; }
+    li { margin: 4px 0; line-height: 1.55; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 9px 10px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; font-size: 13px; }
+    th { color: var(--muted); font-weight: 650; background: #fbfcfe; white-space: nowrap; }
+    td:not(:first-child), th:not(:first-child) { text-align: right; white-space: nowrap; }
+    .muted { color: var(--muted); }
+    .toolbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 12px; }
+    .count { color: var(--muted); font-size: 13px; }
+    .date-section { margin-top: 18px; }
+    .date-heading { display: flex; align-items: center; gap: 10px; margin: 0 0 10px; color: var(--ink); font-size: 15px; }
+    .date-heading::after { content: ""; height: 1px; background: var(--line); flex: 1; }
+    .filing-list { display: grid; gap: 12px; }
+    .filing-card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px; }
+    .filing-card.today { border-color: #99d8ce; box-shadow: inset 3px 0 0 var(--accent); }
+    .card-top { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px; align-items: start; }
+    .issuer { font-size: 16px; font-weight: 750; line-height: 1.35; }
+    .meta-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+    .tag { display: inline-block; border: 1px solid var(--line); border-radius: 999px; padding: 2px 8px; color: var(--muted); font-size: 12px; background: #fff; }
+    .tag.today { color: var(--accent); border-color: #99d8ce; background: var(--accent-soft); font-weight: 700; }
+    .link-pill { display: inline-block; padding: 3px 8px; border: 1px solid var(--line); border-radius: 999px; font-size: 12px; background: #fff; }
+    .actions { white-space: nowrap; }
+    .back-link { display: inline-block; margin-bottom: 12px; font-weight: 700; }
+    .detail-card { margin-top: 0; }
+    .detail-actions { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; }
+    .fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px 14px; margin: 12px 0 0; }
+    .fields dt { color: var(--muted); font-size: 12px; margin-bottom: 3px; }
+    .fields dd { margin: 0; font-size: 14px; line-height: 1.45; }
+    details.summary { margin-top: 12px; border-top: 1px solid var(--line); padding-top: 10px; }
+    details.summary > summary { cursor: pointer; color: var(--accent); font-weight: 700; list-style: none; }
+    details.summary > summary::-webkit-details-marker { display: none; }
+    details.summary > summary::before { content: "＋"; display: inline-block; width: 18px; color: var(--accent); }
+    details.summary[open] > summary::before { content: "－"; }
+    .summary-body { margin-top: 12px; display: grid; gap: 12px; }
+    .business { padding: 10px 12px; background: var(--accent-soft); border-left: 3px solid var(--accent); }
+    .finance-panel { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: #fff; }
+    .finance-head { padding: 9px 12px; background: #f2f6fa; font-weight: 700; }
+    .finance-note { padding: 9px 12px; border-top: 1px solid var(--line); background: #fbfcfe; color: var(--muted); font-size: 13px; }
+    .table-scroll { overflow-x: auto; }
+    .two-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+    .point-box, .risk-box { border-radius: 8px; padding: 11px 12px; border: 1px solid var(--line); background: var(--soft); }
+    .risk-box { background: var(--warning); }
+    .section-label { font-weight: 700; margin-bottom: 6px; }
+    .empty { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 18px; color: var(--muted); }
+    @media (max-width: 720px) {
+      .header-inner, main { padding-left: 16px; padding-right: 16px; }
+      .toolbar, .card-top { display: block; }
+      .actions { margin-top: 10px; white-space: normal; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>普源精電科技股份有限公司 - IPO Watch</h1>
+      <div class="muted">自动抓取官方披露信息；PDF 原文不入库，仅保留官方链接和结构化摘要。</div>
+    </div>
+  </header>
+  <main>
+    
+<a class="back-link" href="../index.html">返回列表</a>
+<article class="filing-card detail-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">普源精電科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">HKEX</span>
+        <span class="tag">2026-06-23</span>
+      </div>
+    </div>
+  </div>
+  <dl class="fields"><div><dt>交易所/来源</dt><dd>HKEX</dd></div><div><dt>日期</dt><dd>2026-06-23</dd></div><div><dt>板块</dt><dd>主板</dd></div><div><dt>行业/业务</dt><dd>普源精電是一家中國電子測量儀器公司</dd></div><div><dt>文件类型</dt><dd>聆訊後資料集（第一次呈交）</dd></div><div><dt>状态</dt><dd>A</dd></div><div><dt>采集时间</dt><dd>2026-06-26 12:49</dd></div></dl>
+  <div class="detail-actions"><a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108402/documents/sehk26062302125_c.pdf">PDF 原文</a><a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108402/2026062302054_c.htm">官方项目页</a><a class="link-pill" href="https://www1.hkexnews.hk/app/appindex.html?lang=zh">来源页面</a></div>
+  
+<details class="summary">
+  <summary>查看摘要分析</summary>
+  <div class="summary-body">
+    <div class="business"><strong>一句话业务：</strong>普源精電是一家中國電子測量儀器公司，設計、開發、製造並交付全面的電子測量儀器及解決方案，以服務通信、新能源、半導體及教育與科研等行業。</div>
+    
+<div class="finance-panel">
+  <div class="finance-head">财务快照</div>
+  
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>年度</th><th>收入</th><th>毛利</th><th>毛利率</th><th>净利</th><th>净利润率</th></tr></thead>
+    <tbody><tr><td>2023</td><td>108.0</td><td></td><td>53.4%</td><td>人民幣 107,953 千元</td><td></td></tr><tr><td>2024</td><td>54.9%</td><td></td><td>54.9%</td><td>人民幣 92,303 千元</td><td></td></tr><tr><td>2025</td><td>900.2</td><td></td><td>52.8%</td><td>人民幣 86,083 千元</td><td></td></tr><tr><td>2026</td><td>3</td><td></td><td>3</td><td></td><td></td></tr></tbody>
+  </table>
+</div>
+
+  <div class="finance-note">公司在往績期間實現收益增長，但利潤有所下滑。2025年收益為人民幣900.2百萬元，同比增長16.0%。然而，年內利潤從2023年的人民幣108.0百萬元下降至2025年的人民幣86.1百萬元。毛利率在2024年小幅上升至54.9%後，於2025年下降至52.8%。利潤下降主要歸因於研發及銷售開支的增加。截至2026年3月31日止三個月，公司收益同比增長38.0%，期內利潤同比大幅增長511.9%。</div>
+</div>
+
+    <div class="two-col">
+      <div class="point-box">
+        <div class="section-label">要点</div>
+        <ul><li>公司是中國主要的電子測量儀器供應商，根據弗若斯特沙利文資料，按2025年收益計，在中國市場排名第六，全球排名第八。</li><li>公司擁有全面的自主技術能力，建立了整合硬件（包括專有ASIC芯片）、軟件及算法的技術平台。</li><li>產品組合涵蓋數字示波器、微波射頻儀器、直流精密儀器及模塊化儀器，並通過“RIGOL”品牌服務全球90多個國家及地區的客戶。</li><li>公司已在上海證券交易所科創板上市（股票代號：688337），此次尋求在香港聯交所上市旨在籌集資金以推動業務發展、增強營運資金並提升全球聲譽。</li><li>2023至2025年，公司收益持續增長，但年內利潤連續兩年下滑，主要由於研發及銷售開支增加。</li></ul>
+      </div>
+      <div class="risk-box">
+        <div class="section-label">主要风险</div>
+        <ul><li>市場持續變化，新技術的推出或客戶偏好的轉變可能對產品需求造成負面影響。</li><li>行業競爭激烈且預期將加劇，若未能有效競爭，收益增長及經營業績將受到重大不利影響。</li><li>公司的全球業務佈局及海外擴張面臨相關風險。</li><li>公司持續加大研發投入，但相關投入未必能帶來預期成果。</li><li>原材料價格波動可能擾亂供應鏈並影響售價，從而影響業務及財務狀況。</li><li>產品的複雜性可能導致錯誤、缺陷及漏洞，公司可能面臨保固、產品召回或產品責任索賠，進而損害聲譽。</li></ul>
+      </div>
+    </div>
+  </div>
+</details>
+
+</article>
+
+  </main>
+</body>
+</html>

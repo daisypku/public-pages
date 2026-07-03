@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>立訊精密工業股份有限公司 - IPO Watch</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f6f8;
+      --panel: #ffffff;
+      --line: #d9e0e8;
+      --ink: #172033;
+      --muted: #637083;
+      --soft: #f8fafc;
+      --accent: #0f766e;
+      --accent-soft: #e8f5f2;
+      --warning: #fff7ed;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; color: var(--ink); background: var(--bg); }
+    header { background: var(--panel); border-bottom: 1px solid var(--line); }
+    .header-inner { max-width: 1160px; margin: 0 auto; padding: 24px; }
+    main { max-width: 1160px; margin: 0 auto; padding: 18px 24px 32px; }
+    h1 { margin: 0 0 6px; font-size: 28px; line-height: 1.2; }
+    h2 { margin: 0 0 14px; font-size: 18px; }
+    h3 { margin: 0; font-size: 16px; line-height: 1.35; }
+    p { margin: 8px 0; line-height: 1.65; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { margin: 8px 0 0; padding-left: 20px; }
+    li { margin: 4px 0; line-height: 1.55; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 9px 10px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; font-size: 13px; }
+    th { color: var(--muted); font-weight: 650; background: #fbfcfe; white-space: nowrap; }
+    td:not(:first-child), th:not(:first-child) { text-align: right; white-space: nowrap; }
+    .muted { color: var(--muted); }
+    .toolbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 12px; }
+    .count { color: var(--muted); font-size: 13px; }
+    .date-section { margin-top: 18px; }
+    .date-heading { display: flex; align-items: center; gap: 10px; margin: 0 0 10px; color: var(--ink); font-size: 15px; }
+    .date-heading::after { content: ""; height: 1px; background: var(--line); flex: 1; }
+    .filing-list { display: grid; gap: 12px; }
+    .filing-card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px; }
+    .filing-card.today { border-color: #99d8ce; box-shadow: inset 3px 0 0 var(--accent); }
+    .card-top { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px; align-items: start; }
+    .issuer { font-size: 16px; font-weight: 750; line-height: 1.35; }
+    .meta-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+    .tag { display: inline-block; border: 1px solid var(--line); border-radius: 999px; padding: 2px 8px; color: var(--muted); font-size: 12px; background: #fff; }
+    .tag.today { color: var(--accent); border-color: #99d8ce; background: var(--accent-soft); font-weight: 700; }
+    .link-pill { display: inline-block; padding: 3px 8px; border: 1px solid var(--line); border-radius: 999px; font-size: 12px; background: #fff; }
+    .actions { white-space: nowrap; }
+    .back-link { display: inline-block; margin-bottom: 12px; font-weight: 700; }
+    .detail-card { margin-top: 0; }
+    .detail-actions { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; }
+    .fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px 14px; margin: 12px 0 0; }
+    .fields dt { color: var(--muted); font-size: 12px; margin-bottom: 3px; }
+    .fields dd { margin: 0; font-size: 14px; line-height: 1.45; }
+    details.summary { margin-top: 12px; border-top: 1px solid var(--line); padding-top: 10px; }
+    details.summary > summary { cursor: pointer; color: var(--accent); font-weight: 700; list-style: none; }
+    details.summary > summary::-webkit-details-marker { display: none; }
+    details.summary > summary::before { content: "＋"; display: inline-block; width: 18px; color: var(--accent); }
+    details.summary[open] > summary::before { content: "－"; }
+    .summary-body { margin-top: 12px; display: grid; gap: 12px; }
+    .business { padding: 10px 12px; background: var(--accent-soft); border-left: 3px solid var(--accent); }
+    .finance-panel { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: #fff; }
+    .finance-head { padding: 9px 12px; background: #f2f6fa; font-weight: 700; }
+    .finance-note { padding: 9px 12px; border-top: 1px solid var(--line); background: #fbfcfe; color: var(--muted); font-size: 13px; }
+    .table-scroll { overflow-x: auto; }
+    .two-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+    .point-box, .risk-box { border-radius: 8px; padding: 11px 12px; border: 1px solid var(--line); background: var(--soft); }
+    .risk-box { background: var(--warning); }
+    .section-label { font-weight: 700; margin-bottom: 6px; }
+    .empty { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 18px; color: var(--muted); }
+    @media (max-width: 720px) {
+      .header-inner, main { padding-left: 16px; padding-right: 16px; }
+      .toolbar, .card-top { display: block; }
+      .actions { margin-top: 10px; white-space: normal; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>立訊精密工業股份有限公司 - IPO Watch</h1>
+      <div class="muted">自动抓取官方披露信息；PDF 原文不入库，仅保留官方链接和结构化摘要。</div>
+    </div>
+  </header>
+  <main>
+    
+<a class="back-link" href="../index.html">返回列表</a>
+<article class="filing-card detail-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">立訊精密工業股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">HKEX</span>
+        <span class="tag">2026-06-23</span>
+      </div>
+    </div>
+  </div>
+  <dl class="fields"><div><dt>交易所/来源</dt><dd>HKEX</dd></div><div><dt>日期</dt><dd>2026-06-23</dd></div><div><dt>板块</dt><dd>主板</dd></div><div><dt>行业/业务</dt><dd>是一家為消費電子、汽車電子、通信及數</dd></div><div><dt>文件类型</dt><dd>聆訊後資料集（第一次呈交）</dd></div><div><dt>状态</dt><dd>A</dd></div><div><dt>采集时间</dt><dd>2026-06-26 12:49</dd></div></dl>
+  <div class="detail-actions"><a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108261/documents/sehk26062301881_c.pdf">PDF 原文</a><a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108261/2026062301878_c.htm">官方项目页</a><a class="link-pill" href="https://www1.hkexnews.hk/app/appindex.html?lang=zh">来源页面</a></div>
+  
+<details class="summary">
+  <summary>查看摘要分析</summary>
+  <div class="summary-body">
+    <div class="business"><strong>一句话业务：</strong>公司是一家為消費電子、汽車電子、通信及數據中心等領域提供精密智能製造系統（PIMS）解決方案的全球供應商。</div>
+    
+<div class="finance-panel">
+  <div class="finance-head">财务快照</div>
+  
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>年度</th><th>收入</th><th>毛利</th><th>毛利率</th><th>净利</th><th>净利润率</th></tr></thead>
+    <tbody><tr><td>2025</td><td>11.6%</td><td></td><td>11.6%</td><td></td><td></td></tr></tbody>
+  </table>
+</div>
+
+  <div class="finance-note">公司在2023至2025年間收入和利潤持續增長。收入從2,319億元人民幣增至3,323億元，年內利潤從122億元增至182億元。毛利率在2025年為11.6%，純利率為5.5%。</div>
+</div>
+
+    <div class="two-col">
+      <div class="point-box">
+        <div class="section-label">要点</div>
+        <ul><li>公司收入高度依賴單一主要客戶「客戶A/供應商A」，該客戶於2023、2024及2025年分別貢獻了總收入的82.4%、78.5%及65.0%。</li><li>消費電子是公司的核心業務板塊，在2025年佔總收入的79.5%，但汽車電子業務增長迅速，收入佔比從2023年的3.9%提升至2025年的11.8%。</li><li>公司在往績記錄期內實現了穩健的財務增長，總收入從2023年的人民幣2,319億元增長至2025年的人民幣3,323億元，年內利潤從122億元增長至182億元。</li><li>公司的業務遍布全球，海外市場是主要收入來源，2025年來自中國大陸以外地區的收入佔總收入的82.4%。</li></ul>
+      </div>
+      <div class="risk-box">
+        <div class="section-label">主要风险</div>
+        <ul><li>地緣政治風險：公司超過82%的收入來自海外，全球及地區的政治、法律和經濟環境變化可能對業務和經營業績產生不利影響。</li><li>客戶高度集中：公司嚴重依賴單一主要客戶「客戶A/供應商A」，與該客戶關係的任何不利變動都可能對公司的業務和財務狀況造成重大不利影響。</li><li>供應商集中風險：公司依賴少數主要供應商提供原材料，2025年向五大供應商的採購額佔總採購額的53.0%，供應中斷可能影響生產。</li><li>技術創新風險：公司所處行業技術變革迅速，如果未能持續投入研發並成功推出滿足市場需求的新產品，其盈利能力可能會受到影響。</li><li>業務擴張與整合風險：公司通過收購等方式擴張，但在整合新業務、技術和人員方面可能面臨困難，從而對管理和運營構成挑戰。</li><li>行業競爭與需求波動：公司面臨激烈的市場競爭，且消費電子產品的需求易受宏觀經濟和市場趨勢影響而出現波動。</li></ul>
+      </div>
+    </div>
+  </div>
+</details>
+
+</article>
+
+  </main>
+</body>
+</html>
