@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>乱世太平：吴越篇 · 公开试玩版</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">公开试玩版 · 前十年</p>
+          <h1>乱世太平：吴越篇</h1>
+          <p class="trial-note">当前开放 930-939 年试玩。完整剧本、支线和结局路线仍保留在私有版本中。</p>
+        </div>
+        <div class="top-actions"><a class="ghost-button" href="../../#lab">返回 Studio</a><button id="resetSave" class="ghost-button" type="button">重置存档</button></div>
+      </header>
+
+      <section class="status-card" aria-label="当前局势">
+        <div>
+          <span class="label">年份</span>
+          <strong id="year">乾德元年</strong>
+        </div>
+        <div>
+          <span class="label">阶段</span>
+          <strong id="stage">钱塘立国</strong>
+        </div>
+        <div>
+          <span class="label">回合</span>
+          <strong id="turn">1</strong>
+        </div>
+      </section>
+
+      <section class="indicators" aria-label="国力与压力">
+        <div class="resources" aria-label="国力指标">
+          <p class="eyebrow">国力</p>
+          <div class="resource"><div><span>粮食</span><strong id="food">0</strong></div><b><i id="foodBar"></i></b></div>
+          <div class="resource"><div><span>钱帛</span><strong id="money">0</strong></div><b><i id="moneyBar"></i></b></div>
+          <div class="resource"><div><span>人口</span><strong id="people">0</strong></div><b><i id="peopleBar"></i></b></div>
+          <div class="resource"><div><span>兵力</span><strong id="army">0</strong></div><b><i id="armyBar"></i></b></div>
+          <div class="resource"><div><span>民心</span><strong id="morale">0</strong></div><b><i id="moraleBar"></i></b></div>
+          <div class="resource"><div><span>国威</span><strong id="prestige">0</strong></div><b><i id="prestigeBar"></i></b></div>
+          <div class="resource"><div><span>安定</span><strong id="stability">0</strong></div><b><i id="stabilityBar"></i></b></div>
+        </div>
+
+        <div class="meters" aria-label="局势压力">
+          <p class="eyebrow">压力</p>
+          <div class="pressure"><div><span>外敌压力</span><strong id="threat">0</strong></div><b><i id="threatBar"></i></b></div>
+          <div class="pressure"><div><span>财政压力</span><strong id="fiscal">0</strong></div><b><i id="fiscalBar"></i></b></div>
+          <div class="pressure"><div><span>归附倾向</span><strong id="submit">0</strong></div><b><i id="submitBar"></i></b></div>
+          <div class="pressure"><div><span>独立倾向</span><strong id="independent">0</strong></div><b><i id="independentBar"></i></b></div>
+        </div>
+      </section>
+
+      <section class="story-panel">
+        <p id="stageText" class="stage-text"></p>
+        <article class="event-card">
+          <p class="eyebrow">当前抉择</p>
+          <h2 id="eventTitle"></h2>
+          <p id="eventText"></p>
+          <div id="choices" class="choices"></div>
+        </article>
+        <section class="log-panel">
+          <p class="eyebrow">朝议记录</p>
+          <ul id="log"></ul>
+        </section>
+      </section>
+
+      <section class="legacy-panel">
+        <div>
+          <p class="eyebrow">遗产</p>
+          <h2>文明记忆</h2>
+        </div>
+        <p id="legacySummary"></p>
+      </section>
+
+    </main>
+
+    <script src="content/scenes-data.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>
