@@ -181,7 +181,6 @@ function renderSemiHeatmap(data) {
 
   const groups = SEMI_SECTOR_ORDER
     .filter((sector) => grouped.has(sector))
-    .slice(0, 5)
     .map((sector) => {
       const stocks = grouped
         .get(sector)
