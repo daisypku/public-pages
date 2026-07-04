@@ -122,4 +122,102 @@ async function hydrateInvestmentBrief() {
   }
 }
 
+const SEMI_HEATMAP_URL = "https://daisypku.github.io/supply-chain-data/supply_chain_heatmap.json";
+const SEMI_SECTORS = {
+  raw_mat: "源头原材料",
+  ccl: "覆铜板 CCL",
+  pcb: "PCB",
+  ic_sub: "IC载板/ABF",
+  cowos: "先进封装",
+  optical_chip: "光芯片/光器件",
+  optical_mod: "光模块",
+  optical_infra: "光纤/设备",
+  glass: "玻璃基板",
+};
+const SEMI_SECTOR_ORDER = Object.keys(SEMI_SECTORS);
+
+function escapeHtml(value) {
+  return String(value || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function heatmapColor(value) {
+  if (value === null || value === undefined || Number.isNaN(value)) return "#f1eadf";
+  if (value >= 5) return "#c62828";
+  if (value >= 2) return "#e53935";
+  if (value >= 0.5) return "#ef5350";
+  if (value > 0) return "#ffcdd2";
+  if (value > -0.5) return "#c8e6c9";
+  if (value > -2) return "#66bb6a";
+  if (value > -5) return "#43a047";
+  return "#2e7d32";
+}
+
+function isNeutralHeatmapTile(value) {
+  return value === null || value === undefined || Number.isNaN(value) || Math.abs(value) < 0.5;
+}
+
+function formatPct(value) {
+  if (value === null || value === undefined || Number.isNaN(value)) return "--";
+  return `${value > 0 ? "+" : ""}${value.toFixed(1)}%`;
+}
+
+function renderSemiHeatmap(data) {
+  const body = document.querySelector("#semiHeatmapBody");
+  const time = document.querySelector("#semiHeatmapTime");
+  if (!body || !time) return;
+
+  time.textContent = data.updated ? `更新时间：${data.updated}` : "已同步最新热力图数据";
+
+  const grouped = new Map();
+  (data.stocks || []).forEach((stock) => {
+    if (!stock.sector) return;
+    if (!grouped.has(stock.sector)) grouped.set(stock.sector, []);
+    grouped.get(stock.sector).push(stock);
+  });
+
+  const groups = SEMI_SECTOR_ORDER
+    .filter((sector) => grouped.has(sector))
+    .slice(0, 5)
+    .map((sector) => {
+      const stocks = grouped
+        .get(sector)
+        .slice()
+        .sort((a, b) => Math.abs(b.change_pct || 0) - Math.abs(a.change_pct || 0))
+        .slice(0, 4);
+      const tiles = stocks
+        .map((stock) => {
+          const change = stock.change_pct;
+          const neutral = isNeutralHeatmapTile(change) ? " neutral" : "";
+          return `<div class="semi-tile${neutral}" style="background:${heatmapColor(change)}" title="${escapeHtml(stock.name)} ${formatPct(change)}">
+            <div class="semi-tile-name">${escapeHtml(stock.name)}</div>
+            <div class="semi-tile-value">${formatPct(change)}</div>
+          </div>`;
+        })
+        .join("");
+      return `<section class="semi-group"><h3 class="semi-group-title">${SEMI_SECTORS[sector]}</h3><div class="semi-tile-grid">${tiles}</div></section>`;
+    });
+
+  body.innerHTML = groups.length ? groups.join("") : "<p>热力图数据等待更新。</p>";
+}
+
+async function hydrateSemiHeatmap() {
+  const body = document.querySelector("#semiHeatmapBody");
+  const time = document.querySelector("#semiHeatmapTime");
+  if (!body || !time) return;
+
+  try {
+    const response = await fetch(SEMI_HEATMAP_URL, { cache: "no-store" });
+    if (!response.ok) throw new Error("heatmap not found");
+    const data = await response.json();
+    renderSemiHeatmap(data);
+  } catch (error) {
+    time.textContent = "等待更新";
+    body.innerHTML = "<p>产业链交易热力图暂时读取失败，可以打开项目查看完整页面。</p>";
+  }
+}
 hydrateInvestmentBrief();
+hydrateSemiHeatmap();
