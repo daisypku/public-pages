@@ -313,9 +313,21 @@ textarea { resize: vertical; }
   background: rgba(255, 253, 248, 0.82);
 }
 .investment-snapshot p {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 8px;
   margin: 0;
   color: #3f4b56;
   font-size: 0.94rem;
+  line-height: 1.65;
+}
+.investment-snapshot strong {
+  color: var(--ink);
+  white-space: nowrap;
+}
+.investment-snapshot span {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 .market-panels {
   display: grid;

@@ -29,17 +29,29 @@ function renderMiniTable(target, rows, columns) {
 
 function extractConclusion(doc) {
   const candidates = Array.from(doc.querySelectorAll("body div"));
-  const conclusion = candidates.find((node) => {
-    const txt = textOf(node);
-    return txt.includes("市场状态") && txt.includes("今日策略");
-  });
-  if (!conclusion) return [];
-  return Array.from(conclusion.querySelectorAll("div"))
-    .map(textOf)
-    .filter(Boolean)
-    .slice(0, 4);
+  for (const node of candidates) {
+    const directLines = Array.from(node.children)
+      .filter((child) => child.tagName === "DIV")
+      .map(textOf)
+      .filter(Boolean);
+    const matchedLines = directLines.filter((line) =>
+      line.includes("市场状态") || line.includes("最强方向") || line.includes("今日策略")
+    );
+    const hasConclusionShape = matchedLines.length >= 3;
+    if (hasConclusionShape) return directLines.slice(0, 4);
+  }
+  return [];
 }
 
+function renderConclusionLine(line) {
+  const normalized = line.replace(/^[^\u4e00-\u9fa5A-Za-z0-9]+\s*/, "");
+  const separatorIndex = normalized.search(/：|:/);
+  if (separatorIndex < 0) return `<p><span>${normalized}</span></p>`;
+
+  const label = normalized.slice(0, separatorIndex).trim();
+  const body = normalized.slice(separatorIndex + 1).trim();
+  return `<p><strong>${label}</strong><span>${body}</span></p>`;
+}
 function extractLiquidity(doc) {
   const heading = firstByHeading(doc, "h4", /市场流动性|Liquidity/);
   const box = heading?.parentElement;
@@ -70,7 +82,7 @@ async function hydrateInvestmentBrief() {
 
     const latest = await response.json();
     titleEl.textContent = latest.title || "投资简报";
-    summaryEl.textContent = latest.summary || "最新投资简报已更新。";
+    summaryEl.textContent = "自动同步每日早晚报中的公开市场摘要。";
     linkEl.href = latest.url || "daily/";
     linkEl.textContent = "阅读全文";
     statusEl.textContent = latest.date || "已更新";
@@ -85,8 +97,8 @@ async function hydrateInvestmentBrief() {
 
     const conclusionLines = extractConclusion(doc);
     if (conclusionLines.length && conclusionEl) {
-      conclusionEl.innerHTML = conclusionLines.map((line) => `<p>${line}</p>`).join("");
-      summaryEl.textContent = conclusionLines[0].replace(/^.*?市场状态：?/, "").trim() || summaryEl.textContent;
+      conclusionEl.innerHTML = conclusionLines.map(renderConclusionLine).join("");
+      summaryEl.hidden = true;
     }
 
     const indicesHeading = firstByHeading(doc, "h3", /核心指数/);
