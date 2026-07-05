@@ -63,6 +63,66 @@ function extractLiquidity(doc) {
     .slice(0, 4);
 }
 
+const PODCAST_READER_URL = "https://daisypku.github.io/public-pages/pod2wiki-reader/index.html";
+
+function absoluteUrl(value, base) {
+  return new URL(value, base).href;
+}
+
+function firstMeaningfulPodcastParagraph(runBlock) {
+  const paragraphs = Array.from(runBlock.querySelectorAll("p")).map(textOf).filter(Boolean);
+  return paragraphs.find((line) => !line.startsWith("来源：") && !line.startsWith("原链接：")) || paragraphs[0] || "今天没有新的完整摘要。";
+}
+
+async function hydratePodcastBrief() {
+  const coverEl = document.querySelector("#podcastCover");
+  const statusEl = document.querySelector("#podcastStatus");
+  const titleEl = document.querySelector("#podcastFirstTitle");
+  const summaryEl = document.querySelector("#podcastFirstSummary");
+  const bulletsEl = document.querySelector("#podcastFirstBullets");
+  const linkEl = document.querySelector("#podcastLink");
+  if (!coverEl || !statusEl || !titleEl || !summaryEl || !bulletsEl || !linkEl) return;
+
+  try {
+    const indexResponse = await fetch(PODCAST_READER_URL, { cache: "no-store" });
+    if (!indexResponse.ok) throw new Error("podcast index not found");
+    const indexHtml = await indexResponse.text();
+    const indexDoc = new DOMParser().parseFromString(indexHtml, "text/html");
+    const latestLink = indexDoc.querySelector(".digest-card a[href]");
+    if (!latestLink) throw new Error("latest podcast link not found");
+
+    const articleUrl = absoluteUrl(latestLink.getAttribute("href"), PODCAST_READER_URL);
+    const articleResponse = await fetch(articleUrl, { cache: "no-store" });
+    if (!articleResponse.ok) throw new Error("podcast article not found");
+    const articleHtml = await articleResponse.text();
+    const articleDoc = new DOMParser().parseFromString(articleHtml, "text/html");
+
+    const cover = articleDoc.querySelector(".article-postcard img") || indexDoc.querySelector(".hero-art img");
+    if (cover?.getAttribute("src")) {
+      coverEl.src = absoluteUrl(cover.getAttribute("src"), articleUrl);
+      coverEl.alt = cover.getAttribute("alt") || "每日播客简报封面";
+    }
+
+    const dateText = textOf(articleDoc.querySelector(".page-date")) || textOf(latestLink.querySelector(".card-date"));
+    statusEl.textContent = dateText ? `${dateText} 更新` : "已更新";
+
+    const runBlock = articleDoc.querySelector(".run-block");
+    if (!runBlock) throw new Error("podcast run block not found");
+
+    const heading = textOf(runBlock.querySelector("h2"));
+    const summary = firstMeaningfulPodcastParagraph(runBlock);
+    const bullets = Array.from(runBlock.querySelectorAll("li")).map(textOf).filter(Boolean).slice(0, 3);
+
+    titleEl.textContent = heading || "今日暂无完整摘要";
+    summaryEl.textContent = summary;
+    bulletsEl.innerHTML = bullets.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
+    bulletsEl.hidden = bullets.length === 0;
+    linkEl.href = articleUrl;
+    linkEl.textContent = "阅读今日简报";
+  } catch (error) {
+    statusEl.textContent = "等待更新";
+  }
+}
 async function hydrateInvestmentBrief() {
   const titleEl = document.querySelector("#investmentTitle");
   const summaryEl = document.querySelector("#investmentSummary");
@@ -218,5 +278,6 @@ async function hydrateSemiHeatmap() {
     body.innerHTML = "<p>产业链交易热力图暂时读取失败，可以打开项目查看完整页面。</p>";
   }
 }
+hydratePodcastBrief();
 hydrateInvestmentBrief();
 hydrateSemiHeatmap();
