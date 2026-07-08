@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 半导体资金流向 Sankey v8</title>
+  <style>
+    :root {
+      --ink: #162235;
+      --muted: #647184;
+      --bg: #f4f6f8;
+      --paper: #fff;
+      --line: #d6e0ea;
+      --blue: #294a75;
+      --purple: #8060aa;
+      --network: #5b7fac;
+      --server: #6e7f90;
+      --power: #778242;
+      --cool: #388e96;
+      --build: #9a7048;
+      --profit: #55923a;
+      --profitFlow: #a8ca96;
+      --cost: #b62619;
+      --costFlow: #d09a8f;
+      --gray: #8e9699;
+      --warn: #fff8ec;
+      --warnLine: #e8c995;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, "Microsoft YaHei", "PingFang SC", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+    }
+
+    main {
+      max-width: 2240px;
+      margin: 0 auto;
+      padding: 22px;
+    }
+
+    .sheet {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow-x: auto;
+      box-shadow: 0 14px 36px rgba(24, 36, 54, 0.08);
+    }
+
+    svg {
+      display: block;
+      min-width: 2200px;
+      height: auto;
+      background: #f8f9fb;
+    }
+
+    .title {
+      font-size: 54px;
+      font-weight: 900;
+      fill: var(--blue);
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      fill: var(--muted);
+    }
+
+    .colHead {
+      font-size: 16px;
+      font-weight: 900;
+      fill: #536174;
+      text-transform: uppercase;
+    }
+
+    .flow {
+      fill: none;
+      stroke-linecap: butt;
+      stroke-opacity: 0.58;
+    }
+
+    .gpu { stroke: var(--purple); }
+    .network { stroke: var(--network); }
+    .server { stroke: var(--server); }
+    .power { stroke: var(--power); }
+    .cool { stroke: var(--cool); }
+    .build { stroke: var(--build); }
+    .profit { stroke: var(--profitFlow); }
+    .cost { stroke: var(--costFlow); }
+    .gray { stroke: var(--gray); }
+
+    .node { fill: #111; rx: 2; }
+    .nodeGray { fill: #4a4d50; rx: 2; }
+    .nodeProfit { fill: var(--profit); rx: 2; }
+    .nodeCost { fill: var(--cost); rx: 2; }
+
+    .box {
+      fill: rgba(255,255,255,0.96);
+      stroke: #d1dbe6;
+      rx: 8;
+    }
+
+    .boxWarn {
+      fill: var(--warn);
+      stroke: var(--warnLine);
+      rx: 8;
+    }
+
+    .boxTitle {
+      font-size: 21px;
+      font-weight: 900;
+      fill: #111827;
+    }
+
+    .boxAmount {
+      font-size: 28px;
+      font-weight: 900;
+      fill: #111827;
+    }
+
+    .boxNote {
+      font-size: 15px;
+      fill: var(--muted);
+    }
+
+    .small {
+      font-size: 13px;
+      fill: var(--muted);
+    }
+
+    .greenText { fill: #3f7f3e; }
+    .redText { fill: #842817; }
+    .warnText { fill: #5a3a1f; }
+
+    .ruler {
+      stroke: #d9e1ea;
+      stroke-width: 1;
+      stroke-dasharray: 6 8;
+    }
+
+    .footnote {
+      font-size: 13px;
+      fill: #6b7280;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .panel {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      box-shadow: 0 10px 28px rgba(24, 36, 54, 0.05);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 10px;
+      line-height: 1.55;
+      color: #344255;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 9px 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f1f5f9;
+      color: #435267;
+      font-size: 13px;
+    }
+
+    a { color: #245a8d; }
+
+    @media (max-width: 980px) {
+      main { padding: 12px; }
+      .cards { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <div class="sheet">
+    <svg viewBox="0 0 2200 1540" role="img" aria-label="AI 半导体资金流向 Sankey 图 v8">
+      <text x="70" y="78" class="title">AI Data Center Spending Statement</text>
+      <text x="74" y="112" class="subtitle">v8：在结构版基础上补公开 BOM 锚点。主图保持口径干净：HBM 在 GPU COGS，LPDDR/NAND/SSD 在 Host server hardware。</text>
+
+      <rect x="1625" y="34" width="450" height="120" class="box"/>
+      <text x="1653" y="72" class="boxTitle">年度资金源头</text>
+      <text x="1653" y="112" class="boxAmount">约 $695-725B</text>
+      <text x="1653" y="142" class="boxNote">四大 CSP 2026E capex 区间，仅作水库背景</text>
+
+      <text x="86" y="190" class="colHead">Project pool</text>
+      <text x="450" y="190" class="colHead">支出 / 收款节点，合并为一层</text>
+      <text x="930" y="190" class="colHead">利润池或BOM拆分</text>
+      <text x="1515" y="190" class="colHead">上游公司 / 材料方向</text>
+
+      <line x1="70" y1="300" x2="2100" y2="300" class="ruler"/>
+      <line x1="70" y1="520" x2="2100" y2="520" class="ruler"/>
+      <line x1="70" y1="740" x2="2100" y2="740" class="ruler"/>
+      <line x1="70" y1="950" x2="2100" y2="950" class="ruler"/>
+      <line x1="70" y1="1125" x2="2100" y2="1125" class="ruler"/>
+      <line x1="70" y1="1295" x2="2100" y2="1295" class="ruler"/>
+
+      <!-- Source -->
+      <rect x="90" y="255" width="230" height="130" class="box"/>
+      <text x="115" y="293" class="boxTitle">Project pool</text>
+      <text x="115" y="333" class="boxAmount">$35.0B</text>
+      <text x="115" y="363" class="boxNote">1GW AI 数据中心</text>
+      <rect x="345" y="245" width="28" height="1085" class="node"/>
+
+      <!-- Main flows from source to single receiver nodes -->
+      <path class="flow gpu" stroke-width="78" d="M373 320 C430 320, 455 320, 505 320"/>
+      <path class="flow network" stroke-width="26" d="M373 540 C430 540, 455 540, 505 540"/>
+      <path class="flow server" stroke-width="48" d="M373 760 C430 760, 455 760, 505 760"/>
+      <path class="flow power" stroke-width="20" d="M373 970 C430 970, 455 970, 505 970"/>
+      <path class="flow cool" stroke-width="8" d="M373 1145 C430 1145, 455 1145, 505 1145"/>
+      <path class="flow build" stroke-width="20" d="M373 1315 C430 1315, 455 1315, 505 1315"/>
+
+      <!-- Row 1: Compute platform -->
+      <rect x="505" y="245" width="360" height="150" class="box"/>
+      <rect x="505" y="281" width="24" height="78" class="nodeGray"/>
+      <text x="545" y="287" class="boxTitle">GPU / Accelerator platform</text>
+      <text x="545" y="329" class="boxAmount">$13.7B</text>
+      <text x="545" y="358" class="boxNote">NVIDIA 为主，AMD/ASIC 替代仍待拆</text>
+      <text x="545" y="382" class="small">这一层已经是收款节点，不再重复写“先收到钱的人”</text>
+
+      <path class="flow profit" stroke-width="58" d="M865 295 C900 295, 920 270, 960 270"/>
+      <path class="flow cost" stroke-width="20" d="M865 345 C900 345, 920 370, 960 370"/>
+
+      <rect x="960" y="220" width="430" height="100" class="box"/>
+      <rect x="960" y="241" width="20" height="58" class="nodeProfit"/>
+      <text x="1000" y="259" class="boxTitle greenText">Platform gross profit</text>
+      <text x="1000" y="298" class="boxAmount greenText">$10.2B</text>
+
+      <rect x="960" y="340" width="430" height="128" class="boxWarn"/>
+      <rect x="960" y="360" width="20" height="20" class="nodeCost"/>
+      <text x="1000" y="375" class="boxTitle redText">GPU COGS / manufacturing</text>
+      <text x="1000" y="413" class="boxAmount redText">$3.4B</text>
+      <text x="1000" y="442" class="boxNote">待 BOM 拆分，不能和系统 DRAM/NAND 混用</text>
+
+      <path class="flow cost" stroke-width="20" d="M1390 404 C1430 404, 1450 404, 1490 404"/>
+      <rect x="1490" y="300" width="560" height="205" class="box"/>
+      <rect x="1490" y="393" width="20" height="20" class="nodeCost"/>
+      <text x="1530" y="332" class="boxTitle">GPU COGS BOM，公开锚点</text>
+      <text x="1530" y="368" class="boxNote">1. Rubin GPU + Vera CPU silicon：GPU $55k、CPU $5k 量产价估算</text>
+      <text x="1530" y="398" class="boxNote">2. Accelerator HBM4：20.7TB/rack，公开资料未拆出独立价格</text>
+      <text x="1530" y="428" class="boxNote">3. TSMC wafer + CoWoS / SoIC / OSAT：待拆美元金额</text>
+      <text x="1530" y="458" class="boxNote">4. ABF substrate / advanced PCB / CCL / test：待拆美元金额</text>
+      <text x="1530" y="488" class="small">注意：$2.0M memory/storage 是混合估算，不直接等同 HBM。</text>
+
+      <!-- Row 2: Network -->
+      <rect x="505" y="490" width="360" height="100" class="box"/>
+      <rect x="505" y="527" width="24" height="26" class="nodeGray"/>
+      <text x="545" y="529" class="boxTitle">Networking / Interconnect</text>
+      <text x="545" y="570" class="boxAmount">$4.6B</text>
+
+      <path class="flow profit" stroke-width="11" d="M865 532 C900 532, 920 515, 960 515"/>
+      <path class="flow cost" stroke-width="15" d="M865 550 C900 550, 920 580, 960 580"/>
+
+      <rect x="960" y="480" width="430" height="70" class="box"/>
+      <rect x="960" y="509" width="18" height="11" class="nodeProfit"/>
+      <text x="1000" y="522" class="boxTitle greenText">Network gross profit</text>
+      <text x="1240" y="522" class="boxNote">待拆</text>
+
+      <rect x="960" y="565" width="430" height="86" class="boxWarn"/>
+      <rect x="960" y="574" width="18" height="15" class="nodeCost"/>
+      <text x="1000" y="600" class="boxTitle redText">Network COGS / components</text>
+      <text x="1000" y="630" class="boxNote">芯片、光模块、PCB、连接器</text>
+
+      <path class="flow cost" stroke-width="15" d="M1390 608 C1430 608, 1450 608, 1490 608"/>
+      <rect x="1490" y="555" width="560" height="112" class="box"/>
+      <rect x="1490" y="600" width="20" height="16" class="nodeCost"/>
+      <text x="1530" y="590" class="boxTitle">网络桶 BOM</text>
+      <text x="1530" y="622" class="boxNote">NVLink 6 switch / ConnectX-9 / BlueField-4 / Spectrum-6</text>
+      <text x="1530" y="652" class="small">下一步拆：NVIDIA networking、Broadcom/Marvell、光模块、交换机系统、PCB</text>
+
+      <!-- Row 3: Host server hardware -->
+      <rect x="505" y="695" width="360" height="130" class="box"/>
+      <rect x="505" y="736" width="24" height="48" class="nodeGray"/>
+      <text x="545" y="735" class="boxTitle">Host server hardware</text>
+      <text x="545" y="777" class="boxAmount">$8.4B</text>
+      <text x="545" y="806" class="boxNote">不含 GPU 封装内 HBM</text>
+
+      <path class="flow cost" stroke-width="24" d="M865 743 C900 743, 920 720, 960 720"/>
+      <path class="flow gray" stroke-width="14" d="M865 778 C900 778, 920 820, 960 820"/>
+
+      <rect x="960" y="675" width="430" height="108" class="boxWarn"/>
+      <rect x="960" y="708" width="18" height="24" class="nodeCost"/>
+      <text x="1000" y="714" class="boxTitle redText">System DRAM / NAND / SSD</text>
+      <text x="1000" y="746" class="boxNote">系统内存与存储，解释 PC/手机被挤压</text>
+      <rect x="960" y="800" width="430" height="86" class="box"/>
+      <rect x="960" y="813" width="18" height="14" class="nodeGray"/>
+      <text x="1000" y="834" class="boxTitle">CPU / ODM / rack integration</text>
+      <text x="1000" y="862" class="boxNote">CPU、主板、机柜、系统集成</text>
+
+      <path class="flow cost" stroke-width="24" d="M1390 724 C1430 724, 1450 724, 1490 724"/>
+      <path class="flow gray" stroke-width="14" d="M1390 820 C1430 820, 1450 820, 1490 820"/>
+      <rect x="1490" y="675" width="560" height="108" class="box"/>
+      <rect x="1490" y="712" width="20" height="24" class="nodeCost"/>
+      <text x="1530" y="714" class="boxTitle">系统存储 BOM，公开锚点</text>
+      <text x="1530" y="746" class="boxNote">54TB LPDDR5X：约 $0.43-0.54M/rack 起；3D NAND：约 $1M+/rack</text>
+      <rect x="1490" y="800" width="560" height="86" class="box"/>
+      <rect x="1490" y="813" width="20" height="14" class="nodeGray"/>
+      <text x="1530" y="834" class="boxTitle">系统集成 BOM</text>
+      <text x="1530" y="862" class="boxNote">Intel / AMD / ODM / PCB / connectors / chassis</text>
+
+      <!-- Row 4 Power -->
+      <rect x="505" y="925" width="360" height="90" class="box"/>
+      <rect x="505" y="960" width="24" height="20" class="nodeGray"/>
+      <text x="545" y="962" class="boxTitle">Power infrastructure</text>
+      <text x="545" y="1002" class="boxAmount">$3.5B</text>
+      <path class="flow power" stroke-width="20" d="M865 970 C915 970, 940 970, 990 970"/>
+      <rect x="990" y="925" width="400" height="90" class="box"/>
+      <rect x="990" y="960" width="18" height="20" class="nodeGray"/>
+      <text x="1028" y="962" class="boxTitle">Transformers / UPS / switchgear</text>
+      <text x="1028" y="992" class="boxNote">配电、备用电源、并网</text>
+      <path class="flow power" stroke-width="20" d="M1390 970 C1430 970, 1450 970, 1490 970"/>
+      <rect x="1490" y="925" width="560" height="90" class="box"/>
+      <rect x="1490" y="960" width="20" height="20" class="nodeGray"/>
+      <text x="1530" y="962" class="boxTitle">Grid / copper / transformer chain</text>
+      <text x="1530" y="992" class="boxNote">铜、硅钢、电力电子、开关设备</text>
+
+      <!-- Row 5 Cooling -->
+      <rect x="505" y="1105" width="360" height="80" class="box"/>
+      <rect x="505" y="1141" width="24" height="8" class="nodeGray"/>
+      <text x="545" y="1139" class="boxTitle">Cooling</text>
+      <text x="545" y="1177" class="boxAmount">$1.4B</text>
+      <path class="flow cool" stroke-width="8" d="M865 1145 C915 1145, 940 1145, 990 1145"/>
+      <rect x="990" y="1105" width="400" height="80" class="box"/>
+      <rect x="990" y="1141" width="18" height="8" class="nodeGray"/>
+      <text x="1028" y="1139" class="boxTitle">Liquid cooling / CDU</text>
+      <text x="1028" y="1167" class="boxNote">冷板、泵、换热</text>
+      <path class="flow cool" stroke-width="8" d="M1390 1145 C1430 1145, 1450 1145, 1490 1145"/>
+      <rect x="1490" y="1105" width="560" height="80" class="box"/>
+      <rect x="1490" y="1141" width="20" height="8" class="nodeGray"/>
+      <text x="1530" y="1139" class="boxTitle">Thermal materials & equipment</text>
+      <text x="1530" y="1167" class="boxNote">GB300 NVL72 液冷约 $49,860/rack；VR NVL144 约 $55,710/rack</text>
+
+      <!-- Row 6 Building -->
+      <rect x="505" y="1270" width="360" height="90" class="box"/>
+      <rect x="505" y="1305" width="24" height="20" class="nodeGray"/>
+      <text x="545" y="1307" class="boxTitle">Land & building</text>
+      <text x="545" y="1347" class="boxAmount">$3.5B</text>
+      <path class="flow build" stroke-width="20" d="M865 1315 C915 1315, 940 1315, 990 1315"/>
+      <rect x="990" y="1270" width="400" height="90" class="box"/>
+      <rect x="990" y="1305" width="18" height="20" class="nodeGray"/>
+      <text x="1028" y="1307" class="boxTitle">Site / shell / civil works</text>
+      <text x="1028" y="1337" class="boxNote">土地、建筑、消防安防</text>
+      <path class="flow build" stroke-width="20" d="M1390 1315 C1430 1315, 1450 1315, 1490 1315"/>
+      <rect x="1490" y="1270" width="560" height="90" class="box"/>
+      <rect x="1490" y="1305" width="20" height="20" class="nodeGray"/>
+      <text x="1530" y="1307" class="boxTitle">Building materials & contractors</text>
+      <text x="1530" y="1337" class="boxNote">钢材、水泥、施工、工程设计</text>
+
+      <rect x="70" y="1405" width="760" height="80" class="boxWarn"/>
+      <text x="98" y="1437" class="boxTitle warnText">BOM 拆分原则</text>
+      <text x="98" y="1468" class="boxNote">图内只把口径一致的东西连起来。HBM 属于 GPU COGS；System DRAM/NAND/SSD 属于 Host server hardware。</text>
+
+      <text x="870" y="1460" class="footnote">口径：主图使用 1GW AI 数据中心约 $35B 项目样板；BOM 锚点来自 Morgan Stanley 相关公开转载与 NVIDIA 公开规格。二级金额仍需继续查证。</text>
+    </svg>
+  </div>
+
+  <section class="cards">
+    <div class="panel">
+      <h2>v8 更新了什么</h2>
+      <p>在 v7 的结构基础上，v8 把公开 BOM 锚点放进主图：GPU/CPU 量产价估算、20.7TB HBM4/rack、54TB LPDDR5X/rack、3D NAND 约 $1M+/rack、液冷约 $49,860/rack。</p>
+      <p>同时保留口径边界：HBM 属于 GPU COGS，LPDDR5X 和 NAND/SSD 属于 Host server hardware；memory/storage $2M/rack 是混合估算，不直接画成一个单独节点。</p>
+    </div>
+    <div class="panel">
+      <h2>公开 BOM 锚点</h2>
+      <table>
+        <thead>
+          <tr><th>锚点</th><th>含义</th><th>怎么放进图</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>VR200 NVL72 rack 约 $7.803M</td><td>Morgan Stanley 估算的整 rack 成本，媒体提醒这更接近 CSP 支付成本/报价口径</td><td>用于理解 rack 级资金量，不直接等同 NVIDIA 内部制造成本。</td></tr>
+          <tr><td>Memory/storage 约 $2.002M/rack，约 25.7%</td><td>混合桶，包含 LPDDR5X、NAND，且 HBM4 未单独拆价</td><td>不直接塞进主图，避免和 HBM/System memory 再混淆。</td></tr>
+          <tr><td>Rubin GPU $55k、Vera CPU $5k</td><td>Morgan Stanley 引述的量产销售价估算</td><td>放入 GPU COGS BOM 锚点，但仍需确认每 rack 数量和折扣。</td></tr>
+          <tr><td>20.7TB HBM4 / rack</td><td>NVIDIA Vera Rubin NVL72 公开规格</td><td>归入 Accelerator HBM，但公开价格未拆出。</td></tr>
+          <tr><td>LPDDR5X 54TB，约 $0.43-0.54M/rack 起</td><td>Vera CPU/SOCAMM 相关系统内存</td><td>归入 Host server hardware 的 system memory。</td></tr>
+          <tr><td>3D NAND 约 $1M+/rack</td><td>推理 KV cache / storage tier 相关</td><td>归入 Host server hardware 的 NAND/SSD。</td></tr>
+          <tr><td>GB300 NVL72 液冷约 $49,860/rack</td><td>冷板、CDU、冷却组件；VR NVL144 估算约 $55,710/rack</td><td>归入 Cooling 桶，不和 GPU COGS 混。</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="cards">
+    <div class="panel">
+      <h2>来源</h2>
+      <table>
+        <thead>
+          <tr><th>数据</th><th>来源</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1GW AI 数据中心约 350 亿美元；GPU 39%、网络 13%、电力 10%、散热 4%、土地建筑 10%</td><td><a href="https://www.businessinsider.com/why-nvidia-worth-5-trillion-inside-35-billion-ai-datacenter-2025-10">Business Insider 引述 Bernstein Research 和 TD Cowen</a></td></tr>
+          <tr><td>VR200 NVL72 rack 约 $7.803M，memory/storage 约 $2M/rack</td><td><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidias-memory-costs-soar-485-percent-latest-ai-systems-now-cost-usd7-8-million-to-build-memory-now-comprises-25-percent-of-the-total-cost-rubin-gpus-a-mere-usd50-000-apiece">Tom's Hardware 汇总 Morgan Stanley 估算</a></td></tr>
+          <tr><td>GB300 NVL72 液冷约 $49,860/rack</td><td><a href="https://www.tomshardware.com/pc-components/cooling/cooling-system-for-a-single-nvidia-blackwell-ultra-nvl72-rack-costs-a-staggering-usd50-000-set-to-increase-to-usd56-000-with-next-generation-nvl144-racks">Tom's Hardware 汇总 Morgan Stanley 估算</a></td></tr>
+          <tr><td>NVIDIA 最近季度 Data Center 收入 752 亿美元、公司毛利率约 75%</td><td><a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027">NVIDIA 官方财报</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel">
+      <h2>下一步</h2>
+      <p>下一步继续查两个“缺价”环节：GPU COGS 里的 TSMC/CoWoS、HBM4、ABF/PCB/CCL；以及 Network 桶里的 NVLink switch、NIC/DPU、光模块和交换机系统。</p>
+      <p>等这些比例更清楚后，可以把右侧 BOM 从“锚点版”升级成“美元金额版”。</p>
+    </div>
+  </section>
+</main>
+</body>
+</html>
