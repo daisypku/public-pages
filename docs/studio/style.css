@@ -104,7 +104,7 @@ h3 { margin-bottom: 12px; font-size: 1.25rem; line-height: 1.2; }
 
 .grid { display: grid; gap: 16px; }
 .single-card-row { grid-template-columns: minmax(0, 1fr); }
-.brief-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }
+.brief-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
 
 .feature-card, .brief-card, .construction, .about-message, .message-form, .brief-item {
   border: 1px solid var(--line);
@@ -213,7 +213,7 @@ h3 { margin-bottom: 12px; font-size: 1.25rem; line-height: 1.2; }
   display: flex;
   min-height: 100%;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .cover-frame {
   margin: 0;
