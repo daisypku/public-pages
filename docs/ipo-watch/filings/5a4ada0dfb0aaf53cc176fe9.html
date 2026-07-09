@@ -37,6 +37,13 @@
     .muted { color: var(--muted); }
     .toolbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 12px; }
     .count { color: var(--muted); font-size: 13px; }
+    .market-tabs { margin: 10px 0 16px; }
+    .market-tabs input { position: absolute; opacity: 0; pointer-events: none; }
+    .tab-list { display: flex; flex-wrap: wrap; gap: 8px; border-bottom: 1px solid var(--line); }
+    .tab-list label { cursor: pointer; padding: 8px 12px; border: 1px solid transparent; border-bottom: 0; border-radius: 8px 8px 0 0; color: var(--muted); font-weight: 700; font-size: 14px; background: transparent; }
+    #market-all:checked ~ .tab-list label[for="market-all"], #market-a:checked ~ .tab-list label[for="market-a"], #market-hk:checked ~ .tab-list label[for="market-hk"] { color: var(--accent); background: var(--panel); border-color: var(--line); }
+    .tab-panel { display: none; }
+    #market-all:checked ~ .tab-panels .tab-panel.all, #market-a:checked ~ .tab-panels .tab-panel.a-share, #market-hk:checked ~ .tab-panels .tab-panel.hk { display: block; }
     .date-section { margin-top: 18px; }
     .date-heading { display: flex; align-items: center; gap: 10px; margin: 0 0 10px; color: var(--ink); font-size: 15px; }
     .date-heading::after { content: ""; height: 1px; background: var(--line); flex: 1; }
@@ -76,6 +83,7 @@
       .header-inner, main { padding-left: 16px; padding-right: 16px; }
       .toolbar, .card-top { display: block; }
       .actions { margin-top: 10px; white-space: normal; }
+      .tab-list label { flex: 1 1 auto; text-align: center; }
     }
   </style>
 </head>

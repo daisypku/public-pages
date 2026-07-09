@@ -37,6 +37,13 @@
     .muted { color: var(--muted); }
     .toolbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 12px; }
     .count { color: var(--muted); font-size: 13px; }
+    .market-tabs { margin: 10px 0 16px; }
+    .market-tabs input { position: absolute; opacity: 0; pointer-events: none; }
+    .tab-list { display: flex; flex-wrap: wrap; gap: 8px; border-bottom: 1px solid var(--line); }
+    .tab-list label { cursor: pointer; padding: 8px 12px; border: 1px solid transparent; border-bottom: 0; border-radius: 8px 8px 0 0; color: var(--muted); font-weight: 700; font-size: 14px; background: transparent; }
+    #market-all:checked ~ .tab-list label[for="market-all"], #market-a:checked ~ .tab-list label[for="market-a"], #market-hk:checked ~ .tab-list label[for="market-hk"] { color: var(--accent); background: var(--panel); border-color: var(--line); }
+    .tab-panel { display: none; }
+    #market-all:checked ~ .tab-panels .tab-panel.all, #market-a:checked ~ .tab-panels .tab-panel.a-share, #market-hk:checked ~ .tab-panels .tab-panel.hk { display: block; }
     .date-section { margin-top: 18px; }
     .date-heading { display: flex; align-items: center; gap: 10px; margin: 0 0 10px; color: var(--ink); font-size: 15px; }
     .date-heading::after { content: ""; height: 1px; background: var(--line); flex: 1; }
@@ -76,6 +83,7 @@
       .header-inner, main { padding-left: 16px; padding-right: 16px; }
       .toolbar, .card-top { display: block; }
       .actions { margin-top: 10px; white-space: normal; }
+      .tab-list label { flex: 1 1 auto; text-align: center; }
     }
   </style>
 </head>
@@ -93,6 +101,17 @@
   <div class="count">更新日 2026-07-09 · 保留最近 30 天 · 展示 87 条 · 今日更新 0 条</div>
 </div>
 
+<section class="market-tabs">
+  <input type="radio" name="market" id="market-all" checked>
+  <input type="radio" name="market" id="market-a">
+  <input type="radio" name="market" id="market-hk">
+  <div class="tab-list" role="tablist" aria-label="市场筛选">
+    <label for="market-all" role="tab">全部 87</label>
+    <label for="market-a" role="tab">A股 68</label>
+    <label for="market-hk" role="tab">港股 19</label>
+  </div>
+  <div class="tab-panels">
+    <div class="tab-panel all">
 <section class="date-section">
   <h3 class="date-heading">更早更新 · 87 条</h3>
   <div class="filing-list">
@@ -2126,6 +2145,2051 @@
 
 </article>
 </div>
+</section>
+</div>
+    <div class="tab-panel a-share">
+<section class="date-section">
+  <h3 class="date-heading">更早更新 · 68 条</h3>
+  <div class="filing-list">
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">英韧科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-07-08</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/a6a922aec54fb5c425c245ac.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>软件和信息技术服务业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已问询</dd></div><div><dt>保荐机构</dt><dd>国泰海通证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-09 12:30</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">北京通美晶体技术股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-07-08</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/9a341757adca4cf815cd6a5f.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>计算机、通信和其他电子设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>注册结果</dd></div><div><dt>保荐机构</dt><dd>国泰海通证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-09 12:30</dd></div></dl>
+  
+<details class="summary">
+  <summary>查看摘要分析</summary>
+  <div class="summary-body">
+    <div class="business"><strong>一句话业务：</strong>北京通美晶体技术股份有限公司是一家从事磷化铟衬底、砷化镓衬底、锗衬底、PBN材料及其他高纯材料的研发、生产和销售的公司。</div>
+    
+<div class="finance-panel">
+  <div class="finance-head">财务快照</div>
+  
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>年度</th><th>收入</th><th>毛利</th><th>毛利率</th><th>净利</th><th>净利润率</th></tr></thead>
+    <tbody><tr><td>2022</td><td>5.08亿</td><td></td><td></td><td>5.08亿</td><td></td></tr></tbody>
+  </table>
+</div>
+
+  <div class="finance-note">提供的文本片段中未包含完整的年度财务数据。根据已披露信息，公司2022年上半年营业收入为5.08亿元，同比增长29.13%；归母净利润为0.76亿元，同比增长88.57%，主要得益于境外销售业务模式切换和下游市场需求增长。</div>
+</div>
+
+    <div class="two-col">
+      <div class="point-box">
+        <div class="section-label">要点</div>
+        <ul><li>公司是其在纳斯达克上市的控股股东AXT分拆主要资产和全部业务在科创板上市。</li><li>公司无实际控制人，因其控股股东AXT股权高度分散。</li><li>报告期内与控股股东AXT存在重大关联销售，该模式已于2021年3月终止，转为子公司直接对外销售，此业务切换导致2021年收入有所提升。</li><li>公司将砷化镓产线从北京搬迁至外地，因产线调试、员工熟练度等问题导致报告期内产品毛利率出现较大波动。</li><li>公司面临来自Sumitomo、Umicore等国际企业和云南锗业等国内厂商的激烈市场竞争。</li></ul>
+      </div>
+      <div class="risk-box">
+        <div class="section-label">主要风险</div>
+        <ul><li>公司与控股股东AXT分别在科创板和纳斯达克上市，需遵循两地不同法规，可能因《外国公司问责法案》等因素导致AXT面临退市风险，从而影响本公司。</li><li>对部分关键原材料供应商存在依赖，且原材料价格波动可能对公司业绩产生较大影响。</li><li>工厂搬迁导致产品毛利率出现波动，新生产线存在无法稳定达产或良率未达预期的风险。</li><li>锗衬底等产品面临国内竞争对手进入导致的价格竞争加剧风险，可能导致市场份额降低或毛利率下降。</li><li>中美贸易争端加剧可能导致公司采购的原材料或设备成本上升、出口产品被加征关税，对经营产生不利影响。</li><li>砷化镓衬底在部分应用领域存在被绝缘体上硅（SOI）等其他新兴技术替代的风险。</li></ul>
+      </div>
+    </div>
+  </div>
+</details>
+
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">上海同创普润新材料股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-07-08</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/6de338e777a1f153833d5350.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>计算机、通信和其他电子设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已问询</dd></div><div><dt>保荐机构</dt><dd>国泰海通证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-09 12:30</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">云洲智能科创板IPO项目</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-07-07</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/47a55aee83388a39336160c7.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>通用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已问询</dd></div><div><dt>保荐机构</dt><dd>中信证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-09 12:30</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">上海羲禾科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-07-07</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/733c5e2d467e968c3687b4df.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>软件和信息技术服务业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已问询</dd></div><div><dt>保荐机构</dt><dd>国泰海通证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-09 12:30</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">上海思朗科技股份有限公司科创板IPO项目</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-07-07</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/0662718f1391a039e1a2ed05.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>计算机、通信和其他电子设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>国泰海通证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-09 12:30</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">宇树科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-07-06</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/92d1059516a72af5c57f5fc8.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>通用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>注册结果</dd></div><div><dt>保荐机构</dt><dd>中信证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-09 12:30</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">上海天泽云泰生物医药股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-07-06</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/d98f150b7575fce6e8fc655e.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>医药制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已问询</dd></div><div><dt>保荐机构</dt><dd>国泰海通证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-09 12:30</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">映恩生物（Duality Biotherapeutics Inc）</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-07-03</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/41f454e91baea603298ec58a.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>医药制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已问询</dd></div><div><dt>保荐机构</dt><dd>中信证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-06 12:52</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">广东钶锐锶数控技术股份有限公司首次公开发行股票并在科创板上市</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-07-03</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/ef52cf5c04f5d83f50d72547.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>通用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已问询</dd></div><div><dt>保荐机构</dt><dd>国泰海通证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-06 12:52</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">北京煜鼎增材制造研究院股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-07-03</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/2ede005e1b2b3b00d54ef0bd.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>有色金属冶炼和压延加工业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已问询</dd></div><div><dt>保荐机构</dt><dd>国信证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-06 12:52</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">苏州信诺维医药科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-07-01</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/fc9af5e5a47344d5cd18b077.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>医药制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>提交注册</dd></div><div><dt>保荐机构</dt><dd>国泰海通证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-04 12:11</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">集益威半导体（上海）股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-30</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/12f58d229b2b6b139057f7be.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>软件和信息技术服务业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>国泰海通证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-03 12:25</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">深圳核心医疗科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-30</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/3384b8fcda0b174543723fdf.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>专用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已问询</dd></div><div><dt>保荐机构</dt><dd>华泰联合证券有限责任公司</dd></div><div><dt>采集时间</dt><dd>2026-07-03 12:25</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">江苏鲁汶仪器股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-30</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/b544a51a21f68b3084238d1a.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>专用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>中信证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-03 12:25</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">江苏神州半导体科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-30</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/780a9d688b00c4bcab808667.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>专用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>国泰海通证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-03 12:25</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">成都莱普科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-30</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/f767a2c3fb368d3599c345e1.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>专用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>中止</dd></div><div><dt>保荐机构</dt><dd>中信建投证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-03 12:25</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">弥费科技（上海）股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-30</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/a7abe8c307e0eb09b5501890.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>专用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>国泰海通证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-03 12:25</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">广东钶锐锶数控技术股份有限公司首次公开发行股票并在科创板上市</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-30</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/bafd615b898b0fec3ad5bc1e.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>通用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已问询</dd></div><div><dt>保荐机构</dt><dd>国泰海通证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-03 12:25</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">山东东岳未来氢能材料股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-30</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/018311ee3378b312e4e8608e.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>化学原料和化学制品制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>终止</dd></div><div><dt>保荐机构</dt><dd>中信证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-03 12:25</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">华科精准（北京）医疗设备股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-30</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/f05ffaf071939f942fec3698.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>专用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>国泰海通证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-03 12:25</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">北京艺妙神州生物医药股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-30</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/a92d2a388a0aa00b553ccc84.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>医药制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>中信证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-03 12:25</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">北京擎科生物科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-30</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/a6896d437414155c22681b84.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>研究和试验发展</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>东方证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-03 12:25</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">北京天科合达半导体股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-30</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/e04f9472dfa1b93215a441a1.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>计算机、通信和其他电子设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>中国国际金融股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-03 12:25</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">北京卓镭激光技术股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-30</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/3429ddd8da0809b2ff08e912.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>计算机、通信和其他电子设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>国金证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-03 12:25</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">北京华卓精科科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-30</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/d76cd42729c44914ca69b280.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>专用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>招商证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-03 12:25</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">北京世维通科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-30</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/364282eabe26efa6a9f5e5a2.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>计算机、通信和其他电子设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>中信证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-03 12:25</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">东方晶源微电子科技（北京）股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-30</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/2446646e4c5673bcbb3d3579.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>专用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>中信建投证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-03 12:25</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">上海隐冠半导体技术股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-30</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/79b5f6a46e2fb3de296082d9.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>专用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>华泰联合证券有限责任公司</dd></div><div><dt>采集时间</dt><dd>2026-07-03 12:25</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">上海羲禾科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-30</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/52724d97425668dde37331a2.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>软件和信息技术服务业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>国泰海通证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-03 12:25</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">上海碧云天生物技术股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-30</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/94963478ffc0b172c41ef68e.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>研究和试验发展</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>中信证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-03 12:25</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">上海汇禾医疗科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-30</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/21fd511fc5f240b09fb76578.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>专用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>东吴证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-03 12:25</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">上海恒润达生生物科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-30</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/ab1b8ad99827627477606b10.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>医药制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>中止</dd></div><div><dt>保荐机构</dt><dd>中国国际金融股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-03 12:25</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">上海同创普润新材料股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-30</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/de738261f4dbec89b6256d52.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>计算机、通信和其他电子设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>国泰海通证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-03 12:25</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">重庆物奇微电子股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-29</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/b561761b23cdb674d34750e1.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>软件和信息技术服务业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>光大证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-02 12:40</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">西安新通药物研究股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-29</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/ea83353f184572723992c732.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>医药制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已问询</dd></div><div><dt>保荐机构</dt><dd>中信证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-02 12:40</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">蓝箭航天空间科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-29</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/d430fef65918616b9a72a6d4.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>铁路、船舶、航空航天和其他运输设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已问询</dd></div><div><dt>保荐机构</dt><dd>中国国际金融股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-02 12:40</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">英韧科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-29</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/5a4ada0dfb0aaf53cc176fe9.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>软件和信息技术服务业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>国泰海通证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-02 12:40</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">苏州维嘉科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-29</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/781db0b10d0193f3959604bc.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>专用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>国投证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-02 12:40</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">艾柯医疗器械（北京）股份有限公司首次公开发行股票并在科创板上市</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-29</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/fade59c14f2ac565f0f23dc9.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>专用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已问询</dd></div><div><dt>保荐机构</dt><dd>中信证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-02 12:40</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">浙江金连接科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-29</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/f5363ee1fd1e78d8aa461ec1.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>计算机、通信和其他电子设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>长江证券承销保荐有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-02 12:40</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">武汉中科创新技术股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-29</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/b5fb9f21549bf171111ba8f9.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>仪器仪表制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>东吴证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-02 12:40</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">南京沃天科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-29</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/7e865ba006a5bf850ec02dfd.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>计算机、通信和其他电子设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>国联民生证券承销保荐有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-02 12:40</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">南京世和基因生物技术股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-29</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/cca1757df38a8499e049b352.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>研究和试验发展</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>华泰联合证券有限责任公司</dd></div><div><dt>采集时间</dt><dd>2026-07-02 12:40</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">北京术锐机器人股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-29</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/9f644ee8af7b28e42bc67a3a.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>专用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>中信证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-02 12:40</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">北京夏禾科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-29</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/19de41012c89f93ad610faea.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>计算机、通信和其他电子设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>中信证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-02 12:40</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">中科宇航技术股份有限公司首次公开发行股票并在科创板上市</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-29</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/d309c3653a1ed553682b8a86.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>铁路、船舶、航空航天和其他运输设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已问询</dd></div><div><dt>保荐机构</dt><dd>国泰海通证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-02 12:40</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">中电防务科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-29</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/ac8520e457599b1bbdebc4dd.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>计算机、通信和其他电子设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>中国国际金融股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-02 12:40</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">上海超硅半导体股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-29</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/bbf79567b1b92c01be17c64d.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>计算机、通信和其他电子设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已问询</dd></div><div><dt>保荐机构</dt><dd>长江证券承销保荐有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-02 12:40</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">上海纽脉医疗科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-29</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/f7e2c52a0cc8e30df0035f22.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>专用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>中信证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-02 12:40</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">中导光电设备股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-28</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/1da23c71d22a195c7d2b4048.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>专用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>国联民生证券承销保荐有限公司</dd></div><div><dt>采集时间</dt><dd>2026-07-01 13:05</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">苏州信诺维医药科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-26</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/67ca6ef19fe6272f57d77b0c.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>医药制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>上市委会议</dd></div><div><dt>保荐机构</dt><dd>国泰海通证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-06-29 13:12</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">深圳核心医疗科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-25</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/13c68a6108557c2aa901c429.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>专用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已问询</dd></div><div><dt>保荐机构</dt><dd>华泰联合证券有限责任公司</dd></div><div><dt>采集时间</dt><dd>2026-06-28 13:03</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">江苏高凯精密流体技术股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-24</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/7f6c3e21b0121440ca9a7c95.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>专用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>提交注册</dd></div><div><dt>保荐机构</dt><dd>国泰海通证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-06-27 12:35</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">博睿康技术（上海）股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-24</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/bbc5bf0fe4ac3314e08d7627.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>专用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已问询</dd></div><div><dt>保荐机构</dt><dd>中信证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-06-27 12:35</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">云洲智能科创板IPO项目</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-24</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/bbf29eaa12e66b205023381c.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>通用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>中信证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-06-27 12:35</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">北京煜鼎增材制造研究院股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-23</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/1a1fcf1dfaef431a85c570b3.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>有色金属冶炼和压延加工业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>国信证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-06-26 12:49</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">青岛迈金智能科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SZSE</span>
+        <span class="tag">2026-06-22</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/84e10dfa7820f18141a7445d.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>创业板</dd></div><div><dt>行业/业务</dt><dd>计算机、通信和其他电子设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已问询</dd></div><div><dt>保荐机构</dt><dd>华兴证券有限公司</dd></div><div><dt>采集时间</dt><dd>2026-06-23 14:38</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">重庆耐德能源装备股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SZSE</span>
+        <span class="tag">2026-06-22</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/5fe952ef55558e4487e0ad14.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>创业板</dd></div><div><dt>行业/业务</dt><dd>专用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>长江证券承销保荐有限公司</dd></div><div><dt>采集时间</dt><dd>2026-06-23 14:38</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">深圳鹏城新能科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SZSE</span>
+        <span class="tag">2026-06-22</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/5a4fc5c5abbe79beb6239c3c.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>创业板</dd></div><div><dt>行业/业务</dt><dd>电气机械和器材制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>中国国际金融股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-06-23 14:38</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">江苏毅合捷汽车科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SZSE</span>
+        <span class="tag">2026-06-22</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/248e161fcffa0dd303173294.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>创业板</dd></div><div><dt>行业/业务</dt><dd>汽车制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已问询</dd></div><div><dt>保荐机构</dt><dd>长城证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-06-23 14:38</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">广东金鼎光学技术股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SZSE</span>
+        <span class="tag">2026-06-22</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/5b6a9592866216230cd04142.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>创业板</dd></div><div><dt>行业/业务</dt><dd>专用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>国投证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-06-23 14:38</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">山东汇川精密科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SZSE</span>
+        <span class="tag">2026-06-22</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/786d2fe2e9cc1344ffc14e5f.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>创业板</dd></div><div><dt>行业/业务</dt><dd>汽车制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>平安证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-06-23 14:38</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">安徽三绿科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SZSE</span>
+        <span class="tag">2026-06-22</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/34dd9a8931c17b36c282cff0.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>创业板</dd></div><div><dt>行业/业务</dt><dd>橡胶和塑料制品业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>东方证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-06-23 14:38</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">珠海普生医疗科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-22</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/af0ca6fb6315826658a202b4.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>专用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>中信证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-06-25 12:46</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">江苏高凯精密流体技术股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-22</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/55466d3aa6979c2f8dedfd9e.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>专用设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>上市委会议</dd></div><div><dt>保荐机构</dt><dd>国泰海通证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-06-24 12:46</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">上海频准激光科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">SSE</span>
+        <span class="tag">2026-06-22</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/43cb2451ab517fadcbb922a3.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>科创板</dd></div><div><dt>行业/业务</dt><dd>计算机、通信和其他电子设备制造业</dd></div><div><dt>文件类型</dt><dd>IPO项目更新</dd></div><div><dt>状态</dt><dd>注册结果</dd></div><div><dt>保荐机构</dt><dd>中信建投证券股份有限公司</dd></div><div><dt>采集时间</dt><dd>2026-06-25 12:46</dd></div></dl>
+  
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">河南光远新材料股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">CNINFO</span>
+        <span class="tag">2026-06-18</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="filings/8e410e325ac7dc36c6d8db6d.html">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>巨潮 IPO</dd></div><div><dt>行业/业务</dt><dd>非金属矿物制品业</dd></div><div><dt>文件类型</dt><dd>IPO项目详情</dd></div><div><dt>状态</dt><dd>已受理</dd></div><div><dt>保荐机构</dt><dd>国泰海通证券股份有限公司</dd></div></dl>
+  
+<details class="summary">
+  <summary>查看摘要分析</summary>
+  <div class="summary-body">
+    <div class="business"><strong>一句话业务：</strong>公司主要从事电子级玻璃纤维产品的研发、生产与销售，产品包括 E 玻璃纤维和特种电子级玻璃纤维产品。</div>
+    
+<div class="finance-panel">
+  <div class="finance-head">财务快照</div>
+  
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>年度</th><th>收入</th><th>毛利</th><th>毛利率</th><th>净利</th><th>净利润率</th></tr></thead>
+    <tbody><tr><td>2023</td><td>10.71亿元</td><td>约0.47亿元</td><td>4.39%</td><td>-0.99亿元</td><td>-9.273%</td></tr><tr><td>2024</td><td>13.29亿元</td><td>约2.03亿元</td><td>15.26%</td><td>0.61亿元</td><td>4.584%</td></tr><tr><td>2025</td><td>22.68亿元</td><td>约8.03亿元</td><td>35.40%</td><td>5.17亿元</td><td>22.787%</td></tr></tbody>
+  </table>
+</div>
+
+  <div class="finance-note">巨潮资讯 IPO 数据显示，公司 2023-2025 年收入由 10.71 亿元增长至 22.68 亿元，毛利率由 4.39% 提升至 35.40%，净利润由亏损 0.99 亿元转为盈利 5.17 亿元。</div>
+</div>
+
+    <div class="two-col">
+      <div class="point-box">
+        <div class="section-label">要点</div>
+        <ul><li>巨潮资讯代码 C1257，全称河南光远新材料股份有限公司。</li><li>公司主要从事电子级玻璃纤维产品的研发、生产与销售，包括电子纱和电子布。</li><li>巨潮数据披露其保荐机构为国泰海通证券股份有限公司，行业为非金属矿物制品业。</li></ul>
+      </div>
+      <div class="risk-box">
+        <div class="section-label">主要风险</div>
+        <ul><li>巨潮进度数据中历史流程曾出现“终止审查(撤回)”记录，需进一步核对当前申报状态与申报材料版本。</li><li>电子级玻璃纤维业务受下游覆铜板、PCB 和电子行业景气度影响。</li></ul>
+      </div>
+    </div>
+  </div>
+</details>
+
+</article>
+</div>
+</section>
+</div>
+    <div class="tab-panel hk">
+<section class="date-section">
+  <h3 class="date-heading">更早更新 · 19 条</h3>
+  <div class="filing-list">
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">本末动力（北京）科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">HKEX</span>
+        <span class="tag">2026-06-29</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108691/documents/sehk26062901535_c.pdf">PDF</a> <a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108691/2026062901532_c.htm">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>主板</dd></div><div><dt>行业/业务</dt><dd>以直驱技术为核心</dd></div><div><dt>文件类型</dt><dd>聆讯后资料集（第一次呈交）</dd></div><div><dt>状态</dt><dd>A</dd></div><div><dt>采集时间</dt><dd>2026-07-02 12:40</dd></div></dl>
+  
+<details class="summary">
+  <summary>查看摘要分析</summary>
+  <div class="summary-body">
+    <div class="business"><strong>一句话业务：</strong>一家以直驱技术为核心，主要在中国从事机器人动力模组及机器人销售的技术公司。</div>
+    
+<div class="finance-panel">
+  <div class="finance-head">财务快照</div>
+  
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>年度</th><th>收入</th><th>毛利</th><th>毛利率</th><th>净利</th><th>净利润率</th></tr></thead>
+    <tbody><tr><td>2023</td><td>1,754万元人民币</td><td>236万元人民币</td><td>13.5%</td><td>-录得亏损，具体数额未在文本中披露</td><td>未披露</td></tr><tr><td>2024</td><td>7,980万元人民币</td><td>1,540万元人民币</td><td>19.3%</td><td>-录得亏损，具体数额未在文本中披露</td><td>未披露</td></tr><tr><td>2025</td><td>2亿8,172万元人民币</td><td>6,059万元人民币</td><td>21.5%</td><td>-录得亏损，具体数额未在文本中披露</td><td>未披露</td></tr></tbody>
+  </table>
+</div>
+
+  <div class="finance-note">公司在2023至2025年间经历了爆炸性的收入增长。毛利润随之显著增加，毛利率也稳步提升。尽管如此，公司在整个记录期内仍处于净亏损状态。</div>
+</div>
+
+    <div class="two-col">
+      <div class="point-box">
+        <div class="section-label">要点</div>
+        <ul><li>公司是中国领先的机器人动力模组供应商，按2025年收入计，在中国消费机器人直驱动力模组行业排名第一，市场份额为61.1%。</li><li>收入增长迅猛，从2023年的人民币1,754万元增长至2025年的人民币2.82亿元，复合年增长率达300.8%，主要由消费类机器人直驱动力模组的销量驱动。</li><li>尽管收入高速增长且毛利率持续改善（从2023年的13.5%提升至2025年的21.5%），公司在过往记录期间持续录得净亏损，但经调整净亏损率已大幅收窄。</li><li>客户集中度非常高，2025年来自前五大客户的收入占总收入的85.7%，其中最大客户占比42.8%。</li><li>公司拥有自主研发能力，在中国拥有321项专利，并推出了多款全球首创的轮足机器人产品，如全球首款商业化整机模组化双轮足机器人D1。</li></ul>
+      </div>
+      <div class="risk-box">
+        <div class="section-label">主要风险</div>
+        <ul><li>客户集中度高：2025年，前五大客户占总收入的85.7%，对单一或少数客户的依赖性极高。</li><li>持续亏损历史：公司在过往记录期间持续录得净亏损，并预计短期内将继续产生净亏损。</li><li>市场竞争激烈：公司所处的机器人动力模组和机器人行业技术密集、竞争激烈且市场集中度高。</li><li>平均售价下降：核心产品“机器人直驱动力模组”的平均售价在2023至2025年间显著下降，可能对未来利润率构成压力。</li><li>对核心技术的依赖：公司的业务高度依赖其直驱技术，若无法保持技术领先或市场需求转变，可能对业务造成不利影响。</li></ul>
+      </div>
+    </div>
+  </div>
+</details>
+
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">永康控股有限公司</div>
+      <div class="meta-row">
+        <span class="tag">HKEX</span>
+        <span class="tag">2026-06-26</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108390/documents/sehk26062603257_c.pdf">PDF</a> <a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108390/2026062603254_c.htm">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>主板</dd></div><div><dt>行业/业务</dt><dd>在新加坡、马来西亚、中国等亚洲地区提</dd></div><div><dt>文件类型</dt><dd>聆讯后资料集（第一次呈交）</dd></div><div><dt>状态</dt><dd>A</dd></div><div><dt>采集时间</dt><dd>2026-06-29 13:12</dd></div></dl>
+  
+<details class="summary">
+  <summary>查看摘要分析</summary>
+  <div class="summary-body">
+    <div class="business"><strong>一句话业务：</strong>一家在新加坡、马来西亚、中国等亚洲地区提供集装箱堆场运营及相关物流服务的公司。</div>
+    
+<div class="finance-panel">
+  <div class="finance-head">财务快照</div>
+  
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>年度</th><th>收入</th><th>毛利</th><th>毛利率</th><th>净利</th><th>净利润率</th></tr></thead>
+    <tbody><tr><td>2023</td><td>15,552.3万新加坡元</td><td>4,694.6万新加坡元</td><td>30.2%</td><td>837.0万新加坡元</td><td>5.4%</td></tr><tr><td>2024</td><td>16,502.2万新加坡元</td><td>4,319.8万新加坡元</td><td>26.2%</td><td>1,161.8万新加坡元</td><td>7.0%</td></tr><tr><td>2025</td><td>14,917.0万新加坡元</td><td>4,396.8万新加坡元</td><td>29.5%</td><td>1,326.6万新加坡元</td><td>8.9%</td></tr></tbody>
+  </table>
+</div>
+
+  <div class="finance-note">2023至2025年，公司收入有所波动，在2024年增长后于2025年回落。毛利率在2024年出现下滑后于2025年有所回升。净利润及净利率在三年间呈现持续增长趋势。</div>
+</div>
+
+    <div class="two-col">
+      <div class="point-box">
+        <div class="section-label">要点</div>
+        <ul><li>公司是亚洲区域性的集装箱堆场运营商，根据招股书信息，2025年在新加坡市场占有率排名第一（16.2%），在马来西亚排名第二（5.9%）。</li><li>业务遍及亚洲六个国家和地区，包括新加坡、中国、马来西亚、香港、泰国和越南，截至2026年5月31日共运营18个堆场。</li><li>主要收入来源为集装箱堆场业务，占2025年总收入的73.2%。</li><li>2023至2025年，公司收入有所波动，但净利润持续增长，从2023年的840万新加坡元增长至2025年的1330万新加坡元。</li></ul>
+      </div>
+      <div class="risk-box">
+        <div class="section-label">主要风险</div>
+        <ul><li>全球经济状况的不可预测变化可能导致服务需求减少，对业务和经营业绩造成不利影响。</li><li>业务受到土地供应及使用的风险影响，可能难以持续获得合适的土地用于业务扩张。</li><li>集装箱堆场业务的处理量可能因无法控制的因素而波动，从而对经营及财务表现造成不利影响。</li><li>计划中的重点项目“Mega Depot”可能无法成功落实，或无法实现预期效益。</li><li>公司或未能持续将业务扩展至新地点，并可能面临来自新市场的激烈竞争及潜在风险。</li></ul>
+      </div>
+    </div>
+  </div>
+</details>
+
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">山东宝盖新材料科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">HKEX</span>
+        <span class="tag">2026-06-25</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="https://www1.hkexnews.hk/app/gem/2026/108409/documents/gem26062501852_c.pdf">PDF</a> <a class="link-pill" href="https://www1.hkexnews.hk/app/gem/2026/108409/2026062501779_c.htm">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>GEM</dd></div><div><dt>行业/业务</dt><dd>总部位于中国山东省的复合材料制造商</dd></div><div><dt>文件类型</dt><dd>聆讯后资料集（第一次呈交）</dd></div><div><dt>状态</dt><dd>A</dd></div><div><dt>采集时间</dt><dd>2026-06-28 13:02</dd></div></dl>
+  
+<details class="summary">
+  <summary>查看摘要分析</summary>
+  <div class="summary-body">
+    <div class="business"><strong>一句话业务：</strong>一家总部位于中国山东省的复合材料制造商，主要从事复合材料井盖、格栅及树脂排水沟等产品的研发、生产及销售。</div>
+    
+<div class="finance-panel">
+  <div class="finance-head">财务快照</div>
+  
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>年度</th><th>收入</th><th>毛利</th><th>毛利率</th><th>净利</th><th>净利润率</th></tr></thead>
+    <tbody><tr><td>2023</td><td>137,135</td><td>52,377</td><td>38.2%</td><td>25,222</td><td>18.4%</td></tr><tr><td>2024</td><td>130,866</td><td>49,084</td><td>37.5%</td><td>21,624</td><td>16.5%</td></tr><tr><td>2025</td><td>143,645</td><td>54,821</td><td>38.2%</td><td>24,054</td><td>16.7%</td></tr></tbody>
+  </table>
+</div>
+
+  <div class="finance-note">2023至2025财年，公司收入在2024年短暂下降后于2025年创下新高。毛利率保持在37.5%至38.2%之间，相对稳定。净利润趋势与收入一致，在2024年有所下滑后于2025年回升。</div>
+</div>
+
+    <div class="two-col">
+      <div class="point-box">
+        <div class="section-label">要点</div>
+        <ul><li>公司是中国知名的复合材料制造商，根据招股书信息，在中国复合材料井盖行业的市场份额排名第三。</li><li>主要产品包括复合材料井盖、格栅和树脂排水沟，核心加工工艺为团状模塑料(BMC)和片状模塑料(SMC)。</li><li>2023至2025财年，公司收入分别为人民币1.37亿元、1.31亿元和1.44亿元，净利润分别为2522万元、2162万元和2405万元，业绩在2024年出现短暂下滑后回升。</li><li>公司销售渠道包括分销商和终端用户，其中分销商为主要收入来源，2025年占总收入的67.2%。</li><li>公司面临的主要风险包括市场需求变动、对主要原材料及少数供应商的依赖、技术变革及替代品威胁等。</li></ul>
+      </div>
+      <div class="risk-box">
+        <div class="section-label">主要风险</div>
+        <ul><li>市场需求可能出现重大不利变动，从而影响业务及经营业绩。</li><li>业务依赖主要原材料（如树脂、玻璃纤维）的稳定供应。</li><li>依赖少数供应商提供主要原材料，可能面临供应中断或价格波动风险。</li><li>可能无法跟上市场技术的迅速变化，导致产品竞争力下降。</li><li>替代性产品（如金属或塑料井盖）的出现可能对业务构成威胁。</li><li>面临与产品质量相关的风险。</li></ul>
+      </div>
+    </div>
+  </div>
+</details>
+
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">珞石（山东）机器人集团股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">HKEX</span>
+        <span class="tag">2026-06-24</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108386/documents/sehk26062401654_c.pdf">PDF</a> <a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108386/2026062401651_c.htm">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>主板</dd></div><div><dt>行业/业务</dt><dd>专注于工业机器人、协作机器人及具身智</dd></div><div><dt>文件类型</dt><dd>聆讯后资料集（第一次呈交）</dd></div><div><dt>状态</dt><dd>A</dd></div><div><dt>采集时间</dt><dd>2026-06-27 12:35</dd></div></dl>
+  
+<details class="summary">
+  <summary>查看摘要分析</summary>
+  <div class="summary-body">
+    <div class="business"><strong>一句话业务：</strong>一家专注于工业机器人、协作机器人及具身智能机器人产品的研发、生产和销售的机器人技术公司。</div>
+    
+<div class="finance-panel">
+  <div class="finance-head">财务快照</div>
+  
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>年度</th><th>收入</th><th>毛利</th><th>毛利率</th><th>净利</th><th>净利润率</th></tr></thead>
+    <tbody><tr><td>2023</td><td>267,025千元</td><td>30,571千元</td><td>11.4%</td><td>-157,464千元</td><td>-59.0%</td></tr><tr><td>2024</td><td>325,257千元</td><td>71,192千元</td><td>21.9%</td><td>-191,756千元</td><td>-59.0%</td></tr><tr><td>2025</td><td>521,747千元</td><td>114,168千元</td><td>21.9%</td><td>-179,312千元</td><td>-34.4%</td></tr></tbody>
+  </table>
+</div>
+
+  <div class="finance-note">公司收入在2023至2025年间实现持续增长。毛利率在2024年有显著提升，并在2025年保持稳定。尽管收入增长，公司在整个往绩记录期间持续录得净亏损，但净亏损率在2025年有所收窄。</div>
+</div>
+
+    <div class="two-col">
+      <div class="point-box">
+        <div class="section-label">要点</div>
+        <ul><li>公司提供三大类机器人产品：工业机器人、协作机器人及具身智能机器人，并拥有自研的xCore机器人技术平台。</li><li>根据弗若斯特沙利文报告，按2025年销量计，公司在中国工业机器人市场排名第六（市占率0.9%），在中国协作机器人市场排名第六（市占率4.8%）。</li><li>公司收入在2023年至2025年间快速增长，从人民币2.67亿元增至5.22亿元，但同期持续录得净亏损，亏损额分别为人民币1.57亿元、1.92亿元和1.79亿元。</li><li>公司的具身智能机器人业务增长迅速，收入从2023年的人民币276万元增长至2025年的人民币4,701万元，成为新的增长动力。</li><li>公司在往绩记录期内对主要客户和供应商存在一定依赖。2025年，来自五大客户的收入占总收入的21.5%，而向五大供应商的采购额占总采购额的31.0%。</li></ul>
+      </div>
+      <div class="risk-box">
+        <div class="section-label">主要风险</div>
+        <ul><li>公司自成立以来持续产生净亏损，未来可能无法实现或维持盈利能力。</li><li>所处的机器人行业竞争激烈，且技术发展迅速，公司可能无法有效竞争。</li><li>业务成功依赖于持续开发并成功推出满足市场需求的新产品及解决方案的能力。</li><li>对主要客户及供应商存在一定依赖，任何主要合作关系的变动可能对业务产生不利影响。</li><li>产品可能出现质量问题、缺陷或故障，可能导致品牌声誉受损及产生额外成本。</li><li>业务运营及扩张需要大量资金，未来可能需要额外融资以支持战略。</li></ul>
+      </div>
+    </div>
+  </div>
+</details>
+
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">江西齐云山食品股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">HKEX</span>
+        <span class="tag">2026-06-24</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108291/documents/sehk26062400817.pdf">PDF</a> <a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108291/2026062400744_c.htm">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>主板</dd></div><div><dt>行业/业务</dt><dd>江西齐云山食品股份有限公司是一家主要</dd></div><div><dt>文件类型</dt><dd>聆讯后资料集（第一次呈交）</dd></div><div><dt>状态</dt><dd>A</dd></div><div><dt>采集时间</dt><dd>2026-06-27 12:35</dd></div></dl>
+  
+<details class="summary">
+  <summary>查看摘要分析</summary>
+  <div class="summary-body">
+    <div class="business"><strong>一句话业务：</strong>江西齐云山食品股份有限公司是一家主要从事以南酸枣为原料的休闲食品（如南酸枣糕、南酸枣条）的研发、生产和销售的公司。</div>
+    
+<div class="finance-panel">
+  <div class="finance-head">财务快照</div>
+  
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>年度</th><th>收入</th><th>毛利</th><th>毛利率</th><th>净利</th><th>净利润率</th></tr></thead>
+    <tbody><tr><td>2023</td><td>246,718,000元人民币</td><td>120,448,000元人民币</td><td>48.8%</td><td>23,705,000元人民币</td><td>9.6%</td></tr><tr><td>2024</td><td>339,132,000元人民币</td><td>164,867,000元人民币</td><td>48.6%</td><td>53,199,000元人民币</td><td>15.7%</td></tr><tr><td>2025</td><td>313,696,000元人民币</td><td>160,992,000元人民币</td><td>51.3%</td><td>48,925,000元人民币</td><td>15.6%</td></tr></tbody>
+  </table>
+</div>
+
+  <div class="finance-note">公司总收入由2023年的2.47亿元人民币增至2024年的3.39亿元，后于2025年回落至3.14亿元。净利润趋势与收入相似，由2023年的2370万元增至2024年的5320万元，再于2025年降至4890万元。毛利率在2023年和2024年保持稳定（分别为48.8%和48.6%），并在2025年显著提升至51.3%。</div>
+</div>
+
+    <div class="two-col">
+      <div class="point-box">
+        <div class="section-label">要点</div>
+        <ul><li>公司是中国南酸枣糕细分市场的领先企业之一，根据招股书，按2025年数据，公司在该行业中占有较高市场份额。</li><li>公司收入和利润在2024年实现增长后，于2025年出现下滑。公司解释部分原因是春节时间差异导致部分销售收入提前在2024年底确认。</li><li>销售渠道高度依赖线下经销商，在2023、2024及2025财年，线下经销商贡献的收入分别占总产品销售收入的85.0%、88.4%和86.3%。</li><li>毛利率在2023年和2024年保持在48%以上，并在2025年提升至51.3%。</li></ul>
+      </div>
+      <div class="risk-box">
+        <div class="section-label">主要风险</div>
+        <ul><li>业务依赖品牌形象，任何涉及食品安全、质量及公众形象的负面事件都可能对业务造成重大不利影响。</li><li>业务成功与否取决于公司预测和应对消费者偏好、口味及消费习惯变化的能力，若无法有效应对，可能对业务和经营业绩产生重大不利影响。</li><li>公司高度依赖经销商网络，与经销商的关系终止或恶化，或经销商未能有效销售产品，都可能对经营业绩造成不利影响。</li><li>未能有效管理线上线下多个销售渠道的库存、定价和竞争，可能对经营业绩造成不利影响。</li><li>主要原材料（如南酸枣）的供应和价格可能因天气、自然灾害等不可控因素而波动，对业务经营和财务状况构成风险。</li></ul>
+      </div>
+    </div>
+  </div>
+</details>
+
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">易控智驾科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">HKEX</span>
+        <span class="tag">2026-06-24</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2025/108013/documents/sehk26062401938_c.pdf">PDF</a> <a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2025/108013/2026062401935_c.htm">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>主板</dd></div><div><dt>行业/业务</dt><dd>为矿区提供无人驾驶运输解决方案及服务</dd></div><div><dt>文件类型</dt><dd>聆讯后资料集（第一次呈交）</dd></div><div><dt>状态</dt><dd>A</dd></div><div><dt>采集时间</dt><dd>2026-06-27 12:35</dd></div></dl>
+  
+<details class="summary">
+  <summary>查看摘要分析</summary>
+  <div class="summary-body">
+    <div class="business"><strong>一句话业务：</strong>一家为矿区提供无人驾驶运输解决方案及服务的公司。</div>
+    
+<div class="finance-panel">
+  <div class="finance-head">财务快照</div>
+  
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>年度</th><th>收入</th><th>毛利</th><th>毛利率</th><th>净利</th><th>净利润率</th></tr></thead>
+    <tbody><tr><td>2023</td><td>270,915,000 人民币</td><td></td><td>-18.6%</td><td>-333,667,000 人民币</td><td>-123.2%</td></tr><tr><td>2024</td><td>986,234,000 人民币</td><td>74,713,000 人民币</td><td>7.6%</td><td>-390,055,000 人民币</td><td>-39.5%</td></tr><tr><td>2025</td><td>1,435,299,000 人民币</td><td>145,353,000 人民币</td><td>10.1%</td><td>-515,557,000 人民币</td><td>-35.9%</td></tr></tbody>
+  </table>
+</div>
+
+  <div class="finance-note">公司收入在2023年至2025年间实现快速增长。毛利方面，公司于2023年录得毛亏损，但在2024年和2025年转为毛利，毛利率持续改善。然而，由于高昂的研发及其他运营开支，公司净亏损逐年扩大。</div>
+</div>
+
+    <div class="two-col">
+      <div class="point-box">
+        <div class="section-label">要点</div>
+        <ul><li>业务模式：主要通过“客户提供车辆”和“公司提供车辆”两种模式，为矿区客户提供无人驾驶解决方案和服务。</li><li>市场地位：根据招股书引述的灼识咨询报告，按2025年解决方案部署的无人驾驶矿用卡车数量计算，公司在中国市场占据55.5%的份额。</li><li>财务状况：2023至2025年收入高速增长，从2.71亿元人民币增至14.35亿元人民币，但同期净亏损也从3.34亿元人民币扩大至5.16亿元人民币，尚未实现盈利。</li><li>客户集中度高：2023、2024及2025年，来自五大客户的收入分别占总收入的94.4%、83.7%和66.3%，存在对主要客户的依赖风险。</li></ul>
+      </div>
+      <div class="risk-box">
+        <div class="section-label">主要风险</div>
+        <ul><li>客户依赖与集中度：业务增长依赖客户对公司解决方案的持续采用，且客户集中度高，来自五大客户的收入占比高。</li><li>持续亏损：公司自成立以来持续录得净亏损，且由于研发、销售等投入，未来可能继续亏损。</li><li>流动性风险：于2023年及2024年末录得流动负债净额，可能面临流动资金压力。</li><li>市场与技术风险：业务成功与否取决于无人驾驶技术在矿区的商业化进程，市场发展不及预期可能带来不利影响。</li><li>行业竞争：公司所处的行业竞争激烈，面临来自现有及新市场进入者的竞争压力。</li></ul>
+      </div>
+    </div>
+  </div>
+</details>
+
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">厦门瑞为信息技术股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">HKEX</span>
+        <span class="tag">2026-06-24</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108335/documents/sehk26062402136.pdf">PDF</a> <a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108335/2026062402071_c.htm">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>主板</dd></div><div><dt>行业/业务</dt><dd>面向企业客户提供视觉智能技术和产品的</dd></div><div><dt>文件类型</dt><dd>聆讯后资料集（第一次呈交）</dd></div><div><dt>状态</dt><dd>A</dd></div><div><dt>采集时间</dt><dd>2026-06-27 12:35</dd></div></dl>
+  
+<details class="summary">
+  <summary>查看摘要分析</summary>
+  <div class="summary-body">
+    <div class="business"><strong>一句话业务：</strong>一家面向企业客户提供视觉智能技术和产品的人工智能(AI)公司，专注于民航、商业空间及安全驾驶等应用场景。</div>
+    
+<div class="finance-panel">
+  <div class="finance-head">财务快照</div>
+  
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>年度</th><th>收入</th><th>毛利</th><th>毛利率</th><th>净利</th><th>净利润率</th></tr></thead>
+    <tbody><tr><td>2023</td><td>人民币242.4百万元</td><td>人民币98.8百万元</td><td>40.8%</td><td>-人民币32.6百万元</td><td>-13.4%</td></tr><tr><td>2024</td><td>人民币395.2百万元</td><td>人民币157.2百万元</td><td>39.8%</td><td>人民币8.3百万元</td><td>2.1%</td></tr><tr><td>2025</td><td>人民币443.0百万元</td><td>人民币167.1百万元</td><td>37.7%</td><td>-人民币68.1百万元</td><td>-15.4%</td></tr></tbody>
+  </table>
+</div>
+
+  <div class="finance-note">公司收入在2023至2025年间持续增长。毛利率呈轻微下降趋势，由40.8%降至37.7%。盈利能力波动较大，在2024年短暂实现盈利后，于2025年转为较大亏损。</div>
+</div>
+
+    <div class="two-col">
+      <div class="point-box">
+        <div class="section-label">要点</div>
+        <ul><li>公司是一家根据上市规则第18C章申请上市的特专科技公司，提供基于视觉大模型的AI产品和解决方案。</li><li>业务主要分为三大板块：智慧民航、智慧商业和智慧安全驾驶。根据弗若斯特沙利文资料，按2025年收入计，公司在中国民航企业视觉智能产品市场排名第一。</li><li>2023至2025年，公司收入持续增长，从人民币2.42亿元增至4.43亿元，但盈利状况不稳定，2023年和2025年录得净亏损，仅在2024年实现微利。</li><li>公司对主要客户的依赖程度较高，往绩记录期间，前五大客户收入占比分别为59.1%、73.5%和60.3%。</li><li>公司在2023年和2025年录得经营活动现金净流出，反映其处于业务扩张和投入阶段。</li></ul>
+      </div>
+      <div class="risk-box">
+        <div class="section-label">主要风险</div>
+        <ul><li>未能及时开发或推出满足客户需求并获市场接纳的产品及技术，可能对业务和竞争地位造成重大不利影响。</li><li>在研发方面已进行并计划持续进行大量投资，但可能无法带来预期成果，并可能对盈利能力及营运现金流量造成负面影响。</li><li>于往绩记录期间已产生重大净亏损及经营现金流出，短期内可能无法实现或维持盈利能力。</li><li>营运历史及商业化往绩记录有限，难以评估业务及前景，过往增长未必能代表未来表现。</li><li>业务受季节性影响，智慧民航及智慧商业的产品验收主要集中在下半年，尤其是第四季度。</li></ul>
+      </div>
+    </div>
+  </div>
+</details>
+
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">安徽华恒生物科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">HKEX</span>
+        <span class="tag">2026-06-24</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108493/documents/sehk26062400303_c.pdf">PDF</a> <a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108493/2026062400300_c.htm">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>主板</dd></div><div><dt>行业/业务</dt><dd>合成生物学</dd></div><div><dt>文件类型</dt><dd>聆讯后资料集（第一次修订版）</dd></div><div><dt>状态</dt><dd>A</dd></div><div><dt>采集时间</dt><dd>2026-06-25 12:45</dd></div></dl>
+  
+<details class="summary">
+  <summary>查看摘要分析</summary>
+  <div class="summary-body">
+    <div class="business"><strong>一句话业务：</strong>一家以合成生物学技术为核心，从事氨基酸及其衍生物等生物基产品研发、生产和销售的公司。</div>
+    
+<div class="finance-panel">
+  <div class="finance-head">财务快照</div>
+  
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>年度</th><th>收入</th><th>毛利</th><th>毛利率</th><th>净利</th><th>净利润率</th></tr></thead>
+    <tbody><tr><td>2023</td><td>1,938,268 人民币千元</td><td>782,370 人民币千元</td><td>40.4%</td><td>446,599 人民币千元</td><td>23.0%</td></tr><tr><td>2024</td><td>2,177,941 人民币千元</td><td>539,656 人民币千元</td><td>24.8%</td><td>184,558 人民币千元</td><td>8.5%</td></tr><tr><td>2025</td><td>2,861,841 人民币千元</td><td>594,891 人民币千元</td><td>20.8%</td><td>123,861 人民币千元</td><td>4.3%</td></tr></tbody>
+  </table>
+</div>
+
+  <div class="finance-note">公司收入在2023年至2025年持续增长，但毛利率和净利率呈明显下降趋势。毛利率从40.4%降至20.8%，净利率从23.0%大幅降至4.3%。</div>
+</div>
+
+    <div class="two-col">
+      <div class="point-box">
+        <div class="section-label">要点</div>
+        <ul><li>按2025年产能计算，公司是全球L-丙氨酸及L-缬氨酸市场的领先者。</li><li>核心业务为氨基酸系列产品，在2023至2025年间，该业务分部贡献了超过69%的总收入。</li><li>公司收入从2023年的人民币19.4亿元增长至2025年的人民币28.6亿元，但盈利能力显著下滑。</li><li>毛利率由2023年的40.4%下降至2025年的20.8%，同期净利率由23.0%大幅下降至4.3%。</li><li>盈利能力下降的主要原因是市场供应增加导致主要产品（如氨基酸系列）的平均售价持续下跌。</li></ul>
+      </div>
+      <div class="risk-box">
+        <div class="section-label">主要风险</div>
+        <ul><li>产品价格与销量波动风险：公司的业务和财务状况可能会因主要产品的售价及销量波动而受到重大不利影响。</li><li>对主要产品的依赖：公司依赖氨基酸等主要产品，若该等产品的需求大幅下降，经营业绩可能受到重大不利影响。</li><li>国际贸易政策风险：在美国的销售可能会受到美国关税等贸易政策的影响，对业务、财务状况及经营业绩构成不利影响。</li><li>历史不合规事件：公司于往绩记录期间曾发生若干不合规事件，包括未全额缴纳社保、未登记租赁协议及未能取得所有必要的许可证。</li><li>新产品开发风险：公司未必能够成功开发及商业化新产品，可能对业务及前景产生不利影响。</li></ul>
+      </div>
+    </div>
+  </div>
+</details>
+
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">立讯精密工业股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">HKEX</span>
+        <span class="tag">2026-06-23</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108261/documents/sehk26062301881_c.pdf">PDF</a> <a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108261/2026062301878_c.htm">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>主板</dd></div><div><dt>行业/业务</dt><dd>是一家为消费电子、汽车电子、通信及数</dd></div><div><dt>文件类型</dt><dd>聆讯后资料集（第一次呈交）</dd></div><div><dt>状态</dt><dd>A</dd></div><div><dt>采集时间</dt><dd>2026-06-26 12:49</dd></div></dl>
+  
+<details class="summary">
+  <summary>查看摘要分析</summary>
+  <div class="summary-body">
+    <div class="business"><strong>一句话业务：</strong>公司是一家为消费电子、汽车电子、通信及数据中心等领域提供精密智能制造系统（PIMS）解决方案的全球供应商。</div>
+    
+<div class="finance-panel">
+  <div class="finance-head">财务快照</div>
+  
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>年度</th><th>收入</th><th>毛利</th><th>毛利率</th><th>净利</th><th>净利润率</th></tr></thead>
+    <tbody><tr><td>2025</td><td>11.6%</td><td></td><td>11.6%</td><td>11.6%</td><td>11.6%</td></tr></tbody>
+  </table>
+</div>
+
+  <div class="finance-note">公司在2023至2025年间收入和利润持续增长。收入从2,319亿元人民币增至3,323亿元，年内利润从122亿元增至182亿元。毛利率在2025年为11.6%，纯利率为5.5%。</div>
+</div>
+
+    <div class="two-col">
+      <div class="point-box">
+        <div class="section-label">要点</div>
+        <ul><li>公司收入高度依赖单一主要客户「客户A/供应商A」，该客户于2023、2024及2025年分别贡献了总收入的82.4%、78.5%及65.0%。</li><li>消费电子是公司的核心业务板块，在2025年占总收入的79.5%，但汽车电子业务增长迅速，收入占比从2023年的3.9%提升至2025年的11.8%。</li><li>公司在往绩记录期内实现了稳健的财务增长，总收入从2023年的人民币2,319亿元增长至2025年的人民币3,323亿元，年内利润从122亿元增长至182亿元。</li><li>公司的业务遍布全球，海外市场是主要收入来源，2025年来自中国大陆以外地区的收入占总收入的82.4%。</li></ul>
+      </div>
+      <div class="risk-box">
+        <div class="section-label">主要风险</div>
+        <ul><li>地缘政治风险：公司超过82%的收入来自海外，全球及地区的政治、法律和经济环境变化可能对业务和经营业绩产生不利影响。</li><li>客户高度集中：公司严重依赖单一主要客户「客户A/供应商A」，与该客户关系的任何不利变动都可能对公司的业务和财务状况造成重大不利影响。</li><li>供应商集中风险：公司依赖少数主要供应商提供原材料，2025年向五大供应商的采购额占总采购额的53.0%，供应中断可能影响生产。</li><li>技术创新风险：公司所处行业技术变革迅速，如果未能持续投入研发并成功推出满足市场需求的新产品，其盈利能力可能会受到影响。</li><li>业务扩张与整合风险：公司通过收购等方式扩张，但在整合新业务、技术和人员方面可能面临困难，从而对管理和运营构成挑战。</li><li>行业竞争与需求波动：公司面临激烈的市场竞争，且消费电子产品的需求易受宏观经济和市场趋势影响而出现波动。</li></ul>
+      </div>
+    </div>
+  </div>
+</details>
+
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">滨化集团股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">HKEX</span>
+        <span class="tag">2026-06-23</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108467/documents/sehk26062301569_c.pdf">PDF</a> <a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108467/2026062301566_c.htm">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>主板</dd></div><div><dt>行业/业务</dt><dd>滨化集团是一家化工产品制造商</dd></div><div><dt>文件类型</dt><dd>聆讯后资料集（第一次呈交）</dd></div><div><dt>状态</dt><dd>A</dd></div><div><dt>采集时间</dt><dd>2026-06-26 12:49</dd></div></dl>
+  
+<details class="summary">
+  <summary>查看摘要分析</summary>
+  <div class="summary-body">
+    <div class="business"><strong>一句话业务：</strong>滨化集团是一家化工产品制造商，主要从事氯碱、石化、精细化工及新材料产品的生产和销售。</div>
+    
+<div class="finance-panel">
+  <div class="finance-head">财务快照</div>
+  
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>年度</th><th>收入</th><th>毛利</th><th>毛利率</th><th>净利</th><th>净利润率</th></tr></thead>
+    <tbody><tr><td>2023年度</td><td>73.06亿元人民币</td><td>12.17亿元人民币</td><td>16.7%</td><td>3.99亿元人民币</td><td></td></tr><tr><td>2024年度</td><td>102.28亿元人民币</td><td>6.54亿元人民币</td><td>6.4%</td><td>2.17亿元人民币</td><td></td></tr><tr><td>2025年度</td><td>148.36亿元人民币</td><td>14.56亿元人民币</td><td>9.8%</td><td>2.35亿元人民币</td><td></td></tr><tr><td>截至2026年3月31日止三个月</td><td>39.23亿元人民币</td><td>5.07亿元人民币</td><td>12.9%</td><td>1.73亿元人民币</td><td></td></tr></tbody>
+  </table>
+</div>
+
+  <div class="finance-note">公司收入在2023年至2025年间持续增长，但盈利能力出现较大波动。2024年受行业下行影响，毛利率和净利润均大幅下降，2025年及2026年第一季度有所恢复。</div>
+</div>
+
+    <div class="two-col">
+      <div class="point-box">
+        <div class="section-label">要点</div>
+        <ul><li>公司业务主要分为三大板块：基础化学品（如烧碱）、石化产品（如环氧丙烷、MTBE）和精细化学品及新材料（如电子级氢氟酸）。</li><li>公司财务表现受化工行业周期性影响显著。2024年毛利率和净利润较2023年大幅下滑，但在2025年及2026年第一季度有所回升。</li><li>公司于2023年下半年投产的PO/MTBE（环氧丙烷/甲基叔丁基醚）新装置是近期收入增长和盈利能力改善的重要驱动因素。</li><li>公司已在A股上市（股票代码：601678），本次为寻求在香港交易所上市。</li><li>对主要供应商的依赖度较高，于2024年及2025年，前五大供应商的采购额占总采购额的比例分别达到46.5%和43.2%。</li></ul>
+      </div>
+      <div class="risk-box">
+        <div class="section-label">主要风险</div>
+        <ul><li>公司业务和盈利能力受到化工行业周期性波动的显著影响。</li><li>原材料（如液化石油气LPG）价格的波动可能对公司的成本及经营业绩产生重大不利影响。</li><li>公司面临市场竞争，可能无法维持行业地位。</li><li>新投产项目的实际表现可能不及预期，从而影响公司的增长前景。</li><li>公司对主要供应商存在一定程度的依赖。</li></ul>
+      </div>
+    </div>
+  </div>
+</details>
+
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">普源精电科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">HKEX</span>
+        <span class="tag">2026-06-23</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108402/documents/sehk26062302125_c.pdf">PDF</a> <a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108402/2026062302054_c.htm">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>主板</dd></div><div><dt>行业/业务</dt><dd>半导体功率器件</dd></div><div><dt>文件类型</dt><dd>聆讯后资料集（第一次呈交）</dd></div><div><dt>状态</dt><dd>A</dd></div><div><dt>采集时间</dt><dd>2026-06-26 12:49</dd></div></dl>
+  
+<details class="summary">
+  <summary>查看摘要分析</summary>
+  <div class="summary-body">
+    <div class="business"><strong>一句话业务：</strong>普源精电是一家中国电子测量仪器公司，设计、开发、制造并交付全面的电子测量仪器及解决方案，以服务通信、新能源、半导体及教育与科研等行业。</div>
+    
+<div class="finance-panel">
+  <div class="finance-head">财务快照</div>
+  
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>年度</th><th>收入</th><th>毛利</th><th>毛利率</th><th>净利</th><th>净利润率</th></tr></thead>
+    <tbody><tr><td>2023</td><td>108.0百万元</td><td></td><td>53.4%</td><td>人民币 107,953 千元</td><td></td></tr><tr><td>2024</td><td>54.9%</td><td></td><td>54.9%</td><td>人民币 92,303 千元</td><td></td></tr><tr><td>2025</td><td>900.2百万元</td><td></td><td>52.8%</td><td>人民币 86,083 千元</td><td></td></tr><tr><td>2026</td><td>3</td><td></td><td>3</td><td>3</td><td></td></tr></tbody>
+  </table>
+</div>
+
+  <div class="finance-note">公司在往绩期间实现收益增长，但利润有所下滑。2025年收益为人民币900.2百万元，同比增长16.0%。然而，年内利润从2023年的人民币108.0百万元下降至2025年的人民币86.1百万元。毛利率在2024年小幅上升至54.9%后，于2025年下降至52.8%。利润下降主要归因于研发及销售开支的增加。截至2026年3月31日止三个月，公司收益同比增长38.0%，期内利润同比大幅增长511.9%。</div>
+</div>
+
+    <div class="two-col">
+      <div class="point-box">
+        <div class="section-label">要点</div>
+        <ul><li>公司是中国主要的电子测量仪器供应商，根据弗若斯特沙利文资料，按2025年收益计，在中国市场排名第六，全球排名第八。</li><li>公司拥有全面的自主技术能力，建立了整合硬件（包括专有ASIC芯片）、软件及算法的技术平台。</li><li>产品组合涵盖数字示波器、微波射频仪器、直流精密仪器及模块化仪器，并通过“RIGOL”品牌服务全球90多个国家及地区的客户。</li><li>公司已在上海证券交易所科创板上市（股票代号：688337），此次寻求在香港联交所上市旨在筹集资金以推动业务发展、增强营运资金并提升全球声誉。</li><li>2023至2025年，公司收益持续增长，但年内利润连续两年下滑，主要由于研发及销售开支增加。</li></ul>
+      </div>
+      <div class="risk-box">
+        <div class="section-label">主要风险</div>
+        <ul><li>市场持续变化，新技术的推出或客户偏好的转变可能对产品需求造成负面影响。</li><li>行业竞争激烈且预期将加剧，若未能有效竞争，收益增长及经营业绩将受到重大不利影响。</li><li>公司的全球业务布局及海外扩张面临相关风险。</li><li>公司持续加大研发投入，但相关投入未必能带来预期成果。</li><li>原材料价格波动可能扰乱供应链并影响售价，从而影响业务及财务状况。</li><li>产品的复杂性可能导致错误、缺陷及漏洞，公司可能面临保固、产品召回或产品责任索赔，进而损害声誉。</li></ul>
+      </div>
+    </div>
+  </div>
+</details>
+
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">广东鼎泰高科技术股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">HKEX</span>
+        <span class="tag">2026-06-23</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108613/documents/sehk26062302047.pdf">PDF</a> <a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108613/2026062301972_c.htm">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>主板</dd></div><div><dt>行业/业务</dt><dd>为全球印刷电路板(PCB)制造价值链</dd></div><div><dt>文件类型</dt><dd>聆讯后资料集（第一次呈交）</dd></div><div><dt>状态</dt><dd>A</dd></div><div><dt>采集时间</dt><dd>2026-06-26 12:49</dd></div></dl>
+  
+<details class="summary">
+  <summary>查看摘要分析</summary>
+  <div class="summary-body">
+    <div class="business"><strong>一句话业务：</strong>一家为全球印刷电路板(PCB)制造价值链的关键工序环节，提供工具、材料及智能设备的精密制造解决方案综合供应商。</div>
+    
+<div class="finance-panel">
+  <div class="finance-head">财务快照</div>
+  
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>年度</th><th>收入</th><th>毛利</th><th>毛利率</th><th>净利</th><th>净利润率</th></tr></thead>
+    <tbody><tr><td>2023</td><td>1,295.1百万元</td><td></td><td>35.1%</td><td>219.5百万元</td><td></td></tr><tr><td>2024</td><td>19.9%</td><td></td><td></td><td></td><td></td></tr><tr><td>2025</td><td>2,084.2百万元</td><td></td><td>40.5%</td><td>431.6百万元</td><td></td></tr></tbody>
+  </table>
+</div>
+
+  <div class="finance-note">公司在往绩记录期内实现稳健增长，主要财务数据如下：</div>
+</div>
+
+    <div class="two-col">
+      <div class="point-box">
+        <div class="section-label">要点</div>
+        <ul><li>根据弗若斯特沙利文的资料，按销量计，公司是全球最大的钻针供应商，2025年全球市场份额为29.2%。</li><li>公司产品组合涵盖精密刀具、研磨抛光材料、功能性膜材料及智能数控装备四大类，服务于AI服务器、半导体、智能汽车及消费电子等多个终端市场。</li><li>公司业绩增长稳健，收入从2023年的人民币12.95亿元增长至2025年的人民币20.84亿元；年内利润从2023年的人民币2.19亿元增长至2025年的人民币4.32亿元。</li><li>公司已于2022年11月在深圳证券交易所创业板上市（股份代号：301377），本次为在香港交易所的上市。</li><li>公司收入主要来自中国内地（2025年占比90.8%），但海外收入占比从2023年的3.6%提升至2025年的9.2%。</li></ul>
+      </div>
+      <div class="risk-box">
+        <div class="section-label">主要风险</div>
+        <ul><li>业绩依赖下游电子终端市场的需求，相关行业的疲弱或中断可能对公司造成重大不利影响。</li><li>所处行业竞争格局高度激烈，若无法有效竞争，业务、经营业绩及财务状况可能受到重大不利影响。</li><li>国际业务使公司面临国际贸易限制、出口管制、关税政策及制裁等相关风险。</li><li>研发工作未必能获得预期收益，可能影响盈利能力及期望达到的结果。</li><li>公司的发展及盈利能力取决于整体经济状况，而经济状况可能影响客户所服务行业的发展。</li></ul>
+      </div>
+    </div>
+  </div>
+</details>
+
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">上海哥瑞利软件股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">HKEX</span>
+        <span class="tag">2026-06-23</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108262/documents/sehk26062301713_c.pdf">PDF</a> <a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108262/2026062301710_c.htm">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>主板</dd></div><div><dt>行业/业务</dt><dd>半导体功率器件</dd></div><div><dt>文件类型</dt><dd>聆讯后资料集（第一次呈交）</dd></div><div><dt>状态</dt><dd>A</dd></div><div><dt>采集时间</dt><dd>2026-06-26 12:49</dd></div></dl>
+  
+<details class="summary">
+  <summary>查看摘要分析</summary>
+  <div class="summary-body">
+    <div class="business"><strong>一句话业务：</strong>上海哥瑞利软件股份有限公司是一家为半导体等先进制造业提供智能制造软件系统（IMSS）的供应商。</div>
+    
+<div class="finance-panel">
+  <div class="finance-head">财务快照</div>
+  
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>年度</th><th>收入</th><th>毛利</th><th>毛利率</th><th>净利</th><th>净利润率</th></tr></thead>
+    <tbody><tr><td>2023</td><td>1.65亿元</td><td>3302万元</td><td>20.0%</td><td>-1.27亿元</td><td></td></tr><tr><td>2024</td><td>2.49亿元</td><td>5719万元</td><td>23.0%</td><td>-1.03亿元</td><td></td></tr><tr><td>2025</td><td>3.00亿元</td><td>5171万元</td><td>17.2%</td><td>-1.04亿元</td><td></td></tr></tbody>
+  </table>
+</div>
+
+  
+</div>
+
+    <div class="two-col">
+      <div class="point-box">
+        <div class="section-label">要点</div>
+        <ul><li>公司专注于为半导体、PCB等先进制造行业提供智能制造软件系统（IMSS），帮助客户实现数字化和智能化生产。</li><li>财务数据显示，公司在2023至2025年的往绩记录期内收入持续增长，但同期连续录得净亏损，且经营活动现金流持续为负。</li><li>公司的核心业务（CIM生产运营平台及集成自动化平台）是主要收入来源，但在2025年其收入占比和毛利率均出现下降。</li><li>公司研发投入占比较高，2023至2025年研发成本分别占经营开支的48.5%、43.6%和42.0%。</li><li>公司预计在短期内将继续产生亏损，并计划将本次上市募集资金主要用于提升研发能力、寻求战略合作与投资、扩展销售网络及补充营运资金。</li></ul>
+      </div>
+      <div class="risk-box">
+        <div class="section-label">主要风险</div>
+        <ul><li>公司在往绩记录期内持续录得净亏损及经营活动现金流为负，未来可能无法实现或维持盈利能力。</li><li>公司的业务依赖于客户对新技术的投资意愿，宏观经济波动或客户行业景气度下降可能导致其需求减少。</li><li>公司面临激烈的市场竞争，可能导致价格压力、市场份额流失以及盈利能力下降。</li><li>公司的项目制业务模式导致收入确认和现金流存在不确定性，且客户集中度较高，对主要客户的依赖可能带来风险。</li><li>公司需要持续进行技术创新和研发投入以保持竞争力，若新技术或产品未能成功商业化，将对业务造成不利影响。</li></ul>
+      </div>
+    </div>
+  </div>
+</details>
+
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">MOMENTA GLOBAL LIMITED - W</div>
+      <div class="meta-row">
+        <span class="tag">HKEX</span>
+        <span class="tag">2026-06-23</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108670/documents/sehk26062300175_c.pdf">PDF</a> <a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108670/2026062300172_c.htm">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>主板</dd></div><div><dt>行业/业务</dt><dd>自动驾驶</dd></div><div><dt>文件类型</dt><dd>聆讯后资料集（第一次呈交）</dd></div><div><dt>状态</dt><dd>A</dd></div><div><dt>采集时间</dt><dd>2026-06-26 12:49</dd></div></dl>
+  
+<details class="summary">
+  <summary>查看摘要分析</summary>
+  <div class="summary-body">
+    <div class="business"><strong>一句话业务：</strong>一家领先的自动驾驶公司，专注于开发和商业化智能驾驶技术，提供量产车解决方案和自动驾驶出行与物流解决方案。</div>
+    
+<div class="finance-panel">
+  <div class="finance-head">财务快照</div>
+  
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>年度</th><th>收入</th><th>毛利</th><th>毛利率</th><th>净利</th><th>净利润率</th></tr></thead>
+    <tbody><tr><td>2023</td><td>7.43亿元人民币</td><td></td><td>17.5%</td><td>-25.70亿元人民币</td><td></td></tr><tr><td>2024</td><td>13.25亿元人民币</td><td></td><td>49.0%</td><td>-32.06亿元人民币</td><td></td></tr><tr><td>2025</td><td>24.13亿元人民币</td><td></td><td>71.6%</td><td>-34.58亿元人民币</td><td></td></tr></tbody>
+  </table>
+</div>
+
+  <div class="finance-note">公司在往绩记录期间（2023-2025年）收入增长迅速，毛利率显著提升，但仍处于净亏损状态。公司录得流动负债净额及净负债，主要由于可转换优先股在会计上被列为负债，预计上市后将转为净资产状况。</div>
+</div>
+
+    <div class="two-col">
+      <div class="point-box">
+        <div class="section-label">要点</div>
+        <ul><li>公司采用独特的“一个飞轮，两条腿”策略，将量产车解决方案（提供数据和收入）与自动驾驶出租车服务解决方案（发展前沿技术）相结合，形成技术和商业的闭环。</li><li>在市场地位上，截至2026年2月28日止的12个月，公司在全球独立城市NOA（导航辅助驾驶）解决方案提供商中，按车辆销量计算排名第一，市场份额为64.5%。</li><li>公司与全球24家领先整车厂建立了合作关系，包括全球前十大整车厂集团中的八家以及中国全部前十大整车厂集团，累计获得170款车型定点（截至2025年底）。</li><li>公司采用不同投票权（WVR）架构，控股股东在上市后将对股东决议案结果拥有重大影响力。</li><li>尽管收入和毛利率在过去三年快速增长，公司于往绩记录期间持续录得净亏损，主要由于高额的研发投入以及优先股公允价值变动等非现金项目影响。</li></ul>
+      </div>
+      <div class="risk-box">
+        <div class="section-label">主要风险</div>
+        <ul><li>自动驾驶行业仍属新兴且快速演进，存在技术不确定性、运营历史有限及监管要求不断变化，导致未来表现难以预测。</li><li>智能驾驶解决方案及自动驾驶出租车服务的市场仍在发展中，其商业化进程可能无法如预期推进。</li><li>公司增长依赖于与主要整车厂建立及维持合作关系，并成功将项目定点转化为量产收入。</li><li>公司采用不同投票权架构，不同投票权受益人的利益未必总与股东整体利益一致，且能对公司决议案结果产生重大影响。</li><li>客户集中度较高，于2025年，前五大客户占总收入的62.6%。</li><li>公司在往绩记录期间产生重大亏损，且未来可能无法实现或维持盈利能力。</li></ul>
+      </div>
+    </div>
+  </div>
+</details>
+
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">浙江东方科脉电子股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">HKEX</span>
+        <span class="tag">2026-06-22</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108448/documents/sehk26062201949_c.pdf">PDF</a> <a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108448/2026062201946_c.htm">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>主板</dd></div><div><dt>行业/业务</dt><dd>电子纸显示模组</dd></div><div><dt>文件类型</dt><dd>聆讯后资料集（第一次呈交）</dd></div><div><dt>状态</dt><dd>A</dd></div><div><dt>采集时间</dt><dd>2026-06-25 12:45</dd></div></dl>
+  
+<details class="summary">
+  <summary>查看摘要分析</summary>
+  <div class="summary-body">
+    <div class="business"><strong>一句话业务：</strong>公司主要从事电子纸显示模组的研发、生产和销售，产品应用于智慧零售、办公、教育、交通等多个领域。</div>
+    
+<div class="finance-panel">
+  <div class="finance-head">财务快照</div>
+  
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>年度</th><th>收入</th><th>毛利</th><th>毛利率</th><th>净利</th><th>净利润率</th></tr></thead>
+    <tbody><tr><td>2023</td><td>10.24亿元</td><td>1.62亿元</td><td>15.8%</td><td>5074万元</td><td>5.0%</td></tr><tr><td>2024</td><td>11.52亿元</td><td>1.82亿元</td><td>15.8%</td><td>5340万元</td><td>4.6%</td></tr><tr><td>2025</td><td>17.13亿元</td><td>2.80亿元</td><td>16.4%</td><td>8023万元</td><td>4.7%</td></tr></tbody>
+  </table>
+</div>
+
+  
+</div>
+
+    <div class="two-col">
+      <div class="point-box">
+        <div class="section-label">要点</div>
+        <ul><li>市场地位：按2025年出货量计算，公司是全球第二大电子纸显示模组供应商，市场份额为20.8%。</li><li>财务增长：公司收入从2023年的人民币10.24亿元增长至2025年的人民币17.13亿元；同期年内利润从人民币5074万元增长至8023万元。</li><li>客户高度集中：2025年，来自最大客户Solum和客户A的收入合计占总收入的64.3%，存在较高的客户集中风险。</li><li>产能利用率高：截至2025年，湖州、嘉兴、大连等多个生产基地的产能利用率已达到96%以上，显示产能接近饱和。</li></ul>
+      </div>
+      <div class="risk-box">
+        <div class="section-label">主要风险</div>
+        <ul><li>客户集中度高：对主要客户（如Solum及客户A）的依赖性强，任何主要客户的流失或订单减少都可能对业务产生重大不利影响。</li><li>供应商依赖：原材料采购集中于少数供应商，供应链中断或价格波动可能对生产和成本造成不利影响。</li><li>技术迭代风险：公司业务依赖于持续的技术改进和创新，若无法跟上技术发展趋势，可能影响业务和财务状况。</li><li>知识产权风险：业务依赖于自有及第三方授权的知识产权，可能面临第三方侵权索赔或未经授权使用技术的风险。</li></ul>
+      </div>
+    </div>
+  </div>
+</details>
+
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">安徽华恒生物科技股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">HKEX</span>
+        <span class="tag">2026-06-22</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108493/documents/sehk26062202043_c.pdf">PDF</a> <a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108493/2026062202040_c.htm">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>主板</dd></div><div><dt>行业/业务</dt><dd>合成生物学</dd></div><div><dt>文件类型</dt><dd>聆讯后资料集（第一次呈交）</dd></div><div><dt>状态</dt><dd>A</dd></div><div><dt>采集时间</dt><dd>2026-06-24 12:46</dd></div></dl>
+  
+<details class="summary">
+  <summary>查看摘要分析</summary>
+  <div class="summary-body">
+    <div class="business"><strong>一句话业务：</strong>一家全球领先的合成生物学公司，通过生物制造技术从事氨基酸、维生素及生物基材料等产品的研发、规模化生产及商业化。</div>
+    
+<div class="finance-panel">
+  <div class="finance-head">财务快照</div>
+  
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>年度</th><th>收入</th><th>毛利</th><th>毛利率</th><th>净利</th><th>净利润率</th></tr></thead>
+    <tbody><tr><td>2023</td><td>19.38亿元</td><td>7.82亿元</td><td>40.4%</td><td>4.47亿元</td><td>23.0%</td></tr><tr><td>2024</td><td>21.78亿元</td><td>5.40亿元</td><td>24.8%</td><td>1.85亿元</td><td>8.5%</td></tr><tr><td>2025</td><td>28.62亿元</td><td>5.95亿元</td><td>20.8%</td><td>1.24亿元</td><td>4.3%</td></tr><tr><td>2026</td><td>3</td><td></td><td>3</td><td>3</td><td></td></tr></tbody>
+  </table>
+</div>
+
+  <div class="finance-note">截至2026年3月31日的三个月，收入同比增长12.3%，但毛利同比减少3.6%，期内利润同比减少23.6%，毛利率由24.3%下降至20.9%。</div>
+</div>
+
+    <div class="two-col">
+      <div class="point-box">
+        <div class="section-label">要点</div>
+        <ul><li>公司是全球领先的合成生物学企业，按2025年产量计算，其核心产品L-丙氨酸和L-缬氨酸的全球市场份额均排名第一。</li><li>公司收入在2023年至2025年间持续增长，但盈利能力显著下滑，毛利率从40.4%降至20.8%，年内利润从4.47亿元人民币降至1.24亿元人民币。</li><li>收入高度集中于氨基酸系列产品，在2023、2024及2025年度分别占总收入的75.6%、69.3%及71.9%。</li><li>公司的产品销售遍布全球，截至2025年12月31日，客户群覆盖69个国家和地区，拥有超过815名行业客户。</li><li>面临产品平均售价下降的压力，主要产品氨基酸系列和维生素系列的平均售价在2023年至2025年间均出现显著下滑。</li></ul>
+      </div>
+      <div class="risk-box">
+        <div class="section-label">主要风险</div>
+        <ul><li>产品售价波动风险：公司主要产品（如氨基酸系列）的平均售价面临大幅波动，尤其是在2023至2025年间经历了显著下降，可能对财务状况和经营业绩产生重大不利影响。</li><li>产品集中度风险：绝大部分收益来自氨基酸系列产品的销售，对该等产品的需求或定价的任何不利发展都可能对公司业务造成重大不利影响。</li><li>国际贸易政策风险：公司面临国际贸易政策、关税及贸易壁垒的风险，例如美国对L-丙氨酸征收的关税，以及欧盟可能发起的反倾销调查。</li><li>历史不合规风险：招股书披露了过往存在的不合规事件，包括未能全额缴纳社保、部分租赁协议未登记及未能取得所有必要的许可证。</li><li>市场竞争风险：文本提到，产品价格下跌的部分原因是市场供应增大、竞争加剧，这可能持续影响公司的盈利能力。</li><li>知识产权风险：公司的业务依赖于知识产权，但可能无法充分保护其知识产权，或面临第三方提起的知识产权侵权索赔。</li></ul>
+      </div>
+    </div>
+  </div>
+</details>
+
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">深圳基本半导体股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">HKEX</span>
+        <span class="tag">2026-06-21</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108614/documents/sehk26062100037_c.pdf">PDF</a> <a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108614/2026062100034_c.htm">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>主板</dd></div><div><dt>行业/业务</dt><dd>半导体功率器件</dd></div><div><dt>文件类型</dt><dd>聆讯后资料集（第一次呈交）</dd></div><div><dt>状态</dt><dd>A</dd></div><div><dt>采集时间</dt><dd>2026-06-24 12:46</dd></div></dl>
+  
+<details class="summary">
+  <summary>查看摘要分析</summary>
+  <div class="summary-body">
+    <div class="business"><strong>一句话业务：</strong>公司从事碳化矽(SiC)等第三代半导体功率器件的研发、制造与销售，主要应用于新能源汽车、可再生能源等领域。</div>
+    
+<div class="finance-panel">
+  <div class="finance-head">财务快照</div>
+  
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>年度</th><th>收入</th><th>毛利</th><th>毛利率</th><th>净利</th><th>净利润率</th></tr></thead>
+    <tbody><tr><td>2023</td><td>2.21亿元</td><td></td><td></td><td>-3.42亿元</td><td></td></tr><tr><td>2024</td><td>2.99亿元</td><td></td><td></td><td>-2.37亿元</td><td></td></tr><tr><td>2025</td><td>3.11亿元</td><td></td><td></td><td>-3.35亿元</td><td></td></tr></tbody>
+  </table>
+</div>
+
+  <div class="finance-note">公司在往绩记录期内持续录得毛损及净亏损。核心产品碳化矽功率模块及碳化矽分立器件在期内均录得毛损。</div>
+</div>
+
+    <div class="two-col">
+      <div class="point-box">
+        <div class="section-label">要点</div>
+        <ul><li>公司采用整合设计与制造(IDM)模式，专注于碳化矽(SiC)功率模块、分立器件及驱动器的研发、制造和销售。</li><li>产品主要面向新能源汽车和可再生能源等高增长市场，但公司在往绩记录期内（2023-2025年）持续录得重大净亏损。</li><li>根据2024年数据，公司在中国车规级碳化矽功率模块市场按销售收入计排名第二及第三，但市场主要由合计份额超过50%的国际厂商主导。</li><li>公司在汽车电子领域的客户集中度极高，来自最大客户群的收入占该分部收入的比例在2023至2025年间均超过94%。</li></ul>
+      </div>
+      <div class="risk-box">
+        <div class="section-label">主要风险</div>
+        <ul><li>持续亏损历史：公司自成立以来持续产生亏损，在往绩记录期（2023-2025年）内录得重大经营亏损及净亏损，未来盈利能力存在不确定性。</li><li>市场竞争激烈：公司所处的碳化矽半导体市场竞争激烈，尤其需要面对市场份额合计超过50%的国际大厂。</li><li>客户集中度高：公司对主要客户的依赖程度高，尤其在汽车电子领域，来自最大客户群的收入占比极高，可能因失去主要客户而受到重大不利影响。</li><li>市场接受度风险：公司的业务增长取决于其碳化矽产品能否持续获得市场认可，客户偏好的转变可能对业务产生不利影响。</li><li>产能利用率波动：公司自有生产基地的产能利用率存在波动，如无锡生产基地2025年利用率预计从2024年的52.6%下降至40.0%。</li><li>诉讼风险：公司披露了一宗与客户就产品质量问题提起的诉讼，虽然公司认为不会产生重大不利影响，但仍存在不确定性。</li></ul>
+      </div>
+    </div>
+  </div>
+</details>
+
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">坦博尔集团股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">HKEX</span>
+        <span class="tag">2026-06-21</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108483/documents/sehk26062100125_c.pdf">PDF</a> <a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108483/2026062100122_c.htm">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>主板</dd></div><div><dt>行业/业务</dt><dd>服装品牌</dd></div><div><dt>文件类型</dt><dd>聆讯后资料集（第一次呈交）</dd></div><div><dt>状态</dt><dd>A</dd></div><div><dt>采集时间</dt><dd>2026-06-24 12:46</dd></div></dl>
+  
+<details class="summary">
+  <summary>查看摘要分析</summary>
+  <div class="summary-body">
+    <div class="business"><strong>一句话业务：</strong>坦博尔是一家在中国运营的羽绒服品牌公司，专注于设计、开发和销售奢华户外、运动户外和城市户外三大产品系列。</div>
+    
+<div class="finance-panel">
+  <div class="finance-head">财务快照</div>
+  
+<div class="table-scroll">
+  <table>
+    <thead><tr><th>年度</th><th>收入</th><th>毛利</th><th>毛利率</th><th>净利</th><th>净利润率</th></tr></thead>
+    <tbody><tr><td>2023</td><td>10.21亿元</td><td></td><td>56.5%</td><td>1.39亿元</td><td>13.6%</td></tr><tr><td>2024</td><td>13.02亿元</td><td></td><td>54.9%</td><td>1.07亿元</td><td>8.2%</td></tr><tr><td>2025</td><td>21.89亿元</td><td></td><td>56.3%</td><td>2.23亿元</td><td>10.2%</td></tr></tbody>
+  </table>
+</div>
+
+  
+</div>
+
+    <div class="two-col">
+      <div class="point-box">
+        <div class="section-label">要点</div>
+        <ul><li>根据2025年总零售额计算，公司是中国第四大羽绒服品牌，市场份额为5.0%。</li><li>公司收入增长迅速，从2023年的人民币10.21亿元增长至2025年的人民币21.89亿元。</li><li>公司拥有三大产品系列：奢华户外系列、运动户外系列和城市户外系列，以满足不同消费群体的需求。</li><li>销售渠道结构发生显著变化，线上渠道收入占比从2023年的34.1%大幅提升至2025年的57.3%。</li><li>公司在2023至2025年间实现了盈利，但2024年的净利润（1.07亿元）较2023年（1.39亿元）有所下滑，后于2025年恢复增长至2.23亿元。</li></ul>
+      </div>
+      <div class="risk-box">
+        <div class="section-label">主要风险</div>
+        <ul><li>业务成功依赖于公司有效应对羽绒服行业快速变化的消费者偏好的能力，未能准确预测市场趋势可能对业务产生不利影响。</li><li>公司高度依赖“TANBOER坦博尔”品牌的实力和声誉，任何对品牌形象的损害都可能对业务、财务状况和经营业绩造成重大不利影响。</li><li>公司大部分收入通过第三方电商平台和社交媒体平台产生，对这些平台的依赖性较高，平台政策或合作关系的变化可能对业务构成风险。</li><li>公司依赖第三方制造商进行生产，若与主要制造商的合作关系中断或出现生产问题，可能对业务和声誉造成不利影响。</li><li>未能有效管理线上及线下分销网络，或分销商未能遵守经营标准，可能对品牌形象和经营业绩产生不利影响。</li></ul>
+      </div>
+    </div>
+  </div>
+</details>
+
+</article>
+
+<article class="filing-card">
+  <div class="card-top">
+    <div>
+      <div class="issuer">潮州三环(集团)股份有限公司</div>
+      <div class="meta-row">
+        <span class="tag">HKEX</span>
+        <span class="tag">2026-06-18</span>
+        
+      </div>
+    </div>
+    <div class="actions"><a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108626/documents/sehk26061800195_c.pdf">PDF</a> <a class="link-pill" href="https://www1.hkexnews.hk/app/sehk/2026/108626/2026061800192_c.htm">详情</a></div>
+  </div>
+  <dl class="fields"><div><dt>板块</dt><dd>主板</dd></div><div><dt>行业/业务</dt><dd>电子陶瓷与电子元件</dd></div><div><dt>文件类型</dt><dd>聆讯后资料集（第一次呈交）</dd></div><div><dt>状态</dt><dd>A</dd></div></dl>
+  
+<details class="summary">
+  <summary>查看摘要分析</summary>
+  <div class="summary-body">
+    <div class="business"><strong>一句话业务：</strong>公司主要从事电子陶瓷及相关电子元件业务。</div>
+    
+    <div class="two-col">
+      <div class="point-box">
+        <div class="section-label">要点</div>
+        <ul><li>定向加入关注列表；官方港交所记录显示其于 2026-06-18 披露聆讯后资料集。</li><li>后续如开启 AI 摘要，可基于 PDF 原文补全财务快照、业务要点和风险。</li></ul>
+      </div>
+      <div class="risk-box">
+        <div class="section-label">主要风险</div>
+        <ul><li>尚未生成基于招股书全文的自动风险摘要。</li></ul>
+      </div>
+    </div>
+  </div>
+</details>
+
+</article>
+</div>
+</section>
+</div>
+  </div>
 </section>
 
 
