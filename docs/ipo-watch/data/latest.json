@@ -1,6 +1,24 @@
 [
   {
     "exchange": "SSE",
+    "issuer": "上海燧原科技股份有限公司",
+    "document_type": "IPO项目更新",
+    "publish_date": "2026-01-22",
+    "update_date": "2026-07-09",
+    "board": "科创板",
+    "industry": "软件和信息技术服务业",
+    "sponsor": "中信证券股份有限公司",
+    "status": "注册结果",
+    "pdf_url": null,
+    "source_url": null,
+    "detail_url": null,
+    "title": "上海燧原科技股份有限公司 IPO项目更新",
+    "summary": null,
+    "collected_at": "2026-07-10T04:33:59+00:00",
+    "id": "f976908aea3b391486eebbdb"
+  },
+  {
+    "exchange": "SSE",
     "issuer": "英韧科技股份有限公司",
     "document_type": "IPO项目更新",
     "publish_date": "2026-06-29",
@@ -14,7 +32,7 @@
     "detail_url": null,
     "title": "英韧科技股份有限公司 IPO项目更新",
     "summary": null,
-    "collected_at": "2026-07-09T04:30:54+00:00",
+    "collected_at": "2026-07-10T04:33:59+00:00",
     "id": "a6a922aec54fb5c425c245ac"
   },
   {
@@ -59,7 +77,7 @@
         "砷化镓衬底在部分应用领域存在被绝缘体上硅（SOI）等其他新兴技术替代的风险。"
       ]
     },
-    "collected_at": "2026-07-09T04:30:54+00:00",
+    "collected_at": "2026-07-10T04:33:59+00:00",
     "id": "9a341757adca4cf815cd6a5f"
   },
   {
@@ -77,7 +95,7 @@
     "detail_url": null,
     "title": "上海同创普润新材料股份有限公司 IPO项目更新",
     "summary": null,
-    "collected_at": "2026-07-09T04:30:54+00:00",
+    "collected_at": "2026-07-10T04:33:59+00:00",
     "id": "6de338e777a1f153833d5350"
   },
   {
@@ -95,7 +113,7 @@
     "detail_url": null,
     "title": "云洲智能科创板IPO项目 IPO项目更新",
     "summary": null,
-    "collected_at": "2026-07-09T04:30:54+00:00",
+    "collected_at": "2026-07-10T04:33:59+00:00",
     "id": "47a55aee83388a39336160c7"
   },
   {
@@ -113,7 +131,7 @@
     "detail_url": null,
     "title": "上海羲禾科技股份有限公司 IPO项目更新",
     "summary": null,
-    "collected_at": "2026-07-09T04:30:54+00:00",
+    "collected_at": "2026-07-10T04:33:59+00:00",
     "id": "733c5e2d467e968c3687b4df"
   },
   {
@@ -131,7 +149,7 @@
     "detail_url": null,
     "title": "上海思朗科技股份有限公司科创板IPO项目 IPO项目更新",
     "summary": null,
-    "collected_at": "2026-07-09T04:30:54+00:00",
+    "collected_at": "2026-07-10T04:33:59+00:00",
     "id": "0662718f1391a039e1a2ed05"
   },
   {
