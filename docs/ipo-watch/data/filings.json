@@ -3746,38 +3746,5 @@
     },
     "collected_at": "2026-07-12T09:53:39+00:00",
     "id": "90b7f56c9973d03e2fc287e4"
-  },
-  {
-    "exchange": "CNINFO",
-    "issuer": "深圳市柳鑫实业股份有限公司",
-    "document_type": "A股IPO项目更新",
-    "publish_date": "2026-06-12",
-    "update_date": "2026-06-12",
-    "board": "A股IPO",
-    "industry": "计算机、通信和其他电子设备制造业",
-    "sponsor": "中信建投证券股份有限公司",
-    "status": "已问询",
-    "pdf_url": null,
-    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
-    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1801",
-    "title": "深圳市柳鑫实业股份有限公司 A股IPO项目更新",
-    "summary": {
-      "financial_snapshot": {
-        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
-      },
-      "key_points": [
-        "当前审核状态：已问询",
-        "保荐机构：中信建投证券股份有限公司",
-        "所属行业：计算机、通信和其他电子设备制造业",
-        "净利润参考值：1.39亿元"
-      ],
-      "one_line_business": "公司是一家专注于PCB功能材料研发、生产及销售的高新技术企业，产品主要应用于PCB精密钻孔制程等领域，下游客户主要为PCB制造企业。公司依托于长期的产业积累和技术沉淀，拥有全面完整的产品体系和优质客户布局，产业链终端涵盖AI服务器/高性能计算、网络通信、智能汽车、消费电子、工业控制、航空航天、新能源、医疗等众多应用领域，已成为行业领先的PCB制造关键功能材料提供商。",
-      "risk_factors": [
-        "尚未基于招股书全文生成风险摘要。"
-      ],
-      "source": "cninfo_project"
-    },
-    "collected_at": "2026-07-12T09:53:43+00:00",
-    "id": "6bff2699e8a626c4ee698242"
   }
 ]
