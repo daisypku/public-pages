@@ -41,9 +41,9 @@
     .market-tabs input { position: absolute; opacity: 0; pointer-events: none; }
     .tab-list { display: flex; flex-wrap: wrap; gap: 8px; border-bottom: 1px solid var(--line); }
     .tab-list label { cursor: pointer; padding: 8px 12px; border: 1px solid transparent; border-bottom: 0; border-radius: 8px 8px 0 0; color: var(--muted); font-weight: 700; font-size: 14px; background: transparent; }
-    #market-all:checked ~ .tab-list label[for="market-all"], #market-a:checked ~ .tab-list label[for="market-a"], #market-hk:checked ~ .tab-list label[for="market-hk"] { color: var(--accent); background: var(--panel); border-color: var(--line); }
+    #market-all:checked ~ .tab-list label[for="market-all"], #market-a:checked ~ .tab-list label[for="market-a"], #market-hk:checked ~ .tab-list label[for="market-hk"], #market-calendar:checked ~ .tab-list label[for="market-calendar"] { color: var(--accent); background: var(--panel); border-color: var(--line); }
     .tab-panel { display: none; }
-    #market-all:checked ~ .tab-panels .tab-panel.all, #market-a:checked ~ .tab-panels .tab-panel.a-share, #market-hk:checked ~ .tab-panels .tab-panel.hk { display: block; }
+    #market-all:checked ~ .tab-panels .tab-panel.all, #market-a:checked ~ .tab-panels .tab-panel.a-share, #market-hk:checked ~ .tab-panels .tab-panel.hk, #market-calendar:checked ~ .tab-panels .tab-panel.calendar { display: block; }
     .date-section { margin-top: 18px; }
     .date-heading { display: flex; align-items: center; gap: 10px; margin: 0 0 10px; color: var(--ink); font-size: 15px; }
     .date-heading::after { content: ""; height: 1px; background: var(--line); flex: 1; }
@@ -78,12 +78,20 @@
     .point-box, .risk-box { border-radius: 8px; padding: 11px 12px; border: 1px solid var(--line); background: var(--soft); }
     .risk-box { background: var(--warning); }
     .section-label { font-weight: 700; margin-bottom: 6px; }
+    .calendar-list { display: grid; gap: 10px; margin-top: 14px; }
+    .calendar-card { display: grid; grid-template-columns: 120px minmax(0, 1fr) auto; gap: 14px; align-items: center; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; }
+    .calendar-date { font-weight: 800; color: var(--accent); font-size: 15px; }
+    .calendar-name { font-weight: 750; line-height: 1.35; }
+    .calendar-metrics { display: grid; grid-template-columns: repeat(2, minmax(120px, 1fr)); gap: 8px 14px; min-width: 300px; }
+    .calendar-metrics dt { color: var(--muted); font-size: 12px; margin-bottom: 2px; }
+    .calendar-metrics dd { margin: 0; font-size: 14px; }
     .empty { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 18px; color: var(--muted); }
     @media (max-width: 720px) {
       .header-inner, main { padding-left: 16px; padding-right: 16px; }
-      .toolbar, .card-top { display: block; }
+      .toolbar, .card-top, .calendar-card { display: block; }
       .actions { margin-top: 10px; white-space: normal; }
       .tab-list label { flex: 1 1 auto; text-align: center; }
+      .calendar-metrics { grid-template-columns: 1fr; min-width: 0; margin-top: 10px; }
     }
   </style>
 </head>
@@ -105,10 +113,12 @@
   <input type="radio" name="market" id="market-all" checked>
   <input type="radio" name="market" id="market-a">
   <input type="radio" name="market" id="market-hk">
+  <input type="radio" name="market" id="market-calendar">
   <div class="tab-list" role="tablist" aria-label="市场筛选">
     <label for="market-all" role="tab">全部 93</label>
     <label for="market-a" role="tab">A股 74</label>
     <label for="market-hk" role="tab">港股 19</label>
+    <label for="market-calendar" role="tab">未来2周日历 1</label>
   </div>
   <div class="tab-panels">
     <div class="tab-panel all">
@@ -7823,6 +7833,20 @@
 </div>
 </section>
 </div>
+    <div class="tab-panel calendar"><div class="calendar-list">
+<article class="calendar-card">
+  <div class="calendar-date">2026-07-13</div>
+  <div>
+    <div class="calendar-name">永康控股</div>
+    <div class="meta-row"><span class="tag">港股</span><span class="tag">02523.HK</span></div>
+  </div>
+  <dl class="calendar-metrics">
+    <div><dt>招股价</dt><dd>2.2-2.68</dd></div>
+    <div><dt>融资总额</dt><dd>约1.14-1.38亿港元</dd></div>
+    <div><dt>来源</dt><dd><a class="link-pill" href="https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=02523">AAStocks</a></dd></div>
+  </dl>
+</article>
+</div></div>
   </div>
 </section>
 
