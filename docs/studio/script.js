@@ -204,6 +204,101 @@ function escapeHtml(value) {
     .replace(/"/g, "&quot;");
 }
 
+const IPO_FILINGS_URL = "../ipo-watch/data/filings.json";
+const IPO_CALENDAR_URL = "../ipo-watch/data/calendar.json";
+
+function parseDateOnly(value) {
+  if (!value) return null;
+  const [year, month, day] = String(value).slice(0, 10).split("-").map(Number);
+  if (!year || !month || !day) return null;
+  return new Date(year, month - 1, day);
+}
+
+function formatShortDate(value) {
+  const date = parseDateOnly(value);
+  if (!date) return value || "--";
+  return `${date.getMonth() + 1}/${date.getDate()}`;
+}
+
+function filingDateValue(filing) {
+  return parseDateOnly(filing.update_date || filing.publish_date || filing.collected_at)?.getTime() || 0;
+}
+
+function renderIpoRecent(filings) {
+  const target = document.querySelector("#ipoRecentList");
+  const status = document.querySelector("#ipoDisclosureStatus");
+  if (!target) return;
+
+  const items = (filings || [])
+    .slice()
+    .sort((a, b) => filingDateValue(b) - filingDateValue(a))
+    .slice(0, 5);
+
+  if (status) status.textContent = items[0]?.update_date || items[0]?.publish_date || "已更新";
+  target.innerHTML = items.length
+    ? items
+        .map((item) => {
+          const href = item.id ? `../ipo-watch/filings/${encodeURIComponent(item.id)}.html` : "../ipo-watch/";
+          const meta = [item.board, item.industry, item.sponsor].filter(Boolean).join(" · ");
+          return `<a class="ipo-item" href="${href}">
+            <span class="ipo-date">${escapeHtml(formatShortDate(item.update_date || item.publish_date))}</span>
+            <span><span class="ipo-name">${escapeHtml(item.issuer || item.title || "未命名项目")}</span><br><span class="ipo-meta">${escapeHtml(meta || item.document_type || "IPO 项目更新")}</span></span>
+            <span class="ipo-status">${escapeHtml(item.status || item.exchange || "更新")}</span>
+          </a>`;
+        })
+        .join("")
+    : '<p class="ipo-empty">暂时没有可展示的披露项目。</p>';
+}
+
+function renderIpoCalendar(events) {
+  const target = document.querySelector("#ipoCalendarList");
+  if (!target) return;
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const end = new Date(today);
+  end.setDate(today.getDate() + 14);
+
+  const items = (events || [])
+    .map((event) => ({ ...event, dateObj: parseDateOnly(event.event_date) }))
+    .filter((event) => event.dateObj && event.dateObj >= today && event.dateObj <= end)
+    .sort((a, b) => a.dateObj - b.dateObj)
+    .slice(0, 8);
+
+  target.innerHTML = items.length
+    ? items
+        .map((item) => {
+          const meta = [item.market, item.code, item.financing_total ? `募资 ${item.financing_total}` : ""].filter(Boolean).join(" · ");
+          return `<a class="ipo-event" href="${escapeHtml(item.source_url || "../ipo-watch/")}" target="_blank" rel="noopener">
+            <span class="ipo-date">${escapeHtml(formatShortDate(item.event_date))}</span>
+            <span><span class="ipo-name">${escapeHtml(item.name || "未命名项目")}</span><br><span class="ipo-meta">${escapeHtml(meta || item.business || "IPO 日历事件")}</span></span>
+            <span class="ipo-status">${escapeHtml(item.event_type || "日历")}</span>
+          </a>`;
+        })
+        .join("")
+    : '<p class="ipo-empty">未来两周暂无日历事项。</p>';
+}
+
+async function hydrateIpoWatch() {
+  const recentTarget = document.querySelector("#ipoRecentList");
+  const calendarTarget = document.querySelector("#ipoCalendarList");
+  if (!recentTarget && !calendarTarget) return;
+
+  try {
+    const [filingsResponse, calendarResponse] = await Promise.all([
+      fetch(IPO_FILINGS_URL, { cache: "no-store" }),
+      fetch(IPO_CALENDAR_URL, { cache: "no-store" }),
+    ]);
+    if (!filingsResponse.ok || !calendarResponse.ok) throw new Error("IPO data not found");
+    renderIpoRecent(await filingsResponse.json());
+    renderIpoCalendar(await calendarResponse.json());
+  } catch (error) {
+    const status = document.querySelector("#ipoDisclosureStatus");
+    if (status) status.textContent = "等待更新";
+    if (recentTarget) recentTarget.innerHTML = '<p class="ipo-empty">IPO 披露数据暂时读取失败。</p>';
+    if (calendarTarget) calendarTarget.innerHTML = '<p class="ipo-empty">IPO 日历暂时读取失败。</p>';
+  }
+}
 function heatmapColor(value) {
   if (value === null || value === undefined || Number.isNaN(value)) return "#f1eadf";
   if (value >= 5) return "#c62828";
@@ -281,3 +376,4 @@ async function hydrateSemiHeatmap() {
 hydratePodcastBrief();
 hydrateInvestmentBrief();
 hydrateSemiHeatmap();
+hydrateIpoWatch();

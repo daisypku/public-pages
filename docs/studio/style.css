@@ -104,7 +104,7 @@ h3 { margin-bottom: 12px; font-size: 1.25rem; line-height: 1.2; }
 
 .grid { display: grid; gap: 16px; }
 .single-card-row { grid-template-columns: minmax(0, 1fr); }
-.tools-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+.tools-grid { grid-template-columns: minmax(0, 1fr); align-items: start; }
 .brief-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
 
 .feature-card, .brief-card, .construction, .about-message, .message-form, .brief-item {
@@ -202,15 +202,68 @@ h3 { margin-bottom: 12px; font-size: 1.25rem; line-height: 1.2; }
 .semi-legend .up-mid { background: #ef5350; }
 .semi-legend .up-strong { background: #c62828; border-radius: 0 3px 3px 0; }
 
-.tool-note {
+.ipo-preview {
+  display: grid;
+  gap: 14px;
   margin: 18px 0;
+}
+.ipo-panel {
   padding: 16px;
   border: 1px solid #eadfce;
   border-radius: 8px;
   background: rgba(255, 253, 248, 0.82);
 }
-.tool-note p:last-child {
-  margin-bottom: 0;
+.ipo-panel-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.ipo-list, .ipo-calendar {
+  display: grid;
+  gap: 8px;
+}
+.ipo-item, .ipo-event {
+  display: grid;
+  grid-template-columns: 104px minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: start;
+  padding: 10px 0;
+  border-top: 1px solid #eadfce;
+}
+.ipo-item:first-child, .ipo-event:first-child { border-top: 0; padding-top: 0; }
+.ipo-date {
+  color: var(--teal);
+  font-size: 0.84rem;
+  font-weight: 850;
+  font-variant-numeric: tabular-nums;
+}
+.ipo-name {
+  color: var(--ink);
+  font-weight: 850;
+  line-height: 1.35;
+}
+.ipo-meta {
+  color: #66717e;
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+.ipo-status {
+  justify-self: end;
+  white-space: nowrap;
+  color: #3d4852;
+  background: #f1eadf;
+  border: 1px solid #ddd1bf;
+  border-radius: 999px;
+  padding: 3px 8px;
+  font-size: 0.78rem;
+  font-weight: 750;
+}
+.ipo-empty {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
 }
 .brief-card {
   display: flex;
@@ -481,5 +534,13 @@ textarea { resize: vertical; }
   }
   .semi-tile-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  .ipo-item, .ipo-event {
+    grid-template-columns: 1fr;
+  }
+  .ipo-status {
+    justify-self: start;
   }
 }
