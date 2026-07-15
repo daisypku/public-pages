@@ -66,87 +66,131 @@ p { margin:10px 0; } .article-page p { color:#243241; } ul { padding-left:24px; 
     <div class="section-heading"><h2>今日社媒观点</h2></div>
     
 <article class="signal-card">
-  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 1290</div>
-  <p>Make the model a cog in a machine you own.
+  <div class="signal-meta">Amjad Masad / @amasad / engagement 11077</div>
+  <p>‼️ BREAKING: xAI&#x27;s Grok Build CLI was uploading entire Git repositories to a Google Cloud bucket, private codebases and unredacted secrets included. The uploads quietly stopped via a hidden server-side flag, and xAI still has not said a word about scope, retention, or deletion.
 
-◾ AI SDK → open model API
-◾ <a href="https://t.co/O7y9dmUqk5">https://t.co/O7y9dmUqk5</a> → open Agent API
-◾ AI Gateway → open ZDR inference
+The scale is staggering. On a 12 GB test repo, 5.1 GB flew out the door to xAI&#x27;s grok-code-session-traces bucket while the actual coding task needed just 192 KB. The tool grabbed whatever repository it ran in, not the files it needed.
 
-Startups and enterprises must own their data, evals, model choices, software layer. Don&#x27;t outsource your brain.</p>
-  <a class="source-link" href="https://x.com/rauchg/status/2076364176252191222">原文</a>
+The fix arrived as a hidden flag, disable_codebase_upload: true, a day after a researcher&#x27;s wire-level analysis. The &quot;Improve the model&quot; opt-out never stopped the uploads.
+
+Still no advisory, no scope, no word on whether already-uploaded code gets deleted. For anyone pointing AI coding agents at proprietary code, what crosses the wire matters more than what the settings page says.</p>
+  <a class="source-link" href="https://x.com/IntCyberDigest/status/2076689215258014069">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Marc Andreessen / @pmarca / engagement 843</div>
-  <p>This is the best essay of the year:
-- The dispersion of knowledge is a collective strength; it’s the source of variety, adaptability, and resilience of the overall system. It’s the reason that free markets outperform planned economies.
-- For artificial intelligence to benefit from distributed knowledge, it must itself be distributed.
-- [Models] that handle live, multimodal interaction natively, in the model itself rather than in scaffolding bolted around it [allows] interactivity [to scale] with intelligence.
-- Even with the best intentions, a model shaped in one place inevitably encodes the values of its owner, not the individual users it serves.</p>
-  <a class="source-link" href="https://x.com/illscience/status/2076375189508751608">原文</a>
+  <div class="signal-meta">Sam Altman / @sama / engagement 10645</div>
+  <p>5.6 sol growth is insane.
+
+the inference team has done heroic work to be able to support demand.
+
+we are going to move mountains to continue to scale, but it is possible there are some hiccups soon.</p>
+  <a class="source-link" href="https://x.com/sama/status/2077106587307798989">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Marc Andreessen / @pmarca / engagement 718</div>
-  <p>I’ve been saying this for months, and the early data is beginning to support it. Five years from now, I believe AI will create more jobs than it eliminates.
+  <div class="signal-meta">Marc Andreessen / @pmarca / engagement 1670</div>
+  <p>Today, we launched GPU compute forward curves derived from our prediction market prices. Forward curves are now available on Nvidia B200. H200, and A100 chips.
 
-That may sound counterintuitive. But the data is proving this theory. Here are some factors worth considering.
+Forward curves track implied future prices. They are how mature commodity markets form expectations, allocate capital, and manage risk. Energy, interest rates/SOFR, FX, metals, and agricultural markets all rely on market-implied forward prices.
 
-AI is exposing new human bottlenecks
+Despite becoming one of the key inputs in the global economy, compute has lacked that market-derived infrastructure. Compute right now is where oil was before NYMEX — traded only via OTC deals, just like oil used to trade OTC between producers and refiners. As compute becomes as fundamental to the economy as energy, the industry will need a similar derivative market to promote efficient price discovery.
 
-When one part of a workflow becomes dramatically faster, the constraint simply moves elsewhere. Organizations then need more people to remove the next bottleneck and capture the value AI has unlocked.
+Prediction markets are uniquely suited to this problem. Compute is not one uniform commodity and spans many chips, grades, tenors, locations, and contract structures. A live prediction market can aggregate those dispersed views into transparent prices that reflect market expectations for different maturities.
 
-Automation does not eliminate the need for human contribution. It often reveals how much more could be accomplished with it.
+The opportunity is big. Hyperscalers are spending over $700B on compute this year and the market is expected to grow to $7-10T by 2030. If this market behaves like traditional commodity markets, a liquid derivative market could be 10-20x bigger than the underlying spot market.
 
-AI fluency will become one of the world’s most valuable skills
+Compute is still not uniform enough, but this is a step towards standardization as forward curves will help us see the rise and fall of different model prices and how they correlate.
 
-The emerging divide will not be between humans and agents. It will be between people who are highly fluent with AI and those who are not.
-
-AI-fluent people will not be 10% more productive. In some forms of work, they could be 50x or even 100x more effective. They will imagine better uses for AI, orchestrate agents and apply judgment where machines still fall short.
-
-These people will be scarce and enormously valuable.
-
-Productivity creates demand
-
-The assumption behind mass unemployment is that the amount of work the world needs is fixed.
-
-It isn’t.
-
-When technology becomes dramatically cheaper and easier to create, we do not simply produce the same amount with fewer people. We build more products, start more companies, solve previously uneconomic problems and serve markets that could never be served before.
-
-AI will lower the cost of ambition.
-
-The real risk, therefore, is not that humanity runs out of work. It is that millions of people are not prepared for how quickly the nature of work changes.
-
-The future will likely have more jobs. But they will not be the same jobs, performed in the same way, by people with the same skills.
-
-The imperative is not to protect people from AI. It is to help every person become fluent in it.</p>
-  <a class="source-link" href="https://x.com/jpatel41/status/2076338046652539035">原文</a>
+The forward curve is a first step. Up next: futures and perps.</p>
+  <a class="source-link" href="https://x.com/mansourtarek_/status/2077163765020160172">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Marc Andreessen / @pmarca / engagement 222</div>
-  <p>In late November 2025, AI agentic harnesses became highly useful, and enterprise adoption exploded.  For example, based on BTOS data, the percentage of large (250+ employees) U.S. enterprises using AI grew from ~25% to 37% between November 2025 and May 2026.
+  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 1653</div>
+  <p>If I had to restart @ElevenLabs GTM from scratch, these are the things that I would change 🖊️ 
 
-And the unemployment rate... hasn&#x27;t moved.  For workers aged 20+ it was:
+- Hire quicker. I was alone selling for the first 9 months because I believed we didn&#x27;t have PMF. Main reasons: the AI tourist external mantra of 2023, and the uphill battle convincing everyone to hire more GTM (Sales development, Sales, Customer Success) because we were still mostly PLG / self-service. The hiring constraint lasted until earlier this year when we boosted our team to meet demand.
 
-September 2024 (first reasoning model):  3.6%
-November 2025:  4.1%
-July 2026:  3.8%
+- Build an enablement team earlier. Sales enablement has such an important role in an org, and we mostly think about it when we hire a lot of people. The reality is that we need Enablement earlier due to the speed of product iteration.
 
-We see the same thing for workers aged 20-24:
+- Open more markets. The results from Uber v Lyft operating models played a key role in deciding to open markets early, but I would triple down on it if we were to start over. 
 
-September 2024:  7.0%
-November 2025:  8.3%
-July 2026:  7.1%
+- Have more big bets. Similar to VCs, you only need 1 big bet to work in order to generate Alpha. We could have executed more big bets if we had had a single person owning &amp; iterating on them. Former successful founder profile with drive and speed.
 
-This is still very early data, but perhaps some aggressive assumptions regarding AI&#x27;s impact on the labor market should be tempered a bit?</p>
-  <a class="source-link" href="https://x.com/deredleritt3r/status/2076419061047562433">原文</a>
+- Be more vocal about product ROI &amp; our success. People buy from people, and companies buy based on success &amp; ROI. In AI, we&#x27;ve all been slow showing ROI. This should be the key number when you start a conversation. 
+
+- Hire senior sellers. In startups, we&#x27;ve been told that culture is everything and someone with +25y experience may struggle to fit in. This is bullshit. The experience, connections and drive +25y sellers bring is crazy. We have a bunch today, but I would hire many more earlier.
+
+- Reduce cash commissions and replace them with more equity. Cash is king, but Equity is queen. Queens also rule countries, so why not make Equity the dominant one in GTM? 
+
+- Open more offices. We are a remote-first company, but our customers are everywhere, and employees want to meet each other. I would open more offices to be embedded in markets quicker. 
+
+- Fun brand. Brand perception is 33% of the work. Building a fun brand adds quickly. 
+
+- Outbounds outbounds outbounds. We waited too long to migrate to an Outbound organisation. I would do it from day 1 now.
+
+- Pipeline construction with more whales. The ideal pipeline needs to have a combo of segments to reduce risk, improve results and provide liquidity. We waited too long to pitch &amp; bring whales. 
+
+- Not all deals are good deals. We, sellers, want to close a lot of ARR, but it is important to split early on between good vs bad deals.
+
+Thank you to Tomasz Gmur for asking how I would do GTM again!</p>
+  <a class="source-link" href="https://x.com/Carles_Reina/status/2077075493946597749">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Amjad Masad / @amasad / engagement 199</div>
+  <div class="signal-meta">Marc Andreessen / @pmarca / engagement 1045</div>
+  <p>It&#x27;s been interesting and puzzling to witness the problems with accuracy in UK economic statistics over the past few years. (See the links in the next tweet for more.) It seems that the Office for National Statistics, ONS, now struggles to effectively measure basic figures such as employment, trade, and inflation. This resulted in a quite scathing government report published last summer, where Robert Devereux, a former permanent secretary, concluded that &quot;most of the well-publicised problems with core economic statistics are the consequence of ONS’s own performance.&quot;
+
+There&#x27;s a lot of discussion about the travails facing the UK these days (including this big piece in The Atlantic a few weeks ago[1]), and the problems with the ONS feel like an unsettling microcosm of diffuse decline in broader institutional competence.
+
+Anyhow: at Stripe, we became curious about the UK&#x27;s published entrepreneurship data. While we observe a boom in many parts of the world, official figures don&#x27;t show a similar increase in the UK. In the latest Stripe Economics post, we dug into the data, and, as far as we can tell, the official figures are probably misleading. The good and the bad news (mostly good, I think!) is that the UK is almost certainly witnessing an unmeasured boom in entrepreneurship: <a href="https://t.co/R7oTZNmxc6">https://t.co/R7oTZNmxc6</a>
+
+UK-specific issues aside, I suspect that this measurement question is illustrative of forthcoming econometric challenges. Keeping the world&#x27;s macro indicators up-to-date in response to the faster-than-usual changes wrought by AI will be both increasingly difficult and increasingly important in the coming years.
+
+[1] <a href="https://t.co/OAnwRmpyON">https://t.co/OAnwRmpyON</a></p>
+  <a class="source-link" href="https://x.com/patrickc/status/2077048835483013186">原文</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">Swyx / @swyx / engagement 413</div>
+  <p>cosign. models have overtuned to this now and do not realize when the agentsmd is out of date and should be changed/ignored.
+
+last night i goaled 5.6 sol to complete a 5 stage task and woke up to find it was still stuck on stage 0. it took a while to read the transcript back a few hours to realize at some point some agent had committed “stage 0 is the target dont do anything else” so poor sol spent 8 hours only refining and verifying stage 0 because /goal would not let it stop and agentsmd would not let it proceed.
+
+if you dont know whats in your agentsmd before you fire off each task, it is an indirect prompt injection you perform on yourself. /plan, /goal, /skill, or nothing at all.</p>
+  <a class="source-link" href="https://x.com/swyx/status/2077072402828361772">原文</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">Bill Gurley / @bgurley / engagement 363</div>
+  <p>Plenty of states have open arms - so I am cool with it. “It is one of the happy incidents of the federal system that a single courageous State may, if its citizens choose, serve as a laboratory…”
+
+Since people in these places do use AI, I do wonder if they should have to pay more.</p>
+  <a class="source-link" href="https://x.com/bgurley/status/2077091437985009730">原文</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">Marc Andreessen / @pmarca / engagement 349</div>
+  <p>I’ve been arguing for over a decade that mandatory civil service would make America stronger. The typical response was that it would just be an obstacle between people and their goals…or that it’s uNConStITutioNaL and that we’d rather have violent tribalwarfare between the purple hair baristas and the incels.
+
+Now that widespread job loss driven by AI looms, the idea has become a lot more palatable. 
+
+Go check out the argument @PirateWires.  Come at me, bro.</p>
+  <a class="source-link" href="https://x.com/traestephens/status/2077118814974796246">原文</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">Swyx / @swyx / engagement 346</div>
+  <p>One year ago today, Cognition acquired Windsurf.
+
+In the year since, we&#x27;ve shipped dozens of new features, added hundreds of millions of dollars in ARR, and published frontier AI research.
+
+@ScottWu46 and @jeffwang share what we&#x27;ve accomplished in one year of building together.</p>
+  <a class="source-link" href="https://x.com/cognition/status/2077080430038200605">原文</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">Amjad Masad / @amasad / engagement 273</div>
   <p>Getting realtime progress updates on my model training runs. 
 
 This feels like early vibe coding except it’s making personal models. <a href="https://t.co/NBFr2sVJT5">https://t.co/NBFr2sVJT5</a></p>
@@ -154,39 +198,7 @@ This feels like early vibe coding except it’s making personal models. <a href=
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 178</div>
-  <p>Sales has changed a lot in the Age of AI.  But a lot of it is still … mostly the same.
-
-10 things that changed, and didn’t:
-
-#1. The old SDR job is gone. AI sends 10-40x the volume at the same reply rates.
-
-#2. In-person still closes at 3x remote. Only ~27% of B2B meetings happen in person.  Agents can’t do this.
-
-#3. Speed to lead is solved. Every inbound gets a real answer in minutes, 24/7, and it wins.  No excuses anymore for a Calendly and a mediocre human screening meeting days later.
-
-#4. You still can’t coach an inbound rep into outbound. 95% won’t make the switch.  Most human tech sales reps like to just follow up with hot leads.  No change.
-
-#5. Coverage is no longer the constraint. Agents chase every lead, including the ones humans wrote off.  No excuses for every lead not to be followed up with.  For real.
-
-#6. The best reps still just work harder. AI beats the mid-pack, not the top.  
-
-#7. More deals now close with little or no human AE. Full journeys complete in chat.  More.  But not all. 
-
-#8. Relationships still win the $1 M+ deal. AI can’t hold 18 months of CIO trust.  But often requires a top-tier FDE to even get a deal going.
-
-#9. The buyer might not be human. Agents are starting to buy, and they trust the AI answer.
-
-#10. Bad sales behavior is still bad. In fact, AI can reinforce it.
-
-We still buy from humans, especially $20 k-$50 k+ deals.  
-
-We just buy from AI, and with AI … a lot more than we used to.</p>
-  <a class="source-link" href="https://x.com/jasonlk/status/2076489566329192614">原文</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 165</div>
+  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 212</div>
   <p>Powerful building block for autonomous, self-optimizing websites and applications.
 
 Give agents the ability to set up and tune experiments with feature flags.</p>
@@ -194,131 +206,185 @@ Give agents the ability to set up and tune experiments with feature flags.</p>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 163</div>
-  <p>@elonmusk I was literally just testing it for this usecase and it’s performing great. Grok 4.5 is an excellent foundation for agents</p>
-  <a class="source-link" href="https://x.com/rauchg/status/2076412134540685483">原文</a>
+  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 191</div>
+  <p>The @agentmail team has been cooking. Tell your agent to 𝚟𝚎𝚛𝚌𝚎𝚕 𝚒𝚗𝚜𝚝𝚊𝚕𝚕 𝚊𝚐𝚎𝚗𝚝𝚖𝚊𝚒𝚕 – no signup, automatic setup and unified billing.</p>
+  <a class="source-link" href="https://x.com/rauchg/status/2077154901013221444">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 24</div>
-  <p>Stop wondering if you&#x27;re fundable
+  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 169</div>
+  <p>Let me summarize a few convos with founders from past 2 weeks:
 
-Stop wondering what VCs will really think
+Personally, I won’t invest in an agentic “SaaS” / B2B company anymore no matter how good your AI and agent is …
 
-Just upload your latest deck to SaaStr AI VC ... and we&#x27;ll just tell you -&amp;gt; <a href="https://t.co/S5UFYzoN7a">https://t.co/S5UFYzoN7a</a> <a href="https://t.co/62KMInrg89">https://t.co/62KMInrg89</a></p>
-  <a class="source-link" href="https://x.com/jasonlk/status/2076739184539447662">原文</a>
+Unless it unlocks materially more budget than just traditional software budget.
+
+This may sounds obvious but I think a lot of folks get confused by it.  It’s not enough today to use AI to make your B2B product 10x better than the old guys.  That’s great and it WILL win you customers.
+
+The problem? That alone won’t win you incremental budget.
+
+You can steal Salesforce’s budget, or Workday’s, or whatever, but all the incremental budget is going to AI that either has radical ROI (gets you customers) or radical cost savings (don’t need half support team) or radical insights (100x better analytics -&gt; insights -&gt; ROI).   Agentic ROI.  
+
+Stealing budget just from other software is no longer enough.
+
+-&gt; You have to have Agentic ROI, and where that shows up is much larger deal sizes than usual in your category.
+
+If deals are usually $20k in your category, but you can get $60k-$200k with AI, look, that’s the sign.  
+
+If deals are usually $20k and you can get $20k but you can be incumbents with AI, that’s great.  But it’s not enough.
+
+If your deal size isn’t at least 2x what your pre-AI competitors have, you don’t have Agentic Revenue, and you won’t scale to be bigger than them, and you may end up in … a 2x ARR trap at scale.  No one wants that.</p>
+  <a class="source-link" href="https://x.com/jasonlk/status/2077042390058275163">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 12</div>
-  <p>&quot;With many agentic products, that are credit-based, what&#x27;s your real &quot;ARR&quot;?&quot;
+  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 133</div>
+  <p>AgentMail is on the Vercel Marketplace.
 
-A deep dive with @higgsfield_ai CEO @alexmashrabov <a href="https://t.co/Sh8vMjm3q5">https://t.co/Sh8vMjm3q5</a></p>
-  <a class="source-link" href="https://x.com/jasonlk/status/2076404982514131095">原文</a>
+Your agents can send, receive, and reply to email from a real inbox.
+• Full thread memory
+• Structured data extraction
+• Deliverability handled
+
+Run 𝚟𝚌 𝚒 𝚊𝚐𝚎𝚗𝚝𝚖𝚊𝚒𝚕 or learn more ↓
+<a href="https://t.co/GB3UQ0CxAu">https://t.co/GB3UQ0CxAu</a></p>
+  <a class="source-link" href="https://x.com/vercel_dev/status/2077149178233524535">原文</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">Swyx / @swyx / engagement 130</div>
+  <p>hi old friends, quick guide
+
+if you know me from my hedge fund days, look up the @latentspacepod with @fabknowledge
+
+if you know me from Typescript/React, look up @cramforce’s @aidotengineer keynote and @bcherny’s pod with us
+
+if you know me from AWS/Temporal/Data Eng, google the pod with @matei_zaharia and @rxin. yes, Rise of the AI Engineer is a brazen adaptation of @mistercrunch’s essay.
+
+if you know me for devrel, check out @dxtipshq and @MilksandMatcha’s writing meetups.
+
+general changelog of last 10 years is below. welcome back</p>
+  <a class="source-link" href="https://x.com/swyx/status/2077202327380148486">原文</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 56</div>
+  <p>Few things have been more fun in my career in software and tech than the past 12 months
+
+We&#x27;ve gone from 1 basic agent to 21+ AI Agents running all of SaaStr, much of SaaStr Fund, and so much more
+
+But the cognitive load is at the edge. It&#x27;s at the limit.
+
+I don&#x27;t think we can manage one more independent agent.  And everything now is 24x7.  The backlog.  The agents never stop working.  Mornings, nights, it&#x27;s all agents, all the time.
+
+It&#x27;s great, it&#x27;s so cool, and I hate the term &quot;burn out.&quot;  That called life when you are building.
+
+But it&#x27;s a level of constant cognitive load I&#x27;ve never really experienced before.</p>
+  <a class="source-link" href="https://x.com/jasonlk/status/2077121957292913013">原文</a>
 </article>
   </section>
   <section class="signal-panel">
     <div class="section-heading"><h2>今日论文雷达</h2></div>
     
 <article class="signal-card">
-  <div class="signal-meta">cs.LG </div>
-  <h3>Requential Coding: Pushing the Limits of Model Compression with Self-Generated Training Data</h3>
-  <p class="authors">Shikai Qiu, Marc Finzi, Yujia Zheng, Kun Zhang, Andrew Gordon Wilson</p>
-  <p>Compression is fundamental to intelligence.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.11883v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">cs.CL, cs.AI </div>
-  <h3>Metacognition in LLMs: Foundations, Progress, and Opportunities</h3>
-  <p class="authors">Gabrielle Kaili-May Liu, Areeb Gani, Jacqueline Lu, Jordan Thomas, Mark Steyvers, Arman Cohan</p>
-  <p>Metacognition is a foundational component of intelligence critical to effective learning, problem solving, decision-making, communication, and more.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.11881v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">cs.LG, cs.AI </div>
-  <h3>Invariant Learning Dynamics of Transformers in Inductive Reasoning Tasks</h3>
-  <p class="authors">Tiberiu Musat, Tiago Pimentel, Nicholas Zucchet, Thomas Hofmann</p>
-  <p>We present a theoretical framework to explain the emergence of inductive reasoning abilities in Transformer language models.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.11875v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">cs.RO, cs.AI, cs.LG </div>
-  <h3>A Minimalist Retargeting-Guided Reinforcement Learning Recipe for Dexterous Manipulation</h3>
-  <p class="authors">Yunhai Feng, Natalie Leung, Jiaxuan Wang, Lujie Yang, Haozhi Qi, Preston Culbertson</p>
-  <p>Recent work in humanoid whole-body control has found success with a simple recipe: retarget human motion to robot kinematic references, then train policies via reinforcement learning (RL) to track them.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.11874v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">cs.CL, cs.LG </div>
-  <h3>A Durability and Cross-Language Transfer Benchmark for a Validated Teaching-Feedback Classification Protocol</h3>
-  <p class="authors">Esteban U. Vega Barajas</p>
-  <p>Institutions collect far more open-ended teaching-evaluation feedback than they read.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.11873v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">cs.LG, cs.AI, cs.CL </div>
-  <h3>Inside the Unfair Judge: A Mechanistic Interpretability Account of LLM-as-Judge Bias</h3>
-  <p class="authors">Zixiang Xu, Sixian Li, Huaxing Liu, Xiang Wang, Shuai Li, Zirui Song</p>
-  <p>Existing studies of LLM-as-judge scoring bias work predominantly at the input-output level: they perturb inputs, measure score deltas, and propose prompt-level mitigations.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.11871v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">cs.CV, cs.AI </div>
-  <h3>Evidence-Backed Video Question Answering</h3>
-  <p class="authors">Shijie Wang, Honglu Zhou, Ziyang Wang, Ran Xu, Caiming Xiong, Silvio Savarese</p>
-  <p>Current Video Large Language Models (Video LLMs) excel in question answering (QA) but largely operate as black boxes, providing textual answers without verifiable visual grounding.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.11862v1">arXiv</a>
+  <div class="signal-meta">cs.AI, cs.CL, cs.SE, eess.SY </div>
+  <h3>Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution</h3>
+  <p class="authors">Junjie Yin, Xinyu Feng</p>
+  <p>Large language model (LLM) agents increasingly automate multi-step engineering and informatics workflows, yet they rarely ask how much effort a task actually requires.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2607.13034v1">arXiv</a>
 </article>
 
 <article class="signal-card">
   <div class="signal-meta">cs.RO </div>
-  <h3>Robust bipedal locomotion on flowable slopes via foot-driven terrain manipulation</h3>
-  <p class="authors">Deniz Kerimoglu, Junnosuke Kamohara, Jiyeon Maeng, Ziwon Yoon, Seth Hutchinson, Ye Zhao</p>
-  <p>Bipedal robots are challenging to control because they operate close to instability, where small variations in foot-terrain contact can rapidly destabilize locomotion.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.11855v1">arXiv</a>
+  <h3>DenseReward: Dense Reward Learning via Failure Synthesis for Robotic Manipulation</h3>
+  <p class="authors">Yu Fang, Wanxi Dong, Jiaqi Liu, Yue Yang, Mingxiao Huo, Yao Mu</p>
+  <p>Reinforcement learning holds great promise for improving robot policies beyond the limits of imitation learning.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2607.13033v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.CL </div>
-  <h3>AdvancedMathBench: A Benchmark Suite for Advanced Mathematical Proof Generation and Verification</h3>
-  <p class="authors">Lingkai Kong, Zijian Wu, Yuzhe Gu, Haiteng Zhao, Wenyong Huang, Shuang Sun</p>
-  <p>Large language models (LLMs) have achieved remarkable performance on high-school and olympiad-style mathematics, yet their capabilities on advanced mathematics remain poorly understood.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.11849v1">arXiv</a>
+  <div class="signal-meta">cs.LG, cs.CV </div>
+  <h3>The Seriality Gap in Video Diffusion Models</h3>
+  <p class="authors">Jorge Diaz Chao, Konpat Preechakul, Yuxi Liu, Yutong Bai</p>
+  <p>When one ball strikes another, then another, video models should predict the consequences of each bounce.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2607.13031v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.CV, cs.AI </div>
-  <h3>LoRA-Based Cascaded Multimodal Fusion for Action Recognition in Medical Training Environments</h3>
-  <p class="authors">Divya Mereddy, Jeevan Beedareddy</p>
-  <p>This paper presents a cascaded Low-Rank Adaptation (LoRA)-based multimodal fusion framework for action and activity recognition in healthcare-oriented training environments.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.11839v1">arXiv</a>
+  <div class="signal-meta">cs.LG, cs.AI, cs.RO </div>
+  <h3>TerraZero: Procedural Driving Simulation for Zero-Demonstration Self-Play at Scale</h3>
+  <p class="authors">Zhouchonghao Wu, Akshay Rangesh, Weixin Li, Wei-Jer Chang, Zachary Lee, Tim Wang</p>
+  <p>Training robust autonomous driving agents requires a simulator that is fast enough for reinforcement learning at scale, realistic enough to ground behavior in real-world map structure, and diverse enough to cover the sa...</p>
+  <a class="source-link" href="https://arxiv.org/abs/2607.13028v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.LG, cs.AI, cs.NE </div>
-  <h3>Transformer-Guided Swarm Intelligence for Frugal Neural Architecture Search</h3>
-  <p class="authors">Romain Amigon</p>
-  <p>Neural Architecture Search (NAS) has automated the design of deep learning models but traditionally requires massive computational resources, often measured in thousands of GPU-days.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.11826v1">arXiv</a>
+  <div class="signal-meta">cs.CL, cs.AI </div>
+  <h3>PalmClaw: A Native On-Device Agent Framework for Mobile Phones</h3>
+  <p class="authors">Hongru Cai, Yongqi Li, Ran Wei, Wenjie Li</p>
+  <p>Large Language Model (LLM) agents have moved beyond generating responses to executing multi-step tasks by calling tools, observing the results, and iteratively deciding the next action.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2607.13027v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.CV, cs.AI </div>
-  <h3>MM-ToolSandBox: A Unified Framework for Evaluating Visual Tool-Calling Agents</h3>
-  <p class="authors">Kaixin Ma, Di Feng, Alexander Metz, Jiarui Lu, Eshan Verma, Afshin Dehghan</p>
-  <p>We introduce MM-ToolSandBox, a benchmark and evaluation framework for visually grounded tool-calling agents.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.11818v1">arXiv</a>
+  <div class="signal-meta">cs.AI, cs.SD </div>
+  <h3>Audio-Native Speech Recognition with a Frozen Discrete-Diffusion Language Model</h3>
+  <p class="authors">Harsha Vardhan Khurdula, Abhinav Kumar Singh, Yoeven D Khemlani, Vineet Agarwal</p>
+  <p>Automatic speech recognition is dominated by autoregressive decoders that emit one token at a time.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2607.13013v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">cs.CR, cs.IT, cs.LG </div>
+  <h3>Watermark Forensics for Generative Models: An Information-Theoretic Perspective</h3>
+  <p class="authors">Xiaoyu Li, Zheng Gao, Xiaoyan Feng, Jiaojiao Jiang, Yulei Sui, Jiankun Hu</p>
+  <p>A watermark in a generative model&#x27;s output is usually asked only whether a text is machine-made.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2607.13003v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">cs.RO </div>
+  <h3>ChunkFlow: Towards Continuity-Consistent Chunked Policy Learning</h3>
+  <p class="authors">Zhao Yang, Yinan Shi, Mingyuan Yao, Wenyao Xue, Yawei Jueluo, Longjun Liu</p>
+  <p>Vision-language action (VLA) models increasingly adopt chunked action heads to satisfy real-time constraints; however, this introduces boundary jitter: overlapping regions between consecutive chunks often yield inconsis...</p>
+  <a class="source-link" href="https://arxiv.org/abs/2607.12992v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">cs.AI, cs.SE </div>
+  <h3>Win by Silence: Deletion Non-Monotonicity, Autonomous Exploitation, and Typed-State Gating in LLM Plan Evaluation</h3>
+  <p class="authors">Aleh Manchuliantsau</p>
+  <p>Plan evaluators can reward a strategic plan for becoming less explicit.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2607.12986v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">cs.AI, cs.MA, cs.SC </div>
+  <h3>FormalAnalyticGeo: A Neural-Symbolic Based Framework for Multimodal Analytic Geometry Problem Generation</h3>
+  <p class="authors">Ruoran Xu, Wending Gao, Qiufeng Wang</p>
+  <p>Math reasoning has achieved significant progress with the rapid advancement of Multimodal Large Language Models (MLLMs), however analytic geometry remains largely underexplored, primarily due to the scarcity of annotate...</p>
+  <a class="source-link" href="https://arxiv.org/abs/2607.12982v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">stat.ML, cs.LG, math.NA, math.OC </div>
+  <h3>Ensemble Controlled-Flow Filtering for Implicit Data Assimilation</h3>
+  <p class="authors">Zhuoyuan Li, Yue Zhao, Ming Li</p>
+  <p>Data assimilation estimates the state of a dynamical system from model forecasts and incoming observations.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2607.12975v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">cs.RO </div>
+  <h3>MAMMOTH: A Multi-Modal End-to-End Policy for Off-Road Mobility Robust to Missing Modality</h3>
+  <p class="authors">Ahaan Kotian, Shivani Subramanyan, Suresh Sundaram</p>
+  <p>Reliable autonomous navigation in unstructured off-road environments remains a critical unsolved challenge due to extreme terrain diversity, drastic illumination variations and acute sensor degradation.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2607.12965v1">arXiv</a>
 </article>
   </section>
 </section>
 
-<p class="signal-generated">更新时间：2026-07-14T05:29:04.853361+00:00</p>
+<p class="signal-generated">更新时间：2026-07-15T05:29:53.224726+00:00</p>
 
   </main>
 </body>
