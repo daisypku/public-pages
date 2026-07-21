@@ -1,0 +1,275 @@
+[
+  {
+    "exchange": "CNINFO",
+    "issuer": "苏州锦艺新材料科技股份有限公司",
+    "document_type": "A股IPO项目更新",
+    "publish_date": "2026-07-19",
+    "update_date": "2026-07-19",
+    "board": "A股IPO",
+    "industry": "计算机、通信和其他电子设备制造业",
+    "sponsor": "国信证券股份有限公司",
+    "status": "已问询",
+    "pdf_url": "https://static.cninfo.com.cn/finalpage/2024-12-31/1222189741.PDF",
+    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
+    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1358",
+    "title": "苏州锦艺新材料科技股份有限公司 A股IPO项目更新",
+    "summary": {
+      "one_line_business": "公司专业从事先进无机非金属粉体材料的研发、生产和销售。",
+      "key_points": [
+        "公司主营业务为先进无机非金属粉体材料，产品应用于覆铜板、封装载板、高导热材料、涂料、锂电池隔膜和工程塑料等领域。",
+        "公司业绩在报告期内持续增长，2021至2023年营业收入复合增长率为26.40%，扣非后归母净利润复合增长率为39.74%。",
+        "本次IPO计划募集资金7.44亿元，主要用于年产5,200吨电子用功能性纳米粉体新材料项目和研发中心升级项目。",
+        "公司客户集中度高，特别是对第一大客户台光电子存在重大依赖，2024年上半年其收入占比达45.39%，毛利贡献占比达60.06%。",
+        "公司实际控制人陈锦魁先生存在数额较大的个人负债（截至2024年12月20日本金为2.60亿元），构成潜在风险。"
+      ],
+      "financial_snapshot": {
+        "income_statement": [
+          {
+            "year": "2021",
+            "revenue": "32,517.34万元",
+            "gross_profit": "",
+            "gross_margin": "",
+            "net_profit": "3,318.04万元",
+            "net_margin": "10.20%"
+          },
+          {
+            "year": "2022",
+            "revenue": "42,851.27万元",
+            "gross_profit": "",
+            "gross_margin": "",
+            "net_profit": "4,461.77万元",
+            "net_margin": "10.41%"
+          },
+          {
+            "year": "2023",
+            "revenue": "51,950.91万元",
+            "gross_profit": "",
+            "gross_margin": "",
+            "net_profit": "6,479.43万元",
+            "net_margin": "12.47%"
+          },
+          {
+            "year": "2024年上半年",
+            "revenue": "33,684.20万元",
+            "gross_profit": "",
+            "gross_margin": "",
+            "net_profit": "4,117.05万元",
+            "net_margin": "12.22%"
+          }
+        ],
+        "summary": "报告期内，公司营业收入和扣除非经常性损益后归母净利润均呈现持续增长趋势。净利率稳中有升。招股书未披露毛利及毛利率数据。"
+      },
+      "risk_factors": [
+        "实际控制人大额负债风险：实际控制人陈锦魁先生负有数额较大的个人债务，未来若无法偿还可能导致相关诉讼或股权纠纷风险。",
+        "主要客户相对集中及单一客户依赖风险：公司前五大客户收入占比较高，且对第一大客户台光电子的销售收入和毛利贡献占比均很高并呈上升趋势，存在重大依赖。",
+        "产品迭代与技术创新风险：公司所处行业技术更新快，若未来不能正确判断技术和市场发展趋势，或研发未能跟上客户需求，将对核心竞争力造成不利影响。"
+      ],
+      "questions_to_follow": [
+        "实际控制人个人大额负债的具体条款（如利率、抵押物、还款计划）是什么？其个人资产状况和还款能力是否足以覆盖债务，从而避免影响公司控制权的稳定？",
+        "公司与第一大客户台光电子的合作模式和协议条款是怎样的？是否有长期供应协议？公司有何具体措施来降低对单一客户的重大依赖？",
+        "募投项目“年产5,200吨电子用功能性纳米粉体新材料”新增的产能，公司计划如何消化？除了现有主要客户，公司在开拓新客户方面有何具体规划和进展？"
+      ],
+      "disclaimer": "自动生成，仅供信息整理，不构成投资建议。"
+    },
+    "collected_at": "2026-07-21T03:56:32+00:00",
+    "id": "142a1e80c28f213bbe6d2cd5"
+  },
+  {
+    "exchange": "CNINFO",
+    "issuer": "深圳市华普微电子股份有限公司",
+    "document_type": "A股IPO项目更新",
+    "publish_date": "2026-07-19",
+    "update_date": "2026-07-19",
+    "board": "A股IPO",
+    "industry": "计算机、通信和其他电子设备制造业",
+    "sponsor": "国泰海通证券股份有限公司",
+    "status": "已问询",
+    "pdf_url": null,
+    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
+    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1863",
+    "title": "深圳市华普微电子股份有限公司 A股IPO项目更新",
+    "summary": {
+      "one_line_business": "发行人主要从事采用Sub-1GHz无线通信技术为核心的无线通信射频芯片及模块和高精度传感器芯片的研发、生产和销售，是国内少数具备Sub-1GHz无线通信射频芯片全链路自研能力的芯片设计企业。公司专注于物联网无线通信传输、采集技术的研发和突破，经过多年技术积累，已发展成为集射频芯片设计、固件与协议设计、应用开发与测试于一体的物联网系统级服务提供商，自主开发的Sub-1GHz无线通信射频芯片是物联网领域重要的基础通信芯片。",
+      "key_points": [
+        "当前审核状态：已问询",
+        "保荐机构：国泰海通证券股份有限公司",
+        "所属行业：计算机、通信和其他电子设备制造业",
+        "净利润参考值：1.89亿元"
+      ],
+      "risk_factors": [
+        "尚未基于招股书全文生成风险摘要。"
+      ],
+      "financial_snapshot": {
+        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
+      },
+      "source": "cninfo_project"
+    },
+    "collected_at": "2026-07-21T03:56:42+00:00",
+    "id": "46df0e86e4a6f5ccd5819c3f"
+  },
+  {
+    "exchange": "CNINFO",
+    "issuer": "广东科杰技术股份有限公司",
+    "document_type": "A股IPO项目更新",
+    "publish_date": "2026-07-19",
+    "update_date": "2026-07-19",
+    "board": "A股IPO",
+    "industry": "通用设备制造业",
+    "sponsor": "中信建投证券股份有限公司",
+    "status": "已问询",
+    "pdf_url": null,
+    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
+    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1831",
+    "title": "广东科杰技术股份有限公司 A股IPO项目更新",
+    "summary": {
+      "one_line_business": "公司是一家专注于精密加工领域高端数控机床研发、生产和销售的国产自主品牌企业，主要产品包括高速数控雕铣机、立式加工中心、五轴数控机床等，广泛服务于精密模具、消费电子、新能源汽车、半导体、新型显示、具身机器人等制造领域。尤其在硬脆材料、金属结构件精密加工方面，公司的数控机床加工效果赶超国际主流进口机床，实现了对进口品牌的有效替代。",
+      "key_points": [
+        "当前审核状态：已问询",
+        "保荐机构：中信建投证券股份有限公司",
+        "所属行业：通用设备制造业",
+        "净利润参考值：1.53亿元"
+      ],
+      "risk_factors": [
+        "尚未基于招股书全文生成风险摘要。"
+      ],
+      "financial_snapshot": {
+        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
+      },
+      "source": "cninfo_project"
+    },
+    "collected_at": "2026-07-21T03:56:40+00:00",
+    "id": "34df6a745a4acf0f926320cf"
+  },
+  {
+    "exchange": "CNINFO",
+    "issuer": "上海如鲲新材料股份有限公司",
+    "document_type": "A股IPO项目更新",
+    "publish_date": "2026-07-19",
+    "update_date": "2026-07-19",
+    "board": "A股IPO",
+    "industry": "化学原料和化学制品制造业",
+    "sponsor": "中信证券股份有限公司",
+    "status": "已问询",
+    "pdf_url": null,
+    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
+    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1566",
+    "title": "上海如鲲新材料股份有限公司 A股IPO项目更新",
+    "summary": {
+      "one_line_business": "发行人是一家主要从事新能源电池电解液材料、电子化学品研发、生产和销售的高新技术企业，为国内主要厂商提供多款锂离子电池电解液新型锂盐及功能性添加剂等产品，是国内少数具备多品种锂离子电池电解液材料制造和创新能力的供应商。同时，发行人也是业内率先具备钠离子电池电解液钠盐量产能力的企业之一。发行人自成立以来始终秉承“自主研发、创新驱动”的发展策略，陆续于山东、江苏等地建立生产基地，在不断提升新能源电池材料产品开发、工艺革新及工业化生产能力的同时，持续进行包括含氟聚酰亚胺单体材料等在内的电子化学品领域的技术储备。此外，发行人还从事精细化工产品的贸易业务，为市场开拓和主业拓展积累了良好的客户资源。在新能源电池电解液材料领域，发行人目前已经掌握数十种锂离子电池电解液新型锂盐及功能性添加剂的制备技术，报告期内发行人主要产品包括双氟磺酰亚胺锂LiFSI、二氟草酸硼酸锂LiODFB、消费电池用功能性添加剂R005、四氟硼酸锂LiBF4等。发行人的产品广泛应用于新能源汽车、电动工具、3C数码产品等领域，并实现了对动力电池、消费电池以及储能电池等各种类锂离子电池的终端覆盖。在钠离子电池电解液材料领域，发行人是业内率先具备以六氟磷酸钠NaPF6、双氟磺酰亚胺钠NaFSI等为代表的系列钠离子主盐及添加剂量产能力的企业之一。",
+      "key_points": [
+        "当前审核状态：已问询",
+        "保荐机构：中信证券股份有限公司",
+        "所属行业：化学原料和化学制品制造业",
+        "净利润参考值：1.09亿元"
+      ],
+      "risk_factors": [
+        "尚未基于招股书全文生成风险摘要。"
+      ],
+      "financial_snapshot": {
+        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
+      },
+      "source": "cninfo_project"
+    },
+    "collected_at": "2026-07-21T03:56:34+00:00",
+    "id": "8f0d5240af558258e4e8057f"
+  },
+  {
+    "exchange": "CNINFO",
+    "issuer": "禾润电子科技(嘉兴)股份有限公司",
+    "document_type": "A股IPO项目更新",
+    "publish_date": "2026-07-18",
+    "update_date": "2026-07-18",
+    "board": "A股IPO",
+    "industry": "软件和信息技术服务业",
+    "sponsor": "中信建投证券股份有限公司",
+    "status": "已问询",
+    "pdf_url": null,
+    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
+    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1832",
+    "title": "禾润电子科技(嘉兴)股份有限公司 A股IPO项目更新",
+    "summary": {
+      "one_line_business": "公司是一家深耕卫星导航定位、模拟信号链和电源链芯片领域，具备全栈技术能力的集成电路设计企业。凭借在CMOS、BCD、GaAs、SiGe等主流及特色工艺上的技术能力与大规模量产经验，公司构建了以GNSS芯片及模块为核心，模拟信号链和电源链芯片产品协同发展的多元化产品矩阵。",
+      "key_points": [
+        "当前审核状态：已问询",
+        "保荐机构：中信建投证券股份有限公司",
+        "所属行业：软件和信息技术服务业",
+        "净利润参考值：1.28亿元"
+      ],
+      "risk_factors": [
+        "尚未基于招股书全文生成风险摘要。"
+      ],
+      "financial_snapshot": {
+        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
+      },
+      "source": "cninfo_project"
+    },
+    "collected_at": "2026-07-21T03:56:45+00:00",
+    "id": "6414a4e0bd184dd29216b6c0"
+  },
+  {
+    "exchange": "CNINFO",
+    "issuer": "深圳市千分一智能技术股份有限公司",
+    "document_type": "A股IPO项目更新",
+    "publish_date": "2026-07-18",
+    "update_date": "2026-07-18",
+    "board": "A股IPO",
+    "industry": "计算机、通信和其他电子设备制造业",
+    "sponsor": "国联民生证券承销保荐有限公司",
+    "status": "终止审查（撤回）",
+    "pdf_url": null,
+    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
+    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1744",
+    "title": "深圳市千分一智能技术股份有限公司 A股IPO项目更新",
+    "summary": {
+      "one_line_business": "公司是一家全球领先的智能笔技术方案供应商，专注于提供智能、便捷、拟真的感知与交互体验。公司深耕行业逾十年，持续进行技术创新，推动智能笔在商务办公、教育、设计及众多生活场景广泛普及，让思想直达笔尖。",
+      "key_points": [
+        "当前审核状态：终止审查（撤回）",
+        "保荐机构：国联民生证券承销保荐有限公司",
+        "所属行业：计算机、通信和其他电子设备制造业",
+        "净利润参考值：1.40亿元"
+      ],
+      "risk_factors": [
+        "尚未基于招股书全文生成风险摘要。"
+      ],
+      "financial_snapshot": {
+        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
+      },
+      "source": "cninfo_project"
+    },
+    "collected_at": "2026-07-21T03:56:44+00:00",
+    "id": "2feed4eb36fa068b223cfffa"
+  },
+  {
+    "exchange": "CNINFO",
+    "issuer": "江苏点夺技术股份有限公司",
+    "document_type": "A股IPO项目更新",
+    "publish_date": "2026-07-18",
+    "update_date": "2026-07-18",
+    "board": "A股IPO",
+    "industry": "专用设备制造业",
+    "sponsor": "兴业证券股份有限公司",
+    "status": "已问询",
+    "pdf_url": null,
+    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
+    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1834",
+    "title": "江苏点夺技术股份有限公司 A股IPO项目更新",
+    "summary": {
+      "one_line_business": "公司是一家专注于半导体工艺排气系统研发、设计、制造与安装服务的国家级专精特新“小巨人”企业，在中国大陆半导体工艺排气系统领域处于领先地位。公司以氟聚合物涂层界面预处理与致密固化技术、低泄漏耐腐蚀气密阀门技术、高气密性管件柔性成型技术等核心技术为依托，构建了涵盖涂层风管、防腐风阀及配套连接件等关键部件以及现场安装与运维服务的完整产品与服务体系。公司产品广泛应用于集成电路晶圆厂的工艺排气系统。工艺排气系统是半导体晶圆厂的关键厂务配套基础设施，承担着将芯片制造过程中产生的腐蚀性、可燃性、毒性及高温废气安全、稳定、低泄漏地从工艺机台引出至末端处理设施的关键职能，是保障晶圆厂高良率、高稳定性和生产安全的重要厂务基础设施。公司是中国大陆首家获得半导体业主广泛认可的FM4922认证的厂商。“点夺”是半导体工艺排气系统领域的高认可度品牌。中国大陆22家主流半导体厂商3的54座主要晶圆厂中有87%使用了公司的产品，交付产品的最长稳定运行年限已超过18年4，公司从未发生因产品气密性或可靠性问题导致的重大质量事件。公司的半导体工艺排气系统产品在中芯国际、华虹集团、长鑫科技等国内头部晶圆厂要求苛刻的酸性、碱性排气系统中承担主要职责，也应用在海力士、美光、德州仪器、英飞凌、意法半导体、英特尔等业界知名厂商位于中国大陆及海外的工厂，产品交付至法国、意大利、日本、马来西亚、新加坡、美国等国家。",
+      "key_points": [
+        "当前审核状态：已问询",
+        "保荐机构：兴业证券股份有限公司",
+        "所属行业：专用设备制造业",
+        "净利润参考值：1.18亿元"
+      ],
+      "risk_factors": [
+        "尚未基于招股书全文生成风险摘要。"
+      ],
+      "financial_snapshot": {
+        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
+      },
+      "source": "cninfo_project"
+    },
+    "collected_at": "2026-07-21T03:56:47+00:00",
+    "id": "08c3ca9c75d83569a3b8286e"
+  }
+]
