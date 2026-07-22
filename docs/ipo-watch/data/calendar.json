@@ -1,22 +1,7 @@
 [
   {
     "market": "A股",
-    "name": "N泰诺-U",
-    "code": "688806.SH",
-    "apply_code": "787806",
-    "event_date": "2026-07-21",
-    "event_type": "上市",
-    "listing_date": "2026-07-21",
-    "apply_date": "2026-07-10",
-    "offer_price": "14.46",
-    "financing_total": "9.99亿元",
-    "business": "全人源抗体药物的开发、生产和销售",
-    "source": "东方财富",
-    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
-  },
-  {
-    "market": "A股",
-    "name": "乔路铭",
+    "name": "N乔路铭",
     "code": "920079.BJ",
     "apply_code": "920079",
     "event_date": "2026-07-22",
@@ -118,5 +103,18 @@
     "business": "高可靠模拟芯片及微模块产品的研发设计、测试及销售",
     "source": "东方财富",
     "source_url": "https://data.eastmoney.com/xg/xg/default.html"
+  },
+  {
+    "market": "港股",
+    "name": "中际旭创",
+    "code": "03308.HK",
+    "event_date": "2026-07-30",
+    "event_type": "上市",
+    "listing_date": "2026-07-30",
+    "apply_date": "",
+    "offer_price": "N/A",
+    "financing_total": "",
+    "source": "AAStocks",
+    "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=03308"
   }
 ]
