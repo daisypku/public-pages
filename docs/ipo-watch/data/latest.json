@@ -29,7 +29,7 @@
       ],
       "source": "cninfo_project"
     },
-    "collected_at": "2026-07-25T03:48:58+00:00",
+    "collected_at": "2026-07-26T04:07:44+00:00",
     "id": "3705b226b66c9d6b031fead8"
   },
   {
@@ -62,7 +62,7 @@
       ],
       "source": "cninfo_project"
     },
-    "collected_at": "2026-07-25T03:49:04+00:00",
+    "collected_at": "2026-07-26T04:07:53+00:00",
     "id": "efd35cecacbc0a04665bdb4d"
   },
   {
@@ -95,7 +95,7 @@
       ],
       "source": "cninfo_project"
     },
-    "collected_at": "2026-07-25T03:49:00+00:00",
+    "collected_at": "2026-07-26T04:07:45+00:00",
     "id": "ced1ed7c644931b43930b7a7"
   },
   {
@@ -128,7 +128,7 @@
       ],
       "source": "cninfo_project"
     },
-    "collected_at": "2026-07-25T03:49:02+00:00",
+    "collected_at": "2026-07-26T04:07:47+00:00",
     "id": "0856f2a02faa5ae2b9805111"
   },
   {
@@ -2325,240 +2325,5 @@
     },
     "collected_at": "2026-07-12T09:52:19+00:00",
     "id": "680261bdbc569e8d794aa821"
-  },
-  {
-    "exchange": "HKEX",
-    "issuer": "山東寶蓋新材料科技股份有限公司",
-    "document_type": "聆訊後資料集（第一次呈交）",
-    "publish_date": "2026-06-25",
-    "update_date": "2026-06-25",
-    "board": "GEM",
-    "industry": null,
-    "sponsor": null,
-    "status": "A",
-    "pdf_url": "https://www1.hkexnews.hk/app/gem/2026/108409/documents/gem26062501852_c.pdf",
-    "source_url": "https://www1.hkexnews.hk/app/appindex.html?lang=zh",
-    "detail_url": "https://www1.hkexnews.hk/app/gem/2026/108409/2026062501779_c.htm",
-    "title": "山東寶蓋新材料科技股份有限公司 聆訊後資料集（第一次呈交）",
-    "summary": {
-      "disclaimer": "自动生成，仅供信息整理，不构成投资建议。",
-      "financial_snapshot": {
-        "income_statement": [
-          {
-            "gross_margin": "38.2%",
-            "gross_profit": "52,377",
-            "net_margin": "18.4%",
-            "net_profit": "25,222",
-            "revenue": "137,135",
-            "year": "2023"
-          },
-          {
-            "gross_margin": "37.5%",
-            "gross_profit": "49,084",
-            "net_margin": "16.5%",
-            "net_profit": "21,624",
-            "revenue": "130,866",
-            "year": "2024"
-          },
-          {
-            "gross_margin": "38.2%",
-            "gross_profit": "54,821",
-            "net_margin": "16.7%",
-            "net_profit": "24,054",
-            "revenue": "143,645",
-            "year": "2025"
-          }
-        ],
-        "summary": "2023至2025財年，公司收入在2024年短暫下降後於2025年創下新高。毛利率保持在37.5%至38.2%之間，相對穩定。淨利潤趨勢與收入一致，在2024年有所下滑後於2025年回升。"
-      },
-      "key_points": [
-        "公司是中國知名的複合材料製造商，根據招股書信息，在中國複合材料井蓋行業的市場份額排名第三。",
-        "主要產品包括複合材料井蓋、格柵和樹脂排水溝，核心加工工藝為團狀模塑料(BMC)和片狀模塑料(SMC)。",
-        "2023至2025財年，公司收入分別為人民幣1.37億元、1.31億元和1.44億元，淨利潤分別為2522萬元、2162萬元和2405萬元，業績在2024年出現短暫下滑後回升。",
-        "公司銷售渠道包括分銷商和終端用戶，其中分銷商為主要收入來源，2025年佔總收入的67.2%。",
-        "公司面臨的主要風險包括市場需求變動、對主要原材料及少數供應商的依賴、技術變革及替代品威脅等。"
-      ],
-      "one_line_business": "一家總部位於中國山東省的複合材料製造商，主要從事複合材料井蓋、格柵及樹脂排水溝等產品的研發、生產及銷售。",
-      "questions_to_follow": [
-        "2024年公司收入及淨利潤均出現下滑，其背後分產品、分客戶的具體原因是什麼？2025年業績回升的驅動因素是否可持續？",
-        "公司對主要原材料供應商的依賴程度如何，與核心供應商的合作關係是否穩固？公司是否有應對原材料價格大幅波動的風險管理措施？",
-        "分銷商貢獻了超過三分之二的收入，公司對主要分銷商的依賴程度有多高？公司如何管理其分銷網絡以確保銷售穩定性？"
-      ],
-      "risk_factors": [
-        "市場需求可能出現重大不利變動，從而影響業務及經營業績。",
-        "業務依賴主要原材料（如樹脂、玻璃纖維）的穩定供應。",
-        "依賴少數供應商提供主要原材料，可能面臨供應中斷或價格波動風險。",
-        "可能無法跟上市場技術的迅速變化，導致產品競爭力下降。",
-        "替代性產品（如金屬或塑料井蓋）的出現可能對業務構成威脅。",
-        "面臨與產品質量相關的風險。"
-      ]
-    },
-    "collected_at": "2026-06-28T05:02:58+00:00",
-    "id": "36606fb0605f2062fe43eb40"
-  },
-  {
-    "exchange": "CNINFO",
-    "issuer": "深圳市时创意电子股份有限公司",
-    "document_type": "A股IPO项目更新",
-    "publish_date": "2026-06-25",
-    "update_date": "2026-06-25",
-    "board": "A股IPO",
-    "industry": "计算机、通信和其他电子设备制造业",
-    "sponsor": "中信证券股份有限公司",
-    "status": "已受理",
-    "pdf_url": null,
-    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
-    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1829",
-    "title": "深圳市时创意电子股份有限公司 A股IPO项目更新",
-    "summary": {
-      "financial_snapshot": {
-        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
-      },
-      "key_points": [
-        "当前审核状态：已受理",
-        "保荐机构：中信证券股份有限公司",
-        "所属行业：计算机、通信和其他电子设备制造业",
-        "净利润参考值：5.77亿元"
-      ],
-      "one_line_business": "公司主要从事半导体存储器的研发、封装测试、生产和销售，主要产品可分为嵌入式存储芯片和存储模组两大类别，产品主要应用领域包括AI智能终端、智能机器人、智能汽车、工业及医疗设备等，并已积极布局AI数据中心存储、车规级存储等产品。公司是国内少数具备从存储芯片封装到产品制造能力的独立存储芯片模组厂商，坚持“研发、设计、封装、测试、智造”一体化经营战略，在经营模式、产品研发、先进封测制造、产业链资源、自有品牌建设及全球化运营等方面具有核心竞争力。",
-      "risk_factors": [
-        "尚未基于招股书全文生成风险摘要。"
-      ],
-      "source": "cninfo_project"
-    },
-    "collected_at": "2026-07-12T09:52:33+00:00",
-    "id": "c8e12f3022cd94bde78bf0cb"
-  },
-  {
-    "exchange": "CNINFO",
-    "issuer": "江苏超力电器股份有限公司",
-    "document_type": "A股IPO项目更新",
-    "publish_date": "2026-06-25",
-    "update_date": "2026-06-25",
-    "board": "A股IPO",
-    "industry": "汽车制造业",
-    "sponsor": "中信建投证券股份有限公司",
-    "status": "已受理",
-    "pdf_url": null,
-    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
-    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1828",
-    "title": "江苏超力电器股份有限公司 A股IPO项目更新",
-    "summary": {
-      "financial_snapshot": {
-        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
-      },
-      "key_points": [
-        "当前审核状态：已受理",
-        "保荐机构：中信建投证券股份有限公司",
-        "所属行业：汽车制造业",
-        "净利润参考值：1.25亿元"
-      ],
-      "one_line_business": "公司是一家行业领先的汽车热管理零部件及系统模块供应商，依托核心电机电控技术，构建了覆盖汽车动力系统热管理、乘员舱热管理和电池热管理等主要汽车热管理系统的产品矩阵，主要产品包括电子风扇、空调鼓风机、散热器、WPTC加热器等汽车热管理零部件和前端冷却模块等汽车热管理系统模块。公司汽车电子风扇和汽车空调鼓风机产品市场占有率位居行业前列，也是国内热管理零部件厂商中率先向系统模块供应商升级的企业之一。",
-      "risk_factors": [
-        "尚未基于招股书全文生成风险摘要。"
-      ],
-      "source": "cninfo_project"
-    },
-    "collected_at": "2026-07-12T09:52:30+00:00",
-    "id": "d602ae85859aa2a920d8c727"
-  },
-  {
-    "exchange": "CNINFO",
-    "issuer": "山东高速信联科技股份有限公司",
-    "document_type": "A股IPO项目更新",
-    "publish_date": "2026-06-25",
-    "update_date": "2026-06-25",
-    "board": "A股IPO",
-    "industry": "软件和信息技术服务业",
-    "sponsor": "中泰证券股份有限公司",
-    "status": "已受理",
-    "pdf_url": null,
-    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
-    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1827",
-    "title": "山东高速信联科技股份有限公司 A股IPO项目更新",
-    "summary": {
-      "financial_snapshot": {
-        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
-      },
-      "key_points": [
-        "当前审核状态：已受理",
-        "保荐机构：中泰证券股份有限公司",
-        "所属行业：软件和信息技术服务业",
-        "净利润参考值：1.36亿元"
-      ],
-      "one_line_business": "公司专注于智慧交通领域新一代信息技术服务，是全国领先的为汽车厂商、车主、高速公路业主及停车场运营方等提供ETC信息技术服务和数据应用生态服务的企业。截至2025年12月31日，公司累计发行ETC用户量、报告期内新增ETC用户量及ETC用户通行费交易规模均为全国第一，在行业内率先实现ETC汽车前装和互联网发行模式的大规模落地应用。公司依托ETC数据基础汇聚交通行业多维度数据资源，利用大数据分析、云计算等先进技术，深挖用户服务层面的场景应用，构建了一体化多场景的智慧交通服务体系。",
-      "risk_factors": [
-        "尚未基于招股书全文生成风险摘要。"
-      ],
-      "source": "cninfo_project"
-    },
-    "collected_at": "2026-07-12T09:52:29+00:00",
-    "id": "d9881f45dcb3d315395508b2"
-  },
-  {
-    "exchange": "CNINFO",
-    "issuer": "四川腾盾科创股份有限公司",
-    "document_type": "A股IPO项目更新",
-    "publish_date": "2026-06-25",
-    "update_date": "2026-06-25",
-    "board": "A股IPO",
-    "industry": "铁路、船舶、航空航天和其他运输设备制造业",
-    "sponsor": "中国国际金融股份有限公司",
-    "status": "已问询",
-    "pdf_url": null,
-    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
-    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1804",
-    "title": "四川腾盾科创股份有限公司 A股IPO项目更新",
-    "summary": {
-      "financial_snapshot": {
-        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
-      },
-      "key_points": [
-        "当前审核状态：已问询",
-        "保荐机构：中国国际金融股份有限公司",
-        "所属行业：铁路、船舶、航空航天和其他运输设备制造业",
-        "净利润参考值：-4.26亿元"
-      ],
-      "one_line_business": "公司主要从事高端无人机系统的研发、生产、销售及相关服务，致力于为国防装备、低空经济及通用航空等领域提供智能化、模块化、集群化的无人机系统产品及多场景应用的整体解决方案。作为国内大型智能无人机系统的领军企业、国内极少数具备大型无人机全系统自主研发能力及多场景应用技术储备的企业，公司以科技创新为驱动构建了涵盖大型固定翼无人机、无人直升机、水陆两栖无人机、蜂群无人子机等多元产品谱系，产品覆盖滑跑起降、垂直起降、水上起降、地面发射、空中投放等多种部署方式。其中，大型多发固定翼无人机系列是公司的核心产品，公司在大型无人机平台应用了多发廿式布局设计。公司产品广泛应用于侦察打击、战场支援保障、应急救援、人工影响天气、物流运输等多个军民应用领域。公司系国家级专精特新重点“小巨人”企业，在我国工信部新一代人工智能产业创新重点任务“智能无人跨域协同平台”项目揭榜挂帅工作中荣获揭榜优胜单位、进入工信部及应急管理部2024年应急通信装备创新揭榜挂帅入围名单，2025年公司被授予“全国就业与社会保障先进民营企业”称号，2026年公司被授予“全国五一劳动奖状”。截至2025年12月31日，公司拥有境内专利302项（其中发明专利175项），公司牵头或参与十余项重要科研项目。",
-      "risk_factors": [
-        "尚未基于招股书全文生成风险摘要。"
-      ],
-      "source": "cninfo_project"
-    },
-    "collected_at": "2026-07-12T09:52:26+00:00",
-    "id": "828b82d965114d124bf98cea"
-  },
-  {
-    "exchange": "CNINFO",
-    "issuer": "上海季丰电子股份有限公司",
-    "document_type": "A股IPO项目更新",
-    "publish_date": "2026-06-25",
-    "update_date": "2026-06-25",
-    "board": "A股IPO",
-    "industry": "专业技术服务业",
-    "sponsor": "光大证券股份有限公司",
-    "status": "已问询",
-    "pdf_url": null,
-    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
-    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1799",
-    "title": "上海季丰电子股份有限公司 A股IPO项目更新",
-    "summary": {
-      "financial_snapshot": {
-        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
-      },
-      "key_points": [
-        "当前审核状态：已问询",
-        "保荐机构：光大证券股份有限公司",
-        "所属行业：专业技术服务业",
-        "净利润参考值：0.91亿元"
-      ],
-      "one_line_business": "公司是一家半导体领域检测服务与检测硬件产品的全功能、一站式解决方案提供商，围绕芯片设计、晶圆制造、封装等半导体全产业链企业的检测需求，提供第三方实验室检测分析服务、集成电路测试板等检测硬件产品以及量产测试服务。以集成电路为主要代表的半导体行业，其研发和量产制造是高度复杂精密、技术迭代快速、投资成本巨大的综合性工程。半导体检测贯穿从研发、制造到系统化应用的全流程，在芯片“0到1”和“规模量产”的过程中发挥着关键作用，且涉及半导体、材料、机械、光学等多学科的交叉应用，具有较高的技术门槛，属于半导体产业中不可或缺的重要组成部分，也是国家政策认可和鼓励的半导体产业链环节之一。",
-      "risk_factors": [
-        "尚未基于招股书全文生成风险摘要。"
-      ],
-      "source": "cninfo_project"
-    },
-    "collected_at": "2026-07-12T09:52:35+00:00",
-    "id": "136f6512888debef6ce0b632"
   }
 ]
