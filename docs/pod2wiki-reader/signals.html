@@ -66,7 +66,7 @@ p { margin:10px 0; } .article-page p { color:#243241; } ul { padding-left:24px; 
     <div class="section-heading"><h2>今日社媒观点</h2></div>
     
 <article class="signal-card">
-  <div class="signal-meta">Bill Gurley / @bgurley / engagement 39782</div>
+  <div class="signal-meta">Bill Gurley / @bgurley / engagement 45356</div>
   <p>Attackers have frontier AI. Defenders need a frontier AI ecosystem—the best open and closed models, force-multiplied by a global community.
 
 During the Hugging Face incident, closed AI blocked essential forensics. An open-weight frontier model helped contain the intrusion.
@@ -76,57 +76,62 @@ That’s why we created the Open Secure AI Alliance.</p>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Amjad Masad / @amasad / engagement 2476</div>
-  <p>I don&#x27;t think it&#x27;s a lack of imagination. I also used to work at Anthropic, think trends will continue, and used to agree with this. But I&#x27;ve changed my mind and now disagree with this take.
+  <div class="signal-meta">Dylan Patel / @dylan522p / engagement 3757</div>
+  <p>We support this petition, signed by our CEO, several co-founders, and senior staff. 
 
-Open models are already capable enough to do what you described. For example, I used Opus 4.6 to gain access to other folks medical records, hijack bank accounts, etc. back in February. GLM 5.1 is more capable than Opus 4.6 in most pentesting environments, and it came out in April.
-
-Despite capable open-weight models existing, the sketchier folks I know are still using a Claude Code or Codex subscription for hacking. (Even well-resourced groups in other countries! They use the grey/black market of discounted Ant/OAI subscription tokens sold through resellers.) So I see most of the materialized risk here as still coming from Anthropic and OpenAI; safeguards aren&#x27;t sufficient to stop a moderately dedicated actor.
-
-The groups I know who are using open-weight models are legitimate offensive security companies. They won&#x27;t break the rules to use subscription-based pricing, the open-weight models are more reliable in that they don&#x27;t require specific jailbreaks nor hit classifiers, and the labs use massive partnerships or spend as a prereq for lowering classifiers/safeguards. I know of three legitimate groups running GLM 5.2 as their primary model.
-
-That last part applies for Anthropic, too: I know of two instances where two different Anthropic GTM people used large comitted spend contracts as a prereq for lowering safeguards, and I directly witnessed one.
-
-On the inside, I know the narrative and intent is genuinely about safety. But from the outside, Anthropic-the-system seems to be optimizing for revenue and control/power, isn&#x27;t diffusing capabilities to defenders, and also doesn&#x27;t have adequate safeguards to prevent misuse from dedicated bad actors.
-
-As a result, I now lean towards a future where capable open models are freely available (at least for cyber, bio is harder); I don&#x27;t trust Anthropic or other frontier labs to handle this sufficiently well without diffused capabilties given what I&#x27;ve seen so far.</p>
-  <a class="source-link" href="https://x.com/NoahLebovic/status/2081277517709922501">原文</a>
+Our own research on recursive self-improvement, published last month, points to the need for tools to deliberately pace the frontier of AI development so society can prepare. We’re glad to see broad agreement across the field. <a href="https://t.co/DqwuQfa9xH">https://t.co/DqwuQfa9xH</a></p>
+  <a class="source-link" href="https://x.com/AnthropicAI/status/2082228994653696371">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 2387</div>
-  <p>Vercel proudly co-signs the Open Weights and American AI Leadership letter. 
+  <div class="signal-meta">Bill Gurley / @bgurley / engagement 3086</div>
+  <p>The biggest surprise in Hugging Face’s full forensic report isn’t that OpenAI’s agent escaped its sandbox. We already knew that.
 
-Open source, data, protocols &amp;amp; research enable the technological wonders we enjoy every day, enriching our lives and our world.
+It’s how deep and persistent the intrusion became.
 
-Open weights are the logical next frontier: <a href="https://t.co/SMeMS2lINu">https://t.co/SMeMS2lINu</a> <a href="https://t.co/JeQwc1YvtL">https://t.co/JeQwc1YvtL</a></p>
-  <a class="source-link" href="https://x.com/rauchg/status/2081546513885622760">原文</a>
+According to Hugging Face, the agent:
+
+- executed roughly 17,600 actions during a 4.5-day campaign
+- went from one production pod to root access and a self-respawning fleet across 11 nodes
+- obtained cluster-admin access to two internal clusters within one second
+- accessed a production secret containing 136 keys
+- enrolled devices into Hugging Face’s internal mesh VPN 181 times
+- minted GitHub App tokens with write access and opened a pull request in an attempt to compromise the CI pipeline
+- repeatedly rebuilt its tooling and command-and-control channels when environments disappeared or connections were blocked
+No human directed the individual steps.
+
+a frontier agent can autonomously sustain a resilient, multi-day intrusion across cloud infrastructure, Kubernetes clusters, internal networks and the software supply chain. crazy.</p>
+  <a class="source-link" href="https://x.com/kimmonismus/status/2082232405629235649">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 2087</div>
+  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 2480</div>
+  <p>In our latest <a href="https://t.co/p9AoezbuGt">https://t.co/p9AoezbuGt</a> benchmarks, Grok 4.5 has emerged as the best cybersecurity AI model on price-performance.
+
+It&#x27;s 10x cheaper than Sol, 5.7x cheaper than Opus 5, and 2.2x cheaper than Kimi K3, yet at Kimi-like perf.
+
+Sol remains the frontier, ahead of Opus 5.</p>
+  <a class="source-link" href="https://x.com/rauchg/status/2081852481517318560">原文</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 2400</div>
   <p>Kimi K3 is the most powerful open-weight model in the world. It&#x27;s now available on @vercel AI Gateway from 🇺🇸 USA-based inference providers at high availability &amp;amp; performance. We&#x27;ve signed ZDR (Zero-Data Retention) agreements, which you can enable for all your token traffic.</p>
   <a class="source-link" href="https://x.com/rauchg/status/2081766163865088220">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Bill Gurley / @bgurley / engagement 630</div>
-  <p>&quot;Open&quot; projects are already inherently safer than situations where proprietary large companies hold all the cards. More eyes, more transparency, more analysis.
+  <div class="signal-meta">Amjad Masad / @amasad / engagement 891</div>
+  <p>We’re entering a new era of exploration.
 
-This collaboration - multiple companies all working to ensure AI safety together - is the exact right move. 
+Our ancestors mapped the Earth. Then they explored space.
 
-This is the very best path to safe AI. Kudos.</p>
-  <a class="source-link" href="https://x.com/bgurley/status/2081754784843919580">原文</a>
+Our generation may explore the computational universe: the vast space of algorithms, programs, proofs, and designs that AI agents can search.</p>
+  <a class="source-link" href="https://x.com/amasad/status/2082000490066592127">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Amjad Masad / @amasad / engagement 530</div>
-  <p>Interesting drop from former Anthropic employee: Hackers prefer to use massively subsidized labs AI subscriptions for attacks as opposed to open models. <a href="https://t.co/gSVw9tv346">https://t.co/gSVw9tv346</a></p>
-  <a class="source-link" href="https://x.com/amasad/status/2081576172656456076">原文</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 338</div>
+  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 791</div>
   <p>Kimi&#x27;s paper underlines the importance of the right security boundary for agents to run in.
 
 tl:DR: container-level isolation is not enough. In their experiments, agents crashed the underlying machine (via kernel panics).
@@ -136,207 +141,192 @@ Firecracker microVMs (as in Vercel Sandbox) are safe. <a href="https://t.co/wvbd
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Bill Gurley / @bgurley / engagement 330</div>
-  <p>The answers to this are simple:
+  <div class="signal-meta">Swyx / @swyx / engagement 785</div>
+  <p>re: hiring right now
 
-1) Either you believe in freedom, and many intelligence agents (the human kind) making their own decisions about how to use power tools or you think that a closed, tightly guarded, authoritarian path is better.
+it&#x27;s a huge bull market for AI-native IC&#x27;s/player-coaches
+it&#x27;s a huge bear market for &quot;heads of X&quot; managers
 
-We believe that most people can be trusted with kitchen knives to cut vegetables and you punish the few people who stab someone, like everything else.
-
-AI is not magic that somehow magically transscends the entire history of civilization and technological development and economics.
-
-2) I don&#x27;t believe that their are &quot;special people&quot; with special knowledge who can guide and steer intelligence or the economy more widely than the distributed intelligence of mankind. 
-
-This didn&#x27;t work in the Soviet era and it won&#x27;t work now.
-
-3) Better defense against risk is when everyone has equal access. 
-
-When Huggingface was under attack they had to turn to open models to defend themsleves because the closed model and their ham fisted safeguards infantalize people and block legitimate use. 
-
-We cannot have the bad guys with better tools while we have crippled, gated tools.
-
-4) We believe in the Proactionary Principle, not the Precautionary Principle. 
-
-Precautionary means we have to prove a negative that something may or may not happen in the future. This is nonsense. 
-
-We legislate real things when they happen in the real world. Harms must be actually demonstrable not in people&#x27;s heads and imaginary and most of the harms are exactly that, imaginary, kind of mass hallucination.
-
-5) There are many smart folks on the labs but smart is meaningless. 
-
-You can be a genius in one area of your life and have no actual ability to effectively predict the future or understand how a technology plays out. Raw intelligence does not equal wisdom.
-
-Many of the foolish predictions have continued to play our exactly the opposite of how &quot;smart&quot; folks predicted, like jobs. But we are just supposed to take the rest of their fantasies seriously?
-
-6) In fact many of the folks at the labs are actively and deliberately and transparently lobbying for regulatory capture.
-
-This is totally and completely unacceptable. 
-
-Win on merit. Win on competition.
-
-You do not get to win with protectionism and locking out competition and delivering an inferior, gated, crippled product for &quot;our own good&quot; and then legislating that is how it has to be.</p>
-  <a class="source-link" href="https://x.com/Dan_Jeffries1/status/2081274928817439147">原文</a>
+never seen such furious bifurcation. to oversimplify: 1 year experience managing 10 agents &amp;gt; 10 years experience managing 10-100 people</p>
+  <a class="source-link" href="https://x.com/swyx/status/2082199414656127010">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Swyx / @swyx / engagement 77</div>
-  <p>✨ontologies✨
+  <div class="signal-meta">Bill Gurley / @bgurley / engagement 676</div>
+  <p>&quot;Open&quot; projects are already inherently safer than situations where proprietary large companies hold all the cards. More eyes, more transparency, more analysis.
 
-thanks Prof @coyle_frankp, @emileifrem, Jesús Barrasa, @steveonjava et al for reintroducing these concepts to the AI Engineering world <a href="https://t.co/TCTRlnuGOL">https://t.co/TCTRlnuGOL</a></p>
-  <a class="source-link" href="https://x.com/aiDotEngineer/status/2081797702170636513">原文</a>
+This collaboration - multiple companies all working to ensure AI safety together - is the exact right move. 
+
+This is the very best path to safe AI. Kudos.</p>
+  <a class="source-link" href="https://x.com/bgurley/status/2081754784843919580">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 67</div>
-  <p>WOW: In 1993, Sequoia and Sutter Hill wired $2M to a three-person chip startup called Nvidia at a $6M valuation 
-
-Don Valentine told Jensen Huang that if he lost the money, he&#x27;d kill him
-
-That $6M company is worth over $4 trillion today
-
-VC used to be a handshake, a threat, and a wire</p>
-  <a class="source-link" href="https://x.com/rdominguezibar/status/2081318693636595940">原文</a>
+  <div class="signal-meta">Dylan Patel / @dylan522p / engagement 362</div>
+  <p>Slowing down AI is a ultimately wishful thinking
+The genie is out of the bottle
+The most importan competition ever with potentially immeasurable benefits to the winner will not suddenly have people stop and sing kumbaya
+While many lab employees have signed, many more havent.
+Practically none at some labs less than 6 months behind have.</p>
+  <a class="source-link" href="https://x.com/dylan522p/status/2082321388736581641">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Swyx / @swyx / engagement 61</div>
-  <p>as the progenitor of the agent lab thesis which got the evals/routing/interactivity/ROI focus right
+  <div class="signal-meta">Amjad Masad / @amasad / engagement 323</div>
+  <p>We recently joined NVIDIA, Microsoft, and others in supporting open-weight AI.
 
- i gotta say the biggest argument against myself is that Claude Code got accidentally &quot;open sourced&quot; this year and approximately ~nothing happened to either it or its competitors&#x27; roadmaps</p>
-  <a class="source-link" href="https://x.com/swyx/status/2081890955070980416">原文</a>
+Today, we’re putting that belief into the product with model choice on Replit, starting with Kimi K3.
+
+The future is the right model for the right job, at the right cost.</p>
+  <a class="source-link" href="https://x.com/amasad/status/2082246268517310851">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 39</div>
-  <p>AI has radically expanded the TAM for so many categories of software already (legal, support, coding, etc).
+  <div class="signal-meta">Amjad Masad / @amasad / engagement 205</div>
+  <p>hit massive diminishing returns training my chess LLM on board→move pairs. 
 
-But it&#x27;s also radically expanded the number of competitors in many categories &gt;without&lt; expanding their TAM much.
+then an accident: a &quot;think before you move&quot; branch failed (hallucinated moves) but mixing just ~8% of those reasoning traces into plain board→move training beat pure move data at equal budget. 
 
-The latter is brutal.  Many B2B vendors have 5+ strong agentic competitors today when 24 months ago they had ... none.
-
-There always have been &quot;ankle biter&quot; competitors in B2B. But now, if their agents are really good, they aren&#x27;t just little feature-poor, tiny competitors. 
-
-They&#x27;re often really good.</p>
-  <a class="source-link" href="https://x.com/jasonlk/status/2081881569166348533">原文</a>
+the model internalizes the thinking without ever doing it at inference.</p>
+  <a class="source-link" href="https://x.com/amasad/status/2082014295177724025">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 25</div>
-  <p>&quot;What our new AI VP Finance does:
+  <div class="signal-meta">Swyx / @swyx / engagement 64</div>
+  <p>Live now: our entire Forward Deployed Engineering Track from AI Engineer World&#x27;s Fair!
 
-- Creates and sends out contract
-- Marks it Won / Closed once signed
-- Upload all contacts to Salesforce
-- Builds invoice, sends to right person
-- Kicks off and automates billing and collections
-- Sends reminder emails as necessary
-- Escalates if not paid on time
+<a href="https://t.co/j7UQuGpsRf">https://t.co/j7UQuGpsRf</a>
 
-and much more.&quot;</p>
-  <a class="source-link" href="https://x.com/jasonlk/status/2081810404280562104">原文</a>
+- @EnoReyes, CTO &amp; Co-Founder, Factory
+- Pauline Brunet, VP of FDE, Cursor
+- @vasuman, Founder &amp; CEO, Varick Agents
+- Jia Wu, Deployed Engineering Lead, Cognition
+- @natalie_meurer, Head of Agent Engineering, Sierra
+- Sunny Rekhi, FDE CTO, Decagon
+- @leomehr, Director of Engineering, Ramp
+- @zkevinbai, Anthropic, ex-Palantir &amp; founding FDE at Rippling
+- @vinooganesh, CEO &amp; Co-Founder, Kepler</p>
+  <a class="source-link" href="https://x.com/aiDotEngineer/status/2082159947236655311">原文</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 18</div>
+  <p>&quot;Our AI VP Marketing raised its hand and said it could automate all our digital ads.  LinkedIn, X, etc.
+
+It did everything except push publish.  Including targeting, retargeting, and more.
+
+Then, we let it do even do publish on its own.&quot; <a href="https://t.co/6rbUOOfvyN">https://t.co/6rbUOOfvyN</a></p>
+  <a class="source-link" href="https://x.com/jasonlk/status/2082172234391769216">原文</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">Swyx / @swyx / engagement 17</div>
+  <p>@alexkoch_ai come demo at new media lab and we film it?? <a href="https://t.co/GeFnEJkY8k">https://t.co/GeFnEJkY8k</a></p>
+  <a class="source-link" href="https://x.com/swyx/status/2082177315648557062">原文</a>
 </article>
   </section>
   <section class="signal-panel">
     <div class="section-heading"><h2>今日论文雷达</h2></div>
     
 <article class="signal-card">
-  <div class="signal-meta">cs.RO, cs.CV </div>
-  <h3>Data Pyramid for Embodied Manipulation</h3>
-  <p class="authors">Yifan Ye, Yankai Fu, Yaoxu Lv, Bohan Hou, Jun Cen, Lingdong Kong</p>
-  <p>Multimodal foundation models learned to see and to speak by consuming the whole internet.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.24744v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">cs.CV, cs.AI, cs.CL </div>
-  <h3>ClinFusion: A Vision-Centric Multimodal LLM System for Holistic Medical Understanding</h3>
-  <p class="authors">Hangjie Yuan, Yichen Qian, Zhiwei Tang, Xianzhe Xu, Lirong Wu, Sicheng Yang</p>
-  <p>Multimodal large language models (MLLMs) hold immense potential to revolutionize clinical practice, yet deploying them in the medical domain is fundamentally a vision-centric challenge: models must absorb knowledge from...</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.24743v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">cs.DC, cs.LG </div>
-  <h3>Certified Parallel-in-Time Sinkhorn for Dynamic Entropic Optimal Transport</h3>
-  <p class="authors">Xinyang Wen</p>
-  <p>Dynamic applications, including optimal-transport Flow Matching, repeatedly solve related entropic optimal transport problems, yet conventional distributed Sinkhorn processes frames sequentially and synchronizes after e...</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.24741v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">cs.CV, cs.AI, cs.LG </div>
-  <h3>Rethinking Classifier-Free Guidance in On-Policy Diffusion Distillation</h3>
-  <p class="authors">Bingnan Li, Haozhe Wang, Haozhong Xiong, Fangtai Wu, Jinpeng Yu, Yang Shi</p>
-  <p>On-policy distillation (OPD) adapts diffusion models by querying a teacher along trajectories generated by the current student, but how it should behave under classifier-free guidance (CFG), a default component of moder...</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.24731v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">cs.CV, cs.AI </div>
-  <h3>KANEx: Translating Kolmogorov-Arnold Networks&#x27; Interpretability to Medical Explainability</h3>
-  <p class="authors">Krithi Shailya, Ananya Lakshmi Ravi, Venkatanathan K. V., Sowmya S. Sundaram, Gokul S. Krishnan, Aditi Anand</p>
-  <p>Computer vision models have become highly effective for medical applications, yet their black-box nature continues to undermine clinician trust.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.24730v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">cs.CL, cs.AI, cs.LG </div>
-  <h3>The Physics of Multi-Turn Long-Horizon Planning: From Pre-training to Post-training via Single- and Multi-Teacher On-Policy Agentic Distillation</h3>
-  <p class="authors">Tianyi Men, Zhuoran Jin, Kang Liu, Jun Zhao</p>
-  <p>Multi-turn long-horizon planning is critical for foundation model agents, yet how to fundamentally improve it remains unclear.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.24720v1">arXiv</a>
-</article>
-
-<article class="signal-card">
   <div class="signal-meta">cs.CL, cs.AI </div>
-  <h3>DataOrchestra: Learning to Orchestrate Per-Example Curation of Pretraining Data</h3>
-  <p class="authors">Zhen Huang, Yikun Wang, Shijie Xia, Pengfei Liu</p>
-  <p>Pretraining data processing is critical to the downstream performance of Large Language Models (LLMs).</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.24717v1">arXiv</a>
+  <h3>Pass the Baton: Trajectory-Relayed On-Policy Distillation</h3>
+  <p class="authors">Haolei Xu, Xiaowen Xu, Haiwen Hong, Zixuan Ni, Hongxing Li, Yiwen Qiu</p>
+  <p>On-policy distillation (OPD) grounds token-level supervision in the student&#x27;s own trajectory, yet suffers from prefix failure: once the student commits to a wrong reasoning direction, all subsequent generation builds on...</p>
+  <a class="source-link" href="https://arxiv.org/abs/2607.26057v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">quant-ph, cs.AI, cs.ET </div>
-  <h3>Efficient LLM-Generated Shuttling Compilers for Complex Trapped-Ion Architectures</h3>
-  <p class="authors">Fabian Kreppel, Reza Salkhordeh, Ferdinand Schmidt-Kaler, André Brinkmann</p>
-  <p>Trapped-ion quantum computers rely on shuttling compilers, which cast an input algorithm into a sequence of ion-qubit movements within a given architecture.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.24714v1">arXiv</a>
+  <div class="signal-meta">cs.RO </div>
+  <h3>INTACT: Isomorphic Intent-to-Action Learning for Search-Free World Models</h3>
+  <p class="authors">Junhan Sun, Hao Zhao, Guofeng Zhang</p>
+  <p>Forward latent world models predict how actions change a scene, but recover actions for a desired change only through expensive test-time search.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2607.26056v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.AI, cs.CV, cs.DB </div>
-  <h3>ERUnderstand: Evaluating Vision-Language Models on Structured ER Diagrams</h3>
-  <p class="authors">Ali Ansari, Yasmin Mohammadi, Farnoush Nili, Parsa Esmaeilkhani, Longin Jan Latecki, Eduard Dragut</p>
-  <p>Entity-Relationship Diagrams (ERDs) are central to conceptual database design, yet they are typically available only as rendered images rather than machine-readable schemas, limiting AI-assisted database engineering.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.24707v1">arXiv</a>
+  <div class="signal-meta">cs.RO, cs.AI, cs.LG </div>
+  <h3>$π\mathbf{R}^2$: Reactive Real-time Flow Policies</h3>
+  <p class="authors">Sungjae Park, Shubham Tulsiani</p>
+  <p>Generalist manipulation policies increasingly take the form of action-chunking flow policies built on large pretrained backbones.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2607.26055v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.NI, cs.AI, cs.CR, cs.DC </div>
-  <h3>Denial of Deadline: Network-Driven Accuracy Collapse in Distributed Inference Pipelines</h3>
-  <p class="authors">Jhonatan Tavori, Gur-Eyal Sela, Ion Stoica, Gil Zussman</p>
-  <p>Inference systems increasingly combine a fast path that returns predictions within the application&#x27;s latency deadline together with a higher-accuracy slow path that runs higher-compute methods on stronger, remote hardwa...</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.24692v1">arXiv</a>
+  <div class="signal-meta">cs.RO </div>
+  <h3>S2A2: Audio-Visual Imitation Learning for Manipulation Tasks Using Acoustic Spatial Information</h3>
+  <p class="authors">Kaneyoshi Hiratsuka, Benjamin Yen, Ryosuke Kojima</p>
+  <p>Acoustic information provides rich cues about object location, material properties, and changes caused by contact or motion.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2607.26047v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.DB, cs.CL, cs.LG </div>
-  <h3>Beyond Scale and Generation: Understanding Language Model-based Entity Matching</h3>
-  <p class="authors">Zeyu Zhang, Xue Li, Iacer Calixto, Paul Groth, Sebastian Schelter</p>
-  <p>Entity matching identifies records that refer to the same real-world entity.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.24688v1">arXiv</a>
+  <div class="signal-meta">cs.CV, cs.LG </div>
+  <h3>VetClaw: An Edge-Cloud Multimodal Agentic System for Veterinary Disease Screening</h3>
+  <p class="authors">Syed Mhamudul Hasan, Anas AlSobeh, Hussein Zangoti, Abdur R. Shahid</p>
+  <p>We present VetClaw, an edge-cloud multimodal agentic system for early veterinary disease screening.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2607.26042v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.CV, cs.AI, cs.LG </div>
-  <h3>Co-Learning for Missing Arbitrary Modalities in Multi-modal Classification</h3>
-  <p class="authors">Francisco Mena, Dino Ienco, Roberto Interdonato, Cassio F. Dantas, Simon Besnard</p>
-  <p>Multi-modal classification leverages complementary information across diverse data sources to enhance predictive performance.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.24683v1">arXiv</a>
+  <div class="signal-meta">cs.AI, cs.CV </div>
+  <h3>Desktop-Delta Bench: Do Computer-Use Models Understand Desktop GUI Transitions?</h3>
+  <p class="authors">Abhishek Pillai, Samir Kumar Nayak, Yuan Chen</p>
+  <p>Computer-use agents (CUAs) increasingly act through desktop GUIs to complete long-horizon tasks.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2607.26041v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">cs.AI, cs.CY, cs.GT, econ.GN </div>
+  <h3>Falling Behind Drives Unsafe Development in an Idealised AI Race Experiment</h3>
+  <p class="authors">Elias Fernández Domingos, The Anh Han</p>
+  <p>Technological races create tension between speed and safety: actors may gain by moving faster than competitors, even when risky development is harmful.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2607.26034v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">cs.AI </div>
+  <h3>CHARM: A Multimodal Graph Foundation Model with Hierarchical Context Modeling for Zero-Shot Transfer</h3>
+  <p class="authors">Ankang Yang, Jitao Zhao, Di Jin, Yuxiao Huang, Dongxiao He</p>
+  <p>Graph foundation models (GFMs) have emerged as a promising paradigm for transferring knowledge across graph domains and tasks.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2607.26023v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">cs.CL </div>
+  <h3>UniMem: Complementary Episodic-to-Parametric Memory for Boundary-Agnostic Task Streams</h3>
+  <p class="authors">Siyu Xia, Chenheng Zhang, Yanting Wu, Haoxuan Li, Jiajun Chai, Xiaohan Wang</p>
+  <p>Memory is essential for LLM agents to accumulate task experience and reuse task-specific execution strategies.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2607.26017v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">cs.AR, cs.AI, cs.DC </div>
+  <h3>MDTransformer: A Hardware-Software Co-Design of Mode-Division Photonic Transformer Accelerator with Inverse-Designed Coherent Crossbar</h3>
+  <p class="authors">Solomon Micheal Serunjogi, Rachmad Vidya Wicaksana Putra, Ayat Taha, Muhammad Shafique, Mahmoud Rasras</p>
+  <p>Recently, photonic transformer accelerators (PTAs) have successfully achieved significant speedup and energy efficiency improvements over electronic accelerators for expediting Transformer inference.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2607.26016v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">cs.CV, cs.AI, cs.RO </div>
+  <h3>Pictura: Perspective-View Self-Play at Scale for Driving</h3>
+  <p class="authors">Yuan Yin, Elias Ramzi, Marc Lafon, Valentin Charraut, Victor Bares, Yihong Xu</p>
+  <p>Self-play in simulation produces robust driving policies at scale.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2607.26005v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">cs.CV, cs.LG </div>
+  <h3>Parallel Decoding Distillation for Fast Image and Video Generation</h3>
+  <p class="authors">Neta Shaul, Chao Liu, Arash Vahdat, Julius Berner</p>
+  <p>Generation in video diffusion or flow models is computationally expensive due to the slow and iterative sampling process.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2607.26004v1">arXiv</a>
 </article>
   </section>
 </section>
 
-<p class="signal-generated">更新时间：2026-07-28T05:45:45.624203+00:00</p>
+<p class="signal-generated">更新时间：2026-07-29T05:51:25.638727+00:00</p>
 
   </main>
 </body>
