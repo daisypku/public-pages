@@ -1,0 +1,136 @@
+[
+  {
+    "exchange": "CNINFO",
+    "issuer": "重庆宇隆光电科技股份有限公司",
+    "document_type": "A股IPO项目更新",
+    "publish_date": "2026-07-29",
+    "update_date": "2026-07-29",
+    "board": "A股IPO",
+    "industry": "计算机、通信和其他电子设备制造业",
+    "sponsor": "中信证券股份有限公司",
+    "status": "已问询",
+    "pdf_url": null,
+    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
+    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1388",
+    "title": "重庆宇隆光电科技股份有限公司 A股IPO项目更新",
+    "summary": {
+      "one_line_business": "公司专注于新型半导体显示面板领域的智能控制卡及精密功能器件相关产品的研发、生产及销售，致力于成为我国智能控制领域最有价值的企业。报告期内，公司主要产品系LCD、OLED等新型半导体显示面板专用智能控制卡及其PCBA制造服务，并围绕半导体显示面板产业为核心应用领域配套显示用精密功能器件类产品，终端应用主要为平板电脑、笔记本电脑、显示器、中大尺寸电视、手机、智能穿戴等消费电子领域。",
+      "key_points": [
+        "当前审核状态：已问询",
+        "保荐机构：中信证券股份有限公司",
+        "所属行业：计算机、通信和其他电子设备制造业",
+        "净利润参考值：1.33亿元"
+      ],
+      "risk_factors": [
+        "尚未基于招股书全文生成风险摘要。"
+      ],
+      "financial_snapshot": {
+        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
+      },
+      "source": "cninfo_project"
+    },
+    "collected_at": "2026-07-30T03:42:18+00:00",
+    "id": "cee7e29d5459c6aba5002966"
+  },
+  {
+    "exchange": "CNINFO",
+    "issuer": "南通联亚药业股份有限公司",
+    "document_type": "A股IPO项目更新",
+    "publish_date": "2026-07-27",
+    "update_date": "2026-07-27",
+    "board": "A股IPO",
+    "industry": "医药制造业",
+    "sponsor": "中国国际金融股份有限公司",
+    "status": "注册生效",
+    "pdf_url": "https://static.cninfo.com.cn/finalpage/2025-06-24/1223974763.PDF",
+    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
+    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1314",
+    "title": "南通联亚药业股份有限公司 A股IPO项目更新",
+    "summary": {
+      "disclaimer": "自动生成，仅供信息整理，不构成投资建议。",
+      "financial_snapshot": {
+        "income_statement": [
+          {
+            "gross_margin": "",
+            "gross_profit": "",
+            "net_margin": "",
+            "net_profit": "",
+            "revenue": "55,007.01万元",
+            "year": "2022"
+          },
+          {
+            "gross_margin": "",
+            "gross_profit": "",
+            "net_margin": "",
+            "net_profit": "",
+            "revenue": "70,043.05万元",
+            "year": "2023"
+          },
+          {
+            "gross_margin": "",
+            "gross_profit": "",
+            "net_margin": "",
+            "net_profit": "",
+            "revenue": "86,622.18万元",
+            "year": "2024"
+          }
+        ],
+        "summary": "报告期内（2022-2024年），公司营业收入呈现持续增长趋势。所提供的文本未披露毛利、净利等其他财务指标。"
+      },
+      "key_points": [
+        "公司是一家研发驱动型企业，专注于高端仿制药，特别是缓控释制剂和低剂量药物制剂，并已获得美国FDA对44个自研产品的批准。",
+        "报告期内（2022-2024年），公司营业收入持续增长，分别为55,007.01万元、70,043.05万元和86,622.18万元。",
+        "公司拥有丰富的在研产品管线，包括45个仿制药项目和2个改良型新药项目，部分在研项目具有首仿潜力。",
+        "公司采取“中美双报”的研发策略，计划将已在美国上市的高端制剂通过中美共线的审批路径快速引入国内市场。",
+        "本次IPO募集资金主要用于产业化基地项目、药物研发项目和补充流动资金，以解决产能瓶颈并加速新产品产业化。"
+      ],
+      "one_line_business": "一家从事复杂药物制剂（如缓控释及低剂量制剂）研发、生产和销售，并为其他机构提供研发服务的高新技术企业。",
+      "questions_to_follow": [
+        "招股书文本仅披露了营业收入，报告期内公司的毛利率、净利润及经营现金流等关键盈利和运营指标表现如何？",
+        "公司已有44个产品获美国FDA批准，其主要产品的具体销售额、市场份额、竞争格局以及在美国市场的商业化进展如何？",
+        "公司“中美双报”战略下，计划引入国内市场的重点产品有哪些？其在中国的注册审批进展、预期时间表及面临的集采政策影响是怎样的？"
+      ],
+      "risk_factors": [
+        "产能瓶颈风险：公司主要产品产能利用率长期维持在较高水平，若生产规模不能有效扩张，可能成为制约公司发展的瓶颈。",
+        "研发周期与投入风险：药品研发周期长，需要投入大量人力和资金，在研管线的最终研发成果和产业化进程存在不确定性。",
+        "国内市场拓展风险：公司计划加速拓展国内市场，可能面临与现有市场环境、医保改革方向和市场竞争相关的挑战。",
+        "创业板市场固有风险：拟上市的创业板市场具有创新投入大、经营风险高、业绩不稳定、退市风险高等特点。"
+      ]
+    },
+    "collected_at": "2026-07-30T03:42:18+00:00",
+    "id": "15d5b1a93807596e7850c669"
+  },
+  {
+    "exchange": "CNINFO",
+    "issuer": "东莞优邦材料科技股份有限公司",
+    "document_type": "A股IPO项目更新",
+    "publish_date": "2026-07-27",
+    "update_date": "2026-07-27",
+    "board": "A股IPO",
+    "industry": "计算机、通信和其他电子设备制造业",
+    "sponsor": "申万宏源证券承销保荐有限责任公司",
+    "status": "已问询",
+    "pdf_url": null,
+    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
+    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1638",
+    "title": "东莞优邦材料科技股份有限公司 A股IPO项目更新",
+    "summary": {
+      "financial_snapshot": {
+        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
+      },
+      "key_points": [
+        "当前审核状态：已问询",
+        "保荐机构：申万宏源证券承销保荐有限责任公司",
+        "所属行业：计算机、通信和其他电子设备制造业",
+        "净利润参考值：1.08亿元"
+      ],
+      "one_line_business": "公司是一家主营电子装联材料及配套自动化设备的研发、生产与销售的高新技术企业，主要拥有电子胶粘剂、电子焊接材料、湿化学品、自动化设备四大业务板块，为客户提供粘接、焊接、表面处理等电子装联解决方案，产品最终广泛应用于智能终端、通信、新能源、半导体等领域。公司是国内电子装联材料领先企业之一，自设立以来始终深耕电子装联材料行业，通过持续的技术研发、经验积累和市场开拓，公司建立了丰富的产品矩阵、完善的生产、研发和销售服务体系，形成了良好的行业口碑。公司与富士康、台达集团、和硕集团、群光电能、奇宏科技、明纬电子、D公司、立讯精密、亿纬锂能等行业知名企业建立了稳定的合作关系，产品最终服务于A公司、D公司、索尼、惠普、戴尔、亚马逊、中兴通讯、小鹏汽车等国内外知名终端品牌客户。公司以有机硅胶、锡膏为代表的多款产品性能及可靠性获得相应领域知名客户的认可并进入其供应链体系，正逐步推动类似产品国产化进程。",
+      "risk_factors": [
+        "尚未基于招股书全文生成风险摘要。"
+      ],
+      "source": "cninfo_project"
+    },
+    "collected_at": "2026-07-30T03:42:20+00:00",
+    "id": "da339bf48a0b93efcd51d6f4"
+  }
+]

@@ -1,6 +1,39 @@
 [
   {
     "exchange": "CNINFO",
+    "issuer": "重庆宇隆光电科技股份有限公司",
+    "document_type": "A股IPO项目更新",
+    "publish_date": "2026-07-29",
+    "update_date": "2026-07-29",
+    "board": "A股IPO",
+    "industry": "计算机、通信和其他电子设备制造业",
+    "sponsor": "中信证券股份有限公司",
+    "status": "已问询",
+    "pdf_url": null,
+    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
+    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1388",
+    "title": "重庆宇隆光电科技股份有限公司 A股IPO项目更新",
+    "summary": {
+      "one_line_business": "公司专注于新型半导体显示面板领域的智能控制卡及精密功能器件相关产品的研发、生产及销售，致力于成为我国智能控制领域最有价值的企业。报告期内，公司主要产品系LCD、OLED等新型半导体显示面板专用智能控制卡及其PCBA制造服务，并围绕半导体显示面板产业为核心应用领域配套显示用精密功能器件类产品，终端应用主要为平板电脑、笔记本电脑、显示器、中大尺寸电视、手机、智能穿戴等消费电子领域。",
+      "key_points": [
+        "当前审核状态：已问询",
+        "保荐机构：中信证券股份有限公司",
+        "所属行业：计算机、通信和其他电子设备制造业",
+        "净利润参考值：1.33亿元"
+      ],
+      "risk_factors": [
+        "尚未基于招股书全文生成风险摘要。"
+      ],
+      "financial_snapshot": {
+        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
+      },
+      "source": "cninfo_project"
+    },
+    "collected_at": "2026-07-30T03:42:18+00:00",
+    "id": "cee7e29d5459c6aba5002966"
+  },
+  {
+    "exchange": "CNINFO",
     "issuer": "南通联亚药业股份有限公司",
     "document_type": "A股IPO项目更新",
     "publish_date": "2026-07-27",
@@ -64,7 +97,7 @@
         "创业板市场固有风险：拟上市的创业板市场具有创新投入大、经营风险高、业绩不稳定、退市风险高等特点。"
       ]
     },
-    "collected_at": "2026-07-28T03:48:08+00:00",
+    "collected_at": "2026-07-30T03:42:18+00:00",
     "id": "15d5b1a93807596e7850c669"
   },
   {
@@ -97,7 +130,7 @@
       ],
       "source": "cninfo_project"
     },
-    "collected_at": "2026-07-28T03:48:13+00:00",
+    "collected_at": "2026-07-30T03:42:20+00:00",
     "id": "da339bf48a0b93efcd51d6f4"
   },
   {
@@ -1832,404 +1865,5 @@
     },
     "collected_at": "2026-07-12T09:51:06+00:00",
     "id": "4482c685231e14fee5054bab"
-  },
-  {
-    "exchange": "HKEX",
-    "issuer": "本末動力（北京）科技股份有限公司",
-    "document_type": "聆訊後資料集（第一次呈交）",
-    "publish_date": "2026-06-29",
-    "update_date": "2026-06-29",
-    "board": "主板",
-    "industry": null,
-    "sponsor": null,
-    "status": "A",
-    "pdf_url": "https://www1.hkexnews.hk/app/sehk/2026/108691/documents/sehk26062901535_c.pdf",
-    "source_url": "https://www1.hkexnews.hk/app/appindex.html?lang=zh",
-    "detail_url": "https://www1.hkexnews.hk/app/sehk/2026/108691/2026062901532_c.htm",
-    "title": "本末動力（北京）科技股份有限公司 聆訊後資料集（第一次呈交）",
-    "summary": {
-      "disclaimer": "自动生成，仅供信息整理，不构成投资建议。",
-      "financial_snapshot": {
-        "income_statement": [
-          {
-            "gross_margin": "13.5%",
-            "gross_profit": "236萬元人民幣",
-            "net_loss": "錄得虧損，具體數額未在文本中披露",
-            "net_margin": "未披露",
-            "revenue": "1,754萬元人民幣",
-            "year": "2023"
-          },
-          {
-            "gross_margin": "19.3%",
-            "gross_profit": "1,540萬元人民幣",
-            "net_loss": "錄得虧損，具體數額未在文本中披露",
-            "net_margin": "未披露",
-            "revenue": "7,980萬元人民幣",
-            "year": "2024"
-          },
-          {
-            "gross_margin": "21.5%",
-            "gross_profit": "6,059萬元人民幣",
-            "net_loss": "錄得虧損，具體數額未在文本中披露",
-            "net_margin": "未披露",
-            "revenue": "2億8,172萬元人民幣",
-            "year": "2025"
-          }
-        ],
-        "summary": "公司在2023至2025年間經歷了爆炸性的收入增長。毛利潤隨之顯著增加，毛利率也穩步提升。儘管如此，公司在整個記錄期內仍處於淨虧損狀態。"
-      },
-      "key_points": [
-        "公司是中國領先的機器人動力模組供應商，按2025年收入計，在中國消費機器人直驅動力模組行業排名第一，市場份額為61.1%。",
-        "收入增長迅猛，從2023年的人民幣1,754萬元增長至2025年的人民幣2.82億元，複合年增長率達300.8%，主要由消費類機器人直驅動力模組的銷量驅動。",
-        "儘管收入高速增長且毛利率持續改善（從2023年的13.5%提升至2025年的21.5%），公司在過往記錄期間持續錄得淨虧損，但經調整淨虧損率已大幅收窄。",
-        "客戶集中度非常高，2025年來自前五大客戶的收入佔總收入的85.7%，其中最大客戶佔比42.8%。",
-        "公司擁有自主研發能力，在中國擁有321項專利，並推出了多款全球首創的輪足機器人產品，如全球首款商業化整機模組化雙輪足機器人D1。"
-      ],
-      "one_line_business": "一家以直驅技術為核心，主要在中國從事機器人動力模組及機器人銷售的技術公司。",
-      "questions_to_follow": [
-        "公司預計何時可以實現首次年度淨利潤？實現盈利的關鍵驅動因素和量化指標是什麼？",
-        "鑑於客戶集中度持續升高，公司是否有具體的戰略來拓展新客戶、降低對主要客戶的依賴？",
-        "核心產品“機器人直驅動力模組”的平均售價持續下降，公司計劃如何平衡市場份額擴張與維持健康毛利率之間的關係？"
-      ],
-      "risk_factors": [
-        "客戶集中度高：2025年，前五大客戶佔總收入的85.7%，對單一或少數客戶的依賴性極高。",
-        "持續虧損歷史：公司在過往記錄期間持續錄得淨虧損，並預計短期內將繼續產生淨虧損。",
-        "市場競爭激烈：公司所處的機器人動力模組和機器人行業技術密集、競爭激烈且市場集中度高。",
-        "平均售價下降：核心產品“機器人直驅動力模組”的平均售價在2023至2025年間顯著下降，可能對未來利潤率構成壓力。",
-        "對核心技術的依賴：公司的業務高度依賴其直驅技術，若無法保持技術領先或市場需求轉變，可能對業務造成不利影響。"
-      ]
-    },
-    "collected_at": "2026-07-12T09:48:22+00:00",
-    "id": "ef3a2c1382b6f560595f7ab8"
-  },
-  {
-    "exchange": "CNINFO",
-    "issuer": "苏州绿控传动科技股份有限公司",
-    "document_type": "A股IPO项目更新",
-    "publish_date": "2026-06-29",
-    "update_date": "2026-06-29",
-    "board": "A股IPO",
-    "industry": "汽车制造业",
-    "sponsor": "中国国际金融股份有限公司",
-    "status": "注册生效",
-    "pdf_url": null,
-    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
-    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1357",
-    "title": "苏州绿控传动科技股份有限公司 A股IPO项目更新",
-    "summary": {
-      "financial_snapshot": {
-        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
-      },
-      "key_points": [
-        "当前审核状态：注册生效",
-        "保荐机构：中国国际金融股份有限公司",
-        "所属行业：汽车制造业",
-        "净利润参考值：1.53亿元"
-      ],
-      "one_line_business": "公司是国内新能源商用车电驱动系统的领军企业之一，以电驱动系统相关技术创新为基础，向客户提供电驱动系统、零部件及相关技术开发与服务。电驱动系统是新能源汽车与非道路移动机械的驱动力来源及核心关键零部件，包括电机、自动变速器及各类控制器、电驱动桥等。公司开发的核心产品和部件具有高可靠性、高效率、一体化和轻量化的优势，广泛应用于纯电动、插电式混合动力（含增程式）和燃料电池等新能源技术路线下的商用车和非道路移动机械领域。公司在商用车纯电动和混合动力驱动系统领域攻克了多个技术难关。公司秉持“安全高效定义电驱动”理念，始终坚持技术创新，在电驱动系统总成架构设计、电驱动系统总成控制策略技术、电驱动专用变速器开发技术、高转矩密度高效率驱动电机技术以及控制器技术等方面形成了一系列核心技术积累。公司自主研发的基于AMT变速器的同轴并联混合动力机电耦合系统，实现了关键零部件的自主可控，2019年公司作为该技术的主要完成单位之一与清华大学等单位共同获得了国家科学技术进步奖二等奖；公司基于双输入变速器的动力不中断电驱动系统，为解决传统大型百吨级矿卡发动机、自动变速器等关键部件受制于进口的难题做出有益贡献，相关技术处于领先水平；公司重卡高效多模式集成电驱动桥产品，改变了传统中央驱动“电机+变速器+传动轴+车桥”的布置方式，将电机、变速器、车桥等关键部件深度集成，提高了系统效率、降低了重量、缩小了体积，提升了整车多项性能指标，该产品方案为纯电动重卡专用底盘的发展提供了新的技术路径。",
-      "risk_factors": [
-        "尚未基于招股书全文生成风险摘要。"
-      ],
-      "source": "cninfo_project"
-    },
-    "collected_at": "2026-07-12T09:51:35+00:00",
-    "id": "1c59e92868776764bb4e6ed1"
-  },
-  {
-    "exchange": "CNINFO",
-    "issuer": "苏州维衡科技股份有限公司",
-    "document_type": "A股IPO项目更新",
-    "publish_date": "2026-06-29",
-    "update_date": "2026-06-29",
-    "board": "A股IPO",
-    "industry": "电气机械和器材制造业",
-    "sponsor": "光大证券股份有限公司",
-    "status": "已受理",
-    "pdf_url": null,
-    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
-    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1842",
-    "title": "苏州维衡科技股份有限公司 A股IPO项目更新",
-    "summary": {
-      "financial_snapshot": {
-        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
-      },
-      "key_points": [
-        "当前审核状态：已受理",
-        "保荐机构：光大证券股份有限公司",
-        "所属行业：电气机械和器材制造业",
-        "净利润参考值：1.15亿元"
-      ],
-      "one_line_business": "公司是一家国内领先的新能源高压母排及电连接解决方案提供商，主营业务为电力系统中用于汇集、分配和传输电流的导电连接件母排等电连接产品及精密结构件的设计、研发、生产和销售，其中母排包括硬连接母排、汇流排、CCS组件及配件、柔性连接母排等；精密结构件产品包括NVH与电磁防护盖板、高可靠性功能弹片、支架等。公司产品体系丰富，质量稳定，广泛应用于新能源汽车（涵盖电池包、电机与电控系统）、储能及充电桩等领域。",
-      "risk_factors": [
-        "尚未基于招股书全文生成风险摘要。"
-      ],
-      "source": "cninfo_project"
-    },
-    "collected_at": "2026-07-12T09:51:58+00:00",
-    "id": "6a5dd5cce7c3e02f907fa7df"
-  },
-  {
-    "exchange": "CNINFO",
-    "issuer": "甘肃金川瑞翔新材料股份有限公司",
-    "document_type": "A股IPO项目更新",
-    "publish_date": "2026-06-29",
-    "update_date": "2026-06-29",
-    "board": "A股IPO",
-    "industry": "计算机、通信和其他电子设备制造业",
-    "sponsor": "国泰海通证券股份有限公司",
-    "status": "已受理",
-    "pdf_url": null,
-    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
-    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1845",
-    "title": "甘肃金川瑞翔新材料股份有限公司 A股IPO项目更新",
-    "summary": {
-      "financial_snapshot": {
-        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
-      },
-      "key_points": [
-        "当前审核状态：已受理",
-        "保荐机构：国泰海通证券股份有限公司",
-        "所属行业：计算机、通信和其他电子设备制造业",
-        "净利润参考值：7.17亿元"
-      ],
-      "one_line_business": "金川瑞翔成立于2006年，是世界500强金川集团的控股子公司，致力于成为创新驱动、全球引领的新能源材料解决方案提供商。公司深耕锂电池正极材料领域二十年，构建了全品类产品矩阵，其中以三元正极材料特别是中镍单晶高电压产品为行业标杆，是国内首批实现该系列三元材料产品规模化量产的厂商，在中国该细分赛道的市占率超过50%，助力公司成为全球最大的三元正极材料供应商。同时，公司把握行业发展机遇，已开辟磷酸铁锂业务成为第二增长曲线，并依托行业优质客户实现出货量快速提升。此外，公司还布局了锰酸锂、磷酸锰铁锂、钠电正极、固态电池材料等，实现多元化技术路线布局，广泛应用于动力电池、储能电池及消费电池等领域。",
-      "risk_factors": [
-        "尚未基于招股书全文生成风险摘要。"
-      ],
-      "source": "cninfo_project"
-    },
-    "collected_at": "2026-07-12T09:51:56+00:00",
-    "id": "55655b0affd8e69e811ef7ef"
-  },
-  {
-    "exchange": "CNINFO",
-    "issuer": "湖南初源新材料股份有限公司",
-    "document_type": "A股IPO项目更新",
-    "publish_date": "2026-06-29",
-    "update_date": "2026-06-29",
-    "board": "A股IPO",
-    "industry": "计算机、通信和其他电子设备制造业",
-    "sponsor": "华泰联合证券有限责任公司",
-    "status": "已问询",
-    "pdf_url": null,
-    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
-    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1717",
-    "title": "湖南初源新材料股份有限公司 A股IPO项目更新",
-    "summary": {
-      "financial_snapshot": {
-        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
-      },
-      "key_points": [
-        "当前审核状态：已问询",
-        "保荐机构：华泰联合证券有限责任公司",
-        "所属行业：计算机、通信和其他电子设备制造业",
-        "净利润参考值：2.67亿元"
-      ],
-      "one_line_business": "公司聚焦电子信息新材料的研发及产业化，主营业务为感光干膜的研发、生产和销售。公司核心团队率先攻克感光干膜的国产化技术瓶颈，并成功实现规模化应用，推动公司产品市场占有率跃居内资企业第一、全球第三。公司主营产品感光干膜，是指通过紫外光的照射或辐射，其交联度发生变化的耐蚀刻或耐电镀材料，属于电子化学品，是一种广泛应用于制造各类电子信息产品的工艺材料。由于具备感光固化后抵抗蚀刻或电镀的特性，感光干膜可根据各类电子信息产品设计要求，起到转移电路图形等作用。公司的感光干膜产品主要应用于PCB线路制造等生产环节，是PCB产业实现精细制造的关键工艺材料之一。近年来公司积极拓展感光干膜在集成电路封装领域的应用。经过多年发展，公司不断实现技术突破，使得国产感光干膜得到广泛应用，并有效促进了感光干膜供应链国产化水平的提升，是目前最具市场竞争力的国产感光干膜企业之一，致力于促进相关产业生态链的发展、增强产业的自主可控和推动产业的升级。",
-      "risk_factors": [
-        "尚未基于招股书全文生成风险摘要。"
-      ],
-      "source": "cninfo_project"
-    },
-    "collected_at": "2026-07-12T09:51:43+00:00",
-    "id": "4f92a98f0f5bc8ce13704031"
-  },
-  {
-    "exchange": "CNINFO",
-    "issuer": "深圳市千分一智能技术股份有限公司",
-    "document_type": "A股IPO项目更新",
-    "publish_date": "2026-06-29",
-    "update_date": "2026-06-29",
-    "board": "A股IPO",
-    "industry": "计算机、通信和其他电子设备制造业",
-    "sponsor": "国联民生证券承销保荐有限公司",
-    "status": "已问询",
-    "pdf_url": null,
-    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
-    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1744",
-    "title": "深圳市千分一智能技术股份有限公司 A股IPO项目更新",
-    "summary": {
-      "financial_snapshot": {
-        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
-      },
-      "key_points": [
-        "当前审核状态：已问询",
-        "保荐机构：国联民生证券承销保荐有限公司",
-        "所属行业：计算机、通信和其他电子设备制造业",
-        "净利润参考值：1.40亿元"
-      ],
-      "one_line_business": "公司是一家全球领先的智能笔技术方案供应商，专注于提供智能、便捷、拟真的感知与交互体验。公司深耕行业逾十年，持续进行技术创新，推动智能笔在商务办公、教育、设计及众多生活场景广泛普及，让思想直达笔尖。",
-      "risk_factors": [
-        "尚未基于招股书全文生成风险摘要。"
-      ],
-      "source": "cninfo_project"
-    },
-    "collected_at": "2026-07-12T09:51:46+00:00",
-    "id": "f6e452490f4938a31617b27a"
-  },
-  {
-    "exchange": "CNINFO",
-    "issuer": "浙江正雅齿科股份有限公司",
-    "document_type": "A股IPO项目更新",
-    "publish_date": "2026-06-29",
-    "update_date": "2026-06-29",
-    "board": "A股IPO",
-    "industry": "专用设备制造业",
-    "sponsor": "中信建投证券股份有限公司",
-    "status": "已受理",
-    "pdf_url": null,
-    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
-    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1849",
-    "title": "浙江正雅齿科股份有限公司 A股IPO项目更新",
-    "summary": {
-      "financial_snapshot": {
-        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
-      },
-      "key_points": [
-        "当前审核状态：已受理",
-        "保荐机构：中信建投证券股份有限公司",
-        "所属行业：专用设备制造业",
-        "净利润参考值：1.27亿元"
-      ],
-      "one_line_business": "公司主营业务为数字化隐形正畸原创技术的研发、定制式隐形矫治器的生产制造及相关技术服务。自成立以来，公司始终秉持创新发展理念，深度融合口腔医学、生物力学、材料科学、计算机科学以及智能制造等多领域技术成果，持续推动隐形矫治技术的原创突破与迭代升级，为不同年龄段、不同错颌畸形类型的患者提供个性化、数字化的全周期隐形矫治解决方案。",
-      "risk_factors": [
-        "尚未基于招股书全文生成风险摘要。"
-      ],
-      "source": "cninfo_project"
-    },
-    "collected_at": "2026-07-12T09:51:48+00:00",
-    "id": "c311414f8c816fb0befbcc32"
-  },
-  {
-    "exchange": "CNINFO",
-    "issuer": "江苏联博精密科技股份有限公司",
-    "document_type": "A股IPO项目更新",
-    "publish_date": "2026-06-29",
-    "update_date": "2026-06-29",
-    "board": "A股IPO",
-    "industry": "汽车制造业",
-    "sponsor": "国金证券股份有限公司",
-    "status": "已受理",
-    "pdf_url": null,
-    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
-    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1847",
-    "title": "江苏联博精密科技股份有限公司 A股IPO项目更新",
-    "summary": {
-      "financial_snapshot": {
-        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
-      },
-      "key_points": [
-        "当前审核状态：已受理",
-        "保荐机构：国金证券股份有限公司",
-        "所属行业：汽车制造业",
-        "净利润参考值：1.19亿元"
-      ],
-      "one_line_business": "公司自成立以来，坚守自主创新理念，致力于成为全球领先的汽车零部件服务商。公司核心产品涵盖新能源汽车驱动电机、汽车EPS电机、微特电机等精密冲压铁芯产品，同时具备铁芯相关精密冲压模具的开发能力，形成“核心产品+配套模具”的一体化供给体系。其中，驱动电机铁芯是报告期内核心营收来源，重点服务于新能源汽车核心动力系统，直接关乎电机性能、工况效率、能效比、运行稳定性及车辆续航里程等关键技术指标，是该系统稳定运转的核心保障；EPS电机铁芯作为汽车助力转向系统核心安全部件，直接关系行车安全；微特电机铁芯广泛适配各类车载场景，完善公司产品矩阵。依托自主研发的驱动电机铁芯真空去应力退火、模外自粘胶固化、EPS环状铁芯预切断、模内点胶、模内自粘胶固化等先进核心工艺，公司产品磁性能、精度稳定性、粘结强度、可靠性等关键指标达到国际头部汽车零部件供应商标准，已与多家国内外新能源汽车及核心零部件头部企业建立长期稳定供货关系，深度绑定全球汽车核心产业链。",
-      "risk_factors": [
-        "尚未基于招股书全文生成风险摘要。"
-      ],
-      "source": "cninfo_project"
-    },
-    "collected_at": "2026-07-12T09:51:52+00:00",
-    "id": "d1e09b254da95b7a48c8ef29"
-  },
-  {
-    "exchange": "CNINFO",
-    "issuer": "博雅新材料股份有限公司",
-    "document_type": "A股IPO项目更新",
-    "publish_date": "2026-06-29",
-    "update_date": "2026-06-29",
-    "board": "A股IPO",
-    "industry": "计算机、通信和其他电子设备制造业",
-    "sponsor": "东方证券股份有限公司",
-    "status": "已受理",
-    "pdf_url": null,
-    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
-    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1848",
-    "title": "博雅新材料股份有限公司 A股IPO项目更新",
-    "summary": {
-      "financial_snapshot": {
-        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
-      },
-      "key_points": [
-        "当前审核状态：已受理",
-        "保荐机构：东方证券股份有限公司",
-        "所属行业：计算机、通信和其他电子设备制造业",
-        "净利润参考值：-0.23亿元"
-      ],
-      "one_line_business": "博雅新材是一家以液相法晶体生长技术为核心，依托我国稀土资源优势，专注于无机非金属晶体材料研发、生产与销售的国家级高新技术企业。公司产品应用于高端核医学影像、光通信、高能物理等关键领域，系国家制造业单项冠军企业。公司通过核心技术创新，突破了我国高性能无机非金属晶体材料领域的技术瓶颈，有效推动了我国稀土产业从“原料优势”向“产业优势”的战略转型。",
-      "risk_factors": [
-        "尚未基于招股书全文生成风险摘要。"
-      ],
-      "source": "cninfo_project"
-    },
-    "collected_at": "2026-07-12T09:51:50+00:00",
-    "id": "d13a2e6bf39df12acef65507"
-  },
-  {
-    "exchange": "CNINFO",
-    "issuer": "上海西井科技股份有限公司",
-    "document_type": "A股IPO项目更新",
-    "publish_date": "2026-06-29",
-    "update_date": "2026-06-29",
-    "board": "A股IPO",
-    "industry": "计算机、通信和其他电子设备制造业",
-    "sponsor": "申万宏源证券承销保荐有限责任公司",
-    "status": "已受理",
-    "pdf_url": null,
-    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
-    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1846",
-    "title": "上海西井科技股份有限公司 A股IPO项目更新",
-    "summary": {
-      "financial_snapshot": {
-        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
-      },
-      "key_points": [
-        "当前审核状态：已受理",
-        "保荐机构：申万宏源证券承销保荐有限责任公司",
-        "所属行业：计算机、通信和其他电子设备制造业",
-        "净利润参考值：-4.53亿元"
-      ],
-      "one_line_business": "西井科技是一家专注于AI产业化应用的科技企业，依托正向自研的人工智能技术和无人驾驶技术，为海港、陆港、空港、智慧工厂及多式联运等大物流场景提供覆盖智能执行、作业协同与运营决策的一体化解决方案。公司以无人驾驶新能源商用车、自动化作业装备及IoT感知设备承担感知采集与现场执行，以全场智能调度平台和场景预测模型支撑任务编排、资源调度与运营优化，两者通过统一的技术与系统架构紧密协同。依托在全球大物流场景中的持续商业运营，公司积累了覆盖多种场景、气候与作业模式的工程经验，推动大物流场景从人工驱动向智能自主运营演进。",
-      "risk_factors": [
-        "尚未基于招股书全文生成风险摘要。"
-      ],
-      "source": "cninfo_project"
-    },
-    "collected_at": "2026-07-12T09:51:54+00:00",
-    "id": "b55e3d4627f0f51a64943eaa"
-  },
-  {
-    "exchange": "CNINFO",
-    "issuer": "上海如鲲新材料股份有限公司",
-    "document_type": "A股IPO项目更新",
-    "publish_date": "2026-06-29",
-    "update_date": "2026-06-29",
-    "board": "A股IPO",
-    "industry": "化学原料和化学制品制造业",
-    "sponsor": "中信证券股份有限公司",
-    "status": "已受理",
-    "pdf_url": null,
-    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
-    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1566",
-    "title": "上海如鲲新材料股份有限公司 A股IPO项目更新",
-    "summary": {
-      "financial_snapshot": {
-        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
-      },
-      "key_points": [
-        "当前审核状态：已受理",
-        "保荐机构：中信证券股份有限公司",
-        "所属行业：化学原料和化学制品制造业",
-        "净利润参考值：1.09亿元"
-      ],
-      "one_line_business": "发行人是一家主要从事新能源电池电解液材料、电子化学品研发、生产和销售的高新技术企业，为国内主要厂商提供多款锂离子电池电解液新型锂盐及功能性添加剂等产品，是国内少数具备多品种锂离子电池电解液材料制造和创新能力的供应商。同时，发行人也是业内率先具备钠离子电池电解液钠盐量产能力的企业之一。发行人自成立以来始终秉承“自主研发、创新驱动”的发展策略，陆续于山东、江苏等地建立生产基地，在不断提升新能源电池材料产品开发、工艺革新及工业化生产能力的同时，持续进行包括含氟聚酰亚胺单体材料等在内的电子化学品领域的技术储备。此外，发行人还从事精细化工产品的贸易业务，为市场开拓和主业拓展积累了良好的客户资源。在新能源电池电解液材料领域，发行人目前已经掌握数十种锂离子电池电解液新型锂盐及功能性添加剂的制备技术，报告期内发行人主要产品包括双氟磺酰亚胺锂LiFSI、二氟草酸硼酸锂LiODFB、消费电池用功能性添加剂R005、四氟硼酸锂LiBF4等。发行人的产品广泛应用于新能源汽车、电动工具、3C数码产品等领域，并实现了对动力电池、消费电池以及储能电池等各种类锂离子电池的终端覆盖。在钠离子电池电解液材料领域，发行人是业内率先具备以六氟磷酸钠NaPF6、双氟磺酰亚胺钠NaFSI等为代表的系列钠离子主盐及添加剂量产能力的企业之一。",
-      "risk_factors": [
-        "尚未基于招股书全文生成风险摘要。"
-      ],
-      "source": "cninfo_project"
-    },
-    "collected_at": "2026-07-12T09:51:40+00:00",
-    "id": "663a19ea725454623a4341a1"
   }
 ]
