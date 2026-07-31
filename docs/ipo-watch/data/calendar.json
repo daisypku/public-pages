@@ -1,36 +1,6 @@
 [
   {
     "market": "A股",
-    "name": "N欣兴",
-    "code": "301677.SZ",
-    "apply_code": "301677",
-    "event_date": "2026-07-30",
-    "event_type": "上市",
-    "listing_date": "2026-07-30",
-    "apply_date": "2026-07-20",
-    "offer_price": "33.58",
-    "financing_total": "8.39亿元",
-    "business": "孔加工刀具中钻削刀具产品的研发、生产和销售业务",
-    "source": "东方财富",
-    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
-  },
-  {
-    "market": "A股",
-    "name": "森合高科",
-    "code": "920038.BJ",
-    "apply_code": "920038",
-    "event_date": "2026-07-30",
-    "event_type": "中签号/结果",
-    "listing_date": "",
-    "apply_date": "2026-07-27",
-    "offer_price": "29.06",
-    "financing_total": "5.55亿元",
-    "business": "环保型贵金属选矿剂的研发、生产及销售",
-    "source": "东方财富",
-    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
-  },
-  {
-    "market": "A股",
     "name": "国仪公司",
     "code": "688828.SH",
     "apply_code": "787828",
@@ -61,6 +31,21 @@
   },
   {
     "market": "A股",
+    "name": "杰理科技",
+    "code": "920138.BJ",
+    "apply_code": "920138",
+    "event_date": "2026-08-03",
+    "event_type": "申购",
+    "listing_date": "",
+    "apply_date": "2026-08-03",
+    "offer_price": "18.86",
+    "financing_total": "6.22亿元",
+    "business": "专注于系统级芯片(SoC)的集成电路设计企业,主要面向蓝牙音视频、智能穿戴、智能物联终端等领域,为全球市场提供高规格、高灵活性与高集成度的芯片产品",
+    "source": "东方财富",
+    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
+  },
+  {
+    "market": "A股",
     "name": "珈凯生物",
     "code": "920165.BJ",
     "apply_code": "920165",
@@ -71,6 +56,21 @@
     "offer_price": "19.26",
     "financing_total": "1.39亿元",
     "business": "化妆品功效原料的研发、生产及销售",
+    "source": "东方财富",
+    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
+  },
+  {
+    "market": "A股",
+    "name": "聚仁新材",
+    "code": "920258.BJ",
+    "apply_code": "920258",
+    "event_date": "2026-08-03",
+    "event_type": "上市",
+    "listing_date": "2026-08-03",
+    "apply_date": "2026-07-22",
+    "offer_price": "4.48",
+    "financing_total": "1.79亿元",
+    "business": "己内酯系列产品的研发、生产和销售",
     "source": "东方财富",
     "source_url": "https://data.eastmoney.com/xg/xg/default.html"
   },
@@ -101,5 +101,35 @@
     "financing_total": "约6.00-6.44亿港元",
     "source": "AAStocks",
     "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=02261"
+  },
+  {
+    "market": "A股",
+    "name": "宇树科技",
+    "code": "688836.SH",
+    "apply_code": "787836",
+    "event_date": "2026-08-10",
+    "event_type": "申购",
+    "listing_date": "",
+    "apply_date": "2026-08-10",
+    "offer_price": "",
+    "financing_total": "42.02亿元",
+    "business": "宇树科技是一家世界知名、国际领先的高性能通用机器人公司,专注于高性能通用人形机器人、四足机器人、机器人组件及具身智能模型的研发、生产和销售业务",
+    "source": "东方财富",
+    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
+  },
+  {
+    "market": "A股",
+    "name": "绿控传动",
+    "code": "301655.SZ",
+    "apply_code": "301655",
+    "event_date": "2026-08-10",
+    "event_type": "申购",
+    "listing_date": "",
+    "apply_date": "2026-08-10",
+    "offer_price": "",
+    "financing_total": "15.80亿元",
+    "business": "以电驱动系统相关技术创新为基础,向客户提供电驱动系统、零部件及相关技术开发与服务",
+    "source": "东方财富",
+    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
   }
 ]
