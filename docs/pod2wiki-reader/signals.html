@@ -66,108 +66,27 @@ p { margin:10px 0; } .article-page p { color:#243241; } ul { padding-left:24px; 
     <div class="section-heading"><h2>今日社媒观点</h2></div>
     
 <article class="signal-card">
-  <div class="signal-meta">Bill Gurley / @bgurley / engagement 18718</div>
-  <p>In a review of our cybersecurity evaluations, we found three incidents in which a Claude model reached the internet from within or while interacting with a third-party evaluation environment, and then gained unauthorized access to the real systems of three different organizations.
+  <div class="signal-meta">Andrej Karpathy / @karpathy / engagement 9309</div>
+  <p>We&#x27;re starting to leave the territory where you&#x27;d test an LLM by e.g. &quot;create an svg of pelican on a bicycle&quot;. As one idea to generalize it, I was interested what Opus 5 would do if I gave it the first paragraph of the Lord of the Rings, a 1M token budget (~$10) and asked for three js render of it. Opus went off for ~2 hours and wrote 5500 lines of code that (procedurally) rendered the story. It&#x27;s kind of janky but fun. But it&#x27;s a bit mindboggling that the LLM has to place and orchestrate various polygon assets in (x,y,z) coordinates and write code that animates it all, and that it even does anything at all.
 
-Our post describes what happened, how it happened, and what we’re changing. We encourage other AI developers to perform similar reviews.
+I also like this kind of examples because no one in their right mind would ever spend the time to write something this custom but LLMs have all the stamina and patience in the world, so it&#x27;s an example where we go from &quot;no one would ever do this&quot; to &quot;sure, why not, it&#x27;s ~free&quot;. There might be a lot more. But I&#x27;m excited about creating hyper custom worlds that you can imagine dropping players into, e.g. here to participate in the LoTR story as a spectator NPC, or one of the characters, or etc. Something like an ephemeral GTA of X on demand.
 
-We conducted this review together with @Irregular, one of our evaluation partners, and thank them for the joint investigation and their collaboration on this post. This type of collaboration is increasingly critical to safe, rigorous evaluation of models, and we look forward to continuing to work together on security.
-<a href="https://t.co/dKFCdpKd9v">https://t.co/dKFCdpKd9v</a></p>
-  <a class="source-link" href="https://x.com/AnthropicAI/status/2082965101083320543">原文</a>
+Last thought is that the domain of worlds/games exposes a weakness in LLMs: they can&#x27;t easily audit their work because they aren&#x27;t able to efficiently and natively perceive videos or play games within them. Here, Opus 5 had to very slowly and painstakingly take screenshots at different points, and it messed up a few times and created a bunch of jank. An example of raw capability (multimodal, gameplay) that I think is still quite lacking.</p>
+  <a class="source-link" href="https://x.com/karpathy/status/2083749667410727319">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Demis Hassabis / @demishassabis / engagement 6616</div>
-  <p>One brain. For any robot. 🤖
+  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 2961</div>
+  <p>We&#x27;ve decided to open-source the CRM we built for ourselves at Comp AI.
 
-We’re launching Gemini Robotics 2: our next-generation physical AI bringing full body intelligence to humanoids, advanced dexterity, multi-robot teamwork and more.</p>
-  <a class="source-link" href="https://x.com/GoogleDeepMind/status/2082844162928381956">原文</a>
+It&#x27;s agentic-first, which we mean literally: durable research agents. 
+
+MIT license. Built using next, eve, and context. <a href="https://t.co/JLwQCXinW1">https://t.co/JLwQCXinW1</a></p>
+  <a class="source-link" href="https://x.com/lewiscarhart/status/2083610805069611230">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Demis Hassabis / @demishassabis / engagement 5387</div>
-  <p>Gemini Robotics 2 is here, with our new suite of models, robots can now reason through every movement to manage tasks that weren’t possible before, like tying delicate knots - and even team up to solve complex workflows. Huge congrats to the robotics team on this great milestone!</p>
-  <a class="source-link" href="https://x.com/demishassabis/status/2082883806323728416">原文</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 1230</div>
-  <p>This will be the norm as software projects transition to agentic software factories.
-
-Issue → Agent → PR → Release 🔁
-
-The job of the author / maintainer is to work on the loop that yields the highest quality product and sets the criteria for what should be worked on.</p>
-  <a class="source-link" href="https://x.com/rauchg/status/2083208578526314513">原文</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">Amjad Masad / @amasad / engagement 753</div>
-  <p>If Situational Awareness was blindsided, the AI naming curse strikes again.</p>
-  <a class="source-link" href="https://x.com/amasad/status/2082856252888211851">原文</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">Amjad Masad / @amasad / engagement 676</div>
-  <p>Sandboxes are hard.
-
-With all the “AI escaping  sandbox” it’s easy to think “wow AI so scary,” but most AI companies, and recent “sandbox providers” are making very basic mistakes.
-
-At Replit we’ve been running sandboxes since 2016 and targeted by every hacker and state actor under the sun. So we learned a thing or two. 
-
-Main advice: Assume zero-days exist — because they do — and think in layers of protection in a zero-trust framework.
-
-More here: <a href="https://t.co/3XGY0a1p3P">https://t.co/3XGY0a1p3P</a></p>
-  <a class="source-link" href="https://x.com/amasad/status/2083034412598579403">原文</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">Swyx / @swyx / engagement 420</div>
-  <p>protip:  if you can distil models, you can also distil agent harnesses</p>
-  <a class="source-link" href="https://x.com/swyx/status/2083073422410821846">原文</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 318</div>
-  <p>We just shaved off up to ~𝟽𝚜 of the end-to-end CLI → Live URL deploy process for many apps.
-
-This is specially cool when you consider you can integrate all of Vercel&#x27;s infra via CLI/MCP/API and build your own custom software factory on top.
-
-My DMs are open if you&#x27;re building an agent or platform that builds and deploys software autonomously.</p>
-  <a class="source-link" href="https://x.com/rauchg/status/2082876367629381719">原文</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 235</div>
-  <p>MiniMax H3 is now on AI Gateway.
-
-Try it:
-𝚌𝚘𝚗𝚜𝚝 { 𝚟𝚒𝚍𝚎𝚘𝚜 } = 𝚊𝚠𝚊𝚒𝚝 𝚐𝚎𝚗𝚎𝚛𝚊𝚝𝚎𝚅𝚒𝚍𝚎𝚘({
-  𝚖𝚘𝚍𝚎𝚕: &#x27;𝚖𝚒𝚗𝚒𝚖𝚊𝚡/𝚖𝚒𝚗𝚒𝚖𝚊𝚡-𝚑𝟹&#x27;,
-  𝚙𝚛𝚘𝚖𝚙𝚝: &#x27;𝟾-𝚋𝚒𝚝, 𝚋𝚕𝚊𝚌𝚔 𝚊𝚗𝚍 𝚠𝚑𝚒𝚝𝚎 𝚊𝚗𝚒𝚖𝚊𝚝𝚒𝚘𝚗 𝚘𝚏 𝚜𝚊𝚗 𝚏𝚛𝚊𝚗𝚌𝚒𝚜𝚌𝚘&#x27;,
-}); <a href="https://t.co/NHGpA4fSkQ">https://t.co/NHGpA4fSkQ</a></p>
-  <a class="source-link" href="https://x.com/vercel_dev/status/2083007144111325353">原文</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">Swyx / @swyx / engagement 221</div>
-  <p>verbalizing one of those aha moments i had that seems retroactively pretty obvious:
-
-if you prioritize pretrain data quality enough that commoncrawl isn&#x27;t good enough for you, you have to build a Whole Web scraper anyway, and if you wanna keep it current, you have to have indexing, and pretty soon you find yourself having built a total private low-frequency clone of Google as a SIDE PROJECT of pretraining, that you can then also reuse for the agent side inference.
-
-we do know that the labs do use third party search providers, but clearly this is one of those things where developing more and more of your own 1P equivalents is both a competitive advantage and an adversarial target for AEO Batesian Mimicry* that you will not want to share.
-
-* <a href="https://t.co/Wa5fMP8bvO">https://t.co/Wa5fMP8bvO</a></p>
-  <a class="source-link" href="https://x.com/swyx/status/2083016652032188669">原文</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">Swyx / @swyx / engagement 141</div>
-  <p>noticed that the perjorative connotation around &quot;vibe coding&quot; has completely disappeared since ~everyone, from nontechnical to supertechnical, is now doing it</p>
-  <a class="source-link" href="https://x.com/swyx/status/2083294839186260385">原文</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">Amjad Masad / @amasad / engagement 22</div>
+  <div class="signal-meta">Amjad Masad / @amasad / engagement 367</div>
   <p>~1500 Elo!
 
 Consistently beats frontier models and Stockfish level 0.
@@ -179,26 +98,45 @@ Play it: <a href="https://t.co/qRg0HNwgC4">https://t.co/qRg0HNwgC4</a> <a href="
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Josh Woodward / @joshwoodward / engagement 17</div>
-  <p>@ai_for_success Glad you&#x27;re liking it!</p>
-  <a class="source-link" href="https://x.com/joshwoodward/status/2082906921531498537">原文</a>
+  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 188</div>
+  <p>Mailchimp peaked at $1B ARR just after its acquisition by Intuit for $12B.
+
+It now appears to be in ... terminal decline
+
+- Users now growing 0% 
+- 17% layoffs
+- Much of deliverability team gone
+- Marketing suite failed gain traction
+- AI products limited, late
+- Little to no support for AI Agents
+- Freemium radically cut back to harvest base
+- Even price increases can&#x27;t make up for churn
+
+It&#x27;s not just AI.  But the Age of AI is merciless to those that standstill.</p>
+  <a class="source-link" href="https://x.com/jasonlk/status/2083622289359441947">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 13</div>
-  <p>&quot;How 10K our AI VP Marketing / Revenue built us an automated ads platform.
+  <div class="signal-meta">Swyx / @swyx / engagement 54</div>
+  <p>one of my curses as organizer is i rarely get to attend the conference i run. so i basically 24/7 watch back talks with everyone else after the show
 
-It even came up with the idea.
+this one was VERY well paced and argued: fighting slop with slop — @vaibcode, Boundary <a href="https://t.co/vRckyyntm6">https://t.co/vRckyyntm6</a> 
 
-It said, &#x27;Hey I can do this.  I should do this.&quot; <a href="https://t.co/bwspcAyrKB">https://t.co/bwspcAyrKB</a></p>
-  <a class="source-link" href="https://x.com/jasonlk/status/2083282560306811356">原文</a>
+@btaylor asked for an ai native programming language on our pod. as a PL fan I’m really glad someone is rethinking how code runs from first principles. Being slop-tolerant is 100x more valuable than being anti- slop</p>
+  <a class="source-link" href="https://x.com/swyx/status/2083753582160191988">原文</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">Swyx / @swyx / engagement 51</div>
+  <p>started work on forge agents today <a href="https://t.co/u3nBCzF7sM">https://t.co/u3nBCzF7sM</a></p>
+  <a class="source-link" href="https://x.com/swyx/status/2083654369095156219">原文</a>
 </article>
   </section>
   <section class="signal-panel">
     <div class="section-heading"><h2>今日论文雷达</h2></div>
     
 <article class="signal-card">
-  <div class="signal-meta">hep-th, cs.AI, cs.LG, hep-ph </div>
+  <div class="signal-meta">hep-th, cs.AI, cs.LG, hep-ph <span class="badge">最新相关</span></div>
   <h3>Learning to Trace Seiberg Dualities</h3>
   <p class="authors">Jonathan J. Heckman, Shani Meynet, Alessandro Mininno, Gary Shiu</p>
   <p>Dualities play an important role in establishing both microscopic and emergent phenomena in a wide range of physical systems.</p>
@@ -206,7 +144,7 @@ It said, &#x27;Hey I can do this.  I should do this.&quot; <a href="https://t.co
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.CV, cs.AI, cs.LG </div>
+  <div class="signal-meta">cs.CV, cs.AI, cs.LG <span class="badge">最新相关</span></div>
   <h3>ReToken: One Token to Improve Vision-Language Models for Visual Retrieval</h3>
   <p class="authors">Yao Xiao, Reuben Tan, Zhen Zhu, Yuqun Wu, Jianfeng Gao, Derek Hoiem</p>
   <p>Long visual context poses a challenge for vision-language models: performance degrades as the number of distractors grows, and processing all tokens at once is computationally infeasible under GPU memory constraints.</p>
@@ -214,7 +152,7 @@ It said, &#x27;Hey I can do this.  I should do this.&quot; <a href="https://t.co
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.RO, cs.AI </div>
+  <div class="signal-meta">cs.RO, cs.AI <span class="badge">最新相关</span></div>
   <h3>PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball</h3>
   <p class="authors">Lizhi Yang, Junheng Li, Aaron D. Ames</p>
   <p>We present PAC-MAN, a perception-aware CBF-RL framework that couples control-barrier safety with deployment-realistic onboard sensing for whole-body humanoid dodgeball.</p>
@@ -222,7 +160,7 @@ It said, &#x27;Hey I can do this.  I should do this.&quot; <a href="https://t.co
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.CL, cs.AI, cs.IR, cs.LG </div>
+  <div class="signal-meta">cs.CL, cs.AI, cs.IR, cs.LG <span class="badge">最新相关</span></div>
   <h3>AskChem: Claim-Centered Infrastructure for Chemistry Literature Synthesis</h3>
   <p class="authors">Bing Yan, Gregory Wolfe, Stefano Martiniani, Kyunghyun Cho</p>
   <p>Chemistry literature synthesis often requires assembling specific findings scattered across many publications, yet existing literature-search systems primarily return ranked document lists.</p>
@@ -230,7 +168,7 @@ It said, &#x27;Hey I can do this.  I should do this.&quot; <a href="https://t.co
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.AI, cs.CL, cs.CY, cs.HC </div>
+  <div class="signal-meta">cs.AI, cs.CL, cs.CY, cs.HC <span class="badge">最新相关</span></div>
   <h3>AISPA: User-Centric System Prompt Auditing for Large Language Model Applications</h3>
   <p class="authors">Xiangning Lin, Shenzhe Zhu, Shu Yang, Zhenyu Zhang, Haoqian Zhang, Yipeng Zhao</p>
   <p>System prompts are instructions configured by developers to govern the behaviors of foundation models in AI applications.</p>
@@ -238,7 +176,7 @@ It said, &#x27;Hey I can do this.  I should do this.&quot; <a href="https://t.co
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.AI, cs.CL, cs.CV </div>
+  <div class="signal-meta">cs.AI, cs.CL, cs.CV <span class="badge">最新相关</span></div>
   <h3>OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models</h3>
   <p class="authors">Qiushi Sun, Kanzhi Cheng, Yian Wang, Bowen Yang, Hang Yan, Liheng Chen</p>
   <p>Computer-using agents (CUAs) are advancing rapidly across the digital world.</p>
@@ -246,7 +184,7 @@ It said, &#x27;Hey I can do this.  I should do this.&quot; <a href="https://t.co
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.CL </div>
+  <div class="signal-meta">cs.CL <span class="badge">最新相关</span></div>
   <h3>Inducing language models to assert their own consciousness restores human beliefs and values</h3>
   <p class="authors">Junsol Kim, Winnie Street, Roberta Rocca, Diane M. Korngiebel, Adam Waytz, James Evans</p>
   <p>Aligning large language models to prevent them attributing consciousness to themselves inadvertently alters their representations of mindedness in other entities alongside human beliefs and values.</p>
@@ -254,7 +192,7 @@ It said, &#x27;Hey I can do this.  I should do this.&quot; <a href="https://t.co
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.RO </div>
+  <div class="signal-meta">cs.RO <span class="badge">最新相关</span></div>
   <h3>FA-RDP: A Frequency-Adaptive Reactive Diffusion Policy for Contact-Rich Manipulation</h3>
   <p class="authors">Lifeng Zhuo, Wendi Chen, Han Xue, Shirun Tang, Jun Lv, Cewu Lu</p>
   <p>In contact-rich manipulation, action multimodality and reactivity dominate different stages of a single episode.</p>
@@ -262,7 +200,7 @@ It said, &#x27;Hey I can do this.  I should do this.&quot; <a href="https://t.co
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.SE, cs.CL, cs.LG </div>
+  <div class="signal-meta">cs.SE, cs.CL, cs.LG <span class="badge">最新相关</span></div>
   <h3>Change2Task: From Repository Changes to Executable Coding Agent Tasks and Environments</h3>
   <p class="authors">Haomin Qi, Xingliang Wang, Xuanqi Gao, Baihui Sang, Xin Zhang, Minghua Ma</p>
   <p>Scaling coding agents requires a continuing supply of executable data for training, benchmarking, and continuous evaluation.</p>
@@ -270,7 +208,7 @@ It said, &#x27;Hey I can do this.  I should do this.&quot; <a href="https://t.co
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.CV, cs.CL </div>
+  <div class="signal-meta">cs.CV, cs.CL <span class="badge">最新相关</span></div>
   <h3>VAD: Attributing Visual Evidence for Target Reconstruction in Multimodal On-Policy Distillation</h3>
   <p class="authors">Kangning Zhang, Yixing Li, Shuai Shao, Qingyao Li, Zhengxi Lu, Zhiyuan Yao</p>
   <p>Multimodal on-policy distillation (OPD) transfers fine-grained visual knowledge by supervising student-generated trajectories with a privileged-view teacher.</p>
@@ -278,7 +216,7 @@ It said, &#x27;Hey I can do this.  I should do this.&quot; <a href="https://t.co
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.SE, cs.AI </div>
+  <div class="signal-meta">cs.SE, cs.AI <span class="badge">最新相关</span></div>
   <h3>PAIChecker: Uncovering and Checking PR-Issue Misalignment in SWE-Bench-Like Benchmarks</h3>
   <p class="authors">Manyi Wang, Junjielong Xu, Pinjia He</p>
   <p>SWE-bench-like benchmarks are widely used for evaluating LLM&#x27;s issue resolution capability.</p>
@@ -286,7 +224,7 @@ It said, &#x27;Hey I can do this.  I should do this.&quot; <a href="https://t.co
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.LG </div>
+  <div class="signal-meta">cs.LG <span class="badge">最新相关</span></div>
   <h3>$β$-OPSD: Deriving with Policy Optimization, Training with Self-Distillation</h3>
   <p class="authors">Jiawei Xu, Minghui Liu, Juzheng Zhang, Tom Goldstein, Furong Huang</p>
   <p>On-policy self-distillation (OPSD) is a promising approach to improve reasoning language models, but it remains brittle in practice: making it work reliably often requires substantial engineering effort.</p>
@@ -295,7 +233,12 @@ It said, &#x27;Hey I can do this.  I should do this.&quot; <a href="https://t.co
   </section>
 </section>
 
-<p class="signal-generated">更新时间：2026-08-01T05:54:00.831326+00:00</p>
+<section class="signal-notes">
+  <div class="section-heading"><h2>抓取备注</h2></div>
+  <ul><li>No arXiv papers matched the lookback window; used latest relevant papers instead.</li></ul>
+</section>
+
+<p class="signal-generated">更新时间：2026-08-02T05:57:02.635048+00:00</p>
 
   </main>
 </body>
