@@ -1,6 +1,39 @@
 [
   {
     "exchange": "CNINFO",
+    "issuer": "苏州猎奇智能设备股份有限公司",
+    "document_type": "A股IPO项目更新",
+    "publish_date": "2026-08-02",
+    "update_date": "2026-08-02",
+    "board": "A股IPO",
+    "industry": "专用设备制造业",
+    "sponsor": "国泰海通证券股份有限公司",
+    "status": "提交注册",
+    "pdf_url": null,
+    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
+    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1754",
+    "title": "苏州猎奇智能设备股份有限公司 A股IPO项目更新",
+    "summary": {
+      "one_line_business": "公司是国内领先的高端智能装备制造商，专注于光通信、半导体及汽车自动化等领域智能生产装备的研发、生产和销售。经过多年技术积淀与市场开拓，公司产品已覆盖光模块封装测试的核心环节，包括贴片、耦合、老化测试等关键工序，相关设备是保障光模块传输效率与可靠性的核心装备，并最终应用于数通市场及电信市场。同时，公司依托光通信领域积累的自动化装备技术优势，积极布局半导体、汽车自动化智能装备领域，持续强化综合竞争实力。",
+      "key_points": [
+        "当前审核状态：提交注册",
+        "保荐机构：国泰海通证券股份有限公司",
+        "所属行业：专用设备制造业",
+        "净利润参考值：1.82亿元"
+      ],
+      "risk_factors": [
+        "尚未基于招股书全文生成风险摘要。"
+      ],
+      "financial_snapshot": {
+        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
+      },
+      "source": "cninfo_project"
+    },
+    "collected_at": "2026-08-04T03:49:02+00:00",
+    "id": "788d781772b83c0fc619fd7d"
+  },
+  {
+    "exchange": "CNINFO",
     "issuer": "重庆宇隆光电科技股份有限公司",
     "document_type": "A股IPO项目更新",
     "publish_date": "2026-07-30",
