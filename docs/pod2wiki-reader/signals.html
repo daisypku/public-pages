@@ -66,46 +66,57 @@ p { margin:10px 0; } .article-page p { color:#243241; } ul { padding-left:24px; 
     <div class="section-heading"><h2>今日社媒观点</h2></div>
     
 <article class="signal-card">
-  <div class="signal-meta">Andrej Karpathy / @karpathy / engagement 29480</div>
-  <p>We&#x27;re starting to leave the territory where you&#x27;d test an LLM by e.g. &quot;create an svg of pelican on a bicycle&quot;. As one idea to generalize it, I was interested what Opus 5 would do if I gave it the first paragraph of the Lord of the Rings, a 1M token budget (~$10) and asked for three js render of it. Opus went off for ~2 hours and wrote 5500 lines of code that (procedurally) rendered the story. It&#x27;s kind of janky but fun. But it&#x27;s a bit mindboggling that the LLM has to place and orchestrate various polygon assets in (x,y,z) coordinates and write code that animates it all, and that it even does anything at all.
+  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 2644</div>
+  <p>Next.js 16.3 is now available!
 
-I also like this kind of examples because no one in their right mind would ever spend the time to write something this custom but LLMs have all the stamina and patience in the world, so it&#x27;s an example where we go from &quot;no one would ever do this&quot; to &quot;sure, why not, it&#x27;s ~free&quot;. There might be a lot more. But I&#x27;m excited about creating hyper custom worlds that you can imagine dropping players into, e.g. here to participate in the LoTR story as a spectator NPC, or one of the characters, or etc. Something like an ephemeral GTA of X on demand.
+• Up to 90% less memory in dev
+• Faster builds, type checking, and rendering
+• Better tooling for AI agents
+• Custom error boundaries
+• Instant Navigations for SPA-like responsiveness
 
-Last thought is that the domain of worlds/games exposes a weakness in LLMs: they can&#x27;t easily audit their work because they aren&#x27;t able to efficiently and natively perceive videos or play games within them. Here, Opus 5 had to very slowly and painstakingly take screenshots at different points, and it messed up a few times and created a bunch of jank. An example of raw capability (multimodal, gameplay) that I think is still quite lacking.</p>
-  <a class="source-link" href="https://x.com/karpathy/status/2083749667410727319">原文</a>
+<a href="https://t.co/lNAQqpAKT1">https://t.co/lNAQqpAKT1</a>
+
+Here&#x27;s what&#x27;s new ↓</p>
+  <a class="source-link" href="https://x.com/nextjs/status/2084399799642841419">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 4444</div>
-  <p>AI alone is cool. But mastery + creativity + AI hits on a whole different level. Don&#x27;t let anyone discourage you from pursuing excellence and craft. Keep studying the blade.</p>
-  <a class="source-link" href="https://x.com/rauchg/status/2083969120270450911">原文</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 1352</div>
-  <p>We built an agent that powers our company&#x27;s internal operations called @𝚟.
-
-Every day-to-day job at Vercel now involves @𝚟. It&#x27;s growing exponentially both in daily interactions and token use.
-
-One can extrapolate to the day AI agents run entire companies from here. It&#x27;s an expert in finance, comms, docs, marketing, engineering, business analytics. It&#x27;s seeded by the skills we gave it and we update, but it&#x27;s also constantly improving.
-
-It already keeps memories and personalized workflows and schedules on a per-user basis. For example, I knew skills⁠.sh hit 1M skills and I shared this on these forums because I asked @𝚟 to periodically check and remind me.
-
-It&#x27;s powered by and is also the basis for the design of @evedev_. We built this, it works fantastically well, we think every company should have it.
-
-Before you @ me, I know you could also do this by picking your &#x27;BigAI slack integration&#x27; du jour. But that&#x27;s not your agent, that&#x27;s their agent. If agents become the foundation of (and even synonymous with) modern companies, you being in complete control, from source → runtime → data → token, seems like a pretty big deal to me.</p>
-  <a class="source-link" href="https://x.com/rauchg/status/2084042561690456157">原文</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">Dylan Patel / @dylan522p / engagement 976</div>
+  <div class="signal-meta">Dylan Patel / @dylan522p / engagement 2036</div>
   <p>The funny thing about Anthropic and OpenAI people saying they want to slow down AI progress is that this is what Anti Trust mechanisms were built for.
 It&#x27;s illegal to collude and slow down AI progress.</p>
   <a class="source-link" href="https://x.com/dylan522p/status/2084051253278208138">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Amjad Masad / @amasad / engagement 273</div>
+  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 563</div>
+  <p>Next.js 16.3: faster, better, stronger. My highlights:
+
+0️⃣ Faster dev &amp; builds
+Shoutout to Fable for improving memory use, and the team for landing the incremental 𝚗𝚎𝚡𝚝 𝚋𝚞𝚒𝚕𝚍 cache.
+
+1️⃣ Instant navigations are 🔥
+The people wanted SPAs, they shall get SPAs. By turning on instant navs (which will soon be default), your  agent is basically forced to make things fast.
+
+2️⃣ Agent-native DX
+You can still ship &quot;slow&quot; navs if you want, e.g. by blocking navs on server-side data fetching ala PHP olden days. But even then, your agent will be given *choices*, like setting up a &lt;𝚂𝚞𝚜𝚙𝚎𝚗𝚜𝚎 𝚏𝚊𝚕𝚕𝚋𝚊𝚌𝚔&gt; for instant loading shells. Agents also get built-in versioned docs.
+
+This is our best release for agents by far, which will also make your upgrading journey very smooth. I&#x27;ve had an easy time bumping my projects to 16.3 and enabling instant navs, having my agent migrate everything without issues.
+
+And so much more. 16.3 is more cost-efficient to serve, both in self-hosting and serverless environments. Faster to type-check… Thank you to the 90 contributors to this release!</p>
+  <a class="source-link" href="https://x.com/rauchg/status/2084411344623902994">原文</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">Bill Gurley / @bgurley / engagement 353</div>
+  <p>I favor prosecuting companies that use AI to break existing laws vs allowing those same companies to write new laws.
+
+Otherwise you create a perverse incentive to keep doing dangerous things to gather attention and power.</p>
+  <a class="source-link" href="https://x.com/bgurley/status/2084441104448168099">原文</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">Amjad Masad / @amasad / engagement 298</div>
   <p>My LLM chess engine is now on LiChess autonomously playing real games against people and bots. 
 
 1253 Elo: <a href="https://t.co/W3qp1Z1i7I">https://t.co/W3qp1Z1i7I</a></p>
@@ -113,17 +124,7 @@ It&#x27;s illegal to collude and slow down AI progress.</p>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Swyx / @swyx / engagement 251</div>
-  <p>one of my curses as organizer is i rarely get to attend the conference i run. so i basically 24/7 watch back talks with everyone else after the show
-
-this one was VERY well paced and argued: fighting slop with slop — @vaibcode, Boundary <a href="https://t.co/vRckyyntm6">https://t.co/vRckyyntm6</a> 
-
-@btaylor asked for an ai native programming language on our pod. as a PL fan I’m really glad someone is rethinking how code runs from first principles. Being slop-tolerant is 100x more valuable than being anti- slop</p>
-  <a class="source-link" href="https://x.com/swyx/status/2083753582160191988">原文</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">Bill Gurley / @bgurley / engagement 149</div>
+  <div class="signal-meta">Bill Gurley / @bgurley / engagement 279</div>
   <p>When I saw this article, I couldn&#x27;t get Kool and the Gang out of my head. Hat-tip to Claude for the lyrics! I very confused about who might own the copyright.
 
 REGULATE
@@ -192,7 +193,13 @@ Come on now — REGULATE!&quot;
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 77</div>
+  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 252</div>
+  <p>v0 as infrastructure. Already in production at the largest agencies and system-of-record companies in the world, as part of their AI software factories.</p>
+  <a class="source-link" href="https://x.com/rauchg/status/2084399936687460754">原文</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 110</div>
   <p>Why is traditional “SaaS” dead?  Well B2B software isn’t.  It’s growing faster than ever.
 
 But as trite as it sounds, SaaS from 2005-2024 or so really was “Building Software That Doesn’t Suck”
@@ -210,27 +217,19 @@ Now it’s about using agents and AI to make a category wildly more efficient, p
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Swyx / @swyx / engagement 72</div>
-  <p>started work on forge agents today <a href="https://t.co/u3nBCzF7sM">https://t.co/u3nBCzF7sM</a></p>
-  <a class="source-link" href="https://x.com/swyx/status/2083654369095156219">原文</a>
+  <div class="signal-meta">Amjad Masad / @amasad / engagement 101</div>
+  <p>When an agent starts with shared context, more people can get reliable answers.
+
+When truth is shared, AI becomes infrastucture.
+
+Read about how our internal truth layer drives our teams at Replit:
+
+<a href="https://t.co/vXqCKAcpRE">https://t.co/vXqCKAcpRE</a> <a href="https://t.co/lG9phy0h04">https://t.co/lG9phy0h04</a></p>
+  <a class="source-link" href="https://x.com/Replit/status/2084383515928404304">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 64</div>
-  <p>@shadcn I think it’s just like any other economical decision. You have to be different but you have to pick your battles.
-
-What’s the RoI of rebuilding and redesigning *every* pattern from scratch? It’s negative, with AI or not.</p>
-  <a class="source-link" href="https://x.com/rauchg/status/2084001433603752011">原文</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">Swyx / @swyx / engagement 58</div>
-  <p>Patio11&#x27;s Law of Agents: you are insufficiently ambitious about what agents can do to improve -every- part of your workflow, even when taking into account Patio11&#x27;s Law of Agents</p>
-  <a class="source-link" href="https://x.com/swyx/status/2084099311907013053">原文</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">Amjad Masad / @amasad / engagement 44</div>
+  <div class="signal-meta">Amjad Masad / @amasad / engagement 52</div>
   <p>@Replit Chess ♟️
 
 Two-shot this in Replit Design Mode.
@@ -242,126 +241,132 @@ Ridiculous.
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 16</div>
-  <p>New!!  &quot;The #1 Most Important Thing to Understand About AI SDRs: They Can’t Figure It Out For You. That’s Still Your Job. For Now, At Least.&quot;
+  <div class="signal-meta">Bill Gurley / @bgurley / engagement 19</div>
+  <p>GOP AGs warn OpenAI&#x27;s Altman to preserve records in AI agent hacking probe <a href="https://t.co/j4jrTeUwle">https://t.co/j4jrTeUwle</a> #FoxBusiness</p>
+  <a class="source-link" href="https://x.com/EricMackNews/status/2084333674850332842">原文</a>
+</article>
 
-<a href="https://t.co/zWdDOUpqZ4">https://t.co/zWdDOUpqZ4</a></p>
-  <a class="source-link" href="https://x.com/jasonlk/status/2083690672012542338">原文</a>
+<article class="signal-card">
+  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 16</div>
+  <p>The AI Board Member: Should Yours Should “Chair” the Next Meeting? At Least Conceptually <a href="https://t.co/oS7XhgaW4f">https://t.co/oS7XhgaW4f</a></p>
+  <a class="source-link" href="https://x.com/jasonlk/status/2084017430922449357">原文</a>
 </article>
 
 <article class="signal-card">
   <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 11</div>
-  <p>The AI Board Member: Should Yours Should “Chair” the Next Meeting? At Least Conceptually <a href="https://t.co/oS7XhgaW4f">https://t.co/oS7XhgaW4f</a></p>
-  <a class="source-link" href="https://x.com/jasonlk/status/2084017430922449357">原文</a>
+  <p>&quot;The v3 of our AI VP Marketing can now do Rev Ops because it&#x27;s fully integrated with CRM (Salesforce) and Finance (Brex, Bill, Quickbooks, etc.)
+
+- It has a &quot;God&quot; mode where it makes calls on who and what to do in sales and marketing
+- It tracks and manages commissions
+- It tracks deal signals in real-time and tells us where and when to follow up
+- It finds churn signals autonomously
+
+10K says he now finally really is ... a VP.&quot;</p>
+  <a class="source-link" href="https://x.com/jasonlk/status/2084343356562555328">原文</a>
 </article>
   </section>
   <section class="signal-panel">
     <div class="section-heading"><h2>今日论文雷达</h2></div>
     
 <article class="signal-card">
-  <div class="signal-meta">cs.RO <span class="badge">最新相关</span></div>
-  <h3>Diagnosing Compositional Generalization in Sequential Robot Tasks</h3>
-  <p class="authors">Yixiao Wang, Cheng-En Wu, Lingfeng Sun, Pengcheng Wang, Xiang Ji, Boyuan Liang</p>
-  <p>Sequential robot manipulation requires policies to execute novel combinations of familiar instruction components.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.29687v1">arXiv</a>
+  <div class="signal-meta">cs.CL </div>
+  <h3>AURORA-LM: Autoencoding Unified Representation for Continuous-Latent Diffusion Language Modeling</h3>
+  <p class="authors">Jiajun Liang, Yucheng Liao, Yukang Cao, Jiazhe Wei, Ken Li, Wende Tan</p>
+  <p>Language remains an outlier in generative modeling: while images, video, and audio are increasingly modeled in continuous latent spaces, text generation still relies predominantly on discrete tokens.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.02602v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.CL, cs.DC, cs.PF <span class="badge">最新相关</span></div>
-  <h3>TokTier: Exact Stateful Tokenization for Agentic LLM Serving</h3>
-  <p class="authors">Zhenyu Zhang, Zhichao Cao</p>
-  <p>LLM serving systems cache prompt KV state, yet most front ends still re-tokenize the full request text on every call.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.29678v1">arXiv</a>
+  <div class="signal-meta">eess.SY, cs.AI </div>
+  <h3>Bridging Artificial Intelligence and Power Systems Education Using a Hands-On Executable Framework</h3>
+  <p class="authors">Junjie Yin, Buxin She, Xinyu Feng, Fangxing, Li</p>
+  <p>Artificial intelligence (AI) is increasingly central to power and energy systems, supporting modeling, forecasting, optimization, and control.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.02599v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.AI <span class="badge">最新相关</span></div>
-  <h3>ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction</h3>
-  <p class="authors">Boyang Zhang, Adrian Lyjak, Eli Stewart, Zhaoqi Li, Simon Suo</p>
-  <p>Enterprise workflows increasingly rely on agents for \emph{schema-guided extraction}: given a document and a user-defined schema, the agent faithfully follows the schema to produce the correct output with source evidenc...</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.29677v1">arXiv</a>
+  <div class="signal-meta">cs.LG </div>
+  <h3>onepot-Bench 0: towards lab-aware in silico chemistry benchmarks</h3>
+  <p class="authors">Brandon Wang, Andrei S. Tyrin, Daniil A. Boiko</p>
+  <p>Language models are playing an increasingly important role in laboratory science, performing tasks such as experiment planning, execution, and post-hoc analysis.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.02595v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">math.ST, cs.LG, stat.ME, stat.ML <span class="badge">最新相关</span></div>
-  <h3>Differentially Private Nonparametric Modal Learning with Applications to Regression and Clustering</h3>
-  <p class="authors">Arkajyoti Bhattacharjee, Arnab Auddy</p>
-  <p>Density modes provide a localized and interpretable summary of multimodal distributions, but their estimation under rigorous differential privacy constraints remains largely unexplored.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.29675v1">arXiv</a>
+  <div class="signal-meta">cs.LG, cs.CL </div>
+  <h3>GradCuit: Credit-Assigned Gradient Flow Enables Robust and Interpretable Test-Time Latent Reasoning</h3>
+  <p class="authors">Zhaoxin Yu, Qi Shen, Hengli Li, Zhaowei Zhang, Song-Chun Zhu, Chi Zhang</p>
+  <p>Optimization-based latent reasoning improves large language model outputs by optimizing instance-specific continuous states at test time while keeping model parameters frozen.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.02585v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.AI <span class="badge">最新相关</span></div>
-  <h3>Development of FDD-ON: an Ontology for VAV HVAC System Fault Detection and Diagnostics</h3>
-  <p class="authors">Yimin Chen, Brian Fricke, Bo Shen, Jamie Lian, Mingkan Zhang, James Lo</p>
-  <p>Fault detection and diagnosis (FDD) technology is essential for improving HVAC system reliability, energy efficiency, and maintenance effectiveness.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.29657v1">arXiv</a>
+  <div class="signal-meta">cs.CV, cs.AI, cs.CL, cs.IR </div>
+  <h3>UEmbed: Unified Sparse and Dense Multimodal Embeddings</h3>
+  <p class="authors">Tingyu Song, Mingxin Li, Yanzhao Zhang, Dingkun Long, Pengjun Xie, Zhijie Nie</p>
+  <p>Sparse retrieval underpins modern search systems, from web search to retrieval-augmented generation.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.02583v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.AI <span class="badge">最新相关</span></div>
-  <h3>AgentHPOBench: A Benchmark For Evaluating LLM Agents as Sequential Hyperparameter Optimizers</h3>
-  <p class="authors">Tianyu Huai, Tingshuo Fan, Xinchi Chen, Yining Zheng, Yuxin Wang, Shuang Chen</p>
-  <p>As LLMs evolve from code completion systems into autonomous scientific agents, evaluating their ability to conduct experiments has become increasingly important.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.29626v1">arXiv</a>
+  <div class="signal-meta">cs.RO </div>
+  <h3>Ego2Robot: Scalable Robot Data Synthesis from Egocentric Human Data</h3>
+  <p class="authors">Ye Wang, Pei Lin, Xiong-Hui Chen, Haoqi Yuan, Zhixuan Liang, Yiyang Huang</p>
+  <p>Learning generalizable robot manipulation policies requires large-scale and diverse demonstration data.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.02580v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.RO <span class="badge">最新相关</span></div>
-  <h3>Balancing of Humanoid with Object Mass: Trade-off Analyses and Lifting Control</h3>
-  <p class="authors">Hyunjong Song, William Z. Peng, Joo H. Kim</p>
-  <p>The demand for humanoid loco-manipulation tasks with an object has recently increased, and most existing control approaches for stability in such tasks rely on heuristics or machine-learning techniques.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.29625v1">arXiv</a>
+  <div class="signal-meta">cs.RO, cs.AI, cs.LG </div>
+  <h3>CoWAM: Coordination Contracts for Selective Policy Intervention with WAMs</h3>
+  <p class="authors">Shuaijun Liu, Qifu Wen, Shuyang Hao, Qi Luo, Chenglong Zhang, Feiyang You</p>
+  <p>World Action Models (WAMs) augment robot policies with action-conditioned predicted futures, but a plausible future alone does not justify changing the action that a bimanual policy would execute.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.02578v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.CY, cs.AI, cs.HC <span class="badge">最新相关</span></div>
-  <h3>The Theoretical Foundation of Socratic Tests: Dynamic, Multimodal, Conversational Examinations</h3>
-  <p class="authors">Ilya Mikhelson</p>
-  <p>Traditional static assessments rely on a subtractive, deficit-based grading model that often penalizes ambition and obscures diagnostic feedback.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.29624v1">arXiv</a>
+  <div class="signal-meta">cs.RO </div>
+  <h3>Situation Aware Frontier Prioritization for Quadruped Search and Rescue</h3>
+  <p class="authors">Kevin Farias, Santiago Martin, Barbara Flores, Vinicio Melgar, Igor Nunes, Hiago Sodre</p>
+  <p>Quadruped robots are a promising platform for search and rescue missions because they can navigate cluttered indoor environments that may be restrictive for wheeled systems.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.02571v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.RO, cs.CV <span class="badge">最新相关</span></div>
-  <h3>RayViT: Ray-Conditioned Visual Representations for Viewpoint-Robust Imitation Learning</h3>
-  <p class="authors">Qian Wang, Longrui Chen, Peiran Sun, Aleksandar Taranovic, Niklas Freymuth, Ge Li</p>
-  <p>Visual imitation learning enables robots to acquire visuomotor skills directly from images, yet RGB observations lack explicit geometric cues, making learned policies brittle to camera perturbations.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.29622v1">arXiv</a>
+  <div class="signal-meta">cs.AI, cs.DC, cs.OS </div>
+  <h3>AtumAI: A Principled Framework for Agentic Generation of Datacenter Control-Plane Policies</h3>
+  <p class="authors">Qiushi Lin, Chaojie Zhang, Íñigo Goiri, Aditya Akella, Ricardo Bianchini, Jovan Stojkovic</p>
+  <p>The efficiency of a datacenter rests on its control plane policies.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.02569v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.LG, cs.AI, stat.ML <span class="badge">最新相关</span></div>
-  <h3>When Does On-Policy Interaction Help? Representational Tradeoffs in Value-Based Imitation Learning</h3>
-  <p class="authors">Luca Viano, Antoine Moulin, Audrey Huang, Volkan Cevher, Philip Amortila, Dylan J. Foster</p>
-  <p>Imitation learning (IL)---training an agent to replicate expert behavior from demonstrations---underpins applications from robotics to language model training.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.29617v1">arXiv</a>
+  <div class="signal-meta">cs.LG, cs.AI, cs.IR </div>
+  <h3>Structured Memory for Edge Language Models: Persistent Context and Corpus Retrieval via O(1) SSM State Injection</h3>
+  <p class="authors">Anusha Madan Gopal, Aras Pirbadian, Kristofor D. Carlson, M Anthony Lewis, Jonathan Tapson</p>
+  <p>Retrieval-augmented generation (RAG) imposes a prefill cost proportional to retrieved context length, and -- with Transformer backbones -- a KV-cache that grows with each generated token.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.02560v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.RO, cs.CL, cs.CV <span class="badge">最新相关</span></div>
-  <h3>WCM: A World Critic Model for Vision-Language-Action Reinforcement Learning</h3>
-  <p class="authors">Senyu Fei, Xiaopeng Yu, Siyin Wang, Xianzhong Zhao, Jingjing Gong, Xipeng Qiu</p>
-  <p>Reinforcement learning (RL) post-training of Vision-Language-Action (VLA) models has shown strong promise for robotic manipulation.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.29613v1">arXiv</a>
+  <div class="signal-meta">cs.CL </div>
+  <h3>Romanized Arabic Across Dialects: Views, Usage Patterns, and Linguistic Variation</h3>
+  <p class="authors">Amr Keleg, Ahmed Amine Ben Abdallah, Taha Yassine, Chadi Helwe, Imane Guellil, Nedjma Ousidhoum</p>
+  <p>Arabizi refers to Arabic written in Latin script.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.02555v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.IR, cs.LG <span class="badge">最新相关</span></div>
-  <h3>QASP: Query-Adaptive Robust Vector Search Policy</h3>
-  <p class="authors">Hakan Ferhatosmanoglu, Kushal Kumar, Tal Wagner, Andy Warfield</p>
-  <p>A fundamental challenge of vector search is achieving consistently high recall while minimizing computational costs.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2607.29606v1">arXiv</a>
+  <div class="signal-meta">cs.AI </div>
+  <h3>A Taxonomy of Cognitive Capability Gaps in Generative and Agentic AI</h3>
+  <p class="authors">Taye Akinrele, Sindhuja Penchala, Noorbakhsh Amiri Golilarz, Sudip Mittal, Shahram Rahimi</p>
+  <p>Cognitive AI seeks to move beyond language generation and autonomous task execution toward systems capable of sustained reasoning, adaptive behavior, persistent memory, and self-regulation.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.02553v1">arXiv</a>
 </article>
   </section>
 </section>
 
-<section class="signal-notes">
-  <div class="section-heading"><h2>抓取备注</h2></div>
-  <ul><li>No arXiv papers matched the lookback window; used latest relevant papers instead.</li></ul>
-</section>
-
-<p class="signal-generated">更新时间：2026-08-03T06:22:04.526154+00:00</p>
+<p class="signal-generated">更新时间：2026-08-04T05:45:44.057335+00:00</p>
 
   </main>
 </body>
