@@ -1,0 +1,35 @@
+[
+  {
+    "exchange": "CNINFO",
+    "issuer": "重庆宇隆光电科技股份有限公司",
+    "document_type": "A股IPO项目更新",
+    "publish_date": "2026-08-06",
+    "update_date": "2026-08-06",
+    "board": "A股IPO",
+    "industry": "计算机、通信和其他电子设备制造业",
+    "sponsor": "中信证券股份有限公司",
+    "status": "上市委会议通过",
+    "pdf_url": null,
+    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
+    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1388",
+    "title": "重庆宇隆光电科技股份有限公司 A股IPO项目更新",
+    "summary": {
+      "one_line_business": "公司专注于新型半导体显示面板领域的智能控制卡及精密功能器件相关产品的研发、生产及销售，致力于成为我国智能控制领域最有价值的企业。报告期内，公司主要产品系LCD、OLED等新型半导体显示面板专用智能控制卡及其PCBA制造服务，并围绕半导体显示面板产业为核心应用领域配套显示用精密功能器件类产品，终端应用主要为平板电脑、笔记本电脑、显示器、中大尺寸电视、手机、智能穿戴等消费电子领域。",
+      "key_points": [
+        "当前审核状态：上市委会议通过",
+        "保荐机构：中信证券股份有限公司",
+        "所属行业：计算机、通信和其他电子设备制造业",
+        "净利润参考值：1.33亿元"
+      ],
+      "risk_factors": [
+        "尚未基于招股书全文生成风险摘要。"
+      ],
+      "financial_snapshot": {
+        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
+      },
+      "source": "cninfo_project"
+    },
+    "collected_at": "2026-08-08T02:29:27+00:00",
+    "id": "ded414f55f9684178f1c72ea"
+  }
+]
