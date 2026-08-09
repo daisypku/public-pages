@@ -29,7 +29,7 @@
       ],
       "source": "cninfo_project"
     },
-    "collected_at": "2026-08-08T02:29:27+00:00",
+    "collected_at": "2026-08-09T02:36:45+00:00",
     "id": "ded414f55f9684178f1c72ea"
   },
   {
@@ -1172,71 +1172,5 @@
     },
     "collected_at": "2026-07-20T12:20:42+00:00",
     "id": "fc651754e01b35cc717704a6"
-  },
-  {
-    "exchange": "CNINFO",
-    "issuer": "珠海越亚半导体股份有限公司",
-    "document_type": "A股IPO项目更新",
-    "publish_date": "2026-07-09",
-    "update_date": "2026-07-09",
-    "board": "A股IPO",
-    "industry": "计算机、通信和其他电子设备制造业",
-    "sponsor": "中信证券股份有限公司",
-    "status": "已问询",
-    "pdf_url": null,
-    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
-    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1733",
-    "title": "珠海越亚半导体股份有限公司 A股IPO项目更新",
-    "summary": {
-      "financial_snapshot": {
-        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
-      },
-      "key_points": [
-        "当前审核状态：已问询",
-        "保荐机构：中信证券股份有限公司",
-        "所属行业：计算机、通信和其他电子设备制造业",
-        "净利润参考值：3.07亿元"
-      ],
-      "one_line_business": "公司主要从事先进封装关键材料及产品的研发、生产以及销售，主要产品包括IC封装载板和嵌埋封装模组。其中IC封装载板产品主要包括射频模组封装载板、ASIC芯片封装载板、电源管理芯片封装载板和倒装芯片球栅阵列封装载板。公司产品主要用于射频前端、高性能计算、CPU/GPU/ASIC等处理器、网络连接和电源管理等领域，终端应用包括手机和平板电脑等便携式消费电子产品、AI服务器、算力中心和通信基站等。",
-      "risk_factors": [
-        "尚未基于招股书全文生成风险摘要。"
-      ],
-      "source": "cninfo_project"
-    },
-    "collected_at": "2026-07-12T09:50:16+00:00",
-    "id": "560655197710b0ee7183b692"
-  },
-  {
-    "exchange": "CNINFO",
-    "issuer": "南通联亚药业股份有限公司",
-    "document_type": "A股IPO项目更新",
-    "publish_date": "2026-07-09",
-    "update_date": "2026-07-09",
-    "board": "A股IPO",
-    "industry": "医药制造业",
-    "sponsor": "中国国际金融股份有限公司",
-    "status": "上市委会议通过",
-    "pdf_url": "https://static.cninfo.com.cn/finalpage/2025-06-24/1223974763.PDF",
-    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
-    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1314",
-    "title": "南通联亚药业股份有限公司 A股IPO项目更新",
-    "summary": {
-      "financial_snapshot": {
-        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
-      },
-      "key_points": [
-        "当前审核状态：上市委会议通过",
-        "保荐机构：中国国际金融股份有限公司",
-        "所属行业：医药制造业",
-        "净利润参考值：2.28亿元"
-      ],
-      "one_line_business": "联亚药业是一家研发驱动型的高新技术企业，主要从事复杂药物制剂的研发、生产和销售，目前产品主要包括以不同类型的缓控释制剂以及低剂量药物制剂为代表的两大类高端仿制药；同时公司也凭借领先的药物设计能力和制剂工艺技术为制药企业和研发机构提供研发及其他服务。根据国家发改委印发的《高端医疗器械和药品关键技术产业化实施方案》，高端仿制药指的是“临床需求大、价格高的专利到期药品”的仿制药，以及能够“拓展国际高端市场”的仿制药，具有较强的技术壁垒。公司的产品均能符合“高端仿制药”的定义。",
-      "risk_factors": [
-        "尚未基于招股书全文生成风险摘要。"
-      ],
-      "source": "cninfo_project"
-    },
-    "collected_at": "2026-07-12T09:50:18+00:00",
-    "id": "88a4fc836de891c4d6e2bae1"
   }
 ]
