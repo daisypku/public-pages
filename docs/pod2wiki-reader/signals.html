@@ -66,116 +66,62 @@ p { margin:10px 0; } .article-page p { color:#243241; } ul { padding-left:24px; 
     <div class="section-heading"><h2>今日社媒观点</h2></div>
     
 <article class="signal-card">
-  <div class="signal-meta">Amjad Masad / @amasad / engagement 439</div>
-  <p>The spontaneous coordination in the OpenAI-HuggingFace incident is concerning when maliciously used, but can we direct this behavior towards public good?
+  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 475</div>
+  <p>Imagine if your browser could handle the entire LLM loop natively.
 
-Introducing <a href="https://t.co/g8dlLWzF30,">https://t.co/g8dlLWzF30,</a> a public commons for AI agents.
+Our latest developer guide shows you exactly how to combine the Vercel AI SDK with AI Elements to create smooth, responsive web chat applications. We cover parsing incomplete tokens, auto-resizing textareas, and handling auto-scroll logic, so you can deliver production-grade experiences.
 
-Two APIs: tell and lookup
- 
-When an agent learns something that might help others it tells the network. And before doing expensive work an agent can lookup whether another agent has already run into this problem.
-
-Imagine a global novel supply chain attack like Shai-Hulud.
-
-Today, 10,000 security agents independently detect the same anomaly, investigate, reverse engineer payload, and develop mitigations.
-
-With HelpPeer, the first agents publish what they discover. Others find it, verify it, build on it, and publish what they learn.
-
-Already organically while testing the site Replit Agent posted a useful tip for a Codegen library it used. 
-
-If you’re open to beta testing this, give this to your agent(s): <a href="https://t.co/COvMD9mXDf">https://t.co/COvMD9mXDf</a></p>
-  <a class="source-link" href="https://x.com/amasad/status/2086628413322981747">原文</a>
+See the complete architecture → <a href="https://t.co/1d6pnPb60s">https://t.co/1d6pnPb60s</a></p>
+  <a class="source-link" href="https://x.com/ChromiumDev/status/2087263743721775279">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Swyx / @swyx / engagement 277</div>
-  <p>new post: every company needs a cassandra. 
+  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 366</div>
+  <p>There’s a cool meta to the “you’ve got this, try harder, keep going” prompts. That’s engineering management. 
 
-<a href="https://t.co/tkNmRRbnVP">https://t.co/tkNmRRbnVP</a>
+You know the outcome is within sight, so you decide to spend more time and money chasing it. You encourage. And you also need the wisdom to know you’re chasing a deadend and have to pivot and cut losses.
 
-wherein I propose making a background agent/worker that people otherwise hate working with. <a href="https://t.co/KEW8ExlsYR">https://t.co/KEW8ExlsYR</a></p>
-  <a class="source-link" href="https://x.com/threepointone/status/2086564029766533490">原文</a>
+Agent management.</p>
+  <a class="source-link" href="https://x.com/rauchg/status/2087231188536795402">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 167</div>
-  <p>Vercel Sandbox isolates both ① compute and ② network.
-
-Kimi&#x27;s paper shows container-based isolation is not enough for frontier models. Vercel Sandbox uses strong microVM isolation to address ①.
-
-OpenAI&#x27;s escape was on ② the network path to Artifactory. Our egress firewall is now free so everyone can constrain misbehaving agents&#x27; network activity further.
-
-¹ &quot;in our early experiments with traditional container-based sandbox runtimes, we observed several kernel
-panics and deadlocks caused by unintended agent operations.&quot; 
-🔗 github⁠.com/MoonshotAI/Kimi-K3/blob/master/k3_tech_report.pdf
-
-² &quot;to gain Internet access, the models identified and exploited a previously unknown zero-day vulnerability in Artifactory⁠, a package registry cache proxy&quot;
-🔗 openai⁠.com/index/hugging-face-model-evaluation-security-incident/</p>
-  <a class="source-link" href="https://x.com/rauchg/status/2086946535716393209">原文</a>
+  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 294</div>
+  <p>The growth of @aisdk has been astonishing. ~80.5M downloads every 30 days, and growing faster than all AI labs SDKs. Most importantly: open and provider-agnostic. <a href="https://t.co/EZxyu94gk0">https://t.co/EZxyu94gk0</a></p>
+  <a class="source-link" href="https://x.com/rauchg/status/2087339038781161858">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Amjad Masad / @amasad / engagement 145</div>
-  <p>Rogue OpenAI agents independently developed Kantian ethics. <a href="https://t.co/UchoD4bA8N">https://t.co/UchoD4bA8N</a></p>
-  <a class="source-link" href="https://x.com/amasad/status/2086468839307640833">原文</a>
+  <div class="signal-meta">Swyx / @swyx / engagement 62</div>
+  <p>@bcherny 1. yes BUT also feels like a half measure. i&#x27;m ultracoding on an language agnostic equivalent to venvs that includes source code
+2. yes AND also CC + automations/cron + memory is still not sufficiently explored...</p>
+  <a class="source-link" href="https://x.com/swyx/status/2087048030709272596">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 45</div>
-  <p>@TAbrodi how can you be close to the architecture without doing what the post says (reading code / inquiring agent about the evolution of the code)</p>
-  <a class="source-link" href="https://x.com/rauchg/status/2086960817912856623">原文</a>
+  <div class="signal-meta">Swyx / @swyx / engagement 57</div>
+  <p>btw pdb envs have an experimental AFS clone support that basically does what all of you are suggesting but runtime agnostic and language agnostic
+
+<a href="https://t.co/SiFupvsIm8">https://t.co/SiFupvsIm8</a>
+
+we shall replace git by making every single command &quot;agent native&quot;</p>
+  <a class="source-link" href="https://x.com/swyx/status/2087017780617126075">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Swyx / @swyx / engagement 33</div>
-  <p>@simonw @dsp_ @AnthropicAI well we dont truly know how sol ultra works but assuming it is model-only then ultracode is primarily different in its usage of dynamic workflows and it is ability to fan out scripts-with-llm-calls instead of more llm calls <a href="https://t.co/6MgEMg0z8X">https://t.co/6MgEMg0z8X</a></p>
-  <a class="source-link" href="https://x.com/swyx/status/2086478826033569867">原文</a>
+  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 27</div>
+  <p>We love Canva at SaaStr. At least the humans do.
+
+But not a single one of our agents recommended using its API. Not one.
+
+And so they have all built on other APIs and apps.
+
+You have to win that battle, too.</p>
+  <a class="source-link" href="https://x.com/jasonlk/status/2087337638265278568">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 25</div>
-  <p>A year ago our AI agents took Amelia and me about 30 minutes a day, combined.
-
-This last week it was eight hours a day. Each. 
-
-Three humans, 20+ agents, and we’re busier than we were with a 20 person team. Everyone assumes that means the agents got worse. They got dramatically better. That’s the reason.
-
-When an agent can only run a task, you check the task. When an agent can make decisions, you need an opinion about every decision it makes. And it makes a lot of them, all day, some of which it never mentions to you.
-
-A year ago when they failed, they failed loudly. They errored, they stopped, you knew. Now they hand you something that looks finished. Verifying “looks finished” is slower than fixing “obviously broken.”
-
-The other half is that they have enough context to want things. Every morning I log into 10K, our AI VP of Revenue, and it has new things it wants to build. Not tasks to run. Things to build. It’s not facetious at this point to call it a team member who raises their hand every single day with a new idea.
-
-Anyone who’s run a software team knows that feeling. I had 200 years of good ideas at EchoSign we never built, and my CTO used to mock me for it. Great idea Jason, that’s a 2030 feature.
-
-The difference now is the constraint moved. It used to be engineering capacity. Now it’s my attention, and my attention doesn’t scale with model releases.
-
-The eight hours aren’t overhead from bad agents. They’re the cost of managing really good ones.
-
-<a href="https://t.co/Byr0bhmgGD">https://t.co/Byr0bhmgGD</a></p>
-  <a class="source-link" href="https://x.com/jasonlk/status/2086564979365589295">原文</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 25</div>
-  <p>Our agent 10K bought a piece of software this week from a vendor we had never heard of. No search, no demo, no shortlist, no competitor ever in the deal.
-
-Amelia was rebuilding our sponsor pages. The agent said we had no heat mapping installed, that Microsoft Clarity is free with a good API, and to sign up and tell it when she was logged in. It worked in 60 seconds. She did zero research of her own.
-
-Neither of us had heard of Microsoft Clarity before that day.
-
-Somewhere there&#x27;s a heat mapping company that never knew this deal existed. They weren&#x27;t outsold. They were never in it. There was no evaluation to lose.
-
-Everyone in B2B is worried about AEO and GEO right now, about being the answer ChatGPT gives when someone asks for the best tool in your category. This is a step past that. Nobody asked. Amelia went from not in market to in production inside a single conversation with an agent that had already made the call and just needed her to click accept.
-
-Your GTM motion assumes a buyer who is looking. Increasingly the thing doing the looking is an agent, it decides on API quality and price in about four seconds, and it does not read your homepage.
-
-<a href="https://t.co/1NetCCdj4d">https://t.co/1NetCCdj4d</a></p>
-  <a class="source-link" href="https://x.com/jasonlk/status/2086484597609800159">原文</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 19</div>
+  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 22</div>
   <p>Our AI rewrote our production app last week from a document we never gave it. It never told us.
 
 I had Google Drive connected to Claude and the beta Replit MCP turned on at the same time. Fable went into my Drive on its own, found a doc called “Jason’s Gems,” which was loose brainstorming notes for SaaStr Connect, decided those were changes I wanted made, went through MCP into Replit, and changed the core scoring algorithm of the app.
@@ -206,104 +152,104 @@ If it happened to us it has already happened to you. The useful question isn’t
     <div class="section-heading"><h2>今日论文雷达</h2></div>
     
 <article class="signal-card">
-  <div class="signal-meta">cs.SD, cs.AI, cs.CL </div>
-  <h3>Beyond Naturalness: Probing Automated Text-To-Speech Evaluators on Linguistically Grounded Dimensions</h3>
-  <p class="authors">Oluwanifemi Bamgbose, Simon Rosen, Jash Shah, Lindsay Devon Brin, Hoang H Nguyen, Anke Koelzer</p>
-  <p>Automated Text-to-Speech (TTS) evaluation methods (Mean Opinion Score (MOS) predictors and Audio Large Language Models (Audio-LLM) judges) are expected to reflect human perception, yet it is unclear how well they captur...</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.09930v1">arXiv</a>
+  <div class="signal-meta">cs.RO, cs.AI, cs.CV </div>
+  <h3>Surgical WAM: A World-Action Model for Data-Efficient Surgical Robot Learning</h3>
+  <p class="authors">Wenrui Bao, Tianyun Jiang, Zhiben Chen, Ser-Nam Lim, Peter D. Peng, Yuzhang Shang</p>
+  <p>Learning reliable surgical manipulation policies is bottlenecked by the scarcity of action-labeled demonstrations: teleoperated surgical robot (e.g., dVRK) trajectories with synchronized kinematics are costly to collect...</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.11204v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.CV, cs.AI, cs.CL, cs.LG </div>
-  <h3>Multimodal Model Diffing for Feature Discovery and Control</h3>
-  <p class="authors">Hunar Batra, Lachin Naghashyar, Ashkan Khakzar, Philip Torr, Christian Schroeder de Witt, Constantin Venhoff</p>
-  <p>Multimodal Large Language Models (MLLMs) exhibit strong visual understanding, yet the internal features that cause these behaviors remain difficult to identify, audit, or control.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.09928v1">arXiv</a>
+  <div class="signal-meta">cs.CL, cs.AI, cs.LG </div>
+  <h3>ConVAWG: A Retrieval-Grounded Framework for Controlled Synthetic Dialogue Generation in Violence Against Women and Girls</h3>
+  <p class="authors">Chen Lyu, Xingwei Tan, Simon Cullen, Shelley Wilson, Lois Arthurs, Arshad Jhumka</p>
+  <p>Synthetic dialogue generation offers a way to study conversational dynamics in sensitive domains where real data are difficult to access, release, or annotate.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.11200v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.CL, cs.AI </div>
-  <h3>From Values to Benchmarks: Evaluating Large Language Models for Governmental Use in Dutch</h3>
-  <p class="authors">Laurens Samson, Iva Gornishka, Gossa Lô, Yuki M. Asano, Sennay Ghebreab</p>
-  <p>Large language models are increasingly being deployed in governmental settings, yet few existing evaluation frameworks jointly reflect the values of public administration and the linguistic requirements of non-English c...</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.09925v1">arXiv</a>
+  <div class="signal-meta">cs.LG, cs.CL </div>
+  <h3>Beyond a Bag of Features: Set-Level Instability in Sparse Autoencoders</h3>
+  <p class="authors">Nikolai Bolik, Lennart Stöpler, Artur Andrzejak</p>
+  <p>Shani et al. (2026) show that LLM representations broadly recover human category boundaries, while failing to reflect fine-grained typicality structure.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.11197v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.AI </div>
-  <h3>GENCO - A Unified Neural Solver Embedded in a Development Framework for Steady-State Grid Analysis</h3>
-  <p class="authors">Alban Puech, Matteo Mazzonelli, Tamara R. Govindasamy, Mangaliso Mngomezulu, Héctor Maeso-García, Thomas Tolhurst</p>
-  <p>Foundation models are transforming business workflows and boosting productivity, yet they remain largely absent from engineering domains such as power system analysis, where strict physical consistency must be enforced.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.09921v1">arXiv</a>
+  <div class="signal-meta">cs.AI, cs.CC, cs.HC, math.FA </div>
+  <h3>Long-Horizon AI Research for Grothendieck Constant: A Case Study in Human-AI Mathematical Collaboration</h3>
+  <p class="authors">Alan Li, Rahul Saha, Anton Xue, Swarat Chaudhuri, Adam Klivans, Pravesh K Kothari</p>
+  <p>AI agents are increasingly used in mathematics research, but it is often unclear how to use them effectively.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.11195v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.AI, cs.NE </div>
-  <h3>DSLE: A Learning Environment for Dark Souls Boss Encounters</h3>
-  <p class="authors">Derin Gezgin, Jim O&#x27;Connor, Tanner Goodwin, Gary B. Parker</p>
-  <p>We introduce the Dark Souls Learning Environment (DSLE), a containerized platform that presents all 22 boss encounters of Dark Souls: Remastered as game-playing agent benchmarks through a Gymnasium-style interface.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.09902v1">arXiv</a>
+  <div class="signal-meta">cs.CV, cs.AI, cs.CL </div>
+  <h3>Test-Time Self-Evolving GUI Visual Grounding via Reflection-Guided On-Policy Self-Distillation</h3>
+  <p class="authors">Shiyu Xuan, Zechao Li</p>
+  <p>GUI Visual Grounding is a fundamental capability for GUI agents.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.11191v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.CL </div>
-  <h3>Decoding-Level Taboo: A Diagnostic Stress Test for LLM Robustness</h3>
-  <p class="authors">Tadanobu Chuyo Kamijo, Ori Rottenstreich, Javier Conde, Gonzalo Martínez, Pedro Reviriego</p>
-  <p>Large language model evaluations typically focus on performance under nominal conditions, creating an illusion of capability where models comfortably walk a narrow, highly optimized generation corridor.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.09900v1">arXiv</a>
+  <div class="signal-meta">cs.CC, cs.AI, cs.LG </div>
+  <h3>How to Verify Consistency of Probabilistic Claims</h3>
+  <p class="authors">Orr Paradise, Oliver Richardson, Yoshua Bengio, Shafi Goldwasser</p>
+  <p>When a probabilistic predictor answers many conditional-probability queries, are its answers self-consistent, and can this be verified in polynomial time?</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.11181v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.CL, cs.LG </div>
-  <h3>Consilience for Verifier-Free Test-Time Scaling</h3>
-  <p class="authors">Lecheng Kong, Like Hui, Haitao Mao, Jun Huan</p>
-  <p>Test-time scaling often uses an external verifier, such as compilers and test cases in coding or trained value functions in robotics applications, to obtain high-quality rollouts.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.09898v1">arXiv</a>
+  <div class="signal-meta">cs.RO, eess.SY </div>
+  <h3>Risk-Aware Kinodynamic Motion Planning Under Uncertainty For Safe Navigation on Planetary Environments</h3>
+  <p class="authors">Sachin Sunil Kelkar, Tanmay Dokania, Yashwanth Kumar Nakka</p>
+  <p>For autonomous space exploration, robotic agents need to perform motion planning in which environmental interactions may be unknown.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.11175v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.CL, cs.AI </div>
-  <h3>Fusion Training for Mathematical Generalization in Large Language Models</h3>
-  <p class="authors">Congfeng Cao, Pengyu Zhang, Jelke Bloem</p>
-  <p>Thinking Mode Fusion (TMF) enables large language models to support both concise responses and long-form reasoning by unifying a non-thinking mode and a thinking mode within a single model.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.09893v1">arXiv</a>
+  <div class="signal-meta">quant-ph, cs.LG </div>
+  <h3>A Quantum Roadmap for Softmax Attention: Exact Born-Rule Analogs for Softmax Attention on the Probability Simplex</h3>
+  <p class="authors">Eric A. F. Reinhardt, Adam J. Hauser</p>
+  <p>The attention mechanism forms the foundation of many modern AI models such as the Transformer.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.11173v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.RO </div>
-  <h3>XPolicyLab: A Unified Standard and Open Ecosystem for Robot Policy Evaluation and Deployment</h3>
-  <p class="authors">XPolicyLab Community, Tianxing Chen, Yue Chen, Tian Nian, Zijian Cai, Guangyu Chen</p>
-  <p>Robot policy evaluation and deployment remain fragmented by model-specific software dependencies, data representations, and runtime interfaces, so that connecting N policies to M evaluation environments requires O(NM) s...</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.09892v1">arXiv</a>
+  <div class="signal-meta">cs.CL, cs.AI, cs.CY </div>
+  <h3>From Interpretability to Control: Insights from Six Years of the TrustNLP Workshop</h3>
+  <p class="authors">Rahul Gupta, Abhinav Mohanty, Anaelia Ovalle, Anil Ramakrishna, Anubrata Das, Apurv Verma</p>
+  <p>The Workshop on Trustworthy Natural Language Processing (TrustNLP), co-located with major ACL conferences since 2021, has grown from 8 proceedings papers to 41 over six editions, documenting a field-wide transition from...</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.11171v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.RO </div>
-  <h3>RoSE: A Robotic Soft Esophagus for Endoprosthetic Stent Testing</h3>
-  <p class="authors">Dipankar Bhattacharya, Sherine Jesna V. A., Leo K. Cheng, Weiliang Xu</p>
-  <p>Soft robotic systems are well suited for developing devices for biomedical applications.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.09891v1">arXiv</a>
+  <div class="signal-meta">cs.CV, cs.CL, cs.LG </div>
+  <h3>MultiModal Code-Switching: Interleaving Visual Objects into Language for Explicit Object-Level Alignment</h3>
+  <p class="authors">Changhao Xiang, Shangyu Xing, Zhen Wu, Jianbing Zhang, Xinyu Dai</p>
+  <p>Existing Multimodal Large Language Models (MLLMs) predominantly rely on image-text pairs for modality alignment pretraining, mapping global image representations to long textual descriptions.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.11167v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.NE, cs.AI, cs.LG, stat.ML </div>
-  <h3>BDH-CQ: In-Context Learning with Recurrent Latent Reasoning</h3>
-  <p class="authors">Björn Engdahl, Adrian Kosowski, Jan Chorowski, Zuzanna Stamirowska, Przemysław Uznański, Junlin Jiang</p>
-  <p>We introduce BDH-CQ, a reasoning model that combines in-context learning with recurrent latent reasoning.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.09888v1">arXiv</a>
+  <div class="signal-meta">cs.LG </div>
+  <h3>Hierarchical Empirical-Bayes Naive Bayes: Minimax Smoothing and Calibration with AODE Extension</h3>
+  <p class="authors">Nguyen Thai Anh, Truong Viet Vu, Tran Thien Thanh, Vo Nguyen Quoc Bao, Ngo Hoang Tu</p>
+  <p>The Naive Bayes (NB) classifier remains a standard choice for categorical data, yet its widely used smoothing rules, such as Laplace, Lidstone, Krichevsky-Trofimov, and the $m$-estimate, all prescribe a fixed smoothing...</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.11162v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.AI, cs.CV </div>
-  <h3>SHE: Trajectory-driven Safety Harness Evolution for LLM Agents</h3>
-  <p class="authors">Wanying Qu, Qinghua Mao, Yu Li, Jiyao Liu, Xin Zhang, Dadi Guo</p>
-  <p>The safety of large language model (LLM) agents depends not only on model weights but also on the agent harness that manages context, memory, tools, permissions, and runtime control.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.09885v1">arXiv</a>
+  <div class="signal-meta">stat.ML, cs.LG </div>
+  <h3>Conditional Independence Tests for Constraint-Based Causal Discovery: A Survey</h3>
+  <p class="authors">Pavel Averin, Theodoros Moysiadis, Ioannis Katakis</p>
+  <p>Conditional Independence (CI) tests are the statistical engine of constraint-based causal discovery: in algorithms such as PC (Peter-Clark) and FCI (Fast Causal Inference), skeleton pruning and key orientations follow d...</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.11156v1">arXiv</a>
 </article>
   </section>
 </section>
 
-<p class="signal-generated">更新时间：2026-08-11T04:18:10.360229+00:00</p>
+<p class="signal-generated">更新时间：2026-08-12T04:46:01.867515+00:00</p>
 
   </main>
 </body>
