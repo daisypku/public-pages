@@ -1,21 +1,6 @@
 [
   {
     "market": "A股",
-    "name": "双英集团",
-    "code": "920059.BJ",
-    "apply_code": "920059",
-    "event_date": "2026-08-13",
-    "event_type": "中签号/结果",
-    "listing_date": "",
-    "apply_date": "2026-08-10",
-    "offer_price": "11.13",
-    "financing_total": "4.23亿元",
-    "business": "汽车座椅、汽车内外饰件研发、生产和销售",
-    "source": "东方财富",
-    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
-  },
-  {
-    "market": "A股",
     "name": "高凯技术",
     "code": "688835.SH",
     "apply_code": "787835",
@@ -41,6 +26,36 @@
     "offer_price": "14.35",
     "financing_total": "5.17亿元",
     "business": "专业从事电脑刺绣机的研发、生产和销售",
+    "source": "东方财富",
+    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
+  },
+  {
+    "market": "A股",
+    "name": "华大海天",
+    "code": "920288.BJ",
+    "apply_code": "920288",
+    "event_date": "2026-08-17",
+    "event_type": "申购",
+    "listing_date": "",
+    "apply_date": "2026-08-17",
+    "offer_price": "12.57",
+    "financing_total": "2.25亿元",
+    "business": "数码纸基新材料、水性墨材料、食品包装材料及其他的研发、生产和销售",
+    "source": "东方财富",
+    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
+  },
+  {
+    "market": "A股",
+    "name": "恒兴股份",
+    "code": "920107.BJ",
+    "apply_code": "920107",
+    "event_date": "2026-08-17",
+    "event_type": "上市",
+    "listing_date": "2026-08-17",
+    "apply_date": "2026-08-05",
+    "offer_price": "16.02",
+    "financing_total": "3.36亿元",
+    "business": "紫外光(UV)固化涂料和PUR热熔胶的研发、生产和销售",
     "source": "东方财富",
     "source_url": "https://data.eastmoney.com/xg/xg/default.html"
   },
