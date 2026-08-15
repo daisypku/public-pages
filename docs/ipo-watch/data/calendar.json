@@ -1,21 +1,6 @@
 [
   {
     "market": "A股",
-    "name": "高凯技术",
-    "code": "688835.SH",
-    "apply_code": "787835",
-    "event_date": "2026-08-14",
-    "event_type": "申购",
-    "listing_date": "",
-    "apply_date": "2026-08-14",
-    "offer_price": "61.36",
-    "financing_total": "15.33亿元",
-    "business": "精密流体控制领域中关键控制部件及相关设备的研发、生产与销售",
-    "source": "东方财富",
-    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
-  },
-  {
-    "market": "A股",
     "name": "信胜科技",
     "code": "920093.BJ",
     "apply_code": "920093",
@@ -56,6 +41,21 @@
     "offer_price": "16.02",
     "financing_total": "3.36亿元",
     "business": "紫外光(UV)固化涂料和PUR热熔胶的研发、生产和销售",
+    "source": "东方财富",
+    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
+  },
+  {
+    "market": "A股",
+    "name": "高凯技术",
+    "code": "688835.SH",
+    "apply_code": "787835",
+    "event_date": "2026-08-18",
+    "event_type": "中签号/结果",
+    "listing_date": "",
+    "apply_date": "2026-08-14",
+    "offer_price": "61.36",
+    "financing_total": "15.33亿元",
+    "business": "精密流体控制领域中关键控制部件及相关设备的研发、生产与销售",
     "source": "东方财富",
     "source_url": "https://data.eastmoney.com/xg/xg/default.html"
   },
