@@ -1,0 +1,68 @@
+[
+  {
+    "exchange": "CNINFO",
+    "issuer": "博雅新材料股份有限公司",
+    "document_type": "A股IPO项目更新",
+    "publish_date": "2026-08-18",
+    "update_date": "2026-08-18",
+    "board": "A股IPO",
+    "industry": "计算机、通信和其他电子设备制造业",
+    "sponsor": "东方证券股份有限公司",
+    "status": "已问询",
+    "pdf_url": null,
+    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
+    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1848",
+    "title": "博雅新材料股份有限公司 A股IPO项目更新",
+    "summary": {
+      "one_line_business": "博雅新材是一家以液相法晶体生长技术为核心，依托我国稀土资源优势，专注于无机非金属晶体材料研发、生产与销售的国家级高新技术企业。公司产品应用于高端核医学影像、光通信、高能物理等关键领域，系国家制造业单项冠军企业。公司通过核心技术创新，突破了我国高性能无机非金属晶体材料领域的技术瓶颈，有效推动了我国稀土产业从“原料优势”向“产业优势”的战略转型。",
+      "key_points": [
+        "当前审核状态：已问询",
+        "保荐机构：东方证券股份有限公司",
+        "所属行业：计算机、通信和其他电子设备制造业",
+        "净利润参考值：-0.23亿元"
+      ],
+      "risk_factors": [
+        "尚未基于招股书全文生成风险摘要。"
+      ],
+      "financial_snapshot": {
+        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
+      },
+      "source": "cninfo_project"
+    },
+    "collected_at": "2026-08-20T02:01:40+00:00",
+    "id": "4b644bea10862917463ffdc9"
+  },
+  {
+    "exchange": "CNINFO",
+    "issuer": "广东恒翼能科技股份有限公司",
+    "document_type": "A股IPO项目更新",
+    "publish_date": "2026-08-17",
+    "update_date": "2026-08-17",
+    "board": "A股IPO",
+    "industry": "专用设备制造业",
+    "sponsor": "申万宏源证券承销保荐有限责任公司",
+    "status": "已问询",
+    "pdf_url": null,
+    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
+    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1758",
+    "title": "广东恒翼能科技股份有限公司 A股IPO项目更新",
+    "summary": {
+      "financial_snapshot": {
+        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
+      },
+      "key_points": [
+        "当前审核状态：已问询",
+        "保荐机构：申万宏源证券承销保荐有限责任公司",
+        "所属行业：专用设备制造业",
+        "净利润参考值：1.02亿元"
+      ],
+      "one_line_business": "恒翼能是一家专注于新能源锂电池智能制造装备的国家级高新技术企业和国家级专精特新重点“小巨人”企业，主营业务为锂电池后处理系统核心设备及整体解决方案的研发、生产和销售。公司以技术创新为驱动，深耕锂电池化成、分容、测试等后处理核心工序，产品覆盖方形、软包、圆柱等主流电池形态，广泛应用于动力电池、储能电池及3C电池等领域，是行业内少数能够提供后处理系统一站式解决方案的核心供应商。公司自2018年成立以来，紧抓全球新能源产业高速发展的历史机遇，实现了从高精度单机测试设备供应商向后处理自动化产线系统集成商的战略转型。报告期内，公司经营业绩持续增长，营业收入从2022年度的9.23亿元增长至2024年度的12.41亿元。",
+      "risk_factors": [
+        "尚未基于招股书全文生成风险摘要。"
+      ],
+      "source": "cninfo_project"
+    },
+    "collected_at": "2026-08-20T02:01:42+00:00",
+    "id": "698896b4f77dcd5a94e45ce7"
+  }
+]
