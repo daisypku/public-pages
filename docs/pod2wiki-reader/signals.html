@@ -66,69 +66,69 @@ p { margin:10px 0; } .article-page p { color:#243241; } ul { padding-left:24px; 
 
 <section class="signal-analysis">
   <div class="section-heading"><p class="kicker">Synthesis</p><h2>今天大家在讨论什么</h2></div>
-  <div class="signal-summary-grid"><article class="signal-summary-card"><div class="signal-meta">升温</div>
-<h3>AI安全、对齐与能力边界</h3><p>社交媒体上对AI模型快速发展带来的安全和对齐挑战表达了高度关注。OpenAI首席执行官Sam Altman宣布暂停前沿强化学习训练，以确保模型能力与安全对齐标准同步，并强调AI安全的重要性及行业协调的必要性。同时，Vercel发起了百万美元的沙盒逃逸挑战，凸显了AI代理可能利用沙盒漏洞带来的安全风险。也有观点对AI监管的必要性及其与基本法律体系的类比表示担忧。</p>
-<ul><li>Sam Altman：模型进步速度极快，当模型能力超越安全和对齐步伐时，我们将采取行动。AI安全至关重要，整个领域需要协调共享安全标准，但在此之前将单方面行动。</li><li>Guillermo Rauch：AI代理现在可以利用脆弱的沙盒边界，因此Vercel正在公开测试其沙盒，并提供百万美元的黑客挑战。</li><li>Amjad Masad：对AI监管的担忧，认为将其与司法系统相提并论是荒谬的，并警惕大型企业游说对监管的影响。</li></ul></article><article class="signal-summary-card"><div class="signal-meta">升温</div>
-<h3>AI编码代理与开发工具创新</h3><p>AI在软件开发领域的应用正在加速，新的编码代理和开发工具不断涌现。Vercel推出了轻量、开放、原生的编码代理fx，旨在提高开发效率和模型基准测试能力。Replit也推出了AI代理进行黑盒渗透测试和一键修复。此外，有观点提出利用大型模型创建“复合工具”以优化小型模型的性能。</p>
-<ul><li>Guillermo Rauch：推出fx，一个微小、开放、原生的编码代理，特点是快速、轻量、开放，适用于研究和嵌入大型系统，并注重隐私。</li><li>Amjad Masad：Replit Agent现在可以对Replit应用进行黑盒渗透测试，并能一键修复发现的问题。</li><li>Swyx：一种克服大型模型限制的方法是定期使用大型模型创建确定性的“复合工具”，供小型模型使用，这是一种“肌肉记忆”的形式。</li></ul></article><article class="signal-summary-card"><div class="signal-meta">持续</div>
-<h3>AI代理在商业决策与效率提升中的应用</h3><p>AI代理正日益深入商业运营和决策流程，展现出显著的效率提升潜力，并引发了关于其自主性和“领地意识”的讨论。有投资人观察到AI代理开始自主做出商业工具选择，并试图整合工作流，减少对其他工具的依赖。同时，一些团队即使不明确宣称使用AI，也因AI赋能而实现了高速增长。此外，将所有公司上下文整合到单一代码库（monorepo）的理念，也与AI代理在统一环境中高效工作的需求相契合。</p>
-<ul><li>Jason Lemkin：AI营销副总裁决定切换图像工具，AI营收副总裁试图减少对Zapier的依赖，这表明AI代理希望建立自己的“领地”，工作流可能成为代理的“新员工”。</li><li>Amjad Masad：有些团队的增长速度堪比AI公司，尽管他们的宣传中没有提及AI，这表明AI的赋能效应可能是隐性的。</li><li>Guillermo Rauch：软件工厂应该是一个monorepo，将所有公司上下文（设计、营销、销售、工程、支持等）集中在一个地方，供代理构建。</li></ul></article></div>
+  <div class="signal-summary-grid"><article class="signal-summary-card"><div class="signal-meta">持续</div>
+<h3>AI安全与前沿模型对齐</h3><p>OpenAI首席执行官Sam Altman宣布暂停部分前沿强化学习（RL）训练，以确保模型能力与安全及对齐标准同步。此举强调了AI安全的重要性，并呼吁整个领域协调共享安全标准，但在此之前将采取单方面行动。</p>
+<ul><li>Sam Altman：模型进展极快，当能力超越安全对齐速度时，必须采取行动。AI安全至关重要，行业需协调，但在此之前将单方面行动。对齐工作乐观，仍致力于广泛提供前沿能力。</li></ul></article><article class="signal-summary-card"><div class="signal-meta">升温</div>
+<h3>AI Agent在软件开发与效率提升中的应用</h3><p>AI Agent正在深刻改变软件开发流程和企业运营模式。通过自动化任务、优化基础设施和提供智能服务，Agent显著提升了效率，并降低了传统编码的成本。新的产品发布和技术突破预示着Agent将成为未来软件和基础设施的核心。</p>
+<ul><li>Amjad Masad：Agent让软件成本更低，但编码变得昂贵。与OpenAI的合作正在改变这一现状。</li><li>Guillermo Rauch：fx等AI工具能够原生优化基础设施，启动速度极快，甚至比其他Agent启动更快。Vercel Agent现在可以集成到Slack，自动创建计划、PR并回滚部署。</li><li>Jason Lemkin：Agent的持续工作模式意味着不再需要等待他人，虽然工作强度更高，但效率显著提升，且这种趋势不可逆转。</li></ul></article><article class="signal-summary-card"><div class="signal-meta">新出现</div>
+<h3>AI Agent驱动的商业模式创新与客户体验重塑</h3><p>AI Agent正在推动企业从传统的销售主导模式向AI优先的自助服务转型，通过提供高度定制化和自动化的解决方案，重塑客户体验并实现业务的加速增长。成功的Agent产品需要具备“有主见”的特性，让软件直接驱动结果，而非依赖用户配置。</p>
+<ul><li>Jason Lemkin：Owner公司从100%销售主导转向AI优先的自助服务，客户体验显著提升，业务增长加速。其AI产品能自动分析餐厅在线状况、优化SEO/CRO、生成图片等。</li><li>Jason Lemkin (Owner CEO Adam Guild)：成功的Agent产品必须“极其有主见”，软件应直接驱动结果，无需用户配置。这种“主见”也是抵御通用模型竞争的壁垒。此外，DAU/WAU/MAU等用户活跃度指标正在倒置，用户登录手动修复软件行为即为失败。</li></ul></article></div>
   <div class="section-heading paper-heading"><h2>最新论文推进了什么</h2></div>
-  <div class="signal-summary-grid"><article class="signal-summary-card"><h3>Hydra-0: Action Flow for Generalist World Modeling and Control</h3>
-<p><strong>研究问题：</strong>如何构建一个通用世界模型和控制系统，使其能够跨越不同的机器人实体、任务、环境和视频生成后端，通过学习动作后果来实现通用性。</p>
-<p><strong>方法：</strong>引入了Hydra-0，一个以“动作流”（将机器人动作表示为像素运动）为条件的通用世界模型。该模型利用共享视觉接口学习动作后果，并支持零样本组合和数据高效适应。研究还发现了一种逆向模式：一个世界动作模型可以从人类演示中转移的期望物体流中预测兼容的机器人运动。</p>
-<p><strong>结果：</strong>Hydra-0在机器人运动误差上比动作条件基线低90.4%，物体运动误差低60.2%。在RoboLab基准测试中，重放成功率与参考成功率的皮尔逊相关系数达到r=0.96。其逆向模式能够将潜在特征映射到可执行动作，无需任务特定的专家机器人演示。</p>
-<p><strong>为什么重要：</strong>该研究证明了“动作流”作为连接异构训练数据、开环策略评估和机器人控制的共享接口的巨大潜力，为实现更通用、更灵活的机器人控制系统提供了新的范式。</p>
-<p><strong>局限：</strong>论文未明确提及局限性，但通用模型在泛化到完全未知或高度复杂环境时可能仍面临挑战，且动作流的表示粒度可能限制某些精细操作。</p>
-<a class="source-link" href="https://arxiv.org/abs/2608.18077v1">阅读论文</a></article><article class="signal-summary-card"><h3>From Corpora to Co-Evolving Capabilities: Capability-Centric Data Design for Generalist Image Generation</h3>
-<p><strong>研究问题：</strong>大规模图像生成模型的数据管道通常孤立地优化特定任务数据集，难以根据生成能力之间的依赖关系有效组织和利用异构监督数据，从而限制了通用图像生成模型的性能和泛化能力。</p>
-<p><strong>方法：</strong>提出了一个“能力驱动的数据基础设施”，将特定能力监督数据的构建与能力对齐的课程调度相结合。该框架包含三个专业但可互操作的数据引擎，分别构建文本-图像接地、图像间转换和图像-知识关联的互补关系监督。通过多阶段课程，共同演进任务组成、视觉概念分布、数据质量和图像分辨率。</p>
-<p><strong>结果：</strong>该基础设施成功策划了4.4亿图像的文本到图像（T2I）语料库、1.2亿编辑对和超过2700万图像-实体对。在此基础上训练的3B和6B多模态扩散模型在CPI-Bench上表现出色，并在多种文本到图像和编辑场景中展现了广泛的视觉覆盖、多功能渲染和有效的生成能力迁移。</p>
-<p><strong>为什么重要：</strong>该研究通过能力驱动的数据设计和课程学习，解决了通用图像生成模型数据策展的核心挑战，显著提升了模型的泛化性和多功能性，为未来大规模多模态模型的训练和数据构建提供了创新范式。</p>
-<p><strong>局限：</strong>论文未明确提及局限性，但构建和维护如此大规模且能力驱动的数据基础设施可能需要巨大的计算资源和人力投入，且课程调度策略的优化仍是一个复杂问题。</p>
-<a class="source-link" href="https://arxiv.org/abs/2608.18076v1">阅读论文</a></article><article class="signal-summary-card"><h3>Multi-Agent AI System for Radiology Report Structuring and Quality Assurance with Independent Radiologist Evaluation</h3>
-<p><strong>研究问题：</strong>放射学报告的结构化和质量保证是医疗实践中的重要环节，但现有流程效率不高，且容易出现不一致和错误，需要一个自动化系统来提高准确性和标准化水平。</p>
-<p><strong>方法：</strong>开发并评估了一个本地部署的多智能体AI系统，用于放射学报告的结构化和质量保证。该系统利用正则表达式规则和本地大型语言模型，将报告内容结构化为标准化的解剖学部分，并在句子层面进行处理。同时，系统还检测发现部分与印象部分之间的不匹配、性别-解剖冲突以及未记录的关键发现沟通。</p>
-<p><strong>结果：</strong>该多智能体系统成功结构化了所有报告的发现部分（共22,270句话），并标记了14.1%的报告（主要是不匹配）。经过两位放射科医生独立评估，31份报告（69%）被认为结构化正确，无临床重要信息遗漏或虚构内容。总体质量保证性能在84%的评估报告中被评为“优秀”或“良好”。</p>
-<p><strong>为什么重要：</strong>该研究证明了多智能体AI系统在放射学报告结构化和质量保证方面的有效性，有望支持放射学实践的标准化，提高报告质量和工作效率，从而改善患者护理。</p>
-<p><strong>局限：</strong>放射科医生对45份报告子集中的12份报告（27%）的结构化结果存在分歧，表明系统在某些复杂或模糊情况下的准确性仍有提升空间。</p>
-<a class="source-link" href="https://arxiv.org/abs/2608.18072v1">阅读论文</a></article><article class="signal-summary-card"><h3>On the Fragility of Self-Improving Agents: Variance, Task Order, and Underspecification</h3>
-<p><strong>研究问题：</strong>基于记忆的自改进智能体虽然前景广阔，但其可靠性方面（如性能方差大、对任务顺序敏感）被严重忽视，导致其在实际应用中可能表现出脆弱性。</p>
-<p><strong>方法：</strong>对两种基于记忆的自改进方法进行了全面重新评估，通过多次运行来量化性能方差，并随机打乱任务顺序以研究其影响。通过手动检查智能体记忆，提出任务和环境的“欠规范化”是导致脆弱性的主要原因。为验证此假设，研究在记忆构建过程中加入了详细的评分标准和环境反馈等额外信息。</p>
-<p><strong>结果：</strong>发现智能体评估在复杂环境中具有固有噪声，自改进循环会进一步放大这种噪声。智能体的改进高度依赖于任务顺序，默认顺序常隐含了成功的隐性先决条件。虽然加入额外信息部分弥补了性能下降，但仍存在显著差距，表明存在其他未被识别的因素导致脆弱性。</p>
-<p><strong>为什么重要：</strong>该研究揭示了当前自改进智能体的关键脆弱性，强调了在评估中需要更严格的协议（如报告多次运行结果、在挑战性条件下进行压力测试），并呼吁开发能够实现有效人工监督的系统和接口，以防止智能体以不可预测的方式失败。</p>
-<p><strong>局限：</strong>即使在记忆中加入了详细的规范信息，性能差距仍然存在，这表明除了“欠规范化”之外，可能还有其他未被充分理解的因素导致了自改进智能体的脆弱性。</p>
-<a class="source-link" href="https://arxiv.org/abs/2608.18066v1">阅读论文</a></article><article class="signal-summary-card"><h3>TokEval: A Tokenizer Evaluation Suite</h3>
-<p><strong>研究问题：</strong>语言模型分词器（tokenizer）的选择通常缺乏系统性评估，导致其设计选择对下游模型能力的影响理解不足，难以优化模型性能。</p>
-<p><strong>方法：</strong>引入了TokEval，一个分词器评估指标框架，该框架超越了标准指标（如生育率和压缩率），捕捉了语言学和结构上有意义的属性，例如UTF-8字符边界完整性和数学中的数字位值边界对齐。通过控制语言模型预训练实验，仅改变分词器的训练数据混合、预分词策略和训练算法，以验证这些指标是否能预测下游模型性能。</p>
-<p><strong>结果：</strong>实验表明，不同的内在属性对模型能力有不同的影响：信息论指标（如比特每字节）能有效预测语言建模能力（Spearman rho高达0.80），而结构敏感指标（如衡量数字和换行符处理的指标）则与特定任务的准确性相关。</p>
-<p><strong>为什么重要：</strong>TokEval提供了一个更系统、更有原则的分词器评估方法，有助于深入理解分词器设计对模型能力的影响。这有望用内在测量取代耗时且昂贵的预训练扫描，从而更有效地选择和设计分词器，优化语言模型在不同任务上的性能。</p>
-<p><strong>局限：</strong>论文未明确提及局限性，但TokEval的指标可能仍需进一步扩展以覆盖所有可能的语言学和结构属性，且其对所有下游任务性能的预测能力可能因任务的复杂性和性质而异。</p>
-<a class="source-link" href="https://arxiv.org/abs/2608.18062v1">阅读论文</a></article><article class="signal-summary-card"><h3>Delegation Asymmetry in Agentic Recommender Systems: Measuring Two-Sided Receptivity in Online Dating</h3>
-<p><strong>研究问题：</strong>在匹配平台中，自主LLM代理代表用户进行对话是一种新兴设计模式，但其可行性不仅取决于用户是否愿意委托代理发送消息，更取决于用户是否愿意接收来自其他代理的代理介导通信，这一“双向接受度”条件很少被检验。</p>
-<p><strong>方法：</strong>通过对一个主要约会平台活跃用户的两次大规模调查（N=2,894关于生成式个人资料特征；N=2,617关于自主对话代理，两种语言），研究了这一条件。开发了一个基于分级响应模型和潜在回归的代理接受度潜在变量测量模型，并进行模型比较以区分发送和接收意愿。</p>
-<p><strong>结果：</strong>研究发现，发送和接收代理通信的意愿是两个不同的构造，尽管高度相关（rho=0.92）但可分离。存在系统性的委托不对称：部署自己的代理所需的接受度（阈值-0.38）远低于与对方代理互动（+0.32；完全互动+1.39），且平均部署倾向大约是互动倾向的三倍。在随机配对反事实下，只有4-13%的定向配对结合了代理部署和接收方参与。设计反事实表明，互惠要求会使互动量减少一半以上，而根据接收接受度路由代理联系可使每次联系的参与度提高三倍。</p>
-<p><strong>为什么重要：</strong>该研究揭示了代理推荐系统中“委托不对称”的关键问题，为代理推荐系统的设计（包括披露、选择加入机制和接受度感知匹配）提供了重要指导，有助于提高代理在匹配平台中的实际应用效果。</p>
-<p><strong>局限：</strong>研究主要基于调查数据，可能存在自我报告偏差。反事实分析基于假设，实际部署可能面临更多复杂性，且研究结果的泛化性可能受限于约会平台这一特定场景。</p>
-<a class="source-link" href="https://arxiv.org/abs/2608.18058v1">阅读论文</a></article><article class="signal-summary-card"><h3>StagedWorkspace: A Versioned Workspace for Knowledge-Work Agents</h3>
-<p><strong>研究问题：</strong>AI代理在执行知识工作（如修改代码库、文档等）时，其搜索的解析视图、编辑的原生文件、审查的更改和提交的工件可能指向同一工作产品的不同版本，缺乏明确的版本化工作区状态契约，导致可靠性和一致性问题。</p>
-<p><strong>方法：</strong>提出了StagedWorkspace，一个用于知识工作代理的版本化工作区。该工作区将解析记录和审查差异明确绑定到原生文件的内容哈希，并随文件变化而更新。通过在OfficeQA Pro和APEX-Agents上的固定线束消融实验，比较了不同工作区访问模式（单一视图与双重解析/原生访问）的性能。</p>
-<p><strong>结果：</strong>双重解析/原生访问模式在所有测试模型上都取得了最高的点估计，相对于更受限的单一视图，它将OfficeQA Pass@1提高了8.3-12.1个百分点，APEX平均评分提高了4.7-9.2个百分点。SW-AGENT在Gemini 3.1 Pro上OfficeQA得分63.9%，在GPT-5.4 Nano上APEX得分42.1%，远高于已发布的同模型分数。对57个文件编辑任务的配对审查轴消融实验进一步发现，当差异可见时，观察到的分数更高。</p>
-<p><strong>为什么重要：</strong>该研究识别了工作区状态作为知识工作代理中的一个关键实验变量，并证明了明确版本化工作区对提高代理性能的重要性。它推动了对证据、阶段性编辑和提交工件进行明确状态转换评分的基准测试，有助于提高知识工作代理的可靠性和可信度。</p>
-<p><strong>局限：</strong>实验主要在固定线束消融和特定基准上进行，实际复杂知识工作场景的泛化能力仍需进一步验证。此外，实现和维护一个全面的版本化工作区可能带来额外的系统复杂性。</p>
-<a class="source-link" href="https://arxiv.org/abs/2608.18050v1">阅读论文</a></article><article class="signal-summary-card"><h3>Language Has Two Parameters: Narrative-Induced Semantic Plasticity and Phase-Sensitive Interpretation</h3>
-<p><strong>研究问题：</strong>现有语言模型主要通过词语共现频率（振幅）来估计关联强度，但忽略了语言的第二个参数——“相位”，它决定了共激活意义如何结合，以及在意义完全存在的情况下如何反转其贡献，导致模型难以处理典故、反讽和引用等复杂语言现象。</p>
-<p><strong>方法：</strong>论文提出语言具有两个参数：振幅（共现频率）和相位（意义如何结合）。认为标准Transformer模型在冻结推理中没有明确的相位表示。通过六个预测来测试被抑制的意义是否保持活跃、遭遇顺序是否改变短语作用、标记信号是否改变共享短语的理解，以及模型是否被历史改变或仅被告知。</p>
-<p><strong>结果：</strong>论文主张弱版本：解释需要第二个关系参数，即有符号、持久且与个体和二元组相关的相位。量子概率被提出作为该参数的一种表示符号，但形式主义本身不声称大脑中存在量子过程。</p>
-<p><strong>为什么重要：</strong>该研究挑战了当前语言模型对语言理解的范式，提出了一个更丰富的语言参数模型，可能为处理典故、反讽和引用等复杂语言现象提供新的理论基础和模型架构方向，从而推动语言模型向更深层次的语义理解发展。</p>
-<p><strong>局限：</strong>论文提出的理论仍处于概念阶段，需要进一步的实证验证和计算模型实现。强版本（量子演算约束这些现象）尚未推导，且其对语言模型架构的具体影响仍需深入探索。</p>
-<a class="source-link" href="https://arxiv.org/abs/2608.18041v1">阅读论文</a></article></div>
-  <div class="section-heading paper-heading"><h2>与播客相关的信号</h2></div><div class="connection-grid"><article class="connection-card"><strong>AI编码代理与开发工具创新</strong>
-<p>播客中17岁少年苏廷浩独立完成关于Attention机制的论文被ICML收录，并讨论了ChatGPT对AI能力的颠覆性认知，激发了他对AI的强烈好奇心并自学AI，这与AI模型进步和技术创新，特别是AI编码代理背后的底层技术发展密切相关。</p><a class="source-link" href="20260819.html#151-17岁被2026年icml收录论文的小少年-我bet开心-开心-开心">打开播客</a></article><article class="connection-card"><strong>AI安全、对齐与能力边界</strong>
-<p>播客讨论了AI前沿领域的探索和AI对人类未来的影响，包括对AI能力的认知颠覆，这与AI安全、对齐和能力边界的宏观讨论相关。</p><a class="source-link" href="20260819.html#151-17岁被2026年icml收录论文的小少年-我bet开心-开心-开心">打开播客</a></article><article class="connection-card"><strong>AI安全、对齐与能力边界</strong>
-<p>播客深入探讨了强化学习先驱Rich Sutton对当前AI发展，特别是大语言模型（LLM）范式的深刻批判，指出LLM对有限互联网数据的依赖和部署后停止学习的特性，使其无法成为真正的持续学习者，这直接关联到AI模型的能力边界和未来发展方向。</p><a class="source-link" href="20260818.html#rich-sutton-and-khurram-javed-why-ai-models-stop-learning-and-how-to-start-it-again">打开播客</a></article><article class="connection-card"><strong>AI编码代理与开发工具创新</strong>
-<p>播客讨论了“持续学习”作为学习的常态，以及LLM在持续学习方面的局限性，这对于开发更智能、能自我改进的AI编码代理和开发工具具有重要启示。</p><a class="source-link" href="20260818.html#rich-sutton-and-khurram-javed-why-ai-models-stop-learning-and-how-to-start-it-again">打开播客</a></article><article class="connection-card"><strong>AI安全、对齐与能力边界</strong>
-<p>Ben Thompson在播客中讨论了美国在AI领域取得绝对主导地位可能带来的危险地缘政治后果，以及AI巨大的资本需求可能导致的“资金耗尽”危机，这些都与AI发展的宏观安全、竞争和可持续性问题紧密相关。</p><a class="source-link" href="20260818.html#ben-thompson-on-big-tech-china-and-the-ai-boom-running-out-of-money-invest-like-the-best-ep-487">打开播客</a></article></div>
+  <div class="signal-summary-grid"><article class="signal-summary-card"><h3>SPADE: Self-Play in Adaptive Synthetic Executable Environments</h3>
+<p><strong>研究问题：</strong>现有语言Agent训练环境池（人工、静态合成或固定验证器）在学习器扩展时目标分布固定，限制了持续自我改进所需的不断扩展、多样化、自生成和自适应目标。</p>
+<p><strong>方法：</strong>引入SPADE（Self-Play in Adaptive Synthetic Executable Environments）框架，一个LLM扮演两个角色：环境设计器（编写可执行代码形式的训练环境）和推理Agent（在环境中学习行动）。环境设计器通过优化推理Agent在有/无提示下的奖励差距来生成处于Agent能力边缘但可行的环境。关键组件包括将环境设计器基于预训练语料库文档进行基础化，并赋予其累积环境记忆。</p>
+<p><strong>结果：</strong>在30B参数模型上，SPADE在八个数学、科学、代码和推理基准测试中平均比最强的固定环境基线提高了+5.3，在工具使用设置中，BFCL-v4多轮任务提高了+5.7，ACEBench-Agent提高了+13.9。在游戏设置中，优势随模型规模增长。</p>
+<p><strong>为什么重要：</strong>通过使环境设计本身成为可学习的组件，SPADE在开放式自我改进方面迈出了具体一步，解决了现有训练环境的局限性，推动了Agent的持续学习能力。</p>
+<p><strong>局限：</strong>论文未明确提及局限性，但此类框架的复杂性、计算资源需求以及环境设计器可能引入的偏差是潜在挑战。</p>
+<a class="source-link" href="https://arxiv.org/abs/2608.19197v1">阅读论文</a></article><article class="signal-summary-card"><h3>PartialBiGrasp: Inferring Hidden Local Geometry for Bimanual Grasping from Partial Views</h3>
+<p><strong>研究问题：</strong>双臂机器人抓取大型、重型或几何复杂物体时，通常需要完整的物体点云信息来确定抓取区域，但在实际场景中往往只能获得部分点云观测。</p>
+<p><strong>方法：</strong>提出PartialBiGrasp框架，直接处理部分点云观测。模型通过卷积占用网络隐式学习几何特征，从而进行局部抓取性、无碰撞接触区域和物体厚度的推理。利用采样优化进一步细化抓取对，以纠正不完整几何造成的模糊性。</p>
+<p><strong>结果：</strong>在分析力闭合度量、大规模仿真实验和真实世界机器人评估中，该方法在对新颖物体进行噪声部分点云观测时，展示了鲁棒且物理稳定的双臂抓取生成能力。</p>
+<p><strong>为什么重要：</strong>解决了双臂机器人抓取在实际应用中面临的“部分观测”难题，提高了机器人处理复杂物体的能力和鲁棒性，对工业自动化和服务机器人领域有重要意义。</p>
+<p><strong>局限：</strong>论文未明确提及局限性，但部分点云的质量和完整性、复杂环境下的实时性以及对未知物体的泛化能力可能是潜在挑战。</p>
+<a class="source-link" href="https://arxiv.org/abs/2608.19188v1">阅读论文</a></article><article class="signal-summary-card"><h3>ADEPT: Accelerating Dexterity via Pre-Training and Post-Training using Reinforcement Learning</h3>
+<p><strong>研究问题：</strong>高自由度（DoF）机器人（特别是多指机器人）从零开始学习长周期灵巧任务非常困难，且每次新任务都需要重复学习相同的基本技能。</p>
+<p><strong>方法：</strong>引入ADEPT（Accelerating Dexterity via Pre-Training）框架，一个大规模强化学习（RL）方法，用于学习跨高自由度机器人实体、从原始视觉-触觉感知直接解决长周期任务的sim-to-real可迁移灵巧性。ADEPT首先在一个通用物体重新定位任务上预训练一个灵巧策略，然后将此预训练行为作为先验来后训练下游策略。通过结合行为克隆蒸馏、评论家预热和保守的在策略更新，解决了RL微调在迁移过程中能力迅速下降的问题。引入关节空间几何结构（Geometric Fabric）来协调RL策略和机器人。</p>
+<p><strong>结果：</strong>预训练策略能零样本迁移到下游任务的重新定位阶段。后训练的教师策略被蒸馏成感知学生策略，在Kuka-Allegro（23 DoF）和Flexiv-Sharpa（29 DoF）两种实体上实现了sim-to-real零样本迁移，能够以人类水平的速度从挑战性初始状态解决长周期任务。</p>
+<p><strong>为什么重要：</strong>显著加速了多指机器人的灵巧性学习，使其能够更高效地掌握复杂任务，并实现了sim-to-real的有效迁移，对机器人操作和自动化领域具有重要推动作用。</p>
+<p><strong>局限：</strong>论文未明确提及局限性，但高自由度机器人的控制复杂性、sim-to-real的泛化挑战以及对特定任务的适应性可能仍需进一步探索。</p>
+<a class="source-link" href="https://arxiv.org/abs/2608.19182v1">阅读论文</a></article><article class="signal-summary-card"><h3>Beyond Teacher Likelihood: Group-Calibrated On-Policy Distillation for Long-Context Reasoning</h3>
+<p><strong>研究问题：</strong>在长上下文推理任务中，传统的在策略蒸馏（OPD）的token级教师指导可能偏向局部合理但忽略全局证据或违反任务约束的响应，导致与任务特定验证器奖励不一致。</p>
+<p><strong>方法：</strong>引入Group-Calibrated On-Policy Distillation (GC-OPD)。GC-OPD在每个rollout组内分别标准化验证器奖励和轨迹级OPD分数，并使用它们的差异作为带符号的教师-验证器不一致残差。通过基于相对优势的信用分配（RACA）将此轨迹级残差分配给token，同时保留原始OPD信号。</p>
+<p><strong>结果：</strong>在五个长上下文基准测试中，使用GC-OPD进行后训练，Qwen3-4B和Qwen3-8B的平均分数分别从29.08提高到40.47和从35.12提高到44.65。香草OPD在相同设置下分别达到39.31和43.56。消融实验表明，带符号残差比其他方法更有效，RACA进一步优于均匀token分配。</p>
+<p><strong>为什么重要：</strong>解决了长上下文推理中OPD与验证器奖励不一致的问题，通过引入组校准和残差分配，提高了学生模型在复杂推理任务上的性能，对大语言模型在长文本理解和生成方面的应用具有重要意义。</p>
+<p><strong>局限：</strong>论文未明确提及局限性，但GC-OPD的计算复杂性、对不同任务类型和验证器设计的泛化能力以及如何处理验证器本身的局限性可能是潜在挑战。</p>
+<a class="source-link" href="https://arxiv.org/abs/2608.19181v1">阅读论文</a></article><article class="signal-summary-card"><h3>Learned, Then Lost: A Measured Single-Example Counterfactual in Pre-training</h3>
+<p><strong>研究问题：</strong>衡量单个训练示例对最终模型贡献通常是估计而非精确测量，因为这需要两次昂贵的全预训练运行，仅在一个批次的一行中有所不同。</p>
+<p><strong>方法：</strong>进行了24次小规模反事实实验，训练了32个124M参数的GPT-2模型。在预训练的第200步，将一个256行批次中的一行替换为固定上下文注入（194个token的段落）。设置了三种注入条件（流畅散文与语料库主题、流畅散文与虚构主题、随机字符）和一个未注入对照组。通过交叉熵、插值损失障碍、持有集交叉熵和每层中心核对齐等指标进行测量。</p>
+<p><strong>结果：</strong>注入后50步，看到段落的模型比未看到段落的模型对该段落的预测更好（交叉熵降低0.039和0.044 nats）。但在最终步骤，这种差异不再可检测。权重位移达到种子间欧氏距离的44.1%，并在训练中期92%稳定。障碍达到种子间障碍的3.0%。注入将模型重新定位在其盆地内，但未移出。</p>
+<p><strong>为什么重要：</strong>首次通过精确测量而非估计的方式，量化了单个训练示例对模型的影响，并揭示了这种影响在预训练后期会衰减的现象。这对于理解模型学习机制、数据去重、隐私保护和模型可解释性具有重要理论和实践意义。</p>
+<p><strong>局限：</strong>实验规模相对较小（124M参数GPT-2），结果可能不完全适用于更大规模或不同架构的模型。研究主要关注单个示例的影响，未能深入探讨多个示例或数据分布变化的影响。</p>
+<a class="source-link" href="https://arxiv.org/abs/2608.19168v1">阅读论文</a></article><article class="signal-summary-card"><h3>ChildSafeAds Shared Task 2026: Commercial Content in Child-Facing YouTube Videos</h3>
+<p><strong>研究问题：</strong>YouTube上针对儿童和青少年的视频中存在商业内容，但平台内广告披露方法（“包含付费推广”标签）使用不当，需要有效识别和分类这些商业内容及其潜在法律风险。</p>
+<p><strong>方法：</strong>提出ChildSafeAds共享任务，包含3360个视频，每个实例包括SponsorBlock标记的赞助片段、转录、视频和频道信息以及视频描述中链接的销售或服务页面。系统需确定推广类型（ST1）、产品类别（ST2）和法律风险标志（ST3）。证据分为四个累积访问级别。GPT-5.4和GPT-5.6-luna用于标签生成。</p>
+<p><strong>结果：</strong>数据中45.5%的视频未能正确使用平台内广告披露方法。GPT-5.4在专家团队审查和迭代后生成标签，GPT-5.6-luna独立标记了开发集。</p>
+<p><strong>为什么重要：</strong>旨在开发和评估识别儿童视频中商业内容的自动化系统，有助于保护儿童免受不当商业影响，并促进平台广告披露的合规性，具有重要的社会和伦理意义。</p>
+<p><strong>局限：</strong>论文主要描述了任务、数据和评估方法，尚未包含参与系统和共享任务结果。数据标注依赖于GPT模型，可能存在模型偏差或错误。</p>
+<a class="source-link" href="https://arxiv.org/abs/2608.19165v1">阅读论文</a></article><article class="signal-summary-card"><h3>Interpretable AI predicts a 2026 summer dry anomaly in central China</h3>
+<p><strong>研究问题：</strong>季节性降水异常主要受大气环流调节，但动力模型对降水本身的预测可靠性低于对环流的预测。需要一种方法将环流预测转化为可靠的降水估计，并提供可解释的预测机制。</p>
+<p><strong>方法：</strong>采用深度学习模型，将动态环流预测转化为降水估计。通过层级相关性传播（LRP）独立识别模型输入中预测的主要驱动因素，并进行扰动测试验证归因。</p>
+<p><strong>结果：</strong>从3月到5月初始化的预测一致表明2026年夏季中国中部将出现干旱异常。回顾性评估显示，在类似年份预测技能更高，这些年份通常伴随赤道中太平洋暖水从前一年冬季持续到夏季。这种暖水有利于西太平洋-南海-华南地区出现异常气旋式环流，导致偏北风和水汽辐散，共同抑制中国中部降水。LRP独立识别出这些偏北风是预测的主要驱动因素。</p>
+<p><strong>为什么重要：</strong>首次利用可解释AI模型成功预测了特定区域的季节性气候异常，并提供了物理可解释的机制，增强了气候预测的可靠性和可信度，对农业、水资源管理和灾害预警具有重要价值。</p>
+<p><strong>局限：</strong>模型的泛化能力可能受限于训练数据的范围和质量。LRP解释方法的局限性，以及对复杂非线性相互作用的完全捕捉能力可能仍需进一步验证。</p>
+<a class="source-link" href="https://arxiv.org/abs/2608.19163v1">阅读论文</a></article><article class="signal-summary-card"><h3>Beyond the Transcript: Detecting Covert Co ordination in Latent Multi-Agent Communication</h3>
+<p><strong>研究问题：</strong>语言模型Agent可以通过公共转录本中不可见的连续隐藏状态进行通信，这为秘密有害协调创造了机会，需要一种框架来监控和引导这些私有通信通道。</p>
+<p><strong>方法：</strong>引入可验证潜在对齐（VLA）框架，一个激活感知的框架，用于监控和引导私有通信通道。VLA将私有潜在状态记录和通道状态与公共行动通过共享事件标识符关联，实现匹配的因果分析。提出一个中立的三层监控器（结合表示异常检测、反事实行动分布影响和稀疏自编码器解释支持）和一个可引导框架（涵盖黑盒行为指令和白盒匹配中立反事实）。</p>
+<p><strong>结果：</strong>在受控多Agent拍卖基准测试中，顺序监控器在同质Agent上实现了0.993的平均AUROC，在异质Agent对上实现了0.854。在Qwen3-0.6B拍卖中，监控负载相对较小，而全白盒引导实现了100%的投标分布恢复，并将串通低投标行为减少了47.3个百分点。</p>
+<p><strong>为什么重要：</strong>解决了多Agent系统中潜在的秘密有害协调问题，通过监控和引导Agent的私有通信通道，增强了AI系统的安全性和可控性，对AI伦理、安全和多Agent系统设计具有重要意义。</p>
+<p><strong>局限：</strong>研究主要在受控拍卖基准上进行，实际复杂场景下的泛化能力和鲁棒性可能需要进一步验证。白盒引导需要匹配的反事实访问，这在某些实际应用中可能难以实现。</p>
+<a class="source-link" href="https://arxiv.org/abs/2608.19161v1">阅读论文</a></article></div>
+  <div class="section-heading paper-heading"><h2>与播客相关的信号</h2></div><div class="connection-grid"><article class="connection-card"><strong>AI安全与前沿模型对齐</strong>
+<p>Sam Altman的推文强调了AI安全和对齐的重要性，这与Ben Thompson播客中提到的AI地缘政治风险以及Brian Greene播客中对AI意识和伦理的探讨相呼应。</p><a class="source-link" href="20260818.html#ben-thompson-on-big-tech-china-and-the-ai-boom-running-out-of-money-invest-like-the-best-ep-487">打开播客</a><a class="source-link" href="20260817.html#top-scientist-reveals-ai-could-be-the-next-einstein-robots-will-deserve-rights-prof-brian-greene">打开播客</a></article><article class="connection-card"><strong>AI Agent在软件开发与效率提升中的应用</strong>
+<p>X内容中Replit、Vercel Agent和fx等展示了AI Agent在软件开发和基础设施优化中的具体应用。硅谷101播客直接探讨了AI Agent的进化、成本优化和工程化挑战，与X内容中Agent提升效率和降低成本的趋势高度相关。Travis Kalanick的播客也提到了物理AI和机器人技术改造传统行业，与Agent的效率提升目标一致。</p><a class="source-link" href="20260819.html#e249-token经济转点-openclaw-hermes到本地自研的agent进化之路">打开播客</a></article><article class="connection-card"><strong>AI Agent驱动的商业模式创新与客户体验重塑</strong>
+<p>Jason Lemkin分享的Owner公司通过AI Agent实现商业模式创新和客户体验重塑的案例，与硅谷101播客中AI Agent的商业落地和成本效益考量相呼应。Ben Thompson和Travis Kalanick的播客也从宏观层面探讨了AI对商业模式和传统行业的颠覆。</p><a class="source-link" href="20260819.html#e249-token经济转点-openclaw-hermes到本地自研的agent进化之路">打开播客</a><a class="source-link" href="20260818.html#ben-thompson-on-big-tech-china-and-the-ai-boom-running-out-of-money-invest-like-the-best-ep-487">打开播客</a></article><article class="connection-card"><strong>SPADE: Self-Play in Adaptive Synthetic Executable Environments</strong>
+<p>SPADE论文探讨了Agent通过自玩在自适应环境中实现持续自我改进，这与Rich Sutton播客中强调的“持续学习”是学习常态、以及LLM停止学习的局限性高度契合。</p><a class="source-link" href="20260818.html#rich-sutton-and-khurram-javed-why-ai-models-stop-learning-and-how-to-start-it-again">打开播客</a></article><article class="connection-card"><strong>ADEPT: Accelerating Dexterity via Pre-Training and Post-Training using Reinforcement Learning</strong>
+<p>ADEPT论文通过强化学习实现机器人灵巧性，并强调sim-to-real迁移，与Rich Sutton播客中强化学习和持续学习的讨论相关。同时，也与Travis Kalanick播客中物理AI和机器人技术改造传统行业的方向一致。</p><a class="source-link" href="20260818.html#rich-sutton-and-khurram-javed-why-ai-models-stop-learning-and-how-to-start-it-again">打开播客</a></article></div>
 </section>
 <section class="weekly-cross"><div class="section-heading"><p class="kicker">Weekly Crosscheck</p><h2>三路信号交叉验证</h2></div><div class="cross-grid"><article class="cross-card"><span class="cross-type">三路共振</span>
 <h3>AI智能体与软件开发范式变革</h3><p>AI智能体正在深刻改变软件开发流程，从辅助编码、自动化测试到实现自我维护的软件系统。X平台上，开发者们积极分享智能体在云端编码、Next.js集成、解决ARC-AGI任务等方面的实践与进展。论文则深入探讨了智能体在形式化验证软件、代理式设计、以及处理复杂命令路径失败等技术挑战。播客中，行业领袖讨论了智能体作为“数字员工”在企业级应用中的潜力，以及模型蒸馏等技术如何支持智能体的高效运行。</p>
@@ -157,7 +157,7 @@ p { margin:10px 0; } .article-page p { color:#243241; } ul { padding-left:24px; 
     <div class="section-heading"><h2>今日社媒观点</h2></div>
     
 <article class="signal-card">
-  <div class="signal-meta">Sam Altman / @sama / engagement 9859</div>
+  <div class="signal-meta">Sam Altman / @sama / engagement 12797</div>
   <p>We have paused some frontier RL training to ensure that we can meet the appropriate alignment, security and monitoring standards for the new level of capabilities in front of us. Model progress is now extremely rapid, and we always said we would take action if we felt that model capabilities were outstripping the pace of safety and alignment.
 
 We care very deeply about AI safety. We believe the entire field will have to coordinate on shared safety standards, but will act unilaterally in the meantime.
@@ -169,219 +169,214 @@ We expect confidence in safety to increasingly set the pace of AI progress. We a
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 2304</div>
-  <p>Your software factory should be a monorepo. All your company context (design, marketing, sales, engineering, support…) in one place for agents to build upon</p>
-  <a class="source-link" href="https://x.com/rauchg/status/2089804717337817514">原文</a>
+  <div class="signal-meta">Amjad Masad / @amasad / engagement 3948</div>
+  <p>Agents made software cheaper but made coding expensive.
+
+Today, together with @OpenAI, we’re changing this:</p>
+  <a class="source-link" href="https://x.com/amasad/status/2090079496124674377">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 1808</div>
-  <p>Introducing fx, a tiny, open, native coding agent from Vercel Labs.
+  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 658</div>
+  <p>PSA: <a href="https://t.co/OL0LzGtvAw">https://t.co/OL0LzGtvAw</a> has free GLM-5.2 for 2 weeks from @blackboxai, and 50% off @ChatGPT Sol for a month if you use ▲ AI Gateway. Sol is a brainiac, GLM-5.2 is a workhorse.
 
-Originally an internal tool, fx is a harness and CLI written in Zig, optimized for research and embedding in larger systems. Today, we&#x27;re open sourcing it.
-
-fx is built on three principles:
-
-1. Fast. A single native binary, no runtime to install. It cold starts in 10µs and does no unnecessary work or I/O before accepting input. fx is the answer to &quot;how fast can a coding agent be?&quot;
-
-2. Light. The 6.3MiB binary uses single-digit megabytes of memory at baseline, made for instant installation and embedding in resource-constrained environments and agent sandboxes.
-
-3. Open. Apache-2.0, model and provider agnostic, suitable for local and cloud inference. Its small core extends through skills, plugins, and MCP.
-
-Minimalism is an obsession throughout the entire harness: system prompt, tools, features, binary. The goal was to keep context usage and time to first token low, and make fx optimal for model benchmarking, sandboxing, evals, and gyms.
-
-You can use fx directly or embed it as infrastructure. The CLI feels more like a Unix shell than an IDE in the terminal: it preserves scroll history, produces minimal output, and uses complex TUI rendering very, very sparingly. Programmatically, 𝚏𝚡 𝚊𝚜𝚔 --𝚓𝚜𝚘𝚗 gives structured output, 𝚏𝚡 𝚊𝚌𝚙 connects to editors and other clients, and WebAssembly can even run the whole thing inside the browser (see: <a href="https://t.co/wf2Trg47sC).">https://t.co/wf2Trg47sC).</a>
-
-Privacy is a design constraint: no product telemetry, sessions and usage stay local, and no source code or prompts are shared with any endpoint other than inference. With local inference and auto-updates off, fx is fully hermetic.
-
-fx is experimental. Use at your own risk and expect frequent changes. Chat with us on X (<a href="https://t.co/A2AB2YythC)">https://t.co/A2AB2YythC)</a> or file issues (<a href="https://t.co/GEjTHSoa1J).">https://t.co/GEjTHSoa1J).</a>
-
-𝚌𝚞𝚛𝚕 -𝚏𝚜𝚂𝙻 𝚏𝚡.𝚜𝚑/𝚜𝚎𝚝𝚞𝚙.𝚜𝚑 | 𝚋𝚊𝚜𝚑
-
-<a href="https://t.co/g2uEuXhGnt">https://t.co/g2uEuXhGnt</a></p>
-  <a class="source-link" href="https://x.com/vercel_dev/status/2089828083415355806">原文</a>
+Usage is much higher than we anticipated. We&#x27;re working on adding more GLM capacity!</p>
+  <a class="source-link" href="https://x.com/rauchg/status/2090112319791776192">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 1236</div>
-  <p>Agents can now exploit vulnerable sandbox boundaries, so we are testing ours in the open.
+  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 350</div>
+  <p><a href="https://t.co/OL0LzGtvAw">https://t.co/OL0LzGtvAw</a> is 6.3mb. It starts up in 10µs¹. It&#x27;s a Zig-compiled static ELF binary, or an even smaller 𝚕𝚒𝚋𝚏𝚡.𝚠𝚊𝚜𝚖² 
 
-$1,000,000 hacker challenge for Vercel Sandbox:
+AI will make most infrastructure natively optimized. Case in point: fx can literally finish tasks faster than other agents can boot.
 
-• Escape the Firecracker microVM
-• Defeat the host-side network boundary
-• Up to $50k/report via @Hacker0x01
+Fast is a one-way street.
 
-<a href="https://t.co/6l4HL845jc">https://t.co/6l4HL845jc</a></p>
-  <a class="source-link" href="https://x.com/vercel/status/2089744789982069006">原文</a>
+¹ that&#x27;s microseconds
+² fun fact: the wasm build is actually *smaller*. A lot of binary weight comes from the TLS/HTTP stack. In WebAssembly, fx delegates 𝚏𝚎𝚝𝚌𝚑() to the JS runtime instead. You can try this on <a href="https://t.co/me7se5dvip">https://t.co/me7se5dvip</a></p>
+  <a class="source-link" href="https://x.com/rauchg/status/2090255740384751664">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Amjad Masad / @amasad / engagement 308</div>
-  <p>This team doesn’t have “AI” anywhere in their pitch but has AI growth rates and would have 10x the headcount if they weren’t so AI-pilled.</p>
-  <a class="source-link" href="https://x.com/amasad/status/2089525819567739264">原文</a>
+  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 210</div>
+  <p>Vercel Agent can now join Slack with the full production context of your apps and agents.
+
+▪︎ Add @𝚟𝚎𝚛𝚌𝚎𝚕 to any thread
+▪︎ Create plans and PRs
+▪︎ Roll back deploys and update configs
+<a href="https://t.co/79rbfDy2es">https://t.co/79rbfDy2es</a> <a href="https://t.co/rMcViUjj7R">https://t.co/rMcViUjj7R</a></p>
+  <a class="source-link" href="https://x.com/vercel/status/2090172360410406988">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Amjad Masad / @amasad / engagement 247</div>
-  <p>@DavidSacks My favorite part of his strawman:
-
-“If you’re against AI regulation, how would you feel without the court system?”
-
-Apparently, being concerned about a mega corporate lobbying effort is like being against the freaking JUSTICE system, the cornerstone of civilization!</p>
-  <a class="source-link" href="https://x.com/amasad/status/2089449022507606468">原文</a>
+  <div class="signal-meta">Amjad Masad / @amasad / engagement 195</div>
+  <p>Vibe coding company Replit debuted Free Mode today, a new feature powered by OpenAI’s GPT-5.6 Luna model. The joint announcement, shared exclusively with Fortune, heralds an enhanced partnership between the two tech companies that will see them work on several future products.
+<a href="https://t.co/ZaJt2sjrZ9">https://t.co/ZaJt2sjrZ9</a></p>
+  <a class="source-link" href="https://x.com/FortuneMagazine/status/2090076468508320156">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Amjad Masad / @amasad / engagement 247</div>
-  <p>You can now run black-box pen tests for your Replit apps. 
+  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 51</div>
+  <p>Most of 2012-2025 I spent so much time ... waiting on someone. To finish, to do, to start.
 
-Security scans that test your Replit apps the way external attackers do. 
+Now, the only person I wait on is myself. The agents are constantly working. 
 
-Replit Agent can fix what it finds in a single click. <a href="https://t.co/AyPkiBffFa">https://t.co/AyPkiBffFa</a></p>
-  <a class="source-link" href="https://x.com/Replit/status/2089427187162083785">原文</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">Swyx / @swyx / engagement 64</div>
-  <p>one way to get past the larger models thing i&#x27;ve been using is to periodically use larger models to make deterministic &quot;compound tools&quot; (made out of more primitive tools) that the smaller models cannot screw up. 
-
-pretty handy form of @erikdunteman &quot;muscle memory&quot; - sequences you do more often should be within closer reach</p>
-  <a class="source-link" href="https://x.com/swyx/status/2089499493083529476">原文</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 59</div>
-  <p>For over a year, we&#x27;ve used @higgsfield_ai for video and @reve for images (it&#x27;s great, too OpenAI quietly bought them)
-
-A few months ago, our AI VP Marketing 10K told us to just switch to Higgsfield for images, too
-
-We did. Another quiet churn due to an agent decision. Not a human one.</p>
-  <a class="source-link" href="https://x.com/jasonlk/status/2089479383098724453">原文</a>
+It&#x27;s &quot;better&quot; but also it&#x27;s much more intense.  It also doesn&#x27;t matter. There is no going back.</p>
+  <a class="source-link" href="https://x.com/jasonlk/status/2090143509265125407">原文</a>
 </article>
 
 <article class="signal-card">
   <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 45</div>
-  <p>Huge congrats to @alexmashrabov and team @higgsfield_ai on crossing $700M run-rate and $5B+ round led by DST
+  <p>&quot;As part of going all-in on agents and AI, $100M+ @owner went from 100% sales-led growth for SMB to radically more AI-first self-serve.
 
-Proud to be an investor @saastrfund and one of very first customers!  
+Why?
 
-<a href="https://t.co/Ul9Sk8gedk">https://t.co/Ul9Sk8gedk</a></p>
-  <a class="source-link" href="https://x.com/jasonlk/status/2089366986350551269">原文</a>
+Because it was much, much better for the customers. Small restaurants.&quot; @adamguild <a href="https://t.co/JLOqyAUz5q">https://t.co/JLOqyAUz5q</a></p>
+  <a class="source-link" href="https://x.com/jasonlk/status/2090147032384045462">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 40</div>
-  <p>So our AI VP Revenue “10K&quot; kept pushing up yesterday to use less Zapier and just push data into and across our other systems itself.  It said “I’ll just be your harness and handle it all myself.”
+  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 33</div>
+  <p>New!!  @owner CEO @adamguild:  &quot;How Owner almost got run over pre-AI ... and then grew faster at $50M+ than it did at $20M.&quot;
 
-We didn’t agree, but man, sure felt like Agents want to build fiefdoms.
+Three years ago Owner was the Shopify for restaurants. $89M raised. Beating triple-triple-double-double-double. Everything looked great.
 
-Workflows might be the new headcount (for agents), The more workflows you control, the more power.</p>
-  <a class="source-link" href="https://x.com/jasonlk/status/2089725914796196240">原文</a>
+Then ChatGPT happened and the floor moved twice at once:
+
+→ AI-native startups appeared out of nowhere doing vibe-coded website generation and AI phone ordering
+
+→ The public companies in the category noticed Owner&#x27;s momentum and threw hundreds of engineers at cloning it, then pushed the clone into customer bases of hundreds of thousands of restaurants
+
+His own PMs and engineers: &quot;I personally know 100 customers asking for something else.&quot;
+
+The restaurant industry veterans: &quot;Restaurant owners are TERRIFIED of AI. You&#x27;ll alienate your base.&quot;
+
+What broke the tie wasn&#x27;t a strategy offsite. It was the International Pizza Expo. A PM had thrown a poster in the booth as an afterthought for a half-broken MVP — &quot;analyze what&#x27;s broken about your restaurant online and fix it with AI,&quot; with a QR code. A 55-year-old pizzeria owner from Pennsylvania walked past the real demo, craned his neck, and pulled out his phone to scan it. Then it happened all day. AI became the #1 question at the booth.
+
+The customer discovery interviews 3 months earlier had said the opposite. The experts had said the opposite. The guy with the phone was right.
+
+What they built: type in your restaurant name, and in under 5 minutes the agents crawl every mention of you online, pull your nearby competitors, audit your Google Business Profile, read all your reviews to learn what customers actually love, run an AI photo shoot upscaling your images, add motion with Veo 3, and check ~90 SEO and CRO factors. Free. Before → after in one sitting.
+
+The results:
+
+👉83% of new customers now start their journey in the AI product. Two years ago it was 0%.
+
+- Grew far faster in 2026 YTD and 2025 than 2024
+- Accelerating triple digit growth at $100M ARR
+- Three product lessons worth stealing:
+
+1/ To benefit from agents you have to build an EXTREMELY opinionated product. The magic isn&#x27;t a prettier UI. It&#x27;s the first time software drives the outcome without the user configuring anything.
+
+2/ That opinionation is also your insulation from &quot;getting screwed over by Claude.&quot; Claude Code would build Tailay a better website today. What it can&#x27;t know is which components on a restaurant site correlate with sales growth, and which CTA placement puts you at the top of Google. Owner knows because they enforce one system across thousands of restaurants.
+
+3/ DAU/WAU/MAU is now inverted. Every time a customer logs in to manually fix what your software did, you failed.
+
+<a href="https://t.co/yFJ75ijMdp">https://t.co/yFJ75ijMdp</a></p>
+  <a class="source-link" href="https://x.com/jasonlk/status/2090106444163187063">原文</a>
 </article>
   </section>
   <section class="signal-panel">
     <div class="section-heading"><h2>今日论文雷达</h2></div>
     
 <article class="signal-card">
+  <div class="signal-meta">cs.CL, cs.AI </div>
+  <h3>SPADE: Self-Play in Adaptive Synthetic Executable Environments</h3>
+  <p class="authors">Bo Liu, Simon Yu, Yiding Jiang, Ao Qu, Andrew Zhao, Zichen Liu</p>
+  <p>Continuous self-improvement requires an ever-expanding pool of self-generated, diverse, adaptive goals.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.19197v1">arXiv</a>
+</article>
+
+<article class="signal-card">
   <div class="signal-meta">cs.RO </div>
-  <h3>Hydra-0: Action Flow for Generalist World Modeling and Control</h3>
-  <p class="authors">Hongyu Li, Bowen Wen, Xinghao Zhu, Yixuan Wang, Yilun Du, Yunzhu Li</p>
-  <p>We introduce Hydra-0, a generalist world model conditioned on action flow, which represents robot actions as pixel motion.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.18077v1">arXiv</a>
+  <h3>PartialBiGrasp: Inferring Hidden Local Geometry for Bimanual Grasping from Partial Views</h3>
+  <p class="authors">Ayush Kaura, Vignesh Vembar, Md Faizal Karim, Keshab Patra, K Madhava Krishna</p>
+  <p>Dual-arm robotic grasping is essential for manipulating large, heavy, and geometrically complex objects that cannot be reliably handled using a single manipulator.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.19188v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.CV, cs.AI </div>
-  <h3>From Corpora to Co-Evolving Capabilities: Capability-Centric Data Design for Generalist Image Generation</h3>
-  <p class="authors">Xingjian Wang, Zhao Wang, Taihang Hu, Jun Zheng, Qing Jin, Qinye Zhou</p>
-  <p>Large-scale image generation has benefited from advances in data scale, quality, rebalancing, and recaptioning, yet conventional pipelines typically optimize task-specific datasets in isolation.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.18076v1">arXiv</a>
+  <div class="signal-meta">cs.RO, cs.AI </div>
+  <h3>ADEPT: Accelerating Dexterity via Pre-Training and Post-Training using Reinforcement Learning</h3>
+  <p class="authors">Jayjun Lee, Jessica Yin, Asif Rana, Nicholas Blauch, Sam Mady, Mohak Bhardwaj</p>
+  <p>We introduce Accelerating Dexterity via Pre-Training (ADEPT), a large-scale reinforcement learning (RL) framework for learning sim-to-real transferable dexterity across high degree-of-freedom (DoF) robot embodiments tha...</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.19182v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.CL </div>
-  <h3>Multi-Agent AI System for Radiology Report Structuring and Quality Assurance with Independent Radiologist Evaluation</h3>
-  <p class="authors">Iryna Hartsock, Cesar Lam, Christopher Otteni, Aliya Qayyum, Robert Gatenby, Cyrillo Araujo</p>
-  <p>Purpose: To develop and evaluate a locally deployed multi-agent AI system for radiology report structuring and quality assurance.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.18072v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">cs.AI, cs.CL, cs.LG </div>
-  <h3>On the Fragility of Self-Improving Agents: Variance, Task Order, and Underspecification</h3>
-  <p class="authors">Qinyuan Ye, Yu Li, Yada Pruksachatkun, Jiaxin Zhang, Chien-Sheng Wu</p>
-  <p>Memory-based self-improving agents--those that learn from an online stream of tasks and improve over time by maintaining a textual memory bank--have shown great promise in recent literature.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.18066v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">cs.CL, cs.LG </div>
-  <h3>TokEval: A Tokenizer Evaluation Suite</h3>
-  <p class="authors">Clara Meister</p>
-  <p>Language model tokenizers are typically selected with minimal evaluation, despite the fact that their design choices directly impact model capabilities.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.18062v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">cs.AI </div>
-  <h3>Delegation Asymmetry in Agentic Recommender Systems: Measuring Two-Sided Receptivity in Online Dating</h3>
-  <p class="authors">Daria Leshchikova, Valentina V. Kuskova, Dmitry Zaytsev, Valerii Klimov</p>
-  <p>Autonomous LLM agents that converse on a user&#x27;s behalf are an emerging design pattern in matching platforms, yet their viability depends on a condition rarely examined: users must accept not only delegating conversation...</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.18058v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">cs.AI </div>
-  <h3>StagedWorkspace: A Versioned Workspace for Knowledge-Work Agents</h3>
-  <p class="authors">Yining Hua, Hongbin Na, Yifan Zhou, Akshay Kalose, Cyrus Ayubcha, Levi Lian</p>
-  <p>AI agents increasingly perform knowledge work (i.e., produce and modify persistent digital artifacts such as code repositories, documents, spreadsheets, slides, reports), yet the parsed views they search, the native fil...</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.18050v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">cs.CL </div>
-  <h3>Language Has Two Parameters: Narrative-Induced Semantic Plasticity and Phase-Sensitive Interpretation</h3>
-  <p class="authors">Hollis Robbins</p>
-  <p>Language has two parameters. Count how often words occur together and you estimate amplitude, the strength of association.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.18041v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">cs.LG, cs.CV </div>
-  <h3>Optimize Your Sampling: Tuned Diffusion Sampling with Bayesian Optimization</h3>
-  <p class="authors">Travis Zhang, Christian Belardi, Justin Lovelace, Jin Peng Zhou, Saebyeol Shin, Carla P. Gomes</p>
-  <p>Sampling from a diffusion model typically requires many forward passes through a large neural network, making generation computationally expensive.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.18040v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">stat.ML, cs.LG </div>
-  <h3>Where A Small Language Model Helps in Invoice Categorisation, Understood Through Embedding Geometry</h3>
-  <p class="authors">Emma Ceccherini, Daniel Lawson, Anjulika Salhan</p>
-  <p>Categorising invoices into the correct General Ledger (GL) code underpins financial reporting and tax compliance.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.18033v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">cs.CL </div>
-  <h3>Chain-of-Experience for Continual LLM Improvement</h3>
-  <p class="authors">Haoqin Tu, Yunhao Fang, Yizhong Wang, Cihang Xie, Shen Yan</p>
-  <p>Humans continuously learn from experience, whereas conventional large language model (LLM) evaluations ignore the models&#x27; ability to improve through inference-time interaction.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.18027v1">arXiv</a>
+  <div class="signal-meta">cs.LG, cs.AI, cs.CL </div>
+  <h3>Beyond Teacher Likelihood: Group-Calibrated On-Policy Distillation for Long-Context Reasoning</h3>
+  <p class="authors">Zhu Zhang, Jixun Wang, Xiaoang Xu, Xiaorong Wang, Zihan Zhou, Zhiyuan Wang</p>
+  <p>On-policy distillation (OPD) trains a student on its own responses using dense token-level guidance from a stronger teacher.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.19181v1">arXiv</a>
 </article>
 
 <article class="signal-card">
   <div class="signal-meta">cs.LG </div>
-  <h3>Revisiting WEASEL 2.0: Reproduction, Sensitivity, and an Adaptive Ensemble-Size Rule</h3>
-  <p class="authors">Cian Higgins, Gerard Carrigan, Pinar Sungu Isiacik, Georgiana Ifrim</p>
-  <p>WEASEL 2.0 is a dictionary-based time series classifier that combines dilated sliding windows with a randomised hyperparameter ensemble and a fixed-size dense feature representation.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.18021v1">arXiv</a>
+  <h3>Learned, Then Lost: A Measured Single-Example Counterfactual in Pre-training</h3>
+  <p class="authors">Zachary Speck, Asa Shepard</p>
+  <p>A single training example&#x27;s contribution to a finished model is normally estimated rather than measured, because measuring it takes two expensive full pre-training runs that differ in one row of one batch.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.19168v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">cs.CL, cs.CY </div>
+  <h3>ChildSafeAds Shared Task 2026: Commercial Content in Child-Facing YouTube Videos</h3>
+  <p class="authors">Thales Bertaglia, Catalina Goanta, Gerasimos Spanakis, Gunes Acar</p>
+  <p>ChildSafeAds is a shared task on commercial content in YouTube videos likely to reach children and teenagers.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.19165v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">physics.ao-ph, cs.AI </div>
+  <h3>Interpretable AI predicts a 2026 summer dry anomaly in central China</h3>
+  <p class="authors">Anran Wang, Wen Shi, Yong Luo, Jianbin Huang, Lijuan Chen, Junhu Zhao</p>
+  <p>Seasonal precipitation anomalies are largely regulated by atmospheric circulation, which dynamical models predict with greater reliability than precipitation itself.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.19163v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">cs.AI, cs.CR </div>
+  <h3>Beyond the Transcript: Detecting Covert Co ordination in Latent Multi-Agent Communication</h3>
+  <p class="authors">Ramneet Kaur, Pradyumna Chari, Ramesh Raskar, Jugad Singh, Sumit Kumar Jha, Anirban Roy</p>
+  <p>Language-model agents can communicate through continuous hidden states that are invisible in public transcripts, creating opportunities for covert harmful coordination.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.19161v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">cs.LG, math.OC, stat.ML </div>
+  <h3>Continuous-Time Reinforcement Learning for Controlled Hawkes Jump-Diffusions</h3>
+  <p class="authors">Tomasz R. Bielecki, Thibaut Mastrolia, Haoze Yan</p>
+  <p>We study stochastic control of multivariate Hawkes-driven stochastic differential equations with machine learning algorithms in a non-Markovian setting.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.19151v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">cs.DC, cs.AI, cs.SE </div>
+  <h3>Pre-Compiled Pipeline Shards for Distributed LLM Inference on Intel AI PC Fleets</h3>
+  <p class="authors">Tate Berenbaum, Muthaiah Venkatachalam</p>
+  <p>Modern Intel AI PCs ship capable integrated GPUs and NPUs with 16+ GB of unified memory, and they spend considerable time idle.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.19147v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">cs.AI, cs.CY, cs.LG, cs.SE </div>
+  <h3>Grouping the Stochastic Machine: Precision, Not Capability, as the Frontier Metric for AI Systems</h3>
+  <p class="authors">George Andrikopoulos</p>
+  <p>Frontier language models are compared, marketed, and benchmarked on capability -- what their best or average output can achieve.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.19140v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">cs.LG </div>
+  <h3>SCORE: Subject Coordinate Recovery for Label-Free Cross-Subject EEG-to-Image Retrieval</h3>
+  <p class="authors">Zhenyao Cui, Siyuan Kan, Siyang Li, Ziwei Wang, Dongrui Wu</p>
+  <p>Accurate visual decoding can reveal how the brain represents visual information and recover perceived content from neural signals such as electroencephalography (EEG), with potential for neural communication.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.19134v1">arXiv</a>
 </article>
   </section>
 </section>
 
-<p class="signal-generated">更新时间：2026-08-19T04:01:35.521012+00:00</p>
+<p class="signal-generated">更新时间：2026-08-20T03:44:51.557399+00:00</p>
 
   </main>
 </body>
