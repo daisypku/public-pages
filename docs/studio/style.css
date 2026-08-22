@@ -517,6 +517,22 @@ textarea { resize: vertical; }
   display: grid;
   gap: 6px;
 }
+.liquidity-items.has-chart {
+  display: block;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+.liquidity-chart {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+}
+.liquidity-chart * {
+  max-width: 100%;
+}
+.liquidity-chart table {
+  width: 100% !important;
+}
 .liquidity-items p {
   margin: 0;
   color: #3f4b56;

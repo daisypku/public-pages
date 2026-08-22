@@ -63,6 +63,36 @@ function extractLiquidity(doc) {
     .slice(0, 4);
 }
 
+function stripUnsafeNodes(root) {
+  root.querySelectorAll("script, iframe, object, embed").forEach((node) => node.remove());
+  root.querySelectorAll("*").forEach((node) => {
+    Array.from(node.attributes).forEach((attribute) => {
+      if (/^on/i.test(attribute.name)) node.removeAttribute(attribute.name);
+    });
+  });
+}
+
+function extractLiquidityChart(doc) {
+  const heading = firstByHeading(doc, "h4", /市场流动性|Liquidity/);
+  const box = heading?.parentElement;
+  if (!box) return "";
+
+  const wrapper = document.createElement("div");
+  wrapper.className = "liquidity-chart";
+  const stopPattern = /A股成交 Top 10|港股成交 Top 10|ETF资金风向/;
+
+  for (const child of Array.from(box.children)) {
+    if (child === heading) continue;
+    const text = textOf(child);
+    if (stopPattern.test(text)) break;
+    if (!text) continue;
+    wrapper.appendChild(child.cloneNode(true));
+  }
+
+  stripUnsafeNodes(wrapper);
+  return wrapper.children.length ? wrapper.innerHTML : "";
+}
+
 const PODCAST_READER_URL = "https://daisypku.github.io/public-pages/pod2wiki-reader/index.html";
 
 function absoluteUrl(value, base) {
@@ -169,8 +199,13 @@ async function hydrateInvestmentBrief() {
     const commoditiesRows = tableRows(commoditiesHeading?.parentElement?.querySelector("table"), 4);
     renderMiniTable(commoditiesEl, commoditiesRows);
 
-    const liquidityLines = extractLiquidity(doc);
-    if (liquidityLines.length && liquidityEl) {
+    const liquidityChart = extractLiquidityChart(doc);
+    const liquidityLines = liquidityChart ? [] : extractLiquidity(doc);
+    if (liquidityEl && liquidityChart) {
+      liquidityEl.innerHTML = liquidityChart;
+      liquidityEl.classList.add("has-chart");
+    } else if (liquidityLines.length && liquidityEl) {
+      liquidityEl.classList.remove("has-chart");
       liquidityEl.innerHTML = liquidityLines.map((line) => `<p>${line}</p>`).join("");
     }
 
