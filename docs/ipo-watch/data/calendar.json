@@ -1,36 +1,6 @@
 [
   {
     "market": "A股",
-    "name": "N高凯",
-    "code": "688835.SH",
-    "apply_code": "787835",
-    "event_date": "2026-08-25",
-    "event_type": "上市",
-    "listing_date": "2026-08-25",
-    "apply_date": "2026-08-14",
-    "offer_price": "61.36",
-    "financing_total": "15.33亿元",
-    "business": "精密流体控制领域中关键控制部件及相关设备的研发、生产与销售",
-    "source": "东方财富",
-    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
-  },
-  {
-    "market": "A股",
-    "name": "马矿股份",
-    "code": "601123.SH",
-    "apply_code": "780123",
-    "event_date": "2026-08-25",
-    "event_type": "中签号/结果",
-    "listing_date": "",
-    "apply_date": "2026-08-21",
-    "offer_price": "6.65",
-    "financing_total": "8.21亿元",
-    "business": "铁矿石的采选、综合利用及铁精粉、钼精矿销售,石灰石的开采和销售",
-    "source": "东方财富",
-    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
-  },
-  {
-    "market": "A股",
     "name": "天博智能",
     "code": "603448.SH",
     "apply_code": "732448",
@@ -142,6 +112,21 @@
     "offer_price": "",
     "financing_total": "60.00亿元",
     "business": "公司坚持原始创新、自主研发的技术路线,构筑长期可持续发展的核心竞争力和护城河。成立近8年来,公司自研迭代了四代架构5款云端AI芯片,构建了覆盖AI芯片、AI加速卡及模组、智算系统及集群和AI计算及编程软件平台的完整产品体系",
+    "source": "东方财富",
+    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
+  },
+  {
+    "market": "A股",
+    "name": "信诺维",
+    "code": "688837.SH",
+    "apply_code": "787837",
+    "event_date": "2026-09-03",
+    "event_type": "申购",
+    "listing_date": "",
+    "apply_date": "2026-09-03",
+    "offer_price": "",
+    "financing_total": "29.40亿元",
+    "business": "聚焦于全球范围内重大未满足临床需求,以疾病为导向,致力于将创新转化为临床价值,为患者提供疾病领域内最佳治疗药物的创新药",
     "source": "东方财富",
     "source_url": "https://data.eastmoney.com/xg/xg/default.html"
   }
