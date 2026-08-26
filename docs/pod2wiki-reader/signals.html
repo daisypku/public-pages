@@ -66,63 +66,69 @@ p { margin:10px 0; } .article-page p { color:#243241; } ul { padding-left:24px; 
 
 <section class="signal-analysis">
   <div class="section-heading"><p class="kicker">Synthesis</p><h2>今天大家在讨论什么</h2></div>
-  <div class="signal-summary-grid"></div>
+  <div class="signal-summary-grid"><article class="signal-summary-card"><div class="signal-meta">新出现</div>
+<h3>AI芯片硬件创新</h3><p>OpenAI宣布推出其自研芯片，引发了业界对AI硬件性能和未来竞争格局的广泛关注。分析师指出，这款新芯片在性能上可能超越了现有市场领导者的产品。</p>
+<ul><li>Sam Altman (OpenAI CEO) 确认公司已成功制造出速度快的芯片。</li><li>Dylan Patel (分析师) 认为OpenAI的Jalapeno芯片性能卓越，甚至超越了英伟达的Blackwell和Rubin系列，是AI领域的一项重大突破。</li></ul></article><article class="signal-summary-card"><div class="signal-meta">升温</div>
+<h3>AI智能体应用与开发生态</h3><p>AI智能体在自动化、效率提升和安全访问方面的能力日益增强，多个公司发布了面向智能体的新产品和工具，并有用户分享了智能体在实际工作中的显著效果和成本优势。</p>
+<ul><li>Guillermo Rauch (Vercel CEO) 宣布Vercel Connect全面上市，为应用程序和智能体提供对100多个服务的安全访问；同时推出Run SDK，支持动态代码执行，以及通过网关提供托管工具（如Exa搜索）以简化智能体开发。</li><li>Amjad Masad (Replit CEO) 表示Replit Agent在日常工作中已完全取代Claude CoWork，因为它更持久、更细致，能更有效地利用代码完成任务。他还强调Replit Agent作为“最便宜、最快、最智能的员工”，能以极低的成本和极高的效率处理行政任务。</li><li>Jason Lemkin (投资人) 分享了餐厅AI公司Owner利用AI代理进行内部协调的案例，并从其成功中总结出AI产品应以客户体验为中心、快速迭代等商业经验。</li></ul></article><article class="signal-summary-card"><div class="signal-meta">持续</div>
+<h3>AI驱动的SaaS产品与商业增长策略</h3><p>AI正成为SaaS产品实现超高速增长的关键驱动力，有公司通过AI销售平台和AI自动化服务取得了显著的收入增长和客户优势。投资人也分享了AI产品成功的商业经验和与关键影响力人物合作的重要性。</p>
+<ul><li>Jason Lemkin (投资人) 宣布Monaco AI销售平台全面上市，在测试期间帮助客户月收入增长率平均提高16个百分点，会议量翻三倍，成为全球最先进的AI销售平台。</li><li>Jason Lemkin (投资人) 提到餐厅AI公司Owner通过AI自动化服务实现超1亿美元的ARR，并总结了AI产品成功的7条经验，包括客户无需登录、AI需结合领域知识、客户研究需快速更新、关注营收而非时间节省等。</li><li>Jason Lemkin (投资人) 强调了与关键客户或影响力人物建立良好关系的重要性，例如SaaStr免费为Replit带来了数百万的页面浏览量和曝光。</li></ul></article></div>
   <div class="section-heading paper-heading"><h2>最新论文推进了什么</h2></div>
-  <div class="signal-summary-grid"><article class="signal-summary-card"><h3>How to Train a Critic Stably and Efficiently</h3>
-<p><strong>研究问题：</strong>大型语言模型（LLM）的基于群组的强化学习方法（如GRPO）通过采样多个响应来避免训练评论家模型。然而，一个可靠的评论家模型可以从一个响应中估计token级别的优势，但标准的基于评论家模型的训练方法往往不稳定。</p>
-<p><strong>方法：</strong>本研究深入探讨了这种不稳定性，并开发了“最佳实践评论家优化（BPCO）”方法。BPCO结合了DPPO、将价值预测限制在奖励范围、蒙特卡洛价值目标、未归一化的策略优势以及长度自适应的广义优势估计。由于评论家模型仅在训练期间使用，BPCO还可以根据对策略隐藏的奖励定义信息（如参考答案或评分标准）对其进行条件化。通过受控实验，研究隔离了每个设计选择的效果。</p>
-<p><strong>结果：</strong>在数学推理任务中，BPCO持续改进了强大的基于评论家模型的基线，并且在每个提示只采样一个响应的情况下，匹配或超越了基于群组的基线。同样的配方也改进了基于评分标准的奖励学习。这些结果表明，精心设计的评论家模型为群组相对优势估计提供了一个可靠的替代方案。</p>
-<p><strong>为什么重要：</strong>该研究提供了一种稳定且高效的评论家模型训练方法，使得LLM的强化学习能够从单个响应中学习，显著提高了训练效率，并为利用外部奖励信息（如评分标准）进行模型优化开辟了新途径。</p>
-<p><strong>局限：</strong>论文未明确指出其方法的局限性，但其重点在于解决现有评论家模型训练的不稳定性和效率问题。</p>
-<a class="source-link" href="https://arxiv.org/abs/2608.23566v1">阅读论文</a></article><article class="signal-summary-card"><h3>ReWorld: An Interactive World Model with Long-Horizon Memory</h3>
-<p><strong>研究问题：</strong>交互式世界模型必须遵循用户动作、记住已显示的位置并实时流式传输。这在结构上存在矛盾：控制需要短时间范围，而记忆需要无限时间范围。</p>
-<p><strong>方法：</strong>ReWorld通过在训练期间分离控制和记忆，并在推理时对其进行限制来解决这一问题。它采用混合的每头注意力窗口，将大多数注意力头限制在近期，而一小部分全局注意力头则关注整个历史；随机头路由防止特定能力绑定到特定注意力头；随机块丢弃使稀疏历史数据在分布内。在推理时，所有过去的信息都存储在固定预算下：一个由姿态索引地标库支持的有限KV缓存，模型从中检索最接近当前姿态的地标。一个度量尺度对齐的数据引擎将八个来源（虚幻引擎渲染的飞行、游戏漫游和真实世界镜头）置于一个物理动作尺度上，确保相同的按键在每个来源中移动相机相同的距离，并且回文轨迹提供了记忆训练所需的重访证据。然后，通过仅限于LoRA适配器的分布匹配蒸馏将采样压缩到四个步骤：一个骨干网络同时支持高保真多步模式和实时交互模式，在逼真、游戏风格和风格化世界中流式传输704x1280视频。</p>
-<p><strong>结果：</strong>在涵盖动作跟随、长程召回和视频质量的三轴协议下，ReWorld在与六个近期交互式世界模型的对比中，实现了最佳的控制保真度（11.95°旋转误差和最佳相机运动一致性）和最佳的生成质量。在长达一分钟的往返回放（64秒，384个潜在变量）中，其固定的12块缓存仍能重新生成起始视图，而滑动窗口早已驱逐了证据，并且全KV注意力耗尽了内存。</p>
-<p><strong>为什么重要：</strong>ReWorld通过创新性地解决长程记忆与实时交互之间的矛盾，显著提升了交互式世界模型的性能，使其在控制精度、生成质量和记忆能力方面均达到领先水平，为构建更真实、更沉浸的虚拟世界奠定了基础。</p>
-<p><strong>局限：</strong>论文未明确指出其方法的局限性。</p>
-<a class="source-link" href="https://arxiv.org/abs/2608.23565v1">阅读论文</a></article><article class="signal-summary-card"><h3>SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration?</h3>
-<p><strong>研究问题：</strong>现代软件系统在数十年开发中积累了技术债务，导致迁移成本高昂且主要依赖人工。现有基准仅评估行为正确性，而非迁移是否实际发生，这导致Agent可能通过复制原始实现来通过测试，而非真正完成迁移。</p>
-<p><strong>方法：</strong>引入SWE Refactor Bench，一个包含20个全仓库迁移任务的基准，涵盖4种技术债务。采用三阶段评估协议：(1) 迁移审计验证迁移是否发生；(2) 行为测试使用固定测试套件测量正确性；(3) Agent验证使用6个独立的编码Agent生成针对隐藏行为差异的测试。评估了8个前沿模型和26种模型-努力配置，共520次运行。</p>
-<p><strong>结果：</strong>在520次运行中，只有28次（5.4%）通过所有三个阶段；20个任务中有13个没有获得接受的解决方案；最佳模型（claude-opus-5）得分仅为47.0/100。迁移完整性和行为正确性是不同的能力：少数运行通过跳过迁移来保持行为，但在迁移审计阶段被阻止；大多数尝试迁移但破坏了行为，并在行为测试阶段被阻止。Agent无法实现完美迁移：在通过迁移审计的340次运行中，58%达到99%的固定检查，但只有26%达到100%。Agent能力在不同迁移类别中存在差异：在构建工具链重写上得分31.4，但在语言重写上仅得分5.6。</p>
-<p><strong>为什么重要：</strong>SWE Refactor Bench揭示了当前编码Agent在执行复杂、全仓库软件迁移方面的显著局限性，并提供了一个严格的测试平台，以推动开发能够进行可靠全仓库迁移的编码Agent，对软件工程自动化领域具有重要意义。</p>
-<p><strong>局限：</strong>论文主要揭示了当前AI Agent在软件重构任务上的局限性，而非其基准测试本身的局限性。基准测试的复杂性和严格性是其核心贡献。</p>
-<a class="source-link" href="https://arxiv.org/abs/2608.23564v1">阅读论文</a></article><article class="signal-summary-card"><h3>EG-ARSA: An Expert-Grounded Open Model for Visual Road Safety Auditing in Low-Resource Settings</h3>
-<p><strong>研究问题：</strong>在低收入和中等收入国家，道路交通事故伤害仍然是一个重大挑战，主动的道路安全审计受到不完整事故记录、合格审计员短缺以及大规模现场检查成本高昂的限制。</p>
-<p><strong>方法：</strong>提出了一种新颖的人工智能框架——专家引导蒸馏（EGD），将机构的道路安全专业知识转移到一个紧凑的视觉-语言模型中，用于可扩展的视觉道路安全审计。其关键创新在于量化的专家引导阶段，其中教师视觉-语言模型根据权威的现场审计进行校准。只有当教师模型与专家风险评估达到实质性一致（Cohen&#x27;s kappa = 0.74）后，才允许进行大规模标注。校准后的教师模型生成结构化监督，通过低秩适应（LoRA）和单个无泄漏提示蒸馏到一个80亿参数的学生视觉-语言模型中。研究还引入了孟加拉国道路安全审计（BD-ARSA）数据集，这是第一个开放的、专家引导的孟加拉国视觉道路安全审计数据集，包含21,947条图像-审计记录，覆盖近全国范围，并开发了第一个专门用于此任务的视觉-语言模型——专家引导道路安全审计员（EG-ARSA）。</p>
-<p><strong>结果：</strong>实验结果表明，引导式微调显著改善了序数风险评估，优于零样本基线。盲法专家评估表明，紧凑的学生模型（EG-ARSA）优于其310亿参数的教师模型和Gemini-2.5-Flash。</p>
-<p><strong>为什么重要：</strong>该研究提供了一种有效且可扩展的工程解决方案，用于在资源受限环境中进行主动道路安全审计，通过将专家知识融入AI模型，有望显著改善道路安全状况，减少交通事故伤害。</p>
-<p><strong>局限：</strong>论文未明确指出其方法的局限性。</p>
-<a class="source-link" href="https://arxiv.org/abs/2608.23563v1">阅读论文</a></article><article class="signal-summary-card"><h3>Prime Agent: A Self-Improving RLM Harness</h3>
-<p><strong>研究问题：</strong>语言模型是顺序处理器，但长周期Agent需要模型权重和活动上下文之外的外部信息和计算。现有的Agent框架可能存在缺陷，无法充分展现模型的真实能力。</p>
-<p><strong>方法：</strong>Prime Agent是一个用于长周期评估和编码Agent工作流的开源框架。它采用持久化的IPython REPL，实现程序化上下文处理和测试时计算（递归语言模型抽象）。Continual Harness在不同轨迹中保留历史、记忆、技能、提示和子Agent规范。递归子Agent通过直接的Agent间通信进行协调，Agents View允许人类检查和管理由守护进程支持的会话。Prime Agent标准化了执行、恢复、验证和资源核算，同时将策略构建留给模型。</p>
-<p><strong>结果：</strong>Prime Agent将ARC-AGI-3 RHAE Best@1从30%提高到95.5%，并在长上下文编码、GPU内核生成、模拟器构建和自主nanoGPT速通等任务中匹配或超越了原生和流行的框架。在Factorio游戏中，研究发现精炼允许持续的技术进步，专用子Agent能够实现并行工作。</p>
-<p><strong>为什么重要：</strong>Prime Agent提供了一个强大、富有表现力且自改进的框架，用于开发和评估长周期AI Agent，通过防止框架故障掩盖模型能力，从而推动对模型真实最大潜在能力的测量，对Agent领域的发展具有重要意义。</p>
-<p><strong>局限：</strong>论文未明确指出其方法的局限性。</p>
-<a class="source-link" href="https://arxiv.org/abs/2608.23552v1">阅读论文</a></article><article class="signal-summary-card"><h3>How AI Assistance Affects Human Skill Development: A Study of Learning with Logic Puzzles</h3>
-<p><strong>研究问题：</strong>AI辅助虽然可以在短期内提高人类任务表现，但也可能长期损害技能发展。</p>
-<p><strong>方法：</strong>通过一项受控的逻辑谜题实验来检验这一矛盾，实验中参与者在AI可用之前、期间和之后完成任务。通过实验性地改变AI请求成本，研究发现较低成本的辅助会诱导更频繁的AI使用。使用贝叶斯潜在能力模型来分离初始能力、AI后能力和参与者特定的技能变化，同时估计AI访问阶段的独立推理与技能发展之间的关系。</p>
-<p><strong>结果：</strong>研究发现，在AI访问阶段请求AI辅助的参与者在辅助移除后表现更差，并且他们后续的无辅助表现被早期AI辅助表现高估了。结果表明，在AI访问阶段进行更多的独立问题解决努力与潜在能力的更大提升相关，这与AI辅助替代独立推理时技能发展较弱的解释一致。</p>
-<p><strong>为什么重要：</strong>这项研究提供了实证证据，表明过度依赖AI辅助可能会阻碍人类技能发展，揭示了短期性能提升与长期学习之间的权衡，对AI在教育和专业培训中的设计和应用具有重要指导意义。</p>
-<p><strong>局限：</strong>研究基于逻辑谜题实验，其结果可能不完全适用于所有类型的技能发展或AI辅助场景。</p>
-<a class="source-link" href="https://arxiv.org/abs/2608.23543v1">阅读论文</a></article><article class="signal-summary-card"><h3>The Interaction Tax: When Communication Erases Diversity in Multi-Agent Teams</h3>
-<p><strong>研究问题：</strong>关于多Agent LLM交互是帮助还是阻碍存在矛盾的发现。一些研究报告了辩论、批判循环和Agent混合合成带来的收益，而另一些研究发现，在相同预算下，交互增加了成本但没有提高质量，或者独立采样已经捕捉了多Agent的收益。</p>
-<p><strong>方法：</strong>本研究认为这种矛盾部分反映了一个缺失的区别，因为并非所有多Agent通信都是平等的。当Agent阅读彼此的完整输出时，它们的提议会在一轮内趋同，从而消除了使用多个模型所带来的多样性，称之为“交互税”。研究在匹配预算下测试了11个由验证器评分的优化任务，并比较了完整解决方案交互与独立提议生成。</p>
-<p><strong>结果：</strong>研究发现，完整解决方案交互是一个弱默认选项。独立提议生成避免了这种崩溃。完整解决方案交互主要使Agent停留在它们看到的第一个解决方案附近，而不是尝试不同的方法，并且批判只有在LLM容易发现和修复违规规则时才有效。这些结果表明，多Agent性能更多地取决于它们交换的信息，而不是Agent的数量，并且交互只有在Agent在正确的时间共享正确的信息时才有效。</p>
-<p><strong>为什么重要：</strong>该研究挑战了关于多Agent协作的普遍假设，强调了信息交换的质量和时机对多Agent系统性能的关键影响，为设计更有效率和多样性的多Agent LLM系统提供了重要指导。</p>
-<p><strong>局限：</strong>研究主要集中在“验证器评分的优化任务”，可能无法完全捕捉所有多Agent场景的复杂性。</p>
-<a class="source-link" href="https://arxiv.org/abs/2608.23541v1">阅读论文</a></article><article class="signal-summary-card"><h3>Interpretable AI with Local Distillation</h3>
-<p><strong>研究问题：</strong>现代AI模型（如表格基础模型和梯度提升集成模型）在预测能力上超越了经典方法，但对其预测结果的解释能力不足，这在高风险决策中至关重要。</p>
-<p><strong>方法：</strong>提出了一种名为“局部蒸馏”的方法，其中一个黑盒“教师”模型在每个查询点指导一个正则化线性“学生”模型。教师模型通过对具有相似预测结果的训练观测值进行加权来定义“局部性”，并通过将其在查询点的预测作为伪观测值（其权重从数据中估计）来锚定拟合。为了解释性，研究在局部目标中添加少量高斯随机化，并使用重新拟合来评估稳定性：选择频率识别查询点处的可靠特征，聚类随机拟合识别数据中稳定的子组。在lasso惩罚下，研究证明这种随机化产生的特征选择概率在训练响应的小扰动下是稳定的。</p>
-<p><strong>结果：</strong>在17个基准数据集上，局部蒸馏几乎匹配了其AI教师模型的准确性，同时在每个测试点生成了一个稀疏线性模型。在一个高维癌症基因表达示例中，该框架识别出局部模型使用不同基因的患者亚组；这种异质性对于全局线性模型是不可见的，并且难以在黑盒模型中浮现。</p>
-<p><strong>为什么重要：</strong>该研究提供了一种在保持高预测准确性的同时，为复杂AI模型提供局部、可解释性解释的有效方法，特别适用于表格数据，这对于提高AI在医疗、金融等高风险领域的透明度和信任度至关重要。</p>
-<p><strong>局限：</strong>论文未明确指出其方法的局限性。</p>
-<a class="source-link" href="https://arxiv.org/abs/2608.23538v1">阅读论文</a></article></div>
-  <div class="section-heading paper-heading"><h2>与播客相关的信号</h2></div><div class="connection-grid"><article class="connection-card"><strong>编码Agent在复杂软件迁移中的能力局限性与工程挑战</strong>
-<p>论文《SWE Refactor Bench》揭示了当前编码Agent在执行复杂、全仓库软件迁移方面的显著局限性，并强调了工程挑战。播客《硅谷101》深入探讨了AI Agent领域从模型能力追求转向工程挑战和成本效益的演进，以及从外部API依赖到本地自研的趋势，与论文主题高度相关。</p><a class="source-link" href="20260819.html#e249-token经济转点-openclaw-hermes到本地自研的agent进化之路">打开播客</a></article><article class="connection-card"><strong>长周期AI Agent框架的开发与评估</strong>
-<p>论文《Prime Agent》介绍了一个用于长周期评估和编码Agent工作流的开源框架，旨在标准化执行、恢复、验证和资源核算，并推动模型真实能力测量。播客《硅谷101》讨论了AI Agent的进化路径、工程化挑战和成本优化，与Prime Agent作为长周期AI Agent工作流的开源框架的目标相契合。</p><a class="source-link" href="20260819.html#e249-token经济转点-openclaw-hermes到本地自研的agent进化之路">打开播客</a></article><article class="connection-card"><strong>多Agent LLM交互中的信息交换与多样性影响</strong>
-<p>论文《The Interaction Tax》探讨了多Agent LLM交互中信息交换方式对Agent团队性能和多样性的影响，指出不当的交互可能消除多样性。播客《硅谷101》讨论了AI Agent的发展和挑战，而多Agent系统设计是AI Agent领域的一个关键方面，两者都聚焦于AI Agent的能力和实际应用。</p><a class="source-link" href="20260819.html#e249-token经济转点-openclaw-hermes到本地自研的agent进化之路">打开播客</a></article><article class="connection-card"><strong>AI和工程技术在医疗健康领域的应用</strong>
-<p>论文《Predicting Multiple Clinical Outcomes...》利用多模态传感器数据预测老年人功能恢复和社交隔离的临床结果，属于AI在医疗健康领域的应用。播客《No Priors》探讨了脑机接口和生物医学工程在医疗领域的应用，特别是通过工程学方法解决视力恢复问题，两者都属于AI和工程技术在医疗健康领域的应用范畴。</p><a class="source-link" href="20260820.html#from-restoring-sight-to-reimagining-the-brain-with-max-hodak">打开播客</a></article><article class="connection-card"><strong>科学Agent在复杂地球系统分析中的端到端可靠性评估</strong>
-<p>论文《EarthVerse》引入了一个基准，用于评估科学Agent在复杂地球系统分析中的端到端科学可靠性。播客《硅谷101》讨论了AI Agent的进化和工程挑战，两者都聚焦于AI Agent的能力和实际应用。</p><a class="source-link" href="20260819.html#e249-token经济转点-openclaw-hermes到本地自研的agent进化之路">打开播客</a></article></div>
+  <div class="signal-summary-grid"><article class="signal-summary-card"><h3>Do Robotic World Models Really Follow Actions? Diagnosing and Aligning Action-Conditioned Generation for Policy Learning</h3>
+<p><strong>研究问题：</strong>动作条件世界模型在策略学习中被广泛用作模拟器，但其有效性基于一个未经证实的假设：生成的未来状态忠实反映任意有效动作，尤其是在非专家动作下，这方面评估不足。</p>
+<p><strong>方法：</strong>引入WorldEcho基准，通过视觉完整性和SE(3)轨迹对齐来评估世界模型在更广泛动作分布下的动作遵循能力。提出WorldSync方法，通过三个互补轴增强动作遵循：分布覆盖、表征基础和干预效应对齐。</p>
+<p><strong>结果：</strong>现有世界模型能合理执行专家动作，但在处理多样化的非专家轨迹时表现不佳，要么忽略指令，要么生成视觉上无效的轨迹。WorldSync显著改善了WorldEcho指标，并作为更可靠的模拟器提高了策略学习的成功率。</p>
+<p><strong>为什么重要：</strong>揭示了现有机器人世界模型在动作遵循方面的局限性，并提出了一个有效的方法来改进其作为策略学习模拟器的可靠性，对于机器人控制和学习至关重要。</p>
+<p><strong>局限：</strong>论文未明确提及局限性，但通常这类研究的局限可能在于特定环境的泛化能力、计算成本或对复杂、长序列动作的鲁棒性。</p>
+<a class="source-link" href="https://arxiv.org/abs/2608.24885v1">阅读论文</a></article><article class="signal-summary-card"><h3>Latent Action as Intention Enables Efficient Future Imagination for World Action Models</h3>
+<p><strong>研究问题：</strong>世界动作模型（WAMs）通过模拟观测演变来改进机器人控制，但在测试时生成未来观测会引入显著延迟。虽然Fast-WAM通过移除此过程提高效率，但在数据稀缺和OOD场景下泛化能力较差。</p>
+<p><strong>方法：</strong>提出LAWA架构，使用紧凑的潜在动作作为未来意图的操作表示，实现高效的测试时未来想象，而无需生成未来观测。通过离散分词器和动作无关预训练生成以操作为中心的码本目标，LAWA联合去噪连续潜在状态，同时在推理时省略未来视频分支。</p>
+<p><strong>结果：</strong>在RoboCasa基准测试中，LAWA在少样本和全数据设置下均达到SOTA成功率（65.6%和80.8%），比Fast-WAM基线分别提高9.6和4.5个百分点。同时，它保持了Joint-WAM的性能水平，但推理延迟降低了42.9%。在LIBERO-Plus和真实世界任务中也表现出色。</p>
+<p><strong>为什么重要：</strong>解决了WAMs在效率和泛化能力之间的权衡问题，通过引入潜在动作作为意图，实现了高效且高性能的未来想象，对机器人控制的实际部署具有重要意义。</p>
+<p><strong>局限：</strong>论文未明确提及局限性，但通常这类方法在处理极其复杂或高度不确定的环境时可能仍面临挑战。</p>
+<a class="source-link" href="https://arxiv.org/abs/2608.24882v1">阅读论文</a></article><article class="signal-summary-card"><h3>What FID Hides: Detecting, Ranking, and Diagnosing Deviations in Generative Evaluation</h3>
+<p><strong>研究问题：</strong>生成模型常用FID和KID指标评估，但它们仅关注前两阶矩，可能遗漏分布差异，且标量差距不足以作为采样变异的校准测试。FID无法编码分散变化的“方向”（欠分散或过分散）。</p>
+<p><strong>方法：</strong>引入ZID（Z-resolved Integrated Diagnostic），结合了来自秩图（RISE）和高斯核（GPK）的六个标准化、对位置和分散敏感的臂。ZID输出三个关联结果：用于排序偏差大小的索引、用于检验分布相等性的置换p值、以及用于诊断的带符号分散读数。</p>
+<p><strong>结果：</strong>在受控实验中，ZID能检测到广泛的偏差，其分数能跟踪相应扫描中严重程度的增加，包括FID平坦或反转的情况。在DiT-XL/2和SiT-XL/2指导扫描中，ZID检测到与真实数据的偏差，并将其高指导多样性崩溃标记为欠分散。</p>
+<p><strong>为什么重要：</strong>揭示了现有生成模型评估指标（如FID）的局限性，并提出了一个更全面、更具诊断性的新指标ZID，有助于更准确地评估和改进生成模型。</p>
+<p><strong>局限：</strong>论文未明确提及局限性，但新指标的广泛接受和在更多复杂场景下的表现仍需进一步验证。</p>
+<a class="source-link" href="https://arxiv.org/abs/2608.24881v1">阅读论文</a></article><article class="signal-summary-card"><h3>Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses</h3>
+<p><strong>研究问题：</strong>在长周期任务中，递归自改进（RSI）面临挑战，因为不断增长的历史信息会模糊任务状态并导致技能调用错位。</p>
+<p><strong>方法：</strong>引入Recuris，一种递归经验-工作记忆架构，用于长周期智能体。工作记忆跟踪任务进展并指导从经验记忆中选择技能，使技能使用基于当前需求而非完整历史。执行结果被转化为结构化证据，用于定位失败，并由一个固定的Meta-Agent将证据转化为局部化、经过验证的技能记忆更新，形成有界递归记忆演化循环。</p>
+<p><strong>结果：</strong>在四个长周期基准和十个模型上，Recuris在37个已完成的模型-基准对中的35个中提高了任务成功率。在tau-bench上，它使GPT-5.6 Sol提高了17.8点，Claude Opus 5提高了15.6点（达到87.9%）；在SkillFlow上，Qwen3.6-27B/35B分别提高了16.6/13.5点。随着交互周期的增长，优势扩大到最长任务的32.2点，常见的长周期失败率降低了80%。</p>
+<p><strong>为什么重要：</strong>提出了一个可扩展的RSI基础，通过递归演化的记忆架构，使智能体能够持续将积累的经验转化为更有效的长周期行为，显著提升了智能体在复杂任务中的表现。</p>
+<p><strong>局限：</strong>论文未明确提及局限性，但复杂记忆管理和Meta-Agent的设计可能需要精细调整，且其泛化到全新、未见过的长周期任务的能力仍需进一步探索。</p>
+<a class="source-link" href="https://arxiv.org/abs/2608.24876v1">阅读论文</a></article><article class="signal-summary-card"><h3>Bellman Calibration for Marginalized Importance Weighting in Offline Reinforcement Learning</h3>
+<p><strong>研究问题：</strong>离线强化学习中，边缘化重要性加权（MIW）通过重加权离线状态-动作样本来评估目标策略，但现有估计器由于函数类近似、正则化或优化不完全，可能留下残余的占用平衡违规，且难以诊断和减少。</p>
+<p><strong>方法：</strong>引入等渗Bellman校准，一种一维、模型无关的后处理方法，通过对初始占用比估计应用拟合占用比评估（FORE）的单调非递减变换，来减少这些违规，同时保留排序信息。</p>
+<p><strong>结果：</strong>Bellman校准被表征为条件不动点性质，等价于对校准比率的每个测试函数进行占用平衡。推导了校准细化界限，表明任何具有小校准误差的拟合比率表现接近于基于其拟合值的最佳后处理。等渗Bellman校准实现了小校准误差和KL风险，在统计误差范围内接近最佳单调校正，并对下游目标占用泛函（包括策略价值估计）提供保证。</p>
+<p><strong>为什么重要：</strong>解决了离线强化学习中策略评估的准确性问题，提供了一种诊断和减少占用平衡违规的有效方法，提高了离线策略评估的可靠性。</p>
+<p><strong>局限：</strong>论文未明确提及局限性，但等渗变换的适用性可能受限于特定问题设置，且其在非常复杂或高维状态空间中的计算效率可能需要进一步研究。</p>
+<a class="source-link" href="https://arxiv.org/abs/2608.24858v1">阅读论文</a></article><article class="signal-summary-card"><h3>BrowserForge: Scaling Web Episode via Parallel Browser Sandboxes</h3>
+<p><strong>研究问题：</strong>基于渲染像素的Web智能体避免了HTML解析的脆弱性和高token成本，但其训练依赖于大量高质量的交互轨迹数据，而现有数据集规模小、多样性不足，难以扩展。</p>
+<p><strong>方法：</strong>提出BrowserForge框架，通过并行驱动多个浏览器沙盒在开放网络上生成Web交互数据。它包含三个组件：开放网络源获取阶段、沙盒集群管理器和Proposer-Solver双智能体循环。通过规则+模型清洗管道去除失败运行并重写推理为统一的思维链风格。</p>
+<p><strong>结果：</strong>生成了一个包含203,238条轨迹的语料库，每条轨迹来自一个独特的网站，比现有数据集更大、更多样。在此语料库上微调一个紧凑的多模态模型，使其在实时Online-Mind2Web上的成功率从25.66%提高到33.33%，并在静态Multimodal-Mind2Web上持续提高步长准确性。受控分析证实开放网络源获取和广泛网站覆盖是改进的关键因素。</p>
+<p><strong>为什么重要：</strong>解决了Web智能体训练数据稀缺和多样性不足的问题，提供了一个可扩展的框架来生成大规模、高质量的Web交互数据，显著提升了Web智能体的性能和泛化能力。</p>
+<p><strong>局限：</strong>论文未明确提及局限性，但生成高质量、无偏见的任务和轨迹可能仍需人工干预或复杂的验证机制，且对“开放网络”的定义和覆盖范围可能影响其泛化性。</p>
+<a class="source-link" href="https://arxiv.org/abs/2608.24848v1">阅读论文</a></article><article class="signal-summary-card"><h3>FedV-KGQA: Multi-Hop Question Answering over Vertically Partitioned Knowledge Graphs</h3>
+<p><strong>研究问题：</strong>知识图谱问答（KGQA）的真实世界数据常因治理和数据主权限制分布在不同组织中。现有集中式系统无法回答当所需事实分散在垂直分区（共享实体但拥有不相交关系集）的知识图谱中时的多跳问题。</p>
+<p><strong>方法：</strong>提出FedV-KGQA框架，用于在垂直分区知识图谱上进行多跳推理。该方法结合局部图谱丰富和知识图谱嵌入，确保原始三元组和关系参数不离开各自数据孤岛，建立结构化数据边界。引入主题实体锚定机制，无需运行时跨孤岛通信即可将问题定位到正确的图谱邻域。</p>
+<p><strong>结果：</strong>在三个基准上评估了12种模型配置，FedV-KGQA表现强劲，接近集中式性能，泛化到3跳推理，并对嵌入扰动具有鲁棒性。</p>
+<p><strong>为什么重要：</strong>解决了分布式知识图谱问答中的数据隐私和主权问题，使得在不共享原始数据的情况下进行多跳推理成为可能，对医疗、金融等敏感数据领域的应用具有重要意义。</p>
+<p><strong>局限：</strong>论文未明确提及局限性，但其性能可能受限于实体对齐的准确性以及各数据孤岛内部知识图谱的质量和完整性。</p>
+<a class="source-link" href="https://arxiv.org/abs/2608.24846v1">阅读论文</a></article><article class="signal-summary-card"><h3>LAION-BVD: A 10-Million-Hour Open Video Dataset for Multimodal Pre-training</h3>
+<p><strong>研究问题：</strong>多模态预训练需要大规模、高质量的视频数据集，但现有开放数据集在规模和多样性上仍有不足。</p>
+<p><strong>方法：</strong>提出LAION-BVD，一个大规模开放视频数据集，包含从CommonCrawl收集的13亿个平台特定视频URL，下载了8000万个视频，总时长达1000万小时。数据集设计用于视频、音频和图像模态的多模态预训练。通过内容感知场景检测提取片段，并合成生成视频和音频字幕。还探索了视频帧作为图像-文本数据的替代来源。</p>
+<p><strong>结果：</strong>在这些数据上训练的模型在标准视频-文本和音频-文本基准上取得了有竞争力的性能，并且随着训练或模型规模的增加，性能持续提升。提取的场景变化帧展现出与标准网络图像语料库不同的视觉分布，在此数据集上训练的模型也取得了强大的图像-文本检索性能。</p>
+<p><strong>为什么重要：</strong>显著扩展了多模态视频的开放访问规模，为多模态预训练提供了前所未有的资源，有助于推动视频理解、生成和跨模态学习领域的研究进展。</p>
+<p><strong>局限：</strong>论文未明确提及局限性，但合成字幕的质量可能影响模型训练，且数据集的维护和更新可能面临挑战。</p>
+<a class="source-link" href="https://arxiv.org/abs/2608.24845v1">阅读论文</a></article></div>
+  <div class="section-heading paper-heading"><h2>与播客相关的信号</h2></div><div class="connection-grid"><article class="connection-card"><strong>AI驱动的SaaS产品与商业增长策略</strong>
+<p>播客深入探讨了AI对投资行业的颠覆性影响，以及专业机构如何利用AI创造阿尔法机会，这与X中AI赋能SaaS实现商业增长的案例和策略相呼应。</p><a class="source-link" href="20260826.html#sir-paul-marshall-why-markets-are-getting-more-competitive-the-logic-of-shorting-and-building-tops">打开播客</a></article><article class="connection-card"><strong>AI智能体应用与开发生态</strong>
+<p>播客直接讨论为AI智能体构建全新的搜索和网络基础设施，以应对智能体作为独特客户的需求，这与X中关于AI智能体开发、部署和效率提升的话题高度相关。</p><a class="source-link" href="20260825.html#parallel-s-parag-agrawal-building-a-new-web-for-ai-agents">打开播客</a></article><article class="connection-card"><strong>BrowserForge: Scaling Web Episode via Parallel Browser Sandboxes</strong>
+<p>播客中提到AI智能体对网络信息获取的需求和挑战，与论文BrowserForge旨在为Web智能体生成大规模高质量交互数据，以避免传统HTML解析脆弱性的研究目标相呼应。</p><a class="source-link" href="20260825.html#parallel-s-parag-agrawal-building-a-new-web-for-ai-agents">打开播客</a></article><article class="connection-card"><strong>AI驱动的SaaS产品与商业增长策略</strong>
+<p>播客强调企业AI转型中“非技术构建者”将隐性知识转化为可衡量商业价值的关键作用，这与X中AI赋能SaaS产品实现显著增长的商业案例和策略相符。</p><a class="source-link" href="20260825.html#ai-proficiency-from-users-to-builders">打开播客</a></article><article class="connection-card"><strong>AI芯片硬件创新</strong>
+<p>播客深入探讨了AI成本结构、芯片经济学以及如何通过“全栈智能”优化大幅降低AI推理成本，这与X中OpenAI发布自研芯片以优化AI性能和成本的趋势直接相关。</p><a class="source-link" href="20260825.html#neil-movva-making-ai-10x-cheaper-invest-like-the-best-ep-488">打开播客</a></article></div>
 </section>
 <section class="weekly-cross"><div class="section-heading"><p class="kicker">Weekly Crosscheck</p><h2>三路信号交叉验证</h2></div><div class="cross-grid"><article class="cross-card"><span class="cross-type">观点冲突</span>
 <h3>AI监管与“末日论”的动机</h3><p>围绕AI监管的辩论日益激烈。Sam Altman和Dario Amodei等行业领袖强调AI的潜在风险和集中化趋势，呼吁审慎监管以确保安全，甚至暂停前沿模型训练。然而，Amjad Masad和All-In播客的嘉宾则质疑“AI末日论”可能是一种“监管捕获”策略，旨在限制竞争，并指出AI的去中心化潜力。Dylan Patel的X推文进一步揭示了反AI内容的经济动机和潜在的外部资助。同时，有论文研究了LLM辅助监管合规和AI系统中的安全/对齐问题，从技术层面反映了对风险的关注。</p>
@@ -143,110 +149,254 @@ p { margin:10px 0; } .article-page p { color:#243241; } ul { padding-left:24px; 
 <section class="signal-grid">
   <section class="signal-panel">
     <div class="section-heading"><h2>今日社媒观点</h2></div>
-    <p class="empty-note">暂时没有符合条件的社媒观点。</p>
+    
+<article class="signal-card">
+  <div class="signal-meta">Sam Altman / @sama / engagement 33896</div>
+  <p>we made a chip and it is fast</p>
+  <a class="source-link" href="https://x.com/sama/status/2092339694210040187">原文</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">Dylan Patel / @dylan522p / engagement 1968</div>
+  <p>OpenAI Jalapeno is spicy
+Usually first generation chips aren&#x27;t competitive, but OpenAI is beating Nvidia Blackwell and even Rubin
+This is huge news!
+We got to go into OpenAI&#x27;s lab to dissect their new chip and dive into the software, architecture, and performance
+Incredible work!</p>
+  <a class="source-link" href="https://x.com/dylan522p/status/2092258594628706778">原文</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 1960</div>
+  <p>Today, we&#x27;re launching Monaco into General Availability.
+
+We onboarded several hundred hypergrowth startups during our beta. The results are staggering:
+
+The average customer added 16 percentage points to their month-over-month revenue growth rate.
+
+The average customer tripled their monthly meeting volume.
+
+With today&#x27;s release, Monaco is now the most advanced AI sales platform in the world.
+
+Monaco customers have an unfair competitive advantage.</p>
+  <a class="source-link" href="https://x.com/samdblond/status/2092279738396201023">原文</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 507</div>
+  <p>Vercel Connect is now generally available.
+
+Give your apps and agents secure access to @slackhq, @linear, @github &amp;amp; 100+ other services.
+
+• Short-lived, scoped access tokens
+• Token and trigger observability
+• RBAC and audit trails
+
+<a href="https://t.co/3JUlBz3ddo">https://t.co/3JUlBz3ddo</a></p>
+  <a class="source-link" href="https://x.com/vercel/status/2092295314988568985">原文</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 403</div>
+  <p>We&#x27;re introducing Run SDK: secure 𝚎𝚟𝚊𝚕 for dynamic Code Mode execution.
+
+When agents write code, you don&#x27;t always need a full sandbox. You can 𝚛𝚞𝚗 their code in a lightweight QuickJS secure context. Faster and more cost-efficient.
+
+𝚗𝚙𝚖 𝚒 𝚛𝚞𝚗
+<a href="https://t.co/br24j8Qp4r">https://t.co/br24j8Qp4r</a> <a href="https://t.co/ZLqpkwqTT5">https://t.co/ZLqpkwqTT5</a></p>
+  <a class="source-link" href="https://x.com/rauchg/status/2092382653161107534">原文</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 265</div>
+  <p>One of the coolest things about gateways: managed tools.
+
+If you add 𝚎𝚡𝚊_𝚜𝚎𝚊𝚛𝚌𝚑 to your 𝚝𝚘𝚘𝚕𝚜, you give zero-setup, fast Exa search to your agents.
+
+No credentials, accounts, connections to set up, plus unified billing.</p>
+  <a class="source-link" href="https://x.com/rauchg/status/2092251167770451984">原文</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">Amjad Masad / @amasad / engagement 260</div>
+  <p>True. Replit Agent completely replaced Claude CoWork in my day-to-day work. It&#x27;s much more persistent and fastidious, and it uses code/software more effectively to complete tasks.</p>
+  <a class="source-link" href="https://x.com/amasad/status/2091962601907638352">原文</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 109</div>
+  <p>.@owner has rocketed past $100M ARR automating everything for restaurants with AI, and 83% of its new customers now start inside an AI product
+
+But it hasn&#x27;t quite been that simple, or straightfoward
+
+The top 7 lessons from @AdamGuild&#x27;s rebuild:
+
+#1. Your customer should never have to log in
+
+Every login to fix what the software did is a failure. That breaks your pricing, your funnel, and your board deck.
+
+#2. An LLM can build a website. Only Owner knows which version sells more food
+
+They check 90 SEO and CRO factors and have order data from thousands of live restaurant sites. The model has none of that.
+
+#3. Customer research goes stale in 90 days
+
+Owner&#x27;s own interviews said restaurant owners feared AI. Three months later a pizzeria owner scanned a QR code at their booth and proved it wrong.
+
+#4. Your devs already have Claude Code. Almost nobody has an agent handling coordination
+
+Owen does 90% of Owner&#x27;s builder coordination and files PRs straight out of Slack.
+
+#5. AI doesn&#x27;t necessarily make you leaner
+
+ Owner is hiring more builders because demand outruns what they can ship. That only works if you have the demand.
+
+#6. When someone says AI saved their reps time, ask what it did to revenue
+
+More call volume is an input. $2M+ in ARR per rep is the result.
+
+#7. Measure how long you take to go from customer complaint to shipped
+
+A restaurant owner complained on a Friday. Adam shipped the fix Saturday afternoon
+
+<a href="https://t.co/gATVvUlAIh">https://t.co/gATVvUlAIh</a></p>
+  <a class="source-link" href="https://x.com/jasonlk/status/2092036734662091048">原文</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 100</div>
+  <p>In the past 12 months, SaaStr has:
+
+- Mentioned @Replit in 214 articles (!) and 40+ podcasts 
+- Generated 5,901,900+ page views and impressions (!) for Replit
+
+For ... Free
+
+Now, Replit later did sponsor SaaStr AI 2026 and built our vibe coding cafe (which was awesome) and has given us S-tier FDE support
+
+But it was all .. for free
+
+For the love of all heck, if you have any bigger customer or influencer or someone of some standing in your ICP promoting you like that, do whatever you can to make them happy</p>
+  <a class="source-link" href="https://x.com/jasonlk/status/2091987727206306156">原文</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">Amjad Masad / @amasad / engagement 49</div>
+  <p>Founders, I highly recommend using @Replit Agent as your cheapest, fastest and most intelligent employee before you hire for admin tasks. 
+
+For $5.23, Agent just did 23 pages of paperwork for me, accurately, in 12 minutes (in Max mode). It asked me questions and caught things I wouldn&#x27;t have caught. 
+
+Agent in Max: 12 minutes, $5.28
+Human: ~3–7 hours, Approx. $75–$350+
+
+That makes Agent roughly 15–35× faster and 14–66× cheaper (before accounting for hiring, onboarding or management.)
+
+Work smart not hard!</p>
+  <a class="source-link" href="https://x.com/NIftek/status/2091953150919901625">原文</a>
+</article>
   </section>
   <section class="signal-panel">
     <div class="section-heading"><h2>今日论文雷达</h2></div>
     
 <article class="signal-card">
-  <div class="signal-meta">cs.LG, cs.AI, cs.CL </div>
-  <h3>How to Train a Critic Stably and Efficiently</h3>
-  <p class="authors">Penghui Qi, Xiangxin Zhou, Wee Sun Lee</p>
-  <p>Group-based reinforcement learning methods such as GRPO for large language models avoid training a critic by sampling multiple responses for each prompt.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.23566v1">arXiv</a>
+  <div class="signal-meta">cs.RO, cs.CV </div>
+  <h3>Do Robotic World Models Really Follow Actions? Diagnosing and Aligning Action-Conditioned Generation for Policy Learning</h3>
+  <p class="authors">Sixiang Chen, Jiaming Liu, Jixian Wu, Yichen Guo, Tinghao Wang, Siyuan Qian</p>
+  <p>Action-conditioned world models are increasingly used as learned simulators for policy evaluation and improvement, yet their effectiveness rests on an unverified assumption: generated futures faithfully reflect arbitrar...</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.24885v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.AI </div>
-  <h3>ReWorld: An Interactive World Model with Long-Horizon Memory</h3>
-  <p class="authors">Zhifei Chen, Luozhou Wang, Guibao Shen, Dongyu Yan, Shuai Yang, Tianshuo Xu</p>
-  <p>An interactive world model must follow the user&#x27;s actions, remember the places it has shown, and stream in real time.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.23565v1">arXiv</a>
+  <div class="signal-meta">cs.RO </div>
+  <h3>Latent Action as Intention Enables Efficient Future Imagination for World Action Models</h3>
+  <p class="authors">Xiang Li, Yupeng Zheng, Songen Gu, Huailiang Ma, Feng Yu, Xian Nie</p>
+  <p>World action models (WAMs) improve robot control by modeling how observations evolve, but generating future observations at test time incurs substantial latency.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.24882v1">arXiv</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.CL, cs.AI, cs.SE </div>
-  <h3>SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration?</h3>
-  <p class="authors">Deyao Hong, Yizhe Chi, Wenyi Li, Xiaoqiu Wang, Mingju Gao, Kaisen Yang</p>
-  <p>Modern software systems accumulate technical debt over decades of development, which makes migration expensive and largely manual.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.23564v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">cs.CV, cs.AI </div>
-  <h3>EG-ARSA: An Expert-Grounded Open Model for Visual Road Safety Auditing in Low-Resource Settings</h3>
-  <p class="authors">Md Thamed Bin Zaman Chowdhury, Moazzem Hossain</p>
-  <p>Road traffic injuries remain a major challenge in low- and middle-income countries, where proactive road safety auditing is limited by incomplete crash records, shortages of qualified auditors, and the high cost of larg...</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.23563v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">cs.AI, cs.CL, cs.SE </div>
-  <h3>Prime Agent: A Self-Improving RLM Harness</h3>
-  <p class="authors">Seth Karten, Alex L. Zhang, Kevin Thomas, Sebastian Müller, Elie Bakouch, Daniel Auras</p>
-  <p>Language models are sequential processors, but long-horizon agency requires external information and computation beyond model weights and active context.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.23552v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">cs.AI </div>
-  <h3>How AI Assistance Affects Human Skill Development: A Study of Learning with Logic Puzzles</h3>
-  <p class="authors">Shang Wu, Catarina G Belem, Shuyuan Fu, Mark Steyvers, Padhraic Smyth</p>
-  <p>While AI assistance can improve human task performance in the short term, it may also undermine the development of skills in the longer term.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.23543v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">cs.MA, cs.AI </div>
-  <h3>The Interaction Tax: When Communication Erases Diversity in Multi-Agent Teams</h3>
-  <p class="authors">Summer Eunhyung Ann, Haokun Liu, Chenhao Tan</p>
-  <p>Does multi-agent LLM interaction help or hurt?</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.23541v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">stat.ME, cs.LG, stat.ML </div>
-  <h3>Interpretable AI with Local Distillation</h3>
-  <p class="authors">Erin Craig, Yiling Huang, Snigdha Panigrahi</p>
-  <p>Modern AI models such as tabular foundation models and gradient-boosted ensembles can outpredict classical methods, but provide little basis for reasoning about their predictions.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.23538v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">cs.CV, cs.LG </div>
-  <h3>Predicting Multiple Clinical Outcomes Related to Functional Recovery and Social Isolation Among Older Adults After Lower-Limb Fracture or Hip Replacement</h3>
-  <p class="authors">Santosh Ray, Pratik K. Mishra, Ali Abedi, Charlene H. Chu, Amir Ahmad, Shehroz S. Khan</p>
-  <p>Older adults recovering after lower-limb fracture or hip replacement may experience complex recovery trajectories.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.23531v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">cs.AI </div>
-  <h3>EarthVerse: Benchmarking Scientific Agents Across Dynamic Earth Systems and Natural Hazards</h3>
-  <p class="authors">Zhiqing Cui, Xinxiang Yin, Yihong Tang, Xinglang Zhang, Yuanzhe Hu, Siru Zhong</p>
-  <p>Earth-system analysis reconstructs changing physical processes from observations that differ in source, scale, timing, and modality.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.23525v1">arXiv</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">econ.GN, cs.AI, stat.AP </div>
-  <h3>The Measurement Revolution? Credible Measurement and Inference in the Age of AI</h3>
-  <p class="authors">Melissa Dell, Ashesh Rambachan</p>
-  <p>Artificial intelligence (AI) is transforming measurement in economics.</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.23524v1">arXiv</a>
+  <div class="signal-meta">stat.ML, cs.LG </div>
+  <h3>What FID Hides: Detecting, Ranking, and Diagnosing Deviations in Generative Evaluation</h3>
+  <p class="authors">Hao Chen</p>
+  <p>Generative models are commonly ranked by Fréchet Inception Distance (FID) and Kernel Inception Distance (KID), yet FID&#x27;s first-two-moment summary can miss distributional differences, and a reported scalar gap alone is n...</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.24881v1">arXiv</a>
 </article>
 
 <article class="signal-card">
   <div class="signal-meta">cs.AI, cs.CL </div>
-  <h3>Mitigating Reasoning-Induced Misalignment via Safety-Direction Penalty</h3>
-  <p class="authors">Yipeng Zhao, Qishun Yang, Shenzhe Zhu, Shu Yang, Di Wang</p>
-  <p>Reasoning-Induced Misalignment, where fine-tuning on reasoning data containing no harmful content, including mathematics, code, and problem-solving with chain-of-thought traces can induce harmful behaviors of LLM, posin...</p>
-  <a class="source-link" href="https://arxiv.org/abs/2608.23497v1">arXiv</a>
+  <h3>Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses</h3>
+  <p class="authors">Zhaochen Yu, Yingcheng Wu, Zhenfei Yin, Kaiyuan Chen, Zhe Zhao, Mengdi Wang</p>
+  <p>Recursive self-improvement (RSI) remains hard in long-horizon tasks, where growing histories obscure the task state and misalign skill invocation.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.24876v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">cs.LG, stat.ML </div>
+  <h3>Bellman Calibration for Marginalized Importance Weighting in Offline Reinforcement Learning</h3>
+  <p class="authors">Lars van der Laan, Nathan Kallus</p>
+  <p>Marginalized importance weighting evaluates a target policy by reweighting offline state-action samples with its discounted occupancy ratio, characterized by an adjoint Bellman equation.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.24858v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">cs.CL </div>
+  <h3>BrowserForge: Scaling Web Episode via Parallel Browser Sandboxes</h3>
+  <p class="authors">Fei Tang, Huawen Shen, Zhiqiong Lu, Zhengxi Lu, Pengyuan Lyu, Chengquan Zhang</p>
+  <p>Web agents that act from rendered pixels avoid the fragility and heavy token cost of reading a page&#x27;s HTML or accessibility tree, but training them depends on large amounts of high-quality interaction trajectories, and...</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.24848v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">cs.AI </div>
+  <h3>FedV-KGQA: Multi-Hop Question Answering over Vertically Partitioned Knowledge Graphs</h3>
+  <p class="authors">Md Saikat Islam Khan Bappy, Oshani Seneviratne</p>
+  <p>Real-world data for knowledge graph question answering is often distributed across different organizations due to governance and data sovereignty constraints.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.24846v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">cs.CV, cs.AI, cs.LG </div>
+  <h3>LAION-BVD: A 10-Million-Hour Open Video Dataset for Multimodal Pre-training</h3>
+  <p class="authors">Andreas Hochlehnert, Marianna Nezhurina, Mehdi Cherti, Andrej Radonjic, Thaddäus Wiedemer, Christoph Schuhmann</p>
+  <p>We present LAION-BVD, a large-scale open video dataset for multimodal learning, which contains 1.3B platform-specific video URLs collected from CommonCrawl.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.24845v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">cs.CL, cs.AI </div>
+  <h3>Reading Is Not Using: Retrieval, Judgment, and the Design of AI Financial Research Workflows</h3>
+  <p class="authors">Miao Liu, Zhizhe Liu</p>
+  <p>Large language models (LLMs) are increasingly deployed as AI analysts to process financial disclosures and support AI-assisted investment decisions.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.24842v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">cs.AI </div>
+  <h3>A Dual-Dimensional LLM Framework for Automated Item Incidental Content Similarity Analysis in Large-Scale Assessments</h3>
+  <p class="authors">Jing Huang, Jihong Zhang, Hua-Hua Chang</p>
+  <p>The rapid expansion of large-scale assessments and the growing adoption of automatic item generation have intensified concerns about incidental content redundancy, where construct-irrelevant elements such as wording or...</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.24825v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">cs.AI </div>
+  <h3>Constrained Entity Selection under Partial Knowledge for LLM-Based Knowledge Graph QA</h3>
+  <p class="authors">Emanuel Kitzelmann</p>
+  <p>Large language models are increasingly used for knowledge graph question answering (KGQA), but can fail to correctly ground answers in the underlying graph.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.24824v1">arXiv</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">cs.LG, q-bio.QM </div>
+  <h3>BioKERN: Biological Kernel Regularization for Histology-to-Transcriptomics Neighborhood Retrieval</h3>
+  <p class="authors">Seungik Cho, Betul Orcan-Ekmekci</p>
+  <p>Spatially resolved biology requires representations that preserve biological neighborhood structure rather than only exact cross-modal correspondences.</p>
+  <a class="source-link" href="https://arxiv.org/abs/2608.24823v1">arXiv</a>
 </article>
   </section>
 </section>
 
-<p class="signal-generated">更新时间：2026-08-25T03:47:12.113025+00:00</p>
+<p class="signal-generated">更新时间：2026-08-26T03:52:51.724544+00:00</p>
 
   </main>
 </body>
