@@ -65,7 +65,7 @@
         "公司产品主要通过第三方渠道合作伙伴进行销售，对该销售模式存在高度依赖。"
       ]
     },
-    "collected_at": "2026-08-28T11:39:21+00:00",
+    "collected_at": "2026-08-29T07:16:11+00:00",
     "id": "8899a144a1c8e856b58f45f5"
   },
   {
@@ -141,7 +141,7 @@
         "毛利率波动风险：报告期内公司毛利率存在波动，受原材料成本、产品市场供需、客户和产品结构等多重因素影响，未来若出现不利情况，可能对公司业绩造成影响。"
       ]
     },
-    "collected_at": "2026-08-28T11:41:16+00:00",
+    "collected_at": "2026-08-29T07:17:53+00:00",
     "id": "a8c2e00720922a7d6057205e"
   },
   {
@@ -787,38 +787,5 @@
     },
     "collected_at": "2026-08-02T04:05:36+00:00",
     "id": "6e506fcab29760d18c527bf5"
-  },
-  {
-    "exchange": "CNINFO",
-    "issuer": "重庆宇隆光电科技股份有限公司",
-    "document_type": "A股IPO项目更新",
-    "publish_date": "2026-07-29",
-    "update_date": "2026-07-29",
-    "board": "A股IPO",
-    "industry": "计算机、通信和其他电子设备制造业",
-    "sponsor": "中信证券股份有限公司",
-    "status": "已问询",
-    "pdf_url": null,
-    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
-    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1388",
-    "title": "重庆宇隆光电科技股份有限公司 A股IPO项目更新",
-    "summary": {
-      "financial_snapshot": {
-        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
-      },
-      "key_points": [
-        "当前审核状态：已问询",
-        "保荐机构：中信证券股份有限公司",
-        "所属行业：计算机、通信和其他电子设备制造业",
-        "净利润参考值：1.33亿元"
-      ],
-      "one_line_business": "公司专注于新型半导体显示面板领域的智能控制卡及精密功能器件相关产品的研发、生产及销售，致力于成为我国智能控制领域最有价值的企业。报告期内，公司主要产品系LCD、OLED等新型半导体显示面板专用智能控制卡及其PCBA制造服务，并围绕半导体显示面板产业为核心应用领域配套显示用精密功能器件类产品，终端应用主要为平板电脑、笔记本电脑、显示器、中大尺寸电视、手机、智能穿戴等消费电子领域。",
-      "risk_factors": [
-        "尚未基于招股书全文生成风险摘要。"
-      ],
-      "source": "cninfo_project"
-    },
-    "collected_at": "2026-07-30T03:42:18+00:00",
-    "id": "cee7e29d5459c6aba5002966"
   }
 ]
