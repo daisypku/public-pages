@@ -66,71 +66,69 @@ p { margin:10px 0; } .article-page p { color:#243241; } ul { padding-left:24px; 
 
 <section class="signal-analysis">
   <div class="section-heading"><p class="kicker">Synthesis</p><h2>今天大家在讨论什么</h2></div>
-  <div class="signal-summary-grid"><article class="signal-summary-card"><div class="signal-meta">新出现</div>
-<h3>AI网络安全与集体行动的紧迫性</h3><p>Sam Altman强调AI时代网络防御的紧迫性，呼吁行业内外紧急合作，共同应对潜在威胁。</p>
-<ul><li>AI对网络安全构成关键挑战，需要立即采取行动。</li><li>鼓励与OpenAI及其竞争对手或合作伙伴合作，共同应对这一关键时刻。</li></ul></article><article class="signal-summary-card"><div class="signal-meta">升温</div>
-<h3>AI Agent驱动的Web开发与未来趋势</h3><p>讨论AI Agent在Web开发中的应用，包括新的WebGPU库和Agent优先的开发工具，以及Web内容未来可能走向“极致人机体验”和“纯粹机器信号”两极分化的趋势。</p>
-<ul><li>Vercel开源TypeGPU，一个Agent优先的WebGPU库，旨在为Agent而非人类设计开发工具。</li><li>未来的Web将分为面向人类的沉浸式体验和面向Agent的纯数据/API。</li><li>Agent可能成为新的浏览器，实时生成实用型UI和内容。</li></ul></article><article class="signal-summary-card"><div class="signal-meta">持续</div>
-<h3>AI时代SaaS市场与投资策略的演变</h3><p>探讨SaaS市场的复苏与传统软件的失宠，以及AI对投资和就业的影响。加州对SaaS征收销售税可能带来的负面冲击也引发关注。</p>
-<ul><li>SaaSpocolyse（SaaS市场低迷）已经结束，但传统软件公司增长缓慢，不如AI驱动的B2B领导者。</li><li>AI正在创造新工作（如Owner.com），而非仅仅替代人类工作。</li><li>加州对SaaS征收销售税将导致客户成本增加，对SaaS公司和AI预算造成压力，时机不佳。</li><li>在AI时代，投资决策更倾向于优秀的创始人而非仅有良好产品或早期增长的公司。</li></ul></article><article class="signal-summary-card"><div class="signal-meta">新出现</div>
-<h3>AI赋能的增长与软件开发</h3><p>Replit推出增长技能服务，帮助开发者将产品商业化，并强调“增长代理”的巨大潜力，预示着AI在产品开发和市场推广中的关键作用。</p>
-<ul><li>Replit的增长技能服务旨在帮助开发者将产品快速推向市场，与ZoomInfo、Stripe等工具集成。</li><li>“增长代理”被认为是尚未被充分挖掘的巨大潜力领域，预示着AI在商业增长策略中的应用前景。</li></ul></article></div>
+  <div class="signal-summary-grid"><article class="signal-summary-card"><div class="signal-meta">升温</div>
+<h3>AI代理在企业应用中的变革</h3><p>社交媒体上热议AI代理如何深入企业运营，特别是SaaS和客户关系管理（CRM）领域，实现流程自动化、提升效率并改变用户与系统交互的方式。讨论强调了AI代理作为“无头”或“元CRM”的潜力，以及其带来的数据使用量和成本变化。</p>
+<ul><li>AI代理能够将CRM、营销、财务等系统无缝整合，形成一个“元CRM”系统。</li><li>AI代理有望实现“零工作量”的用户体验，客户无需登录即可获得巨大收益。</li><li>企业需要支持多种交互界面（如经典界面、Slack、AI代理对话），开放平台是成功的关键。</li><li>AI代理的应用会显著增加数据使用量，并可能导致相关成本上升。</li></ul></article><article class="signal-summary-card"><div class="signal-meta">持续</div>
+<h3>AI代理开发与所有权</h3><p>讨论关注AI代理的构建方式，特别是强调开发者对代理的智能堆栈（包括运行时、模型选择、技能、工具和连接等）拥有完全控制和所有权的重要性。快速部署和通过Git仓库管理代理被认为是高效开发的关键。</p>
+<ul><li>虽然存在许多“简单”的代理创建方式，但关键在于是否提供Git仓库，让开发者真正拥有整个智能堆栈。</li><li>能够在一分钟内部署新的AI代理，并由开发者通过Git仓库拥有和管理其智能堆栈，是高效开发和迭代的关键。</li></ul></article><article class="signal-summary-card"><div class="signal-meta">新出现</div>
+<h3>AI代理重塑网络与用户界面</h3><p>探讨AI代理如何推动网络体验向两个极端发展：极致精美的人机交互和纯粹的机器可读内容/API。预测中间地带将被AI代理生成的即时UI所取代，AI代理将成为新的“浏览器”。</p>
+<ul><li>未来的网络将走向两个极端：一是服务于愉悦、探索、品牌和娱乐的超精美人类体验；二是为机器提供纯粹、无损信号的代理中心内容、数据和API。</li><li>AI代理将生成即时用户界面（UI），以满足用户对实用内容或数据的需求，并可能取代传统浏览器成为新的交互模式。</li></ul></article></div>
   <div class="section-heading paper-heading"><h2>最新论文推进了什么</h2></div>
   <div class="signal-summary-grid"><article class="signal-summary-card"><h3>CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes</h3>
-<p><strong>研究问题：</strong>现有推理时LLM性能提升方法（如重复生成或外部验证）效率低下。</p>
-<p><strong>方法：</strong>提出CritICL框架，利用弱模型失败模式作为指导，通过基于批判的上下文示例进行推理。包括CritICL-dynamic（自适应预测失败模式）和CritICL-static（使用全局失败模式）。</p>
-<p><strong>结果：</strong>CritICL始终优于标准上下文学习，与测试时扩展方法性能相当或更优，且生成次数和token成本显著降低。</p>
-<p><strong>为什么重要：</strong>提供了一种高效的推理时LLM性能提升方法，无需重复生成或外部验证，降低了成本，同时保持了高推理性能。</p>
-<p><strong>局限：</strong>论文未明确列出，但该方法可能受限于弱模型失败模式识别的质量，以及批判性上下文示例构建的复杂性。</p>
+<p><strong>研究问题：</strong>大型语言模型（LLM）的推理性能提升通常依赖于重复生成或外部验证，这导致效率低下。</p>
+<p><strong>方法：</strong>提出CritICL框架，利用弱模型在推理时的失败模式作为指导。通过基于批判的上下文示例来改进LLM的推理能力。该框架包含两种变体：CritICL-dynamic（自适应预测输入特定的失败模式并检索批判）和CritICL-static（使用全局失败模式配置文件提供稳定指导）。</p>
+<p><strong>结果：</strong>CritICL在推理性能上持续优于标准上下文学习，并能达到或超越测试时扩展方法的性能，同时显著减少了生成次数和token成本。</p>
+<p><strong>为什么重要：</strong>该方法提供了一种高效且资源友好的LLM推理性能提升途径，特别适用于需要高效率和低成本的场景，避免了传统方法中重复生成或外部验证的开销。</p>
+<p><strong>局限：</strong>该方法依赖于弱模型失败模式的结构化模式，其有效性可能因模型家族或特定任务而异。</p>
 <a class="source-link" href="https://arxiv.org/abs/2608.27455v1">阅读论文</a></article><article class="signal-summary-card"><h3>WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution</h3>
-<p><strong>研究问题：</strong>AI Agent技能开发中，经验分散，难以系统重用和迭代，限制了Agent的适应性。</p>
-<p><strong>方法：</strong>提出WikiSkill框架，将原始执行经验、积累知识和可执行技能分离，持续将经验整合到持久知识库（wiki）中，供后续技能更新使用。</p>
-<p><strong>结果：</strong>WikiSkill在多个基准测试中始终优于现有技能演化方法；技能演化与模型规模互补（大模型受益更多，小模型带技能可胜过大模型无技能）；演化技能可跨模型和模型家族有效迁移。</p>
-<p><strong>为什么重要：</strong>提出一种系统化积累和提炼Agent经验的方法，促进可重用和可迁移技能的开发，显著提升Agent的适应性和性能，并揭示了技能演化与模型规模的互补性。</p>
-<p><strong>局限：</strong>论文未明确列出，但知识库的维护成本、经验整合的质量控制以及在极端复杂任务中的泛化能力可能需要进一步研究。</p>
+<p><strong>研究问题：</strong>AI代理在技能开发过程中产生的洞察力分散在优化历史中，难以系统地跨迭代重用，限制了代理的持续适应能力。</p>
+<p><strong>方法：</strong>引入WikiSkill框架，通过一个持久的知识库（wiki）与代理技能共同演化。该框架将原始执行经验、累积知识和可执行技能分离，并持续将经验整合到wiki中，供后续技能更新和构建。</p>
+<p><strong>结果：</strong>WikiSkill在多样化的基准和模型上持续优于现有技能演化方法，并在大多数模型-基准设置中超越无技能基线。研究发现技能演化与模型扩展互补，较小的模型通过演化技能可以超越没有技能的更大模型。此外，演化出的技能在不同模型和模型家族之间具有良好的迁移性，甚至其他模型演化的技能可能优于自演化技能。持久的知识积累对有效的技能演化至关重要。</p>
+<p><strong>为什么重要：</strong>该研究通过系统地积累和提炼代理经验，解决了AI代理技能重用和演化的核心挑战，显著提升了代理的适应性、泛化能力和效率，为开发更智能、更具鲁棒性的AI代理提供了新范式。</p>
+<p><strong>局限：</strong>论文未明确提及具体局限性，但知识表示、冲突解决和大规模知识库的维护可能仍是实际应用中的挑战。</p>
 <a class="source-link" href="https://arxiv.org/abs/2608.27454v1">阅读论文</a></article><article class="signal-summary-card"><h3>SWE-Prime: Fewer Trajectories, Better Performance</h3>
-<p><strong>研究问题：</strong>现有LLM解决软件问题的方法依赖大规模Agent轨迹数据集进行SFT，但成功轨迹可能包含低效、冗余或有风险的步骤，引入噪声监督。</p>
-<p><strong>方法：</strong>提出SWE-Prime，一种多粒度两阶段SFT数据选择方法。第一阶段：轨迹级别筛选，基于过程质量、结果质量和数据代表性。第二阶段：片段级别选择，评估每个语义片段对解决方案的贡献、可学习性和潜在风险，仅选择的片段参与损失计算。</p>
-<p><strong>结果：</strong>仅使用SWE-Prime选择的10%轨迹子集进行训练，在SWE-Bench Pro和SWE-Bench Verified上性能优于使用完整数据集训练，相对性能提升高达12.2%和24.2%。</p>
-<p><strong>为什么重要：</strong>显著提升LLM解决真实世界软件问题的能力，通过高质量数据选择避免噪声监督，提高了训练效率和模型行为质量，为Agent轨迹数据的优化提供了有效途径。</p>
-<p><strong>局限：</strong>论文未明确列出，但筛选标准的设计可能存在主观性，且对特定类型错误或罕见场景的敏感性仍需深入评估。</p>
+<p><strong>研究问题：</strong>现有通过对成功轨迹进行监督微调（SFT）来提升大型语言模型（LLM）解决软件问题能力的方法，可能因成功轨迹中包含低效、冗余或有风险的步骤而引入噪声监督，导致模型学习到不良的问题解决行为。</p>
+<p><strong>方法：</strong>提出SWE-Prime，一种多粒度、两阶段的SFT数据选择方法。第一阶段基于过程质量、结果质量和数据代表性对成功轨迹进行筛选，选择高质量且有代表性的子集。第二阶段将连续步骤分组为语义段，并根据其对最终解决方案的贡献、可学习性和潜在风险进行评估。在SFT过程中，所有段都保留以保持上下文，但只有选定的段才参与损失计算。</p>
+<p><strong>结果：</strong>在SWE-Bench Pro和SWE-Bench Verified基准测试中，使用SWE-Prime选择的10%轨迹子集进行训练，其性能优于使用完整已解决数据集进行训练，相对性能提升分别高达12.2%和24.2%。</p>
+<p><strong>为什么重要：</strong>该方法通过精炼训练数据，有效解决了LLM在软件问题解决中因噪声监督而学习到不良行为的问题，显著提升了模型解决真实世界软件问题的能力和效率。</p>
+<p><strong>局限：</strong>轨迹和语义段的质量评估标准（如过程质量、贡献度、风险等）可能需要人工专业知识或复杂的自动化评估机制，存在一定的定义和实施挑战。</p>
 <a class="source-link" href="https://arxiv.org/abs/2608.27449v1">阅读论文</a></article><article class="signal-summary-card"><h3>TTPO: Test-Time Policy Optimization</h3>
-<p><strong>研究问题：</strong>RL和OPSD等LLM后训练方法依赖真实标签，无法进行测试时训练（TTT）；多数投票伪标签易受错误投票影响，导致教师模型被腐蚀。</p>
-<p><strong>方法：</strong>提出TTPO（Test-Time Policy Optimization），一种非对称目标函数。通过OPSD蒸馏一致的rollout，通过Grouped RL惩罚不一致的rollout。令牌级选择进一步优化两个分支。</p>
-<p><strong>结果：</strong>在无标签情况下，TTPO在五个竞赛级基准测试中与标签监督的OPSD性能相当，将Qwen3-1.7B在TTT中从38.0%提升至45.2%，在无思考情况下提升25.2%至36.4%，并显示出强大的跨任务泛化能力。</p>
-<p><strong>为什么重要：</strong>提出一种无需真实标签的测试时策略优化方法，解决了现有方法对标签的依赖，提高了LLM在数学推理等任务上的泛化能力和鲁棒性，尤其在伪标签存在错误时仍能保持良好性能。</p>
-<p><strong>局限：</strong>论文未明确列出，但伪标签的质量仍是关键，尽管方法设计了鲁棒性，极端情况下的性能仍需考量，且其在非数学推理任务上的表现有待进一步验证。</p>
+<p><strong>研究问题：</strong>现有的强化学习（RL）和策略自蒸馏（OPSD）等后训练方法依赖于真实标签，无法在测试时进行训练（TTT）。使用多数投票伪标签作为替代方案时，容易因不正确的投票而腐蚀教师模型并误导训练。</p>
+<p><strong>方法：</strong>提出Test-Time Policy Optimization (TTPO)，一种非对称目标函数。该方法通过OPSD蒸馏与伪标签一致的rollout，并使用Grouped RL惩罚与伪标签不一致的rollout。通过token级别的选择进一步优化：蒸馏过程降低已收敛位置的权重，而RL仅惩罚自信的错误。多数投票路由在模型改进时提供更紧密的自监督。</p>
+<p><strong>结果：</strong>在没有任何真实标签的情况下，TTPO在五个竞赛级基准测试中达到了与标签监督的OPSD相当的性能。在测试时训练（TTT）中，它将Qwen3-1.7B的性能从38.0%提升至45.2%，在不进行“思考”的情况下实现了25.2%至36.4%的提升，并展现出强大的跨任务泛化能力。</p>
+<p><strong>为什么重要：</strong>TTPO解决了LLM在缺乏真实标签数据时进行测试时训练的难题，显著提升了模型在数学推理等复杂任务上的性能，为模型在实际应用中无需人工标注即可持续改进提供了有效途径。</p>
+<p><strong>局限：</strong>尽管TTPO通过非对称目标和token级选择缓解了伪标签错误的影响，但多数投票伪标签的固有脆弱性仍可能在某些极端情况下构成挑战。</p>
 <a class="source-link" href="https://arxiv.org/abs/2608.27448v1">阅读论文</a></article><article class="signal-summary-card"><h3>From Static to Dynamic: Benchmarking Real-World Code Review with MCR-Bench</h3>
-<p><strong>研究问题：</strong>现有LLM自动化代码审查方法将代码审查简化为单轮静态任务，未能捕捉真实世界多轮交互和复杂问题解决的本质。</p>
-<p><strong>方法：</strong>引入MCR-Bench，首个缺陷状态感知的多轮代码审查基准。包含2,269个真实世界多轮代码审查任务，覆盖五种编程语言，并标注细粒度缺陷信息和跨轮状态标签。</p>
-<p><strong>结果：</strong>主流LLM在缺陷检测和缺陷生命周期状态跟踪方面表现有限，随着交互轮次增加性能显著下降；性能因缺陷类型和严重程度而异；错误分析揭示了跨轮时间错位和长程记忆不足等关键弱点。</p>
-<p><strong>为什么重要：</strong>填补了真实世界多轮代码审查基准的空白，揭示了现有LLM在该任务上的局限性，为未来研究提供了更真实的评估工具和方向，有助于开发更符合实际场景的自动化代码审查系统。</p>
-<p><strong>局限：</strong>主流LLM在缺陷检测和缺陷生命周期状态跟踪方面表现有限，性能随交互轮次增加而显著下降；对语义复杂或低显著性缺陷的检测能力较弱；存在跨轮时间错位和长程记忆不足等问题。</p>
+<p><strong>研究问题：</strong>现有的大型语言模型（LLM）代码审查方法通常将代码审查简化为单轮、静态的决策任务，未能捕捉真实世界中多轮交互和复杂问题解决的本质。</p>
+<p><strong>方法：</strong>引入MCR-Bench，这是首个缺陷状态感知的多轮代码审查基准。该基准包含2,269个真实世界的多轮代码审查任务，涵盖五种常用编程语言，并标注了细粒度的缺陷信息和跨轮次的状态标签，捕捉了缺陷在多轮过程中的完整演变轨迹。</p>
+<p><strong>结果：</strong>实验结果显示，主流LLM在缺陷检测和缺陷生命周期状态跟踪方面的整体能力有限，且随着交互轮次的增加，性能显著下降。LLM的性能在不同缺陷类型和严重程度之间存在显著差异，语义复杂或不显著的缺陷更容易被遗漏。深入的错误分析揭示了跨轮时间错位和长程记忆不足等关键弱点。</p>
+<p><strong>为什么重要：</strong>MCR-Bench揭示了当前LLM在模拟真实世界多轮代码审查场景中的深层局限性，为未来研究提供了更具挑战性和真实性的评估基准，并指明了LLM在软件工程领域需要改进的关键方向。</p>
+<p><strong>局限：</strong>该基准的构建依赖于对真实世界代码审查数据的细致标注，可能存在数据收集和标注的复杂性。研究结果本身揭示了LLM的局限性，而非方法本身的局限。</p>
 <a class="source-link" href="https://arxiv.org/abs/2608.27442v1">阅读论文</a></article><article class="signal-summary-card"><h3>RedEvoAgent: Automatic Red-Teaming Agent with Experience-Driven Skill Evolution</h3>
-<p><strong>研究问题：</strong>现有LLM红队方法依赖固定攻击或轨迹检索，可能因检索偏差和工具归因不清而重用误导性经验，且完整轨迹增加上下文开销。</p>
-<p><strong>方法：</strong>提出RedEvoAgent，一种黑盒红队Agent。将跨案例攻击轨迹提炼成简洁、人类可读的攻击技能。通过工具有效性分析和决策工具归因来适应性演化攻击技能，并使用验证棘轮机制只保留能提升验证性能的更新。</p>
-<p><strong>结果：</strong>RedEvoAgent在多个基准、目标模型和执行环境中优于固定和Agent基线，提高了工具效率，并可在攻击者模型和目标执行环境之间迁移。</p>
-<p><strong>为什么重要：</strong>提高了LLM红队攻击的效率和有效性，通过技能演化克服了现有方法的局限性，增强了对LLM Agent安全风险的识别能力，对于部署在产品级执行环境中的Agent尤为重要。</p>
-<p><strong>局限：</strong>论文未明确列出，但黑盒攻击的局限性、技能提炼的准确性、以及验证棘轮的全面性可能需要进一步探讨，以确保其在面对新型或复杂漏洞时的有效性。</p>
+<p><strong>研究问题：</strong>LLM代理部署在产品级执行环境中时，越狱攻击可能导致有害的工具使用和持久的状态改变，其风险远超不安全文本生成。现有自动红队方法依赖固定攻击或容易因检索偏差和工具归因不清而重用误导性经验。</p>
+<p><strong>方法：</strong>提出RedEvoAgent，一种黑盒红队代理，它将跨案例攻击轨迹提炼成简洁、人类可读的攻击技能。该攻击技能通过工具有效性分析和决策工具归因（Deciding-Tool Attribution）进行自适应演化，并使用验证棘轮（validation ratchet）机制，只保留能提高验证性能的更新。</p>
+<p><strong>结果：</strong>RedEvoAgent在多个基准、目标模型和目标执行环境中均优于固定攻击和现有代理基线，提高了工具效率，并展现出在攻击者模型和目标执行环境之间的良好迁移能力。</p>
+<p><strong>为什么重要：</strong>该研究通过引入经验驱动的技能演化机制，显著提升了LLM代理自动红队测试的效率和有效性，有助于更系统、更智能地发现和缓解LLM代理在实际部署中的安全漏洞，从而增强其鲁棒性。</p>
+<p><strong>局限：</strong>作为黑盒攻击代理，RedEvoAgent对目标LLM代理的内部机制理解有限。技能提炼和演化过程的效率和泛化能力可能仍有进一步优化的空间。</p>
 <a class="source-link" href="https://arxiv.org/abs/2608.27439v1">阅读论文</a></article><article class="signal-summary-card"><h3>Stochastic Estimation of Transduced Language Models</h3>
-<p><strong>研究问题：</strong>转换语言模型（TLM）中，计算目标前缀概率需要对源字符串进行求和，集合可能指数级大或无限，现有方法使用阈值剪枝束求和，产生误差未知的下界。</p>
-<p><strong>方法：</strong>提出一种无偏估计器。通过不重复重采样源前缀，并按其包含概率的倒数重新加权。递归应用此校正可得到目标前缀概率的无偏估计。束求和算法扩展保留的源前缀并采样要保留的前缀，随着更多概率质量的添加而减少前缀数量。</p>
-<p><strong>结果：</strong>在百科文本和DNA上，该方法比顺序蒙特卡洛基线具有更好的计算-方差权衡，在相同最大粒子数下DNA上误差更低。在DNA到氨基酸转换中，运行时比阈值剪枝束求和减少几个数量级，使长目标字符串的前缀概率估计可行。</p>
-<p><strong>为什么重要：</strong>解决了TLM中概率计算的效率和准确性问题，提供了一种无偏估计方法，显著提高了在复杂转换任务（如DNA序列分析）中的实用性，并能估计阈值剪枝造成的质量损失。</p>
-<p><strong>局限：</strong>论文未明确列出，但无偏估计器的方差控制、收敛速度以及在更复杂或高度歧义转换规则下的表现可能需要进一步研究。</p>
+<p><strong>研究问题：</strong>在转换语言模型（TLM）中，计算目标前缀的概率需要对所有能映射到该前缀的源字符串的概率进行求和，这个集合可能指数级大甚至无限。现有方法使用阈值剪枝束求和进行近似，但会产生未知误差的下界。</p>
+<p><strong>方法：</strong>提出一种基于无替换重采样源前缀的方法，并根据其包含概率的倒数进行重新加权。递归应用此校正可得到目标前缀概率的无偏估计器，并能估计因阈值剪枝而损失的概率质量。其束求和算法扩展保留的源前缀并采样要保留的前缀，随着更多概率质量的添加而减少前缀数量，确保算法以概率一停止。</p>
+<p><strong>结果：</strong>该方法在百科文本和DNA数据上，比基于有替换重采样的顺序蒙特卡洛基线实现了更好的计算-方差权衡，并在相同的最大粒子数下获得了更低的误差。在DNA到氨基酸的转换任务中，它将运行时比阈值剪枝束求和减少了几个数量级，使得估计长目标字符串的前缀概率变得可行。</p>
+<p><strong>为什么重要：</strong>该研究提供了一种计算TLM目标前缀概率的无偏且高效的估计方法，解决了现有近似方法的准确性问题，并显著提升了计算效率，在生物信息学、自然语言处理等需要复杂序列转换的领域具有重要应用价值。</p>
+<p><strong>局限：</strong>尽管该方法显著提高了效率，但对于极其复杂的转换规则和极长的目标字符串，计算成本和内存需求仍可能是一个挑战。</p>
 <a class="source-link" href="https://arxiv.org/abs/2608.27428v1">阅读论文</a></article><article class="signal-summary-card"><h3>Persona-Execution Separation: An Architecture Pattern for Evolving LLM Agents under Execution Audit</h3>
-<p><strong>研究问题：</strong>受监管组织中的LLM Agent需要同时满足“人格”自由演化和“执行”可追溯审计的需求，单一信任域难以廉价实现。</p>
-<p><strong>方法：</strong>提出“人格-执行分离”（Persona-Execution Separation, PES）架构模式。人格和执行位于不同信任域，通过受治理的契约桥连接。人格可自由漂移，执行无面且可审计。通过审批矩阵、DLP和审计强制跨域。</p>
-<p><strong>结果：</strong>在受监管数字员工平台上的开发/试点案例中，记录了五项决策，并发现已实施的机制在人格扰动下没有执行侧的重新验证，硬断言字段上没有人格指纹。</p>
-<p><strong>为什么重要：</strong>为受监管组织中LLM Agent的设计提供了关键架构模式，解决了人格演化与执行可追溯性之间的冲突，确保了合规性和灵活性，避免了单一信任域带来的高昂耦合成本。</p>
-<p><strong>局限：</strong>在分离前的构建中，治理的执行路径与人格是因遗漏而解耦，而非通过构建实现；后来的布线更改可能逆转这种隔离，而PES将其作为审计的架构规则。</p>
+<p><strong>研究问题：</strong>在受治理的组织中，大型语言模型（LLM）代理需要同时满足“角色（persona）自由演化”和“执行（execution）可追溯审计”的需求，但单一信任域难以廉价地同时实现这两点。</p>
+<p><strong>方法：</strong>提出Persona-Execution Separation (PES) 架构模式：将角色和执行分别置于不同的信任域中，并通过一个受治理的契约桥连接。角色域允许自由漂移和演化，而执行域则保持无面且可审计。状态摘要可以返回，但数据主体除非有分级的数据丢失防护（DLP）例外，否则保留在限制性域中，同时身份保持连续。审批矩阵、DLP和审计机制强制执行跨域交互。</p>
+<p><strong>结果：</strong>PES模式通过架构设计成功地将LLM代理的角色演化与执行可追溯性解耦。一个在受监管数字员工平台中的开发/试点案例记录了在一个月内的五项决策，并证实了该模式的有效性。机制检查发现，在角色扰动下（五种模型配置），执行侧没有重新验证，并且在硬断言字段上没有角色指纹。这表明PES模式通过构造而非遗漏实现了治理执行路径与角色的解耦。</p>
+<p><strong>为什么重要：</strong>该模式为在受监管环境中部署LLM代理提供了关键的架构解决方案，有效解决了角色灵活性与执行合规性之间的固有冲突，确保了代理在演化过程中仍能保持安全性和可审计性，对于企业级AI代理的落地具有重要指导意义。</p>
+<p><strong>局限：</strong>契约桥的治理规则和DLP策略的复杂性可能需要精细设计和持续维护。跨信任域的通信可能引入额外的延迟或管理开销。</p>
 <a class="source-link" href="https://arxiv.org/abs/2608.27427v1">阅读论文</a></article></div>
-  <div class="section-heading paper-heading"><h2>与播客相关的信号</h2></div><div class="connection-grid"><article class="connection-card"><strong>AI发展与SaaS市场趋势</strong>
-<p>播客讨论了SaaS市场的复苏以及AI发展对美国竞争力的影响，与X推文中关于SaaS市场趋势和AI重要性的讨论形成呼应。</p><a class="source-link" href="20260829.html#nvidia-s-historic-quarter-saas-comeback-bessent-vs-druck-america-s-debt-crisis-cancer-vaccine">打开播客</a></article><article class="connection-card"><strong>AI Agent技术与应用</strong>
-<p>播客中提及“AI代理工厂”的概念，与X推文中关于AI Agent驱动的开发工具和增长代理的讨论紧密相关。</p><a class="source-link" href="20260828.html#friday-wrap-up-a-hedge-fund-legend-and-reflections-on-the-global-ai-race">打开播客</a></article><article class="connection-card"><strong>AI代理安全与网络防御</strong>
-<p>播客深入探讨了AI时代数据基础设施面临的变革，特别是AI代理带来的新型数据安全威胁，这与Sam Altman关于AI网络防御的紧迫呼吁以及多篇论文对AI Agent安全和架构的研究高度相关。</p><a class="source-link" href="20260827.html#rethinking-legacy-data-infrastructure-with-eon-co-founders-ofir-ehrlich-and-gonen-stein">打开播客</a></article><article class="connection-card"><strong>AI Agent与未来编程范式</strong>
-<p>播客中DHH深入探讨了AI代理工程将如何重塑编程和软件开发，这与X推文中关于AI Agent驱动的开发工具和应用，以及多篇论文对Agent技能演化、安全和架构的研究形成强烈的共鸣。</p><a class="source-link" href="20260826.html#501-dhh-future-of-programming-ai-agentic-engineering-vibe-coding-linux">打开播客</a></article><article class="connection-card"><strong>AI不确定性与模型可靠性</strong>
-<p>播客深入探讨了AI系统如何处理和表达不确定性，这对于构建可靠的AI至关重要，与多篇论文中通过识别失败模式、处理伪标签错误和增强模型探索来提升LLM推理性能和鲁棒性的研究方向高度契合。</p><a class="source-link" href="20260826.html#the-mathematics-of-ai-uncertainty">打开播客</a></article></div>
+  <div class="section-heading paper-heading"><h2>与播客相关的信号</h2></div><div class="connection-grid"><article class="connection-card"><strong>AI代理在企业应用中的变革</strong>
+<p>这些播客讨论了风险投资、AI革命、SaaS市场复苏、AI代理工厂概念、AI代理带来的数据安全威胁以及AI代理工程作为编程未来范式，这些都直接关联到AI代理在企业级应用中的部署、投资和变革潜力。</p><a class="source-link" href="20260830.html#doug-leone-on-sequoia-fear-great-founders-starting-over-at-69">打开播客</a><a class="source-link" href="20260829.html#nvidia-s-historic-quarter-saas-comeback-bessent-vs-druck-america-s-debt-crisis-cancer-vaccine">打开播客</a><a class="source-link" href="20260828.html#friday-wrap-up-a-hedge-fund-legend-and-reflections-on-the-global-ai-race">打开播客</a><a class="source-link" href="20260827.html#rethinking-legacy-data-infrastructure-with-eon-co-founders-ofir-ehrlich-and-gonen-stein">打开播客</a></article><article class="connection-card"><strong>AI代理开发与所有权</strong>
+<p>播客中提及的“AI代理工厂”概念、AI代理带来的新型数据安全威胁以及“AI代理工程”作为编程未来范式，都与AI代理的开发、管理、所有权和安全性密切相关。</p><a class="source-link" href="20260828.html#friday-wrap-up-a-hedge-fund-legend-and-reflections-on-the-global-ai-race">打开播客</a><a class="source-link" href="20260827.html#rethinking-legacy-data-infrastructure-with-eon-co-founders-ofir-ehrlich-and-gonen-stein">打开播客</a><a class="source-link" href="20260826.html#501-dhh-future-of-programming-ai-agentic-engineering-vibe-coding-linux">打开播客</a></article><article class="connection-card"><strong>AI代理重塑网络与用户界面</strong>
+<p>该播客深入探讨了AI代理工程将如何重塑编程和人机交互，其中AI负责执行而人类提供愿景的理念，与AI代理生成即时UI并成为新“浏览器”的愿景相呼应。</p><a class="source-link" href="20260826.html#501-dhh-future-of-programming-ai-agentic-engineering-vibe-coding-linux">打开播客</a></article><article class="connection-card"><strong>AI代理技能演化、持久知识库</strong>
+<p>播客讨论了拥抱AI革命、AI代理工厂以及AI代理工程作为编程未来范式，这些都强调了AI代理需要持续学习和演化技能以适应新环境，与论文中通过持久知识库实现技能演化的主题高度相关。</p><a class="source-link" href="20260830.html#doug-leone-on-sequoia-fear-great-founders-starting-over-at-69">打开播客</a><a class="source-link" href="20260828.html#friday-wrap-up-a-hedge-fund-legend-and-reflections-on-the-global-ai-race">打开播客</a><a class="source-link" href="20260826.html#501-dhh-future-of-programming-ai-agentic-engineering-vibe-coding-linux">打开播客</a></article><article class="connection-card"><strong>LLM解决软件问题、SFT数据选择</strong>
+<p>该播客深入探讨了AI代理工程将如何彻底重塑编程和软件开发，这与论文中通过优化训练数据来提升LLM解决软件问题能力的研究方向直接相关。</p><a class="source-link" href="20260826.html#501-dhh-future-of-programming-ai-agentic-engineering-vibe-coding-linux">打开播客</a></article></div>
 </section>
 <section class="weekly-cross"><div class="section-heading"><p class="kicker">Weekly Crosscheck</p><h2>三路信号交叉验证</h2></div><div class="cross-grid"><article class="cross-card"><span class="cross-type">观点冲突</span>
 <h3>AI监管与“末日论”的动机</h3><p>围绕AI监管的辩论日益激烈。Sam Altman和Dario Amodei等行业领袖强调AI的潜在风险和集中化趋势，呼吁审慎监管以确保安全，甚至暂停前沿模型训练。然而，Amjad Masad和All-In播客的嘉宾则质疑“AI末日论”可能是一种“监管捕获”策略，旨在限制竞争，并指出AI的去中心化潜力。Dylan Patel的X推文进一步揭示了反AI内容的经济动机和潜在的外部资助。同时，有论文研究了LLM辅助监管合规和AI系统中的安全/对齐问题，从技术层面反映了对风险的关注。</p>
@@ -153,28 +151,7 @@ p { margin:10px 0; } .article-page p { color:#243241; } ul { padding-left:24px; 
     <div class="section-heading"><h2>今日社媒观点</h2></div>
     
 <article class="signal-card">
-  <div class="signal-meta">Sam Altman / @sama / engagement 21529</div>
-  <p>this is a critically important moment for cyber defense with AI; there is not much time to act.
-
-we are happy if you want to work with us or any of our competitors or partners, but please take this moment seriously.
-
-only an urgent and intense collective response will work.</p>
-  <a class="source-link" href="https://x.com/sama/status/2093060670472241368">原文</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 5567</div>
-  <p>We built <a href="https://t.co/ESOyv3KDeM">https://t.co/ESOyv3KDeM</a> to ship shaders on <a href="https://t.co/pLuAOUwBOE.">https://t.co/pLuAOUwBOE.</a> Now it&#x27;s open source.
-
-▪︎ Minimal agent-first WebGPU library
-▪︎ Run in the browser or headless Node.js
-▪︎ Render in CPU sandboxes and CI tests
-▪︎ Create reusable .wgsl modules <a href="https://t.co/RWtvwWkZ0t">https://t.co/RWtvwWkZ0t</a></p>
-  <a class="source-link" href="https://x.com/vercel/status/2092999180780556643">原文</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 2071</div>
+  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 2543</div>
   <p>Owner has raised $240M, reached a $2.3B valuation, and crossed $100M ARR.
 
 Goldman Sachs Alternatives led the round, joined by Meritech, Redpoint, Headline, &amp;amp; Jack Altman.
@@ -184,17 +161,7 @@ The world is racing to build AI to replace people’s jobs. Owner is building AI
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 777</div>
-  <p>Our best products have been exports of internal technology we gain strong conviction in.
-
-@matinotfound and team have been shipping extraordinary WebGPU creative productions, and now <a href="https://t.co/0nyTRPKDEJ">https://t.co/0nyTRPKDEJ</a> is here.
-
-It’s a fully agent-native devtool: it was designed for agents, not humans alone. Much like 𝚊𝚐𝚎𝚗𝚝-𝚋𝚛𝚘𝚠𝚜𝚎𝚛, it’s part of a new exciting generation of tools to serve the new world.</p>
-  <a class="source-link" href="https://x.com/rauchg/status/2093019310725951683">原文</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 696</div>
+  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 1448</div>
   <p>I see the web evolving in two extremes:
 
 1️⃣ ultra-fancy human experiences, in the service of delight, exploration, brand, entertainment. <a href="https://t.co/0nyTRPKDEJ">https://t.co/0nyTRPKDEJ</a> / threejs / typegpu are enabling this
@@ -206,7 +173,31 @@ The &#x27;in between&#x27; is likely to be subsumed by agents producing just-in-
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Amjad Masad / @amasad / engagement 319</div>
+  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 742</div>
+  <p>Ship a new eve agent in one minute.
+
+From <a href="https://t.co/i9Vv3noQtm:">https://t.co/i9Vv3noQtm:</a>
+1. Add a prompt
+2. Pick models &amp;amp; MCP connections
+3. Deploy
+
+Your agent is in production, ready to chat, backed by a Git repo you own. <a href="https://t.co/qRMehsjDoQ">https://t.co/qRMehsjDoQ</a></p>
+  <a class="source-link" href="https://x.com/vercel/status/2093364921073549667">原文</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">Guillermo Rauch / @rauchg / engagement 554</div>
+  <p>There are many “easy” ways to create agents out there.
+
+But how many that give you a Git repo where you actually *own* the entire intelligence stack? Runtime, model choice, skills, tools, connectivity, sandbox…
+
+Easiest way to start with eve: 
+<a href="https://t.co/cUFDog6P3d">https://t.co/cUFDog6P3d</a></p>
+  <a class="source-link" href="https://x.com/rauchg/status/2093387887668814214">原文</a>
+</article>
+
+<article class="signal-card">
+  <div class="signal-meta">Amjad Masad / @amasad / engagement 427</div>
   <p>You’ve come up with the idea. You’ve built the product, faster than ever, with Agent.
 
 Replit’s Growth Skills gets your product into the hands of those who need it. Our expert partners make growth more accessible, even if you don’t know where to start. 
@@ -225,58 +216,48 @@ Turn that idea into a real business overnight at <a href="https://t.co/Hj0ejTdko
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Bill Gurley / @bgurley / engagement 290</div>
-  <p>California is adding sales tax to SaaS starting Jan 1
-
-😥Not sure they could have picked a worse time
-
-- 7.25% state + local district taxes, so 8-10% for most customers
-- Every CA-based customer you have is getting a price increase you didn&#x27;t send
-- And if you&#x27;re based here, your entire software and AI budget goes up 8-10% in 2027
-
-Stacks on top of vendor uplifts. A 7% renewal increase becomes 16%.
-
-👉Custom software and AWS-style infrastructure are excluded
-
-🤷Nobody knows yet where usage-based AI spend lands.</p>
-  <a class="source-link" href="https://x.com/jasonlk/status/2092973909616332964">原文</a>
-</article>
-
-<article class="signal-card">
-  <div class="signal-meta">Amjad Masad / @amasad / engagement 267</div>
+  <div class="signal-meta">Amjad Masad / @amasad / engagement 323</div>
   <p>Growth agent is such an untapped potential.</p>
   <a class="source-link" href="https://x.com/amasad/status/2093434828385313068">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 48</div>
-  <p>Great founders, not-so-great product, do you invest? 
+  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 168</div>
+  <p>So, in essence, we have been running Salesforce Headless and “Claudeforce” for over 6 months
 
-Tough but Cursor says yes.  Start off as AI for CAD and AI for email.
+How? We just used the Salesforce API to go headless, and we used an agent built on Claude itself on top of that API. Our own Claudeforce, really.
 
-Very good but not great founders + great traction?
+Learnings:
 
-The answer pre-AI was yes.  This worked great in 2018-2021.  Today, I am not so sure.  The truly great founders lap them in months.</p>
-  <a class="source-link" href="https://x.com/jasonlk/status/2093447278681882711">原文</a>
+- We would never go back
+- Amelia and I only log into Salesforce CRM now maybe once a month … although our sales lead still uses the ‘classic’ Salesforce interface
+- We have 10+ agents running on top of it, including multiple third party agents
+- Allows us to seamlessly stich together our CRM, Marketing, Finance stack (Bill, Brex, Quickbooks) into one “meta CRM” that knows everything
+- Allowed us to build an agentic Quote-to-Cash agent on top of Salesforce that does everything from contract to signature to collection
+- Our AI VP Revenue pushes everything into Slack daily, in real-time 
+- Our data usage has gone up 10x, and going up to 100x from before, our bill up about 40%
+
+Most importantly, the reality is everyone will want “multiple surfaces”. There’s no one size fits all anymore. Sales uses classic Salesforce. I check the latest in Slack. Amelia “talks” to 10K (our AI Agent build on top of Salesforce ‘headless’) for an hour a day in the morning. I ask it questions when I have them.
+
+To win, you need to support all these surfaces, and have a truly open platform. There’s no going back, and there’s no one single surface that will win.</p>
+  <a class="source-link" href="https://x.com/jasonlk/status/2093792483977376045">原文</a>
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 44</div>
-  <p>So the SaaSpocolyse is over.  Many names were oversold, WCLD is up +27% this year alone
+  <div class="signal-meta">Jason Lemkin / @jasonlk / engagement 103</div>
+  <p>&quot;I honestly feel like the @owner platform is a person&quot;
 
-But … classic software is &gt;out of fashion&lt;.  And likely will be for a very long time.  
+I do think for SMB B2B AI apps, this is the goal 
 
-It’s tough to get excited about a public B2B leader accelerating to 20% growth from 12% when Databricks is at 80% growth, Cursor just sold for $60B, and Stripe is at 41% now
-
-Most of the best public software companies are still growing far slower than the best private AI-infused B2B leaders</p>
-  <a class="source-link" href="https://x.com/jasonlk/status/2093478735890592214">原文</a>
+The customer should do zero work, almost never log in, get massive gains</p>
+  <a class="source-link" href="https://x.com/jasonlk/status/2093705138792018248">原文</a>
 </article>
   </section>
   <section class="signal-panel">
     <div class="section-heading"><h2>今日论文雷达</h2></div>
     
 <article class="signal-card">
-  <div class="signal-meta">cs.CL </div>
+  <div class="signal-meta">cs.CL <span class="badge">最新相关</span></div>
   <h3>CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes</h3>
   <p class="authors">Yufan Wu, Yinghui He, Zhengyi Hu, Lang Wei, Ruichen Li, Qifan Yang</p>
   <p>Recent advances in inference-time scaling have significantly improved the reasoning performance of large language models (LLMs).</p>
@@ -284,7 +265,7 @@ Most of the best public software companies are still growing far slower than the
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.AI, cs.CL </div>
+  <div class="signal-meta">cs.AI, cs.CL <span class="badge">最新相关</span></div>
   <h3>WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution</h3>
   <p class="authors">Liyan Tang, Cyrus Rashtchian, Chun-Sung Ferng, Andrew Tomkins, Da-Cheng Juan, Tu Vu</p>
   <p>Agent skills package specialized knowledge and workflows into reusable resources that extend AI agent capabilities.</p>
@@ -292,7 +273,7 @@ Most of the best public software companies are still growing far slower than the
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.SE, cs.AI, cs.CL </div>
+  <div class="signal-meta">cs.SE, cs.AI, cs.CL <span class="badge">最新相关</span></div>
   <h3>SWE-Prime: Fewer Trajectories, Better Performance</h3>
   <p class="authors">Dewu Zheng, Ruizhe Ye, Yanlin Wang, Yang Ye, Hongyu Zhang, Ensheng Shi</p>
   <p>To improve large language models&#x27; ability to resolve real-world software issues, prior work has focused on constructing large-scale agent trajectory datasets and performing supervised fine-tuning (SFT) on successful tra...</p>
@@ -300,7 +281,7 @@ Most of the best public software companies are still growing far slower than the
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.CL </div>
+  <div class="signal-meta">cs.CL <span class="badge">最新相关</span></div>
   <h3>TTPO: Test-Time Policy Optimization</h3>
   <p class="authors">Aozhe Wang, Zhengxi Lu, Jianze Wang, Shangke Lv, Ying Liu, Weiming Lu</p>
   <p>Recent prominent post-training methods, such as Reinforcement Learning (RL) and On-Policy Self-Distillation (OPSD), have driven rapid progress in mathematical reasoning for large language models, yet their reliance on g...</p>
@@ -308,7 +289,7 @@ Most of the best public software companies are still growing far slower than the
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.SE, cs.AI, cs.CL </div>
+  <div class="signal-meta">cs.SE, cs.AI, cs.CL <span class="badge">最新相关</span></div>
   <h3>From Static to Dynamic: Benchmarking Real-World Code Review with MCR-Bench</h3>
   <p class="authors">Dewu Zheng, Yanlin Wang, Xiwen Wang, Kefeng Duan, Hongyu Zhang, Xilin Liu</p>
   <p>In real-world software development, code review typically involves iterative interactions between developers and reviewers to improve software quality, making the process costly and time-consuming.</p>
@@ -316,7 +297,7 @@ Most of the best public software companies are still growing far slower than the
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.CR, cs.AI </div>
+  <div class="signal-meta">cs.CR, cs.AI <span class="badge">最新相关</span></div>
   <h3>RedEvoAgent: Automatic Red-Teaming Agent with Experience-Driven Skill Evolution</h3>
   <p class="authors">Junjie Zhang, Hui Liu, Kecheng Chen, Xianbo Mo, Changsheng Chen, Haoliang Li</p>
   <p>LLM-based agents are increasingly deployed in product-level execution harnesses, where jailbreaks can trigger harmful tool use and persistent state changes, creating greater risks than unsafe text generation alone.</p>
@@ -324,7 +305,7 @@ Most of the best public software companies are still growing far slower than the
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.CL </div>
+  <div class="signal-meta">cs.CL <span class="badge">最新相关</span></div>
   <h3>Stochastic Estimation of Transduced Language Models</h3>
   <p class="authors">Vésteinn Snæbjarnarson, Samuel Kiegeland, Manuel de Prada Corral, Ryan Cotterell, Tim Vieira</p>
   <p>Transduced language models (TLMs) compose a pretrained \emph{source} language model with a functional finite-state transducer to induce a language model over \emph{target} strings.</p>
@@ -332,7 +313,7 @@ Most of the best public software companies are still growing far slower than the
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.SE, cs.AI </div>
+  <div class="signal-meta">cs.SE, cs.AI <span class="badge">最新相关</span></div>
   <h3>Persona-Execution Separation: An Architecture Pattern for Evolving LLM Agents under Execution Audit</h3>
   <p class="authors">Yisen Xi</p>
   <p>Large language model (LLM) agents in governed organizations must let the persona (instructions, tone, self-presentation) evolve freely, while keeping execution (stateful, audited work) traceable.</p>
@@ -340,7 +321,7 @@ Most of the best public software companies are still growing far slower than the
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.CR, cs.AI </div>
+  <div class="signal-meta">cs.CR, cs.AI <span class="badge">最新相关</span></div>
   <h3>Beyond F1: Evaluating Coverage and Failure Recovery in AI Model Security Scanners</h3>
   <p class="authors">Qianlong Lan, Vinothini Pandurangan, Anuj Kaul, Indranil Sanyal</p>
   <p>Static scanners are increasingly used to identify executable or otherwise unsafe content in machine- learning artifacts, yet conventional evaluation metrics characterize only cases where a scanner yields a usable securi...</p>
@@ -348,7 +329,7 @@ Most of the best public software companies are still growing far slower than the
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.AI, cs.LG </div>
+  <div class="signal-meta">cs.AI, cs.LG <span class="badge">最新相关</span></div>
   <h3>Learning a Continuous Sepsis Severity Score Without Hour-by-Hour Supervision: A Two-Site Retrospective Study</h3>
   <p class="authors">Kevin Zhu, Ryan Zhang, Baraa Abed, Tilendra Choudhary, Malvern Madondo, Mehak Arora</p>
   <p>Currently used sepsis severity indices rely on fixed variables and weights established decades ago, which are coarsely discretized and calibrated to a cohort that no longer reflects contemporary critical care.</p>
@@ -356,7 +337,7 @@ Most of the best public software companies are still growing far slower than the
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.CL </div>
+  <div class="signal-meta">cs.CL <span class="badge">最新相关</span></div>
   <h3>Boosting LLM Exploration via Weak-Model Guidance in RLVR</h3>
   <p class="authors">Xingyu Shen, Huishuai Zhang, Peng Li, Yinchun Wang, Dongyan Zhao</p>
   <p>Reinforcement Learning with Verifiable Rewards (RLVR) significantly improves LLM reasoning but often causes a drop in policy entropy, leading to narrowed reasoning coverage and degraded pass@$k$ for large $k$.</p>
@@ -364,7 +345,7 @@ Most of the best public software companies are still growing far slower than the
 </article>
 
 <article class="signal-card">
-  <div class="signal-meta">cs.IR, cs.LG, cs.SI </div>
+  <div class="signal-meta">cs.IR, cs.LG, cs.SI <span class="badge">最新相关</span></div>
   <h3>Scaling Graph Neural Networks for Friend Recommendation: Multi-Hash User Embeddings and Temporal Neighbor Sampling</h3>
   <p class="authors">Maksim Utushkin, Andrei Ovsiannikov, Alexander D&#x27;yakonov</p>
   <p>Friend recommendation is inherently graph-structured: the relevance of a potential connection depends on multi-hop social context rather than user attributes alone.</p>
@@ -373,7 +354,12 @@ Most of the best public software companies are still growing far slower than the
   </section>
 </section>
 
-<p class="signal-generated">更新时间：2026-08-29T09:44:26.974315+00:00</p>
+<section class="signal-notes">
+  <div class="section-heading"><h2>抓取备注</h2></div>
+  <ul><li>No arXiv papers matched the lookback window; used latest relevant papers instead.</li></ul>
+</section>
+
+<p class="signal-generated">更新时间：2026-08-30T08:55:58.324301+00:00</p>
 
   </main>
 </body>
