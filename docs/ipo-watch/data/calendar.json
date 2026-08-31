@@ -45,30 +45,34 @@
     "source_url": "https://data.eastmoney.com/xg/xg/default.html"
   },
   {
-    "market": "港股",
-    "name": "希音─W",
-    "code": "00625.HK",
+    "market": "A股",
+    "name": "贝特利",
+    "code": "301697.SZ",
+    "apply_code": "301697",
     "event_date": "2026-09-01",
     "event_type": "上市",
     "listing_date": "2026-09-01",
-    "apply_date": "",
-    "offer_price": "47.6-49.5",
-    "financing_total": "约133.28-138.60亿港元",
-    "source": "AAStocks",
-    "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=00625"
+    "apply_date": "2026-08-19",
+    "offer_price": "12.1",
+    "financing_total": "7.95亿元",
+    "business": "电子材料和化工新材料的研发、生产与销售",
+    "source": "东方财富",
+    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
   },
   {
-    "market": "港股",
-    "name": "梅卡曼德机器人",
-    "code": "09615.HK",
+    "market": "A股",
+    "name": "马矿股份",
+    "code": "601123.SH",
+    "apply_code": "780123",
     "event_date": "2026-09-01",
     "event_type": "上市",
     "listing_date": "2026-09-01",
-    "apply_date": "",
-    "offer_price": "95.3-101.7",
-    "financing_total": "约22.05-23.53亿港元",
-    "source": "AAStocks",
-    "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=09615"
+    "apply_date": "2026-08-21",
+    "offer_price": "6.65",
+    "financing_total": "8.21亿元",
+    "business": "铁矿石的采选、综合利用及铁精粉、钼精矿销售,石灰石的开采和销售",
+    "source": "东方财富",
+    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
   },
   {
     "market": "A股",
@@ -112,5 +116,31 @@
     "financing_total": "约6.00亿港元",
     "source": "AAStocks",
     "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=02041"
+  },
+  {
+    "market": "港股",
+    "name": "江波龙",
+    "code": "09976.HK",
+    "event_date": "2026-09-08",
+    "event_type": "上市",
+    "listing_date": "2026-09-08",
+    "apply_date": "",
+    "offer_price": "N/A",
+    "financing_total": "",
+    "source": "AAStocks",
+    "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=09976"
+  },
+  {
+    "market": "港股",
+    "name": "优地机器人",
+    "code": "03231.HK",
+    "event_date": "2026-09-09",
+    "event_type": "上市",
+    "listing_date": "2026-09-09",
+    "apply_date": "",
+    "offer_price": "14.45-19.55",
+    "financing_total": "约6.50-8.80亿港元",
+    "source": "AAStocks",
+    "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=03231"
   }
 ]
