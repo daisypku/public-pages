@@ -1,36 +1,6 @@
 [
   {
     "market": "A股",
-    "name": "N华汇",
-    "code": "920289.BJ",
-    "apply_code": "920289",
-    "event_date": "2026-09-04",
-    "event_type": "上市",
-    "listing_date": "2026-09-04",
-    "apply_date": "2026-08-24",
-    "offer_price": "17.71",
-    "financing_total": "3.01亿元",
-    "business": "专业从事纳米砂磨机等智能装备及其关键部件的研发、设计、生产和销售",
-    "source": "东方财富",
-    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
-  },
-  {
-    "market": "A股",
-    "name": "燧原科技",
-    "code": "688801.SH",
-    "apply_code": "787801",
-    "event_date": "2026-09-04",
-    "event_type": "中签号/结果",
-    "listing_date": "",
-    "apply_date": "2026-09-02",
-    "offer_price": "142.18",
-    "financing_total": "61.19亿元",
-    "business": "公司坚持原始创新、自主研发的技术路线,构筑长期可持续发展的核心竞争力和护城河。成立近8年来,公司自研迭代了四代架构5款云端AI芯片,构建了覆盖AI芯片、AI加速卡及模组、智算系统及集群和AI计算及编程软件平台的完整产品体系",
-    "source": "东方财富",
-    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
-  },
-  {
-    "market": "A股",
     "name": "信诺维",
     "code": "688837.SH",
     "apply_code": "787837",
@@ -105,6 +75,19 @@
     "source_url": "https://data.eastmoney.com/xg/xg/default.html"
   },
   {
+    "market": "港股",
+    "name": "麦科田",
+    "code": "02041.HK",
+    "event_date": "2026-09-07",
+    "event_type": "上市",
+    "listing_date": "2026-09-07",
+    "apply_date": "",
+    "offer_price": "15.42",
+    "financing_total": "约6.00亿港元",
+    "source": "AAStocks",
+    "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=02041"
+  },
+  {
     "market": "A股",
     "name": "沈鼓集团",
     "code": "601091.SH",
@@ -127,8 +110,8 @@
     "event_type": "上市",
     "listing_date": "2026-09-08",
     "apply_date": "",
-    "offer_price": "最高 240.6",
-    "financing_total": "约62.74亿港元",
+    "offer_price": "236",
+    "financing_total": "约61.54亿港元",
     "source": "AAStocks",
     "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=09976"
   },
