@@ -1,22 +1,7 @@
 [
   {
     "market": "A股",
-    "name": "信诺维",
-    "code": "688837.SH",
-    "apply_code": "787837",
-    "event_date": "2026-09-07",
-    "event_type": "中签号/结果",
-    "listing_date": "",
-    "apply_date": "2026-09-03",
-    "offer_price": "27.6",
-    "financing_total": "18.03亿元",
-    "business": "聚焦于全球范围内重大未满足临床需求,以疾病为导向,致力于将创新转化为临床价值,为患者提供疾病领域内最佳治疗药物的创新药",
-    "source": "东方财富",
-    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
-  },
-  {
-    "market": "A股",
-    "name": "天博智能",
+    "name": "N天博",
     "code": "603448.SH",
     "apply_code": "732448",
     "event_date": "2026-09-07",
@@ -31,7 +16,7 @@
   },
   {
     "market": "A股",
-    "name": "杰锋动力",
+    "name": "N杰锋",
     "code": "920269.BJ",
     "apply_code": "920269",
     "event_date": "2026-09-07",
@@ -41,6 +26,21 @@
     "offer_price": "30.7",
     "financing_total": "3.21亿元",
     "business": "以汽车排气系统、动力系统等领域为主的汽车核心零部件产品的研发、设计、生产和销售",
+    "source": "东方财富",
+    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
+  },
+  {
+    "market": "A股",
+    "name": "信诺维",
+    "code": "688837.SH",
+    "apply_code": "787837",
+    "event_date": "2026-09-07",
+    "event_type": "中签号/结果",
+    "listing_date": "",
+    "apply_date": "2026-09-03",
+    "offer_price": "27.6",
+    "financing_total": "18.03亿元",
+    "business": "聚焦于全球范围内重大未满足临床需求,以疾病为导向,致力于将创新转化为临床价值,为患者提供疾病领域内最佳治疗药物的创新药",
     "source": "东方财富",
     "source_url": "https://data.eastmoney.com/xg/xg/default.html"
   },
@@ -75,19 +75,6 @@
     "source_url": "https://data.eastmoney.com/xg/xg/default.html"
   },
   {
-    "market": "港股",
-    "name": "麦科田",
-    "code": "02041.HK",
-    "event_date": "2026-09-07",
-    "event_type": "上市",
-    "listing_date": "2026-09-07",
-    "apply_date": "",
-    "offer_price": "15.42",
-    "financing_total": "约6.00亿港元",
-    "source": "AAStocks",
-    "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=02041"
-  },
-  {
     "market": "A股",
     "name": "沈鼓集团",
     "code": "601091.SH",
@@ -96,24 +83,11 @@
     "event_type": "申购",
     "listing_date": "",
     "apply_date": "2026-09-08",
-    "offer_price": "",
-    "financing_total": "21.34亿元",
+    "offer_price": "4.39",
+    "financing_total": "13.65亿元",
     "business": "为石油、化工、电力、天然气、新能源等领域提供重大技术装备和成套解决方案的国产化任务;是世界上少数能够自主设计制造大型复杂压缩机、高端核主泵等重大技术装备的制造厂商之一",
     "source": "东方财富",
     "source_url": "https://data.eastmoney.com/xg/xg/default.html"
-  },
-  {
-    "market": "港股",
-    "name": "江波龙",
-    "code": "09976.HK",
-    "event_date": "2026-09-08",
-    "event_type": "上市",
-    "listing_date": "2026-09-08",
-    "apply_date": "",
-    "offer_price": "236",
-    "financing_total": "约61.54亿港元",
-    "source": "AAStocks",
-    "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=09976"
   },
   {
     "market": "港股",
