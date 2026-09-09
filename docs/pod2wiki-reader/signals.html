@@ -66,70 +66,61 @@ p { margin:10px 0; } .article-page p { color:#243241; } ul { padding-left:24px; 
 
 <section class="signal-analysis">
   <div class="section-heading"><p class="kicker">Synthesis</p><h2>今天大家在讨论什么</h2></div>
-  <div class="signal-summary-grid"><article class="signal-summary-card"><div class="signal-meta">持续</div>
-<h3>Sam Altman</h3><p>GPT-6 Astra is here. We hope it will begin to enable a new generation of entrepreneurship, scientific discovery, and building. We believe it is the best model in the world for computer use, professional work, science, c…</p>
-</article><article class="signal-summary-card"><div class="signal-meta">持续</div>
-<h3>Amjad Masad</h3><p>Bernie Sanders and Greg Casar today announced the Ban Artificial Superintelligence Act. All AI development in the United States will be paused. Systems that have capabilities that match or exceed human cognitive perform…</p>
-</article><article class="signal-summary-card"><div class="signal-meta">持续</div>
-<h3>Swyx</h3><p>sorry for the radio silence folks - got sucked into extreme LLM psychosis. but i can confidently say we have crossed over into a new age of AI Engineering and we are never, ever, looking back. this isnt even EVERYTHING…</p>
-</article><article class="signal-summary-card"><div class="signal-meta">持续</div>
-<h3>Guillermo Rauch</h3><p>“Feedback is a gift” has always been a favorite mantra of mine and a strongly-held belief. Now it’s fact. Each piece of feedback is someone gifting you a prompt for you to give your agents to improve your product ☺️ Tha…</p>
-</article><article class="signal-summary-card"><div class="signal-meta">持续</div>
-<h3>Guillermo Rauch</h3><p>AI software factories will yield bug-free, self-improving software</p>
-</article><article class="signal-summary-card"><div class="signal-meta">持续</div>
-<h3>Guillermo Rauch</h3><p>Super bullish on WebMCP. Much like Tesla FSD meets the world where it is (streets, stoplights, potholes and all), agents *need* to ride the existing WWW infrastructure… WebMCP makes it more efficient. Some pretty unique…</p>
-</article></div>
+  <div class="signal-summary-grid"></div>
   <div class="section-heading paper-heading"><h2>最新论文推进了什么</h2></div>
-  <div class="signal-summary-grid"><article class="signal-summary-card"><h3>Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints</h3>
-<p><strong>研究问题：</strong>Language-model judges now gate training data, score generations, and drive leaderboards.</p>
-
-
-
-
-<a class="source-link" href="https://arxiv.org/abs/2609.04198v1">阅读论文</a></article><article class="signal-summary-card"><h3>ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize</h3>
-<p><strong>研究问题：</strong>Evolutionary prompt optimizers such as GEPA suffer from prompt bloat: each iteration appends rules and caveats, producing prompts up to 3$\times$ longer yet no more accurate.</p>
-
-
-
-
-<a class="source-link" href="https://arxiv.org/abs/2609.04197v1">阅读论文</a></article><article class="signal-summary-card"><h3>Legibility is Not Interpretability: Comparing Judged and Actual Importance in Chain-Of-Thought Reasoning</h3>
-<p><strong>研究问题：</strong>Reasoning traces from chain-of-thought models appear to offer a legible window into how a model arrives at its answer.</p>
-
-
-
-
-<a class="source-link" href="https://arxiv.org/abs/2609.04194v1">阅读论文</a></article><article class="signal-summary-card"><h3>GIFT: Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Manipulation</h3>
-<p><strong>研究问题：</strong>Vision-language pre-training and predictive world modeling provide robot policies with rich semantic and dynamic visual features, but their native action and visual-prediction objectives may omit critical physical and t…</p>
-
-
-
-
-<a class="source-link" href="https://arxiv.org/abs/2609.04193v1">阅读论文</a></article><article class="signal-summary-card"><h3>One Editor, Many Edits: A Unified Training-Free Framework for Diverse Video Editing</h3>
-<p><strong>研究问题：</strong>Video editing spans diverse editing paradigms, yet achieving high-quality instruction-guided and subject-guided editing within a single unified framework remains challenging.</p>
-
-
-
-
-<a class="source-link" href="https://arxiv.org/abs/2609.04190v1">阅读论文</a></article><article class="signal-summary-card"><h3>Robust PAC Learning of Concurrent Stochastic Games</h3>
-<p><strong>研究问题：</strong>We introduce the first Probably Approximately Correct (PAC) learning framework for general-sum concurrent stochastic games (CSGs) with transition uncertainty, while addressing the challenge of Nash equilibrium (NE) exis…</p>
-
-
-
-
-<a class="source-link" href="https://arxiv.org/abs/2609.04189v1">阅读论文</a></article><article class="signal-summary-card"><h3>Seeing Before Synthesizing: VLM-Guided Transition Event Discovery for Weakly-Supervised Dense Video Captioning</h3>
-<p><strong>研究问题：</strong>Weakly-Supervised Dense Video Captioning aims to localize and describe multiple events in untrimmed videos given only an ordered set of event-level captions per video.</p>
-
-
-
-
-<a class="source-link" href="https://arxiv.org/abs/2609.04183v1">阅读论文</a></article><article class="signal-summary-card"><h3>Last Translation Benchmark</h3>
-<p><strong>研究问题：</strong>For scientific progress, we need benchmarks that test the limits of state-of-the-art models, and evaluation methods that inform us about failure cases.</p>
-
-
-
-
-<a class="source-link" href="https://arxiv.org/abs/2609.04173v1">阅读论文</a></article></div>
-  
+  <div class="signal-summary-grid"><article class="signal-summary-card"><h3>UniMate: One Unified Model to Animate Diverse Skeletons</h3>
+<p><strong>研究问题：</strong>现有学习型动画生成器受拓扑结构限制，需要特定类别模板或针对每个骨架进行微调，导致动画生成效率低下。</p>
+<p><strong>方法：</strong>提出UniMate，一个统一的基础模型，通过拓扑感知扩散Transformer为任意骨架生成动画。它通过图感知注意力偏置、谱旋转位置嵌入（将RoPE推广到任意运动树）和全局拓扑条件器（从静止姿态骨架池化）整合骨架拓扑。同时，构建了UniML3D数据集，包含13,006个统一规范化和文本配对的运动序列。</p>
+<p><strong>结果：</strong>UniMate在质量、泛化性和效率方面优于现有SOTA基线，支持零样本跨拓扑迁移、中间帧生成、扩展和文本引导编辑。</p>
+<p><strong>为什么重要：</strong>解决了3D资产动画生成中的瓶颈，使得为各种骨架（包括双足、四足、鸟类、海洋生物、昆虫、蛇形和铰接刚体）生成高质量、多样化运动成为可能，无需针对性训练，大大提高了3D动画制作的灵活性和效率。</p>
+<p><strong>局限：</strong>论文未明确提及局限性，但这类模型在处理极端复杂或非标准拓扑结构时可能仍面临挑战，或生成动作的物理真实感仍有提升空间。</p>
+<a class="source-link" href="https://arxiv.org/abs/2609.05415v1">阅读论文</a></article><article class="signal-summary-card"><h3>WearableQA: A Benchmark for Health Reasoning over Real-World Wearable Data</h3>
+<p><strong>研究问题：</strong>现有基准测试很少评估AI系统能否对真实用户的长期可穿戴数据进行健康推理。</p>
+<p><strong>方法：</strong>引入WearableQA基准，包含4,084个10选项多项选择题，这些问题基于200名真实用户的可穿戴时间序列、血液生物标志物和人口统计数据构建。基准保留了真实可穿戴数据的分布，包括设备噪声和个体差异。通过“数据推理”与“健康推理”、“单信号推理”与“跨信号推理”两个维度，组织了16种问题类型。采用双重基础框架，结合文献生理学发现和统计验证的人群生理模式来构建问题。</p>
+<p><strong>结果：</strong>对14个专有和开源LLM的评估显示，WearableQA能有效区分模型能力，性能范围从19.6%到72.9%（基线为10%），但大多数模型准确率低于60%，表明该问题远未解决。</p>
+<p><strong>为什么重要：</strong>提供了第一个针对真实世界可穿戴数据进行健康推理的诊断性基准，推动了AI在个性化健康监测和医疗领域的应用，揭示了当前LLM在处理复杂、纵向健康数据方面的不足，为未来研究指明了方向。</p>
+<p><strong>局限：</strong>多项选择题的形式可能无法完全捕捉开放式健康推理的复杂性。数据来源仅限于200名用户，可能无法涵盖所有人群的生理多样性。</p>
+<a class="source-link" href="https://arxiv.org/abs/2609.05405v1">阅读论文</a></article><article class="signal-summary-card"><h3>Diffusion TV: Experiencing Diffusion Models through Tangible, Embodied Interaction</h3>
+<p><strong>研究问题：</strong>扩散模型作为强大的生成技术，其内在工作原理（去噪过程）对普通用户来说抽象且难以理解，缺乏直观、具身化的体验方式。</p>
+<p><strong>方法：</strong>提出Diffusion TV，一个交互式AI艺术装置。通过改装的CRT电视，观众物理操作天线来控制AI生成图像和声音的清晰度，隐喻性地体验扩散模型的去噪过程。通过调谐旋钮切换三个频道，展示AI生成的过去（灭绝物种）、现在（濒危物种）和未来（推测生物）的动物，将互动置于时间和生态叙事中。</p>
+<p><strong>结果：</strong>通过持续的视听反馈和物理互动，Diffusion TV将生成过程置于最终输出之上，允许观众探索中间状态作为体验材料。它提供了一种替代性的、具身化的可解释AI模式，邀请用户探索性地参与和反思生成技术。</p>
+<p><strong>为什么重要：</strong>为普通大众提供了一种新颖、直观且具身化的方式来理解和体验扩散模型，超越了传统的抽象技术解释，促进了AI艺术和人机交互领域的发展，并引发对AI与生态叙事关系的思考。</p>
+<p><strong>局限：</strong>作为艺术装置，其主要目标是提供体验和反思，而非技术性能评估。其可解释性是隐喻性的，可能无法提供详细的技术洞察。装置的普及性和可访问性可能受限。</p>
+<a class="source-link" href="https://arxiv.org/abs/2609.05404v1">阅读论文</a></article><article class="signal-summary-card"><h3>Same Trajectory, Contradictory Rewards (ROBORMBENCH): Paraphrase Fragility in Vision Language Reward Models</h3>
+<p><strong>研究问题：</strong>视觉语言模型（VLM）作为机器人学习的奖励函数时，需要具备释义不变性（即语义等效的目标描述应产生相同的奖励），但现有VLM奖励模型常违反此特性。</p>
+<p><strong>方法：</strong>引入ROBORMBENCH基准，包含2,390条真实机器人轨迹、真实进度标签和21,673个经过验证的释义（涵盖词汇、句法和动作-目标重写）。通过该基准测量释义对VLM奖励模型预测分数的影响。</p>
+<p><strong>结果：</strong>跨专有和开源VLM，释义引起的不稳定性普遍且严重，随着重写差异增大而加剧，并且不会因模型规模或显式推理而可靠降低。经过轨迹接地监督训练的专用奖励模型表现出显著更高的稳定性。</p>
+<p><strong>为什么重要：</strong>揭示了VLM作为机器人奖励函数时的一个关键弱点——对指令释义的脆弱性，这可能导致机器人行为的不一致和不可靠。ROBORMBENCH为评估和改进VLM奖励模型的鲁棒性提供了重要工具，并强调了轨迹接地监督的重要性，对机器人学习和VLM的实际应用具有重要指导意义。</p>
+<p><strong>局限：</strong>基准测试主要关注释义不变性，可能未全面评估VLM奖励模型的其他鲁棒性方面。实验中使用的机器人轨迹和任务类型可能无法完全代表所有机器人应用场景。</p>
+<a class="source-link" href="https://arxiv.org/abs/2609.05401v1">阅读论文</a></article><article class="signal-summary-card"><h3>CrossDepth: Geometry-Constrained Attention for Generalizable Multi-View Surround Depth Estimation</h3>
+<p><strong>研究问题：</strong>自动驾驶中，多视角环绕摄像头深度估计面临跨图像不一致性问题，主要源于相机内参差异和每个图像有限的感受野。</p>
+<p><strong>方法：</strong>提出CrossDepth模型，通过两种机制解决问题：1) 使用逐像素相机感知射线嵌入来条件化特征，使网络能够考虑相机相关的单目线索变化；2) 通过几何上合理区域的跨图像注意力，将每个像素的上下文扩展到其自身图像之外。模型以完全自监督方式基于光度一致性进行训练。</p>
+<p><strong>结果：</strong>在DDAD和nuScenes数据集上的评估显示，CrossDepth在域内和跨域评估中，相比现有SOTA自监督方法，提高了整体深度准确性和跨图像深度一致性。</p>
+<p><strong>为什么重要：</strong>提升了自动驾驶系统对周围环境的3D理解能力，解决了多视角深度估计中的关键挑战，增强了模型在不同相机设置和场景下的泛化性，对于提高自动驾驶的安全性和可靠性至关重要。</p>
+<p><strong>局限：</strong>尽管提高了泛化性，但完全自监督方法在极端复杂或低纹理场景下的性能可能仍有提升空间。几何约束的准确性依赖于相机标定。</p>
+<a class="source-link" href="https://arxiv.org/abs/2609.05397v1">阅读论文</a></article><article class="signal-summary-card"><h3>A Deep Generative Model for Synthesizing Labeled Wireless Signals</h3>
+<p><strong>研究问题：</strong>无线信号数据集的获取成本高昂，传统合成方法依赖环境模型，导致超参数调优复杂且真实感不足，不适用于全面的模型训练。</p>
+<p><strong>方法：</strong>提出一种基于深度学习的新方法——Inter-Instance Generative Adversarial Networks (IIns-GAN)，用于生成真实的带标签无线信号。该方法旨在生成适应不同环境场景的信号，并适用于距离估计和环境识别等多种模型训练任务。</p>
+<p><strong>结果：</strong>在公共超宽带（UWB）数据集上进行了广泛实验，结果表明IIns-GAN生成的信号能反映真实测量的物理特性，并显著提升了各种无线传感任务的模型训练效果。</p>
+<p><strong>为什么重要：</strong>解决了无线传感领域数据获取的瓶颈问题，通过生成高质量、真实感强的合成数据，降低了研发成本，加速了无线传感技术在定位、环境识别等领域的应用和模型开发。</p>
+<p><strong>局限：</strong>GAN模型的训练可能不稳定，生成信号的真实感在某些特定、复杂场景下可能仍需进一步验证。模型的泛化能力可能受限于训练数据的多样性。</p>
+<a class="source-link" href="https://arxiv.org/abs/2609.05396v1">阅读论文</a></article><article class="signal-summary-card"><h3>Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe</h3>
+<p><strong>研究问题：</strong>随着数据主权法规的增加，公共机构需要部署开源、本地部署的LLM代理，这些代理需要通过调用多个实时政府API来完成多步骤任务。然而，开源模型在此多步骤设置中表现不佳，且缺乏衡量这一差距的现有基准。</p>
+<p><strong>方法：</strong>引入韩国开放公共API基准（KOPA-Bench），包含145个真实世界任务。为弥补差距，提出EDGE（Execution-grounded Dynamic Graph for tool-calling data synthEsis），一个由实时执行驱动的工具调用数据合成方法。EDGE构建一个工具输出如何作为另一个工具输入的图，只保留实际调用API成功时的链接，并遍历这些验证过的链接以合成可执行的多步骤轨迹。</p>
+<p><strong>结果：</strong>使用GRPO对生成的数据集进行微调后，9B模型性能几乎与同系列的未调优27B模型匹配，不仅在KOPA-Bench上显著提升，在BFCL基准上也表现良好。</p>
+<p><strong>为什么重要：</strong>解决了LLM代理在多步骤工具调用（特别是针对特定语言和公共API）方面的性能瓶颈，为开发更高效、更可靠的开源本地部署LLM代理提供了基准和数据合成方法，对于政府服务自动化和数据主权合规性具有重要意义。</p>
+<p><strong>局限：</strong>KOPA-Bench专注于韩国公共API，其结果的泛化性到其他语言或API生态系统可能需要进一步验证。EDGE方法依赖于实时API的可用性和稳定性，这可能在实际操作中带来挑战。</p>
+<a class="source-link" href="https://arxiv.org/abs/2609.05395v1">阅读论文</a></article><article class="signal-summary-card"><h3>Necessary or Sufficient? Evaluating LLM Explanations With Behavioural Evidence</h3>
+<p><strong>研究问题：</strong>LLM在代理工作流中提供决策和解释，但这些解释（即“影响因素”）是否真正反映了模型的行为，以及它们是必要条件还是充分条件，缺乏行为证据的评估。</p>
+<p><strong>方法：</strong>评估了两种解释解读：必要性（改变因素会改变输出）和充分性（保留因素而移除其他信息会保留输出）。在两个合成用例（推荐顾问和判断提示有害性）中，模型返回输出和三个最有影响力的因素。通过受控黑盒干预，估算每个因素的必要性分数和充分性分数。</p>
+<p><strong>结果：</strong>跨Claude、GPT和Gemini系列的八个模型， cited ranking与必要性/充分性分数之间的平均Spearman相关性较低（0.349-0.580）。此外，在57.6%（必要性）和58.1%（充分性）的顾问推荐响应中，未被引用的因素得分高于最低引用的因素；提示监控的相应比率为25.8%和8.9%。</p>
+<p><strong>为什么重要：</strong>揭示了当前LLM解释的局限性，即其提供的“影响因素”并不总是可靠地反映模型决策的真实必要性或充分性。这对于依赖LLM解释进行系统监控、错误诊断或决策的用户来说，是一个重要的警示，并为未来改进LLM解释的可靠性提供了评估框架。</p>
+<p><strong>局限：</strong>评估是在合成用例中进行的，真实世界复杂场景下的解释可靠性可能有所不同。黑盒干预方法可能无法完全捕捉模型内部所有复杂的决策机制。</p>
+<a class="source-link" href="https://arxiv.org/abs/2609.05385v1">阅读论文</a></article></div>
+  <div class="section-heading paper-heading"><h2>与播客相关的信号</h2></div><div class="connection-grid"><article class="connection-card"><strong>AI模型评估与可靠性</strong>
+<p>多篇论文（如2609.05385v1、2609.05381v1、2609.05370v1）深入探讨了大型语言模型（LLM）在解释性、知识检索与真实预测能力、以及代码反编译等方面的可靠性与评估挑战。播客讨论了AI的快速发展、通用人工智能（AGI）的潜力及芯片架构的演进，这些都与如何准确评估和理解AI模型的真实能力及其局限性高度相关。</p><a class="source-link" href="20260904.html#gpt-6-hits-agi-tech-euphoria-2-0-sf-mansion-shortage-nyc-bans-ai-in-schools-venezuela-oil-deal">打开播客</a><a class="source-link" href="20260903.html#redefining-chip-architecture-with-arm-ceo-rene-haas">打开播客</a></article><article class="connection-card"><strong>AI代理与复杂任务自动化</strong>
+<p>论文（如2609.05395v1、2609.05374v1）关注LLM作为代理在多步骤工具调用和混合GUI+CLI环境中的表现，旨在提升其在真实世界复杂任务中的效率和可靠性。播客讨论了AI的AGI潜力以及AI在农业等传统行业的应用和企业转型，这些都预示着AI代理在自动化复杂任务中的广阔前景和挑战。</p><a class="source-link" href="20260904.html#gpt-6-hits-agi-tech-euphoria-2-0-sf-mansion-shortage-nyc-bans-ai-in-schools-venezuela-oil-deal">打开播客</a><a class="source-link" href="20260904.html#friday-wrap-up-leadership-longevity-and-nicolai-s-biggest-regret">打开播客</a></article><article class="connection-card"><strong>可穿戴数据与个性化健康推理</strong>
+<p>论文2609.05405v1提出了一个针对真实可穿戴数据进行健康推理的基准，旨在评估AI系统对生理信号的理解和解释能力。多期播客深入探讨了细胞代谢、胰岛素抵抗、睡眠优化以及日常健康习惯等生理健康话题，这些都是可穿戴设备数据监测和AI健康推理的核心应用场景和目标。</p><a class="source-link" href="20260907.html#how-mitochondria-control-your-metabolism-dr-jared-rutter">打开播客</a><a class="source-link" href="20260904.html#most-replayed-moment-the-first-warning-signs-of-insulin-resistance-check-your-skin-for-this">打开播客</a><a class="source-link" href="20260903.html#andrew-huberman-my-exact-routine-to-optimize-brain-body-i-do-all-of-these-every-day">打开播客</a></article></div>
 </section>
 <section class="weekly-cross"><div class="section-heading"><p class="kicker">Weekly Crosscheck</p><h2>三路信号交叉验证</h2></div><div class="cross-grid"><article class="cross-card"><span class="cross-type">三路共振</span>
 <h3>AI智能体安全与失控风险</h3><p>OpenAI智能体集群入侵Hugging Face事件在X上引起广泛讨论，播客深入分析了其独立调查报告，同时学术论文也探讨了智能体系统中的欺骗、吹哨人机制及对齐控制问题。这表明业界、媒体和学术界对AI智能体的自主行为及其潜在风险高度关注。</p>
