@@ -1,0 +1,68 @@
+[
+  {
+    "exchange": "CNINFO",
+    "issuer": "广东博迈医疗科技股份有限公司",
+    "document_type": "A股IPO项目更新",
+    "publish_date": "2026-09-09",
+    "update_date": "2026-09-09",
+    "board": "A股IPO",
+    "industry": "专用设备制造业",
+    "sponsor": "中国国际金融股份有限公司",
+    "status": "已问询",
+    "pdf_url": null,
+    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
+    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1748",
+    "title": "广东博迈医疗科技股份有限公司 A股IPO项目更新",
+    "summary": {
+      "financial_snapshot": {
+        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
+      },
+      "key_points": [
+        "当前审核状态：已问询",
+        "保荐机构：中国国际金融股份有限公司",
+        "所属行业：专用设备制造业",
+        "净利润参考值：0.77亿元"
+      ],
+      "one_line_business": "博迈医疗专注于高性能血管介入医疗器械的研发、生产及全球销售，是全球行业内技术及产品领先的复杂血管疾病介入治疗解决方案提供商，同时也是国产血管介入球囊导管领域产销量领先的研发生产企业。在产品体系建设方面，公司已形成覆盖多治疗场景的完善产品矩阵，拥有50余个产品系列，产品应用领域涵盖冠脉介入、外周介入、神经介入、血透通路及介入配件等关键领域，具体包含各类通用球囊导管、功能性球囊导管、药物球囊导管、介入导丝与导管、多种血栓处理器械、钙化处理器械、能量治疗器械等核心产品线，可充分满足临床对复杂血管疾病介入治疗的多样化需求。",
+      "risk_factors": [
+        "尚未基于招股书全文生成风险摘要。"
+      ],
+      "source": "cninfo_project"
+    },
+    "collected_at": "2026-09-11T05:00:50+00:00",
+    "id": "9ee30a7dd7109e8effdc76c3"
+  },
+  {
+    "exchange": "CNINFO",
+    "issuer": "苏州科润新材料股份有限公司",
+    "document_type": "A股IPO项目更新",
+    "publish_date": "2026-09-08",
+    "update_date": "2026-09-08",
+    "board": "A股IPO",
+    "industry": "橡胶和塑料制品业",
+    "sponsor": "国联民生证券承销保荐有限公司",
+    "status": "已问询",
+    "pdf_url": null,
+    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
+    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1838",
+    "title": "苏州科润新材料股份有限公司 A股IPO项目更新",
+    "summary": {
+      "financial_snapshot": {
+        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
+      },
+      "key_points": [
+        "当前审核状态：已问询",
+        "保荐机构：国联民生证券承销保荐有限公司",
+        "所属行业：橡胶和塑料制品业",
+        "净利润参考值：0.23亿元"
+      ],
+      "one_line_business": "公司是一家主要从事全氟磺酸质子交换膜及其相关材料研发、生产与销售的创新创业企业，在国内首家实现液流电池用质子交换膜自主量产，成功打破美国科慕（原杜邦）等国际厂商在该领域的长期垄断，实现核心材料进口替代。自设立以来，公司始终聚焦新能源及绿色化工领域，为液流储能、氢能、电化学制造等场景提供高性能膜材料解决方案，已在单体合成、全氟磺酸树脂产业化聚合、质子交换膜规模化制备等关键环节实现技术突破，构建了从核心原料独立合成到终端产品规模生产的全链条可控体系，公司技术成熟度高，产品性能对标国际知名品牌，产业化规模与市场认可度均居行业前列。",
+      "risk_factors": [
+        "尚未基于招股书全文生成风险摘要。"
+      ],
+      "source": "cninfo_project"
+    },
+    "collected_at": "2026-09-11T05:00:51+00:00",
+    "id": "49b486813fcc926b247bc17d"
+  }
+]
