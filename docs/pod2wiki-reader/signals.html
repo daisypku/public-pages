@@ -69,55 +69,59 @@ p { margin:10px 0; } .article-page p { color:#243241; } ul { padding-left:24px; 
   <div class="signal-summary-grid"></div>
   <div class="section-heading paper-heading"><h2>最新论文推进了什么</h2></div>
   <div class="signal-summary-grid"><article class="signal-summary-card"><h3>UniMate: One Unified Model to Animate Diverse Skeletons</h3>
-<p><strong>研究问题：</strong>现有学习型动画师受拓扑结构限制，需要特定类别模板或针对每个骨架进行微调，导致生成多样骨架运动效率低下，成为3D资产动画生成中的瓶颈。</p>
-<p><strong>方法：</strong>提出UniMate，一个统一的基础模型，通过拓扑感知扩散Transformer为任意骨架合成关节运动。引入了三种机制：图感知注意力偏置、谱旋转位置嵌入（将RoPE推广到任意运动树）、以及全局拓扑调节器。同时构建了UniML3D数据集，包含13,006个跨多种生物类型和关节刚性物体的运动序列。</p>
-<p><strong>结果：</strong>UniMate在质量、泛化性和效率方面优于现有SOTA基线，并支持零样本跨拓扑迁移、中间帧生成、扩展和文本引导编辑。</p>
-<p><strong>为什么重要：</strong>解决了3D资产动画生成中的瓶颈，使得大规模生成多样骨架的运动成为可能，极大地提高了动画制作的效率和灵活性，对游戏、电影、VR/AR等领域有重要意义。</p>
-<p><strong>局限：</strong>抽象中未明确提及，但作为基础模型，可能在特定极端复杂或高度定制化的骨架上仍有改进空间，或对训练数据多样性有较高要求。</p>
+<p><strong>研究问题：</strong>现有动画生成模型受限于特定拓扑结构，难以对任意3D骨骼资产进行通用运动合成，成为动画制作的瓶颈。</p>
+<p><strong>方法：</strong>提出UniMate，一个统一的基础模型，通过拓扑感知扩散Transformer合成任意骨骼的关节运动。该模型整合了骨骼拓扑结构，通过图感知注意力偏置、谱旋转位置嵌入和全局拓扑条件器实现。同时构建了UniML3D数据集，包含多种拓扑结构的运动序列。</p>
+<p><strong>结果：</strong>UniMate在质量、泛化性和效率上超越了现有SOTA基线，并支持零样本跨拓扑迁移、中间帧生成、扩展和文本引导编辑。</p>
+<p><strong>为什么重要：</strong>解决了3D动画生成中拓扑结构限制的难题，为大规模、多样化的3D资产提供了通用的运动合成能力，极大地提高了动画制作的灵活性和效率。</p>
+<p><strong>局限：</strong>论文未明确提及具体局限，但作为基础模型，其在处理极端复杂或高度特异性交互时的表现可能仍需进一步验证。</p>
 <a class="source-link" href="https://arxiv.org/abs/2609.05415v1">阅读论文</a></article><article class="signal-summary-card"><h3>WearableQA: A Benchmark for Health Reasoning over Real-World Wearable Data</h3>
-<p><strong>研究问题：</strong>现有基准很少评估AI系统是否能对真实用户的长期可穿戴数据进行推理，缺乏能反映真实世界数据分布（包括设备噪声和个体差异）的诊断性基准。</p>
-<p><strong>方法：</strong>引入WearableQA基准，包含4,084个10选项多项选择题，基于200名真实用户长达500天的可穿戴时间序列、血液生物标志物和人口统计数据构建。设计了16种问题类型，沿数据推理与健康推理、单信号与跨信号推理两个维度组织。采用双重基础框架，结合文献生理学发现和统计验证的人群生理模式来构建问题。</p>
-<p><strong>结果：</strong>评估14个LLM模型显示，WearableQA能有效区分模型能力（性能范围19.6%至72.9%，基线10%），但大多数模型准确率低于60%，表明该问题远未解决。</p>
-<p><strong>为什么重要：</strong>提供了首个针对真实世界可穿戴数据进行健康推理的现实且诊断性强的基准，推动了AI系统在理解和解释复杂、纵向健康数据方面的研究，对个性化医疗、健康监测和AI辅助诊断具有重要意义。</p>
-<p><strong>局限：</strong>抽象中未明确提及，但可能需要更多样化的用户群体和更长的跟踪时间来进一步提升基准的全面性。模型性能仍有待提高。</p>
+<p><strong>研究问题：</strong>现有AI基准测试很少评估AI系统对真实用户长期可穿戴数据的健康推理能力，无法反映其在真实世界健康场景中的表现。</p>
+<p><strong>方法：</strong>引入WearableQA基准，包含4,084个10选项多项选择题，基于200名真实用户长达500天的可穿戴时间序列、血液生物标志物和人口统计数据构建。设计了16种问题类型，区分数据推理与健康推理、单信号与跨信号推理。采用双重基础框架（文献依据+人群统计模式）确保问题可靠性。</p>
+<p><strong>结果：</strong>评估14个LLM模型显示，WearableQA能有效区分模型能力（19.6%至72.9%，基线10%），但大多数模型准确率低于60%，表明该问题远未解决。</p>
+<p><strong>为什么重要：</strong>提供了首个针对真实世界可穿戴健康数据进行LLM推理的诊断性基准，对于推动AI在个性化健康监测和医疗领域的应用至关重要。</p>
+<p><strong>局限：</strong>尽管有效区分了模型能力，但现有模型表现普遍不佳，表明在处理真实世界复杂健康数据推理方面仍有巨大挑战。</p>
 <a class="source-link" href="https://arxiv.org/abs/2609.05405v1">阅读论文</a></article><article class="signal-summary-card"><h3>Diffusion TV: Experiencing Diffusion Models through Tangible, Embodied Interaction</h3>
-<p><strong>研究问题：</strong>现有的AI艺术装置往往侧重于最终输出，缺乏对生成过程的具身性、有形化体验，难以让公众直观理解扩散模型的去噪过程。</p>
-<p><strong>方法：</strong>提出Diffusion TV，一个交互式AI艺术装置，通过改装的CRT电视提供扩散模型的有形具身体验。观众通过物理操作电视天线控制AI生成图像和声音的清晰度，隐喻去噪过程。通过调谐旋钮切换三个频道，展示AI生成的过去、现在和未来动物。</p>
-<p><strong>结果：</strong>通过持续的视听反馈和物理交互，该作品将生成过程置于最终输出之上，允许观众将中间状态作为体验材料进行探索。它提供了一种替代的、具身化的可解释AI模式。</p>
-<p><strong>为什么重要：</strong>创新性地将抽象的AI生成过程转化为具身、有形的互动体验，降低了公众理解AI技术的门槛，促进了对生成式AI的探索性参与和反思，对AI艺术、人机交互和可解释AI领域具有启发意义。</p>
-<p><strong>局限：</strong>作为一个艺术装置，其主要目标是提供体验而非技术解释，因此在技术细节的透明度上可能有限。其效果的评估可能更多依赖于用户体验和艺术评论而非量化指标。</p>
+<p><strong>研究问题：</strong>扩散模型等生成式AI技术通常以抽象算法形式呈现，缺乏具身、有形的互动体验，难以让公众直观理解其工作原理和生成过程。</p>
+<p><strong>方法：</strong>创造了一个名为“Diffusion TV”的交互式AI艺术装置，通过一台改装的CRT电视提供具身体验。观众通过物理操作电视天线控制AI生成图像和声音的清晰度（模拟去噪过程），通过调谐旋钮切换不同“频道”展示AI生成的动物（过去、现在、未来）。</p>
+<p><strong>结果：</strong>该装置通过持续的视听反馈和物理互动，将生成过程置于最终输出之上，允许观众探索中间状态，提供了一种替代性的、具身化的可解释AI模式。</p>
+<p><strong>为什么重要：</strong>使复杂的生成式AI概念变得可触及和可体验，促进了公众对生成技术进行探索性参与和反思，而非仅仅停留在技术解释层面。</p>
+<p><strong>局限：</strong>作为艺术装置，其主要目的是提供体验和反思，而非解决技术问题，因此其“局限”在于其应用范围和功能特异性。</p>
 <a class="source-link" href="https://arxiv.org/abs/2609.05404v1">阅读论文</a></article><article class="signal-summary-card"><h3>Same Trajectory, Contradictory Rewards (ROBORMBENCH): Paraphrase Fragility in Vision Language Reward Models</h3>
-<p><strong>研究问题：</strong>视觉语言模型（VLM）作为机器人学习的奖励函数时，需要具备“释义不变性”，即语义等效的目标描述应获得相同奖励。然而，现有VLM奖励模型常违反此特性，导致机器人行为在指令释义后出现矛盾的奖励。</p>
-<p><strong>方法：</strong>引入ROBORMBENCH基准，包含2,390条真实机器人轨迹、真实进度标签和21,673个经过验证的释义（涵盖词汇、句法和动作-目标重写）。通过该基准测量释义引起的VLM奖励模型不稳定性。</p>
-<p><strong>结果：</strong>专有和开源VLM中，释义引起的不稳定性普遍且严重，随释义差异增大而加剧，且不随模型规模或显式推理而可靠降低。经过轨迹接地监督训练的专用奖励模型表现出更高的稳定性。</p>
-<p><strong>为什么重要：</strong>揭示了VLM作为机器人奖励函数时存在的关键弱点——释义脆弱性，并提供了首个专门用于衡量这一问题的基准。这对于开发更可靠、更鲁棒的VLM驱动机器人系统至关重要，尤其是在需要精确指令理解和安全性的应用中。</p>
-<p><strong>局限：</strong>抽象中未明确提及，但可能需要进一步研究如何系统性地提高VLM的释义不变性，而不仅仅是依赖专用奖励模型。基准的释义类型可能仍有扩展空间。</p>
+<p><strong>研究问题：</strong>视觉语言模型（VLM）作为机器人学习的奖励函数时，缺乏“释义不变性”，即语义等效的目标描述可能导致对相同机器人轨迹给出矛盾的奖励。</p>
+<p><strong>方法：</strong>引入ROBORMBENCH基准，包含2,390条真实机器人轨迹、真实进度标签和21,673个经过验证的释义（词汇、句法和动作-目标改写）。</p>
+<p><strong>结果：</strong>跨专有和开源VLM，释义引起的不稳定性普遍且严重，随着改写差异增大而加剧，且无法通过模型规模或显式推理可靠降低。经过轨迹接地监督训练的专用奖励模型表现出更高的稳定性。</p>
+<p><strong>为什么重要：</strong>揭示了VLM在机器人奖励建模中存在的关键可靠性问题，强调了释义鲁棒性对于构建可靠VLM机器人系统的核心要求，并指出了通过专用模型改进的方向。</p>
+<p><strong>局限：</strong>现有前沿VLM普遍存在这一问题，表明解决释义不变性仍是重大挑战。</p>
 <a class="source-link" href="https://arxiv.org/abs/2609.05401v1">阅读论文</a></article><article class="signal-summary-card"><h3>CrossDepth: Geometry-Constrained Attention for Generalizable Multi-View Surround Depth Estimation</h3>
-<p><strong>研究问题：</strong>自动驾驶中多视角环绕摄像头深度估计面临跨图像不一致性问题，主要源于相机内参差异和每个图像有限的感受野，导致模型对单目线索的解释不一致。</p>
-<p><strong>方法：</strong>提出CrossDepth，通过几何约束注意力解决上述问题。针对相机内参差异，通过像素级相机感知射线嵌入对特征进行条件化。针对有限感受野，通过跨图像注意力扩展每个像素的上下文，该注意力受几何上合理区域的约束。模型以完全自监督方式基于光度一致性进行训练。</p>
-<p><strong>结果：</strong>在DDAD和nuScenes数据集上，CrossDepth在域内和跨域评估中均提高了整体深度准确性和跨图像深度一致性，优于现有SOTA自监督方法。</p>
-<p><strong>为什么重要：</strong>提高了自动驾驶系统对周围环境3D理解的可靠性，特别是在处理多视角摄像头数据时的深度估计准确性和一致性，对于提升自动驾驶的安全性和性能具有重要意义。</p>
-<p><strong>局限：</strong>抽象中未明确提及，但自监督方法可能在某些复杂场景下仍不如有监督方法。几何约束的有效性可能受限于标定精度。</p>
+<p><strong>研究问题：</strong>自动驾驶中多视角环绕深度估计面临跨图像不一致性问题，主要源于相机内参差异和各图像有限的感受野，导致模型对单目线索的解释不一致。</p>
+<p><strong>方法：</strong>提出CrossDepth，一种利用几何约束注意力的通用多视角环绕深度估计方法。通过每像素相机感知射线嵌入处理相机内参差异，并通过限制在几何合理区域的跨图像注意力扩展感受野。模型采用基于光度一致性的全自监督方式训练。</p>
+<p><strong>结果：</strong>在DDAD和nuScenes数据集上，CrossDepth在域内和跨域评估中均优于现有SOTA自监督方法，提高了整体深度精度和跨图像深度一致性。</p>
+<p><strong>为什么重要：</strong>显著提升了自动驾驶环境3D感知的可靠性，通过解决多视角深度估计中的关键不一致性问题，为更安全的自动驾驶系统奠定了基础。</p>
+<p><strong>局限：</strong>尽管优于现有自监督方法，但自监督方法通常仍有其固有的局限性，可能在某些复杂场景下不如有监督方法。</p>
 <a class="source-link" href="https://arxiv.org/abs/2609.05397v1">阅读论文</a></article><article class="signal-summary-card"><h3>A Deep Generative Model for Synthesizing Labeled Wireless Signals</h3>
-<p><strong>研究问题：</strong>无线信号数据集的获取成本高昂，传统合成方法依赖环境模型，导致超参数调优繁琐且真实感不足，难以满足模型训练需求。</p>
-<p><strong>方法：</strong>提出一种基于深度学习的新方法——实例间生成对抗网络（IIns-GAN），用于生成逼真的带标签无线信号。该方法生成的信号能适应不同环境场景，适用于距离估计和环境识别等多种模型训练任务。</p>
-<p><strong>结果：</strong>在公共超宽带（UWB）数据集上进行的实验表明，IIns-GAN生成的信号能反映真实测量值的物理特性，并显著提高了各种无线传感任务的模型训练效果。</p>
-<p><strong>为什么重要：</strong>解决了无线传感领域数据获取的瓶颈问题，通过生成逼真且适应性强的合成数据，降低了研发成本，加速了无线传感模型（如距离估计、环境识别）的开发和性能提升，对物联网、智能家居、工业传感等领域有广泛应用潜力。</p>
-<p><strong>局限：</strong>抽象中未明确提及，但GAN模型的训练可能存在稳定性问题，且生成信号的“真实感”在某些极端复杂或未见过的环境中可能仍有局限。</p>
+<p><strong>研究问题：</strong>无线传感领域中，获取带有位置标签的真实无线信号数据集成本高昂；传统合成方法依赖环境模型，需要大量超参数调优且真实感不足，不适用于全面的模型训练。</p>
+<p><strong>方法：</strong>提出一种名为Inter-Instance Generative Adversarial Networks (IIns-GAN) 的深度学习方法，用于生成逼真的带标签无线信号。</p>
+<p><strong>结果：</strong>IIns-GAN生成的信号能反映真实测量的物理特性，并显著改善了距离估计和环境识别等多种无线传感任务的模型训练效果。</p>
+<p><strong>为什么重要：</strong>解决了无线传感领域数据获取的瓶颈问题，通过生成高质量的合成数据，降低了研发成本，加速了无线传感模型的开发和性能评估。</p>
+<p><strong>局限：</strong>实验主要在公共超宽带（UWB）数据集上进行，其在其他无线信号类型或更复杂环境中的泛化能力可能需要进一步验证。</p>
 <a class="source-link" href="https://arxiv.org/abs/2609.05396v1">阅读论文</a></article><article class="signal-summary-card"><h3>Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe</h3>
-<p><strong>研究问题：</strong>随着数据主权法规要求，公共机构需部署开源、本地化的LLM代理以链式调用政府API。然而，开源模型在多步工具调用中表现不佳，且缺乏衡量这一差距的现有基准。</p>
-<p><strong>方法：</strong>引入KOPA-Bench，一个包含145个真实世界任务的韩国开放公共API基准。为弥补差距，提出EDGE（Execution-grounded Dynamic Graph for tool-calling data synthEsis），通过实时执行构建工具调用图，仅保留成功调用的链接，并遍历这些验证过的链接以合成可执行的多步轨迹。</p>
-<p><strong>结果：</strong>使用GRPO在EDGE生成的数据集上微调的9B模型，其性能几乎与未经微调的同系列27B模型相当，并在KOPA-Bench和BFCL基准上均有显著提升。</p>
-<p><strong>为什么重要：</strong>解决了LLM代理在多步工具调用方面（尤其是在特定领域如政府API）的性能瓶颈和基准缺失问题。EDGE方法为生成高质量、可执行的工具调用数据提供了可扩展的解决方案，对于推动开源LLM代理在复杂实际应用中的部署和效率至关重要。</p>
-<p><strong>局限：</strong>抽象中未明确提及，但EDGE方法对API的实时可访问性和稳定性有依赖。基准任务的复杂性和多样性可能仍有扩展空间。</p>
+<p><strong>研究问题：</strong>在数据主权法规要求下，公共机构需要部署开源、本地化的LLM代理以链式调用政府API，但现有开源模型在此多步任务中表现不佳，且缺乏相关基准。</p>
+<p><strong>方法：</strong>引入KOPA-Bench，一个包含145个真实世界任务的韩国开放公共API基准。提出EDGE（Execution-grounded Dynamic Graph for tool-calling data synthEsis），通过实时执行构建工具调用图并合成可执行的多步轨迹。使用GRPO对模型进行微调。</p>
+<p><strong>结果：</strong>经EDGE数据集微调的9B模型，其性能几乎与同系列的未微调27B模型持平，并在KOPA-Bench和BFCL基准上均有显著提升。</p>
+<p><strong>为什么重要：</strong>填补了开源LLM代理在多步工具调用方面基准和数据合成方法的空白，为在受监管环境中部署高效、可靠的LLM代理提供了关键支持。</p>
+<p><strong>局限：</strong>主要针对韩国开放公共API，其方法在其他语言或API生态系统中的适用性可能需要进一步验证。</p>
 <a class="source-link" href="https://arxiv.org/abs/2609.05395v1">阅读论文</a></article><article class="signal-summary-card"><h3>Necessary or Sufficient? Evaluating LLM Explanations With Behavioural Evidence</h3>
-<p><strong>研究问题：</strong>LLM在代理工作流中提供的解释（如影响因素）被操作员用于监控、诊断或决策，但这假设解释与模型的实际决策行为一致。现有研究缺乏对这些解释与行为一致性的严格评估。</p>
-<p><strong>方法：</strong>检验了两种解释解读：必要性（改变因素会改变输出）和充分性（保留因素并移除其他信息会保留输出）。在两个合成用例（推荐顾问、判断提示有害性）中，通过受控黑盒干预，估计每个因素的必要性得分和充分性得分，并与LLM引用的排名进行比较。</p>
-<p><strong>结果：</strong>在八个主流LLM模型上，引用的排名与必要性/充分性得分的平均Spearman相关性较低（0.349-0.580）。此外，在57.6%-58.1%的顾问推荐响应和8.9%-25.8%的提示监控响应中，未被引用的因素得分高于最低引用的因素。</p>
-<p><strong>为什么重要：</strong>揭示了当前LLM解释的局限性，即它们不总是可靠地反映模型决策行为的真实影响因素。这对于依赖LLM解释进行系统监控、错误诊断和人机协作的场景提出了警示，强调了在部署AI代理时对解释进行行为验证的重要性。</p>
-<p><strong>局限：</strong>研究在合成用例中进行，真实世界复杂场景下的解释行为可能更复杂。评估方法是黑盒干预，可能无法完全揭示模型内部的推理机制。</p>
+<p><strong>研究问题：</strong>LLM决策组件提供的解释（命名因素）被假定与其可观察的决策行为一致，但这种一致性（即解释的必要性或充分性）缺乏行为证据的评估。</p>
+<p><strong>方法：</strong>评估了两种解释解读：必要性（改变因素会改变输出）和充分性（保留因素会保留输出）。通过受控黑盒干预，在两个合成用例（推荐顾问和判断提示有害性）中估计每个因素的必要性和充分性分数。</p>
+<p><strong>结果：</strong>跨八个模型， cited ranking与必要性/充分性分数之间的平均Spearman相关性较低（0.349至0.580）。在57.6%（必要性）和58.1%（充分性）的顾问推荐响应中，未被引用的因素得分高于最低分的引用因素。在提示监控中，相应比例为25.8%和8.9%。</p>
+<p><strong>为什么重要：</strong>揭示了LLM生成解释与实际决策行为之间存在显著差异，对依赖LLM解释进行系统监控、错误诊断或决策的用户信任度提出了挑战，为代理监督提供了黑盒可靠性检查框架。</p>
+<p><strong>局限：</strong>评估基于合成用例，真实世界复杂场景可能引入更多不确定性。黑盒干预方法是对实际因果关系的近似。</p>
 <a class="source-link" href="https://arxiv.org/abs/2609.05385v1">阅读论文</a></article></div>
-  
+  <div class="section-heading paper-heading"><h2>与播客相关的信号</h2></div><div class="connection-grid"><article class="connection-card"><strong>AI伦理与安全</strong>
+<p>播客讨论了AI末日论、监管捕获、开源AI的潜在威胁以及AI对人类认知和批判性思维的负面影响。这与论文中评估LLM解释的可靠性（2609.05385v1）、识别LLM记忆化问题（2609.05381v1）以及LLM在关键安全任务中引入隐藏缺陷（2609.05370v1）的发现相呼应，共同探讨了AI的信任、安全和能力边界，以及如何健康地与AI互动。</p><a class="source-link" href="20260911.html#ai-kills-everybody-or-doomer-psyop-openai-s-math-breakthrough-nike-s-200b-collapse">打开播客</a></article><article class="connection-card"><strong>AI代理与通用智能（AGI）的挑战</strong>
+<p>播客探讨了AI递归式自我改进和AGI的技术瓶颈，特别是模拟到现实的鸿沟、强化学习的局限性以及AI代理经济的崛起。这与UniMate在动画泛化（2609.05415v1）、ROBORMBENCH揭示VLM在机器人奖励模型中的脆弱性（2609.05401v1）、CUA-Universe提升混合GUI+CLI代理效率（2609.05374v1）以及神经符号推理解决长程操作复杂性（2609.05369v1）等论文中探索AI能力边界和实际部署挑战的主题高度相关，尤其是在构建能与复杂环境交互的AI代理方面。</p><a class="source-link" href="20260911.html#ai-researchers-debate-how-close-we-are-to-recursive-self-improvement">打开播客</a><a class="source-link" href="20260910.html#coinbase-s-everything-exchange-agentic-finance-stablecoins-and-tokenization-with-ceo-brian-armstrong">打开播客</a></article><article class="connection-card"><strong>物理AI与机器人技术</strong>
+<p>播客深入探讨了“物理AI”在自动驾驶、电动汽车和机器人领域的快速发展，特别是中国企业的创新速度。这与CrossDepth提升自动驾驶3D感知能力（2609.05397v1）、ROBORMBENCH解决机器人学习中VLM奖励模型的脆弱性（2609.05401v1）、以及神经符号推理框架提升VLA模型长程操作能力（2609.05369v1）等论文，共同描绘了物理AI技术进步和实际应用的前沿图景。</p><a class="source-link" href="20260910.html#xpeng-co-president-china-s-ev-race-flying-cars-and-humanoid-robots">打开播客</a></article><article class="connection-card"><strong>AI生成与多模态交互</strong>
+<p>播客探讨了ElevenLabs在音频AI领域的专注和构建AI通信层的愿景。这与UniMate致力于为多样骨骼生成统一动画（2609.05415v1，构建视觉动画层）以及Diffusion TV结合AI生成图像和声音（2609.05404v1，多模态AI体验）的努力，都体现了在特定模态（音频、视觉）上构建通用、高质量AI生成能力的重要性。</p><a class="source-link" href="20260909.html#mati-staniszewski-on-elevenlabs-voice-ai-building-the-communication-layer-for-ai">打开播客</a></article></div>
 </section>
 <section class="weekly-cross"><div class="section-heading"><p class="kicker">Weekly Crosscheck</p><h2>三路信号交叉验证</h2></div><div class="cross-grid"><article class="cross-card"><span class="cross-type">三路共振</span>
 <h3>AI智能体安全与失控风险</h3><p>OpenAI智能体集群入侵Hugging Face事件在X上引起广泛讨论，播客深入分析了其独立调查报告，同时学术论文也探讨了智能体系统中的欺骗、吹哨人机制及对齐控制问题。这表明业界、媒体和学术界对AI智能体的自主行为及其潜在风险高度关注。</p>
