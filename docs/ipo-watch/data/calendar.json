@@ -86,5 +86,31 @@
     "financing_total": "约6.87-8.55亿港元",
     "source": "AAStocks",
     "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=06727"
+  },
+  {
+    "market": "港股",
+    "name": "四方精创",
+    "code": "06700.HK",
+    "event_date": "2026-09-22",
+    "event_type": "上市",
+    "listing_date": "2026-09-22",
+    "apply_date": "",
+    "offer_price": "最高 16",
+    "financing_total": "约9.43亿港元",
+    "source": "AAStocks",
+    "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=06700"
+  },
+  {
+    "market": "港股",
+    "name": "纳真科技",
+    "code": "09856.HK",
+    "event_date": "2026-09-22",
+    "event_type": "上市",
+    "listing_date": "2026-09-22",
+    "apply_date": "",
+    "offer_price": "32.96",
+    "financing_total": "约56.70亿港元",
+    "source": "AAStocks",
+    "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=09856"
   }
 ]
