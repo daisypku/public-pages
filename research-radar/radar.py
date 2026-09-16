@@ -109,13 +109,20 @@ def normalize(platform, event, config, now):
 
 def collect(platform, config, raw, now):
     client = Client(config, raw / platform)
-    records, seen = [], set()
+    records, seen, scanned = [], set(), set()
     cursor = ''
     count = 0
+    queries = list(config.get('polymarket_queries', [])) if platform == 'Polymarket' else ['']
+    if not queries:
+        queries = ['']
+    query_index = 0
+    scope = '配置的宏观、科技、商业关键词事件（去重）' if platform == 'Polymarket' else '全部开放事件'
     try:
         for page in range(config['max_pages']):
             if platform == 'Polymarket':
                 params = {'closed': 'false', 'limit': 200}
+                if queries[query_index]:
+                    params['title_search'] = queries[query_index]
                 if cursor:
                     params['after_cursor'] = cursor
                 data = client.get('https://gamma-api.polymarket.com/events/keyset', **params)
@@ -123,7 +130,8 @@ def collect(platform, config, raw, now):
             else:
                 data = client.get('https://external-api.kalshi.com/trade-api/v2/events', status='open', with_nested_markets='true', limit=200, cursor=cursor)
                 items = data['events']
-            count += len(items)
+            scanned.update(str(x.get('id') if platform == 'Polymarket' else x.get('event_ticker')) for x in items)
+            count = len(scanned)
             if page % 10 == 0:
                 print(f'{platform}: scanned {count} events', flush=True)
             for item in items:
@@ -133,13 +141,17 @@ def collect(platform, config, raw, now):
                     records.append(e)
             nxt = data.get('next_cursor' if platform == 'Polymarket' else 'cursor', '')
             if not nxt:
-                return records, {'status': 'ok', 'scanned_events': count}
+                query_index += 1
+                if query_index == len(queries):
+                    return records, {'status': 'ok', 'scanned_events': count, 'scope': scope}
+                cursor = ''
+                continue
             if nxt == cursor:
                 raise ValueError('Repeated pagination cursor')
             cursor = nxt
-        return records, {'status': 'partial', 'scanned_events': count, 'error': '达到分页上限，覆盖不完整'}
+        return records, {'status': 'partial', 'scanned_events': count, 'scope': scope, 'error': '达到分页上限，覆盖不完整'}
     except Exception as e:
-        return records, {'status': 'partial' if count else 'failed', 'scanned_events': count, 'error': str(e)}
+        return records, {'status': 'partial' if count else 'failed', 'scanned_events': count, 'scope': scope, 'error': str(e)}
 
 def enrich_history(events, config, raw, now):
     # Allocate by platform and prioritize nearby fixed events, then meaningful volume.

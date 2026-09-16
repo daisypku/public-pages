@@ -18,11 +18,19 @@ class RadarTests(unittest.TestCase):
     def test_polymarket_uses_keyset_cursor_without_offset(self):
         pages=[{'events':[fixture()],'next_cursor':'opaque-token'},{'events':[],'next_cursor':''}]
         with patch.object(radar.Client,'get',side_effect=pages) as get:
-            rows,status=radar.collect('Polymarket',CONFIG,Path('unused'),NOW)
+            rows,status=radar.collect('Polymarket',{**CONFIG,'polymarket_queries':['fed']},Path('unused'),NOW)
         self.assertEqual(status['status'],'ok')
         self.assertEqual(len(rows),1)
         self.assertNotIn('offset',get.call_args_list[0].kwargs)
         self.assertEqual(get.call_args_list[1].kwargs['after_cursor'],'opaque-token')
+
+    def test_query_scan_deduplicates_events(self):
+        pages=[{'events':[fixture()],'next_cursor':''},{'events':[fixture()],'next_cursor':''}]
+        with patch.object(radar.Client,'get',side_effect=pages):
+            rows,status=radar.collect('Polymarket',{**CONFIG,'polymarket_queries':['fed','fomc']},Path('unused'),NOW)
+        self.assertEqual(status['status'],'ok')
+        self.assertEqual(status['scanned_events'],1)
+        self.assertEqual(len(rows),1)
 
     def test_yes_mapping(self):
         e = radar.normalize('Polymarket', fixture(), CONFIG, NOW)

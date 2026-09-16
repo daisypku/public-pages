@@ -2,6 +2,7 @@
   "timezone": "Asia/Shanghai",
   "model": {"enabled": false},
   "max_pages": 150,
+  "polymarket_queries": ["fed", "fomc", "cpi", "inflation", "payroll", "unemployment", "jobs report", "pce", "tariff", "trade deal", "trade agreement", "export", "chip ban", "openai", "anthropic", "nvidia", "artificial intelligence", "ai model", "gpt", "semiconductor", "data center", "data centre", "spacex", "starship", "quantum", "robotaxi", "tesla", "apple", "google", "microsoft", "ipo", "acquisition", "merger", "antitrust", "bankrupt", "earnings", "revenue", "market cap", "recession", "gdp", "treasury", "debt ceiling", "oil", "opec", "crude", "natural gas", "hormuz", "sanctions", "nuclear deal"],
   "request_timeout": 15,
   "retries": 2,
   "history_market_limit": 120,

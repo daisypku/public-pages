@@ -173,7 +173,7 @@ def build_report(run, config, root:Path, site:Path, state):
     if failures:
         body.append('<div class="notice"><b>本次数据不完整</b> · '+esc('、'.join(failures))+' 未完整取得。缺失不代表概率为零；本页不会把旧数据标成今日行情。</div>')
     else:body.append('<div class="notice good">两平台本次采集完成。Δ 均为百分点；“—”表示缺少可靠历史，不代表没有变化。</div>')
-    body.append('<div class="status">'+''.join(f'<p><b>{esc(p)}</b> · {esc(s["status"])} · 扫描 {s["scanned_events"]:,} 个事件'+(' · '+esc(s['error']) if s.get('error') else '')+'</p>' for p,s in run['sources'].items())+'</div>')
+    body.append('<div class="status">'+''.join(f'<p><b>{esc(p)}</b> · {esc(s["status"])} · 扫描 {s["scanned_events"]:,} 个事件 · '+esc(s.get('scope','配置的监测范围'))+(' · '+esc(s['error']) if s.get('error') else '')+'</p>' for p,s in run['sources'].items())+'</div>')
     body.append('<div class="topic-list">'+''.join(f'<span>{esc(t)} {n}</span>' for t,n in topics.items())+'</div>')
     body.extend(['<section id="signals"><h2>今日研究精选</h2><p class="section-note">依据概率变化、成交活跃度与主题相关性筛选；不足5项时不凑数。研究问题由模板生成。</p>'])
     if selected:
