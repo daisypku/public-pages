@@ -53,6 +53,15 @@ class ReportTests(unittest.TestCase):
         a=event();b=copy.deepcopy(a);b['key']='different';b['title']='Fed decision next month?'
         self.assertEqual(len(report.pick([a,b],[],NOW)),1)
 
+    def test_almost_resolved_event_not_a_new_research_pick(self):
+        e=event();e['markets'][0]['p']=1
+        self.assertEqual(report.pick([e],[],NOW),[])
+
+    def test_symmetric_move_highlights_larger_probability(self):
+        e=event();m=copy.deepcopy(e['markets'][0]);m['p']=.13;m['changes']['7']['pp']=-45
+        e['markets'].insert(0,m)
+        self.assertEqual(report.strongest(e)[0]['p'],.87)
+
     def test_failure_generates_complete_honest_page(self):
         with tempfile.TemporaryDirectory() as tmp:
             report.build_report({'captured_at':NOW,'events':[],'sources':{'Kalshi':{'status':'failed','scanned_events':0,'error':'timeout'}}},CONFIG,Path(tmp),Path(tmp)/'site',{})

@@ -28,7 +28,7 @@ def change(m, days):
 def strongest(e):
     choices = [(abs(change(m,d)), m, d, change(m,d)) for m in e['markets'] if m.get('quality') for d in (7,14,1) if change(m,d) is not None]
     if choices:
-        _, m, d, v = max(choices, key=lambda x:x[0])
+        _, m, d, v = max(choices, key=lambda x:(x[0],x[1]['p'] or 0))
         return m, d, v
     return max(e['markets'], key=lambda m:m['volume']), None, None
 
@@ -52,6 +52,8 @@ def pick(events, previous, now, limit=5):
     eligible = []
     for e in events:
         if not e.get('eligible_research'):
+            continue
+        if not any(m.get('quality') and m['p'] is not None and .005 < m['p'] < .995 for m in e['markets']):
             continue
         past = [p for p in previous if p['key'] == e['key'] and 0 < now-p['t'] < 7*DAY]
         # Repeated topic needs a fresh >=3pp move from its last featured snapshot.
@@ -143,7 +145,8 @@ def build_report(run, config, root:Path, site:Path, state):
     previous=[p for p in log if date(p['t']) != day and now-p['t'] <= 30*DAY]
     selected=pick(events,previous,now)
     watches=sorted([e for e in events if e['watch']],key=lambda e:(not e['manual'], not(e['topic']=='Fed 利率决议'),
-                   not(e['end'] and 0 <= e['end']-now <= 45*DAY), e['end'] or float('inf'),-e['score']))
+                   not(e['end'] and -2*DAY <= e['end']-now <= 45*DAY),
+                   not bool(re.search(r'fed decision',e['title'],re.I)),e['end'] or float('inf'),-e['score']))
     # Diverse compact lead table; all tracked markets remain in expandable appendix.
     top, rest, per_topic=[],[],{}
     for e in watches:
@@ -189,7 +192,7 @@ def build_report(run, config, root:Path, site:Path, state):
 <li>当前概率不是参与者人数占比。Polymarket 使用 outcomePrices，Kalshi 使用 YES 买卖报价中点。不同平台不相加成交量、不平均概率。</li>
 <li>1／7／14日变化以当前采集时刻为终点，取目标时刻之前最多6小时内最近的可比观测；悬停变化数值可见基准时间和价格。图中超过36小时的数据空档断开显示。</li>
 <li>趋势图展示该事件中变化显著或成交活跃的一个代表结果；表格保留所有取得的结果。市场到期时间不能直接当作政策公告时间。</li>
-<li>低成交、宽价差或报价缺失的结果仍可列入固定关注，但不作为自动强信号。新选题7日内重复需较上次推荐发生至少3个百分点的新变化。</li>
+<li>低成交、宽价差或报价缺失的结果仍可列入固定关注，但不作为自动强信号。所有有效结果均接近0%或100%的事件不进入新选题。新选题7日内重复需较上次推荐发生至少3个百分点的新变化。</li>
 <li>自动重点阈值：7日变化≥10个百分点、14日≥15个百分点，或成交达到前7个完整日均值的2倍。历史补取有上限；其余逐日累积，不编造历史。</li>
 <li>相同主题可同时显示两平台事件；具体条件、日期和结算规则以原始市场为准。平台共同关注不等于独立证据。</li>
 <li>本日报不调用模型、不提供新闻归因；未来模型输出接入独立注释层，不覆盖原始数值。首次观测不等于事件首次上市。</li>

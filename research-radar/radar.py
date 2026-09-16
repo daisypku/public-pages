@@ -60,7 +60,7 @@ class Client:
                 time.sleep(1 + attempt)
 
 def classify(title, category, config):
-    if re.search(config['exclude_pattern'], title, re.I) or category.lower() in ('sports', 'entertainment'):
+    if re.search(config['exclude_pattern'], title, re.I) or (category or '').lower() in ('sports', 'entertainment'):
         return None
     return next((t for t in config['topics'] if re.search(t['pattern'], title, re.I)), None)
 
@@ -115,8 +115,11 @@ def collect(platform, config, raw, now):
     try:
         for page in range(config['max_pages']):
             if platform == 'Polymarket':
-                data = client.get('https://gamma-api.polymarket.com/events', active='true', closed='false', limit=100, offset=page*100)
-                items = data
+                params = {'closed': 'false', 'limit': 200}
+                if cursor:
+                    params['after_cursor'] = cursor
+                data = client.get('https://gamma-api.polymarket.com/events/keyset', **params)
+                items = data['events']
             else:
                 data = client.get('https://external-api.kalshi.com/trade-api/v2/events', status='open', with_nested_markets='true', limit=200, cursor=cursor)
                 items = data['events']
@@ -128,16 +131,12 @@ def collect(platform, config, raw, now):
                 if e and e['key'] not in seen:
                     seen.add(e['key'])
                     records.append(e)
-            if platform == 'Polymarket':
-                if len(items) < 100:
-                    return records, {'status': 'ok', 'scanned_events': count}
-            else:
-                nxt = data.get('cursor', '')
-                if not nxt:
-                    return records, {'status': 'ok', 'scanned_events': count}
-                if nxt == cursor:
-                    raise ValueError('Repeated pagination cursor')
-                cursor = nxt
+            nxt = data.get('next_cursor' if platform == 'Polymarket' else 'cursor', '')
+            if not nxt:
+                return records, {'status': 'ok', 'scanned_events': count}
+            if nxt == cursor:
+                raise ValueError('Repeated pagination cursor')
+            cursor = nxt
         return records, {'status': 'partial', 'scanned_events': count, 'error': '达到分页上限，覆盖不完整'}
     except Exception as e:
         return records, {'status': 'partial' if count else 'failed', 'scanned_events': count, 'error': str(e)}

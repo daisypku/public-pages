@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 import radar
 
 CONFIG = json.loads((Path(__file__).parent/'config.json').read_text(encoding='utf-8'))
@@ -14,6 +15,15 @@ def fixture(title='Fed decision in September?', price='0.87'):
         'clobTokenIds':'["no-token", "yes-token"]', 'volume24hr':50000, 'bestBid':0.86, 'bestAsk':0.88}]}
 
 class RadarTests(unittest.TestCase):
+    def test_polymarket_uses_keyset_cursor_without_offset(self):
+        pages=[{'events':[fixture()],'next_cursor':'opaque-token'},{'events':[],'next_cursor':''}]
+        with patch.object(radar.Client,'get',side_effect=pages) as get:
+            rows,status=radar.collect('Polymarket',CONFIG,Path('unused'),NOW)
+        self.assertEqual(status['status'],'ok')
+        self.assertEqual(len(rows),1)
+        self.assertNotIn('offset',get.call_args_list[0].kwargs)
+        self.assertEqual(get.call_args_list[1].kwargs['after_cursor'],'opaque-token')
+
     def test_yes_mapping(self):
         e = radar.normalize('Polymarket', fixture(), CONFIG, NOW)
         self.assertEqual(e['markets'][0]['p'], .87)
