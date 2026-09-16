@@ -1,0 +1,24 @@
+{
+  "timezone": "Asia/Shanghai",
+  "model": {"enabled": false},
+  "max_pages": 150,
+  "request_timeout": 15,
+  "retries": 2,
+  "history_market_limit": 120,
+  "min_volume_24h": {"Polymarket": 10000, "Kalshi": 1000},
+  "max_spread": 0.10,
+  "change_7d_pp": 10,
+  "change_14d_pp": 15,
+  "volume_multiple": 2,
+  "watch_days": 14,
+  "manual_event_ids": [],
+  "exclude_pattern": "\\b(nba|nfl|nhl|mlb|soccer|tennis|cricket|premier league|champions league|oscars|grammy|up or down)\\b",
+  "topics": [
+    {"name":"Fed 利率决议","pattern":"\\b(fed decision|federal reserve|fomc|fed interest rate|fed rate|fed.*(?:cut|hike|rate))\\b","fixed":true,"question":"市场在重新定价哪一次会议的政策路径？下一步核对 FOMC 公告、通胀和就业数据。"},
+    {"name":"通胀与就业","pattern":"\\b(cpi|inflation|nonfarm|payrolls|unemployment|jobs report|pce)\\b","fixed":true,"question":"预期变化来自数据本身还是政策反应？下一步核对 BLS/BEA 发布及数据口径。"},
+    {"name":"贸易与关税","pattern":"\\b(tariff|trade deal|trade agreement|export controls?|chip ban)\\b","fixed":true,"question":"政策会影响哪些供应链、成本和市场准入？下一步核对政策原文及生效日期。"},
+    {"name":"AI 与科技","pattern":"\\b(openai|anthropic|nvidia|artificial intelligence|ai model|gpt[ -]?\\d|semiconductor|data cent(?:er|re)|spacex|starship|quantum|robotaxi|tesla|apple|google|microsoft)\\b","fixed":false,"question":"事件是否改变技术能力、商业化速度或资本开支？下一步核对公司公告和可验证的产品指标。"},
+    {"name":"公司与资本市场","pattern":"\\b(ipo|acquisition|merger|antitrust|bankrupt|earnings|revenue|market cap|recession|gdp|treasury|debt ceiling)\\b","fixed":false,"question":"事件会如何改变经营、融资或竞争格局？下一步核对监管文件、公司公告和财务数据。"},
+    {"name":"能源与地缘经济","pattern":"\\b(oil|opec|crude|natural gas|strait of hormuz|sanctions|nuclear deal)\\b","fixed":false,"question":"事件如何传导至能源供给、运输成本和通胀？下一步核对供给数据及政策原文。"}
+  ]
+}

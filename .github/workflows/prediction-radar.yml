@@ -1,0 +1,86 @@
+name: Prediction Radar Daily
+
+on:
+  schedule:
+    - cron: '0 1 * * *' # 09:00 Asia/Shanghai; starts may be delayed by GitHub.
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'research-radar/*.py'
+      - 'research-radar/config.json'
+      - '.github/workflows/prediction-radar.yml'
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: prediction-radar
+  cancel-in-progress: false
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate deterministic pipeline
+        working-directory: research-radar
+        run: python -m unittest -v
+      - name: Collect and generate complete report
+        id: collect
+        continue-on-error: true
+        run: python research-radar/radar.py --root research-radar/runtime --site docs/prediction-radar
+      - name: Preserve request evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: prediction-radar-evidence-${{ github.run_id }}
+          path: |
+            research-radar/runtime/data/raw
+            research-radar/runtime/data/latest.json
+          retention-days: 3
+          if-no-files-found: ignore
+      - name: Persist daily history and report
+        id: publish
+        if: always() && steps.collect.outcome != 'skipped'
+        run: |
+          test -s docs/prediction-radar/index.html
+          test -s research-radar/runtime/data/latest.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/prediction-radar research-radar/runtime/data/snapshots research-radar/runtime/data/watch-state.json
+          if test -f research-radar/runtime/data/featured.json; then
+            git add research-radar/runtime/data/featured.json
+          fi
+          if ! git diff --cached --quiet; then
+            git commit -m "Update prediction radar daily report"
+            for attempt in 1 2 3; do
+              git pull --rebase origin main
+              if git push origin HEAD:main; then break; fi
+              if test "$attempt" = 3; then exit 1; fi
+              sleep 3
+            done
+          fi
+      - name: Publish through existing Pages workflow
+        if: always() && steps.publish.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main
+      - name: Run summary
+        if: always()
+        run: |
+          echo '## Prediction Radar' >> "$GITHUB_STEP_SUMMARY"
+          echo '[完整日报](https://daisypku.github.io/public-pages/prediction-radar/)' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Deterministic report; no model credentials or model requests.' >> "$GITHUB_STEP_SUMMARY"
+          if test '${{ steps.collect.outcome }}' != 'success'; then
+            echo 'A data source failed or was incomplete; report shows coverage.' >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
