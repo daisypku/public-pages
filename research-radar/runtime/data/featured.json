@@ -1,0 +1,79 @@
+[
+  {
+    "t": 1789536987.6212244,
+    "key": "Polymarket:336406",
+    "prices": {
+      "1831352": 0.9995,
+      "1831353": 0.0365,
+      "1831354": 0.031,
+      "1831355": 0.012
+    }
+  },
+  {
+    "t": 1789536987.6212244,
+    "key": "Kalshi:KXCPI-26SEP",
+    "prices": {
+      "KXCPI-26SEP-T-0.4": 0.99,
+      "KXCPI-26SEP-T-0.3": 0.99,
+      "KXCPI-26SEP-T-0.2": 0.99,
+      "KXCPI-26SEP-T-0.1": 0.985,
+      "KXCPI-26SEP-T0.0": 0.985,
+      "KXCPI-26SEP-T0.1": 0.985,
+      "KXCPI-26SEP-T0.2": 0.985,
+      "KXCPI-26SEP-T0.3": 0.96,
+      "KXCPI-26SEP-T0.4": 0.78,
+      "KXCPI-26SEP-T0.5": 0.455,
+      "KXCPI-26SEP-T0.6": 0.16999999999999998
+    }
+  },
+  {
+    "t": 1789536987.6212244,
+    "key": "Kalshi:KXFEDCOMBO-26SEPB",
+    "prices": {
+      "KXFEDCOMBO-26SEPB-0-0": 0.005,
+      "KXFEDCOMBO-26SEPB-0-T0": 0.11,
+      "KXFEDCOMBO-26SEPB-25C-0": 0.005,
+      "KXFEDCOMBO-26SEPB-25C-T0": 0.005,
+      "KXFEDCOMBO-26SEPB-25H-0": 0.315,
+      "KXFEDCOMBO-26SEPB-25H-T0": 0.585
+    }
+  },
+  {
+    "t": 1789536987.6212244,
+    "key": "Polymarket:481717",
+    "prices": {
+      "2252242": 0.0005,
+      "2252243": 0.0015,
+      "2252244": 0.115,
+      "2252245": 0.875,
+      "2252246": 0.0085
+    }
+  },
+  {
+    "t": 1789536987.6212244,
+    "key": "Kalshi:KXCPIYOY-26SEP",
+    "prices": {
+      "KXCPIYOY-26SEP-T3.0": 0.985,
+      "KXCPIYOY-26SEP-T3.1": 0.985,
+      "KXCPIYOY-26SEP-T3.2": 0.985,
+      "KXCPIYOY-26SEP-T3.3": 0.985,
+      "KXCPIYOY-26SEP-T3.4": 0.8999999999999999,
+      "KXCPIYOY-26SEP-T3.5": 0.665,
+      "KXCPIYOY-26SEP-T3.6": 0.33499999999999996,
+      "KXCPIYOY-26SEP-T3.7": 0.12,
+      "KXCPIYOY-26SEP-T3.8": 0.035,
+      "KXCPIYOY-26SEP-T3.9": 0.02,
+      "KXCPIYOY-26SEP-T4.0": 0.015,
+      "KXCPIYOY-26SEP-T4.1": 0.015,
+      "KXCPIYOY-26SEP-T4.2": 0.015,
+      "KXCPIYOY-26SEP-T4.3": 0.015,
+      "KXCPIYOY-26SEP-T4.4": 0.015,
+      "KXCPIYOY-26SEP-T4.5": 0.015,
+      "KXCPIYOY-26SEP-T4.6": 0.015,
+      "KXCPIYOY-26SEP-T4.7": 0.005,
+      "KXCPIYOY-26SEP-T4.8": 0.005,
+      "KXCPIYOY-26SEP-T4.9": 0.005,
+      "KXCPIYOY-26SEP-T5.0": 0.005
+    }
+  }
+]
