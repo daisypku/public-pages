@@ -352,7 +352,23 @@ async function hydratePredictionRadar() {
       const title = item.querySelector("h3")?.textContent?.trim() || "预测事件";
       const fact = item.querySelector(".fact")?.textContent?.trim() || "";
       const question = item.querySelector(".research p")?.textContent?.trim() || "";
-      return `<div class="radar-item"><h3>${escapeHtml(title)}</h3><p>${escapeHtml(fact)}</p>${question ? `<p class="radar-question">${escapeHtml(question)}</p>` : ""}</div>`;
+      const chart = item.querySelector(".trend-preview svg")?.cloneNode(true);
+      if (chart) {
+        chart.querySelectorAll("*").forEach((node) => {
+          if (!["line", "text", "polyline", "circle", "title"].includes(node.localName)) {
+            node.remove();
+            return;
+          }
+          Array.from(node.attributes).forEach((attribute) => {
+            if (/^on/i.test(attribute.name) || /href$/i.test(attribute.name)) node.removeAttribute(attribute.name);
+          });
+        });
+        Array.from(chart.attributes).forEach((attribute) => {
+          if (/^on/i.test(attribute.name) || /href$/i.test(attribute.name)) chart.removeAttribute(attribute.name);
+        });
+      }
+      const chartHtml = chart ? `<div class="radar-chart">${chart.outerHTML}</div>` : "";
+      return `<div class="radar-item"><h3>${escapeHtml(title)}</h3><p>${escapeHtml(fact)}</p>${chartHtml}${question ? `<p class="radar-question">${escapeHtml(question)}</p>` : ""}</div>`;
     }).join("");
   } catch (error) {
     if (date) date.textContent = "等待更新";
