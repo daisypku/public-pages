@@ -22,6 +22,10 @@ main { max-width:980px; margin:0 auto; padding:40px 22px 80px; min-height:100vh;
 .section-heading { margin:34px 0 14px; display:flex; justify-content:space-between; align-items:end; }
 .section-heading h2 { margin:0; font-size:1.4rem; }
 .cards { list-style:none; padding:0; margin:0; display:grid; gap:12px; }
+.older-digests { margin-top:24px; }
+.older-digests summary { display:flex; align-items:center; gap:10px; cursor:pointer; padding:16px 0; border-top:1px solid var(--line); color:var(--accent); font-weight:750; }
+.older-digests .cards { margin-top:4px; }
+.older-count { color:var(--muted); font-size:.88rem; font-weight:500; }
 .digest-card { margin:0; }
 .digest-card a { min-height:92px; display:grid; grid-template-columns:150px 1fr auto; gap:20px; align-items:center; padding:20px 22px; color:var(--ink); background:var(--paper); border:1px solid var(--line); border-radius:8px; box-shadow:0 10px 28px rgba(23,32,42,.05); }
 .digest-card a:hover { text-decoration:none; border-color:#b9c7d8; transform:translateY(-1px); }
@@ -106,50 +110,59 @@ p { margin:10px 0; } .article-page p { color:#243241; } ul { padding-left:24px; 
 </li></ul>
 </section>
 
-<section class="digest-list" aria-label="Manual episodes">
-  <div class="section-heading"><h2>临时单集</h2></div>
-  <ul class="cards"><li class="digest-card manual-card">
-  <a href="manual-20260827-174548.html">
-    <span class="card-date">8/27</span>
-    <span class="card-title">今日更新</span>
+<section class="digest-list older-digests" aria-label="Earlier daily digests">
+  <details>
+    <summary>更早单集 <span class="older-count">7 篇</span></summary>
+    <ul class="cards"><li class="digest-card">
+  <a href="20260911.html">
+    <span class="card-date">9/11</span>
+    <span class="card-title">每日播客简报</span>
     <span class="card-action">阅读</span>
   </a>
 </li>
-<li class="digest-card manual-card">
-  <a href="manual-20260726-064255.html">
-    <span class="card-date">7/26</span>
-    <span class="card-title">今日更新</span>
+<li class="digest-card">
+  <a href="20260910.html">
+    <span class="card-date">9/10</span>
+    <span class="card-title">每日播客简报</span>
     <span class="card-action">阅读</span>
   </a>
 </li>
-<li class="digest-card manual-card">
-  <a href="manual-20260721-081615.html">
-    <span class="card-date">7/21</span>
-    <span class="card-title">今日更新</span>
+<li class="digest-card">
+  <a href="20260909.html">
+    <span class="card-date">9/9</span>
+    <span class="card-title">每日播客简报</span>
     <span class="card-action">阅读</span>
   </a>
 </li>
-<li class="digest-card manual-card">
-  <a href="manual-20260714-111153.html">
-    <span class="card-date">7/14</span>
-    <span class="card-title">今日更新</span>
+<li class="digest-card">
+  <a href="20260908.html">
+    <span class="card-date">9/8</span>
+    <span class="card-title">每日播客简报</span>
     <span class="card-action">阅读</span>
   </a>
 </li>
-<li class="digest-card manual-card">
-  <a href="manual-20260709-060857.html">
-    <span class="card-date">7/9</span>
-    <span class="card-title">Jonathan Ross</span>
+<li class="digest-card">
+  <a href="20260907.html">
+    <span class="card-date">9/7</span>
+    <span class="card-title">每日播客简报</span>
     <span class="card-action">阅读</span>
   </a>
 </li>
-<li class="digest-card manual-card">
-  <a href="manual-20260701-161628.html">
-    <span class="card-date">7/1</span>
-    <span class="card-title">OpenAI Codex lead on the new shape of product work | Andrew Ambrosino</span>
+<li class="digest-card">
+  <a href="20260905.html">
+    <span class="card-date">9/5</span>
+    <span class="card-title">每日播客简报</span>
+    <span class="card-action">阅读</span>
+  </a>
+</li>
+<li class="digest-card">
+  <a href="20260904.html">
+    <span class="card-date">9/4</span>
+    <span class="card-title">每日播客简报</span>
     <span class="card-action">阅读</span>
   </a>
 </li></ul>
+  </details>
 </section>
 
 
