@@ -1,37 +1,7 @@
 [
   {
     "market": "A股",
-    "name": "宇特光电",
-    "code": "920157.BJ",
-    "apply_code": "920157",
-    "event_date": "2026-09-21",
-    "event_type": "申购",
-    "listing_date": "",
-    "apply_date": "2026-09-21",
-    "offer_price": "13.75",
-    "financing_total": "2.43亿元",
-    "business": "光连接产品的研发设计、精密制造与销售业务",
-    "source": "东方财富",
-    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
-  },
-  {
-    "market": "A股",
-    "name": "安达股份",
-    "code": "920202.BJ",
-    "apply_code": "920202",
-    "event_date": "2026-09-21",
-    "event_type": "中签号/结果",
-    "listing_date": "",
-    "apply_date": "2026-09-16",
-    "offer_price": "7.55",
-    "financing_total": "2.11亿元",
-    "business": "汽车铝合金精密压铸件的研发、生产和销售",
-    "source": "东方财富",
-    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
-  },
-  {
-    "market": "A股",
-    "name": "世纪数码",
+    "name": "N世纪",
     "code": "920229.BJ",
     "apply_code": "920229",
     "event_date": "2026-09-22",
@@ -46,7 +16,7 @@
   },
   {
     "market": "A股",
-    "name": "中塑股份",
+    "name": "N中塑",
     "code": "301686.SZ",
     "apply_code": "301686",
     "event_date": "2026-09-22",
@@ -71,6 +41,51 @@
     "offer_price": "21.23",
     "financing_total": "36.70亿元",
     "business": "镍资源采购、镍产品贸易、镍产品的生产与销售",
+    "source": "东方财富",
+    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
+  },
+  {
+    "market": "A股",
+    "name": "凯达重工",
+    "code": "920025.BJ",
+    "apply_code": "920025",
+    "event_date": "2026-09-23",
+    "event_type": "上市",
+    "listing_date": "2026-09-23",
+    "apply_date": "2026-09-14",
+    "offer_price": "4.26",
+    "financing_total": "2.56亿元",
+    "business": "轧辊、辊环等钢材轧制关键部件的研发、生产、销售",
+    "source": "东方财富",
+    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
+  },
+  {
+    "market": "A股",
+    "name": "莫森泰克",
+    "code": "920162.BJ",
+    "apply_code": "920162",
+    "event_date": "2026-09-23",
+    "event_type": "申购",
+    "listing_date": "",
+    "apply_date": "2026-09-23",
+    "offer_price": "17.37",
+    "financing_total": "2.95亿元",
+    "business": "公司主要从事汽车天窗、玻璃升降器等汽车开闭器件以及相关电子控制单元的研发、制造及销售。此外,公司还从事粉末冶金零部件的研发、制造及销售",
+    "source": "东方财富",
+    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
+  },
+  {
+    "market": "A股",
+    "name": "宇特光电",
+    "code": "920157.BJ",
+    "apply_code": "920157",
+    "event_date": "2026-09-24",
+    "event_type": "中签号/结果",
+    "listing_date": "",
+    "apply_date": "2026-09-21",
+    "offer_price": "13.75",
+    "financing_total": "2.43亿元",
+    "business": "光连接产品的研发设计、精密制造与销售业务",
     "source": "东方财富",
     "source_url": "https://data.eastmoney.com/xg/xg/default.html"
   },
@@ -103,6 +118,19 @@
     "business": "复杂药物制剂的研发、生产和销售",
     "source": "东方财富",
     "source_url": "https://data.eastmoney.com/xg/xg/default.html"
+  },
+  {
+    "market": "港股",
+    "name": "彤程新材料",
+    "code": "09607.HK",
+    "event_date": "2026-09-29",
+    "event_type": "上市",
+    "listing_date": "2026-09-29",
+    "apply_date": "",
+    "offer_price": "39-44",
+    "financing_total": "约26.57-29.97亿港元",
+    "source": "AAStocks",
+    "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=09607"
   },
   {
     "market": "港股",
@@ -145,15 +173,15 @@
   },
   {
     "market": "港股",
-    "name": "肜程新材料",
-    "code": "09607.HK",
-    "event_date": "2026-09-29",
+    "name": "欢创科技",
+    "code": "06802.HK",
+    "event_date": "2026-09-30",
     "event_type": "上市",
-    "listing_date": "2026-09-29",
+    "listing_date": "2026-09-30",
     "apply_date": "",
-    "offer_price": "39-44",
-    "financing_total": "约26.57-29.97亿港元",
+    "offer_price": "58.85",
+    "financing_total": "约6.82亿港元",
     "source": "AAStocks",
-    "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=09607"
+    "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=06802"
   }
 ]
