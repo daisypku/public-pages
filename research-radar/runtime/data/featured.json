@@ -327,5 +327,56 @@
       "4319439": 0.515,
       "4319441": 0.73
     }
+  },
+  {
+    "t": 1790056582.346438,
+    "key": "Kalshi:KXCPI-26SEP",
+    "prices": {
+      "KXCPI-26SEP-T-0.2": 0.985,
+      "KXCPI-26SEP-T0.1": 0.985,
+      "KXCPI-26SEP-T0.2": 0.985,
+      "KXCPI-26SEP-T0.4": 0.895,
+      "KXCPI-26SEP-T0.5": 0.605,
+      "KXCPI-26SEP-T0.6": 0.255,
+      "KXCPI-26SEP-T0.8": 0.01
+    }
+  },
+  {
+    "t": 1790056582.346438,
+    "key": "Kalshi:KXFED-26OCT",
+    "prices": {
+      "KXFED-26OCT-T4.00": 0.515
+    }
+  },
+  {
+    "t": 1790056582.346438,
+    "key": "Kalshi:KXCPIYOY-26SEP",
+    "prices": {
+      "KXCPIYOY-26SEP-T3.0": 0.995,
+      "KXCPIYOY-26SEP-T3.3": 0.975,
+      "KXCPIYOY-26SEP-T3.4": 0.96,
+      "KXCPIYOY-26SEP-T3.6": 0.41000000000000003,
+      "KXCPIYOY-26SEP-T3.8": 0.035,
+      "KXCPIYOY-26SEP-T3.9": 0.015,
+      "KXCPIYOY-26SEP-T4.2": 0.005
+    }
+  },
+  {
+    "t": 1790056582.346438,
+    "key": "Kalshi:KXFEDDECISION-26OCT",
+    "prices": {
+      "KXFEDDECISION-26OCT-H0": 0.46499999999999997,
+      "KXFEDDECISION-26OCT-H25": 0.515,
+      "KXFEDDECISION-26OCT-H26": 0.005
+    }
+  },
+  {
+    "t": 1790056582.346438,
+    "key": "Polymarket:1007040",
+    "prices": {
+      "4487273": 0.285,
+      "4619163": 0.014,
+      "4619164": 0.755
+    }
   }
 ]
