@@ -468,5 +468,44 @@
     "prices": {
       "KXEARNINGSMENTIONJPM-26OCT13-TRAD": 0.375
     }
+  },
+  {
+    "t": 1790315903.8399642,
+    "key": "Polymarket:727041",
+    "prices": {
+      "3008012": 0.905
+    }
+  },
+  {
+    "t": 1790315903.8399642,
+    "key": "Kalshi:KXFED-26OCT",
+    "prices": {
+      "KXFED-26OCT-T4.00": 0.665,
+      "KXFED-26OCT-T4.25": 0.015
+    }
+  },
+  {
+    "t": 1790315903.8399642,
+    "key": "Kalshi:KX30YRDIRHM-26SEP30H",
+    "prices": {
+      "KX30YRDIRHM-26SEP30H-T5.47": 0.815,
+      "KX30YRDIRHM-26SEP30H-T5.49": 0.54
+    }
+  },
+  {
+    "t": 1790315903.8399642,
+    "key": "Kalshi:KXIPOOURA",
+    "prices": {
+      "KXIPOOURA-26OCT01": 0.985
+    }
+  },
+  {
+    "t": 1790315903.8399642,
+    "key": "Kalshi:KXFEDDECISION-26OCT",
+    "prices": {
+      "KXFEDDECISION-26OCT-H0": 0.315,
+      "KXFEDDECISION-26OCT-H25": 0.685,
+      "KXFEDDECISION-26OCT-H26": 0.015
+    }
   }
 ]
