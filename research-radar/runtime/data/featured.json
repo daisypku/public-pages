@@ -507,5 +507,48 @@
       "KXFEDDECISION-26OCT-H25": 0.685,
       "KXFEDDECISION-26OCT-H26": 0.015
     }
+  },
+  {
+    "t": 1790402279.393464,
+    "key": "Kalshi:KXTOPMODEL-26SEP30",
+    "prices": {
+      "KXTOPMODEL-26SEP30-CLAU7": 0.005,
+      "KXTOPMODEL-26SEP30-CLF51M": 0.05
+    }
+  },
+  {
+    "t": 1790402279.393464,
+    "key": "Kalshi:KX30YRDIRHM-26SEP30H",
+    "prices": {
+      "KX30YRDIRHM-26SEP30H-T5.47": 0.985,
+      "KX30YRDIRHM-26SEP30H-T5.48": 0.985,
+      "KX30YRDIRHM-26SEP30H-T5.49": 0.795
+    }
+  },
+  {
+    "t": 1790402279.393464,
+    "key": "Polymarket:1007040",
+    "prices": {
+      "4487273": 0.235,
+      "4619164": 0.668,
+      "4885967": 0.495
+    }
+  },
+  {
+    "t": 1790402279.393464,
+    "key": "Kalshi:KXFED-26OCT",
+    "prices": {
+      "KXFED-26OCT-T4.00": 0.625
+    }
+  },
+  {
+    "t": 1790402279.393464,
+    "key": "Kalshi:KXSPACEXCOUNT-26SEP",
+    "prices": {
+      "KXSPACEXCOUNT-26SEP-7": 0.705,
+      "KXSPACEXCOUNT-26SEP-8": 0.03,
+      "KXSPACEXCOUNT-26SEP-9": 0.015,
+      "KXSPACEXCOUNT-26SEP-10": 0.005
+    }
   }
 ]
