@@ -75,56 +75,19 @@
     "source_url": "https://data.eastmoney.com/xg/xg/default.html"
   },
   {
-    "market": "港股",
-    "name": "彤程新材料",
-    "code": "09607.HK",
+    "market": "A股",
+    "name": "鸿富诚",
+    "code": "301716.SZ",
+    "apply_code": "301716",
     "event_date": "2026-09-29",
     "event_type": "上市",
     "listing_date": "2026-09-29",
-    "apply_date": "",
-    "offer_price": "44",
-    "financing_total": "约29.97亿港元",
-    "source": "AAStocks",
-    "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=09607"
-  },
-  {
-    "market": "港股",
-    "name": "本末动力（北京）科技",
-    "code": "06731.HK",
-    "event_date": "2026-09-29",
-    "event_type": "上市",
-    "listing_date": "2026-09-29",
-    "apply_date": "",
-    "offer_price": "21.6",
-    "financing_total": "约10.80亿港元",
-    "source": "AAStocks",
-    "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=06731"
-  },
-  {
-    "market": "港股",
-    "name": "深圳市景旺电子",
-    "code": "03228.HK",
-    "event_date": "2026-09-29",
-    "event_type": "上市",
-    "listing_date": "2026-09-29",
-    "apply_date": "",
-    "offer_price": "最高 69.88",
-    "financing_total": "约50.97亿港元",
-    "source": "AAStocks",
-    "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=03228"
-  },
-  {
-    "market": "港股",
-    "name": "罗博特科智能科技",
-    "code": "03757.HK",
-    "event_date": "2026-09-29",
-    "event_type": "上市",
-    "listing_date": "2026-09-29",
-    "apply_date": "",
-    "offer_price": "最高 436",
-    "financing_total": "约51.78亿港元",
-    "source": "AAStocks",
-    "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=03757"
+    "apply_date": "2026-09-16",
+    "offer_price": "76.86",
+    "financing_total": "14.40亿元",
+    "business": "专注热管理、电磁屏蔽和吸波等先进电子功能材料及器件研发、产业化",
+    "source": "东方财富",
+    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
   },
   {
     "market": "港股",
@@ -153,5 +116,18 @@
     "business": "自主型号系列宽带连接终端设备的设计、研发、生产和销售",
     "source": "东方财富",
     "source_url": "https://data.eastmoney.com/xg/xg/default.html"
+  },
+  {
+    "market": "港股",
+    "name": "奕斯伟计算",
+    "code": "01256.HK",
+    "event_date": "2026-10-09",
+    "event_type": "上市",
+    "listing_date": "2026-10-09",
+    "apply_date": "",
+    "offer_price": "1.48-1.59",
+    "financing_total": "约23.24-24.97亿港元",
+    "source": "AAStocks",
+    "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=01256"
   }
 ]
