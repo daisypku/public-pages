@@ -1,6 +1,76 @@
 [
   {
     "exchange": "HKEX",
+    "issuer": "珠海一微科技股份有限公司",
+    "document_type": "聆訊後資料集（第一次呈交）",
+    "publish_date": "2026-09-30",
+    "update_date": "2026-09-30",
+    "board": "主板",
+    "industry": null,
+    "sponsor": null,
+    "status": "A",
+    "pdf_url": "https://www1.hkexnews.hk/app/sehk/2026/108911/documents/sehk26093003029_c.pdf",
+    "source_url": "https://www1.hkexnews.hk/app/appindex.html?lang=zh",
+    "detail_url": "https://www1.hkexnews.hk/app/sehk/2026/108911/2026093002960_c.htm",
+    "title": "珠海一微科技股份有限公司 聆訊後資料集（第一次呈交）",
+    "summary": {
+      "one_line_business": "一家主要从事提供智能移动机器人解决方案的机器人技术平台公司，核心技术为自研算法及专用SoC芯片。",
+      "key_points": [
+        "公司是中国的智能移动机器人解决方案提供商，按2025年收入计，市场排名第三，同时是中国最大的单模态机器人解决方案提供商。",
+        "核心竞争力在于其Amicro智能移动机器人技术平台，该平台整合了自研的机器人专用SoC、传感器、算法及开发工具，可实现模块化定制和快速商业化。",
+        "公司收入在往绩记录期间（2023-2025年）持续增长，毛利率也显著提升，但由于高额的研发投入及其他运营开支，公司持续录得净亏损且经营活动现金流为负。",
+        "客户集中度较高，2023、2024及2025年，来自前五大客户的收入分别占总收入的67.9%、55.1%和44.6%。",
+        "公司高度重视研发，截至2026年4月30日，研发团队占员工总数超过75.8%，拥有包括1125项已授权专利在内的知识产权。"
+      ],
+      "financial_snapshot": {
+        "income_statement": [
+          {
+            "year": "2023",
+            "revenue": "205,960",
+            "gross_profit": "12,571",
+            "gross_margin": "6.1%",
+            "net_loss": "113,189",
+            "net_margin": "-55.0%"
+          },
+          {
+            "year": "2024",
+            "revenue": "285,803",
+            "gross_profit": "33,879",
+            "gross_margin": "11.9%",
+            "net_loss": "98,858",
+            "net_margin": "-34.6%"
+          },
+          {
+            "year": "2025",
+            "revenue": "406,721",
+            "gross_profit": "112,635",
+            "gross_margin": "27.7%",
+            "net_loss": "155,081",
+            "net_margin": "-38.1%"
+          }
+        ],
+        "summary": "公司收入在2023至2025年间持续快速增长。毛利率也从2023年的6.1%显著提升至2025年的27.7%。尽管毛利增加，但由于高额的研发、行政及销售等开支，公司在整个往绩记录期间持续录得净亏损，且2025年亏损额度有所扩大。所有金额单位为人民币千元。"
+      },
+      "risk_factors": [
+        "公司在往绩记录期间持续产生净亏损，未来可能无法实现或维持盈利能力。",
+        "所处的智能移动机器人解决方案行业竞争激烈，若未能有效竞争，业务和经营业绩可能受到重大不利影响。",
+        "行业技术标准和应用不断演变，若未能持续提升技术并提供创新解决方案，可能对业务造成不利影响。",
+        "依赖第三方进行芯片制造、测试与封装，供应链存在风险。",
+        "智能移动机器人解决方案行业及市场需求的增长速度可能不如预期，从而对业务和前景造成不利影响。",
+        "若未能留住现有客户或吸引新客户，业务和经营业绩可能受到重大不利影响。"
+      ],
+      "questions_to_follow": [
+        "公司毛利率从2023年的6.1%大幅提升至2025年的27.7%，其背后的具体驱动因素是什么（如产品组合变化、成本控制等）？这种高增长的毛利率是否可持续？",
+        "公司持续录得净亏损和经营性现金流出，管理层对于实现盈利和正向现金流的具体路径和时间规划是怎样的？",
+        "公司对前五大客户的收入依赖度较高，与这些主要客户的合作关系稳定性如何？公司有哪些具体策略来降低客户集中度风险？"
+      ],
+      "disclaimer": "自动生成，仅供信息整理，不构成投资建议。"
+    },
+    "collected_at": "2026-10-01T06:22:26+00:00",
+    "id": "290e8fdb0fdf6e5ecd05d0a5"
+  },
+  {
+    "exchange": "HKEX",
     "issuer": "安徽希磁科技股份有限公司",
     "document_type": "聆訊後資料集（第一次呈交）",
     "publish_date": "2026-09-28",
@@ -65,7 +135,7 @@
         "过往亏损风险：公司在2023年曾录得净亏损，未来能否保持持续盈利存在不确定性。"
       ]
     },
-    "collected_at": "2026-09-30T05:49:22+00:00",
+    "collected_at": "2026-10-01T06:22:26+00:00",
     "id": "3770816b8e10aeb53ebbd87b"
   },
   {
@@ -98,7 +168,7 @@
       ],
       "source": "cninfo_project"
     },
-    "collected_at": "2026-09-30T05:50:33+00:00",
+    "collected_at": "2026-10-01T06:23:54+00:00",
     "id": "7e673011aaaf2f0676264de0"
   },
   {
@@ -131,7 +201,7 @@
       ],
       "source": "cninfo_project"
     },
-    "collected_at": "2026-09-30T05:50:32+00:00",
+    "collected_at": "2026-10-01T06:23:53+00:00",
     "id": "f1e92616dbe00658d8323811"
   },
   {
@@ -1583,104 +1653,5 @@
     },
     "collected_at": "2026-09-04T04:57:31+00:00",
     "id": "54fdd65e632b52033bac8300"
-  },
-  {
-    "exchange": "CNINFO",
-    "issuer": "重庆宇隆光电科技股份有限公司",
-    "document_type": "A股IPO项目更新",
-    "publish_date": "2026-08-31",
-    "update_date": "2026-08-31",
-    "board": "A股IPO",
-    "industry": "计算机、通信和其他电子设备制造业",
-    "sponsor": "中信证券股份有限公司",
-    "status": "注册生效",
-    "pdf_url": null,
-    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
-    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1388",
-    "title": "重庆宇隆光电科技股份有限公司 A股IPO项目更新",
-    "summary": {
-      "financial_snapshot": {
-        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
-      },
-      "key_points": [
-        "当前审核状态：注册生效",
-        "保荐机构：中信证券股份有限公司",
-        "所属行业：计算机、通信和其他电子设备制造业",
-        "净利润参考值：1.33亿元"
-      ],
-      "one_line_business": "公司专注于新型半导体显示面板领域的智能控制卡及精密功能器件相关产品的研发、生产及销售，致力于成为我国智能控制领域最有价值的企业。报告期内，公司主要产品系LCD、OLED等新型半导体显示面板专用智能控制卡及其PCBA制造服务，并围绕半导体显示面板产业为核心应用领域配套显示用精密功能器件类产品，终端应用主要为平板电脑、笔记本电脑、显示器、中大尺寸电视、手机、智能穿戴等消费电子领域。",
-      "risk_factors": [
-        "尚未基于招股书全文生成风险摘要。"
-      ],
-      "source": "cninfo_project"
-    },
-    "collected_at": "2026-09-03T04:52:42+00:00",
-    "id": "3c0a353d82616068af07be2a"
-  },
-  {
-    "exchange": "CNINFO",
-    "issuer": "深圳尼索科连接技术股份有限公司",
-    "document_type": "A股IPO项目更新",
-    "publish_date": "2026-08-31",
-    "update_date": "2026-08-31",
-    "board": "A股IPO",
-    "industry": "计算机、通信和其他电子设备制造业",
-    "sponsor": "中信证券股份有限公司",
-    "status": "已问询",
-    "pdf_url": null,
-    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
-    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1757",
-    "title": "深圳尼索科连接技术股份有限公司 A股IPO项目更新",
-    "summary": {
-      "financial_snapshot": {
-        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
-      },
-      "key_points": [
-        "当前审核状态：已问询",
-        "保荐机构：中信证券股份有限公司",
-        "所属行业：计算机、通信和其他电子设备制造业",
-        "净利润参考值：1.12亿元"
-      ],
-      "one_line_business": "公司是一家行业内领先的高压大电流连接系统接触件解决方案提供商。自成立以来，始终以“专注接触技术创新与解决方案，成为卓越的世界级接触技术及产品提供商”为战略愿景，专注于高压大电流连接系统接触件（又名“连接器端子”）的研发、生产与销售，构建了涵盖新能源汽车、储能、通信及AI数据中心三大核心应用领域的产品矩阵体系，持续引领行业技术发展。",
-      "risk_factors": [
-        "尚未基于招股书全文生成风险摘要。"
-      ],
-      "source": "cninfo_project"
-    },
-    "collected_at": "2026-09-03T04:52:49+00:00",
-    "id": "c8f80e30b74a459f24c91792"
-  },
-  {
-    "exchange": "CNINFO",
-    "issuer": "广东博迈医疗科技股份有限公司",
-    "document_type": "A股IPO项目更新",
-    "publish_date": "2026-08-31",
-    "update_date": "2026-08-31",
-    "board": "A股IPO",
-    "industry": "专用设备制造业",
-    "sponsor": "中国国际金融股份有限公司",
-    "status": "已问询",
-    "pdf_url": null,
-    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
-    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1748",
-    "title": "广东博迈医疗科技股份有限公司 A股IPO项目更新",
-    "summary": {
-      "financial_snapshot": {
-        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
-      },
-      "key_points": [
-        "当前审核状态：已问询",
-        "保荐机构：中国国际金融股份有限公司",
-        "所属行业：专用设备制造业",
-        "净利润参考值：0.77亿元"
-      ],
-      "one_line_business": "博迈医疗专注于高性能血管介入医疗器械的研发、生产及全球销售，是全球行业内技术及产品领先的复杂血管疾病介入治疗解决方案提供商，同时也是国产血管介入球囊导管领域产销量领先的研发生产企业。在产品体系建设方面，公司已形成覆盖多治疗场景的完善产品矩阵，拥有50余个产品系列，产品应用领域涵盖冠脉介入、外周介入、神经介入、血透通路及介入配件等关键领域，具体包含各类通用球囊导管、功能性球囊导管、药物球囊导管、介入导丝与导管、多种血栓处理器械、钙化处理器械、能量治疗器械等核心产品线，可充分满足临床对复杂血管疾病介入治疗的多样化需求。",
-      "risk_factors": [
-        "尚未基于招股书全文生成风险摘要。"
-      ],
-      "source": "cninfo_project"
-    },
-    "collected_at": "2026-09-03T04:52:44+00:00",
-    "id": "d2eec23adc7cfe022e133002"
   }
 ]
