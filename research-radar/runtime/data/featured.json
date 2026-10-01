@@ -722,5 +722,50 @@
     "prices": {
       "KXTOPMODEL-26SEP30-CLF51M": 0.08499999999999999
     }
+  },
+  {
+    "t": 1790838003.6184711,
+    "key": "Polymarket:841230",
+    "prices": {
+      "3554657": 0.255,
+      "3554658": 0.0035,
+      "3554659": 0.708,
+      "3554662": 0.0075
+    }
+  },
+  {
+    "t": 1790838003.6184711,
+    "key": "Polymarket:868080",
+    "prices": {
+      "3685371": 0.0045,
+      "3685376": 0.0345,
+      "3685385": 0.775
+    }
+  },
+  {
+    "t": 1790838003.6184711,
+    "key": "Kalshi:KXFEDDECISION-26OCT",
+    "prices": {
+      "KXFEDDECISION-26OCT-C26": 0.005,
+      "KXFEDDECISION-26OCT-C25": 0.005,
+      "KXFEDDECISION-26OCT-H0": 0.655,
+      "KXFEDDECISION-26OCT-H25": 0.345,
+      "KXFEDDECISION-26OCT-H26": 0.005
+    }
+  },
+  {
+    "t": 1790838003.6184711,
+    "key": "Polymarket:1007040",
+    "prices": {
+      "4619164": 0.608,
+      "4885967": 0.35
+    }
+  },
+  {
+    "t": 1790838003.6184711,
+    "key": "Kalshi:KXFEDCOMBO-26OCT",
+    "prices": {
+      "KXFEDCOMBO-26OCT-0-T0": 0.505
+    }
   }
 ]
