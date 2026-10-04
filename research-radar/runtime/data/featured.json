@@ -873,5 +873,52 @@
       "4951227": 0.255,
       "4951230": 0.027
     }
+  },
+  {
+    "t": 1791096038.0320325,
+    "key": "Kalshi:KXIPO-26",
+    "prices": {
+      "KXIPO-26-ANTHROPIC": 0.77,
+      "KXIPO-26-OURA": 0.11000000000000001
+    }
+  },
+  {
+    "t": 1791096038.0320325,
+    "key": "Kalshi:KXGPT-ASTRA61",
+    "prices": {
+      "KXGPT-ASTRA61-26OCT09": 0.02,
+      "KXGPT-ASTRA61-26OCT16": 0.025,
+      "KXGPT-ASTRA61-26OCT23": 0.045,
+      "KXGPT-ASTRA61-26OCT30": 0.07,
+      "KXGPT-ASTRA61-26NOV06": 0.095,
+      "KXGPT-ASTRA61-26NOV13": 0.125
+    }
+  },
+  {
+    "t": 1791096038.0320325,
+    "key": "Kalshi:KXOAIPERSONALAGENT-27JAN01",
+    "prices": {
+      "KXOAIPERSONALAGENT-27JAN01-26NOV01": 0.15000000000000002
+    }
+  },
+  {
+    "t": 1791096038.0320325,
+    "key": "Kalshi:KXU3-26OCT",
+    "prices": {
+      "KXU3-26OCT-T4.2": 0.28500000000000003,
+      "KXU3-26OCT-T4.5": 0.065
+    }
+  },
+  {
+    "t": 1791096038.0320325,
+    "key": "Kalshi:KXHORMUZPEAK-26OCT04",
+    "prices": {
+      "KXHORMUZPEAK-26OCT04-T4": 0.935,
+      "KXHORMUZPEAK-26OCT04-T6": 0.44,
+      "KXHORMUZPEAK-26OCT04-T8": 0.035,
+      "KXHORMUZPEAK-26OCT04-T10": 0.035,
+      "KXHORMUZPEAK-26OCT04-T12": 0.025,
+      "KXHORMUZPEAK-26OCT04-T14": 0.015
+    }
   }
 ]
