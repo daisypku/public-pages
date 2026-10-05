@@ -920,5 +920,54 @@
       "KXHORMUZPEAK-26OCT04-T12": 0.025,
       "KXHORMUZPEAK-26OCT04-T14": 0.015
     }
+  },
+  {
+    "t": 1791182355.8454607,
+    "key": "Kalshi:KXGPT-ASTRA61",
+    "prices": {
+      "KXGPT-ASTRA61-26OCT09": 0.005,
+      "KXGPT-ASTRA61-26OCT16": 0.045,
+      "KXGPT-ASTRA61-26OCT23": 0.08,
+      "KXGPT-ASTRA61-26OCT30": 0.21500000000000002,
+      "KXGPT-ASTRA61-26NOV06": 0.19,
+      "KXGPT-ASTRA61-26NOV13": 0.19
+    }
+  },
+  {
+    "t": 1791182355.8454607,
+    "key": "Polymarket:841230",
+    "prices": {
+      "3554657": 0.315,
+      "3554658": 0.0045,
+      "3554659": 0.6735
+    }
+  },
+  {
+    "t": 1791182355.8454607,
+    "key": "Kalshi:KXHORMUZPEAK-26OCT04",
+    "prices": {
+      "KXHORMUZPEAK-26OCT04-T4": 0.935,
+      "KXHORMUZPEAK-26OCT04-T6": 0.275,
+      "KXHORMUZPEAK-26OCT04-T10": 0.035,
+      "KXHORMUZPEAK-26OCT04-T12": 0.025,
+      "KXHORMUZPEAK-26OCT04-T14": 0.015
+    }
+  },
+  {
+    "t": 1791182355.8454607,
+    "key": "Kalshi:KXCPICOREYOY-26DEC",
+    "prices": {
+      "KXCPICOREYOY-26DEC-T2.8": 0.48,
+      "KXCPICOREYOY-26DEC-T3.4": 0.065
+    }
+  },
+  {
+    "t": 1791182355.8454607,
+    "key": "Polymarket:1078055",
+    "prices": {
+      "4936103": 0.35,
+      "4936105": 0.405,
+      "4951226": 0.715
+    }
   }
 ]
