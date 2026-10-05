@@ -56,5 +56,20 @@
     "financing_total": "约23.24-24.97亿港元",
     "source": "AAStocks",
     "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=01256"
+  },
+  {
+    "market": "A股",
+    "name": "皇冠新材",
+    "code": "001381.SZ",
+    "apply_code": "001381",
+    "event_date": "2026-10-19",
+    "event_type": "申购",
+    "listing_date": "",
+    "apply_date": "2026-10-19",
+    "offer_price": "",
+    "financing_total": "9.19亿元",
+    "business": "以功能性新材料为核心,研发、生产及销售工业级胶粘材料、电子级胶粘材料及功能性薄膜材料等功能性复合材料",
+    "source": "东方财富",
+    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
   }
 ]
