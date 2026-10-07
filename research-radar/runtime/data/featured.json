@@ -1013,5 +1013,46 @@
       "4412200": 0.225,
       "4412201": 0.615
     }
+  },
+  {
+    "t": 1791356378.1376445,
+    "key": "Kalshi:KXGPT-ASTRA61",
+    "prices": {
+      "KXGPT-ASTRA61-26OCT16": 0.035,
+      "KXGPT-ASTRA61-26OCT30": 0.12,
+      "KXGPT-ASTRA61-26NOV06": 0.16
+    }
+  },
+  {
+    "t": 1791356378.1376445,
+    "key": "Kalshi:KXSPACEXSTARSHIP-15",
+    "prices": {
+      "KXSPACEXSTARSHIP-15-26OCT30": 0.08499999999999999
+    }
+  },
+  {
+    "t": 1791356378.1376445,
+    "key": "Polymarket:79104",
+    "prices": {
+      "677026": 0.5095,
+      "677027": 0.216
+    }
+  },
+  {
+    "t": 1791356378.1376445,
+    "key": "Kalshi:KXEARNINGSMENTIONLEVI-26OCT07",
+    "prices": {
+      "KXEARNINGSMENTIONLEVI-26OCT07-WORL": 0.28
+    }
+  },
+  {
+    "t": 1791356378.1376445,
+    "key": "Kalshi:KXFEDDECISION-26OCT",
+    "prices": {
+      "KXFEDDECISION-26OCT-C25": 0.005,
+      "KXFEDDECISION-26OCT-H0": 0.825,
+      "KXFEDDECISION-26OCT-H25": 0.155,
+      "KXFEDDECISION-26OCT-H26": 0.005
+    }
   }
 ]
