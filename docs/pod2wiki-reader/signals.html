@@ -73,57 +73,56 @@ p { margin:10px 0; } .article-page p { color:#243241; } ul { padding-left:24px; 
   <div class="signal-summary-grid"></div>
   <div class="section-heading paper-heading"><h2>最新论文推进了什么</h2></div>
   <div class="signal-summary-grid"><article class="signal-summary-card"><h3>One Basis to Animate Them All: Gaussian Blendshape Distillation for Real-Time Avatars</h3>
-<p><strong>研究问题：</strong>3D高斯虚拟形象虽然渲染速度快，但其实时动画常受限于昂贵的神经推理计算。</p>
-<p><strong>方法：</strong>引入GALA（Gaussian Animation via Linear Approximation）蒸馏方法。该方法将预训练虚拟形象模型的动画近似为与身份无关的混合形状的线性组合。通过构建基于渲染感知度量和内存预算的块局部PCA基，并使用浅层MLP网络预测混合形状系数，实现每帧繁重神经解码的替代。</p>
-<p><strong>结果：</strong>GALA方法成功加速了三种不同虚拟形象模型的推理，用于面部表情和全身（含服装动态）的3D动画。在保持大部分渲染质量的同时，将CPU动画成本降低了高达三个数量级，并在移动设备上实现了高达60fps的帧率。</p>
-<p><strong>为什么重要：</strong>该方法证实了学习到的虚拟形象表示中存在共享的线性结构，为高效、准确的实时3D虚拟形象动画提供了解决方案，尤其适用于资源受限的移动设备，对元宇宙、游戏和虚拟现实应用具有重要意义。</p>
-<p><strong>局限：</strong>论文未明确指出局限性，但线性近似可能在某些极端或高度非线性的动画表现上存在保真度限制。</p>
+<p><strong>研究问题：</strong>3D高斯头像的实时动画因昂贵的神经推理而面临挑战。</p>
+<p><strong>方法：</strong>引入GALA（Gaussian Animation via Linear Approximation），一种蒸馏方法，将预训练头像模型的动画近似为与身份无关的混合形状的线性组合。它用一个浅层系数预测器和线性混合来替代每帧繁重的神经解码。为提高保真度和减少内存，提出在渲染感知度量和内存预算下，使用块局部PCA构建基础。</p>
+<p><strong>结果：</strong>在三个不同的头像模型上验证了GALA，将CPU动画成本降低了高达三个数量级，同时保留了大部分渲染质量。该蒸馏方法泛化到未见过的身份，并在移动设备上实现了高达60fps的高效准确动画。</p>
+<p><strong>为什么重要：</strong>通过显著降低计算成本，GALA使3D高斯头像能够在移动设备上实现高效、准确的实时动画，证实了学习到的头像表示中存在共享的线性结构，极大地推动了实时虚拟形象技术的发展。</p>
+<p><strong>局限：</strong>该方法主要关注预训练模型的动画加速，可能未解决初始模型训练的成本问题，也未深入探讨其在生成全新、复杂动画风格方面的灵活性。</p>
 <a class="source-link" href="https://arxiv.org/abs/2610.02207v1">阅读论文</a></article><article class="signal-summary-card"><h3>KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards</h3>
-<p><strong>研究问题：</strong>大型语言模型（LLMs）在网络安全工作流中将分析师意图转化为工具调用时，难以生成真实世界网络安全工具的精确可执行命令行接口（CLI）命令。</p>
-<p><strong>方法：</strong>引入KaliBench，一个针对Kali Linux上自然语言到CLI转换的细粒度基准和数据集。包含8,504个查询-命令对，涵盖1,642个工具和23个能力维度。通过手稿驱动的管道、确定性规范化和别名感知评估构建。开发了结合LLM验证、沙盒终端执行和人工精炼的多阶段验证管道，以确保语义正确性和实际可执行性。</p>
-<p><strong>结果：</strong>在无限制设置下，现有开源模型在KaliBench上的精确命令准确率均未超过42%。通过监督微调（SFT）和基于可验证奖励的强化学习，一个8B模型性能显著提升，达到与685B MoE模型相当的水平。</p>
-<p><strong>为什么重要：</strong>KaliBench填补了LLM在网络安全CLI生成能力评估上的空白，为开发能够生成精确、可执行命令的LLM提供了关键基准和训练信号，对提升LLM在实际网络安全操作中的应用至关重要。</p>
-<p><strong>局限：</strong>现有评估侧重于知识型评估或端到端代理任务，KaliBench专注于CLI生成，未直接测量LLM在更广泛的代理任务中的表现。开源模型在无提示情况下表现仍不理想。</p>
+<p><strong>研究问题：</strong>大型语言模型（LLMs）在网络安全工作流中的应用日益增多，但现有评估侧重于知识或端到端代理任务，未能直接衡量LLMs生成可执行网络安全工具命令的能力，而这些命令对语法和参数绑定要求严格。</p>
+<p><strong>方法：</strong>引入KaliBench，一个针对Kali Linux上自然语言到CLI（命令行界面）转换的细粒度基准和数据集。包含8,504个查询-命令对，涵盖1,642个工具、23个能力维度和5个安全阶段。通过手稿驱动的管道构建，具有确定性规范化和别名感知评估。开发了多阶段验证管道，结合LLM验证、沙盒终端执行和人工精炼，以确保语义正确性和实际可执行性。还支持运行时无关的可验证奖励用于训练。</p>
+<p><strong>结果：</strong>在无限制设置下，没有开源模型在精确命令准确率上超过42%。通过KaliBench衍生的可验证奖励进行监督微调和强化学习，显著提升了8B模型的性能，使其与685B MoE模型相当。</p>
+<p><strong>为什么重要：</strong>KaliBench填补了LLM在网络安全领域评估的空白，为衡量和提升LLMs生成精确、可执行CLI命令的能力提供了关键工具和数据集。这对于将LLMs更有效地集成到实际网络安全操作中至关重要，并为训练更强大的网络安全代理提供了新途径。</p>
+<p><strong>局限：</strong>即使经过改进，开源模型在无限制设置下的精确命令准确率仍相对较低（42%），表明该任务难度大，仍有巨大提升空间。基准测试主要集中在Kali Linux工具上。</p>
 <a class="source-link" href="https://arxiv.org/abs/2610.02206v1">阅读论文</a></article><article class="signal-summary-card"><h3>Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents</h3>
-<p><strong>研究问题：</strong>在多样化任务中构建可靠的机器人能力需要大量人工投入来开发和维护技能、设计奖励以及整合感知与控制。</p>
-<p><strong>方法：</strong>提出Reconstruct, Practice, Go Real (RPG) 框架，用于机器人执行系统的自主改进，无需更新模型权重。RPG从离线数据集中识别操作能力，并在模拟中构建相关练习任务。在练习过程中，RPG利用执行反馈、特权模拟器状态和可用数据集视频来诊断故障。它开发新的可重用符号技能，完善现有技能，并根据诊断修改系统提示。跨任务评估测试单个候选更改和合并修订，然后保留以供重用。</p>
-<p><strong>结果：</strong>在22个操作任务的保留初始化上，RPG将任务成功率从第一轮练习后的28.6%提高到15轮后的95.0%，优于所有评估的基线。经过校准和硬件适应后，冻结的系统在30次物理试验中全部成功。</p>
-<p><strong>为什么重要：</strong>RPG显著减少了构建和维护机器人能力所需的人工投入，通过自主学习和改进，使机器人能够更可靠地执行多样化任务，推动了具身智能和机器人泛化能力的进步。</p>
-<p><strong>局限：</strong>该框架依赖于离线数据集来识别初始操作能力，并且大部分改进过程在模拟环境中进行，尽管最终在物理机器人上进行了验证，但模拟到现实的迁移仍是挑战。</p>
+<p><strong>研究问题：</strong>在各种任务中构建可靠的机器人能力需要大量人工投入来开发和维护技能、设计奖励以及整合感知与控制。</p>
+<p><strong>方法：</strong>提出RPG（Reconstruct, Practice, Go Real），一个无需更新模型权重即可自主改进机器人执行系统的框架。RPG从离线数据集中识别操作能力，并在模拟中构建相关练习任务。在练习过程中，RPG利用执行反馈、特权模拟器状态和可用数据集视频来诊断故障。它根据诊断结果开发新的可重用符号技能，完善现有技能，并修改系统提示。跨任务评估测试单个候选更改和合并修订，然后将其保留以供重用。在测试时，多模态LLM使用生成的系统提示和技能库来协调感知和机器人控制。</p>
+<p><strong>结果：</strong>在22个操作任务的保留初始化上，RPG将任务成功率从第一轮练习后的28.6%提高到15轮后的95.0%，优于所有评估的基线（包括ASPIRE的75.5%和由GPT-6 Astra Pro驱动的CaP-Agent0的60.0%）。经过通用校准和硬件适应程序后，冻结的系统在30次物理试验中全部成功，其中三个任务各进行了十次试验。</p>
+<p><strong>为什么重要：</strong>RPG显著减少了机器人技能开发所需的人工投入，实现了具身智能体的自主自我改进。这使得机器人能够在多样化的操作任务中展现出高度可靠的能力，是迈向更自主、更通用机器人的重要一步。</p>
+<p><strong>局限：</strong>该框架依赖于离线数据集来识别初始操作能力。在物理试验中，仍需要“通用校准和硬件适应程序”，这可能意味着在实际部署前仍需一定程度的人工干预。</p>
 <a class="source-link" href="https://arxiv.org/abs/2610.02204v1">阅读论文</a></article><article class="signal-summary-card"><h3>ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research</h3>
-<p><strong>研究问题：</strong>尽管AI系统在解决开放问题上取得进展，但科学家在感知哪些现有想法能推动新项目方面仍远超AI。缺乏一个衡量AI系统这种“科学直觉”的基准。</p>
-<p><strong>方法：</strong>构建ScholarCatalyst基准，通过自动化管道让184位207篇近期计算机科学论文的主要作者标注哪些候选论文对他们的项目有启发作用，并提供详细理由。引入一个检索任务：给定一个初始研究问题，从项目开始时可用的文献中检索这些启发性论文。</p>
-<p><strong>结果：</strong>代理搜索（Agentic search）的表现并未优于嵌入式检索（Recall@20分别为0.42 vs 0.48），即使是可能在训练中见过完整论文的Claude Fable 5.1也仅达到0.51 R@20。</p>
-<p><strong>为什么重要：</strong>这些结果凸显了需要新的训练方法来赋予模型在广泛语料库中搜索的专家直觉。ScholarCatalyst是迈向能够根据半成形想法指出所需先行研究的科学代理的重要一步。</p>
-<p><strong>局限：</strong>基准主要集中在计算机科学领域，作者标注虽然可扩展但仍依赖人工判断。现有模型表现不佳，表明该任务难度高，可能需要更深层次的语义理解和推理能力。</p>
+<p><strong>研究问题：</strong>尽管AI系统在解决开放性问题上取得进展，但在感知哪些现有想法（隐藏在不断增长的研究档案中）是新问题所需的方面，科学家仍远超AI系统。</p>
+<p><strong>方法：</strong>通过自动化流程构建ScholarCatalyst基准，该流程使作者标注具有可扩展性。184位207篇近期计算机科学论文的主要作者标注了哪些候选论文对他们的项目有或可能有帮助，并提供了详细理由。引入一个检索任务：给定一个初始研究问题，仅从项目开始时可用的文献中检索这些论文。</p>
+<p><strong>结果：</strong>代理搜索的表现不优于嵌入检索（Recall@20分别为0.42和0.48）。即使是基于Claude Fable 5.1构建的代理（可能在训练期间见过已完成的论文），也仅达到0.51的Recall@20。</p>
+<p><strong>为什么重要：</strong>ScholarCatalyst揭示了AI在进行专家级科学文献检索方面的显著不足，并提供了一个由作者标注的新型基准，以推动研究，使模型具备搜索广阔语料库的专家直觉，从而加速科学发现。</p>
+<p><strong>局限：</strong>当前模型在该基准上的表现不佳，凸显了任务的难度。该基准目前专注于计算机科学领域的论文。</p>
 <a class="source-link" href="https://arxiv.org/abs/2610.02202v1">阅读论文</a></article><article class="signal-summary-card"><h3>SILSA: Sliding-Window Slice Latents for Topology-Preserving High-Resolution 3D Generation</h3>
-<p><strong>研究问题：</strong>高分辨率3D生成越来越依赖体素潜在表示和多阶段管道，这导致连续表面碎片化、生成成本高昂，并常削弱薄结构或高度连接形状的拓扑一致性。</p>
-<p><strong>方法：</strong>引入SILSA（Sliding-Window Slice Latents for Topology-Preserving High-Resolution 3D Generation），一个拓扑感知的3D生成框架。它使用紧凑的滑动窗口切片潜在表示来代替昂贵的体素token。每个token总结一个局部深度窗口，以保持横截面连续性并支持单阶段整流流生成。Slice VAE将定向表面样本编码为多轴切片潜在表示，并通过稀疏体素解码器重建。Volumetric Anchor Lattice通过共享3D工作空间协调定向切片流。引入切片级拓扑监督，匹配持久图并对齐相邻切片间的Betti转换。</p>
-<p><strong>结果：</strong>SILSA在提高结构保真度的同时大幅降低了生成成本。PSNR提高了8.7%，覆盖率提高了5.96个绝对点，Betti误差降低了9.2%，同时使用的token比次紧凑基线少70.0%，比稀疏或分层tokenizers少98%以上，有效减少了训练内存40.4%和推理时间58.5%。</p>
-<p><strong>为什么重要：</strong>SILSA提供了一种高效且拓扑保持的高分辨率3D生成方法，解决了现有方法的关键瓶颈，对需要高保真和结构正确性的3D内容创作（如游戏、虚拟现实、工业设计）具有重要意义。</p>
-<p><strong>局限：</strong>该方法专注于切片潜在表示，可能在处理某些极端复杂或不规则的3D拓扑结构时仍面临挑战。虽然减少了内存和时间，但仍需进一步优化以适应更广泛的硬件环境。</p>
+<p><strong>研究问题：</strong>高分辨率3D生成日益依赖体素潜在表示和多阶段管道，但这种设计将连续表面碎片化为许多局部token，增加了生成成本，并常削弱薄或高度连接形状的拓扑一致性。</p>
+<p><strong>方法：</strong>引入SILSA，一个拓扑感知3D生成框架，用紧凑的滑动窗口切片潜在表示形状。SILSA不生成昂贵的体素token，而是使用沿三个规范轴的固定重叠切片集，每个token总结一个局部深度窗口以保持横截面连续性并支持单阶段整流流生成。Slice VAE将定向表面样本编码为多轴切片潜在表示，并用稀疏体素解码器重建。Volumetric Anchor Lattice通过共享3D工作空间协调定向切片流。为保持结构正确性，引入切片级拓扑监督，匹配持久图并对齐相邻切片之间的Betti转换。</p>
+<p><strong>结果：</strong>SILSA在结构保真度上有所提升，同时大幅降低了生成成本。PSNR提高了8.7%，覆盖率提高了5.96个绝对点，Betti误差降低了9.2%，同时使用的token比次紧凑的基线少70.0%，比稀疏或分层token化器少98%以上，有效减少了训练内存40.4%和推理时间58.5%。定性结果进一步显示薄结构、重复组件和长程连接的保留有所改善。</p>
+<p><strong>为什么重要：</strong>SILSA提供了一种更高效、拓扑更一致的高分辨率3D生成方法，显著降低了计算成本和内存需求，同时提高了结构保真度。这对于需要精确和复杂3D模型生成的应用（如虚拟现实、游戏开发和工业设计）具有重要意义。</p>
+<p><strong>局限：</strong>尽管在拓扑一致性方面有所改进，但对于极其复杂或精细的3D形状，生成质量和拓扑保持仍可能面临挑战。</p>
 <a class="source-link" href="https://arxiv.org/abs/2610.02201v1">阅读论文</a></article><article class="signal-summary-card"><h3>VISTA: A Visual Harness for Reasoning in an Interactive World</h3>
-<p><strong>研究问题：</strong>多模态模型虽然具有强大的推理能力，但在解决多样化交互环境中的任务时，往往缺乏一个合适的“工具”来充分发挥其潜力，特别是长时程的视觉感知和记忆。</p>
-<p><strong>方法：</strong>引入VISTA，一个视觉工具（visual harness），它赋予通用多模态模型长时程视觉能力。VISTA允许模型通过视觉观察直接感知环境，并维护一个无损的视觉记忆，以原始形式保留过去的观察。模型可以主动检索这些观察并重新组织其视觉输入进行推理。</p>
-<p><strong>结果：</strong>在ARC-AGI-3基准测试中，VISTA将Claude Opus 5.0的相对人类行动效率得分从40.68提高到完美的100.00，模型完成所有25个公共游戏所需的行动比首次人类参与者少57.4%。VISTA的简单设计也使其能够以最小的适应性扩展到多样化的视觉环境，并在其他三个基准测试中显著优于使用相同底层模型但最小化工具的基线。</p>
-<p><strong>为什么重要：</strong>VISTA解锁了多模态模型在复杂视觉环境中的强大推理潜力，通过提供高效的视觉感知和记忆机制，使其能够更好地理解和解决长时程任务，对具身智能和通用AI代理的发展具有重要推动作用。</p>
-<p><strong>局限：</strong>VISTA是一个“工具”或“接口”，其性能仍依赖于底层多模态模型的推理能力。虽然适应性强，但在某些极端复杂的、需要高度抽象或非视觉推理的任务中，其效果可能受限。</p>
+<p><strong>研究问题：</strong>多模态模型具有强大的推理能力，但缺乏合适的“工具”（harness）来释放其在多样化交互环境中的潜力，尤其是在需要长期视觉记忆的任务中。</p>
+<p><strong>方法：</strong>引入VISTA，一个视觉工具，为通用多模态模型提供长程视觉。VISTA允许模型通过视觉观察直接感知环境，并维护无损的视觉记忆，以原始形式保留过去的观察。模型可以主动检索这些观察，并在推理时重新组织其视觉输入。</p>
+<p><strong>结果：</strong>在ARC-AGI-3上，VISTA将Claude Opus 5.0的相对人类行动效率分数从40.68提高到完美的100.00，模型完成了所有25个公共游戏，使用的行动比首次人类参与者少57.4%。VISTA的简单设计也使其能够以最小的适应性自然扩展到多样化的视觉环境。在涵盖各种视觉游戏和谜题的三个额外基准测试中，它显著优于使用相同底层模型但最小化工具的基线。</p>
+<p><strong>为什么重要：</strong>VISTA证明了一个通用视觉工具可以显著增强多模态模型在复杂交互视觉环境中的推理和性能，推动了更具能力的具身智能体的发展，使其能够更好地理解和操作视觉世界。</p>
+<p><strong>局限：</strong>VISTA的“简单设计”可能意味着它主要通过提供更好的信息访问来提升性能，而非从根本上改变底层模型的推理能力。其性能仍受限于所使用的多模态模型本身的局限性。</p>
 <a class="source-link" href="https://arxiv.org/abs/2610.02200v1">阅读论文</a></article><article class="signal-summary-card"><h3>TACO: Ternary Absolute-max Column-wise One-sparse Optimizer for LLM Fine-Tuning</h3>
-<p><strong>研究问题：</strong>大型语言模型（LLM）的全参数微调会产生大量的优化器状态内存开销，限制了在现代GPU上可容纳的模型大小。</p>
-<p><strong>方法：</strong>提出TACO（Ternary Absolute-max Column-wise One-sparse Optimizer），它遵循Muon的算子范数最速下降视图，但进一步采取了几何路径。TACO通过选择二维权重矩阵每列中最大幅值项的符号，计算维度归一化1→1算子范数下的精确最速下降方向。这保留了一阶梯度，同时使优化器状态内存几乎可以忽略不计。</p>
-<p><strong>结果：</strong>TACO优化器在OPT-13B模型上，将持久优化器状态相对于AdamW8bit减少了174倍（从27.7 GB降至0.16 GB），峰值训练内存减少了2.9倍（从80.6 GB降至27.5 GB），同时实现了可比的准确性和运行时性能。TACO还使得在单个80 GB H100 GPU上对30-32B参数模型进行全参数微调成为可能。</p>
-<p><strong>为什么重要：</strong>TACO极大地降低了LLM全参数微调的内存门槛，使得研究人员和开发者能够在更有限的硬件资源下训练更大的模型，加速了LLM的普及和应用，对AI硬件效率和模型可访问性具有深远影响。</p>
-<p><strong>局限：</strong>TACO的几何结构与AdamW不同，虽然论文声称能实现可比的准确性，但在微调AdamW预训练模型时，可能需要额外的调优或对收敛特性进行更深入的理解。其“三元绝对最大列稀疏”的特性可能不适用于所有模型架构或任务。</p>
+<p><strong>研究问题：</strong>大型语言模型（LLMs）的全参数微调会产生大量的优化器状态内存开销，限制了模型在现代GPU上可容纳的大小。现有方法通常会压缩优化器状态、放弃一阶梯度或改变更新几何结构，但仍保留密集状态。</p>
+<p><strong>方法：</strong>提出TACO（Ternary Absolute-max Column-wise One-sparse Optimizer），它遵循Muon的算子范数最速下降视图，但进一步采取几何路径。TACO通过选择二维权重矩阵每列中最大幅值项的符号，计算维度归一化1→1算子范数下的精确最速下降方向。这保留了一阶梯度，同时使优化器状态内存几乎可以忽略不计。</p>
+<p><strong>结果：</strong>相对于AdamW8bit，TACO将OPT-13B上的持久优化器状态减少了174倍（从27.7 GB降至0.16 GB），峰值训练内存减少了2.9倍（从80.6 GB降至27.5 GB），同时实现了可比的准确性和运行时性能。TACO还使得在单个80 GB H100 GPU上对30-32B参数模型进行全参数微调成为可能，适用于多个模型家族和任务。</p>
+<p><strong>为什么重要：</strong>TACO解决了LLM微调中的关键内存瓶颈，使得在更易获得的硬件上微调更大规模的模型成为可能，而无需牺牲性能。这极大地降低了LLM研究和部署的门槛，促进了先进LLM能力的普及。</p>
+<p><strong>局限：</strong>该方法旨在实现与现有优化器（如AdamW8bit）“可比的准确性和运行时性能”，而非显著超越。其主要优势在于内存效率，而非性能的绝对提升。</p>
 <a class="source-link" href="https://arxiv.org/abs/2610.02199v1">阅读论文</a></article><article class="signal-summary-card"><h3>InterEvolve: Test-Time Evolution of Reward Programs for Humanoid Loco-Manipulation</h3>
-<p><strong>研究问题：</strong>人形机器人运动操作面临的挑战是，控制器难以解决从未训练过的任务，需要大量人工干预来适应新情境，且难以在不重新训练的情况下从自身尝试中学习和保留经验。</p>
-<p><strong>方法：</strong>提出InterEvolve框架，通过测试时进化奖励程序来解决人形机器人运动操作任务。核心在于两个组件：1. 一个物体感知的正向-反向（FB）行为基础模型，其在冻结身体先验上的物体残差能将关于身体或物体的新奖励转化为运动操作行为。2. 一个大型语言模型（LLM）代理，根据执行反馈和经验证的程序技能库，在上下文中修改程序结构，同时数值优化器调整其常数。每个候选程序在并行模拟场景中验证，从而通过迭代改进。</p>
-<p><strong>结果：</strong>实验表明，人类设计的奖励未能充分利用FB模型的运动操作能力，而InterEvolve进化的程序则能释放这些能力，有时通过新颖的策略。它为模拟中的多样化任务、复杂场景和长时程组合生成行为，并且进化的技能可以在物理Unitree G1机器人上自主运行。</p>
-<p><strong>为什么重要：</strong>InterEvolve使得人形机器人能够在不重新训练的情况下，通过自我进化和经验学习来适应和解决新任务，显著提升了机器人的泛化能力和自主性，对具身智能和通用机器人技术的发展具有重要意义。</p>
-<p><strong>局限：</strong>该方法依赖于一个预训练的“广谱控制器”和行为基础模型。程序的进化和验证主要在模拟环境中进行，尽管在物理机器人上进行了验证，但模拟与现实之间的差距仍可能存在。LLM代理在修改程序结构时的鲁棒性和效率可能受限。</p>
+<p><strong>研究问题：</strong>人形机器人运动操作任务的解决通常需要对控制器进行重新训练或大量人工投入，即使控制器已具备相关基础技能。</p>
+<p><strong>方法：</strong>InterEvolve研究了人形机器人运动操作的测试时演化：通过重新利用现有技能、从自身尝试中改进并保留所学知识来解决控制器从未训练过的任务，而无需重新训练。其核心在于一个对象感知的正向-反向（FB）行为基础模型，它将关于身体或对象的新奖励转化为测试时的运动操作行为。任务被指定为奖励程序：具有完成条件和可调常量的分阶段奖励。一个大型语言模型（LLM）代理根据执行反馈和经验证的程序技能库，在上下文中修改程序结构，而数值优化器则调整其常量。每个候选程序都在并行模拟场景中进行验证，从而探索新的方式来诱导、重新利用和组合控制器的现有运动能力，并通过迭代进行改进。</p>
+<p><strong>结果：</strong>实验表明，人类设计的奖励未能充分利用FB模型的运动操作能力，而InterEvolve演化出的程序则释放了这些能力，有时甚至通过新颖的策略。它为模拟中的多样化任务、复杂场景和长程组合生成了行为，并且演化出的技能可以在物理Unitree G1机器人上通过自我中心机载感知自主运行。</p>
+<p><strong>为什么重要：</strong>InterEvolve使人形机器人能够在测试时适应新的运动操作任务，通过自主学习和技能重用，显著减少了对大量重新训练和人工干预的需求，从而推动了更通用、更自主的机器人发展。</p>
+<p><strong>局限：</strong>该方法依赖于一个预先存在的“广泛控制器”（FB行为基础模型）。LLM代理和数值优化器的迭代过程虽然自动化，但仍可能需要一定的计算资源和时间。</p>
 <a class="source-link" href="https://arxiv.org/abs/2610.02196v1">阅读论文</a></article></div>
-  <div class="section-heading paper-heading"><h2>与播客相关的信号</h2></div><div class="connection-grid"><article class="connection-card"><strong>具身智能与机器人自主学习的进展</strong>
-<p>《In Good Company》播客直接讨论了人形机器人竞赛的最新进展，与具身智能和机器人自主学习的论文主题高度相关。《晚点聊》播客提到了Astra进入机器人领域以及AI个人助理的爆发，这与具身智能体和代理的自我改进研究方向一致。</p><a class="source-link" href="20261002.html#friday-wrap-up-the-humanoid-robotics-race-and-what-you-should-be-reading">打开播客</a><a class="source-link" href="20261002.html#183-与henry的-ai季报26q3-muse引爆个人助理-astra进入机器人-openai收入猛增">打开播客</a></article><article class="connection-card"><strong>大语言模型（LLM）的效率优化与能力拓展</strong>
-<p>《No Priors》播客深入探讨了前沿AI芯片如何支持大型AI模型，这与LLM效率优化（如TACO和ZFO优化器）的论文直接相关。《All-In》播客讨论了AI安全峰会和超级智能，反映了对LLM强大能力及其治理的关注。《Invest Like the Best》播客探讨了神经科技与AI的交汇前沿，暗示了AI能力的持续突破。《晚点聊》播客则直接提及OpenAI收入猛增和AI个人助理的爆发，体现了LLM在商业应用和能力上的显著拓展。</p><a class="source-link" href="20261002.html#frontier-chips-for-frontier-ai-labs-with-walter-goodwin-founder-ceo-of-fractile">打开播客</a><a class="source-link" href="20261006.html#andrew-huberman-the-frontier-of-neurotechnology-invest-like-the-best-ep-494">打开播客</a><a class="source-link" href="20261002.html#183-与henry的-ai季报26q3-muse引爆个人助理-astra进入机器人-openai收入猛增">打开播客</a></article></div>
+  <div class="section-heading paper-heading"><h2>与播客相关的信号</h2></div><div class="connection-grid"><article class="connection-card"><strong>人形机器人与具身智能体的自主学习与操作</strong>
+<p>播客讨论了人形机器人竞赛和自动驾驶的最新进展，与多篇论文中关于具身智能体自主改进、人形机器人运动操作以及为交互世界提供视觉工具的研究高度相关。这些论文共同描绘了机器人和AI代理在复杂环境中学习、适应和执行任务的未来图景。</p><a class="source-link" href="20261002.html#friday-wrap-up-the-humanoid-robotics-race-and-what-you-should-be-reading">打开播客</a></article></div>
 </section>
 <section class="weekly-cross"><div class="section-heading"><p class="kicker">Weekly Crosscheck</p><h2>三路信号交叉验证</h2></div><div class="cross-grid"><article class="cross-card"><span class="cross-type">三路共振</span>
 <h3>AI智能体与机器人技术</h3><p>学术界论文深入探讨了具身智能体（如RPG框架下的机器人自主学习）和人形机器人（如InterEvolve在测试时进化奖励程序）的自主改进与适应能力。同时，播客节目广泛讨论了AI个人助理市场的爆发、多智能体系统、具身智能的商业化前景，以及人形机器人竞赛的最新进展，强调了AI在现实世界应用中的巨大潜力。</p>
