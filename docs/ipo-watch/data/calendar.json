@@ -58,6 +58,19 @@
     "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=01256"
   },
   {
+    "market": "港股",
+    "name": "传音控股",
+    "code": "02636.HK",
+    "event_date": "2026-10-15",
+    "event_type": "上市",
+    "listing_date": "2026-10-15",
+    "apply_date": "",
+    "offer_price": "35.3-38.8",
+    "financing_total": "约30.59-33.62亿港元",
+    "source": "AAStocks",
+    "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=02636"
+  },
+  {
     "market": "A股",
     "name": "皇冠新材",
     "code": "001381.SZ",
