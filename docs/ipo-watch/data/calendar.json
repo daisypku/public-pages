@@ -38,24 +38,11 @@
     "event_type": "申购",
     "listing_date": "",
     "apply_date": "2026-10-09",
-    "offer_price": "",
-    "financing_total": "13.81亿元",
+    "offer_price": "26.88",
+    "financing_total": "9.80亿元",
     "business": "自主型号系列宽带连接终端设备的设计、研发、生产和销售",
     "source": "东方财富",
     "source_url": "https://data.eastmoney.com/xg/xg/default.html"
-  },
-  {
-    "market": "港股",
-    "name": "奕斯伟计算",
-    "code": "01256.HK",
-    "event_date": "2026-10-09",
-    "event_type": "上市",
-    "listing_date": "2026-10-09",
-    "apply_date": "",
-    "offer_price": "1.48-1.59",
-    "financing_total": "约23.24-24.97亿港元",
-    "source": "AAStocks",
-    "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=01256"
   },
   {
     "market": "港股",
