@@ -1,22 +1,7 @@
 [
   {
     "market": "A股",
-    "name": "南方乳业",
-    "code": "920196.BJ",
-    "apply_code": "920196",
-    "event_date": "2026-10-08",
-    "event_type": "中签号/结果",
-    "listing_date": "",
-    "apply_date": "2026-09-28",
-    "offer_price": "14.21",
-    "financing_total": "5.00亿元",
-    "business": "乳制品及含乳饮料的制造与销售",
-    "source": "东方财富",
-    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
-  },
-  {
-    "market": "A股",
-    "name": "宇特光电",
+    "name": "N宇特",
     "code": "920157.BJ",
     "apply_code": "920157",
     "event_date": "2026-10-09",
@@ -41,6 +26,21 @@
     "offer_price": "26.88",
     "financing_total": "9.80亿元",
     "business": "自主型号系列宽带连接终端设备的设计、研发、生产和销售",
+    "source": "东方财富",
+    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
+  },
+  {
+    "market": "A股",
+    "name": "文峰光电",
+    "code": "920296.BJ",
+    "apply_code": "920296",
+    "event_date": "2026-10-12",
+    "event_type": "申购",
+    "listing_date": "",
+    "apply_date": "2026-10-12",
+    "offer_price": "11.45",
+    "financing_total": "2.29亿元",
+    "business": "高性能、高可靠性特种线缆及光电组件等产品的研发、生产和销售",
     "source": "东方财富",
     "source_url": "https://data.eastmoney.com/xg/xg/default.html"
   },
