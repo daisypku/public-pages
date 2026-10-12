@@ -16,6 +16,21 @@
   },
   {
     "market": "A股",
+    "name": "粤芯半导体",
+    "code": "301660.SZ",
+    "apply_code": "301660",
+    "event_date": "2026-10-13",
+    "event_type": "上市",
+    "listing_date": "2026-10-13",
+    "apply_date": "2026-09-24",
+    "offer_price": "12.01",
+    "financing_total": "61.57亿元",
+    "business": "特色工艺晶圆代工为核心商业模式,服务芯片设计公司和终端客户,主要客户涵盖境内外多家一流半导体行业设计公司。公司具备集成电路、功率器件等产品的工艺研发与制造能力,产品应用领域覆盖消费电子、工业控制、汽车电子和人工智能等",
+    "source": "东方财富",
+    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
+  },
+  {
+    "market": "A股",
     "name": "通则康威",
     "code": "301718.SZ",
     "apply_code": "301718",
