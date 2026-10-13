@@ -1,22 +1,7 @@
 [
   {
     "market": "A股",
-    "name": "文峰光电",
-    "code": "920296.BJ",
-    "apply_code": "920296",
-    "event_date": "2026-10-12",
-    "event_type": "申购",
-    "listing_date": "",
-    "apply_date": "2026-10-12",
-    "offer_price": "11.45",
-    "financing_total": "2.29亿元",
-    "business": "高性能、高可靠性特种线缆及光电组件等产品的研发、生产和销售",
-    "source": "东方财富",
-    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
-  },
-  {
-    "market": "A股",
-    "name": "粤芯半导体",
+    "name": "N粤芯-U",
     "code": "301660.SZ",
     "apply_code": "301660",
     "event_date": "2026-10-13",
@@ -45,6 +30,36 @@
     "source_url": "https://data.eastmoney.com/xg/xg/default.html"
   },
   {
+    "market": "A股",
+    "name": "远大健科",
+    "code": "920285.BJ",
+    "apply_code": "920285",
+    "event_date": "2026-10-14",
+    "event_type": "申购",
+    "listing_date": "",
+    "apply_date": "2026-10-14",
+    "offer_price": "20.3",
+    "financing_total": "3.65亿元",
+    "business": "冰箱滤水器、泳池类滤芯、家用净水滤芯、咖啡机滤芯、整机等多品类净水器件及相关功能材料的研发、生产和销售",
+    "source": "东方财富",
+    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
+  },
+  {
+    "market": "A股",
+    "name": "文峰光电",
+    "code": "920296.BJ",
+    "apply_code": "920296",
+    "event_date": "2026-10-15",
+    "event_type": "中签号/结果",
+    "listing_date": "",
+    "apply_date": "2026-10-12",
+    "offer_price": "11.45",
+    "financing_total": "2.29亿元",
+    "business": "高性能、高可靠性特种线缆及光电组件等产品的研发、生产和销售",
+    "source": "东方财富",
+    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
+  },
+  {
     "market": "港股",
     "name": "传音控股",
     "code": "02636.HK",
@@ -52,8 +67,8 @@
     "event_type": "上市",
     "listing_date": "2026-10-15",
     "apply_date": "",
-    "offer_price": "35.3-38.8",
-    "financing_total": "约30.59-33.62亿港元",
+    "offer_price": "35.3",
+    "financing_total": "约30.59亿港元",
     "source": "AAStocks",
     "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=02636"
   },
