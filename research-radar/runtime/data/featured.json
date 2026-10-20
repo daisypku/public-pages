@@ -1415,5 +1415,54 @@
       "KXCPICORE-26DEC-T0.5": 0.045,
       "KXCPICORE-26DEC-T0.6": 0.03
     }
+  },
+  {
+    "t": 1792475108.245904,
+    "key": "Polymarket:1078055",
+    "prices": {
+      "4936098": 0.006,
+      "4936099": 0.008,
+      "4936100": 0.0135,
+      "4936101": 0.0295,
+      "4936103": 0.865,
+      "4951227": 0.41,
+      "4951229": 0.047
+    }
+  },
+  {
+    "t": 1792475108.245904,
+    "key": "Kalshi:KXCPI-26OCT",
+    "prices": {
+      "KXCPI-26OCT-T-0.1": 0.985,
+      "KXCPI-26OCT-T0.0": 0.94,
+      "KXCPI-26OCT-T0.3": 0.24,
+      "KXCPI-26OCT-T0.4": 0.04,
+      "KXCPI-26OCT-T0.5": 0.015
+    }
+  },
+  {
+    "t": 1792475108.245904,
+    "key": "Polymarket:455875",
+    "prices": {
+      "2176270": 0.115
+    }
+  },
+  {
+    "t": 1792475108.245904,
+    "key": "Polymarket:1040303",
+    "prices": {
+      "4662693": 0.095,
+      "4662694": 0.165
+    }
+  },
+  {
+    "t": 1792475108.245904,
+    "key": "Kalshi:KXIPOANTHROPIC-DATE",
+    "prices": {
+      "KXIPOANTHROPIC-DATE-26NOV01": 0.005,
+      "KXIPOANTHROPIC-DATE-26DEC01": 0.61,
+      "KXIPOANTHROPIC-DATE-27JAN01": 0.73,
+      "KXIPOANTHROPIC-DATE-27APR01": 0.855
+    }
   }
 ]
