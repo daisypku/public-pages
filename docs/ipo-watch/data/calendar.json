@@ -1,36 +1,6 @@
 [
   {
     "market": "A股",
-    "name": "皇冠新材",
-    "code": "001381.SZ",
-    "apply_code": "001381",
-    "event_date": "2026-10-19",
-    "event_type": "申购",
-    "listing_date": "",
-    "apply_date": "2026-10-19",
-    "offer_price": "16.98",
-    "financing_total": "9.56亿元",
-    "business": "以功能性新材料为核心,研发、生产及销售工业级胶粘材料、电子级胶粘材料及功能性薄膜材料等功能性复合材料",
-    "source": "东方财富",
-    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
-  },
-  {
-    "market": "A股",
-    "name": "远大健科",
-    "code": "920285.BJ",
-    "apply_code": "920285",
-    "event_date": "2026-10-19",
-    "event_type": "中签号/结果",
-    "listing_date": "",
-    "apply_date": "2026-10-14",
-    "offer_price": "20.3",
-    "financing_total": "3.65亿元",
-    "business": "冰箱滤水器、泳池类滤芯、家用净水滤芯、咖啡机滤芯、整机等多品类净水器件及相关功能材料的研发、生产和销售",
-    "source": "东方财富",
-    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
-  },
-  {
-    "market": "A股",
     "name": "天元重工",
     "code": "920306.BJ",
     "apply_code": "920306",
@@ -41,6 +11,36 @@
     "offer_price": "4.48",
     "financing_total": "1.92亿元",
     "business": "桥梁受力产品的研发、设计、制造、安装及技术服务",
+    "source": "东方财富",
+    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
+  },
+  {
+    "market": "A股",
+    "name": "文峰光电",
+    "code": "920296.BJ",
+    "apply_code": "920296",
+    "event_date": "2026-10-21",
+    "event_type": "上市",
+    "listing_date": "2026-10-21",
+    "apply_date": "2026-10-12",
+    "offer_price": "11.45",
+    "financing_total": "2.29亿元",
+    "business": "高性能、高可靠性特种线缆及光电组件等产品的研发、生产和销售",
+    "source": "东方财富",
+    "source_url": "https://data.eastmoney.com/xg/xg/default.html"
+  },
+  {
+    "market": "A股",
+    "name": "皇冠新材",
+    "code": "001381.SZ",
+    "apply_code": "001381",
+    "event_date": "2026-10-21",
+    "event_type": "中签号/结果",
+    "listing_date": "",
+    "apply_date": "2026-10-19",
+    "offer_price": "16.98",
+    "financing_total": "9.56亿元",
+    "business": "以功能性新材料为核心,研发、生产及销售工业级胶粘材料、电子级胶粘材料及功能性薄膜材料等功能性复合材料",
     "source": "东方财富",
     "source_url": "https://data.eastmoney.com/xg/xg/default.html"
   },
@@ -56,5 +56,31 @@
     "financing_total": "约1.75-2.27亿港元",
     "source": "AAStocks",
     "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=06157"
+  },
+  {
+    "market": "港股",
+    "name": "东山精密",
+    "code": "02384.HK",
+    "event_date": "2026-10-28",
+    "event_type": "上市",
+    "listing_date": "2026-10-28",
+    "apply_date": "",
+    "offer_price": "最高 93.8",
+    "financing_total": "约106.73亿港元",
+    "source": "AAStocks",
+    "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=02384"
+  },
+  {
+    "market": "港股",
+    "name": "微亿智造",
+    "code": "03275.HK",
+    "event_date": "2026-10-28",
+    "event_type": "上市",
+    "listing_date": "2026-10-28",
+    "apply_date": "",
+    "offer_price": "16.63-21.46",
+    "financing_total": "约6.20-8.00亿港元",
+    "source": "AAStocks",
+    "source_url": "https://www.aastocks.com/sc/stocks/market/ipo/upcomingipo/company-summary?symbol=03275"
   }
 ]
