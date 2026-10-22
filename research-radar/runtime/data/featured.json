@@ -1,59 +1,5 @@
 [
   {
-    "t": 1789970390.0671394,
-    "key": "Kalshi:KXFED-26OCT",
-    "prices": {
-      "KXFED-26OCT-T4.00": 0.545
-    }
-  },
-  {
-    "t": 1789970390.0671394,
-    "key": "Kalshi:KXCPI-26SEP",
-    "prices": {
-      "KXCPI-26SEP-T-0.3": 0.975,
-      "KXCPI-26SEP-T-0.2": 0.97,
-      "KXCPI-26SEP-T0.0": 0.975,
-      "KXCPI-26SEP-T0.1": 0.98,
-      "KXCPI-26SEP-T0.4": 0.865,
-      "KXCPI-26SEP-T0.5": 0.615,
-      "KXCPI-26SEP-T0.6": 0.22
-    }
-  },
-  {
-    "t": 1789970390.0671394,
-    "key": "Polymarket:907966",
-    "prices": {
-      "3866510": 0.015,
-      "3866511": 0.028,
-      "3866512": 0.095,
-      "4035901": 0.0475,
-      "4063373": 0.235,
-      "4218286": 0.5815,
-      "4618778": 0.205,
-      "4690431": 0.495
-    }
-  },
-  {
-    "t": 1789970390.0671394,
-    "key": "Kalshi:KXCPICOREYOY-26SEP",
-    "prices": {
-      "KXCPICOREYOY-26SEP-T2.1": 0.995,
-      "KXCPICOREYOY-26SEP-T2.2": 0.985,
-      "KXCPICOREYOY-26SEP-T2.6": 0.035,
-      "KXCPICOREYOY-26SEP-T3.2": 0.015,
-      "KXCPICOREYOY-26SEP-T3.3": 0.015
-    }
-  },
-  {
-    "t": 1789970390.0671394,
-    "key": "Polymarket:549019",
-    "prices": {
-      "2413330": 0.755,
-      "4319439": 0.515,
-      "4319441": 0.73
-    }
-  },
-  {
     "t": 1790056582.346438,
     "key": "Kalshi:KXCPI-26SEP",
     "prices": {
@@ -1468,6 +1414,58 @@
       "KXCPIYOY-26NOV-T4.7": 0.025,
       "KXCPIYOY-26NOV-T4.9": 0.015,
       "KXCPIYOY-26NOV-T5.0": 0.015
+    }
+  },
+  {
+    "t": 1792648301.0763984,
+    "key": "Kalshi:KXEARNINGSMENTIONALK-26OCT23",
+    "prices": {
+      "KXEARNINGSMENTIONALK-26OCT23-CARG": 0.985,
+      "KXEARNINGSMENTIONALK-26OCT23-HEAD": 0.995,
+      "KXEARNINGSMENTIONALK-26OCT23-STAR": 0.97,
+      "KXEARNINGSMENTIONALK-26OCT23-BOEI": 0.995,
+      "KXEARNINGSMENTIONALK-26OCT23-ONEW": 0.995,
+      "KXEARNINGSMENTIONALK-26OCT23-AMAZ": 0.995,
+      "KXEARNINGSMENTIONALK-26OCT23-OIL": 0.985,
+      "KXEARNINGSMENTIONALK-26OCT23-TAIL": 0.02,
+      "KXEARNINGSMENTIONALK-26OCT23-AI": 0.98,
+      "KXEARNINGSMENTIONALK-26OCT23-TARI": 0.995,
+      "KXEARNINGSMENTIONALK-26OCT23-ATMO": 0.995,
+      "KXEARNINGSMENTIONALK-26OCT23-PREM": 0.995
+    }
+  },
+  {
+    "t": 1792648301.0763984,
+    "key": "Kalshi:KXEARNINGSMENTIONTSLA-26OCT28",
+    "prices": {
+      "KXEARNINGSMENTIONTSLA-26OCT28-AFFO": 0.030000000000000002
+    }
+  },
+  {
+    "t": 1792648301.0763984,
+    "key": "Kalshi:KXCPI-26OCT",
+    "prices": {
+      "KXCPI-26OCT-T-0.1": 0.985,
+      "KXCPI-26OCT-T0.0": 0.965,
+      "KXCPI-26OCT-T0.1": 0.805,
+      "KXCPI-26OCT-T0.2": 0.605,
+      "KXCPI-26OCT-T0.3": 0.195,
+      "KXCPI-26OCT-T0.4": 0.05,
+      "KXCPI-26OCT-T1.0": 0.015
+    }
+  },
+  {
+    "t": 1792648301.0763984,
+    "key": "Kalshi:KXGPT-ASTRA61",
+    "prices": {
+      "KXGPT-ASTRA61-26NOV06": 0.165
+    }
+  },
+  {
+    "t": 1792648301.0763984,
+    "key": "Kalshi:KXWTI-26NOV03",
+    "prices": {
+      "KXWTI-26NOV03-T87.99": 0.895
     }
   }
 ]
