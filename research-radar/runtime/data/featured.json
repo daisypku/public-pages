@@ -1,44 +1,5 @@
 [
   {
-    "t": 1790229377.446942,
-    "key": "Polymarket:727041",
-    "prices": {
-      "3008012": 0.82,
-      "3008013": 0.09
-    }
-  },
-  {
-    "t": 1790229377.446942,
-    "key": "Kalshi:KXWTIMAX-26SEP30",
-    "prices": {
-      "KXWTIMAX-26SEP30-T106.00": 0.05,
-      "KXWTIMAX-26SEP30-T107.00": 0.055
-    }
-  },
-  {
-    "t": 1790229377.446942,
-    "key": "Kalshi:KXFED-26OCT",
-    "prices": {
-      "KXFED-26OCT-T4.00": 0.6950000000000001,
-      "KXFED-26OCT-T4.25": 0.015
-    }
-  },
-  {
-    "t": 1790229377.446942,
-    "key": "Polymarket:79104",
-    "prices": {
-      "677025": 0.7845,
-      "677026": 0.2055
-    }
-  },
-  {
-    "t": 1790229377.446942,
-    "key": "Kalshi:KXEARNINGSMENTIONJPM-26OCT13",
-    "prices": {
-      "KXEARNINGSMENTIONJPM-26OCT13-TRAD": 0.375
-    }
-  },
-  {
     "t": 1790315903.8399642,
     "key": "Polymarket:727041",
     "prices": {
@@ -1453,6 +1414,55 @@
     "key": "Kalshi:KXUST30YRRATE27-27DEC31",
     "prices": {
       "KXUST30YRRATE27-27DEC31-T1.99": 0.98
+    }
+  },
+  {
+    "t": 1792907331.3684278,
+    "key": "Kalshi:KXHORMUZMAX-26OCT25",
+    "prices": {
+      "KXHORMUZMAX-26OCT25-OCT19": 0.155,
+      "KXHORMUZMAX-26OCT25-OCT20": 0.075,
+      "KXHORMUZMAX-26OCT25-OCT21": 0.455,
+      "KXHORMUZMAX-26OCT25-OCT22": 0.08499999999999999,
+      "KXHORMUZMAX-26OCT25-OCT23": 0.11499999999999999,
+      "KXHORMUZMAX-26OCT25-OCT24": 0.04,
+      "KXHORMUZMAX-26OCT25-OCT25": 0.155
+    }
+  },
+  {
+    "t": 1792907331.3684278,
+    "key": "Polymarket:1078055",
+    "prices": {
+      "4936100": 0.012,
+      "4936101": 0.0455,
+      "4936102": 0.295,
+      "4951227": 0.71
+    }
+  },
+  {
+    "t": 1792907331.3684278,
+    "key": "Kalshi:KXBRAZILINF-26OCT",
+    "prices": {
+      "KXBRAZILINF-26OCT-T4.90": 0.185
+    }
+  },
+  {
+    "t": 1792907331.3684278,
+    "key": "Kalshi:KXSPACEXCOUNT-26OCT",
+    "prices": {
+      "KXSPACEXCOUNT-26OCT-8": 0.995,
+      "KXSPACEXCOUNT-26OCT-9": 0.98,
+      "KXSPACEXCOUNT-26OCT-10": 0.855,
+      "KXSPACEXCOUNT-26OCT-11": 0.015
+    }
+  },
+  {
+    "t": 1792907331.3684278,
+    "key": "Kalshi:KXCOMPANYACTIONMERGER-27",
+    "prices": {
+      "KXCOMPANYACTIONMERGER-27-27JAN01": 0.16999999999999998,
+      "KXCOMPANYACTIONMERGER-27-27FEB01": 0.32,
+      "KXCOMPANYACTIONMERGER-27-27MAY01": 0.6
     }
   }
 ]
