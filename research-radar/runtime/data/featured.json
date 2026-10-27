@@ -1,48 +1,5 @@
 [
   {
-    "t": 1790402279.393464,
-    "key": "Kalshi:KXTOPMODEL-26SEP30",
-    "prices": {
-      "KXTOPMODEL-26SEP30-CLAU7": 0.005,
-      "KXTOPMODEL-26SEP30-CLF51M": 0.05
-    }
-  },
-  {
-    "t": 1790402279.393464,
-    "key": "Kalshi:KX30YRDIRHM-26SEP30H",
-    "prices": {
-      "KX30YRDIRHM-26SEP30H-T5.47": 0.985,
-      "KX30YRDIRHM-26SEP30H-T5.48": 0.985,
-      "KX30YRDIRHM-26SEP30H-T5.49": 0.795
-    }
-  },
-  {
-    "t": 1790402279.393464,
-    "key": "Polymarket:1007040",
-    "prices": {
-      "4487273": 0.235,
-      "4619164": 0.668,
-      "4885967": 0.495
-    }
-  },
-  {
-    "t": 1790402279.393464,
-    "key": "Kalshi:KXFED-26OCT",
-    "prices": {
-      "KXFED-26OCT-T4.00": 0.625
-    }
-  },
-  {
-    "t": 1790402279.393464,
-    "key": "Kalshi:KXSPACEXCOUNT-26SEP",
-    "prices": {
-      "KXSPACEXCOUNT-26SEP-7": 0.705,
-      "KXSPACEXCOUNT-26SEP-8": 0.03,
-      "KXSPACEXCOUNT-26SEP-9": 0.015,
-      "KXSPACEXCOUNT-26SEP-10": 0.005
-    }
-  },
-  {
     "t": 1790490264.6332228,
     "key": "Kalshi:KXSPACEXCOUNT-26SEP",
     "prices": {
@@ -1475,6 +1432,52 @@
     "key": "Kalshi:KXRECSSNBER-26",
     "prices": {
       "KXRECSSNBER-26": 0.045
+    }
+  },
+  {
+    "t": 1793081067.870591,
+    "key": "Kalshi:KXANTHROPICLEADLEFT-28JAN01B",
+    "prices": {
+      "KXANTHROPICLEADLEFT-28JAN01B-GSX": 0.935,
+      "KXANTHROPICLEADLEFT-28JAN01B-MSX": 0.015,
+      "KXANTHROPICLEADLEFT-28JAN01B-JPMX": 0.025,
+      "KXANTHROPICLEADLEFT-28JAN01B-BOAX": 0.015,
+      "KXANTHROPICLEADLEFT-28JAN01B-CITIX": 0.025,
+      "KXANTHROPICLEADLEFT-28JAN01B-NLOX": 0.015
+    }
+  },
+  {
+    "t": 1793081067.870591,
+    "key": "Polymarket:549095",
+    "prices": {
+      "2413494": 0.993,
+      "2413495": 0.0085
+    }
+  },
+  {
+    "t": 1793081067.870591,
+    "key": "Kalshi:KX7YRDIRHM-26OCT30H",
+    "prices": {
+      "KX7YRDIRHM-26OCT30H-T5.35": 0.025
+    }
+  },
+  {
+    "t": 1793081067.870591,
+    "key": "Kalshi:KX5YRDIRHM-26OCT30H",
+    "prices": {
+      "KX5YRDIRHM-26OCT30H-T5.29": 0.02
+    }
+  },
+  {
+    "t": 1793081067.870591,
+    "key": "Kalshi:KXCPICOREYOY-26NOV",
+    "prices": {
+      "KXCPICOREYOY-26NOV-T2.5": 0.955,
+      "KXCPICOREYOY-26NOV-T2.7": 0.85,
+      "KXCPICOREYOY-26NOV-T2.8": 0.5700000000000001,
+      "KXCPICOREYOY-26NOV-T3.0": 0.185,
+      "KXCPICOREYOY-26NOV-T3.1": 0.07,
+      "KXCPICOREYOY-26NOV-T3.2": 0.055
     }
   }
 ]
