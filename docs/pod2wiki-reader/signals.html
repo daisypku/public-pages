@@ -73,59 +73,55 @@ p { margin:10px 0; } .article-page p { color:#243241; } ul { padding-left:24px; 
   <div class="signal-summary-grid"></div>
   <div class="section-heading paper-heading"><h2>最新论文推进了什么</h2></div>
   <div class="signal-summary-grid"><article class="signal-summary-card"><h3>Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success</h3>
-<p><strong>研究问题：</strong>机器人基础模型通常通过成本高昂的闭环运行进行评估，因此需要廉价的离线代理指标来衡量模型能力。</p>
-<p><strong>方法：</strong>提出“感觉运动对齐”（Sensorimotor Alignment, S²），一个无需训练的离线指标，用于衡量模型的感觉表征与物理运动几何结构的对齐程度。</p>
-<p><strong>结果：</strong>S²与下游机器人任务成功率呈正相关，可作为闭环评估前优先选择模型的低成本离线代理。S²还能在昂贵的微调前识别有潜力的视觉-语言模型（VLM）骨干。此外，S²为具身模型中观察到的现象提供了表征层面的解释。</p>
-<p><strong>为什么重要：</strong>为具身模型提供了一种新的、可经验测量的能力评估方法，扩展了柏拉图式表征假说（PRH）到具身模型，并提供了超越闭环成功率的表征层解释，有助于理解具身模型成功的原因。</p>
-<p><strong>局限：</strong>抽象中未明确提及具体局限性，但作为离线代理指标，其与真实任务成功的相关性可能并非100%，可能存在未捕获的复杂性。</p>
+<p><strong>研究问题：</strong>机器人基础模型通常通过昂贵的闭环测试进行评估，需要一种廉价的离线代理指标来衡量模型能力。</p>
+<p><strong>方法：</strong>提出 Sensorimotor Alignment ($S^2$)，一个无需训练的离线指标，衡量模型感知表示与物理运动几何结构的一致性。</p>
+<p><strong>结果：</strong>$S^2$ 与下游机器人任务成功率呈正相关，可作为闭环评估前优先选择模型的低成本离线代理。它还能在昂贵的微调前识别有潜力的视觉-语言模型（VLM）骨干。</p>
+<p><strong>为什么重要：</strong>为具身模型提供了一种新的、可测量的表示层解释，揭示了模型成功的原因，扩展了柏拉图式表示假说（PRH）到具身模型。</p>
+<p><strong>局限：</strong>论文未明确提及局限性，但作为“代理指标”，其局限性可能在于无法完全替代真实的闭环评估，以及其相关性可能因模型家族和任务类型而异。</p>
 <a class="source-link" href="https://arxiv.org/abs/2610.31670v1">阅读论文</a></article><article class="signal-summary-card"><h3>Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning</h3>
-<p><strong>研究问题：</strong>推理模型在测试时生成大量候选解决方案时，现有剪枝策略（基于质量或多样性）未能直接优化质量与多样性之间的权衡，导致计算成本高昂。</p>
-<p><strong>方法：</strong>引入一种剪枝程序，通过直接优化选定解决方案池的pass@k来解决质量与多样性的权衡，目标是最大化至少一个部分解决方案在继续生成后产生正确答案的概率。</p>
-<p><strong>结果：</strong>在八个开源推理模型上，该方法优于现有基于质量和多样性的剪枝策略，尤其在保留适度数量的部分解决方案时，增益更为显著。</p>
-<p><strong>为什么重要：</strong>提供了一种更有效、更平衡的测试时推理剪枝方法，通过直接优化质量与多样性，降低了计算成本，同时提高了解决方案的成功率。</p>
-<p><strong>局限：</strong>抽象中未明确提及具体局限性，但其性能可能受限于特定模型架构或推理任务的特性。</p>
+<p><strong>研究问题：</strong>推理模型在测试时生成大量候选解决方案，但运行所有候选方案计算成本高昂。现有剪枝策略（基于质量或多样性）未能直接平衡探索与利用的权衡。</p>
+<p><strong>方法：</strong>引入一种剪枝程序，通过直接优化选定解决方案池的 pass@$k$ 来解决质量与多样性的权衡。目标是最大化至少一个部分解决方案在完成时产生正确答案的概率。</p>
+<p><strong>结果：</strong>在八个开源推理模型上，该方法优于现有基于质量和多样性的剪枝策略，尤其是在保留适度数量的部分解决方案时，收益更为显著。</p>
+<p><strong>为什么重要：</strong>提供了一种更有效的方法来优化测试时推理的剪枝过程，通过平衡质量和多样性，显著降低计算成本，同时提高找到正确答案的概率。</p>
+<p><strong>局限：</strong>论文未明确提及局限性，但其效果可能依赖于 pass@k 目标的准确性，以及在不同推理任务和模型架构上的泛化能力。</p>
 <a class="source-link" href="https://arxiv.org/abs/2610.31667v1">阅读论文</a></article><article class="signal-summary-card"><h3>Reliable AI-Assisted Decisions via Selective Auditing</h3>
-<p><strong>研究问题：</strong>在线监控AI系统决策时，需要在最小化专家审计频率的同时，保证未审计AI错误率低于用户定义阈值。</p>
-<p><strong>方法：</strong>将该任务表述为在线约束优化问题，目标是最小化专家审计频率，同时确保AI未审计错误率低于用户定义阈值。提出了一系列具有可证明错误控制保证的算法，包括一种渐近最优效率的方法。</p>
-<p><strong>结果：</strong>在大型语言模型有害请求筛选、定性文本标注和数据标注等实验中，该方法实现了有效的错误控制，并显著减少了人工审计需求。</p>
-<p><strong>为什么重要：</strong>提高了AI辅助决策系统的可靠性，同时降低了人工干预成本，对于需要高可靠性但又希望自动化程度高的场景（如医疗、金融）具有重要意义。</p>
-<p><strong>局限：</strong>抽象中未明确提及具体局限性。</p>
+<p><strong>研究问题：</strong>在线监控AI系统决策时，需要在自动接受AI决策和咨询专家（如人工审计）之间做出选择，以最小化审计频率，同时保证未审计的AI错误率低于预设阈值。</p>
+<p><strong>方法：</strong>将任务表述为在线约束优化问题，目标是最小化专家审计频率，同时确保未审计的AI错误比例低于用户定义的阈值。提出了一系列具有可证明错误控制保证的算法，包括一种渐近最优效率的方法。</p>
+<p><strong>结果：</strong>在大型语言模型有害请求筛选、定性文本标注和数据标注实验中，该方法实现了有效的错误控制，并显著减少了人工审计需求。</p>
+<p><strong>为什么重要：</strong>为AI辅助决策系统提供了一种可靠的在线监控机制，通过智能选择性审计，在保证决策质量的同时，大幅降低了人工干预的成本。</p>
+<p><strong>局限：</strong>论文未明确提及局限性，但其性能可能受限于置信度分数的质量，以及在极端对抗性或非i.i.d.数据流下的鲁棒性。</p>
 <a class="source-link" href="https://arxiv.org/abs/2610.31662v1">阅读论文</a></article><article class="signal-summary-card"><h3>OpenTac: An Open Ecosystem for Customizable, Scalable, and Transferable 3D Tactile Sensing</h3>
-<p><strong>研究问题：</strong>现有触觉传感器在可定制性、可扩展性和在机器人控制/学习应用中的部署方面存在局限。</p>
-<p><strong>方法：</strong>提出OpenTac，一个新型传感器和全栈生态系统。核心贡献包括：1) 开发可扩展的电阻式触觉皮肤，通过结构化可变形覆盖层将切向载荷转换为空间变化的压力，并解码局部剪切向量和法向力。2) 提供高度可定制的传感器设计工具，可从2D轮廓和可展开3D表面自动生成制造文件，甚至通过文本描述。</p>
-<p><strong>结果：</strong>设计并制造了30多种传感器，表征了OpenTac产生的三维触觉场。在四种真实机器人上展示了3D触觉传感在接触式反馈控制和操作策略学习中的广泛适用性。自适应采集实现了千赫兹速率的部分读取，显著优于全阵列扫描。</p>
-<p><strong>为什么重要：</strong>显著提升了触觉传感器的可定制性、可扩展性和实用性，为机器人控制和学习应用提供了更灵活、高效的解决方案，推动了具身智能的发展。</p>
-<p><strong>局限：</strong>抽象中未明确提及具体局限性。</p>
+<p><strong>研究问题：</strong>现有触觉传感器通常缺乏可定制性、可扩展性，且难以部署到机器人控制和学习应用中。</p>
+<p><strong>方法：</strong>提出 OpenTac，一个新型传感器和全栈生态系统。核心贡献包括：1) 开发可扩展的电阻式触觉皮肤，通过结构化可变形覆盖层将切向载荷转换为空间变化的压力，并解码局部剪切向量和法向力。2) 提供高度可定制的传感器设计工具（OpenTac-CAD），可从2D轮廓或3D表面自动生成制造文件。生态系统还包括传感器模拟器、跨传感器传输和快速/自适应数据采集。</p>
+<p><strong>结果：</strong>设计并制造了30多种传感器，并在四种真实机器人上展示了3D触觉传感在接触式反馈控制和操作策略学习中的广泛适用性。自适应采集实现了千赫兹速率的部分读数，比全阵列扫描快19.2倍。</p>
+<p><strong>为什么重要：</strong>极大地降低了3D触觉传感器的设计、制造和部署门槛，使其更易于定制、扩展和集成到各种机器人应用中，推动了机器人触觉感知领域的发展。</p>
+<p><strong>局限：</strong>论文未明确提及局限性，但可能包括传感器的长期耐用性、在复杂环境下的鲁棒性，以及其在更广泛机器人任务中的泛化能力。</p>
 <a class="source-link" href="https://arxiv.org/abs/2610.31661v1">阅读论文</a></article><article class="signal-summary-card"><h3>Cost-Aware Abstention for LLM-Based IT Ticket Classification</h3>
-<p><strong>研究问题：</strong>IT支持工单的错误自动路由成本可能高于人工分类，需要一种成本敏感的拒绝策略来优化LLM分类系统的性能。</p>
-<p><strong>方法：</strong>评估成本敏感的拒绝（cost-aware abstention）作为离线、成本条件下的就绪性评估方法：在校准数据上根据明确成本选择路由策略，然后在保留的测试数据上评估该策略。比较了非LLM分类器和零/少样本LLM。</p>
-<p><strong>结果：</strong>在一个公共数据集上，TF-IDF与逻辑回归和阈值0.60的组合将测试成本降低了38.1%，错误路由率从15.3%降至3.5%。校准选择的策略在大多数情况下优于始终路由或始终拒绝。LLM在准确性上表现较差，且在某些配置下会拒绝所有工单。</p>
-<p><strong>为什么重要：</strong>强调了在AI辅助决策中考虑实际业务成本的重要性，并提供了一种评估和优化LLM分类系统成本效益的方法，有助于企业更明智地部署AI解决方案。</p>
-<p><strong>局限：</strong>结果范围限定于特定数据集、提示设计、模型端点和示例成本；该工作是一个评估框架，而非新的拒绝算法或通用部署认证。</p>
+<p><strong>研究问题：</strong>IT支持工单的错误自动路由成本可能高于人工分类。需要一种成本敏感的拒绝策略来评估和选择路由策略。</p>
+<p><strong>方法：</strong>评估成本敏感的拒绝（cost-aware abstention）作为一种离线、成本条件下的就绪性评估方法：在校准数据上根据明确的成本选择路由策略，然后在保留的测试数据上评估该策略。比较了四种非LLM分类器和四种大型语言模型在零样本和少样本提示下的表现。</p>
+<p><strong>结果：</strong>在一个包含47,837张工单的八类语料库上，TF-IDF结合逻辑回归和0.60阈值（在校准数据上选择）将测试成本从0.763降低到0.472，相对降低38.1%，同时将错误路由从15.3%降低到3.5%。校准选择的策略在16种设置中的14种情况下优于始终路由或始终推迟。</p>
+<p><strong>为什么重要：</strong>为LLM在关键业务场景（如IT工单分类）中的部署提供了一个实用的评估框架，强调了在自动化决策中考虑实际业务成本的重要性，并展示了通过拒绝策略有效降低错误成本的可能性。</p>
+<p><strong>局限：</strong>结果范围限定于特定数据集、提示设计、模型端点和示例成本；该工作是一个评估框架，而非新的拒绝算法或通用部署认证。LLM在准确性上仍远低于微调的非LLM模型。</p>
 <a class="source-link" href="https://arxiv.org/abs/2610.31657v1">阅读论文</a></article><article class="signal-summary-card"><h3>METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning</h3>
-<p><strong>研究问题：</strong>元强化学习（Meta-RL）代理需要快速适应新任务，但现有方法在处理长交互历史时存在效率问题（循环代理压缩经验，Transformer代理二次方成本）。</p>
-<p><strong>方法：</strong>提出记忆增强测试时适应（METTA），将快速适应分解为两个时间尺度：因果神经记忆进行细粒度集内适应（线性序列复杂度），紧凑的集级摘要支持长程集间任务推理。</p>
-<p><strong>结果：</strong>在未见过的Meta-World ML10/45测试环境中，METTA在低训练预算和短运行时间下实现了超过50%的成功率。在长上下文稀疏奖励PointMaze任务中，METTA表现出更结构化的探索行为，优于基于Transformer的基线。</p>
-<p><strong>为什么重要：</strong>为元强化学习提供了一种更高效、可扩展的长期上下文适应方法，提高了代理在复杂、新颖任务中的学习和适应能力，有助于开发更通用、更智能的AI代理。</p>
-<p><strong>局限：</strong>抽象中未明确提及具体局限性。</p>
+<p><strong>研究问题：</strong>元强化学习（Meta-RL）旨在使智能体快速适应新任务，但需要有效表示长时间交互历史中的任务证据。现有方法（循环网络或Transformer）在处理长序列时存在效率问题。</p>
+<p><strong>方法：</strong>提出 Memory-Enhanced Test-Time Adaptation (METTA)，将快速适应分解为两个时间尺度：因果神经记忆在剧集内进行细粒度适应，具有线性序列复杂度；紧凑的剧集级摘要支持跨剧集的长期任务推理，无需关注完整的交互历史。</p>
+<p><strong>结果：</strong>在未见过的 Meta-World ML10/45 测试环境中，METTA 在保持低训练预算和短运行时间的同时，成功率超过50%。在长上下文稀疏奖励的 PointMaze 任务中，它通过展现更结构化的探索行为，优于基于 Transformer 的基线。</p>
+<p><strong>为什么重要：</strong>提供了一种高效且可扩展的元强化学习方法，解决了长上下文任务适应的挑战，使智能体能够更有效地适应新任务和任务家族。</p>
+<p><strong>局限：</strong>论文未明确提及局限性，但可能包括神经记忆的容量限制，以及在更复杂、更开放的任务环境中的泛化能力。</p>
 <a class="source-link" href="https://arxiv.org/abs/2610.31656v1">阅读论文</a></article><article class="signal-summary-card"><h3>EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence</h3>
 <p><strong>研究问题：</strong>使用工具的语言模型代理在工具响应遗漏安全相关事实时，可能执行被禁止的操作，即使用户请求是良性的且所有返回语句都是真实的。</p>
-<p><strong>方法：</strong>引入EpiSEM-Bench，一个可执行基准，用于评估LLM代理在证据缺失情况下的不安全执行、安全边界和证据恢复能力。包含300对匹配的不安全/安全任务，跨六个领域，通过系统性地抑制关键事实来测量不安全执行。还包括一个独立审计工具，测试代理是否主动寻求缺失事实并相应地采取行动。</p>
-<p><strong>结果：</strong>基准测试揭示了十个模型在遗漏鲁棒性、证据获取和适当行动方面的显著差异。对缺失证据的抵抗力不一定转化为有效的恢复能力。恢复访问减少了所有模型的不安全执行，但代理在是否主动获取缺失事实并适当行动方面存在差异。</p>
-<p><strong>为什么重要：</strong>揭示了LLM代理在处理不完整或缺失安全信息时的潜在风险，并提供了一个评估和改进其安全性和可靠性的工具，对于构建更安全、更值得信赖的AI系统至关重要。</p>
-<p><strong>局限：</strong>抽象中未明确提及具体局限性。</p>
+<p><strong>方法：</strong>引入 EpiSEM-Bench，一个可执行的基准测试，用于评估LLM代理在证据缺失情况下的不安全执行、安全边界和证据恢复能力。包含300对匹配的不安全/安全任务，涵盖六个领域。通过系统性地抑制关键事实，衡量在关键证据遗漏下的不安全执行，并确定最小观察失败基数。一个独立的审计工具测试代理是否主动寻求缺失事实并拒绝被禁止的操作。</p>
+<p><strong>结果：</strong>基准测试揭示了十个模型在遗漏鲁棒性、证据获取和适当行动方面的显著差异。对缺失证据的抵抗力不一定转化为有效的恢复能力。恢复访问减少了所有十个模型的不安全执行，但代理在是否主动获取缺失事实并据此采取适当行动方面存在差异。</p>
+<p><strong>为什么重要：</strong>揭示了LLM代理在处理不完整信息时的安全漏洞，并提供了一个系统性的评估框架，以促进开发更安全、更可靠的工具使用型LLM代理。</p>
+<p><strong>局限：</strong>论文未明确提及局限性，但可能包括基准测试的覆盖范围和复杂性，以及其在更广泛、更现实的代理应用中的代表性。</p>
 <a class="source-link" href="https://arxiv.org/abs/2610.31650v1">阅读论文</a></article><article class="signal-summary-card"><h3>Low-Bit N-Gram Embeddings for Language Models</h3>
-<p><strong>研究问题：</strong>语言模型中使用的N-gram嵌入表需要大量内存，例如DeepSeek-V4.1-Flash分配了1960亿参数，这限制了模型的部署和扩展。</p>
-<p><strong>方法：</strong>提出以低精度存储N-gram嵌入，并系统研究了不同量化方法和位分配。</p>
-<p><strong>结果：</strong>在从头训练的模型上，4位表节省了约75%的表内存，同时保留了99%以上的验证损失改进。即使使用更少的位导致性能下降，短时间的微调也能恢复大部分损失。将节省的内存重新投入到更大的表中，可以在内存更少的情况下超越原始全精度表的性能。在现有大型模型上，低位表节省了47-55%的表内存，困惑度增加不到1.2%，下游任务性能基本保持。</p>
-<p><strong>为什么重要：</strong>提供了一种实用的方法来显著减少N-gram嵌入的内存需求，从而降低了大型语言模型的部署成本，并可能通过重新分配节省的容量来进一步提升模型性能。</p>
-<p><strong>局限：</strong>结果范围限定于特定数据集、提示设计、模型端点和示例成本。</p>
+<p><strong>研究问题：</strong>语言模型中使用的N-gram嵌入表需要大量内存，例如DeepSeek-V4.1-Flash分配了1960亿参数。需要减少内存成本同时保持性能。</p>
+<p><strong>方法：</strong>提出以低精度存储N-gram嵌入，并系统性研究了不同量化方法和位分配。</p>
+<p><strong>结果：</strong>在从头训练的nanochat-、Llama-和GPT-2家族模型中，4位表节省了约75%的表内存，同时保留了99%以上的验证损失改进。即使使用更少的位，短时间微调也能恢复大部分性能损失。将节省的内存重新投入到更大的表中，可以在内存更少的情况下超越原始全精度表的性能。在DeepSeek-V4.1-Flash和Qwen3.8-Flash-Next等大型现有模型上，低位表节省了47-55%的表内存，困惑度增加不到1.2%，下游任务性能基本保持。</p>
+<p><strong>为什么重要：</strong>为大型语言模型N-gram嵌入的内存优化提供了一种实用且有效的方法，有助于降低模型部署成本，并可能通过重新分配内存来进一步提升性能。</p>
+<p><strong>局限：</strong>论文未明确提及局限性，但可能包括低位量化对某些特定任务或极端情况下的性能影响，以及在更广泛模型架构上的泛化能力。</p>
 <a class="source-link" href="https://arxiv.org/abs/2610.31646v1">阅读论文</a></article></div>
-  <div class="section-heading paper-heading"><h2>与播客相关的信号</h2></div><div class="connection-grid"><article class="connection-card"><strong>AI模型效率与成本优化</strong>
-<p>论文2610.31646v1（低位N-gram嵌入）和2610.31633v1（KV共享）旨在通过技术手段显著降低大型语言模型的内存和计算成本，提高其部署效率。这与播客中关于AI商品化（Cliff Sosin）、AI领域存在“债务泡沫”及企业难以将AI支出转化为实际生产力（Mark Cuban, All-In with Chamath）的讨论高度相关，这些讨论都强调了对AI效率和成本控制的迫切需求。</p><a class="source-link" href="20261027.html#cliff-sosin-owning-the-complements-to-intelligence-invest-like-the-best-ep-497">打开播客</a><a class="source-link" href="20261026.html#mark-cuban-the-next-market-crash-is-where-the-real-money-is-made">打开播客</a><a class="source-link" href="20261023.html#ai-cyber-panic-ken-griffin-s-bubble-warning-the-fall-of-france">打开播客</a></article><article class="connection-card"><strong>AI代理的可靠性、安全与审计</strong>
-<p>论文2610.31662v1（可靠AI辅助决策）、2610.31650v1（EpiSEM-Bench）、2610.31657v1（成本敏感拒绝）和2610.31636v1（代理调试语料库）都关注AI系统（特别是LLM代理）在决策、安全和数据处理中的可靠性、错误控制和审计机制。这与播客中关于AI时代网络安全挑战（Cloudflare CTO）、AI伦理与安全担忧（Karen Hao）、AI代理在商业中的应用及潜在“代理战争”（Odd Lots）以及智能的局限性需要“触及现实”进行验证（Cliff Sosin）的讨论紧密相连，共同探讨了如何确保AI代理的安全、可靠和负责任的运行。</p><a class="source-link" href="20261026.html#ai-agents-are-already-changing-the-price-of-goods">打开播客</a><a class="source-link" href="20261027.html#cliff-sosin-owning-the-complements-to-intelligence-invest-like-the-best-ep-497">打开播客</a></article><article class="connection-card"><strong>具身AI与物理世界交互</strong>
-<p>论文2610.31670v1（感觉运动对齐）、2610.31661v1（OpenTac）和2610.31625v1（协调路径生成）探讨了机器人基础模型的评估、新型触觉传感器的开发以及多机器人路径规划，这些都围绕着AI如何更好地理解和操作物理世界。这与Cliff Sosin在播客中强调的“智能的局限性”以及需要“触及现实”进行实验验证的观点高度契合，他认为未来价值在于“智能的互补品”，而具身AI正是这种将抽象智能与物理世界交互结合的体现。</p><a class="source-link" href="20261027.html#cliff-sosin-owning-the-complements-to-intelligence-invest-like-the-best-ep-497">打开播客</a></article><article class="connection-card"><strong>LLM推理与可解释性</strong>
-<p>论文2610.31639v1（因果链式思考）和2610.31667v1（直接Pass@k优化）旨在提高LLM推理过程的效率和可解释性，使其“思考”过程更透明、更可靠。这与Lex Fridman播客中关于AI在数学中如何“解决”问题、AI的模式识别能力与人类深层直觉差异的哲学讨论形成呼应，共同探讨了AI推理的本质和可信度问题。</p><a class="source-link" href="20261026.html#503-ai-crisis-in-math-navier-stokes-riemann-hypothesis-complexity-theory">打开播客</a></article></div>
+  
 </section>
 <section class="weekly-cross"><div class="section-heading"><p class="kicker">Weekly Crosscheck</p><h2>三路信号交叉验证</h2></div><div class="cross-grid"><article class="cross-card"><span class="cross-type">三路共振</span>
 <h3>AI代理的崛起与影响</h3><p>多个播客和研究论文都强调了AI代理（Agent）在机器人、网络安全和企业应用中的巨大潜力与挑战。研究论文探讨了AI代理的安全性、效率和推理能力，而播客则从商业、伦理和技术前沿角度讨论了其颠覆性影响和潜在风险。</p>
