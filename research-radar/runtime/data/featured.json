@@ -1453,5 +1453,47 @@
     "prices": {
       "KXTARIFFSECTOR-27JAN01-MINE": 0.71
     }
+  },
+  {
+    "t": 1793429217.8069808,
+    "key": "Kalshi:KXWTI-26NOV03",
+    "prices": {
+      "KXWTI-26NOV03-T95.99": 0.96,
+      "KXWTI-26NOV03-T102.99": 0.55,
+      "KXWTI-26NOV03-T104.99": 0.325
+    }
+  },
+  {
+    "t": 1793429217.8069808,
+    "key": "Polymarket:841230",
+    "prices": {
+      "3554657": 0.002,
+      "3554659": 0.994
+    }
+  },
+  {
+    "t": 1793429217.8069808,
+    "key": "Kalshi:KXTXOIL-27MAR31",
+    "prices": {
+      "KXTXOIL-27MAR31-T5.7": 0.965,
+      "KXTXOIL-27MAR31-T5.8": 0.08499999999999999,
+      "KXTXOIL-27MAR31-T5.9": 0.025
+    }
+  },
+  {
+    "t": 1793429217.8069808,
+    "key": "Kalshi:KXIPOANTHROPIC-DATE",
+    "prices": {
+      "KXIPOANTHROPIC-DATE-26NOV16": 0.11,
+      "KXIPOANTHROPIC-DATE-26DEC01": 0.785,
+      "KXIPOANTHROPIC-DATE-27JAN01": 0.895
+    }
+  },
+  {
+    "t": 1793429217.8069808,
+    "key": "Kalshi:KXGDP-27JAN28",
+    "prices": {
+      "KXGDP-27JAN28-T1.5": 0.86
+    }
   }
 ]
