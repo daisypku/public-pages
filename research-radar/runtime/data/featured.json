@@ -1,61 +1,5 @@
 [
   {
-    "t": 1791007929.3273234,
-    "key": "Kalshi:KXGPT-ASTRA61",
-    "prices": {
-      "KXGPT-ASTRA61-26OCT16": 0.04,
-      "KXGPT-ASTRA61-26OCT23": 0.08499999999999999,
-      "KXGPT-ASTRA61-26OCT30": 0.11,
-      "KXGPT-ASTRA61-26NOV06": 0.15500000000000003,
-      "KXGPT-ASTRA61-26NOV13": 0.16
-    }
-  },
-  {
-    "t": 1791007929.3273234,
-    "key": "Kalshi:KXOAIPERSONALAGENT-27JAN01",
-    "prices": {
-      "KXOAIPERSONALAGENT-27JAN01-26NOV01": 0.185,
-      "KXOAIPERSONALAGENT-27JAN01-26DEC01": 0.235,
-      "KXOAIPERSONALAGENT-27JAN01-27JAN01": 0.395
-    }
-  },
-  {
-    "t": 1791007929.3273234,
-    "key": "Polymarket:606422",
-    "prices": {
-      "2589810": 0.0025,
-      "2589811": 0.0045,
-      "2589812": 0.825,
-      "2589813": 0.175,
-      "2589814": 0.0045
-    }
-  },
-  {
-    "t": 1791007929.3273234,
-    "key": "Kalshi:KXFEDDECISION-26OCT",
-    "prices": {
-      "KXFEDDECISION-26OCT-C26": 0.005,
-      "KXFEDDECISION-26OCT-C25": 0.005,
-      "KXFEDDECISION-26OCT-H0": 0.815,
-      "KXFEDDECISION-26OCT-H25": 0.185,
-      "KXFEDDECISION-26OCT-H26": 0.005
-    }
-  },
-  {
-    "t": 1791007929.3273234,
-    "key": "Polymarket:1078055",
-    "prices": {
-      "4936100": 0.018,
-      "4936101": 0.043,
-      "4936103": 0.425,
-      "4936105": 0.375,
-      "4951225": 0.695,
-      "4951226": 0.625,
-      "4951227": 0.255,
-      "4951230": 0.027
-    }
-  },
-  {
     "t": 1791096038.0320325,
     "key": "Kalshi:KXIPO-26",
     "prices": {
@@ -1441,6 +1385,53 @@
       "KXSPACEXCOUNT-26OCT-10": 0.995,
       "KXSPACEXCOUNT-26OCT-11": 0.015,
       "KXSPACEXCOUNT-26OCT-12": 0.01
+    }
+  },
+  {
+    "t": 1793604527.9294953,
+    "key": "Kalshi:KXU3MAX-30",
+    "prices": {
+      "KXU3MAX-30-7": 0.27
+    }
+  },
+  {
+    "t": 1793604527.9294953,
+    "key": "Kalshi:KXEARNINGSMENTIONCRCL-26NOV04",
+    "prices": {
+      "KXEARNINGSMENTIONCRCL-26NOV04-TEST": 0.43
+    }
+  },
+  {
+    "t": 1793604527.9294953,
+    "key": "Kalshi:KXEARNINGSMENTIONKLAR-26NOV17",
+    "prices": {
+      "KXEARNINGSMENTIONKLAR-26NOV17-DELI": 0.605
+    }
+  },
+  {
+    "t": 1793604527.9294953,
+    "key": "Kalshi:KXHORMUZWEEKLY-26NOV01",
+    "prices": {
+      "KXHORMUZWEEKLY-26NOV01-T15": 0.965,
+      "KXHORMUZWEEKLY-26NOV01-T20": 0.94,
+      "KXHORMUZWEEKLY-26NOV01-T23": 0.805,
+      "KXHORMUZWEEKLY-26NOV01-T25": 0.595,
+      "KXHORMUZWEEKLY-26NOV01-T27": 0.41000000000000003,
+      "KXHORMUZWEEKLY-26NOV01-T30": 0.14,
+      "KXHORMUZWEEKLY-26NOV01-T35": 0.025
+    }
+  },
+  {
+    "t": 1793604527.9294953,
+    "key": "Kalshi:KXHORMUZMAX-26NOV01",
+    "prices": {
+      "KXHORMUZMAX-26NOV01-OCT26": 0.11499999999999999,
+      "KXHORMUZMAX-26NOV01-OCT27": 0.035,
+      "KXHORMUZMAX-26NOV01-OCT28": 0.025,
+      "KXHORMUZMAX-26NOV01-OCT29": 0.26,
+      "KXHORMUZMAX-26NOV01-OCT30": 0.245,
+      "KXHORMUZMAX-26NOV01-OCT31": 0.36,
+      "KXHORMUZMAX-26NOV01-NOV01": 0.015
     }
   }
 ]
