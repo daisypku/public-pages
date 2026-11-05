@@ -1,49 +1,5 @@
 [
   {
-    "t": 1791271243.211606,
-    "key": "Kalshi:KXGPT-ASTRA61",
-    "prices": {
-      "KXGPT-ASTRA61-26OCT30": 0.095,
-      "KXGPT-ASTRA61-26NOV06": 0.11499999999999999,
-      "KXGPT-ASTRA61-26NOV13": 0.125
-    }
-  },
-  {
-    "t": 1791271243.211606,
-    "key": "Kalshi:KXEARNINGSMENTIONBAC-26OCT14",
-    "prices": {
-      "KXEARNINGSMENTIONBAC-26OCT14-MERR": 0.845
-    }
-  },
-  {
-    "t": 1791271243.211606,
-    "key": "Polymarket:1078055",
-    "prices": {
-      "4936103": 0.27,
-      "4936107": 0.0105,
-      "4951225": 0.555,
-      "4951226": 0.755,
-      "4951227": 0.15
-    }
-  },
-  {
-    "t": 1791271243.211606,
-    "key": "Polymarket:1007040",
-    "prices": {
-      "4619164": 0.4185,
-      "4885967": 0.205,
-      "5190120": 0.71
-    }
-  },
-  {
-    "t": 1791271243.211606,
-    "key": "Polymarket:994461",
-    "prices": {
-      "4412200": 0.225,
-      "4412201": 0.615
-    }
-  },
-  {
     "t": 1791356378.1376445,
     "key": "Kalshi:KXGPT-ASTRA61",
     "prices": {
@@ -1435,6 +1391,56 @@
     "prices": {
       "KXEARNINGSMENTIONMCD-26NOV04-BIG": 0.54,
       "KXEARNINGSMENTIONMCD-26NOV04-REVE": 0.48
+    }
+  },
+  {
+    "t": 1793864836.854614,
+    "key": "Kalshi:KXGPT-ASTRA61",
+    "prices": {
+      "KXGPT-ASTRA61-26NOV06": 0.03,
+      "KXGPT-ASTRA61-26NOV13": 0.035,
+      "KXGPT-ASTRA61-26DEC31": 0.075
+    }
+  },
+  {
+    "t": 1793864836.854614,
+    "key": "Polymarket:1250301",
+    "prices": {
+      "6172746": 0.01,
+      "6172747": 0.0125,
+      "6172749": 0.0255,
+      "6172750": 0.075,
+      "6172754": 0.555,
+      "6207380": 0.835,
+      "6207381": 0.045,
+      "6207382": 0.275,
+      "6588820": 0.3
+    }
+  },
+  {
+    "t": 1793864836.854614,
+    "key": "Kalshi:KXCPI-26NOV",
+    "prices": {
+      "KXCPI-26NOV-T-0.1": 0.8300000000000001,
+      "KXCPI-26NOV-T0.1": 0.415,
+      "KXCPI-26NOV-T0.3": 0.065,
+      "KXCPI-26NOV-T0.5": 0.035
+    }
+  },
+  {
+    "t": 1793864836.854614,
+    "key": "Kalshi:KXFEDDECISION-27JAN",
+    "prices": {
+      "KXFEDDECISION-27JAN-H0": 0.805,
+      "KXFEDDECISION-27JAN-H25": 0.185
+    }
+  },
+  {
+    "t": 1793864836.854614,
+    "key": "Kalshi:OAIAGI",
+    "prices": {
+      "OAIAGI-26": 0.0595,
+      "OAIAGI-27": 0.6399999999999999
     }
   }
 ]
