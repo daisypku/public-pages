@@ -1,46 +1,5 @@
 [
   {
-    "t": 1791356378.1376445,
-    "key": "Kalshi:KXGPT-ASTRA61",
-    "prices": {
-      "KXGPT-ASTRA61-26OCT16": 0.035,
-      "KXGPT-ASTRA61-26OCT30": 0.12,
-      "KXGPT-ASTRA61-26NOV06": 0.16
-    }
-  },
-  {
-    "t": 1791356378.1376445,
-    "key": "Kalshi:KXSPACEXSTARSHIP-15",
-    "prices": {
-      "KXSPACEXSTARSHIP-15-26OCT30": 0.08499999999999999
-    }
-  },
-  {
-    "t": 1791356378.1376445,
-    "key": "Polymarket:79104",
-    "prices": {
-      "677026": 0.5095,
-      "677027": 0.216
-    }
-  },
-  {
-    "t": 1791356378.1376445,
-    "key": "Kalshi:KXEARNINGSMENTIONLEVI-26OCT07",
-    "prices": {
-      "KXEARNINGSMENTIONLEVI-26OCT07-WORL": 0.28
-    }
-  },
-  {
-    "t": 1791356378.1376445,
-    "key": "Kalshi:KXFEDDECISION-26OCT",
-    "prices": {
-      "KXFEDDECISION-26OCT-C25": 0.005,
-      "KXFEDDECISION-26OCT-H0": 0.825,
-      "KXFEDDECISION-26OCT-H25": 0.155,
-      "KXFEDDECISION-26OCT-H26": 0.005
-    }
-  },
-  {
     "t": 1791443254.4999664,
     "key": "Kalshi:KXEARNINGSMENTIONKR-26DEC03",
     "prices": {
@@ -1441,6 +1400,57 @@
     "prices": {
       "OAIAGI-26": 0.0595,
       "OAIAGI-27": 0.6399999999999999
+    }
+  },
+  {
+    "t": 1793951198.1171691,
+    "key": "Kalshi:KXEARNINGSMENTIONLYFT-26NOV05",
+    "prices": {
+      "KXEARNINGSMENTIONLYFT-26NOV05-INTE": 0.995,
+      "KXEARNINGSMENTIONLYFT-26NOV05-ANTH": 0.005,
+      "KXEARNINGSMENTIONLYFT-26NOV05-REVE": 0.995,
+      "KXEARNINGSMENTIONLYFT-26NOV05-COMP": 0.01,
+      "KXEARNINGSMENTIONLYFT-26NOV05-SAFE": 0.995,
+      "KXEARNINGSMENTIONLYFT-26NOV05-MEMB": 0.995,
+      "KXEARNINGSMENTIONLYFT-26NOV05-OIL": 0.995,
+      "KXEARNINGSMENTIONLYFT-26NOV05-IRAN": 0.005,
+      "KXEARNINGSMENTIONLYFT-26NOV05-DOOR": 0.995
+    }
+  },
+  {
+    "t": 1793951198.1171691,
+    "key": "Kalshi:KXEARNINGSMENTIONAAOI-26NOV05",
+    "prices": {
+      "KXEARNINGSMENTIONAAOI-26NOV05-QUAN": 0.01
+    }
+  },
+  {
+    "t": 1793951198.1171691,
+    "key": "Kalshi:KXSPACEXCOUNT-26NOV",
+    "prices": {
+      "KXSPACEXCOUNT-26NOV-8": 0.58,
+      "KXSPACEXCOUNT-26NOV-9": 0.15000000000000002,
+      "KXSPACEXCOUNT-26NOV-11": 0.02
+    }
+  },
+  {
+    "t": 1793951198.1171691,
+    "key": "Kalshi:KXGPT-ASTRA61",
+    "prices": {
+      "KXGPT-ASTRA61-26NOV13": 0.755,
+      "KXGPT-ASTRA61-26DEC31": 0.92
+    }
+  },
+  {
+    "t": 1793951198.1171691,
+    "key": "Kalshi:KXCPIYOY-26NOV",
+    "prices": {
+      "KXCPIYOY-26NOV-T3.6": 0.795,
+      "KXCPIYOY-26NOV-T3.7": 0.61,
+      "KXCPIYOY-26NOV-T3.8": 0.315,
+      "KXCPIYOY-26NOV-T3.9": 0.17,
+      "KXCPIYOY-26NOV-T4.1": 0.060000000000000005,
+      "KXCPIYOY-26NOV-T4.2": 0.055
     }
   }
 ]
