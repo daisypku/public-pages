@@ -1,108 +1,5 @@
 [
   {
-    "t": 1791529996.2041419,
-    "key": "Polymarket:868080",
-    "prices": {
-      "3685385": 0.89
-    }
-  },
-  {
-    "t": 1791529996.2041419,
-    "key": "Kalshi:KXGPT-ASTRA61",
-    "prices": {
-      "KXGPT-ASTRA61-26OCT23": 0.025,
-      "KXGPT-ASTRA61-26OCT30": 0.07
-    }
-  },
-  {
-    "t": 1791529996.2041419,
-    "key": "Polymarket:1078055",
-    "prices": {
-      "4936100": 0.0105,
-      "4936101": 0.0295,
-      "4936102": 0.075,
-      "4936103": 0.32,
-      "4936107": 0.0065,
-      "4951225": 0.63,
-      "4951226": 0.62,
-      "4951230": 0.0105
-    }
-  },
-  {
-    "t": 1791529996.2041419,
-    "key": "Kalshi:KXCPI-26SEP",
-    "prices": {
-      "KXCPI-26SEP-T0.3": 0.935,
-      "KXCPI-26SEP-T0.4": 0.835,
-      "KXCPI-26SEP-T0.5": 0.45,
-      "KXCPI-26SEP-T0.6": 0.16,
-      "KXCPI-26SEP-T0.7": 0.015,
-      "KXCPI-26SEP-T0.8": 0.015,
-      "KXCPI-26SEP-T0.9": 0.005
-    }
-  },
-  {
-    "t": 1791529996.2041419,
-    "key": "Kalshi:KXCPICORE-26OCT",
-    "prices": {
-      "KXCPICORE-26OCT-T0.2": 0.505
-    }
-  },
-  {
-    "t": 1791614907.2857344,
-    "key": "Polymarket:606422",
-    "prices": {
-      "2589810": 0.0015,
-      "2589811": 0.0045,
-      "2589812": 0.835,
-      "2589813": 0.155,
-      "2589814": 0.0035
-    }
-  },
-  {
-    "t": 1791614907.2857344,
-    "key": "Kalshi:KXHORMUZPEAK-26OCT11",
-    "prices": {
-      "KXHORMUZPEAK-26OCT11-T4": 0.87,
-      "KXHORMUZPEAK-26OCT11-T5": 0.635,
-      "KXHORMUZPEAK-26OCT11-T6": 0.135,
-      "KXHORMUZPEAK-26OCT11-T8": 0.055
-    }
-  },
-  {
-    "t": 1791614907.2857344,
-    "key": "Polymarket:245930",
-    "prices": {
-      "1499672": 0.915
-    }
-  },
-  {
-    "t": 1791614907.2857344,
-    "key": "Kalshi:KXSPACEXCOUNT-26OCT",
-    "prices": {
-      "KXSPACEXCOUNT-26OCT-7": 0.97,
-      "KXSPACEXCOUNT-26OCT-8": 0.895,
-      "KXSPACEXCOUNT-26OCT-10": 0.16,
-      "KXSPACEXCOUNT-26OCT-11": 0.055,
-      "KXSPACEXCOUNT-26OCT-12": 0.03,
-      "KXSPACEXCOUNT-26OCT-13": 0.015
-    }
-  },
-  {
-    "t": 1791614907.2857344,
-    "key": "Kalshi:KXHORMUZWEEKLY-26OCT11",
-    "prices": {
-      "KXHORMUZWEEKLY-26OCT11-T20": 0.725,
-      "KXHORMUZWEEKLY-26OCT11-T25": 0.295,
-      "KXHORMUZWEEKLY-26OCT11-T30": 0.125,
-      "KXHORMUZWEEKLY-26OCT11-T35": 0.035,
-      "KXHORMUZWEEKLY-26OCT11-T40": 0.025,
-      "KXHORMUZWEEKLY-26OCT11-T45": 0.025,
-      "KXHORMUZWEEKLY-26OCT11-T50": 0.015,
-      "KXHORMUZWEEKLY-26OCT11-T75": 0.015
-    }
-  },
-  {
     "t": 1791701707.518711,
     "key": "Kalshi:KXOAIPERSONALAGENT-27JAN01",
     "prices": {
@@ -1503,6 +1400,60 @@
     "prices": {
       "KXFEDDECISION-27MAR-H0": 0.525,
       "KXFEDDECISION-27MAR-H25": 0.395
+    }
+  },
+  {
+    "t": 1794210280.3910472,
+    "key": "Polymarket:1250301",
+    "prices": {
+      "6172748": 0.0165,
+      "6172754": 0.37,
+      "6207380": 0.72
+    }
+  },
+  {
+    "t": 1794210280.3910472,
+    "key": "Kalshi:KXCEONVDA-01JAN33",
+    "prices": {
+      "KXCEONVDA-01JAN33-01JAN27": 0.20500000000000002,
+      "KXCEONVDA-01JAN33-01JUL27": 0.29000000000000004,
+      "KXCEONVDA-01JAN33-01JAN28": 0.405,
+      "KXCEONVDA-01JAN33-01JAN29": 0.495
+    }
+  },
+  {
+    "t": 1794210280.3910472,
+    "key": "Polymarket:548858",
+    "prices": {
+      "2412744": 0.1645,
+      "2412745": 0.3045,
+      "2412746": 0.3195,
+      "2412747": 0.155,
+      "2412749": 0.015
+    }
+  },
+  {
+    "t": 1794210280.3910472,
+    "key": "Kalshi:KXHORMUZWEEKLY-26NOV08",
+    "prices": {
+      "KXHORMUZWEEKLY-26NOV08-T15": 0.975,
+      "KXHORMUZWEEKLY-26NOV08-T20": 0.78,
+      "KXHORMUZWEEKLY-26NOV08-T23": 0.375,
+      "KXHORMUZWEEKLY-26NOV08-T25": 0.29500000000000004,
+      "KXHORMUZWEEKLY-26NOV08-T27": 0.095,
+      "KXHORMUZWEEKLY-26NOV08-T30": 0.015,
+      "KXHORMUZWEEKLY-26NOV08-T40": 0.005
+    }
+  },
+  {
+    "t": 1794210280.3910472,
+    "key": "Kalshi:KXCPICORE-26OCT",
+    "prices": {
+      "KXCPICORE-26OCT-T0.0": 0.985,
+      "KXCPICORE-26OCT-T0.1": 0.85,
+      "KXCPICORE-26OCT-T0.2": 0.44999999999999996,
+      "KXCPICORE-26OCT-T0.3": 0.07500000000000001,
+      "KXCPICORE-26OCT-T0.4": 0.005
     }
   }
 ]
