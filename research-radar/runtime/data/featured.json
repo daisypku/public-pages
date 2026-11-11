@@ -1,51 +1,5 @@
 [
   {
-    "t": 1791788690.037082,
-    "key": "Polymarket:1078055",
-    "prices": {
-      "4936103": 0.34,
-      "4936105": 0.255,
-      "4951225": 0.655,
-      "4951226": 0.52,
-      "4951227": 0.175,
-      "4951228": 0.115
-    }
-  },
-  {
-    "t": 1791788690.037082,
-    "key": "Kalshi:KXHORMUZPEAK-26OCT11",
-    "prices": {
-      "KXHORMUZPEAK-26OCT11-T4": 0.76,
-      "KXHORMUZPEAK-26OCT11-T6": 0.235,
-      "KXHORMUZPEAK-26OCT11-T8": 0.035,
-      "KXHORMUZPEAK-26OCT11-T10": 0.025,
-      "KXHORMUZPEAK-26OCT11-T12": 0.015
-    }
-  },
-  {
-    "t": 1791788690.037082,
-    "key": "Kalshi:KXGEMINI-GEM4",
-    "prices": {
-      "KXGEMINI-GEM4-26OCT16": 0.64,
-      "KXGEMINI-GEM4-26NOV01": 0.875,
-      "KXGEMINI-GEM4-26NOV15": 0.975
-    }
-  },
-  {
-    "t": 1791788690.037082,
-    "key": "Polymarket:549019",
-    "prices": {
-      "4319441": 0.62
-    }
-  },
-  {
-    "t": 1791788690.037082,
-    "key": "Polymarket:1034268",
-    "prices": {
-      "4620900": 0.765
-    }
-  },
-  {
     "t": 1791876548.1303723,
     "key": "Kalshi:KXFEDDECISION-26OCT",
     "prices": {
@@ -1468,6 +1422,56 @@
       "KXCPIYOY-26NOV-T3.9": 0.04,
       "KXCPIYOY-26NOV-T4.0": 0.025,
       "KXCPIYOY-26NOV-T4.3": 0.025
+    }
+  },
+  {
+    "t": 1794382551.615363,
+    "key": "Kalshi:KXGPT-ASTRA61",
+    "prices": {
+      "KXGPT-ASTRA61-26NOV13": 0.49,
+      "KXGPT-ASTRA61-26DEC31": 0.955
+    }
+  },
+  {
+    "t": 1794382551.615363,
+    "key": "Polymarket:1262075",
+    "prices": {
+      "6268102": 0.767
+    }
+  },
+  {
+    "t": 1794382551.615363,
+    "key": "Kalshi:KXCPI-26NOV",
+    "prices": {
+      "KXCPI-26NOV-T-0.3": 0.97,
+      "KXCPI-26NOV-T-0.2": 0.915,
+      "KXCPI-26NOV-T0.0": 0.32999999999999996,
+      "KXCPI-26NOV-T0.1": 0.10500000000000001,
+      "KXCPI-26NOV-T0.2": 0.045,
+      "KXCPI-26NOV-T0.3": 0.015,
+      "KXCPI-26NOV-T0.5": 0.015
+    }
+  },
+  {
+    "t": 1794382551.615363,
+    "key": "Kalshi:KXCPIYOY-26DEC",
+    "prices": {
+      "KXCPIYOY-26DEC-T3.6": 0.395,
+      "KXCPIYOY-26DEC-T3.7": 0.355,
+      "KXCPIYOY-26DEC-T3.8": 0.25,
+      "KXCPIYOY-26DEC-T3.9": 0.155,
+      "KXCPIYOY-26DEC-T4.0": 0.16999999999999998,
+      "KXCPIYOY-26DEC-T4.2": 0.07500000000000001,
+      "KXCPIYOY-26DEC-T4.3": 0.07500000000000001,
+      "KXCPIYOY-26DEC-T4.8": 0.03
+    }
+  },
+  {
+    "t": 1794382551.615363,
+    "key": "Kalshi:KXBRENTMON-26NOV3017",
+    "prices": {
+      "KXBRENTMON-26NOV3017-T87.99": 0.6,
+      "KXBRENTMON-26NOV3017-T95.99": 0.275
     }
   }
 ]
