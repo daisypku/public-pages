@@ -1,63 +1,5 @@
 [
   {
-    "t": 1792128973.7866383,
-    "key": "Polymarket:1078055",
-    "prices": {
-      "4936101": 0.032,
-      "4936102": 0.105,
-      "4936103": 0.6,
-      "4936105": 0.07,
-      "4936107": 0.0035,
-      "4951227": 0.255,
-      "4951229": 0.0455,
-      "5612213": 0.46
-    }
-  },
-  {
-    "t": 1792128973.7866383,
-    "key": "Polymarket:548858",
-    "prices": {
-      "2412746": 0.146,
-      "2412747": 0.295,
-      "2412748": 0.199,
-      "2412749": 0.07
-    }
-  },
-  {
-    "t": 1792128973.7866383,
-    "key": "Kalshi:KXCPI-26OCT",
-    "prices": {
-      "KXCPI-26OCT-T0.1": 0.855,
-      "KXCPI-26OCT-T0.2": 0.545,
-      "KXCPI-26OCT-T0.3": 0.26,
-      "KXCPI-26OCT-T0.4": 0.155,
-      "KXCPI-26OCT-T0.5": 0.11499999999999999,
-      "KXCPI-26OCT-T0.6": 0.03,
-      "KXCPI-26OCT-T0.7": 0.025,
-      "KXCPI-26OCT-T0.8": 0.005,
-      "KXCPI-26OCT-T1.0": 0.01
-    }
-  },
-  {
-    "t": 1792128973.7866383,
-    "key": "Polymarket:500753",
-    "prices": {
-      "2299952": 0.175,
-      "2299954": 0.62,
-      "2299955": 0.7,
-      "2299956": 0.86
-    }
-  },
-  {
-    "t": 1792128973.7866383,
-    "key": "Kalshi:KXCPIYOY-26DEC",
-    "prices": {
-      "KXCPIYOY-26DEC-T3.1": 0.945,
-      "KXCPIYOY-26DEC-T3.2": 0.955,
-      "KXCPIYOY-26DEC-T4.6": 0.045
-    }
-  },
-  {
     "t": 1792214661.6916242,
     "key": "Polymarket:1078055",
     "prices": {
@@ -1485,6 +1427,59 @@
       "KXCPIYOY-26DEC-T4.4": 0.045,
       "KXCPIYOY-26DEC-T4.5": 0.035,
       "KXCPIYOY-26DEC-T4.6": 0.035
+    }
+  },
+  {
+    "t": 1794728386.4822972,
+    "key": "Kalshi:KXNVDAMENTION-26DEC01",
+    "prices": {
+      "KXNVDAMENTION-26DEC01-NQE": 0.965,
+      "KXNVDAMENTION-26DEC01-CHIN": 0.03
+    }
+  },
+  {
+    "t": 1794728386.4822972,
+    "key": "Kalshi:KXCPI-26NOV",
+    "prices": {
+      "KXCPI-26NOV-T-0.2": 0.92,
+      "KXCPI-26NOV-T-0.1": 0.705,
+      "KXCPI-26NOV-T0.0": 0.265,
+      "KXCPI-26NOV-T0.1": 0.065,
+      "KXCPI-26NOV-T0.2": 0.02,
+      "KXCPI-26NOV-T0.3": 0.015
+    }
+  },
+  {
+    "t": 1794728386.4822972,
+    "key": "Kalshi:KXHORMUZPEAK-26NOV15",
+    "prices": {
+      "KXHORMUZPEAK-26NOV15-T3": 0.915,
+      "KXHORMUZPEAK-26NOV15-T4": 0.53,
+      "KXHORMUZPEAK-26NOV15-T5": 0.31,
+      "KXHORMUZPEAK-26NOV15-T7": 0.095,
+      "KXHORMUZPEAK-26NOV15-T9": 0.015,
+      "KXHORMUZPEAK-26NOV15-T10": 0.015
+    }
+  },
+  {
+    "t": 1794728386.4822972,
+    "key": "Kalshi:KXHORMUZWEEKLY-26NOV15",
+    "prices": {
+      "KXHORMUZWEEKLY-26NOV15-T15": 0.925,
+      "KXHORMUZWEEKLY-26NOV15-T20": 0.64,
+      "KXHORMUZWEEKLY-26NOV15-T23": 0.22999999999999998,
+      "KXHORMUZWEEKLY-26NOV15-T25": 0.11499999999999999,
+      "KXHORMUZWEEKLY-26NOV15-T27": 0.055,
+      "KXHORMUZWEEKLY-26NOV15-T35": 0.005
+    }
+  },
+  {
+    "t": 1794728386.4822972,
+    "key": "Kalshi:KXSPACEXCOUNT-26NOV",
+    "prices": {
+      "KXSPACEXCOUNT-26NOV-7": 0.83,
+      "KXSPACEXCOUNT-26NOV-8": 0.305,
+      "KXSPACEXCOUNT-26NOV-9": 0.045
     }
   }
 ]
