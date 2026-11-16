@@ -1,7 +1,7 @@
 name: Prediction Radar Daily
 
-on:
-  schedule:
+#on:
+  #schedule:
   #20261116注释掉，因为没有去更新finegrained token  - cron: '0 1 * * *' # 09:00 Asia/Shanghai; starts may be delayed by GitHub.
   workflow_dispatch:
   push:
