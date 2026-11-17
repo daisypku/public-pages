@@ -169,38 +169,5 @@
     },
     "collected_at": "2026-10-20T05:08:47+00:00",
     "id": "1bbdb68df2a0a9512d650474"
-  },
-  {
-    "exchange": "CNINFO",
-    "issuer": "江苏清泉化学股份有限公司",
-    "document_type": "A股IPO项目更新",
-    "publish_date": "2026-10-17",
-    "update_date": "2026-10-17",
-    "board": "A股IPO",
-    "industry": "化学原料和化学制品制造业",
-    "sponsor": "国信证券股份有限公司",
-    "status": "终止审查（撤回）",
-    "pdf_url": null,
-    "source_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/list",
-    "detail_url": "https://www.cninfo.com.cn/new/commonUrl?url=disclosure/ipo/detail&code=C1761",
-    "title": "江苏清泉化学股份有限公司 A股IPO项目更新",
-    "summary": {
-      "financial_snapshot": {
-        "summary": "该公司介绍来自巨潮IPO项目接口；若后续定位到PDF招股书，将补全标准化财务快照。"
-      },
-      "key_points": [
-        "当前审核状态：终止审查（撤回）",
-        "保荐机构：国信证券股份有限公司",
-        "所属行业：化学原料和化学制品制造业",
-        "净利润参考值：1.07亿元"
-      ],
-      "one_line_business": "公司是一家专业从事特种精细化学品和特种高分子新材料研发、生产与销售的国家级专精特新重点“小巨人”企业，聚焦于具有高透明、高耐候性、耐高温等特性的高分子新材料与单体的制备，以及非粮生物基材料糠醛的综合利用开发，构建了涵盖新材料单体、绿色溶剂、医药及农药中间体、特种高分子新材料的四大产品体系，并在终端广泛应用至航空航天、风电、汽车、电子电气、医疗器械、化工、医药、农药等领域。",
-      "risk_factors": [
-        "尚未基于招股书全文生成风险摘要。"
-      ],
-      "source": "cninfo_project"
-    },
-    "collected_at": "2026-10-20T05:08:50+00:00",
-    "id": "f2bfad6b1a60309d3173e3ae"
   }
 ]
