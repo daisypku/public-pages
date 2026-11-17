@@ -1,15 +1,10 @@
 name: Prediction Radar Daily
 
-#on:
-  #schedule:
-  #20261116注释掉，因为没有去更新finegrained token  - cron: '0 1 * * *' # 09:00 Asia/Shanghai; starts may be delayed by GitHub.
+# Temporarily paused: no scheduled or push triggers.
+# To resume, remove `if: ${{ false }}` from jobs.daily and restore the
+# desired triggers under `on` (previous schedule: '0 1 * * *', 09:00 Asia/Shanghai).
+on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - 'research-radar/*.py'
-      - 'research-radar/config.json'
-      - '.github/workflows/prediction-radar.yml'
 
 permissions:
   contents: write
@@ -21,6 +16,7 @@ concurrency:
 
 jobs:
   daily:
+    if: ${{ false }} # Pause all work, including accidental manual dispatches.
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
