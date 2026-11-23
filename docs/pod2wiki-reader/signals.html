@@ -73,86 +73,85 @@ p { margin:10px 0; } .article-page p { color:#243241; } ul { padding-left:24px; 
   <div class="signal-summary-grid"></div>
   <div class="section-heading paper-heading"><h2>最新论文推进了什么</h2></div>
   <div class="signal-summary-grid"><article class="signal-summary-card"><h3>PlayCraft: Designing Engaging Games from Agent Play Experience</h3>
-<p><strong>研究问题：</strong>现有AI代理能生成可玩游戏，但这些游戏缺乏吸引力，特别是难以通过设计实现精通感（mastery），而精通感是游戏吸引力的关键来源。设计精通感通常需要大量人类玩家测试和调整。</p>
-<p><strong>方法：</strong>提出PlayCraft框架，一个自动化系统，利用基于视觉的代理通过重复游戏体验来修订游戏，以增强精通感。该框架交替进行“玩”和“制作”：玩家代理观察屏幕、操作控制并追求游戏目标，同时保留记忆并报告进度、结果、决策和反思；制作代理利用这些报告评估玩家能力、预测不同熟练度下的表现，并根据目标学习进程诊断游戏，通过提供有意义的改进机会来修订游戏。</p>
+<p><strong>研究问题：</strong>当前的AI代理虽然能生成可玩的游戏，但这些游戏往往缺乏吸引力，特别是难以通过设计来培养玩家的精通感，而这通常需要大量的人工游玩和调整。</p>
+<p><strong>方法：</strong>PlayCraft是一个自动化框架，它通过一个基于视觉的代理来玩游戏，并利用其详细的游玩经验来修改游戏以培养玩家的精通感。该框架在“游玩”和“制作”阶段交替进行：游玩代理通过观察屏幕、控制游戏并保留记忆来重复进行游戏，并报告进度、结果、决策和反思；制作代理则利用这些报告评估玩家能力、预测不同熟练度下的表现，并诊断游戏中的不足，通过提供有意义的改进机会来修订游戏。</p>
 <p><strong>结果：</strong>与初始游戏相比，PlayCraft在大多数游戏中产生了更大的学习增益和更陡峭的学习曲线。在每个智能设置下，它在各项指标的宏观平均表现上均优于基线方法。</p>
-<p><strong>为什么重要：</strong>该框架提供了一种自动化设计引人入胜游戏的方法，通过专注于精通感来减少对大量人工测试和调整的依赖，有望提升AI生成游戏的质量和玩家体验。</p>
-<p><strong>局限：</strong>论文主要关注“精通感”这一吸引力来源，可能未涵盖其他重要的游戏吸引力因素。评估是基于玩家代理而非人类玩家，其体验与人类玩家可能存在差异。</p>
+<p><strong>为什么重要：</strong>该研究提供了一种自动化设计引人入胜游戏的方法，特别是通过培养玩家的精通感来提升游戏体验，从而减少了游戏设计中对大量人工测试和调整的需求。</p>
+<p><strong>局限：</strong>论文主要关注“精通感”作为吸引力的一个关键来源，可能未全面探讨其他影响游戏吸引力的因素。</p>
 <a class="source-link" href="https://arxiv.org/abs/2611.26624v1">阅读论文</a></article><article class="signal-summary-card"><h3>TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming</h3>
-<p><strong>研究问题：</strong>混合架构已成为开源大型语言模型（LLM）的主流，其全局注意力层和有界状态层维护着异构缓存，这些缓存的需求随上下文长度和并发性而变化，导致在CPU-GPU超芯片上高效分配和管理GPU内存面临挑战。</p>
-<p><strong>方法：</strong>提出TideCache服务系统，包含三个组件用于在缓存之间分配GPU内存并在GPU和主机内存之间管理其驻留：1) 透明缓存池，在固定虚拟地址后重新分配物理页面，保持缓存布局和后端接口；2) 缓存流媒体，利用有界状态层提供的计算间隔，将下一个全局注意力层的前缀预取到全局注意力层共享的GPU槽中，减少GPU驻留并与计算重叠；3) 请求调度器，根据请求大小和队列状态选择驻留或流式执行，并触发容量调整。</p>
-<p><strong>结果：</strong>在SGLang中实现，并在GB300和GH200上针对七种模型/平台配置进行评估。TideCache完成的代理回合数最多可达2.04倍，将整体P50每token延迟降低20-59%，并将代理P50 TTFT（首次token生成时间）提高1.40-3.05倍，优于使用HiCache的SGLang。</p>
-<p><strong>为什么重要：</strong>显著提高了混合LLM在超芯片架构上的服务效率和延迟，使得LLM能够处理更多请求并提供更快的响应，对于大规模部署和应用至关重要。</p>
-<p><strong>局限：</strong>评估主要基于SGLang框架和特定的GB300、GH200硬件平台，其在其他LLM服务框架或不同硬件配置上的通用性可能需要进一步验证。</p>
+<p><strong>研究问题：</strong>混合架构已成为开源大型语言模型（LLM）的主流，其全局注意力层和有界状态层维护着异构缓存，这些缓存的需求随上下文长度和并发性而变化，导致在CPU-GPU超芯片上高效服务LLM面临挑战。</p>
+<p><strong>方法：</strong>TideCache是一个服务系统，包含三个组件用于在GPU内存中分配缓存并管理其在GPU和主机内存之间的驻留：1) 透明缓存池在固定虚拟地址后重新分配物理页面，保持缓存布局和后端接口；2) 缓存流式传输器利用有界状态层提供的计算间隔，将下一个全局注意力层的前缀预取到全局注意力层共享的GPU槽中，减少GPU驻留并重叠层间传输与计算；3) 请求调度器根据请求大小和队列状态选择驻留或流式执行，并触发容量调整。</p>
+<p><strong>结果：</strong>与使用SGLang和HiCache相比，TideCache在GB300和GH200上的七种模型/平台配置中，完成了多达2.04倍的代理回合，将整体P50每令牌延迟降低了20-59%，并将代理P50 TTFT（首次令牌时间）提高了1.40-3.05倍。</p>
+<p><strong>为什么重要：</strong>该系统显著提高了混合LLM服务的效率和吞吐量，使其在实际应用中更具可行性，尤其是在处理大规模并发请求和长上下文时。</p>
+<p><strong>局限：</strong>研究主要在GB300和GH200等特定硬件平台以及SGLang框架上进行评估，其在其他硬件或软件环境下的通用性可能需要进一步验证。</p>
 <a class="source-link" href="https://arxiv.org/abs/2611.26619v1">阅读论文</a></article><article class="signal-summary-card"><h3>AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control</h3>
-<p><strong>研究问题：</strong>前沿多模态语言代理（如GPT-6 Astra）在通过低级数值动作直接控制机器人方面表现出强大能力，但现有基准测试仅报告回合级成功率，未能揭示这些代理如何成功或在何处失败，缺乏动作级别的细致分析。</p>
-<p><strong>方法：</strong>提出AgentRoboCritic，一个意图导向的批判框架，用于对12个操作基准上的前沿代理进行系统性的动作级别分析。在该框架中，策略代理在每个动作的同时声明一个局部意图，批判器根据该意图评估动作的结果和失败模式。论文还验证了批判器在一个包含400个动作的人工标注基准上，并发布了一个包含12,844个标注动作的数据集，以及一个经过微调的开源批判器Muse-Glimmer-30B。</p>
-<p><strong>结果：</strong>动作级别分析展示了前沿代理在直接机器人控制方面的潜力，包括从局部执行失败中闭环恢复、跨多样场景的可靠语义接地以及强大的零样本操作能力。同时也识别出其局限性，包括抓取和对齐等与任务相关的物理执行瓶颈，以及在不同失败模式下恢复能力不均。微调后的Muse-Glimmer-30B批判器的失败模式准确率从32.58%提高到74.24%。</p>
-<p><strong>为什么重要：</strong>提供了一个系统性的动作级别分析框架，深入理解前沿AI代理在机器人控制中的能力和局限性，有助于更精准地改进机器人策略和代理设计，推动机器人技术发展。</p>
-<p><strong>局限：</strong>论文识别出的局限性（如物理执行瓶颈）是针对所研究的代理本身，而非批判框架的局限。批判器的准确率虽有提升，但仍有改进空间。</p>
+<p><strong>研究问题：</strong>GPT-6 Astra等前沿多模态语言代理在直接机器人控制方面表现出强大能力，但现有基准仅报告回合级成功率，未能揭示这些代理如何成功或在何处失败，缺乏动作层面的详细分析。</p>
+<p><strong>方法：</strong>本研究提出了AgentRoboCritic，一个意图导向的批评框架，用于对前沿代理在12个操作基准上的直接机器人控制进行系统性的动作层面分析。在该框架中，策略代理在执行每个动作时会声明一个局部意图，而批评代理则根据此意图评估动作的结果和失败模式。研究还通过400个动作的人工标注基准验证了批评代理，并发布了一个包含12,844个标注动作的数据集以及一个经过微调的开源批评代理Muse-Glimmer-30B。</p>
+<p><strong>结果：</strong>动作层面的分析展示了前沿代理在直接机器人控制方面的潜力，包括从局部执行失败中闭环恢复、跨多样场景的可靠语义接地以及强大的零样本操作能力。同时也指出了其局限性，如抓取和对齐等与任务相关的物理执行瓶颈，以及在不同失败模式下恢复能力的不均衡。Muse-Glimmer-30B的失败模式准确率从32.58%提升至74.24%。</p>
+<p><strong>为什么重要：</strong>该研究提供了对前沿代理在直接机器人控制能力和局限性的深入、动作层面的理解，有助于指导未来机器人策略的改进和开发更鲁棒的具身智能系统。</p>
+<p><strong>局限：</strong>研究主要集中在操作任务上，其结论在其他类型的机器人任务（如导航、移动）上的适用性可能需要进一步探索。批评代理的准确率虽然显著提高，但仍有提升空间。</p>
 <a class="source-link" href="https://arxiv.org/abs/2611.26613v1">阅读论文</a></article><article class="signal-summary-card"><h3>SoK: Assessing the Evolution of LLM Capability in Software Vulnerability Research</h3>
-<p><strong>研究问题：</strong>关于LLM代理在软件漏洞研究中能力的说法分散在论文、供应商报告和披露中，且难以比较，导致难以系统评估其演变和影响。</p>
-<p><strong>方法：</strong>引入一个框架，根据类似于驾驶自动化级别的自主性等级来评估LLM的能力，并通过正确性、可用性和证据强度来限定每个主张。使用此框架系统化了LLM在漏洞研究中能力的已发表证据，并测量了LLM安全能力演变在十年公共漏洞记录、咨询和利用数据中的后果。</p>
-<p><strong>结果：</strong>发现LLM代理在2026年受限前沿模型出现之前，就已经在没有人为干预的情况下发现、验证和修补了真实软件中的漏洞，并且开源模型随后在发现和验证方面达到了可比的自主性。2026年，披露的漏洞数量增加了一倍多，其中严重或高危漏洞的比例增加，并且在广泛使用的代码中存在十年或更长时间的严重错误被报告的频率是以前的数倍。然而，漏洞生命周期各阶段（从报告到修复，从披露到攻击）之间的时间尚未发生显著变化。</p>
-<p><strong>为什么重要：</strong>首次系统性地评估了LLM在软件漏洞研究中的能力演变及其对行业的影响，揭示了LLM在漏洞发现方面的巨大潜力，并为利益相关者提供了缓解措施的指导。</p>
-<p><strong>局限：</strong>尽管LLM显著增加了漏洞披露数量和严重性，但从报告到修复、从披露到攻击的时间并未明显缩短，这表明LLM可能更多地是发现漏洞，而非加速整个漏洞生命周期。该框架依赖于已发表证据，可能存在选择性偏差。</p>
+<p><strong>研究问题：</strong>关于基于LLM的代理在软件漏洞研究中能力提升的说法分散在各种论文、供应商报告和披露中，缺乏可比性，难以系统评估其演变和影响。</p>
+<p><strong>方法：</strong>研究引入了一个框架，根据驾驶自动化级别对LLM能力进行自主性评级，并根据正确性、可用性和证据强度对每个声明进行限定。利用该框架系统化了LLM在漏洞研究中能力的已发表证据。此外，通过分析十年来的公共漏洞记录、安全公告和利用数据，衡量了LLM安全能力演变带来的后果，并根据有充分证据支持的缓解措施提出了对各利益相关方的指导。</p>
+<p><strong>结果：</strong>研究发现，在2026年受限的前沿模型出现之前，代理就已经在没有人为干预的情况下发现、验证和修补了真实软件中的漏洞，并且开源模型随后在发现和验证方面也达到了可比的自主性。2026年，披露的漏洞数量增加了一倍多，其中关键或高危漏洞的比例不断上升，存在十年或更久的严重漏洞被报告的频率也比以前高出数倍。然而，漏洞生命周期各阶段（从报告到修复，从披露到攻击）之间的时间尚未发生显著变化。</p>
+<p><strong>为什么重要：</strong>该研究首次系统性地评估了LLM在软件漏洞研究中的能力演变及其对网络安全领域的影响，为供应商、研究人员和政策制定者提供了关于LLM在漏洞发现和修复中作用的清晰图景和应对策略。</p>
+<p><strong>局限：</strong>研究对漏洞记录的分析截止到2026年，可能无法完全捕捉到更长期的趋势变化。此外，评估依赖于已发表的证据，可能存在一定的选择性偏差。</p>
 <a class="source-link" href="https://arxiv.org/abs/2611.26601v1">阅读论文</a></article><article class="signal-summary-card"><h3>A Tutorial on Complementarity-Based Contact Models for Robotics</h3>
-<p><strong>研究问题：</strong>模拟刚体接触动力学是机器人学的基础，但广泛使用的锥互补公式的物理假设和数值解需要深厚的背景知识。现有综述、专著或课程笔记主要面向计算力学或计算机图形学，或仅记录单一模拟器，缺乏为机器人学提供统一符号、完整推导和自洽教学的资源。</p>
-<p><strong>方法：</strong>本教程旨在弥补这一空白，将刚体动力学、锥优化和摩擦接触结合起来。具体解释了互补条件如何编码非穿透和摩擦耗散，区分了等效转录和凸松弛，探讨了运动和接触力的存在性和唯一性，并比较了不同求解器方法（一阶和基于牛顿的方法、正则化和近端策略），讨论了计算成本、鲁棒性和物理保真度之间的权衡。</p>
-<p><strong>结果：</strong>提供了一个自洽的教学资源，统一了锥互补接触模型的符号和推导。解释了物理假设、数值解、凸松弛可能引入的伪影，以及求解器在多解选择中的作用。帮助读者理解模拟结果，选择合适的公式和求解器，并开发自己的接触动力学例程。</p>
-<p><strong>为什么重要：</strong>填补了机器人学领域在接触模型教学方面的空白，为机器人研究人员和实践者提供了理解、应用和开发接触动力学算法的全面指导，有助于提升机器人模拟的准确性和效率。</p>
-<p><strong>局限：</strong>作为一篇教程，其主要成果在于知识的整合和清晰的解释，而非提出新的科学发现。其有效性取决于读者的背景知识和学习投入。</p>
+<p><strong>研究问题：</strong>在机器人领域，模拟刚体接触动力学至关重要，但广泛使用的锥互补性公式需要深厚的背景知识，且现有教程多面向计算力学或计算机图形学，缺乏为机器人学量身定制的、统一且自洽的教学材料。</p>
+<p><strong>方法：</strong>本教程旨在弥补这一空白，通过统一的符号和完整的推导，将刚体动力学、锥优化和摩擦接触理论结合起来。具体解释了互补性条件如何编码非穿透和摩擦耗散，区分了等价转录和凸松弛，并分析了运动和接触力的存在性与唯一性。此外，比较了基于一阶和牛顿的方法，解释了正则化和近端策略，并讨论了计算成本、鲁棒性和物理保真度之间的权衡。还连接了广泛使用的模拟器、最优控制和可微分模拟。</p>
+<p><strong>结果：</strong>本教程为机器人学领域提供了关于基于互补性的接触模型的自洽、全面的教学材料，涵盖了从物理假设到数值求解器选择的各个方面。</p>
+<p><strong>为什么重要：</strong>该教程填补了机器人学领域在接触模型教学方面的空白，帮助读者更好地理解模拟结果、选择合适的公式和求解器，并开发自己的接触动力学程序，从而推动机器人运动合成、控制和机构设计的发展。</p>
+<p><strong>局限：</strong>作为一篇教程，其“结果”主要体现在内容的清晰度和完整性上，而非新的实验发现。其有效性取决于读者的背景知识和学习投入。</p>
 <a class="source-link" href="https://arxiv.org/abs/2611.26600v1">阅读论文</a></article><article class="signal-summary-card"><h3>Active Feature Acquisition by Distilling an Oracle Teacher</h3>
-<p><strong>研究问题：</strong>获取实例的每个特征通常成本高昂（金钱、时间或隐私）。主动特征获取（AFA）旨在学习一种策略，在预算内决定为每个实例获取哪些特征。然而，现有AFA方法通过优化自构建的效用目标来训练策略，而非显式地蒸馏一个教师模型。</p>
-<p><strong>方法：</strong>提出OracleImitator，它显式构建了一个教师模型。在训练时，标签和未观测特征值可用，它们共同以闭合形式确定教师模型：一个根据对下游预测器误差的影响来对每个候选特征进行排名的预言机。OracleImitator通过软目标模仿将这个排名蒸馏成一个可部署的策略。</p>
-<p><strong>结果：</strong>在多模态医学诊断和AFABench基准测试中，OracleImitator在整个预算范围内匹配或超越了现有AFA方法，以不到四分之一的获取成本恢复了90%可达到的准确率增益。由于教师模型是一个显式的算法对象而非隐式优化目标，因此可以直接衡量其排名有多少可被部署时可见的策略恢复。</p>
-<p><strong>为什么重要：</strong>通过引入显式预言机教师模型，显著提高了主动特征获取的效率和准确性，在保持性能的同时大幅降低了特征获取成本，对实际应用具有重要价值。</p>
-<p><strong>局限：</strong>预言机教师模型在训练时可以访问所有信息，但在部署时策略受限于可见信息，因此无法完全恢复预言机的所有排名信息。</p>
+<p><strong>研究问题：</strong>主动特征获取（AFA）旨在预算限制下选择性地获取实例特征，但现有AFA方法通过优化自构建的效用目标来训练策略，而非显式地模仿一个教师模型。</p>
+<p><strong>方法：</strong>本研究提出了OracleImitator，它显式地构建了一个“预言机教师”。在训练时，标签和未观测的特征值都可用，它们共同以闭合形式确定教师：一个根据对下游预测器误差的影响来对每个候选特征进行排名的预言机。OracleImitator通过软目标模仿将这种排名蒸馏成一个可部署的策略。</p>
+<p><strong>结果：</strong>在多模态医学诊断和AFABench基准测试中，OracleImitator在整个预算范围内匹配或超越了现有AFA方法，以不到四分之一的获取成本恢复了90%可达到的准确率增益。由于教师是一个明确的算法对象而非隐式优化目标，研究还可以直接衡量部署时可见的策略能恢复多少教师的排名。</p>
+<p><strong>为什么重要：</strong>该方法显著提高了主动特征获取的效率和效果，在保持高预测准确性的同时，降低了特征获取的成本（包括金钱、时间和隐私成本），这对于医学诊断等实际应用至关重要。</p>
+<p><strong>局限：</strong>预言机教师的构建依赖于训练时所有特征值和标签的可用性，这在部署时是不可行的。研究主要关注特定基准和医学诊断任务，其在其他领域的通用性可能需要进一步验证。</p>
 <a class="source-link" href="https://arxiv.org/abs/2611.26598v1">阅读论文</a></article><article class="signal-summary-card"><h3>PGX: Physically Grounded Execution for Long-Horizon Humanoid Loco-Manipulation</h3>
-<p><strong>研究问题：</strong>机器人视觉-语言-动作（VLA）模型可以执行多样化的个体操作技能，但由于时间结构、技能和精度在单一模型中紧密耦合，它们在长周期（long-horizon）的运动-操作（loco-manipulation）任务中仍然面临挑战。</p>
-<p><strong>方法：</strong>提出物理接地执行（PGX）框架，将时间结构和精度控制卸载到两个经典的、无需训练的组件，使VLA模型能够专注于特定阶段的技能动力学。PGX将长周期运动-操作分解为三层：1) 基于谓词的状态机，管理任务进程，使用物理谓词来控制阶段转换、触发恢复并协调导航和等待；2) VLA技能，在主动操作阶段运行，平坦或阶段训练的模型专注于任务相关动作；3) 世界坐标锁定（WCL），通过基础站位保持、物体相对定位和世界锚定接触目标来维持空间一致性。</p>
-<p><strong>结果：</strong>通过在三个模拟任务和一个使用Unitree G1人形机器人的真实世界任务中进行大量实验，证明了PGX在长周期运动-操作中的有效性，显示出阶段进展和任务成功率的提高。</p>
-<p><strong>为什么重要：</strong>通过解耦复杂任务中的时间与精度控制，显著提升了VLA模型处理长周期运动-操作任务的能力，为人形机器人实现更复杂、更鲁棒的行为提供了有效途径。</p>
-<p><strong>局限：</strong>实验主要在特定模拟任务和Unitree G1人形机器人上进行，其在更广泛、更复杂的机器人平台或非结构化环境中的通用性可能需要进一步验证。框架依赖于经典的无训练组件，这些组件本身可能存在局限性。</p>
+<p><strong>研究问题：</strong>机器人视觉-语言-动作（VLA）模型虽然能执行多样化的个体操作技能，但在长程的移动-操作任务中仍面临挑战，因为这些任务中的时间结构、技能和精度在单一模型中紧密耦合。</p>
+<p><strong>方法：</strong>本研究提出了Physically Grounded Execution (PGX) 框架，它将时间结构和精度控制卸载给两个经典的、无需训练的组件，使VLA模型能够专注于阶段特定的技能动力学。PGX将长程移动-操作任务分解为三层：1) 基于谓词的状态机：管理任务进展，使用物理谓词来控制阶段转换、触发恢复并协调导航和等待；2) VLA技能：在主动操作阶段内运行，平坦或阶段训练的模型专注于任务相关动作；3) 世界坐标锁定（WCL）：通过基座保持、物体相对定位和世界锚定接触目标来维持空间一致性。</p>
+<p><strong>结果：</strong>PGX在三个模拟任务和一个使用Unitree G1人形机器人的真实世界长程移动-操作任务中展示了其有效性，显示了在阶段进展和任务成功率方面的显著提升。</p>
+<p><strong>为什么重要：</strong>该框架通过将复杂任务分解并利用经典控制方法，有效提升了VLA模型在长程移动-操作任务中的鲁棒性和成功率，是具身智能领域的重要进展。</p>
+<p><strong>局限：</strong>研究主要在特定模拟任务和Unitree G1人形机器人上进行验证，其在更广泛、更复杂的机器人平台或未知环境中的通用性可能需要进一步探索。</p>
 <a class="source-link" href="https://arxiv.org/abs/2611.26596v1">阅读论文</a></article><article class="signal-summary-card"><h3>Realized versus Population Reliability: Anytime-Valid Self-Consistency Certification under Correlated Reasoning</h3>
-<p><strong>研究问题：</strong>语言模型（LLM）的自洽性认证将重复采样视为顺序证据积累，并在随时有效e-过程超过阈值时停止，通过Ville不等式保证有限样本I型错误控制。然而，现有构造假设采样结果是条件独立的，这在实践中并不成立：推理流通过共享推理前缀或跨提示异质性而呈正相关，这不仅改变了证书效率，也改变了所认证的假设。</p>
-<p><strong>方法：</strong>通过每单元潜在状态（随机效应/组内相关结构）建模依赖性，诱导具有相关性ρ的可交换、等相关增量。将单一零假设分解为关于抽样信念的“已实现零假设”和关于平均模型行为的“总体零假设”，两者仅在ρ=0时重合。论文展示了：1) 标准投注e-过程对已实现零假设仍然随时有效，但对总体零假设无效；2) 作为总体零假设检验，合适的混合具有渐近交叉概率，可能超过名义ε；3) 单元内均值的有效样本量饱和在1/ρ，因此额外的单元内采样无法恢复总体有效性；4) 提示级e-过程恢复了总体有效性，在纯采样预算下，每个提示一次采样是最佳分配。</p>
-<p><strong>结果：</strong>模拟和Claude Haiku 4.5的采样结果证实了这种机制依赖性：在GSM8K上（ρ̂=0.435，θ̂=+0.96）差距不明显，而在AIME上（ρ̂=0.480，θ̂=-0.15），单单元规则在24%的提示上以名义ε=0.05交叉，而提示级过程则下降（0.00）。</p>
-<p><strong>为什么重要：</strong>澄清了在相关推理下自洽性认证的统计保证，明确了随时有效证书实际支持的可靠性主张，为LLM可靠性评估提供了更准确的理论基础和实践指导，尤其在需要总体推断时。</p>
-<p><strong>局限：</strong>研究揭示了现有方法在相关性存在时的局限性，并提出了提示级e-过程作为解决方案，但其在不同应用场景下的实际开销和适用性可能需要进一步评估。</p>
+<p><strong>研究问题：</strong>语言模型（LLM）的自洽性认证通常假设采样出的推理过程是条件独立的，但实际中推理流通过共享前缀或跨提示异质性而呈现正相关，这不仅影响证书效率，还改变了所认证的假设和I型错误控制的有效性。</p>
+<p><strong>方法：</strong>研究通过每单元潜在状态（随机效应/组内相关结构）建模依赖性，从而引入了具有相关性ρ的可交换、等相关增量。研究表明：(i) 标准的投注e-过程对“已实现零假设”（关于抽取的信念）仍然有效，但对“总体零假设”（关于平均模型行为）无效；(ii) 作为总体零假设检验，合适的混合可能导致渐近交叉概率至少为π=P(μ(Z)&gt;0)，可能超过名义ε；(iii) 单元内均值的有效样本量在1/ρ处饱和，因此额外的单元内推理无法恢复总体有效性；(iv) 提示级e-过程可以恢复总体有效性，在纯推理预算下，每个提示一个推理是最佳分配。</p>
+<p><strong>结果：</strong>模拟和Claude Haiku 4.5推理证实了这种机制依赖性：在GSM8K（ρ=0.435，θ=+0.96）上，差距处于休眠状态；而在AIME（ρ=0.480，θ=-0.15）上，单单元规则在24%的提示上以名义ε=0.05交叉，而提示级过程则下降（0.00）。</p>
+<p><strong>为什么重要：</strong>该研究明确了在存在依赖性时，随时有效的自洽性证书实际支持哪种可靠性声明，这对于准确、可信地评估LLM的自洽性和可靠性至关重要，尤其是在高风险应用中。</p>
+<p><strong>局限：</strong>提示级e-过程需要多个提示，这可能比单个提示多次推理的计算成本更高。研究主要关注特定的相关结构，其他形式的依赖性可能需要进一步分析。</p>
 <a class="source-link" href="https://arxiv.org/abs/2611.26592v1">阅读论文</a></article></div>
-  <div class="section-heading paper-heading"><h2>与播客相关的信号</h2></div><div class="connection-grid"><article class="connection-card"><strong>AI代理在软件开发、验证及创造中的角色</strong>
-<p>播客中提到AI正在彻底改变软件开发，将程序员角色转变为“创造者”和“验证工程师”，通过AI代理协作。这与论文2611.26601v1（LLM在软件漏洞研究中的能力）、2611.26588v1（LLM用于验证硬件设计中的bug）和2611.26624v1（AI代理设计游戏）中AI代理在软件/游戏创造和验证方面的应用高度相关。</p><a class="source-link" href="20261122.html#there-is-no-such-thing-as-founder-succession-tobi-l-tke-shopify">打开播客</a></article><article class="connection-card"><strong>AI硬件与模型部署效率</strong>
-<p>播客讨论了中国在AI时代追求技术自给自足，企业垂直整合开发AI模型和硬件组件，以及AI产业中垂直整合的“巨型企业”崛起。论文2611.26619v1（TideCache）提出的高效混合LLM服务系统，特别是在CPU-GPU超芯片上的优化，直接体现了AI模型部署对底层硬件和软件协同效率的极高要求，与播客中强调的AI基础设施和芯片竞争密切相关。</p><a class="source-link" href="20261121.html#how-ai-is-forcing-china-to-reshape-industrial-policy">打开播客</a><a class="source-link" href="20261120.html#anthropic-goes-public-nvidia-in-crisis-markets-tank-open-source-crackdown">打开播客</a></article><article class="connection-card"><strong>AI代理与机器人自主控制的国防应用潜力</strong>
-<p>播客深入探讨了国防科技领域的创新和自主武器的伦理辩论。论文2611.26613v1（AgentRoboCritic）分析了前沿AI代理在直接机器人控制方面的能力和局限性，以及2611.26596v1（PGX）关于人形机器人长周期运动-操作的框架，这些技术是实现高级自主系统（包括潜在的军事应用）的基础，与播客主题高度契合。</p><a class="source-link" href="20261120.html#after-the-builders-on-palmer-luckey-and-alex-karp">打开播客</a></article><article class="connection-card"><strong>AI在产品设计与开发中的应用</strong>
-<p>播客强调AI，特别是“数字孪生”技术，正在革新传统制造业的产品开发流程，显著提升效率。论文2611.26586v1（ProtoDiffusion）提出的多层图像生成模型，用于图形设计，正是AI赋能产品设计和开发、提升效率和创造力的一个具体实例。</p><a class="source-link" href="20261120.html#friday-wrap-up-ai-in-product-development-and-the-worlds-largest-ipo">打开播客</a></article><article class="connection-card"><strong>通用人工智能(AGI)的发展路径与物理世界交互</strong>
-<p>两期播客都强调AGI的发展需要与物理世界深度融合，以及产品驱动AGI的理念。论文2611.26613v1（AgentRoboCritic）和2611.26596v1（PGX）分别研究了AI代理直接控制机器人和人形机器人长周期运动-操作的能力，这些都是AI在物理世界中实现高级交互的关键进展。论文2611.26600v1（接触模型）为机器人与物理世界交互提供了基础模拟工具。论文2611.26590v1（探测VLM的“意识”心智）则从内部机制层面探索VLM如何处理信息，这对于理解和构建更通用的AI至关重要。</p><a class="source-link" href="20261119.html#gemini-and-the-path-to-agi-with-koray-kavukcuoglu">打开播客</a><a class="source-link" href="20261119.html#superintelligence-needs-the-physical-world-with-ceo-and-co-founder-of-arda-bob-mcgrew">打开播客</a></article></div>
+  <div class="section-heading paper-heading"><h2>与播客相关的信号</h2></div><div class="connection-grid"><article class="connection-card"><strong>AI代理与LLM应用落地</strong>
+<p>播客讨论了蚂蚁灵光作为大厂首个个人Agent的智能表现和发展愿景，这与多篇论文中探讨的AI代理能力（如游戏设计、机器人控制、软件漏洞研究）及大型语言模型（LLM）在实际应用中的落地和挑战紧密相关。</p><a class="source-link" href="20261123.html#190-对话蚂蚁灵光蔡伟-大厂首个-个人-agent-验证了什么">打开播客</a></article><article class="connection-card"><strong>AI在软件工程中的应用与验证</strong>
+<p>播客探讨了AI如何彻底改变软件开发范式，将程序员角色从代码编写者转变为“创造者”和“验证工程师”，通过AI代理协作，这与论文“Verify the Verifier”中LLM代理用于发现传统测试遗漏的软件漏洞，以及“SoK”中LLM代理在软件漏洞研究中的能力演进高度契合。</p><a class="source-link" href="20261122.html#there-is-no-such-thing-as-founder-succession-tobi-l-tke-shopify">打开播客</a></article><article class="connection-card"><strong>AI基础设施与LLM服务效率</strong>
+<p>两期播客均讨论了AI时代下全球产业政策的重塑、AI算力军备竞赛、垂直整合的巨型企业崛起以及芯片市场的重要性。这与论文“TideCache”旨在优化CPU-GPU超芯片上混合LLM服务效率的研究背景相符，都关注AI基础设施层面的挑战与优化。</p><a class="source-link" href="20261121.html#how-ai-is-forcing-china-to-reshape-industrial-policy">打开播客</a><a class="source-link" href="20261120.html#anthropic-goes-public-nvidia-in-crisis-markets-tank-open-source-crackdown">打开播客</a></article><article class="connection-card"><strong>通用AI与物理世界交互</strong>
+<p>两期播客都强调了通用人工智能（AGI）和超级智能的实现路径必须与物理世界深度融合，以及产品驱动AI的重要性。这与论文“AgentRoboCritic”和“PGX”中探讨的AI代理直接控制机器人、实现长程操作等具身智能研究方向直接相关，也与“PlayCraft”中AI代理通过与游戏环境交互来学习和改进游戏设计的理念相呼应。</p><a class="source-link" href="20261119.html#gemini-and-the-path-to-agi-with-koray-kavukcuoglu">打开播客</a><a class="source-link" href="20261119.html#superintelligence-needs-the-physical-world-with-ceo-and-co-founder-of-arda-bob-mcgrew">打开播客</a></article></div>
 </section>
 <section class="weekly-cross"><div class="section-heading"><p class="kicker">Weekly Crosscheck</p><h2>三路信号交叉验证</h2></div><div class="cross-grid"><article class="cross-card"><span class="cross-type">三路共振</span>
-<h3>人工智能的能源需求与基础设施</h3><p>随着AI技术爆发式增长，数据中心对电力的需求呈指数级上升，这正彻底改变全球能源格局，推动核能和电池储能等传统及新兴能源解决方案的发展。相关研究也侧面印证了AI计算对资源的高需求。</p>
-<p class="why">AI的快速发展不仅是技术问题，更是基础设施和能源供应的巨大挑战。能源行业的变革将直接影响AI产业的成本、可持续性和未来发展速度，是全球经济和地缘政治的重要议题。</p>
-<div class="cross-links"><a class="source-link" href="20261106.html#friday-wrap-up-nuclear-batteries-and-reflections-from-new-york">播客</a><a class="source-link" href="20261104.html#nextera-energy-ceo-powering-ai-nuclear-s-comeback-and-a-historic-utility-merger">播客</a><a class="source-link" href="20261103.html#the-company-building-america-s-uranium-supply-from-scratch">播客</a><a class="source-link" href="https://arxiv.org/abs/2611.08483v1">论文</a><a class="source-link" href="https://arxiv.org/abs/2611.08478v1">论文</a><a class="source-link" href="https://arxiv.org/abs/2611.08453v1">论文</a></div></article><article class="cross-card"><span class="cross-type">三路共振</span>
-<h3>AI代理与自动化</h3><p>AI代理（AI Agents）被视为AI发展的下一阶段，它们能够自主执行复杂任务，从程序优化、科学研究到金融交易，预示着未来操作系统和工作流的深刻变革。多篇论文探讨了AI代理在不同领域的应用和能力。</p>
-<p class="why">AI代理的成熟将极大提升自动化水平，改变软件开发、科学发现、金融服务等多个行业的工作范式，并带来新的投资机遇和伦理挑战，是未来技术发展的重要方向。</p>
-<div class="cross-links"><a class="source-link" href="20261105.html#tokenization-agentic-trading-harmonic-robinhood-s-mission-to-expand-ownership-with-ceo-vlad-tenev">播客</a><a class="source-link" href="20261103.html#garry-tan-decides-who-gets-to-build-the-future">播客</a><a class="source-link" href="https://arxiv.org/abs/2611.08483v1">论文</a><a class="source-link" href="https://arxiv.org/abs/2611.08478v1">论文</a><a class="source-link" href="https://arxiv.org/abs/2611.08472v1">论文</a></div></article><article class="cross-card"><span class="cross-type">研究先行</span>
-<h3>AI模型可解释性与安全性</h3><p>随着AI模型能力增强，理解其内部工作机制、确保行为可控和安全变得至关重要。多项研究正深入探索如何解释模型决策、识别潜在风险并构建更安全的AI系统，例如通过激活反演或机制可解释性。</p>
-<p class="why">AI的可解释性和安全性是其广泛应用和公众信任的基石，尤其在医疗、金融等高风险领域，缺乏透明度可能导致灾难性后果。这些研究为AI的负责任发展提供了理论和方法支持。</p>
-<div class="cross-links"><a class="source-link" href="https://arxiv.org/abs/2611.08469v1">论文</a><a class="source-link" href="https://arxiv.org/abs/2611.08465v1">论文</a><a class="source-link" href="https://arxiv.org/abs/2611.08438v1">论文</a></div></article><article class="cross-card"><span class="cross-type">研究先行</span>
-<h3>用户行为建模与嵌入的可解释性</h3><p>用户嵌入是推荐系统和个性化服务的核心，研究表明这些嵌入可以被理解为可解释行为模式的稀疏叠加。通过稀疏字典学习方法，可以恢复并自动命名这些模式，从而提高用户行为理解的透明度。</p>
-<p class="why">提高用户嵌入的可解释性有助于更好地理解用户行为，优化推荐算法，并为零样本受众检索和特征描述提供新的途径，同时不需修改现有嵌入系统，对于构建更智能、更负责任的个性化服务具有重要意义。</p>
-<div class="cross-links"><a class="source-link" href="https://arxiv.org/abs/2611.08487v1">论文</a></div></article><article class="cross-card"><span class="cross-type">研究先行</span>
-<h3>机器学习实验的可复现性与代码迁移</h3><p>机器学习实验的复现和代码在不同框架（如PyTorch到JAX）及硬件（NVIDIA GPU到Google TPU）间的迁移是实际需求，也是衡量AI代理能力的重要基准。研究正通过标准化工具和工作流，如ReproBridge和XStack，提升复现成功率和迁移效率。</p>
-<p class="why">提高ML实验的可复现性是科学严谨性的要求，确保研究结果的可靠性。而代码迁移能力则能解放ML代码，使其能在更广泛的硬件和框架上运行，加速研究和应用，降低开发成本和技术壁垒。</p>
-<div class="cross-links"><a class="source-link" href="https://arxiv.org/abs/2611.08472v1">论文</a><a class="source-link" href="https://arxiv.org/abs/2611.08452v1">论文</a></div></article><article class="cross-card"><span class="cross-type">舆论先行</span>
-<h3>美国中期选举与经济民粹主义</h3><p>美国中期选举结果显示，经济“负担能力”和“公平性”已超越传统意识形态，成为影响选民投票的关键因素。民众普遍认为经济“脱钩”，少数资产所有者获利，多数工薪阶层生活艰难，预示着“经济民粹主义”将成为政治主旋律。</p>
-<p class="why">这种经济驱动的政治转向将深刻影响未来的政策制定、社会稳定和国际关系，尤其是在通货膨胀和生活成本压力持续存在的背景下。它反映了社会深层矛盾，可能导致政治格局的长期重塑。</p>
-<div class="cross-links"><a class="source-link" href="20261107.html#midterm-blood-bath-4t-ai-sell-off-data-center-freeze-what-s-next-for-trump">播客</a><a class="source-link" href="20261106.html#the-macro-implications-of-the-blue-tsunami">播客</a><a class="source-link" href="20261103.html#an-election-day-special-with-nate-silver">播客</a><a class="source-link" href="20261102.html#james-talarico-america-s-corrupt-system-is-designed-to-keep-you-poor-texas-senate-candidate">播客</a></div></article><article class="cross-card"><span class="cross-type">舆论先行</span>
-<h3>AI公司估值与风险投资市场动态</h3><p>风险投资市场对AI领域的投资节奏极快，头部项目和基金享有优先权，但市场对AI公司的高估值也趋于审慎。评估AI公司价值的关键在于其下游企业客户的实际需求和持续投入，而非仅仅是上游技术能力。计算资源稀缺也成为新的投资机遇。</p>
-<p class="why">AI领域的投资热潮伴随着高风险和高回报，理解市场动态、估值逻辑和潜在风险对于投资者和创业者都至关重要。这反映了资本市场对新兴技术的热情与理性审视之间的博弈。</p>
-<div class="cross-links"><a class="source-link" href="20261106.html#185-anthropic招股书丨与amont李肇宇聊定价逻辑和潜在风险">播客</a><a class="source-link" href="20261104.html#martin-casado-on-frontier-model-economics-ai-s-slowdown-and-the-cursor-deal-invest-like-the-best-ep-498">播客</a></div></article><article class="cross-card"><span class="cross-type">深度先行</span>
-<h3>医疗领域LLM的记忆管理</h3><p>基于LLM的医疗助手在长期跟踪患者时，需要高效且准确的记忆系统来维护患者的临床状态。MedGraph等图记忆系统通过提取带日期事实、归因人物和链接记录链来解决现有记忆系统中的错误，显著提升了准确性。</p>
-<p class="why">医疗对话的长期性和准确性对患者安全至关重要。改进LLM在医疗领域的记忆管理，能显著提升医疗助手的可靠性和实用性，避免误诊或遗漏关键信息，推动AI在医疗健康领域的安全应用。</p>
-<div class="cross-links"><a class="source-link" href="https://arxiv.org/abs/2611.08433v1">论文</a></div></article></div></section>
+<h3>AI智能体与物理世界交互</h3><p>多篇论文深入探讨了AI智能体在机器人控制、游戏设计和软件漏洞发现方面的能力，同时播客也广泛讨论了AI智能体在商业、金融和物理世界中的应用。这表明学术界、产业界和媒体对AI智能体及其与物理世界交互的关注高度一致。</p>
+<p class="why">AI智能体与物理世界的融合是实现通用人工智能（AGI）的关键一步，其在自动化、安全、游戏等领域的突破将带来深远影响。这种多方位的关注预示着该领域将迎来快速发展和广泛应用。</p>
+<div class="cross-links"><a class="source-link" href="20261119.html#superintelligence-needs-the-physical-world-with-ceo-and-co-founder-of-arda-bob-mcgrew">播客</a><a class="source-link" href="20261118.html#divine-discontent-ai-agents-the-future-of-money-brian-armstrong-coinbase">播客</a><a class="source-link" href="20261118.html#157-复盘personal-agent集体诞生背后-和蔡伟聊ai产品史-需求真伪-入口与未来想象">播客</a><a class="source-link" href="https://arxiv.org/abs/2611.26613v1">论文</a><a class="source-link" href="https://arxiv.org/abs/2611.26624v1">论文</a><a class="source-link" href="https://arxiv.org/abs/2611.26601v1">论文</a><a class="source-link" href="https://arxiv.org/abs/2611.26596v1">论文</a></div></article><article class="cross-card"><span class="cross-type">三路共振</span>
+<h3>通用人工智能（AGI）的实现与产品驱动</h3><p>学术论文在探索视觉-语言模型（VLM）的内部机制和大型语言模型（LLM）的可靠性认证，而播客则直接讨论AGI是否已实现、如何通过产品驱动AGI以及其在企业应用中的挑战。这反映了从基础研究到实际应用，AGI是当前AI领域的核心焦点。</p>
+<p class="why">AGI的实现将彻底改变社会生产力，理解其内部工作原理、确保其可靠性并有效将其应用于实际场景，是当前科技发展的最前沿和最具挑战性的任务。</p>
+<div class="cross-links"><a class="source-link" href="20261119.html#gemini-and-the-path-to-agi-with-koray-kavukcuoglu">播客</a><a class="source-link" href="20261117.html#databricks-ceo-agi-is-already-here-why-companies-are-behind-and-the-superintelligence-debate">播客</a><a class="source-link" href="https://arxiv.org/abs/2611.26590v1">论文</a><a class="source-link" href="https://arxiv.org/abs/2611.26592v1">论文</a></div></article><article class="cross-card"><span class="cross-type">研究先行</span>
+<h3>LLM内部机制与可靠性评估</h3><p>论文深入探讨了LLM后训练如何改变其信息读取方式，以及在相关推理下自洽性认证的可靠性问题。这些是关于LLM基础行为和评估方法的前沿研究，尚未在公众讨论中广泛普及。</p>
+<p class="why">深入理解LLM的内部工作原理和其输出的可靠性，对于构建更安全、更可控、更值得信赖的AI系统至关重要。这些基础研究是未来AI技术突破和应用落地的基石。</p>
+<div class="cross-links"><a class="source-link" href="https://arxiv.org/abs/2611.26584v1">论文</a><a class="source-link" href="https://arxiv.org/abs/2611.26592v1">论文</a></div></article><article class="cross-card"><span class="cross-type">研究先行</span>
+<h3>机器人接触模型与仿真</h3><p>一篇论文提供了关于机器人刚体动力学接触模型的教程，详细解释了其物理假设和数值解法。这属于机器人学领域的基础理论和工程实践，相对专业，在普通播客中较少直接讨论。</p>
+<p class="why">精确的机器人接触模型是实现复杂机器人操作、运动规划和仿真验证的基础。这对于推动机器人技术在工业、医疗和日常服务中的应用至关重要。</p>
+<div class="cross-links"><a class="source-link" href="https://arxiv.org/abs/2611.26600v1">论文</a></div></article><article class="cross-card"><span class="cross-type">研究先行</span>
+<h3>多层图像生成与表示</h3><p>论文介绍了ProtoDiffusion框架，用于生成多层图像（如平面设计），通过紧凑的表示实现高保真重建。这是一个相对小众但专业的计算机图形学和生成模型方向。</p>
+<p class="why">这种技术能革新数字内容创作，尤其是在平面设计、UI/UX和多媒体制作领域，提高效率和创作自由度。</p>
+<div class="cross-links"><a class="source-link" href="https://arxiv.org/abs/2611.26586v1">论文</a></div></article><article class="cross-card"><span class="cross-type">舆论先行</span>
+<h3>AI对社会和经济的宏观影响</h3><p>播客广泛讨论了AI如何重塑产业政策（中国）、催生垂直整合的“巨型企业”、改变软件开发范式，以及AI超级智能可能带来的风险（推翻政府）。这些讨论更多是关于AI的宏观社会经济影响和未来展望，而非具体的AI技术研究。</p>
+<p class="why">这些讨论反映了社会对AI技术未来走向的普遍关注和担忧，有助于引导政策制定者、企业和公众对AI发展进行前瞻性思考和规划。</p>
+<div class="cross-links"><a class="source-link" href="20261121.html#how-ai-is-forcing-china-to-reshape-industrial-policy">播客</a><a class="source-link" href="20261120.html#anthropic-goes-public-nvidia-in-crisis-markets-tank-open-source-crackdown">播客</a><a class="source-link" href="20261122.html#there-is-no-such-thing-as-founder-succession-tobi-l-tke-shopify">播客</a><a class="source-link" href="20261116.html#paul-christiano-we-could-be-12-months-away-from-ais-that-can-overthrow-the-government">播客</a></div></article><article class="cross-card"><span class="cross-type">舆论先行</span>
+<h3>AI与地缘政治及国家安全</h3><p>播客讨论了AI芯片领域的国家级间谍丑闻以及国防科技领域AI伦理和自主武器的争议。这些话题具有高度敏感性和时效性，往往在媒体和政策层面引发广泛讨论。</p>
+<p class="why">AI技术已成为国家间竞争和地缘政治博弈的核心，其在军事和情报领域的应用引发了对伦理、安全和国际稳定的深切关注。</p>
+<div class="cross-links"><a class="source-link" href="20261116.html#nvidia-spy-scandal-what-trump-was-told-and-when-john-kiriakou">播客</a><a class="source-link" href="20261120.html#after-the-builders-on-palmer-luckey-and-alex-karp">播客</a></div></article><article class="cross-card"><span class="cross-type">深度先行</span>
+<h3>AI在特定行业（如制药、软件安全）的深度应用</h3><p>论文详细分析了LLM在软件漏洞研究中的能力演变，包括发现、验证和修补漏洞，并提出了一个评估框架。同时，播客深入探讨了AI制药领域如何通过scaling law实现突破，以及大公司在AI制药中的策略。这表明AI在特定垂直领域的应用正在走向深入和专业化。</p>
+<p class="why">AI在垂直行业的深度应用是其价值实现的关键路径。这些案例展示了AI如何解决复杂行业问题，提高效率，并推动行业变革。</p>
+<div class="cross-links"><a class="source-link" href="20261119.html#189-geodesic顾全全-预训练有点-无聊-了-但用scaling改变ai制药才刚开始">播客</a><a class="source-link" href="https://arxiv.org/abs/2611.26601v1">论文</a><a class="source-link" href="https://arxiv.org/abs/2611.26588v1">论文</a></div></article></div></section>
 <section class="signal-grid">
   <section class="signal-panel">
     <div class="section-heading"><h2>今日社媒观点</h2></div>
