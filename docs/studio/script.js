@@ -239,46 +239,6 @@ function escapeHtml(value) {
     .replace(/"/g, "&quot;");
 }
 
-async function hydratePredictionRadar() {
-  const target = document.querySelector("#radarHighlights");
-  const date = document.querySelector("#radarDate");
-  if (!target) return;
-
-  try {
-    const response = await fetch("https://daisypku.github.io/public-pages/prediction-radar/", { cache: "no-store" });
-    if (!response.ok) throw new Error("prediction radar not found");
-    const doc = new DOMParser().parseFromString(await response.text(), "text/html");
-    const items = [...doc.querySelectorAll("#signals > article.card")].slice(0, 2);
-    if (!items.length) throw new Error("prediction radar highlights not found");
-
-    if (date) date.textContent = doc.querySelector(".hero .meta")?.textContent?.trim() || "已更新";
-    target.innerHTML = items.map((item) => {
-      const title = item.querySelector("h3")?.textContent?.trim() || "预测事件";
-      const fact = item.querySelector(".fact")?.textContent?.trim() || "";
-      const question = item.querySelector(".research p")?.textContent?.trim() || "";
-      const chart = item.querySelector(".trend-preview svg")?.cloneNode(true);
-      if (chart) {
-        chart.querySelectorAll("*").forEach((node) => {
-          if (!["line", "text", "polyline", "circle", "title"].includes(node.localName)) {
-            node.remove();
-            return;
-          }
-          Array.from(node.attributes).forEach((attribute) => {
-            if (/^on/i.test(attribute.name) || /href$/i.test(attribute.name)) node.removeAttribute(attribute.name);
-          });
-        });
-        Array.from(chart.attributes).forEach((attribute) => {
-          if (/^on/i.test(attribute.name) || /href$/i.test(attribute.name)) chart.removeAttribute(attribute.name);
-        });
-      }
-      const chartHtml = chart ? `<div class="radar-chart">${chart.outerHTML}</div>` : "";
-      return `<div class="radar-item"><h3>${escapeHtml(title)}</h3><p>${escapeHtml(fact)}</p>${chartHtml}${question ? `<p class="radar-question">${escapeHtml(question)}</p>` : ""}</div>`;
-    }).join("");
-  } catch (error) {
-    if (date) date.textContent = "等待更新";
-    target.innerHTML = '<p class="radar-empty">预测内容暂时读取失败，可以打开项目查看完整页面。</p>';
-  }
-}
 function heatmapColor(value) {
   if (value === null || value === undefined || Number.isNaN(value)) return "#f1eadf";
   if (value >= 5) return "#c62828";
@@ -356,4 +316,3 @@ async function hydrateSemiHeatmap() {
 hydratePodcastBrief();
 hydrateInvestmentBrief();
 hydrateSemiHeatmap();
-hydratePredictionRadar();
