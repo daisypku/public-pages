@@ -1,12 +1,9 @@
-﻿name: Deploy GitHub Pages
+name: Deploy GitHub Pages
 
+# Automatic publishing is handled by GitHub's pages-build-deployment
+# workflow from main:/docs. Keep this workflow as a manual fallback only
+# so each content update does not start two deployments.
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - "docs/**"
-      - ".github/workflows/pages.yml"
   workflow_dispatch:
 
 permissions:
